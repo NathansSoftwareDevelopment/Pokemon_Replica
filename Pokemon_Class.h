@@ -25,6 +25,12 @@ class Pokemon {
         std::string pokemonMove2;
         std::string pokemonMove3;
         std::string pokemonMove4;
+        std::string* pokemonMoves[4] = {
+            &pokemonMove1,
+            &pokemonMove2,
+            &pokemonMove3,
+            &pokemonMove4
+        };
         
         std::string pokemonCondition;
 
@@ -34,6 +40,14 @@ class Pokemon {
         int speciesSpecialAttack;
         int speciesSpecialDefense;
         int speciesSpeed;
+        int* speciesStats[6] = {
+            &speciesHitPoints,
+            &speciesAttack,
+            &speciesDefense,
+            &speciesSpecialAttack,
+            &speciesSpecialDefense,
+            &speciesSpeed
+        };
         
         int pokemonHitPointsIndividualValue;
         int pokemonAttackIndividualValue;
@@ -41,6 +55,14 @@ class Pokemon {
         int pokemonSpecialAttackIndividualValue;
         int pokemonSpecialDefenseIndividualValue;
         int pokemonSpeedIndividualValue;
+        int* pokemonIndividualValues[6] = {
+            &pokemonHitPointsIndividualValue,
+            &pokemonAttackIndividualValue,
+            &pokemonDefenseIndividualValue,
+            &pokemonSpecialAttackIndividualValue,
+            &pokemonSpecialDefenseIndividualValue,
+            &pokemonSpeedIndividualValue
+        };
 
         int pokemonHitPointsEffortValue;
         int pokemonAttackEffortValue;
@@ -48,6 +70,14 @@ class Pokemon {
         int pokemonSpecialAttackEffortValue;
         int pokemonSpecialDefenseEffortValue;
         int pokemonSpeedEffortValue;
+        int* pokemonEffortValues[6] {
+            &pokemonHitPointsEffortValue,
+            &pokemonAttackEffortValue,
+            &pokemonDefenseEffortValue,
+            &pokemonSpecialAttackEffortValue,
+            &pokemonSpecialDefenseEffortValue,
+            &pokemonSpeedEffortValue
+        };
 
         int pokemonHitPoints;
         int pokemonAttack;
@@ -55,6 +85,14 @@ class Pokemon {
         int pokemonSpecialAttack;
         int pokemonSpecialDefense;
         int pokemonSpeed;
+        int* pokemonStats[6] {
+            &pokemonHitPoints,
+            &pokemonAttack,
+            &pokemonDefense,
+            &pokemonSpecialAttack,
+            &pokemonSpecialDefense,
+            &pokemonSpeed
+        };
 
         int currentHitPoints;
         int currentAttack;
@@ -62,6 +100,14 @@ class Pokemon {
         int currentSpecialAttack;
         int currentSpecialDefense;
         int currentSpeed;
+        int* currentStats[6] {
+            &currentHitPoints,
+            &currentAttack,
+            &currentDefense,
+            &currentSpecialAttack,
+            &currentSpecialDefense,
+            &currentSpeed
+        };
 
         void setSpeciesStats(int speciesStats[6]);
         void setPokemonIndividualValues(int IndividualValues[6]);
