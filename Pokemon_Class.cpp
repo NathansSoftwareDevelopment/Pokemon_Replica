@@ -1,70 +1,34 @@
-#include <string>
+#include <cmath>
+#include "Pokemon_Class.h"
 
-class Pokemon {
-    public:
-        std::string pokemonSpecies;
-        std::string pokemonName;
+void Pokemon::setSpeciesStats(int speciesStats[6]) {
+    speciesHitPoints = speciesStats[0];
+    speciesAttack = speciesStats[1];
+    speciesDefense = speciesStats[2];
+    speciesSpecialAttack = speciesStats[3];
+    speciesSpecialDefense = speciesStats[4];
+    speciesSpeed = speciesStats[5];
+}
 
-        int pokemonLevel;
-        int pokemonExperience;
+void Pokemon::setPokemonIndividualValues(int pokemonIndividualValues[6]) {
+    pokemonHitPointsIndividualValue = pokemonIndividualValues[0];
+    pokemonAttackIndividualValue = pokemonIndividualValues[1];
+    pokemonDefenseIndividualValue = pokemonIndividualValues[2];
+    pokemonSpecialAttackIndividualValue = pokemonIndividualValues[3];
+    pokemonSpecialDefenseIndividualValue = pokemonIndividualValues[4];
+    pokemonSpeedIndividualValue = pokemonIndividualValues[5];
+}
 
-        std::string pokemonItem;
+void Pokemon::setPokemonEffortValues(int pokemonEffortValues[6]) {
+    pokemonHitPointsEffortValue = pokemonEffortValues[0];
+    pokemonAttackEffortValue = pokemonEffortValues[1];
+    pokemonDefenseEffortValue = pokemonEffortValues[2];
+    pokemonSpecialAttackEffortValue = pokemonEffortValues[3];
+    pokemonSpecialDefenseEffortValue = pokemonEffortValues[4];
+    pokemonSpeedEffortValue = pokemonEffortValues[5];
+}
 
-        std::string pokemonAbility;
-
-        std::string pokemonType1;
-        std::string pokemonType2;
-
-        std::string pokemonMove1;
-        std::string pokemonMove2;
-        std::string pokemonMove3;
-        std::string pokemonMove4;
-        
-        std::string pokemonCondition;
-
-        int speciesHitPoints;
-        int speciesAttack;
-        int speciesDefense;
-        int speciesSpecialAttack;
-        int speciesSpecialDefense;
-        int speciesSpeed;
-        
-        int pokemonHitPointsIndividualValue;
-        int pokemonAttackIndividualValue;
-        int pokemonDefenseIndividualValue;
-        int pokemonSpecialAttackIndividualValue;
-        int pokemonSpecialDefenseIndividualValue;
-        int pokemonSpeedIndividualValue;
-
-        int pokemonHitPointsEffortValue;
-        int pokemonAttackEffortValue;
-        int pokemonDefenseEffortValue;
-        int pokemonSpecialAttackEffortValue;
-        int pokemonSpecialDefenseEffortValue;
-        int pokemonSpeedEffortValue;
-
-        int pokemonHitPoints;
-        int pokemonAttack;
-        int pokemonDefense;
-        int pokemonSpecialAttack;
-        int pokemonSpecialDefense;
-        int pokemonSpeed;
-
-        int currentHitPoints;
-        int currentAttack;
-        int currentDefense;
-        int currentSpecialAttack;
-        int currentSpecialDefense;
-        int currentSpeed;
-        
-        Pokemon(std::string pokemonSpecies, std::string pokemonName, std::string pokemonAbility, int speciesStats[6], int pokemonIndividualValues[6]);
-        Pokemon(
-            std::string pokemonSpecies, std::string pokemonName, int pokemonLevel, int pokemonExperience, std::string pokemonAbility,
-            std::string pokemonType1, std::string pokemonType2,
-            std::string pokemonMove1, std::string pokemonMove2, std::string pokemonMove3, std::string pokemonMove4, 
-            std::string pokemonCondition,
-            int speciesStats[6], int pokemonIndividualValues[6], int pokemonEffortValues[6]
-        );
-        ~Pokemon();
-};
-
+void Pokemon::calculatePokemonStats() {
+    pokemonHitPoints = floor((2*speciesHitPoints+pokemonHitPointsIndividualValue+floor(0.25*pokemonHitPointsEffortValue/1)*pokemonLevel)/100)+pokemonLevel+10;
+    pokemonAttack = floor((2*speciesAttack+pokemonAttackIndividualValue+floor(0.25*pokemonAttackEffortValue/1)*pokemonLevel)/100+5) * 1;
+}
