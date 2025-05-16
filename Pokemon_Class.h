@@ -1,4 +1,8 @@
+#ifndef POKEMON_CLASS_H
+#define POKEMON_CLASS_H
+
 #include <string>
+#include "Nature.h"
 
 class Pokemon {
     public:
@@ -8,7 +12,7 @@ class Pokemon {
         int pokemonLevel;
         int pokemonExperience;
 
-        std::string pokemonNature;
+        Nature* pokemonNature;
         
         std::string pokemonAbility;
         
@@ -62,11 +66,12 @@ class Pokemon {
         void setSpeciesStats(int speciesStats[6]);
         void setPokemonIndividualValues(int IndividualValues[6]);
         void setPokemonEffortValues(int EffortValues[6]);
+        void setPokemonNature(std::string pokemonNatureName);
         void calculatePokemonStats();
         
-        Pokemon(std::string pokemonSpecies, std::string pokemonName, std::string pokemonNature, std::string pokemonAbility, int speciesStats[6], int pokemonIndividualValues[6]);
+        Pokemon(std::string pokemonSpecies, std::string pokemonName, std::string pokemonNatureName, std::string pokemonAbility, int speciesStats[6], int pokemonIndividualValues[6]);
         Pokemon(
-            std::string pokemonSpecies, std::string pokemonName, std::string pokemonNature, int pokemonLevel, int pokemonExperience, std::string pokemonAbility,
+            std::string pokemonSpecies, std::string pokemonName, std::string pokemonNatureName, int pokemonLevel, int pokemonExperience, std::string pokemonAbility,
             std::string pokemonType1, std::string pokemonType2,
             std::string pokemonMove1, std::string pokemonMove2, std::string pokemonMove3, std::string pokemonMove4, 
             std::string pokemonCondition,
@@ -75,3 +80,4 @@ class Pokemon {
         ~Pokemon();
 };
 
+#endif
