@@ -30,7 +30,7 @@ void Pokemon::setPokemonEffortValues(int pokemonEffortValues[6]) {
 }
 
 void Pokemon::setPokemonNature(std::string pokemonNatureName) {
-    for (Nature nature : natureArray) {
+    for (Nature& nature : natureArray) {
         if (nature.natureName == pokemonNatureName) {
             pokemonNature = &nature;
         }
@@ -44,4 +44,63 @@ void Pokemon::calculatePokemonStats() {
     pokemonSpecialAttack = floor(((2*speciesSpecialAttack+pokemonSpecialAttackIndividualValue+floor(pokemonSpecialAttackEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureSpecialAttack;
     pokemonSpecialDefense = floor(((2*speciesSpecialDefense+pokemonSpecialDefenseIndividualValue+floor(pokemonSpecialDefenseEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureSpecialDefense;
     pokemonSpeed = floor(((2*speciesSpeed+pokemonSpeedIndividualValue+floor(pokemonSpeedEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureSpeed;
+}
+
+Pokemon::Pokemon(std::string pokemonInputSpecies, std::string pokemonInputName, std::string pokemonInputNatureName, std::string pokemonInputAbility, int speciesInputStats[6], int pokemonInputIndividualValues[6]) {
+    pokemonSpecies = pokemonInputSpecies;
+    pokemonName = pokemonInputName;
+
+    pokemonLevel = 1;
+    
+    setPokemonNature(pokemonInputNatureName);
+    pokemonAbility = pokemonInputAbility;
+    speciesHitPoints = speciesInputStats[0];
+    speciesAttack = speciesInputStats[1];
+    speciesDefense = speciesInputStats[2];
+    speciesSpecialAttack = speciesInputStats[3];
+    speciesSpecialDefense = speciesInputStats[4];
+    speciesSpeed = speciesInputStats[5];
+    setPokemonIndividualValues(pokemonInputIndividualValues);
+    int zeroEffortValues[6] = {};
+    setPokemonEffortValues(zeroEffortValues);
+    calculatePokemonStats();
+}
+
+Pokemon::Pokemon(
+    std::string pokemonInputSpecies, std::string pokemonInputName, std::string pokemonInputNatureName, int pokemonInputLevel, int pokemonInputExperience, std::string pokemonInputAbility,
+    std::string pokemonInputType1, std::string pokemonInputType2,
+    std::string pokemonInputMove1, std::string pokemonInputMove2, std::string pokemonInputMove3, std::string pokemonInputMove4, 
+    std::string pokemonInputCondition,
+    int speciesInputStats[6], int pokemonInputIndividualValues[6], int pokemonInputEffortValues[6]
+) {
+    pokemonSpecies = pokemonInputSpecies;
+    pokemonName = pokemonInputName;
+    setPokemonNature(pokemonInputNatureName);
+    pokemonLevel = pokemonInputLevel;
+    pokemonExperience = pokemonInputExperience;
+    pokemonAbility = pokemonInputAbility;
+
+    pokemonType1 = pokemonInputType1;
+    pokemonType2 = pokemonInputType2;
+
+    pokemonMove1 = pokemonInputMove1;
+    pokemonMove2 = pokemonInputMove2;
+    pokemonMove3 = pokemonInputMove3;
+    pokemonMove4 = pokemonInputMove4;
+
+    pokemonCondition = pokemonInputCondition;
+
+    speciesHitPoints = speciesInputStats[0];
+    speciesAttack = speciesInputStats[1];
+    speciesDefense = speciesInputStats[2];
+    speciesSpecialAttack = speciesInputStats[3];
+    speciesSpecialDefense = speciesInputStats[4];
+    speciesSpeed = speciesInputStats[5];
+    setPokemonIndividualValues(pokemonInputIndividualValues);
+    setPokemonEffortValues(pokemonInputEffortValues);
+    calculatePokemonStats();
+}
+
+Pokemon::~Pokemon() {
+    
 }

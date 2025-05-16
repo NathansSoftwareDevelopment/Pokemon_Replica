@@ -69,13 +69,13 @@ class Pokemon {
         void setPokemonNature(std::string pokemonNatureName);
         void calculatePokemonStats();
         
-        Pokemon(std::string pokemonSpecies, std::string pokemonName, std::string pokemonNatureName, std::string pokemonAbility, int speciesStats[6], int pokemonIndividualValues[6]);
+        Pokemon(std::string pokemonInputSpecies, std::string pokemonInputName, std::string pokemonInputNatureName, std::string pokemonInputAbility, int speciesInputStats[6], int pokemonInputIndividualValues[6]);
         Pokemon(
-            std::string pokemonSpecies, std::string pokemonName, std::string pokemonNatureName, int pokemonLevel, int pokemonExperience, std::string pokemonAbility,
-            std::string pokemonType1, std::string pokemonType2,
-            std::string pokemonMove1, std::string pokemonMove2, std::string pokemonMove3, std::string pokemonMove4, 
-            std::string pokemonCondition,
-            int speciesStats[6], int pokemonIndividualValues[6], int pokemonEffortValues[6]
+            std::string pokemonInputSpecies, std::string pokemonInputName, std::string pokemonInputNatureName, int pokemonInputLevel, int pokemonInputExperience, std::string pokemonInputAbility,
+            std::string pokemonInputType1, std::string pokemonInputType2,
+            std::string pokemonInputMove1, std::string pokemonInputMove2, std::string pokemonInputMove3, std::string pokemonInputMove4, 
+            std::string pokemonInputCondition,
+            int speciesStats[6], int pokemonInputIndividualValues[6], int pokemonInputEffortValues[6]
         );
         ~Pokemon();
 };
