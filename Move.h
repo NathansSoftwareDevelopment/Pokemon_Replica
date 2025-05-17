@@ -4,12 +4,12 @@
 
 class Move {
     public:
-        std::string name;
-        std::string type;
-        std::string damageCategory;
-        int power;
-        int accuracy;
-        Move(std::string nameInput, std::string typeInput, std::string damageCategoryInput, int powerInput, int accuracyInput);
+        std::string moveName;
+        std::string moveType;
+        std::string moveDamageCategory;
+        int movePower;
+        int moveAccuracy;
+        Move(std::string moveInputName, std::string moveInputType, std::string moveInputDamageCategory, int moveInputPower, int moveInputAccuracy);
 };
 
 #endif
