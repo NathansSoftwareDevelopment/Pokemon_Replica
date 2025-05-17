@@ -1,11 +1,12 @@
 #include <iostream>
 #include "Pokemon_Class.h"
 #include "Nature.h"
+#include "Charmander.cpp"
 
 int main() {
     int charmanderSpeciesStats[6] = {39, 52, 43, 60, 50, 65};
     int zeroIndividualValues[6] = {};
-    Pokemon myPokemon = Pokemon("Charmander", "FireBoi", "Modest", "Blaze", charmanderSpeciesStats, zeroIndividualValues);
+    Charmander myPokemon = Charmander("FireBoi", "Modest", "Blaze", zeroIndividualValues);
     std::cout << myPokemon.pokemonName << std::endl;
     std::cout << myPokemon.pokemonSpecies << std::endl;
     std::cout << "\nPokemon Nature\n";
