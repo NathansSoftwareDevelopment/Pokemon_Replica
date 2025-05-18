@@ -12,7 +12,7 @@ public:
         std::string pokemonInputCondition,
         int pokemonInputIndividualValues[6], int pokemonInputEffortValues[6]
     );
-    virtual ~Charmander() override;
+    virtual ~Charmander() override {};
 };
 
 #endif
