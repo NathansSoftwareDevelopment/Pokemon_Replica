@@ -2,6 +2,7 @@
 #include "Pokemon_Class.h"
 #include "Nature.h"
 #include "Pokemon_Species/Charmander/Charmander.h"
+#include "Type.h"
 
 int main() {
     int zeroValues[6] = {};
