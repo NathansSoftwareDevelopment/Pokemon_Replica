@@ -20,7 +20,3 @@ Charmander::Charmander(
 ) {
 
 }
-
-void Charmander::doNothing() {
-    
-}

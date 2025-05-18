@@ -5,7 +5,6 @@
 
 class Charmander : public Pokemon {
 public:
-    void doNothing() override;
     Charmander(std::string pokemonInputName, std::string pokemonInputNature, std::string pokemonInputAbility, int pokemonIndividualValues[6]);
     Charmander(
         std::string pokemonInputName, std::string pokemonInputNature, int pokemonInputLevel, int pokemonInputExperience, std::string pokemonInputAbility,
@@ -13,7 +12,7 @@ public:
         std::string pokemonInputCondition,
         int pokemonInputIndividualValues[6], int pokemonInputEffortValues[6]
     );
-    virtual ~Charmander() override {};
+    virtual ~Charmander() override;
 };
 
 #endif

@@ -114,7 +114,6 @@ class Pokemon {
         void setPokemonEffortValues(int EffortValues[6]);
         void setPokemonNature(std::string pokemonNatureName);
         void calculatePokemonStats();
-        virtual void doNothing() = 0;
 
         
         Pokemon(std::string pokemonInputSpecies, std::string pokemonInputName, std::string pokemonInputNature, std::string pokemonInputAbility, int speciesInputStats[6], int pokemonInputIndividualValues[6]);
