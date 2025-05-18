@@ -48,4 +48,6 @@ class Type {
         Type(std::string typeInputName, float attackingInputStats[18]);
 };
 
+extern Type typeArray[18];
+
 #endif

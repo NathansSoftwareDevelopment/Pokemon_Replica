@@ -2,6 +2,7 @@
 #include <cmath>
 #include "Pokemon_Class.h"
 #include "Nature.h"
+#include "Type.h"
 
 void Pokemon::setSpeciesStats(int speciesStats[6]) {
     speciesHitPoints = speciesStats[0];
@@ -34,6 +35,16 @@ void Pokemon::setPokemonNature(std::string pokemonInputNature) {
     for (Nature& nature : natureArray) {
         if (nature.natureName == pokemonInputNature) {
             pokemonNature = &nature;
+        }
+    }
+}
+
+void Pokemon::setPokemonTypes(std::string pokemonInputType1, std::string pokemonInputType2) {
+    for (Type& type : typeArray) {
+        if (type.typeName == pokemonInputType1) {
+            pokemonType1 = &type;
+        } else if (type.typeName == pokemonInputType2) {
+            pokemonType2 = &type;
         }
     }
 }
@@ -81,8 +92,7 @@ Pokemon::Pokemon(
     pokemonExperience = pokemonInputExperience;
     pokemonAbility = pokemonInputAbility;
     
-    pokemonType1 = pokemonInputType1;
-    pokemonType2 = pokemonInputType2;
+    setPokemonTypes(pokemonInputType1, pokemonInputType2);
     
     pokemonMove1 = pokemonInputMove1;
     pokemonMove2 = pokemonInputMove2;

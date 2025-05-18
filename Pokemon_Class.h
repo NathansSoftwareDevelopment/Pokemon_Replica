@@ -3,6 +3,7 @@
 
 #include <string>
 #include "Nature.h"
+#include "Type.h"
 
 class Pokemon {
     public:
@@ -18,8 +19,8 @@ class Pokemon {
         
         std::string pokemonItem;
 
-        std::string pokemonType1;
-        std::string pokemonType2;
+        Type* pokemonType1;
+        Type* pokemonType2;
 
         std::string pokemonMove1;
         std::string pokemonMove2;
@@ -113,6 +114,7 @@ class Pokemon {
         void setPokemonIndividualValues(int IndividualValues[6]);
         void setPokemonEffortValues(int EffortValues[6]);
         void setPokemonNature(std::string pokemonNatureName);
+        void setPokemonTypes(std::string pokemonInputType1, std::string pokemonInputType2);
         void calculatePokemonStats();
 
         
