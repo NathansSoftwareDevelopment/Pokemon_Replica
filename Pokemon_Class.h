@@ -70,7 +70,7 @@ class Pokemon {
         int pokemonSpecialAttackEffortValue;
         int pokemonSpecialDefenseEffortValue;
         int pokemonSpeedEffortValue;
-        int* pokemonEffortValues[6] {
+        int* pokemonEffortValues[6] = {
             &pokemonHitPointsEffortValue,
             &pokemonAttackEffortValue,
             &pokemonDefenseEffortValue,
@@ -85,7 +85,7 @@ class Pokemon {
         int pokemonSpecialAttack;
         int pokemonSpecialDefense;
         int pokemonSpeed;
-        int* pokemonStats[6] {
+        int* pokemonStats[6] = {
             &pokemonHitPoints,
             &pokemonAttack,
             &pokemonDefense,
@@ -100,7 +100,7 @@ class Pokemon {
         int currentSpecialAttack;
         int currentSpecialDefense;
         int currentSpeed;
-        int* currentStats[6] {
+        int* currentStats[6] = {
             &currentHitPoints,
             &currentAttack,
             &currentDefense,
@@ -115,16 +115,17 @@ class Pokemon {
         void setPokemonNature(std::string pokemonNatureName);
         void calculatePokemonStats();
         virtual void doNothing() = 0;
+
         
-        Pokemon(std::string pokemonInputSpecies, std::string pokemonInputName, std::string pokemonInputNatureName, std::string pokemonInputAbility, int speciesInputStats[6], int pokemonInputIndividualValues[6]);
+        Pokemon(std::string pokemonInputSpecies, std::string pokemonInputName, std::string pokemonInputNature, std::string pokemonInputAbility, int speciesInputStats[6], int pokemonInputIndividualValues[6]);
         Pokemon(
-            std::string pokemonInputSpecies, std::string pokemonInputName, std::string pokemonInputNatureName, int pokemonInputLevel, int pokemonInputExperience, std::string pokemonInputAbility,
+            std::string pokemonInputSpecies, std::string pokemonInputName, std::string pokemonInputNature, int pokemonInputLevel, int pokemonInputExperience, std::string pokemonInputAbility,
             std::string pokemonInputType1, std::string pokemonInputType2,
             std::string pokemonInputMove1, std::string pokemonInputMove2, std::string pokemonInputMove3, std::string pokemonInputMove4, 
             std::string pokemonInputCondition,
             int speciesStats[6], int pokemonInputIndividualValues[6], int pokemonInputEffortValues[6]
         );
-        ~Pokemon();
+        virtual ~Pokemon() = 0;
 };
 
 #endif
