@@ -9,7 +9,8 @@ class Move {
         std::string moveDamageCategory;
         int movePower;
         int moveAccuracy;
-        Move(std::string moveInputName, std::string moveInputType, std::string moveInputDamageCategory, int moveInputPower, int moveInputAccuracy);
+        int movePP;
+        Move(std::string moveInputName, std::string moveInputType, std::string moveInputDamageCategory, int moveInputPower, int moveInputAccuracy, int moveInputPP);
 };
 
 #endif
