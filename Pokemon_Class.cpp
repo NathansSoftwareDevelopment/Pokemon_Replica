@@ -61,14 +61,15 @@ void Pokemon::calculatePokemonStats() {
     pokemonSpeed = floor(((2*speciesSpeed+pokemonSpeedIndividualValue+floor(pokemonSpeedEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureSpeed;
 }
 
-Pokemon::Pokemon(std::string pokemonInputName, Species* pokemonInputSpecies, std::string pokemonInputNature, std::string pokemonInputAbility, int pokemonInputIndividualValues[6]) {
-    pokemonSpecies = pokemonInputSpecies;
+Pokemon::Pokemon(std::string pokemonInputName, const Species* pokemonInputSpecies, std::string pokemonInputNature, std::string pokemonInputAbility, int pokemonInputIndividualValues[6]) {
     pokemonName = pokemonInputName;
-    
-    pokemonLevel = 1;
-    
+    pokemonSpecies = pokemonInputSpecies;
     setPokemonNature(pokemonInputNature);
+    pokemonLevel = 1;
+    pokemonExperience = 0;
     pokemonAbility = pokemonInputAbility;
+    
+    setPokemonTypes(pokemonInputSpecies);
     setSpeciesStats(pokemonInputSpecies);
     setPokemonIndividualValues(pokemonInputIndividualValues);
     int zeroEffortValues[6] = {};
@@ -82,8 +83,8 @@ Pokemon::Pokemon(
     std::string pokemonInputCondition,
     int pokemonInputIndividualValues[6], int pokemonInputEffortValues[6]
 ) {
-    pokemonSpecies = pokemonInputSpecies;
     pokemonName = pokemonInputName;
+    pokemonSpecies = pokemonInputSpecies;
     setPokemonNature(pokemonInputNature);
     pokemonLevel = pokemonInputLevel;
     pokemonExperience = pokemonInputExperience;

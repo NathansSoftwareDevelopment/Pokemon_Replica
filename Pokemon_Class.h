@@ -121,7 +121,7 @@ class Pokemon {
         void setPokemonMoves(std::string pokemonInputMove1, std::string pokemonInputMove2, std::string pokemonInputMove3, std::string pokemonInputMove4);
 
         
-        Pokemon(std::string pokemonInputName, Species* pokemonInputSpecies, std::string pokemonInputNature, std::string pokemonInputAbility,int pokemonInputIndividualValues[6]);
+        Pokemon(std::string pokemonInputName, const Species* pokemonInputSpecies, std::string pokemonInputNature, std::string pokemonInputAbility, int pokemonInputIndividualValues[6]);
         Pokemon(
             std::string pokemonInputName, const Species* pokemonInputSpecies, std::string pokemonInputNature, int pokemonInputLevel, int pokemonInputExperience, std::string pokemonInputAbility,
             std::string pokemonInputMove1, std::string pokemonInputMove2, std::string pokemonInputMove3, std::string pokemonInputMove4, 
