@@ -4,6 +4,7 @@
 #include <string>
 #include "Nature.h"
 #include "Type.h"
+#include "Move.h"
 
 class Pokemon {
     public:
@@ -22,11 +23,11 @@ class Pokemon {
         Type* pokemonType1;
         Type* pokemonType2;
 
-        std::string pokemonMove1;
-        std::string pokemonMove2;
-        std::string pokemonMove3;
-        std::string pokemonMove4;
-        std::string* pokemonMoves[4] = {
+        Move* pokemonMove1;
+        Move* pokemonMove2;
+        Move* pokemonMove3;
+        Move* pokemonMove4;
+        Move** pokemonMoves[4] = {
             &pokemonMove1,
             &pokemonMove2,
             &pokemonMove3,
@@ -116,6 +117,7 @@ class Pokemon {
         void setPokemonNature(std::string pokemonNatureName);
         void setPokemonTypes(std::string pokemonInputType1, std::string pokemonInputType2);
         void calculatePokemonStats();
+        void setPokemonMoves(std::string pokemonInputMove1, std::string pokemonInputMove2, std::string pokemonInputMove3, std::string pokemonInputMove4);
 
         
         Pokemon(std::string pokemonInputSpecies, std::string pokemonInputName, std::string pokemonInputNature, std::string pokemonInputAbility, int speciesInputStats[6], int pokemonInputIndividualValues[6]);

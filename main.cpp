@@ -27,7 +27,7 @@ int main() {
     // std::cout << myPokemon.pokemonType1->typeName << std::endl;
     // std::cout << myPokemon.pokemonType2->typeName << std::endl;
 
-    Charmander mySecondPokemon = Charmander("FireBoi2", "Modest", 100, 0, "Blaze", "None", "None", "None", "None", "None", zeroValues, zeroValues);
+    Charmander mySecondPokemon = Charmander("FireBoi2", "Modest", 100, 0, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", zeroValues, zeroValues);
     std::cout << "Object Created" << std::endl;
     std::cout << mySecondPokemon.pokemonName << std::endl;
     std::cout << mySecondPokemon.pokemonSpecies << std::endl;
@@ -40,12 +40,17 @@ int main() {
         std::cout << *i << std::endl;
     };
     std::cout << "\nSpecies Stats\n";
-    for (int* i: mySecondPokemon.speciesStats) {
+    for (int* i : mySecondPokemon.speciesStats) {
         std::cout << *i << std::endl;
     };
     std::cout << "\nPokemon Types\n";
     std::cout << mySecondPokemon.pokemonType1->typeName << std::endl;
     std::cout << mySecondPokemon.pokemonType2->typeName << std::endl;
+    std::cout << "\nPokemon Moves\n";
+    for (Move** i : mySecondPokemon.pokemonMoves) {
+        std::cout << (*i)->moveName << std::endl;
+    };
+    std::cout << "\n\nEnd Main";
 
     return 0;
 }

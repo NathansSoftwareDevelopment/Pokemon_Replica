@@ -3,6 +3,7 @@
 #include "Pokemon_Class.h"
 #include "Nature.h"
 #include "Type.h"
+#include "Move.h"
 
 void Pokemon::setSpeciesStats(int speciesStats[6]) {
     speciesHitPoints = speciesStats[0];
@@ -47,6 +48,13 @@ void Pokemon::setPokemonTypes(std::string pokemonInputType1, std::string pokemon
             pokemonType2 = &type;
         }
     }
+}
+
+void Pokemon::setPokemonMoves(std::string pokemonInputMove1, std::string pokemonInputMove2, std::string pokemonInputMove3, std::string pokemonInputMove4) {
+    pokemonMove1 = &moveMap.find(pokemonInputMove1)->second;
+    pokemonMove2 = &moveMap.find(pokemonInputMove2)->second;
+    pokemonMove3 = &moveMap.find(pokemonInputMove3)->second;
+    pokemonMove4 = &moveMap.find(pokemonInputMove4)->second;
 }
 
 void Pokemon::calculatePokemonStats() {
@@ -94,10 +102,7 @@ Pokemon::Pokemon(
     
     setPokemonTypes(pokemonInputType1, pokemonInputType2);
     
-    pokemonMove1 = pokemonInputMove1;
-    pokemonMove2 = pokemonInputMove2;
-    pokemonMove3 = pokemonInputMove3;
-    pokemonMove4 = pokemonInputMove4;
+    setPokemonMoves(pokemonInputMove1, pokemonInputMove2, pokemonInputMove3, pokemonInputMove4);
     
     pokemonCondition = pokemonInputCondition;
     
