@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Pokemon_Class.h"
 #include "Nature.h"
-#include "Pokemon_Species/Charmander/Charmander.h"
+#include "Species.h"
 
 int main() {
     int zeroValues[6] = {};
@@ -26,8 +26,7 @@ int main() {
     // std::cout << "\nPokemon Types\n";
     // std::cout << myPokemon.pokemonType1->typeName << std::endl;
     // std::cout << myPokemon.pokemonType2->typeName << std::endl;
-
-    Charmander mySecondPokemon = Charmander("FireBoi2", "Modest", 100, 0, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", zeroValues, zeroValues);
+    Pokemon mySecondPokemon = Pokemon("FireBoi2", &(speciesMap["Charmander"]), "Modest", 100, 0, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", zeroValues, zeroValues);
     std::cout << "Object Created" << std::endl;
     std::cout << mySecondPokemon.pokemonName << std::endl;
     std::cout << mySecondPokemon.pokemonSpecies << std::endl;

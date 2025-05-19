@@ -5,10 +5,11 @@
 #include "Nature.h"
 #include "Type.h"
 #include "Move.h"
+#include "Species.h"
 
 class Pokemon {
     public:
-        std::string pokemonSpecies;
+        const Species* pokemonSpecies;
         std::string pokemonName;
 
         int pokemonLevel;
@@ -111,24 +112,23 @@ class Pokemon {
             &currentSpeed
         };
 
-        void setSpeciesStats(int speciesStats[6]);
+        void setSpeciesStats(const Species*);
         void setPokemonIndividualValues(int IndividualValues[6]);
         void setPokemonEffortValues(int EffortValues[6]);
         void setPokemonNature(std::string pokemonNatureName);
-        void setPokemonTypes(std::string pokemonInputType1, std::string pokemonInputType2);
+        void setPokemonTypes(const Species*);
         void calculatePokemonStats();
         void setPokemonMoves(std::string pokemonInputMove1, std::string pokemonInputMove2, std::string pokemonInputMove3, std::string pokemonInputMove4);
 
         
-        Pokemon(std::string pokemonInputSpecies, std::string pokemonInputName, std::string pokemonInputNature, std::string pokemonInputAbility, int speciesInputStats[6], int pokemonInputIndividualValues[6]);
+        Pokemon(std::string pokemonInputName, Species* pokemonInputSpecies, std::string pokemonInputNature, std::string pokemonInputAbility,int pokemonInputIndividualValues[6]);
         Pokemon(
-            std::string pokemonInputSpecies, std::string pokemonInputName, std::string pokemonInputNature, int pokemonInputLevel, int pokemonInputExperience, std::string pokemonInputAbility,
-            std::string pokemonInputType1, std::string pokemonInputType2,
+            std::string pokemonInputName, const Species* pokemonInputSpecies, std::string pokemonInputNature, int pokemonInputLevel, int pokemonInputExperience, std::string pokemonInputAbility,
             std::string pokemonInputMove1, std::string pokemonInputMove2, std::string pokemonInputMove3, std::string pokemonInputMove4, 
             std::string pokemonInputCondition,
-            int speciesStats[6], int pokemonInputIndividualValues[6], int pokemonInputEffortValues[6]
+            int pokemonInputIndividualValues[6], int pokemonInputEffortValues[6]
         );
-        virtual ~Pokemon() = 0;
+        ~Pokemon();
 };
 
 #endif

@@ -1,6 +1,7 @@
 #ifndef SPECIES_H
 #define SPECIES_H
 #include <string>
+#include <map>
 #include "Type.h"
 
 struct Species {
@@ -11,5 +12,6 @@ struct Species {
     std::string speciesAbilities[3];
 };
 
+extern std::map<std::string, const Species> speciesMap;
 
 #endif

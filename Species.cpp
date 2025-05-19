@@ -9,3 +9,8 @@ const Species charmander {
     "None",
     {"Blaze", "None", "Solar Power"}
 };
+
+std::map<std::string, const Species> speciesMap = {
+    {"Charmander", charmander},
+    
+};
