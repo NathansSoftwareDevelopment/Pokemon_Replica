@@ -41,13 +41,8 @@ void Pokemon::setPokemonNature(std::string pokemonInputNature) {
 }
 
 void Pokemon::setPokemonTypes(const Species* pokemonInputSpecies) {
-    for (Type& type : typeArray) {
-        if (type.typeName == pokemonInputSpecies->speciesType1) {
-            pokemonType1 = &type;
-        } else if (type.typeName == pokemonInputSpecies->speciesType2) {
-            pokemonType2 = &type;
-        }
-    }
+    pokemonType1 = &typeMap.find(pokemonInputSpecies->speciesType1)->second;
+    pokemonType2 = &typeMap.find(pokemonInputSpecies->speciesType2)->second;
 }
 
 void Pokemon::setPokemonMoves(std::string pokemonInputMove1, std::string pokemonInputMove2, std::string pokemonInputMove3, std::string pokemonInputMove4) {
