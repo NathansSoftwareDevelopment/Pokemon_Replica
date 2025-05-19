@@ -1,6 +1,7 @@
 #ifndef TYPE_H
 #define TYPE_H
 #include <string>
+#include <map>
 
 class Type {
     public:
@@ -48,6 +49,6 @@ class Type {
         Type(std::string typeInputName, float attackingInputStats[18]);
 };
 
-extern Type typeArray[18];
+extern std::map<std::string, Type> typeMap;
 
 #endif
