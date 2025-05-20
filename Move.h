@@ -2,11 +2,12 @@
 #define MOVE_H
 #include <string>
 #include <map>
+#include "Type.h"
 
 class Move {
     public:
         std::string moveName;
-        std::string moveType;
+        Type* moveType;
         std::string moveDamageCategory;
         int movePower;
         int moveAccuracy;
