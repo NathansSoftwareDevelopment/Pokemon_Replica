@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cmath>
+#include <algorithm>
+#include <iterator>
 #include "Pokemon_Class.h"
 #include "Nature.h"
 #include "Type.h"
@@ -59,6 +61,15 @@ void Pokemon::calculatePokemonStats() {
     pokemonSpecialAttack = floor(((2*speciesSpecialAttack+pokemonSpecialAttackIndividualValue+floor(pokemonSpecialAttackEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureSpecialAttack;
     pokemonSpecialDefense = floor(((2*speciesSpecialDefense+pokemonSpecialDefenseIndividualValue+floor(pokemonSpecialDefenseEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureSpecialDefense;
     pokemonSpeed = floor(((2*speciesSpeed+pokemonSpeedIndividualValue+floor(pokemonSpeedEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureSpeed;
+}
+
+void Pokemon::pokemonEvolve() {
+    int abilityIndex = std::find(pokemonSpecies->speciesAbilities, pokemonSpecies->speciesAbilities + (sizeof(pokemonSpecies->speciesAbilities) / sizeof(pokemonSpecies->speciesAbilities[0])), pokemonAbility) - pokemonSpecies->speciesAbilities;
+    pokemonSpecies = &(speciesMap[pokemonSpecies->speciesEvolution]);
+    pokemonAbility = pokemonSpecies->speciesAbilities[abilityIndex];
+    setPokemonTypes(pokemonSpecies);
+    setSpeciesStats(pokemonSpecies);
+    calculatePokemonStats();
 }
 
 Pokemon::Pokemon(std::string pokemonInputName, const Species* pokemonInputSpecies, std::string pokemonInputNature, std::string pokemonInputAbility, int pokemonInputIndividualValues[6]) {

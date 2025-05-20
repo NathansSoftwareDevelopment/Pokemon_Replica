@@ -46,6 +46,21 @@ int main() {
     for (Move** i : mySecondPokemon.pokemonMoves) {
         std::cout << (*i)->moveName << std::endl;
     };
+    mySecondPokemon.pokemonEvolve();
+    std::cout << "\nEvolved Species Stats\n";
+    for (int* i : mySecondPokemon.speciesStats) {
+        std::cout << *i << std::endl;
+    };
+    mySecondPokemon.pokemonEvolve();
+    std::cout << "\nEvolved Species Stats\n";
+    for (int* i : mySecondPokemon.speciesStats) {
+        std::cout << *i << std::endl;
+    };
+    mySecondPokemon.pokemonEvolve();
+    std::cout << "\nEvolved Species Stats\n";
+    for (int* i : mySecondPokemon.speciesStats) {
+        std::cout << *i << std::endl;
+    };
     std::cout << "\n\nEnd Main";
 
     return 0;
