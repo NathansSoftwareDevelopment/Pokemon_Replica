@@ -21,7 +21,7 @@ int main() {
     mySecondPokemon.pokemonEvolve();
     std::cout << "\nEvolved Species Stats";
     Display.SpeciesStats(mySecondPokemon);
-    Display.PokemonMoveAll(mySecondPokemon, 1);
+    Display.PokemonMovesAll(mySecondPokemon, 1);
     std::cout << "\n\nEnd Main";
 
     return 0;
