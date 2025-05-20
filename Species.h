@@ -10,6 +10,7 @@ struct Species {
     std::string speciesType1;
     std::string speciesType2;
     std::string speciesAbilities[3];
+    std::string speciesEvolution;
 };
 
 extern std::map<std::string, const Species> speciesMap;
