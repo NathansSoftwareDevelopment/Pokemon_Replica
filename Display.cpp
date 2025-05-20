@@ -22,7 +22,7 @@ void display::All(Pokemon inputPokemon, bool stackCall) {
     PokemonStats(inputPokemon, true);
     SpeciesStats(inputPokemon, true);
     PokemonType(inputPokemon, true);
-    PokemonMoves(inputPokemon, true);
+    PokemonMoveNames(inputPokemon, true);
 }
 
 void display::PokemonName(Pokemon inputPokemon, bool stackCall) {
@@ -63,10 +63,27 @@ void display::PokemonType(Pokemon inputPokemon, bool stackCall) {
     std::cout << inputPokemon.pokemonType1->typeName << std::endl;
     std::cout << inputPokemon.pokemonType2->typeName << std::endl;
 }
-void display::PokemonMoves(Pokemon inputPokemon, bool stackCall) {
+
+void display::PokemonMoveNames(Pokemon inputPokemon, bool stackCall) {
     idCounter(stackCall);
     std::cout << "\nPokemon Moves\n";
     for (Move** i : inputPokemon.pokemonMoves) {
         std::cout << (*i)->moveName << std::endl;
     }
+}
+void display::PokemonMoveAll(Pokemon inputPokemon, int moveIndex, bool stackCall) {
+    idCounter(stackCall);
+    std::cout << "\nAll Information on Move " << moveIndex << std::endl;
+    moveIndex--;
+    std::cout << "Name: " << (*inputPokemon.pokemonMoves[moveIndex])->moveName << std::endl;
+    std::cout << "Type: " << (*inputPokemon.pokemonMoves[moveIndex])->moveType << std::endl;
+    std::cout << "Damage Category: " << (*inputPokemon.pokemonMoves[moveIndex])->moveDamageCategory << std::endl;
+    std::cout << "Power: " << (*inputPokemon.pokemonMoves[moveIndex])->movePower << std::endl;
+    std::cout << "Accuracy: " << (*inputPokemon.pokemonMoves[moveIndex])->moveAccuracy << std::endl;
+    std::cout << "PP: " << (*inputPokemon.pokemonMoves[moveIndex])->movePP << std::endl;
+    for (std::pair i : (*inputPokemon.pokemonMoves[moveIndex])->moveConditionChances) {
+        std::cout << i.first << ": " << i.second << std::endl;
+    }
+    std::cout << "Flinch Chance: " << (*inputPokemon.pokemonMoves[moveIndex])->moveFlinchChance << std::endl;
+    std::cout << "Uniqueness: " << (*inputPokemon.pokemonMoves[moveIndex])->moveUniqueness << std::endl;
 }

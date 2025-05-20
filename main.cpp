@@ -6,6 +6,7 @@
 extern display Display;
 
 int main() {
+    std::cout << std::boolalpha;
     int zeroValues[6] = {};
     Pokemon myPokemon = Pokemon("FireBoi", &(speciesMap["Charmander"]), "Modest", "Blaze", zeroValues);
     Display.PokemonName(myPokemon);
@@ -20,12 +21,7 @@ int main() {
     mySecondPokemon.pokemonEvolve();
     std::cout << "\nEvolved Species Stats";
     Display.SpeciesStats(mySecondPokemon);
-    mySecondPokemon.pokemonEvolve();
-    std::cout << "\nEvolved Species Stats";
-    Display.SpeciesStats(mySecondPokemon);
-    mySecondPokemon.pokemonEvolve();
-    std::cout << "\nEvolved Species Stats";
-    Display.SpeciesStats(mySecondPokemon);
+    Display.PokemonMoveAll(mySecondPokemon, 1);
     std::cout << "\n\nEnd Main";
 
     return 0;

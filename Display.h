@@ -17,7 +17,8 @@ class display {
         void PokemonStats(Pokemon inputPokemon, bool stackCall = false);
         void SpeciesStats(Pokemon inputPokemon, bool stackCall = false);
         void PokemonType(Pokemon inputPokemon, bool stackCall = false);
-        void PokemonMoves(Pokemon inputPokemon, bool stackCall = false);
+        void PokemonMoveNames(Pokemon inputPokemon, bool stackCall = false);
+        void PokemonMoveAll(Pokemon inputPokemon, int moveIndex, bool stackCall = false);
 };
 
 #endif
