@@ -112,6 +112,23 @@ class Pokemon {
             &currentSpeed
         };
 
+        int currentAttackStage = 0;
+        int currentDefenseStage = 0;
+        int currentSpecialAttackStage = 0;
+        int currentSpecialDefenseStage = 0;
+        int currentSpeedStage = 0;
+        int currentAccuracyStage = 0;
+        int currentEvasionStage = 0;
+        int *currentStages[7] = {
+            &currentAttackStage,
+            &currentDefenseStage,
+            &currentSpecialAttackStage ,
+            &currentSpecialDefenseStage,
+            &currentSpeedStage,
+            &currentAccuracyStage,
+            &currentEvasionStage
+        };
+
         void setSpeciesStats(const Species*);
         void setPokemonIndividualValues(int IndividualValues[6]);
         void setPokemonEffortValues(int EffortValues[6]);
