@@ -67,7 +67,7 @@ void display::PokemonType(Pokemon inputPokemon, bool stackCall) {
 
 void display::PokemonMovesAll(Pokemon inputPokemon, bool stackCall) {
     idCounter(stackCall);
-    std::cout << "\nAll Information on All Moves\n";
+    std::cout << "\nAll Information on All Moves";
     for (int i = 1; i < 5; i++) {
         PokemonMoveAll(inputPokemon, i, true);
     }
@@ -84,7 +84,7 @@ void display::PokemonMoveAll(Pokemon inputPokemon, int moveIndex, bool stackCall
     std::cout << "\nAll Information on Move " << moveIndex << std::endl;
     moveIndex--;
     std::cout << "Name: " << (*inputPokemon.pokemonMoves[moveIndex])->moveName << std::endl;
-    std::cout << "Type: " << (*inputPokemon.pokemonMoves[moveIndex])->moveType << std::endl;
+    std::cout << "Type: " << (*inputPokemon.pokemonMoves[moveIndex])->moveType->typeName << std::endl;
     std::cout << "Damage Category: " << (*inputPokemon.pokemonMoves[moveIndex])->moveDamageCategory << std::endl;
     std::cout << "Power: " << (*inputPokemon.pokemonMoves[moveIndex])->movePower << std::endl;
     std::cout << "Accuracy: " << (*inputPokemon.pokemonMoves[moveIndex])->moveAccuracy << std::endl;
