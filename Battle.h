@@ -14,6 +14,7 @@ class Battle {
         void battleDamageCalculation(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove, Pokemon* defendingInputPokemon);
         Move* battleGetMove(Pokemon* attackingInputPokemon, int battleInputMove);
         void battleGetFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemon2);
+        double Battle::battleStabMultiplier(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove);
         Battle(Pokemon* inputPokemon1, Pokemon* inputPokemon2);
 };
 
