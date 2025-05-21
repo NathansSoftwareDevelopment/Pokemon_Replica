@@ -26,15 +26,13 @@ double Battle::battleEffectivenessMultiplier(Move* battleInputPokemonMove, Pokem
     return totalEffectiveness;
 }
 void Battle::battleDamageCalculation(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove, Pokemon* defendingInputPokemon) {
-    std::uniform_int_distribution<int> distribution(1, 100);
-    int randomNumber = distribution(gen);
-    if (randomNumber > battleInputPokemonMove->moveAccuracy) {
+    int randomAccuracy = std::uniform_int_distribution<int> (1, 100)(gen);
+    if (randomAccuracy > battleInputPokemonMove->moveAccuracy) {
         return;
     }
     double stab = battleStabMultiplier(attackingInputPokemon, battleInputPokemonMove);
     double effectiveness = battleEffectivenessMultiplier(battleInputPokemonMove, defendingInputPokemon);
-    std::uniform_int_distribution<int> distribution(85, 100);
-    int randomDamageMultiplier = distribution(gen)/100;
+    int randomDamageMultiplier = std::uniform_int_distribution<int> (85, 100)(gen)/100;
     double attackingCategory;
     double defendingCategory;
     if (battleInputPokemonMove->moveDamageCategory == "Physical") {
@@ -58,9 +56,8 @@ void Battle::battleGetFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemo
         battleFasterPokemon = inputPokemon2;
         battleSlowerPokemon = inputPokemon1;
     } else {
-        std::uniform_int_distribution<int> distribution(1, 2);
-        int randomNumber = distribution(gen);
-        if (randomNumber == 1) {
+        int randomPokemon = std::uniform_int_distribution<int> (1, 2)(gen);
+        if (randomPokemon == 1) {
             battleFasterPokemon = inputPokemon1;
             battleSlowerPokemon = inputPokemon2;
         } else {
