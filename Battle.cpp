@@ -33,6 +33,8 @@ void Battle::battleDamageCalculation(Pokemon* attackingInputPokemon, Move* battl
     }
     double stab = battleStabMultiplier(attackingInputPokemon, battleInputPokemonMove);
     double effectiveness = battleEffectivenessMultiplier(battleInputPokemonMove, defendingInputPokemon);
+    std::uniform_int_distribution<int> distribution(85, 100);
+    int randomDamageMultiplier = distribution(gen)/100;
     double attackingCategory;
     double defendingCategory;
     if (battleInputPokemonMove->moveDamageCategory == "Physical") {
@@ -45,7 +47,7 @@ void Battle::battleDamageCalculation(Pokemon* attackingInputPokemon, Move* battl
         std::cout << "Check Damage Category of Move: " << battleInputPokemonMove->moveName << std::endl;
     }
     int rawDamage = ((2*attackingInputPokemon->pokemonLevel/5+2)*battleInputPokemonMove->movePower*attackingCategory/defendingCategory/50+2);
-    int totalDamage = rawDamage * stab * effectiveness;
+    int totalDamage = rawDamage * stab * effectiveness * randomDamageMultiplier;
     defendingInputPokemon->currentHitPoints = std::max(defendingInputPokemon->currentHitPoints - totalDamage, 0);
 }
 void Battle::battleGetFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
