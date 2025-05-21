@@ -3,7 +3,7 @@
 #include "Move.h"
 #include "Type.h"
 
-Move::Move(std::string moveInputName, std::string moveInputType, std::string moveInputDamageCategory, int moveInputPower, int moveInputAccuracy, int moveInputPP, std::map<std::string, double> moveInputConditionChances, double moveInputFlinchChance, bool moveInputUniqueness) {
+Move::Move(std::string moveInputName, std::string moveInputType, std::string moveInputDamageCategory, int moveInputPower, int moveInputAccuracy, int moveInputPP, std::map<std::string, int> moveInputConditionChances, int moveInputFlinchChance, bool moveInputUniqueness) {
     moveName = moveInputName;
     moveType = &typeMap.find(moveInputType)->second;
     moveDamageCategory = moveInputDamageCategory;

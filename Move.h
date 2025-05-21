@@ -12,10 +12,10 @@ class Move {
         int movePower;
         int moveAccuracy;
         int movePP;
-        std::map<std::string, double> moveConditionChances;
-        double moveFlinchChance;
+        std::map<std::string, int> moveConditionChances;
+        int moveFlinchChance;
         bool moveUniqueness;
-        Move(std::string moveInputName, std::string moveInputType, std::string moveInputDamageCategory, int moveInputPower, int moveInputAccuracy, int moveInputPP, std::map<std::string, double> moveInputConditionChances, double moveFlinchChance, bool moveInputUniqueness);
+        Move(std::string moveInputName, std::string moveInputType, std::string moveInputDamageCategory, int moveInputPower, int moveInputAccuracy, int moveInputPP, std::map<std::string, int> moveInputConditionChances, int moveFlinchChance, bool moveInputUniqueness);
 };
 
 extern std::map<std::string, Move> moveMap;

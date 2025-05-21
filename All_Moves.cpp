@@ -1,7 +1,7 @@
 #include <string>
 #include <map>
 #include "Move.h"
-std::map<std::string, double> emptyMap;
+std::map<std::string, int> emptyMap;
 
 
 std::map<std::string, Move> moveMap = {
