@@ -19,6 +19,12 @@ double Battle::battleStabMultiplier(Pokemon* attackingInputPokemon, Move* battle
         return 1;
     }
 }
+double Battle::battleEffectivenessMultiplier(Move* battleInputPokemonMove, Pokemon* defendingInputPokemon) {
+    double type1Effectiveness = battleInputPokemonMove->moveType->attackingTypeMap.find(defendingInputPokemon->pokemonType1->typeName)->second;
+    double type2Effectiveness = battleInputPokemonMove->moveType->attackingTypeMap.find(defendingInputPokemon->pokemonType2->typeName)->second;
+    double totalEffectiveness = type1Effectiveness * type2Effectiveness;
+    return totalEffectiveness;
+}
 void Battle::battleDamageCalculation(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove, Pokemon* defendingInputPokemon) {
     std::uniform_int_distribution<int> distribution(1, 100);
     int randomNumber = distribution(gen);
@@ -26,7 +32,7 @@ void Battle::battleDamageCalculation(Pokemon* attackingInputPokemon, Move* battl
         return;
     }
     double stab = battleStabMultiplier(attackingInputPokemon, battleInputPokemonMove);
-    double effectiveness = battleInputPokemonMove->moveType->attackingTypeMap.find(defendingInputPokemon->pokemonType1->typeName)->second * battleInputPokemonMove->moveType->attackingTypeMap.find(defendingInputPokemon->pokemonType2->typeName)->second;
+    double effectiveness = battleEffectivenessMultiplier(battleInputPokemonMove, defendingInputPokemon);
     int rawDamage = ((2*attackingInputPokemon->pokemonLevel/5+2)*battleInputPokemonMove->movePower*attackingInputPokemon->currentAttack/defendingInputPokemon->currentDefense/50+2);
     int totalDamage = rawDamage * stab * effectiveness;
     defendingInputPokemon->currentHitPoints = std::max(defendingInputPokemon->currentHitPoints - totalDamage, 0);
