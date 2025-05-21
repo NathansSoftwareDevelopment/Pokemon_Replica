@@ -4,10 +4,29 @@
 Type::Type(std::string typeInputName, double attackingInputStats[18]) {
     typeName = typeInputName;
     int iterator = 0;
-    for (std::pair i : attackingTypeMap) {
-        i.second = &attackingInputStats[iterator];
-        iterator++;
+    for (int i = 0; i < 18; ++i) {
+        *attackingStats[i] = attackingInputStats[i];
     }
+    attackingTypeMap = {
+        {"Normal", attackingNormal},
+        {"Fire", attackingFire},
+        {"Water", attackingWater},
+        {"Electric", attackingElectric},
+        {"Grass", attackingGrass},
+        {"Ice", attackingIce},
+        {"Fighting", attackingFighting},
+        {"Poison", attackingPoison},
+        {"Ground", attackingGround},
+        {"Flying", attackingFlying},
+        {"Psychic", attackingPsychic},
+        {"Bug", attackingBug},
+        {"Rock", attackingRock},
+        {"Ghost", attackingGhost},
+        {"Dragon", attackingDragon},
+        {"Dark", attackingDark},
+        {"Steel", attackingSteel},
+        {"None", attackingNone}
+    };
 }
 
 std::map<std::string, Type> typeMap = {
