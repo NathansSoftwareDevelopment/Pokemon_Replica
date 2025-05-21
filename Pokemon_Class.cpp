@@ -72,6 +72,12 @@ void Pokemon::pokemonEvolve() {
     calculatePokemonStats();
 }
 
+void Pokemon::setPokemonCurrentStats() {
+    for (int i = 0; i < 6; i++) {
+        *currentStats[i] = *pokemonStats[i];
+    }
+}
+
 Pokemon::Pokemon(std::string pokemonInputName, const Species* pokemonInputSpecies, std::string pokemonInputNature, std::string pokemonInputAbility, int pokemonInputIndividualValues[6]) {
     pokemonName = pokemonInputName;
     pokemonSpecies = pokemonInputSpecies;
@@ -86,6 +92,7 @@ Pokemon::Pokemon(std::string pokemonInputName, const Species* pokemonInputSpecie
     int zeroEffortValues[6] = {};
     setPokemonEffortValues(zeroEffortValues);
     calculatePokemonStats();
+    setPokemonCurrentStats();
 }
 
 Pokemon::Pokemon(
@@ -111,6 +118,7 @@ Pokemon::Pokemon(
     setPokemonIndividualValues(pokemonInputIndividualValues);
     setPokemonEffortValues(pokemonInputEffortValues);
     calculatePokemonStats();
+    setPokemonCurrentStats();
 }
 
 Pokemon::~Pokemon() {
