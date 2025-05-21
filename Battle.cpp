@@ -13,7 +13,7 @@ Move* Battle::battleGetMove(Pokemon* attackingInputPokemon, int battleInputMove)
     return *(attackingInputPokemon->pokemonMoves[battleInputMove-1]);
 }
 double Battle::battleStabMultiplier(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove) {
-    if (battleInputPokemonMove->moveType == attackingInputPokemon->pokemonType1 || battleInputPokemonMove->moveType == attackingInputPokemon->pokemonType2) {
+    if ((battleInputPokemonMove->moveType == attackingInputPokemon->pokemonType1 || battleInputPokemonMove->moveType == attackingInputPokemon->pokemonType2) && battleInputPokemonMove->moveType->typeName != "None") {
         return 1.5;
     } else {
         return 1;
