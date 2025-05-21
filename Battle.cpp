@@ -32,7 +32,7 @@ void Battle::battleDamageCalculation(Pokemon* attackingInputPokemon, Move* battl
     }
     double stab = battleStabMultiplier(attackingInputPokemon, battleInputPokemonMove);
     double effectiveness = battleEffectivenessMultiplier(battleInputPokemonMove, defendingInputPokemon);
-    int randomDamageMultiplier = std::uniform_int_distribution<int> (85, 100)(gen)/100;
+    double randomDamageMultiplier = std::uniform_int_distribution<int> (85, 100)(gen)/100.0;
     double attackingCategory;
     double defendingCategory;
     if (battleInputPokemonMove->moveDamageCategory == "Physical") {
@@ -47,6 +47,11 @@ void Battle::battleDamageCalculation(Pokemon* attackingInputPokemon, Move* battl
     int rawDamage = ((2*attackingInputPokemon->pokemonLevel/5+2)*battleInputPokemonMove->movePower*attackingCategory/defendingCategory/50+2);
     int totalDamage = rawDamage * stab * effectiveness * randomDamageMultiplier;
     defendingInputPokemon->currentHitPoints = std::max(defendingInputPokemon->currentHitPoints - totalDamage, 0);
+    // std::cout << "Raw Damage: " << rawDamage << std::endl;
+    // std::cout << "Stab: " << stab << std::endl;
+    // std::cout << "Effectiveness: " << effectiveness << std::endl;
+    // std::cout << "Random: " << randomDamageMultiplier << std::endl;
+    std::cout << attackingInputPokemon->pokemonName << " Dealt: " << totalDamage << " Damage" << std::endl;
 }
 void Battle::battleGetFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
     if (inputPokemon1->currentSpeed > inputPokemon2->currentSpeed) {
@@ -88,12 +93,14 @@ Battle::Battle(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
         if (battleFasterPokemonMove->moveDamageCategory != "Status") {
             battleDamageCalculation(battleFasterPokemon, battleFasterPokemonMove, battleSlowerPokemon);
         }
+        std::cout << battleSlowerPokemon->currentHitPoints << std::endl;
         if (battleSlowerPokemon->currentHitPoints > 0) {
             if (battleSlowerPokemonMove->moveDamageCategory != "Status") {
                 std::cout << battleSlowerPokemon->pokemonName << " Used " << battleSlowerPokemonMove->moveName << std::endl;
                 battleDamageCalculation(battleSlowerPokemon, battleSlowerPokemonMove, battleFasterPokemon);
             }
         }
+        std::cout << battleFasterPokemon->currentHitPoints << std::endl;
     }
     std::cout << "Battle Over" << std::endl;
     std::cout << inputPokemon1->currentHitPoints << std::endl;
