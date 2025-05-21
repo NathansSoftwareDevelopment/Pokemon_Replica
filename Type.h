@@ -7,46 +7,46 @@ class Type {
     public:
         std::string typeName;
 
-        float attackingNormal;
-        float attackingFire;
-        float attackingWater;
-        float attackingElectric;
-        float attackingGrass;
-        float attackingIce;
-        float attackingFighting;
-        float attackingPoison;
-        float attackingGround;
-        float attackingFlying;
-        float attackingPsychic;
-        float attackingBug;
-        float attackingRock;
-        float attackingGhost;
-        float attackingDragon;
-        float attackingDark;
-        float attackingSteel;
-        float attackingNone;
-        float* attackingStats[18] = {
-            &attackingNormal,
-            &attackingFire,
-            &attackingWater,
-            &attackingElectric,
-            &attackingGrass,
-            &attackingIce,
-            &attackingFighting,
-            &attackingPoison,
-            &attackingGround,
-            &attackingFlying,
-            &attackingPsychic,
-            &attackingBug,
-            &attackingRock,
-            &attackingGhost,
-            &attackingDragon,
-            &attackingDark,
-            &attackingSteel,
-            &attackingNone
+        double attackingNormal;
+        double attackingFire;
+        double attackingWater;
+        double attackingElectric;
+        double attackingGrass;
+        double attackingIce;
+        double attackingFighting;
+        double attackingPoison;
+        double attackingGround;
+        double attackingFlying;
+        double attackingPsychic;
+        double attackingBug;
+        double attackingRock;
+        double attackingGhost;
+        double attackingDragon;
+        double attackingDark;
+        double attackingSteel;
+        double attackingNone;
+        std::map<std::string, double*> attackingTypeMap = {
+            {"Normal", &attackingNormal},
+            {"Fire", &attackingFire},
+            {"Water", &attackingWater},
+            {"Electric", &attackingElectric},
+            {"Grass", &attackingGrass},
+            {"Ice", &attackingIce},
+            {"Fighting", &attackingFighting},
+            {"Poison", &attackingPoison},
+            {"Ground", &attackingGround},
+            {"Flying", &attackingFlying},
+            {"Psychic", &attackingPsychic},
+            {"Bug", &attackingBug},
+            {"Rock", &attackingRock},
+            {"Ghost", &attackingGhost},
+            {"Dragon", &attackingDragon},
+            {"Dark", &attackingDark},
+            {"Steel", &attackingSteel},
+            {"None", &attackingNone}
         };
 
-        Type(std::string typeInputName, float attackingInputStats[18]);
+        Type(std::string typeInputName, double attackingInputStats[18]);
 };
 
 extern std::map<std::string, Type> typeMap;
