@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 #include "Display.h"
-
+using std::cout;
+using std::endl;
 
 display Display;
 
@@ -9,7 +10,7 @@ int display::displayID = 1;
 
 void display::idCounter(bool stackCall) {
     if (!stackCall) {
-        std::cout << "\nDisplay ID: " << displayID;
+        cout << "\nDisplay ID: " << displayID;
         displayID++;
     }
 }
@@ -27,85 +28,85 @@ void display::All(Pokemon inputPokemon, bool stackCall) {
 
 void display::PokemonName(Pokemon inputPokemon, bool stackCall) {
     idCounter(stackCall);
-    std::cout << "\nPokemon Name\n";
-    std::cout << inputPokemon.pokemonName << std::endl;
+    cout << "\nPokemon Name\n";
+    cout << inputPokemon.pokemonName << endl;
 }
 void display::PokemonSpecies(Pokemon inputPokemon, bool stackCall) {
     idCounter(stackCall);
-    std::cout << "\nSpecies Name\n";
-    std::cout << inputPokemon.pokemonSpecies->speciesName << std::endl;
+    cout << "\nSpecies Name\n";
+    cout << inputPokemon.pokemonSpecies->speciesName << endl;
 }
 void display::Nature(Pokemon inputPokemon, bool stackCall) {
     idCounter(stackCall);
-    std::cout << "\nPokemon Nature\n";
-    std::cout << inputPokemon.pokemonNature->natureName << std::endl;
+    cout << "\nPokemon Nature\n";
+    cout << inputPokemon.pokemonNature->natureName << endl;
     for (float* i : inputPokemon.pokemonNature->natureStats) {
-        std::cout << *i << std::endl;
+        cout << *i << endl;
     }
 }
 void display::PokemonStats(Pokemon inputPokemon, bool stackCall) {
     idCounter(stackCall);
-    std::cout << "\nPokemon Stats\n";
+    cout << "\nPokemon Stats\n";
     for (int* i : inputPokemon.pokemonStats) {
-        std::cout << *i << std::endl;
+        cout << *i << endl;
     }
 }
 void display::SpeciesStats(Pokemon inputPokemon, bool stackCall) {
     idCounter(stackCall);
-    std::cout << "\nSpecies Stats\n";
+    cout << "\nSpecies Stats\n";
     for (int* i: inputPokemon.speciesStats) {
-        std::cout << *i << std::endl;
+        cout << *i << endl;
     }
 }
 void display::PokemonType(Pokemon inputPokemon, bool stackCall) {
     idCounter(stackCall);
-    std::cout << "\nPokemon Types\n";
-    std::cout << inputPokemon.pokemonType1->typeName << std::endl;
-    std::cout << inputPokemon.pokemonType2->typeName << std::endl;
+    cout << "\nPokemon Types\n";
+    cout << inputPokemon.pokemonType1->typeName << endl;
+    cout << inputPokemon.pokemonType2->typeName << endl;
 }
 
 
 void display::PokemonMovesAll(Pokemon inputPokemon, bool stackCall) {
     idCounter(stackCall);
-    std::cout << "\nAll Information on All Moves";
+    cout << "\nAll Information on All Moves";
     for (int i = 1; i < 5; i++) {
         PokemonMoveAll(inputPokemon, i, true);
     }
 }
 void display::PokemonMoveNames(Pokemon inputPokemon, bool stackCall) {
     idCounter(stackCall);
-    std::cout << "\nPokemon Moves";
+    cout << "\nPokemon Moves";
     for (Move** i : inputPokemon.pokemonMoves) {
-        std::cout << (*i)->moveName << std::endl;
+        cout << (*i)->moveName << endl;
     }
 }
 void display::PokemonMoveAll(Pokemon inputPokemon, int moveIndex, bool stackCall) {
     idCounter(stackCall);
-    std::cout << "\nAll Information on Move " << moveIndex << std::endl;
+    cout << "\nAll Information on Move " << moveIndex << endl;
     moveIndex--;
-    std::cout << "Name: " << (*inputPokemon.pokemonMoves[moveIndex])->moveName << std::endl;
-    std::cout << "Type: " << (*inputPokemon.pokemonMoves[moveIndex])->moveType->typeName << std::endl;
-    std::cout << "Damage Category: " << (*inputPokemon.pokemonMoves[moveIndex])->moveDamageCategory << std::endl;
-    std::cout << "Power: " << (*inputPokemon.pokemonMoves[moveIndex])->movePower << std::endl;
-    std::cout << "Accuracy: " << (*inputPokemon.pokemonMoves[moveIndex])->moveAccuracy << std::endl;
-    std::cout << "PP: " << (*inputPokemon.pokemonMoves[moveIndex])->movePP << std::endl;
-    std::cout << "Flinch Chance: " << (*inputPokemon.pokemonMoves[moveIndex])->moveFlinchChance << std::endl;
+    cout << "Name: " << (*inputPokemon.pokemonMoves[moveIndex])->moveName << endl;
+    cout << "Type: " << (*inputPokemon.pokemonMoves[moveIndex])->moveType->typeName << endl;
+    cout << "Damage Category: " << (*inputPokemon.pokemonMoves[moveIndex])->moveDamageCategory << endl;
+    cout << "Power: " << (*inputPokemon.pokemonMoves[moveIndex])->movePower << endl;
+    cout << "Accuracy: " << (*inputPokemon.pokemonMoves[moveIndex])->moveAccuracy << endl;
+    cout << "PP: " << (*inputPokemon.pokemonMoves[moveIndex])->movePP << endl;
+    cout << "Flinch Chance: " << (*inputPokemon.pokemonMoves[moveIndex])->moveFlinchChance << endl;
     if (!(*inputPokemon.pokemonMoves[moveIndex])->moveConditionChances.empty()) {
         for (std::pair i : (*inputPokemon.pokemonMoves[moveIndex])->moveConditionChances) {
-            std::cout << i.first << " Chance: " << i.second << std::endl;
+            cout << i.first << " Chance: " << i.second << endl;
         }
     }
     if (!(*inputPokemon.pokemonMoves[moveIndex])->moveUserStageChances.empty()) {
-        std::cout << "\nStat Changes to Self" << std::endl;
+        cout << "\nStat Changes to Self" << endl;
         for (std::pair i : (*inputPokemon.pokemonMoves[moveIndex])->moveUserStageChances) {
-            std::cout << i.first << ": " << i.second.back() << "% Chance of " << i.second.front() << std::endl;
+            cout << i.first << ": " << i.second.back() << "% Chance of " << i.second.front() << endl;
         }
     }
     if (!(*inputPokemon.pokemonMoves[moveIndex])->moveOpponentStageChances.empty()) {
-        std::cout << "\nStat Changes to Opponent" << std::endl;
+        cout << "\nStat Changes to Opponent" << endl;
         for (std::pair i : (*inputPokemon.pokemonMoves[moveIndex])->moveOpponentStageChances) {
-            std::cout << i.first << ": " << i.second.back() << "% Chance of " << i.second.front() << std::endl;
+            cout << i.first << ": " << i.second.back() << "% Chance of " << i.second.front() << endl;
         }
     }
-    std::cout << "\nUniqueness: " << (*inputPokemon.pokemonMoves[moveIndex])->moveUniqueness << std::endl;
+    cout << "\nUniqueness: " << (*inputPokemon.pokemonMoves[moveIndex])->moveUniqueness << endl;
 }
