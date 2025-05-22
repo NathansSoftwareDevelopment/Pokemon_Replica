@@ -29,10 +29,6 @@ double Battle::battleEffectivenessMultiplier(Move* battleInputPokemonMove, Pokem
 }
 
 void Battle::battleDamageCalculation(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove, Pokemon* defendingInputPokemon) {
-    int randomAccuracy = std::uniform_int_distribution<int> (1, 100)(gen);
-    if (randomAccuracy > battleInputPokemonMove->moveAccuracy) {
-        return;
-    }
     double stab = battleStabMultiplier(attackingInputPokemon, battleInputPokemonMove);
     double effectiveness = battleEffectivenessMultiplier(battleInputPokemonMove, defendingInputPokemon);
     double randomDamageMultiplier = std::uniform_int_distribution<int> (85, 100)(gen)/100.0;
@@ -78,8 +74,28 @@ void Battle::battleGetFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemo
 
 void Battle::battleUseMove(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove, Pokemon* defendingInputPokemon) {
     std::cout << attackingInputPokemon->pokemonName << " Used " << battleInputPokemonMove->moveName << std::endl;
+    if (!battleHitCheck(attackingInputPokemon, battleInputPokemonMove, defendingInputPokemon)) {
+        return;
+    }
     if (battleInputPokemonMove->moveDamageCategory != "Status") {
         battleDamageCalculation(attackingInputPokemon, battleInputPokemonMove, defendingInputPokemon);
+    }
+}
+
+bool Battle::battleHitCheck(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove, Pokemon* defendingInputPokemon) {
+    int hitStage = std::clamp(attackingInputPokemon->currentAccuracyStage - defendingInputPokemon->currentEvasionStage, -6, 6);
+    double stageMultiplier;
+    if (hitStage >= 0) {
+        stageMultiplier = (hitStage+3)/3.0;
+    } else if (hitStage < 0) {
+        stageMultiplier = 3.0/(std::abs(hitStage)+3);
+    }
+    int finalAccuracy = battleInputPokemonMove->moveAccuracy * stageMultiplier;
+    int randomAccuracy = std::uniform_int_distribution<int> (1, 100)(gen);
+    if (randomAccuracy > finalAccuracy) {
+        return false;
+    } else {
+        return true;
     }
 }
 
