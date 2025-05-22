@@ -103,17 +103,13 @@ class Pokemon {
         int currentSpecialAttack;
         int currentSpecialDefense;
         int currentSpeed;
-        int currentAccuracy = 1;
-        int currentEvasion = 1;
-        int* currentStats[8] = {
+        int* currentStats[6] = {
             &currentHitPoints,
             &currentAttack,
             &currentDefense,
             &currentSpecialAttack,
             &currentSpecialDefense,
             &currentSpeed,
-            &currentAccuracy,
-            &currentEvasion
         };
 
         int currentAttackStage = 0;

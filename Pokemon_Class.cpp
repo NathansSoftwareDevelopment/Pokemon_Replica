@@ -88,18 +88,6 @@ void Pokemon::calculateStageChanges() {
         }
         *currentStats[i] = *pokemonStats[i] * stageMultiplier;
     }
-    if (currentAccuracyStage >= 0) {
-        stageMultiplier = (currentAccuracyStage+3)/3.0;
-    } else if (currentAccuracyStage < 0) {
-        stageMultiplier = 3.0/(std::abs(currentAccuracyStage)+3);
-    }
-    currentAccuracy = 1 * stageMultiplier;
-    if (currentEvasionStage < 0) {
-        stageMultiplier = (currentEvasionStage+3)/3.0;
-    } else if (currentEvasionStage >= 0) {
-        stageMultiplier = 3.0/(std::abs(currentEvasionStage)+3);
-    }
-    currentEvasion = 1 * stageMultiplier;        
 }
 
 Pokemon::Pokemon(std::string pokemonInputName, const Species* pokemonInputSpecies, std::string pokemonInputNature, std::string pokemonInputAbility, int pokemonInputIndividualValues[6]) {
