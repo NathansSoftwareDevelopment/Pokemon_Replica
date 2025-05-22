@@ -16,6 +16,7 @@ class Battle {
         void battleGetFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemon2);
         double battleStabMultiplier(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove);
         double battleEffectivenessMultiplier(Move* battleInputPokemonMove, Pokemon* defendingInputPokemon);
+        void battleUseMove(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove, Pokemon* defendingInputPokemon);
         Battle(Pokemon* inputPokemon1, Pokemon* inputPokemon2);
 };
 

@@ -12,6 +12,7 @@ std::mt19937 gen(rd());
 Move* Battle::battleGetMove(Pokemon* attackingInputPokemon, int battleInputMove) {
     return *(attackingInputPokemon->pokemonMoves[battleInputMove-1]);
 }
+
 double Battle::battleStabMultiplier(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove) {
     if ((battleInputPokemonMove->moveType == attackingInputPokemon->pokemonType1 || battleInputPokemonMove->moveType == attackingInputPokemon->pokemonType2) && battleInputPokemonMove->moveType->typeName != "None") {
         return 1.5;
@@ -19,12 +20,14 @@ double Battle::battleStabMultiplier(Pokemon* attackingInputPokemon, Move* battle
         return 1;
     }
 }
+
 double Battle::battleEffectivenessMultiplier(Move* battleInputPokemonMove, Pokemon* defendingInputPokemon) {
     double type1Effectiveness = battleInputPokemonMove->moveType->attackingTypeMap.find(defendingInputPokemon->pokemonType1->typeName)->second;
     double type2Effectiveness = battleInputPokemonMove->moveType->attackingTypeMap.find(defendingInputPokemon->pokemonType2->typeName)->second;
     double totalEffectiveness = type1Effectiveness * type2Effectiveness;
     return totalEffectiveness;
 }
+
 void Battle::battleDamageCalculation(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove, Pokemon* defendingInputPokemon) {
     int randomAccuracy = std::uniform_int_distribution<int> (1, 100)(gen);
     if (randomAccuracy > battleInputPokemonMove->moveAccuracy) {
@@ -53,6 +56,7 @@ void Battle::battleDamageCalculation(Pokemon* attackingInputPokemon, Move* battl
     // std::cout << "Random: " << randomDamageMultiplier << std::endl;
     std::cout << attackingInputPokemon->pokemonName << " Dealt: " << totalDamage << " Damage" << std::endl;
 }
+
 void Battle::battleGetFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
     if (inputPokemon1->currentSpeed > inputPokemon2->currentSpeed) {
         battleFasterPokemon = inputPokemon1;
@@ -71,6 +75,14 @@ void Battle::battleGetFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemo
         }
     }
 }
+
+void Battle::battleUseMove(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove, Pokemon* defendingInputPokemon) {
+    std::cout << attackingInputPokemon->pokemonName << " Used " << battleInputPokemonMove->moveName << std::endl;
+    if (battleInputPokemonMove->moveDamageCategory != "Status") {
+        battleDamageCalculation(attackingInputPokemon, battleInputPokemonMove, defendingInputPokemon);
+    }
+}
+
 Battle::Battle(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
     std::cout << "\n\n\n";
     battleTurn = 0;
@@ -89,16 +101,10 @@ Battle::Battle(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
         std::cin >> moveSlot;
         std::cout << std::endl;
         Move* battleSlowerPokemonMove = battleGetMove(battleSlowerPokemon, moveSlot);
-        std::cout << battleFasterPokemon->pokemonName << " Used " << battleFasterPokemonMove->moveName << std::endl;
-        if (battleFasterPokemonMove->moveDamageCategory != "Status") {
-            battleDamageCalculation(battleFasterPokemon, battleFasterPokemonMove, battleSlowerPokemon);
-        }
+        battleUseMove(battleFasterPokemon, battleFasterPokemonMove, battleSlowerPokemon);
         std::cout << battleSlowerPokemon->currentHitPoints << std::endl;
         if (battleSlowerPokemon->currentHitPoints > 0) {
-            if (battleSlowerPokemonMove->moveDamageCategory != "Status") {
-                std::cout << battleSlowerPokemon->pokemonName << " Used " << battleSlowerPokemonMove->moveName << std::endl;
-                battleDamageCalculation(battleSlowerPokemon, battleSlowerPokemonMove, battleFasterPokemon);
-            }
+            battleUseMove(battleSlowerPokemon, battleSlowerPokemonMove, battleFasterPokemon);
         }
         std::cout << battleFasterPokemon->currentHitPoints << std::endl;
     }
