@@ -23,9 +23,8 @@ int main() {
     mySecondPokemon.pokemonEvolve();
     std::cout << "\nEvolved Species Stats";
     Display.SpeciesStats(mySecondPokemon);
-    Display.PokemonMovesAll(mySecondPokemon, 1);
+    Display.PokemonMovesAll(mySecondPokemon);
     Battle(&mySecondPokemon, &myThirdPokemon);
     std::cout << "\n\nEnd Main";
-
     return 0;
 }

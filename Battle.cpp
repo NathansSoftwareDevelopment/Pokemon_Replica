@@ -75,6 +75,7 @@ void Battle::battleGetFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemo
 void Battle::battleUseMove(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove, Pokemon* defendingInputPokemon) {
     std::cout << attackingInputPokemon->pokemonName << " Used " << battleInputPokemonMove->moveName << std::endl;
     if (!battleHitCheck(attackingInputPokemon, battleInputPokemonMove, defendingInputPokemon)) {
+        std::cout << attackingInputPokemon->pokemonName << " Missed!" << std::endl;
         return;
     }
     if (battleInputPokemonMove->moveDamageCategory != "Status") {
@@ -105,12 +106,11 @@ Battle::Battle(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
     while (inputPokemon1->currentHitPoints > 0 && inputPokemon2->currentHitPoints > 0) {
         battleTurn++;
         battleGetFasterPokemon(inputPokemon1, inputPokemon2);
-        std::cout << "Turn " << battleTurn << std::endl;
+        std::cout << "\n\nTurn " << battleTurn << std::endl;
         std::cout << "First: " << battleFasterPokemon->pokemonName << std::endl;
         int moveSlot;
         std::cout << "What Move Slot to Use? ";
         std::cin >> moveSlot;
-        std::cout << std::endl;
         Move* battleFasterPokemonMove = battleGetMove(battleFasterPokemon, moveSlot);
         std::cout << "Second: " << battleSlowerPokemon->pokemonName << std::endl;
         std::cout << "What Move Slot to Use? ";
