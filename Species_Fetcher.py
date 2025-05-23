@@ -12,7 +12,7 @@ def main():
     lastPokemonID = 649 
 
     # getPokemonInfo(1)
-    printData(parsePokeInfo(getPokemonInfo("Kirlia")))
+    # printData(parsePokeInfo(getPokemonInfo("Kirlia")))
     # for i in range (35, 36):
     #     printData(parsePokeInfo(getPokemonInfo(i)))
     # addToFinal(getPokemonInfo(1))
@@ -52,6 +52,8 @@ def getTypes(rawData):
             tempTypes[1] = i["types"][0]["type"]["name"]
             if len(i["types"]) > 1:
                 tempTypes[2] = i["types"][1]["type"]["name"]
+            else:
+                tempTypes[2] = "None"
     return tempTypes
 
 def printData(inputDictionary):

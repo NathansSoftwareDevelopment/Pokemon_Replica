@@ -725,7 +725,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "none"
+            "2": "None"
         },
         "abilities": {
             "1": "cute-charm",
@@ -746,7 +746,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "none"
+            "2": "None"
         },
         "abilities": {
             "1": "cute-charm",
@@ -809,7 +809,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "fairy"
+            "2": "None"
         },
         "abilities": {
             "1": "cute-charm",
@@ -830,7 +830,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "fairy"
+            "2": "None"
         },
         "abilities": {
             "1": "cute-charm",
@@ -921,7 +921,7 @@
             "3": "stench",
             "2": "None"
         },
-        "evolve": "vileplume"
+        "evolve": "special"
     },
     "vileplume": {
         "name": "vileplume",
@@ -1089,7 +1089,7 @@
             "2": "technician",
             "3": "unnerve"
         },
-        "evolve": "persian"
+        "evolve": "special"
     },
     "persian": {
         "name": "persian",
@@ -1278,7 +1278,7 @@
             "2": "damp",
             "3": "swift-swim"
         },
-        "evolve": "poliwrath"
+        "evolve": "special"
     },
     "poliwrath": {
         "name": "poliwrath",
@@ -1656,7 +1656,7 @@
             "2": "own-tempo",
             "3": "regenerator"
         },
-        "evolve": "slowbro"
+        "evolve": "special"
     },
     "slowbro": {
         "name": "slowbro",
@@ -2552,7 +2552,7 @@
         },
         "types": {
             "1": "psychic",
-            "2": "fairy"
+            "2": "None"
         },
         "abilities": {
             "1": "soundproof",
@@ -2580,7 +2580,7 @@
             "2": "technician",
             "3": "steadfast"
         },
-        "evolve": "scizor"
+        "evolve": "special"
     },
     "jynx": {
         "name": "jynx",
@@ -2790,7 +2790,7 @@
             "2": "adaptability",
             "3": "anticipation"
         },
-        "evolve": "vaporeon"
+        "evolve": "special"
     },
     "vaporeon": {
         "name": "vaporeon",
@@ -3623,7 +3623,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "none"
+            "2": "None"
         },
         "abilities": {
             "1": "cute-charm",
@@ -3644,7 +3644,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "fairy"
+            "2": "None"
         },
         "abilities": {
             "1": "cute-charm",
@@ -3665,7 +3665,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "none"
+            "2": "None"
         },
         "abilities": {
             "1": "hustle",
@@ -3833,7 +3833,7 @@
         },
         "types": {
             "1": "water",
-            "2": "fairy"
+            "2": "None"
         },
         "abilities": {
             "1": "thick-fat",
@@ -3854,7 +3854,7 @@
         },
         "types": {
             "1": "water",
-            "2": "fairy"
+            "2": "None"
         },
         "abilities": {
             "1": "thick-fat",
@@ -4071,7 +4071,7 @@
             "2": "water-absorb",
             "3": "unaware"
         },
-        "evolve": "quagsire"
+        "evolve": "special"
     },
     "quagsire": {
         "name": "quagsire",
@@ -4379,7 +4379,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "none"
+            "2": "None"
         },
         "abilities": {
             "1": "intimidate",
@@ -4400,7 +4400,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "none"
+            "2": "None"
         },
         "abilities": {
             "1": "intimidate",
@@ -4512,7 +4512,7 @@
             "2": "keen-eye",
             "3": "pickpocket"
         },
-        "evolve": "weavile"
+        "evolve": "special"
     },
     "teddiursa": {
         "name": "teddiursa",
@@ -4953,7 +4953,7 @@
             "2": "steadfast",
             "3": "vital-spirit"
         },
-        "evolve": "hitmonlee"
+        "evolve": "special"
     },
     "hitmontop": {
         "name": "hitmontop",
@@ -5562,7 +5562,7 @@
             "3": "run-away",
             "2": "None"
         },
-        "evolve": "silcoon"
+        "evolve": "special"
     },
     "silcoon": {
         "name": "silcoon",
@@ -5870,7 +5870,7 @@
         },
         "types": {
             "1": "psychic",
-            "2": "fairy"
+            "2": "None"
         },
         "abilities": {
             "1": "synchronize",
@@ -5891,14 +5891,14 @@
         },
         "types": {
             "1": "psychic",
-            "2": "fairy"
+            "2": "None"
         },
         "abilities": {
             "1": "synchronize",
             "2": "trace",
             "3": "telepathy"
         },
-        "evolve": "gardevoir"
+        "evolve": "special"
     },
     "gardevoir": {
         "name": "gardevoir",
@@ -5912,7 +5912,7 @@
         },
         "types": {
             "1": "psychic",
-            "2": "fairy"
+            "2": "None"
         },
         "abilities": {
             "1": "synchronize",
@@ -6087,7 +6087,7 @@
             "3": "run-away",
             "2": "None"
         },
-        "evolve": "ninjask"
+        "evolve": "special"
     },
     "ninjask": {
         "name": "ninjask",
@@ -6248,7 +6248,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "fairy"
+            "2": "None"
         },
         "abilities": {
             "1": "thick-fat",
@@ -6353,7 +6353,7 @@
         },
         "types": {
             "1": "steel",
-            "2": "fairy"
+            "2": "None"
         },
         "abilities": {
             "1": "hyper-cutter",
@@ -7578,7 +7578,7 @@
             "2": "ice-body",
             "3": "moody"
         },
-        "evolve": "glalie"
+        "evolve": "special"
     },
     "glalie": {
         "name": "glalie",
@@ -7683,7 +7683,7 @@
             "3": "rattled",
             "2": "None"
         },
-        "evolve": "huntail"
+        "evolve": "special"
     },
     "huntail": {
         "name": "huntail",
@@ -8649,7 +8649,7 @@
             "3": "overcoat",
             "2": "None"
         },
-        "evolve": "wormadam"
+        "evolve": "special"
     },
     "wormadam-plant": {
         "name": "wormadam-plant",
@@ -9209,7 +9209,7 @@
         },
         "types": {
             "1": "psychic",
-            "2": "fairy"
+            "2": "None"
         },
         "abilities": {
             "1": "soundproof",
@@ -11456,7 +11456,7 @@
         },
         "types": {
             "1": "grass",
-            "2": "fairy"
+            "2": "None"
         },
         "abilities": {
             "1": "prankster",
@@ -11477,7 +11477,7 @@
         },
         "types": {
             "1": "grass",
-            "2": "fairy"
+            "2": "None"
         },
         "abilities": {
             "1": "prankster",
@@ -11799,7 +11799,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "cofagrigus"
+        "evolve": "special"
     },
     "cofagrigus": {
         "name": "cofagrigus",
