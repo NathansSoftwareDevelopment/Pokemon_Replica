@@ -11,29 +11,27 @@ def main():
     firstPokemonID = 1
     lastPokemonID = 649 
 
-    # getPokemonInfo(1)
-    # printData(parsePokeInfo(getPokemonInfo("Kirlia")))
+    printData(parsePokeInfo(getPokemonInfo("Kirlia")))
     # for i in range (35, 36):
     #     printData(parsePokeInfo(getPokemonInfo(i)))
-    # addToFinal(getPokemonInfo(1))
-    for i in range(firstPokemonID, lastPokemonID+1):
-        rawData = getPokemonInfo(i)
-        pokeData = parsePokeInfo(rawData)
-        addToFinal(pokeData)
-    Write(outputDictionary, "Pokemon_Species.json")
+    # for i in range(firstPokemonID, lastPokemonID+1):
+    #     rawData = getPokemonInfo(i)
+    #     pokeData = parsePokeInfo(rawData)
+    #     addToFinal(pokeData)
+    # Write(outputDictionary, "Pokemon_Species.json")
 
 
 def getPokemonInfo(ID):
-    pokeURL = f"{baseURL}/pokemon/{ID}"
-    rawPokeInfo = requests.get(pokeURL)
-    if rawPokeInfo.status_code == 200:
-        rawPokemonJSON = rawPokeInfo.json()
-        # for i in rawPokemonJSON["abilities"]:
-        #     ic(i)
-        ic(rawPokemonJSON["species"])
-        return rawPokemonJSON
+    pokemonURL = f"{baseURL}/pokemon/{ID}"
+    speciesURL = f"{baseURL}/pokemon-species/{ID}"
+    rawPokemonInfo = requests.get(pokemonURL)
+    rawSpeciesInfo = requests.get(speciesURL)
+    if rawPokemonInfo.status_code == 200 & rawSpeciesInfo.status_code == 200:
+        rawPokemonInfo = rawPokemonInfo.json()
+        rawSpeciesInfo = rawSpeciesInfo.json()
+        return [rawPokemonInfo, rawSpeciesInfo]
     else:
-        print(f"FAILED TO RETRIEVE {ID}: {rawPokeInfo.status_code}")
+        print(f"FAILED TO RETRIEVE {ID}: {rawPokemonInfo.status_code} | {rawSpeciesInfo.status_code}")
 
 def getTypes(rawData):
     ic(rawData["past_types"])
@@ -60,21 +58,23 @@ def printData(inputDictionary):
     ic(inputDictionary)
 
 def parsePokeInfo(rawData):
+    rawPokemonData = rawData[0]
+    rawSpeciesData = rawData[1]
     pokeData = {}
 
-    pokeData["name"] = rawData["name"]
+    pokeData["name"] = rawPokemonData["name"]
 
     tempStats = {}
     for i in range (6):
-        tempStats[rawData["stats"][i]["stat"]["name"]] = rawData["stats"][i]["base_stat"]
+        tempStats[rawPokemonData["stats"][i]["stat"]["name"]] = rawPokemonData["stats"][i]["base_stat"]
     pokeData["stats"] = tempStats
 
-    pokeData["types"] = getTypes(rawData)
+    pokeData["types"] = getTypes(rawPokemonData)
     # ic(rawData["past_types"])
 
     # populate tempAbilities with abilities slots and types
     tempAbilities = {}
-    for i in rawData["abilities"]:
+    for i in rawPokemonData["abilities"]:
         tempAbilities[i["slot"]] = i["ability"]["name"]
     # if ability slots 1 or 2 are missing replace with "None"
     tempAbilities[2] = tempAbilities.get(2, "None")
@@ -83,7 +83,7 @@ def parsePokeInfo(rawData):
     pokeData["abilities"] = tempAbilities
 
     # get the species of pokemon, get the evolution chain of that species, then access "chain" key
-    evolutionChain = requests.get(requests.get(rawData["species"]["url"]).json()["evolution_chain"]["url"]).json()["chain"]
+    evolutionChain = requests.get(rawSpeciesData["evolution_chain"]["url"]).json()["chain"]
     try:
         # if first pokemon name == name of pokemon | evolve = second pokemon
         if evolutionChain["species"]["name"] == pokeData["name"]:
