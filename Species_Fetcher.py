@@ -11,12 +11,12 @@ def main():
     firstPokemonID = 1
     lastPokemonID = 649 
 
-    # printFinalData(parsePokeInfo(getPokemonInfo("Kirlia")))
+    # printFinalData(parsePokeInfo(getPokemonInfo("lillipup")))
     for i in range(firstPokemonID, lastPokemonID+1):
         rawData = getPokemonInfo(i)
         pokeData = parsePokeInfo(rawData)
         addToFinal(pokeData)
-    # Write(outputDictionary, "Pokemon_Species.json")
+    Write(outputDictionary, "Pokemon_Species.json")
 
 
 def getPokemonInfo(ID):
@@ -34,23 +34,48 @@ def getPokemonInfo(ID):
 
 def getTypes(rawData):
     tempTypes = {}
+    
     # set types to current types
     tempTypes[1] = rawData["types"][0]["type"]["name"]
-    if len(rawData["types"]) > 1:
-        tempTypes[2] = rawData["types"][1]["type"]["name"]
-    else:
-        tempTypes[2] = "none"
+    tempTypes[2] = rawData["types"][1]["type"]["name"] if len(rawData["types"]) > 1 else "none"
+
+    # generations use roman numerals. This map will allow for the an easy conversion and comparison
+    # additional characters are added the front of numerals so that all numerals are four characters (to match with generation-#)
+    romanDict = {
+        'on-i': 1, 'n-ii': 2, '-iii': 3, 'n-iv': 4, 'on-v': 5,
+        'n-vi': 6, '-vii': 7, 'viii': 8, 'n-ix': 9
+    }
+
+    generationChanges = []
+
     # check each time a typing has changed
     for i in rawData["past_types"]:
         # if the typing changed in generation 6 (from the typing in generation 5) | use the generation 5 types.
         # it should be noted that no typing has changed since generation 6
-        if i["generation"]["name"] == "generation-v":
-            tempTypes[1] = i["types"][0]["type"]["name"]
-            # if a pokemon gained a type rather than having it replaced | set the type value to "none"
-            if len(i["types"]) > 1:
-                tempTypes[2] = i["types"][1]["type"]["name"]
-            else:
-                tempTypes[2] = "none"
+        if romanDict[i["generation"]["name"][-4:]] == 5:
+            generationChanges.append(romanDict[i["generation"]["name"][-4:]])
+    
+    # identify the correct generation
+    correctGeneration = 100
+    # if there were relevent changes | change to the correct typing
+    if generationChanges:
+        # if the last change was before gen 5 | use the most recent information
+        if max(generationChanges) < 5:
+            correctGeneration = max(generationChanges)
+        # if 5 is a valid generation | correctGeneration = 5
+        elif 5 in generationChanges:
+            correctGeneration = 5
+        # if there was a change past gen 5 | use the lowest generation past gen 5
+        elif max(generationChanges) > 5:
+            for i in generationChanges:
+                if i < correctGeneration & i > 5:
+                    correctGeneration = i
+        # use the correct generation data
+        for i in rawData["past_types"]:
+            if romanDict[i["generation"]["name"][-4:]] == correctGeneration:
+                tempTypes[1] = i["types"][0]["type"]["name"]
+                tempTypes[2] = i["types"][1]["type"]["name"] if len(i["types"]) > 1 else "none"
+
     return tempTypes
 
 def printFinalData(finalData):

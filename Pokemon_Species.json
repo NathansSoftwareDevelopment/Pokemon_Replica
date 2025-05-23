@@ -16,7 +16,7 @@
         "abilities": {
             "1": "overgrow",
             "3": "chlorophyll",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "ivysaur"
     },
@@ -37,7 +37,7 @@
         "abilities": {
             "1": "overgrow",
             "3": "chlorophyll",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "venusaur"
     },
@@ -58,7 +58,7 @@
         "abilities": {
             "1": "overgrow",
             "3": "chlorophyll",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "venusaur"
     },
@@ -79,7 +79,7 @@
         "abilities": {
             "1": "blaze",
             "3": "solar-power",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "charmeleon"
     },
@@ -100,7 +100,7 @@
         "abilities": {
             "1": "blaze",
             "3": "solar-power",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "charizard"
     },
@@ -121,7 +121,7 @@
         "abilities": {
             "1": "blaze",
             "3": "solar-power",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "charizard"
     },
@@ -142,7 +142,7 @@
         "abilities": {
             "1": "torrent",
             "3": "rain-dish",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "wartortle"
     },
@@ -163,7 +163,7 @@
         "abilities": {
             "1": "torrent",
             "3": "rain-dish",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "blastoise"
     },
@@ -184,7 +184,7 @@
         "abilities": {
             "1": "torrent",
             "3": "rain-dish",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "blastoise"
     },
@@ -205,7 +205,7 @@
         "abilities": {
             "1": "shield-dust",
             "3": "run-away",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "metapod"
     },
@@ -225,8 +225,8 @@
         },
         "abilities": {
             "1": "shed-skin",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "butterfree"
     },
@@ -247,7 +247,7 @@
         "abilities": {
             "1": "compound-eyes",
             "3": "tinted-lens",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "butterfree"
     },
@@ -268,7 +268,7 @@
         "abilities": {
             "1": "shield-dust",
             "3": "run-away",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "kakuna"
     },
@@ -288,8 +288,8 @@
         },
         "abilities": {
             "1": "shed-skin",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "beedrill"
     },
@@ -310,7 +310,7 @@
         "abilities": {
             "1": "swarm",
             "3": "sniper",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "beedrill"
     },
@@ -436,7 +436,7 @@
         "abilities": {
             "1": "keen-eye",
             "3": "sniper",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "fearow"
     },
@@ -457,7 +457,7 @@
         "abilities": {
             "1": "keen-eye",
             "3": "sniper",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "fearow"
     },
@@ -520,7 +520,7 @@
         "abilities": {
             "1": "static",
             "3": "lightning-rod",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "raichu"
     },
@@ -541,7 +541,7 @@
         "abilities": {
             "1": "static",
             "3": "lightning-rod",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "raichu"
     },
@@ -562,7 +562,7 @@
         "abilities": {
             "1": "sand-veil",
             "3": "sand-rush",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "sandslash"
     },
@@ -583,7 +583,7 @@
         "abilities": {
             "1": "sand-veil",
             "3": "sand-rush",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "sandslash"
     },
@@ -725,7 +725,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "cute-charm",
@@ -746,7 +746,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "cute-charm",
@@ -772,7 +772,7 @@
         "abilities": {
             "1": "flash-fire",
             "3": "drought",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "ninetales"
     },
@@ -793,7 +793,7 @@
         "abilities": {
             "1": "flash-fire",
             "3": "drought",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "ninetales"
     },
@@ -809,7 +809,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "cute-charm",
@@ -830,7 +830,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "cute-charm",
@@ -856,7 +856,7 @@
         "abilities": {
             "1": "inner-focus",
             "3": "infiltrator",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "golbat"
     },
@@ -877,7 +877,7 @@
         "abilities": {
             "1": "inner-focus",
             "3": "infiltrator",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "crobat"
     },
@@ -898,7 +898,7 @@
         "abilities": {
             "1": "chlorophyll",
             "3": "run-away",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "gloom"
     },
@@ -919,7 +919,7 @@
         "abilities": {
             "1": "chlorophyll",
             "3": "stench",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "special"
     },
@@ -940,7 +940,7 @@
         "abilities": {
             "1": "chlorophyll",
             "3": "effect-spore",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "vileplume"
     },
@@ -1444,7 +1444,7 @@
         "abilities": {
             "1": "chlorophyll",
             "3": "gluttony",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "weepinbell"
     },
@@ -1465,7 +1465,7 @@
         "abilities": {
             "1": "chlorophyll",
             "3": "gluttony",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "victreebel"
     },
@@ -1486,7 +1486,7 @@
         "abilities": {
             "1": "chlorophyll",
             "3": "gluttony",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "victreebel"
     },
@@ -1926,8 +1926,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "haunter"
     },
@@ -1947,8 +1947,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "gengar"
     },
@@ -1968,8 +1968,8 @@
         },
         "abilities": {
             "1": "cursed-body",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "gengar"
     },
@@ -2137,7 +2137,7 @@
         "abilities": {
             "1": "chlorophyll",
             "3": "harvest",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "exeggutor"
     },
@@ -2158,7 +2158,7 @@
         "abilities": {
             "1": "chlorophyll",
             "3": "harvest",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "exeggutor"
     },
@@ -2552,7 +2552,7 @@
         },
         "types": {
             "1": "psychic",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "soundproof",
@@ -2620,7 +2620,7 @@
         "abilities": {
             "1": "static",
             "3": "vital-spirit",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "electivire"
     },
@@ -2641,7 +2641,7 @@
         "abilities": {
             "1": "flame-body",
             "3": "vital-spirit",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "magmortar"
     },
@@ -2704,7 +2704,7 @@
         "abilities": {
             "1": "swift-swim",
             "3": "rattled",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "gyarados"
     },
@@ -2725,7 +2725,7 @@
         "abilities": {
             "1": "intimidate",
             "3": "moxie",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "gyarados"
     },
@@ -2767,7 +2767,7 @@
         "abilities": {
             "1": "limber",
             "3": "imposter",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "ditto"
     },
@@ -2809,7 +2809,7 @@
         "abilities": {
             "1": "water-absorb",
             "3": "hydration",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "vaporeon"
     },
@@ -2830,7 +2830,7 @@
         "abilities": {
             "1": "volt-absorb",
             "3": "quick-feet",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "jolteon"
     },
@@ -2851,7 +2851,7 @@
         "abilities": {
             "1": "flash-fire",
             "3": "guts",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "flareon"
     },
@@ -3019,7 +3019,7 @@
         "abilities": {
             "1": "pressure",
             "3": "snow-cloak",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "articuno"
     },
@@ -3040,7 +3040,7 @@
         "abilities": {
             "1": "pressure",
             "3": "static",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "zapdos"
     },
@@ -3061,7 +3061,7 @@
         "abilities": {
             "1": "pressure",
             "3": "flame-body",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "moltres"
     },
@@ -3082,7 +3082,7 @@
         "abilities": {
             "1": "shed-skin",
             "3": "marvel-scale",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "dragonair"
     },
@@ -3103,7 +3103,7 @@
         "abilities": {
             "1": "shed-skin",
             "3": "marvel-scale",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "dragonite"
     },
@@ -3124,7 +3124,7 @@
         "abilities": {
             "1": "inner-focus",
             "3": "multiscale",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "dragonite"
     },
@@ -3145,7 +3145,7 @@
         "abilities": {
             "1": "pressure",
             "3": "unnerve",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "mewtwo"
     },
@@ -3165,8 +3165,8 @@
         },
         "abilities": {
             "1": "synchronize",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "mew"
     },
@@ -3187,7 +3187,7 @@
         "abilities": {
             "1": "overgrow",
             "3": "leaf-guard",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "bayleef"
     },
@@ -3208,7 +3208,7 @@
         "abilities": {
             "1": "overgrow",
             "3": "leaf-guard",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "meganium"
     },
@@ -3229,7 +3229,7 @@
         "abilities": {
             "1": "overgrow",
             "3": "leaf-guard",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "meganium"
     },
@@ -3250,7 +3250,7 @@
         "abilities": {
             "1": "blaze",
             "3": "flash-fire",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "quilava"
     },
@@ -3271,7 +3271,7 @@
         "abilities": {
             "1": "blaze",
             "3": "flash-fire",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "typhlosion"
     },
@@ -3292,7 +3292,7 @@
         "abilities": {
             "1": "blaze",
             "3": "flash-fire",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "typhlosion"
     },
@@ -3313,7 +3313,7 @@
         "abilities": {
             "1": "torrent",
             "3": "sheer-force",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "croconaw"
     },
@@ -3334,7 +3334,7 @@
         "abilities": {
             "1": "torrent",
             "3": "sheer-force",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "feraligatr"
     },
@@ -3355,7 +3355,7 @@
         "abilities": {
             "1": "torrent",
             "3": "sheer-force",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "feraligatr"
     },
@@ -3544,7 +3544,7 @@
         "abilities": {
             "1": "inner-focus",
             "3": "infiltrator",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "crobat"
     },
@@ -3607,7 +3607,7 @@
         "abilities": {
             "1": "static",
             "3": "lightning-rod",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "pikachu"
     },
@@ -3623,7 +3623,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "cute-charm",
@@ -3644,7 +3644,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "cute-charm",
@@ -3665,7 +3665,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "hustle",
@@ -3754,7 +3754,7 @@
         "abilities": {
             "1": "static",
             "3": "plus",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "flaaffy"
     },
@@ -3775,7 +3775,7 @@
         "abilities": {
             "1": "static",
             "3": "plus",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "ampharos"
     },
@@ -3796,7 +3796,7 @@
         "abilities": {
             "1": "static",
             "3": "plus",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "ampharos"
     },
@@ -3817,7 +3817,7 @@
         "abilities": {
             "1": "chlorophyll",
             "3": "healer",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "bellossom"
     },
@@ -3833,7 +3833,7 @@
         },
         "types": {
             "1": "water",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "thick-fat",
@@ -3854,7 +3854,7 @@
         },
         "types": {
             "1": "water",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "thick-fat",
@@ -4111,7 +4111,7 @@
         "abilities": {
             "1": "synchronize",
             "3": "magic-bounce",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "espeon"
     },
@@ -4132,7 +4132,7 @@
         "abilities": {
             "1": "synchronize",
             "3": "inner-focus",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "umbreon"
     },
@@ -4194,8 +4194,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "mismagius"
     },
@@ -4215,8 +4215,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "unown"
     },
@@ -4237,7 +4237,7 @@
         "abilities": {
             "1": "shadow-tag",
             "3": "telepathy",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "wobbuffet"
     },
@@ -4279,7 +4279,7 @@
         "abilities": {
             "1": "sturdy",
             "3": "overcoat",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "forretress"
     },
@@ -4300,7 +4300,7 @@
         "abilities": {
             "1": "sturdy",
             "3": "overcoat",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "forretress"
     },
@@ -4379,7 +4379,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "intimidate",
@@ -4400,7 +4400,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "intimidate",
@@ -4846,7 +4846,7 @@
         "abilities": {
             "1": "pickup",
             "3": "sand-veil",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "donphan"
     },
@@ -4867,7 +4867,7 @@
         "abilities": {
             "1": "sturdy",
             "3": "sand-veil",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "donphan"
     },
@@ -5014,7 +5014,7 @@
         "abilities": {
             "1": "static",
             "3": "vital-spirit",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "electabuzz"
     },
@@ -5035,7 +5035,7 @@
         "abilities": {
             "1": "flame-body",
             "3": "vital-spirit",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "magmar"
     },
@@ -5098,7 +5098,7 @@
         "abilities": {
             "1": "pressure",
             "3": "inner-focus",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "raikou"
     },
@@ -5119,7 +5119,7 @@
         "abilities": {
             "1": "pressure",
             "3": "inner-focus",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "entei"
     },
@@ -5140,7 +5140,7 @@
         "abilities": {
             "1": "pressure",
             "3": "inner-focus",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "suicune"
     },
@@ -5161,7 +5161,7 @@
         "abilities": {
             "1": "guts",
             "3": "sand-veil",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "pupitar"
     },
@@ -5181,8 +5181,8 @@
         },
         "abilities": {
             "1": "shed-skin",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "tyranitar"
     },
@@ -5203,7 +5203,7 @@
         "abilities": {
             "1": "sand-stream",
             "3": "unnerve",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "tyranitar"
     },
@@ -5224,7 +5224,7 @@
         "abilities": {
             "1": "pressure",
             "3": "multiscale",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "lugia"
     },
@@ -5245,7 +5245,7 @@
         "abilities": {
             "1": "pressure",
             "3": "regenerator",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "ho-oh"
     },
@@ -5265,8 +5265,8 @@
         },
         "abilities": {
             "1": "natural-cure",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "celebi"
     },
@@ -5287,7 +5287,7 @@
         "abilities": {
             "1": "overgrow",
             "3": "unburden",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "grovyle"
     },
@@ -5308,7 +5308,7 @@
         "abilities": {
             "1": "overgrow",
             "3": "unburden",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "sceptile"
     },
@@ -5329,7 +5329,7 @@
         "abilities": {
             "1": "overgrow",
             "3": "unburden",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "sceptile"
     },
@@ -5350,7 +5350,7 @@
         "abilities": {
             "1": "blaze",
             "3": "speed-boost",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "combusken"
     },
@@ -5371,7 +5371,7 @@
         "abilities": {
             "1": "blaze",
             "3": "speed-boost",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "blaziken"
     },
@@ -5392,7 +5392,7 @@
         "abilities": {
             "1": "blaze",
             "3": "speed-boost",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "blaziken"
     },
@@ -5413,7 +5413,7 @@
         "abilities": {
             "1": "torrent",
             "3": "damp",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "marshtomp"
     },
@@ -5434,7 +5434,7 @@
         "abilities": {
             "1": "torrent",
             "3": "damp",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "swampert"
     },
@@ -5455,7 +5455,7 @@
         "abilities": {
             "1": "torrent",
             "3": "damp",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "swampert"
     },
@@ -5560,7 +5560,7 @@
         "abilities": {
             "1": "shield-dust",
             "3": "run-away",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "special"
     },
@@ -5580,8 +5580,8 @@
         },
         "abilities": {
             "1": "shed-skin",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "beautifly"
     },
@@ -5602,7 +5602,7 @@
         "abilities": {
             "1": "swarm",
             "3": "rivalry",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "beautifly"
     },
@@ -5622,8 +5622,8 @@
         },
         "abilities": {
             "1": "shed-skin",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "cascoon"
     },
@@ -5644,7 +5644,7 @@
         "abilities": {
             "1": "shield-dust",
             "3": "compound-eyes",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "dustox"
     },
@@ -5791,7 +5791,7 @@
         "abilities": {
             "1": "guts",
             "3": "scrappy",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "swellow"
     },
@@ -5812,7 +5812,7 @@
         "abilities": {
             "1": "guts",
             "3": "scrappy",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "swellow"
     },
@@ -5870,7 +5870,7 @@
         },
         "types": {
             "1": "psychic",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "synchronize",
@@ -5891,7 +5891,7 @@
         },
         "types": {
             "1": "psychic",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "synchronize",
@@ -5912,7 +5912,7 @@
         },
         "types": {
             "1": "psychic",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "synchronize",
@@ -5938,7 +5938,7 @@
         "abilities": {
             "1": "swift-swim",
             "3": "rain-dish",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "masquerain"
     },
@@ -5959,7 +5959,7 @@
         "abilities": {
             "1": "intimidate",
             "3": "unnerve",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "masquerain"
     },
@@ -6021,8 +6021,8 @@
         },
         "abilities": {
             "1": "truant",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "vigoroth"
     },
@@ -6042,8 +6042,8 @@
         },
         "abilities": {
             "1": "vital-spirit",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "slaking"
     },
@@ -6063,8 +6063,8 @@
         },
         "abilities": {
             "1": "truant",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "slaking"
     },
@@ -6085,7 +6085,7 @@
         "abilities": {
             "1": "compound-eyes",
             "3": "run-away",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "special"
     },
@@ -6106,7 +6106,7 @@
         "abilities": {
             "1": "speed-boost",
             "3": "infiltrator",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "ninjask"
     },
@@ -6126,8 +6126,8 @@
         },
         "abilities": {
             "1": "wonder-guard",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "shedinja"
     },
@@ -6148,7 +6148,7 @@
         "abilities": {
             "1": "soundproof",
             "3": "rattled",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "loudred"
     },
@@ -6169,7 +6169,7 @@
         "abilities": {
             "1": "soundproof",
             "3": "scrappy",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "exploud"
     },
@@ -6190,7 +6190,7 @@
         "abilities": {
             "1": "soundproof",
             "3": "scrappy",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "exploud"
     },
@@ -6248,7 +6248,7 @@
         },
         "types": {
             "1": "normal",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "thick-fat",
@@ -6353,7 +6353,7 @@
         },
         "types": {
             "1": "steel",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "hyper-cutter",
@@ -6442,7 +6442,7 @@
         "abilities": {
             "1": "pure-power",
             "3": "telepathy",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "medicham"
     },
@@ -6463,7 +6463,7 @@
         "abilities": {
             "1": "pure-power",
             "3": "telepathy",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "medicham"
     },
@@ -6526,7 +6526,7 @@
         "abilities": {
             "1": "plus",
             "3": "lightning-rod",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "plusle"
     },
@@ -6547,7 +6547,7 @@
         "abilities": {
             "1": "minus",
             "3": "volt-absorb",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "minun"
     },
@@ -6673,7 +6673,7 @@
         "abilities": {
             "1": "rough-skin",
             "3": "speed-boost",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "sharpedo"
     },
@@ -6694,7 +6694,7 @@
         "abilities": {
             "1": "rough-skin",
             "3": "speed-boost",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "sharpedo"
     },
@@ -6903,8 +6903,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "flygon"
     },
@@ -6924,8 +6924,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "flygon"
     },
@@ -6946,7 +6946,7 @@
         "abilities": {
             "1": "sand-veil",
             "3": "water-absorb",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "cacturne"
     },
@@ -6967,7 +6967,7 @@
         "abilities": {
             "1": "sand-veil",
             "3": "water-absorb",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "cacturne"
     },
@@ -6988,7 +6988,7 @@
         "abilities": {
             "1": "natural-cure",
             "3": "cloud-nine",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "altaria"
     },
@@ -7009,7 +7009,7 @@
         "abilities": {
             "1": "natural-cure",
             "3": "cloud-nine",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "altaria"
     },
@@ -7030,7 +7030,7 @@
         "abilities": {
             "1": "immunity",
             "3": "toxic-boost",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "zangoose"
     },
@@ -7051,7 +7051,7 @@
         "abilities": {
             "1": "shed-skin",
             "3": "infiltrator",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "seviper"
     },
@@ -7071,8 +7071,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "lunatone"
     },
@@ -7092,8 +7092,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "solrock"
     },
@@ -7197,8 +7197,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "claydol"
     },
@@ -7218,8 +7218,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "claydol"
     },
@@ -7240,7 +7240,7 @@
         "abilities": {
             "1": "suction-cups",
             "3": "storm-drain",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "cradily"
     },
@@ -7261,7 +7261,7 @@
         "abilities": {
             "1": "suction-cups",
             "3": "storm-drain",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "cradily"
     },
@@ -7282,7 +7282,7 @@
         "abilities": {
             "1": "battle-armor",
             "3": "swift-swim",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "armaldo"
     },
@@ -7303,7 +7303,7 @@
         "abilities": {
             "1": "battle-armor",
             "3": "swift-swim",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "armaldo"
     },
@@ -7365,8 +7365,8 @@
         },
         "abilities": {
             "1": "forecast",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "castform"
     },
@@ -7387,7 +7387,7 @@
         "abilities": {
             "1": "color-change",
             "3": "protean",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "kecleon"
     },
@@ -7450,7 +7450,7 @@
         "abilities": {
             "1": "levitate",
             "3": "frisk",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "dusclops"
     },
@@ -7471,7 +7471,7 @@
         "abilities": {
             "1": "pressure",
             "3": "frisk",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "dusknoir"
     },
@@ -7512,8 +7512,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "chimecho"
     },
@@ -7555,7 +7555,7 @@
         "abilities": {
             "1": "shadow-tag",
             "3": "telepathy",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "wobbuffet"
     },
@@ -7681,7 +7681,7 @@
         "abilities": {
             "1": "shell-armor",
             "3": "rattled",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "special"
     },
@@ -7702,7 +7702,7 @@
         "abilities": {
             "1": "swift-swim",
             "3": "water-veil",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "huntail"
     },
@@ -7723,7 +7723,7 @@
         "abilities": {
             "1": "swift-swim",
             "3": "hydration",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "gorebyss"
     },
@@ -7765,7 +7765,7 @@
         "abilities": {
             "1": "swift-swim",
             "3": "hydration",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "luvdisc"
     },
@@ -7786,7 +7786,7 @@
         "abilities": {
             "1": "rock-head",
             "3": "sheer-force",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "shelgon"
     },
@@ -7807,7 +7807,7 @@
         "abilities": {
             "1": "rock-head",
             "3": "overcoat",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "salamence"
     },
@@ -7828,7 +7828,7 @@
         "abilities": {
             "1": "intimidate",
             "3": "moxie",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "salamence"
     },
@@ -7849,7 +7849,7 @@
         "abilities": {
             "1": "clear-body",
             "3": "light-metal",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "metang"
     },
@@ -7870,7 +7870,7 @@
         "abilities": {
             "1": "clear-body",
             "3": "light-metal",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "metagross"
     },
@@ -7891,7 +7891,7 @@
         "abilities": {
             "1": "clear-body",
             "3": "light-metal",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "metagross"
     },
@@ -7912,7 +7912,7 @@
         "abilities": {
             "1": "clear-body",
             "3": "sturdy",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "regirock"
     },
@@ -7933,7 +7933,7 @@
         "abilities": {
             "1": "clear-body",
             "3": "ice-body",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "regice"
     },
@@ -7954,7 +7954,7 @@
         "abilities": {
             "1": "clear-body",
             "3": "light-metal",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "registeel"
     },
@@ -7974,8 +7974,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "latias"
     },
@@ -7995,8 +7995,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "latios"
     },
@@ -8016,8 +8016,8 @@
         },
         "abilities": {
             "1": "drizzle",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "kyogre"
     },
@@ -8037,8 +8037,8 @@
         },
         "abilities": {
             "1": "drought",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "groudon"
     },
@@ -8058,8 +8058,8 @@
         },
         "abilities": {
             "1": "air-lock",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "rayquaza"
     },
@@ -8079,8 +8079,8 @@
         },
         "abilities": {
             "1": "serene-grace",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "jirachi"
     },
@@ -8100,8 +8100,8 @@
         },
         "abilities": {
             "1": "pressure",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "deoxys-normal"
     },
@@ -8122,7 +8122,7 @@
         "abilities": {
             "1": "overgrow",
             "3": "shell-armor",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "grotle"
     },
@@ -8143,7 +8143,7 @@
         "abilities": {
             "1": "overgrow",
             "3": "shell-armor",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "torterra"
     },
@@ -8164,7 +8164,7 @@
         "abilities": {
             "1": "overgrow",
             "3": "shell-armor",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "torterra"
     },
@@ -8185,7 +8185,7 @@
         "abilities": {
             "1": "blaze",
             "3": "iron-fist",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "monferno"
     },
@@ -8206,7 +8206,7 @@
         "abilities": {
             "1": "blaze",
             "3": "iron-fist",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "infernape"
     },
@@ -8227,7 +8227,7 @@
         "abilities": {
             "1": "blaze",
             "3": "iron-fist",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "infernape"
     },
@@ -8248,7 +8248,7 @@
         "abilities": {
             "1": "torrent",
             "3": "competitive",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "prinplup"
     },
@@ -8269,7 +8269,7 @@
         "abilities": {
             "1": "torrent",
             "3": "competitive",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "empoleon"
     },
@@ -8290,7 +8290,7 @@
         "abilities": {
             "1": "torrent",
             "3": "competitive",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "empoleon"
     },
@@ -8311,7 +8311,7 @@
         "abilities": {
             "1": "keen-eye",
             "3": "reckless",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "staravia"
     },
@@ -8332,7 +8332,7 @@
         "abilities": {
             "1": "intimidate",
             "3": "reckless",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "staraptor"
     },
@@ -8353,7 +8353,7 @@
         "abilities": {
             "1": "intimidate",
             "3": "reckless",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "staraptor"
     },
@@ -8416,7 +8416,7 @@
         "abilities": {
             "1": "shed-skin",
             "3": "run-away",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "kricketune"
     },
@@ -8437,7 +8437,7 @@
         "abilities": {
             "1": "swarm",
             "3": "technician",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "kricketune"
     },
@@ -8563,7 +8563,7 @@
         "abilities": {
             "1": "mold-breaker",
             "3": "sheer-force",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "rampardos"
     },
@@ -8584,7 +8584,7 @@
         "abilities": {
             "1": "mold-breaker",
             "3": "sheer-force",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "rampardos"
     },
@@ -8605,7 +8605,7 @@
         "abilities": {
             "1": "sturdy",
             "3": "soundproof",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "bastiodon"
     },
@@ -8626,7 +8626,7 @@
         "abilities": {
             "1": "sturdy",
             "3": "soundproof",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "bastiodon"
     },
@@ -8647,7 +8647,7 @@
         "abilities": {
             "1": "shed-skin",
             "3": "overcoat",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "special"
     },
@@ -8668,7 +8668,7 @@
         "abilities": {
             "1": "anticipation",
             "3": "overcoat",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "wormadam-plant"
     },
@@ -8689,7 +8689,7 @@
         "abilities": {
             "1": "swarm",
             "3": "tinted-lens",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "mothim"
     },
@@ -8710,7 +8710,7 @@
         "abilities": {
             "1": "honey-gather",
             "3": "hustle",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "vespiquen"
     },
@@ -8731,7 +8731,7 @@
         "abilities": {
             "1": "pressure",
             "3": "unnerve",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "vespiquen"
     },
@@ -8773,7 +8773,7 @@
         "abilities": {
             "1": "swift-swim",
             "3": "water-veil",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "floatzel"
     },
@@ -8794,7 +8794,7 @@
         "abilities": {
             "1": "swift-swim",
             "3": "water-veil",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "floatzel"
     },
@@ -8814,8 +8814,8 @@
         },
         "abilities": {
             "1": "chlorophyll",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "cherrim"
     },
@@ -8835,8 +8835,8 @@
         },
         "abilities": {
             "1": "flower-gift",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "cherrim"
     },
@@ -9003,8 +9003,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "mismagius"
     },
@@ -9087,8 +9087,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "chimecho"
     },
@@ -9209,7 +9209,7 @@
         },
         "types": {
             "1": "psychic",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "soundproof",
@@ -9277,7 +9277,7 @@
         "abilities": {
             "1": "pressure",
             "3": "infiltrator",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "spiritomb"
     },
@@ -9298,7 +9298,7 @@
         "abilities": {
             "1": "sand-veil",
             "3": "rough-skin",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "gabite"
     },
@@ -9319,7 +9319,7 @@
         "abilities": {
             "1": "sand-veil",
             "3": "rough-skin",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "garchomp"
     },
@@ -9340,7 +9340,7 @@
         "abilities": {
             "1": "sand-veil",
             "3": "rough-skin",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "garchomp"
     },
@@ -9424,7 +9424,7 @@
         "abilities": {
             "1": "sand-stream",
             "3": "sand-force",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "hippowdon"
     },
@@ -9445,7 +9445,7 @@
         "abilities": {
             "1": "sand-stream",
             "3": "sand-force",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "hippowdon"
     },
@@ -9549,8 +9549,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "carnivine"
     },
@@ -9634,7 +9634,7 @@
         "abilities": {
             "1": "snow-warning",
             "3": "soundproof",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "abomasnow"
     },
@@ -9655,7 +9655,7 @@
         "abilities": {
             "1": "snow-warning",
             "3": "soundproof",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "abomasnow"
     },
@@ -9676,7 +9676,7 @@
         "abilities": {
             "1": "pressure",
             "3": "pickpocket",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "weavile"
     },
@@ -9781,7 +9781,7 @@
         "abilities": {
             "1": "motor-drive",
             "3": "vital-spirit",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "electivire"
     },
@@ -9802,7 +9802,7 @@
         "abilities": {
             "1": "flame-body",
             "3": "vital-spirit",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "magmortar"
     },
@@ -9865,7 +9865,7 @@
         "abilities": {
             "1": "leaf-guard",
             "3": "chlorophyll",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "leafeon"
     },
@@ -9886,7 +9886,7 @@
         "abilities": {
             "1": "snow-cloak",
             "3": "ice-body",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "glaceon"
     },
@@ -10012,7 +10012,7 @@
         "abilities": {
             "1": "pressure",
             "3": "frisk",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "dusknoir"
     },
@@ -10033,7 +10033,7 @@
         "abilities": {
             "1": "snow-cloak",
             "3": "cursed-body",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "froslass"
     },
@@ -10053,8 +10053,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "rotom"
     },
@@ -10074,8 +10074,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "uxie"
     },
@@ -10095,8 +10095,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "mesprit"
     },
@@ -10116,8 +10116,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "azelf"
     },
@@ -10138,7 +10138,7 @@
         "abilities": {
             "1": "pressure",
             "3": "telepathy",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "dialga"
     },
@@ -10159,7 +10159,7 @@
         "abilities": {
             "1": "pressure",
             "3": "telepathy",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "palkia"
     },
@@ -10180,7 +10180,7 @@
         "abilities": {
             "1": "flash-fire",
             "3": "flame-body",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "heatran"
     },
@@ -10200,8 +10200,8 @@
         },
         "abilities": {
             "1": "slow-start",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "regigigas"
     },
@@ -10222,7 +10222,7 @@
         "abilities": {
             "1": "pressure",
             "3": "telepathy",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "giratina-altered"
     },
@@ -10242,8 +10242,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "cresselia"
     },
@@ -10263,8 +10263,8 @@
         },
         "abilities": {
             "1": "hydration",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "manaphy"
     },
@@ -10284,8 +10284,8 @@
         },
         "abilities": {
             "1": "hydration",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "manaphy"
     },
@@ -10305,8 +10305,8 @@
         },
         "abilities": {
             "1": "bad-dreams",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "darkrai"
     },
@@ -10326,8 +10326,8 @@
         },
         "abilities": {
             "1": "natural-cure",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "shaymin-land"
     },
@@ -10347,8 +10347,8 @@
         },
         "abilities": {
             "1": "multitype",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "arceus"
     },
@@ -10368,8 +10368,8 @@
         },
         "abilities": {
             "1": "victory-star",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "victini"
     },
@@ -10390,7 +10390,7 @@
         "abilities": {
             "1": "overgrow",
             "3": "contrary",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "servine"
     },
@@ -10411,7 +10411,7 @@
         "abilities": {
             "1": "overgrow",
             "3": "contrary",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "serperior"
     },
@@ -10432,7 +10432,7 @@
         "abilities": {
             "1": "overgrow",
             "3": "contrary",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "serperior"
     },
@@ -10453,7 +10453,7 @@
         "abilities": {
             "1": "blaze",
             "3": "thick-fat",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "pignite"
     },
@@ -10474,7 +10474,7 @@
         "abilities": {
             "1": "blaze",
             "3": "thick-fat",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "emboar"
     },
@@ -10495,7 +10495,7 @@
         "abilities": {
             "1": "blaze",
             "3": "reckless",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "emboar"
     },
@@ -10516,7 +10516,7 @@
         "abilities": {
             "1": "torrent",
             "3": "shell-armor",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "dewott"
     },
@@ -10537,7 +10537,7 @@
         "abilities": {
             "1": "torrent",
             "3": "shell-armor",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "samurott"
     },
@@ -10558,7 +10558,7 @@
         "abilities": {
             "1": "torrent",
             "3": "shell-armor",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "samurott"
     },
@@ -10726,7 +10726,7 @@
         "abilities": {
             "1": "gluttony",
             "3": "overgrow",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "simisage"
     },
@@ -10747,7 +10747,7 @@
         "abilities": {
             "1": "gluttony",
             "3": "overgrow",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "simisage"
     },
@@ -10768,7 +10768,7 @@
         "abilities": {
             "1": "gluttony",
             "3": "blaze",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "simisear"
     },
@@ -10789,7 +10789,7 @@
         "abilities": {
             "1": "gluttony",
             "3": "blaze",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "simisear"
     },
@@ -10810,7 +10810,7 @@
         "abilities": {
             "1": "gluttony",
             "3": "torrent",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "simipour"
     },
@@ -10831,7 +10831,7 @@
         "abilities": {
             "1": "gluttony",
             "3": "torrent",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "simipour"
     },
@@ -11456,7 +11456,7 @@
         },
         "types": {
             "1": "grass",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "prankster",
@@ -11477,7 +11477,7 @@
         },
         "types": {
             "1": "grass",
-            "2": "None"
+            "2": "none"
         },
         "abilities": {
             "1": "prankster",
@@ -11629,7 +11629,7 @@
         "abilities": {
             "1": "hustle",
             "3": "inner-focus",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "darmanitan"
     },
@@ -11650,7 +11650,7 @@
         "abilities": {
             "1": "sheer-force",
             "3": "zen-mode",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "darmanitan-standard"
     },
@@ -11796,8 +11796,8 @@
         },
         "abilities": {
             "1": "mummy",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "special"
     },
@@ -11817,8 +11817,8 @@
         },
         "abilities": {
             "1": "mummy",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "cofagrigus"
     },
@@ -11880,8 +11880,8 @@
         },
         "abilities": {
             "1": "defeatist",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "archeops"
     },
@@ -11901,8 +11901,8 @@
         },
         "abilities": {
             "1": "defeatist",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "archeops"
     },
@@ -11964,8 +11964,8 @@
         },
         "abilities": {
             "1": "illusion",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "zoroark"
     },
@@ -11985,8 +11985,8 @@
         },
         "abilities": {
             "1": "illusion",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "zoroark"
     },
@@ -12322,7 +12322,7 @@
         "abilities": {
             "1": "static",
             "3": "motor-drive",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "emolga"
     },
@@ -12385,7 +12385,7 @@
         "abilities": {
             "1": "effect-spore",
             "3": "regenerator",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "amoonguss"
     },
@@ -12406,7 +12406,7 @@
         "abilities": {
             "1": "effect-spore",
             "3": "regenerator",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "amoonguss"
     },
@@ -12531,8 +12531,8 @@
         },
         "abilities": {
             "1": "iron-barbs",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "ferrothorn"
     },
@@ -12553,7 +12553,7 @@
         "abilities": {
             "1": "iron-barbs",
             "3": "anticipation",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "ferrothorn"
     },
@@ -12636,8 +12636,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "eelektrik"
     },
@@ -12657,8 +12657,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "eelektross"
     },
@@ -12678,8 +12678,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "eelektross"
     },
@@ -12909,8 +12909,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "cryogonal"
     },
@@ -13287,8 +13287,8 @@
         },
         "abilities": {
             "1": "hustle",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "zweilous"
     },
@@ -13308,8 +13308,8 @@
         },
         "abilities": {
             "1": "hustle",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "hydreigon"
     },
@@ -13329,8 +13329,8 @@
         },
         "abilities": {
             "1": "levitate",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "hydreigon"
     },
@@ -13351,7 +13351,7 @@
         "abilities": {
             "1": "flame-body",
             "3": "swarm",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "volcarona"
     },
@@ -13372,7 +13372,7 @@
         "abilities": {
             "1": "flame-body",
             "3": "swarm",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "volcarona"
     },
@@ -13392,8 +13392,8 @@
         },
         "abilities": {
             "1": "justified",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "cobalion"
     },
@@ -13413,8 +13413,8 @@
         },
         "abilities": {
             "1": "justified",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "terrakion"
     },
@@ -13434,8 +13434,8 @@
         },
         "abilities": {
             "1": "justified",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "virizion"
     },
@@ -13456,7 +13456,7 @@
         "abilities": {
             "1": "prankster",
             "3": "defiant",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "tornadus-incarnate"
     },
@@ -13477,7 +13477,7 @@
         "abilities": {
             "1": "prankster",
             "3": "defiant",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "thundurus-incarnate"
     },
@@ -13497,8 +13497,8 @@
         },
         "abilities": {
             "1": "turboblaze",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "reshiram"
     },
@@ -13518,8 +13518,8 @@
         },
         "abilities": {
             "1": "teravolt",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "zekrom"
     },
@@ -13540,7 +13540,7 @@
         "abilities": {
             "1": "sand-force",
             "3": "sheer-force",
-            "2": "None"
+            "2": "none"
         },
         "evolve": "landorus-incarnate"
     },
@@ -13560,8 +13560,8 @@
         },
         "abilities": {
             "1": "pressure",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "kyurem"
     },
@@ -13581,8 +13581,8 @@
         },
         "abilities": {
             "1": "justified",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "keldeo-ordinary"
     },
@@ -13602,8 +13602,8 @@
         },
         "abilities": {
             "1": "serene-grace",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "meloetta-aria"
     },
@@ -13623,8 +13623,8 @@
         },
         "abilities": {
             "1": "download",
-            "2": "None",
-            "3": "None"
+            "2": "none",
+            "3": "none"
         },
         "evolve": "genesect"
     }
