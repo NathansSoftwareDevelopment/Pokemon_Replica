@@ -11,13 +11,11 @@ def main():
     firstPokemonID = 1
     lastPokemonID = 649 
 
-    printData(parsePokeInfo(getPokemonInfo("Kirlia")))
-    # for i in range (35, 36):
-    #     printData(parsePokeInfo(getPokemonInfo(i)))
-    # for i in range(firstPokemonID, lastPokemonID+1):
-    #     rawData = getPokemonInfo(i)
-    #     pokeData = parsePokeInfo(rawData)
-    #     addToFinal(pokeData)
+    # printFinalData(parsePokeInfo(getPokemonInfo("Kirlia")))
+    for i in range(firstPokemonID, lastPokemonID+1):
+        rawData = getPokemonInfo(i)
+        pokeData = parsePokeInfo(rawData)
+        addToFinal(pokeData)
     # Write(outputDictionary, "Pokemon_Species.json")
 
 
@@ -29,12 +27,12 @@ def getPokemonInfo(ID):
     if rawPokemonInfo.status_code == 200 & rawSpeciesInfo.status_code == 200:
         rawPokemonInfo = rawPokemonInfo.json()
         rawSpeciesInfo = rawSpeciesInfo.json()
+        print(f"Found {ID}: {rawSpeciesInfo["name"]}")
         return [rawPokemonInfo, rawSpeciesInfo]
     else:
         print(f"FAILED TO RETRIEVE {ID}: {rawPokemonInfo.status_code} | {rawSpeciesInfo.status_code}")
 
 def getTypes(rawData):
-    ic(rawData["past_types"])
     tempTypes = {}
     # set types to current types
     tempTypes[1] = rawData["types"][0]["type"]["name"]
@@ -44,22 +42,32 @@ def getTypes(rawData):
         tempTypes[2] = "none"
     # check each time a typing has changed
     for i in rawData["past_types"]:
-        # if the typing changed in generation 6 (from the typing in generation 5) use the generation 5 types.
+        # if the typing changed in generation 6 (from the typing in generation 5) | use the generation 5 types.
         # it should be noted that no typing has changed since generation 6
         if i["generation"]["name"] == "generation-v":
             tempTypes[1] = i["types"][0]["type"]["name"]
+            # if a pokemon gained a type rather than having it replaced | set the type value to "none"
             if len(i["types"]) > 1:
                 tempTypes[2] = i["types"][1]["type"]["name"]
             else:
-                tempTypes[2] = "None"
+                tempTypes[2] = "none"
     return tempTypes
 
-def printData(inputDictionary):
-    ic(inputDictionary)
+def printFinalData(finalData):
+    for i in finalData:
+        print(i)
+        print(finalData[i])
+
+def printRawData(rawData):
+    for i in rawData:
+        print(i)
+    print()
 
 def parsePokeInfo(rawData):
     rawPokemonData = rawData[0]
     rawSpeciesData = rawData[1]
+    # printRawData(rawPokemonData)
+    # printRawData(rawSpeciesData)
     pokeData = {}
 
     pokeData["name"] = rawPokemonData["name"]
@@ -70,15 +78,14 @@ def parsePokeInfo(rawData):
     pokeData["stats"] = tempStats
 
     pokeData["types"] = getTypes(rawPokemonData)
-    # ic(rawData["past_types"])
 
     # populate tempAbilities with abilities slots and types
     tempAbilities = {}
     for i in rawPokemonData["abilities"]:
         tempAbilities[i["slot"]] = i["ability"]["name"]
     # if ability slots 1 or 2 are missing replace with "None"
-    tempAbilities[2] = tempAbilities.get(2, "None")
-    tempAbilities[3] = tempAbilities.get(3, "None")
+    tempAbilities[2] = tempAbilities.get(2, "none")
+    tempAbilities[3] = tempAbilities.get(3, "none")
 
     pokeData["abilities"] = tempAbilities
 
@@ -104,9 +111,6 @@ def parsePokeInfo(rawData):
         # For single stage pokemon evolutionChain["evolves_to"] will be an empty array causing an error
         pokeData["evolve"] = pokeData["name"]
     
-    print(f"evolutionChain[\"species\"][\"name\"] = {evolutionChain["species"]["name"]}\npokeData[\"name\"] = {pokeData["name"]}")
-    # ic(evolutionChain["evolves_to"][0]["evolves_to"][1]["species"]["name"])
-
     return pokeData
 
 
