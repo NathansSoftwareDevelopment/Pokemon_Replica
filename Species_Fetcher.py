@@ -11,12 +11,12 @@ def main():
     firstPokemonID = 1
     lastPokemonID = 649 
 
-    # printFinalData(parsePokeInfo(getPokemonInfo("lillipup")))
-    for i in range(firstPokemonID, lastPokemonID+1):
-        rawData = getPokemonInfo(i)
-        pokeData = parsePokeInfo(rawData)
-        addToFinal(pokeData)
-    Write(outputDictionary, "Pokemon_Species.json")
+    printFinalData(parsePokeInfo(getPokemonInfo("lillipup")))
+    # for i in range(firstPokemonID, lastPokemonID+1):
+    #     rawData = getPokemonInfo(i)
+    #     pokeData = parsePokeInfo(rawData)
+    #     addToFinal(pokeData)
+    # Write(outputDictionary, "Pokemon_Species.json")
 
 
 def getPokemonInfo(ID):
@@ -78,6 +78,17 @@ def getTypes(rawData):
 
     return tempTypes
 
+def getAbilities(rawPokemonData):
+    # populate tempAbilities with abilities slots and types
+    tempAbilities = {}
+    for i in rawPokemonData["abilities"]:
+        tempAbilities[i["slot"]] = i["ability"]["name"]
+    # if ability slots 1 or 2 are missing replace with "None"
+    tempAbilities[2] = tempAbilities.get(2, "none")
+    tempAbilities[3] = tempAbilities.get(3, "none")
+    
+    return tempAbilities
+
 def printFinalData(finalData):
     for i in finalData:
         print(i)
@@ -104,15 +115,7 @@ def parsePokeInfo(rawData):
 
     pokeData["types"] = getTypes(rawPokemonData)
 
-    # populate tempAbilities with abilities slots and types
-    tempAbilities = {}
-    for i in rawPokemonData["abilities"]:
-        tempAbilities[i["slot"]] = i["ability"]["name"]
-    # if ability slots 1 or 2 are missing replace with "None"
-    tempAbilities[2] = tempAbilities.get(2, "none")
-    tempAbilities[3] = tempAbilities.get(3, "none")
-
-    pokeData["abilities"] = tempAbilities
+    pokeData["abilities"] = getAbilities(rawPokemonData)
 
     # get the species of pokemon, get the evolution chain of that species, then access "chain" key
     evolutionChain = requests.get(rawSpeciesData["evolution_chain"]["url"]).json()["chain"]
