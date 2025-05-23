@@ -12,7 +12,7 @@ def main():
     lastPokemonID = 649 
 
     # getPokemonInfo(1)
-    # printData(parsePokeInfo(getPokemonInfo("Clefairy")))
+    printData(parsePokeInfo(getPokemonInfo("Kirlia")))
     # for i in range (35, 36):
     #     printData(parsePokeInfo(getPokemonInfo(i)))
     # addToFinal(getPokemonInfo(1))
@@ -36,6 +36,7 @@ def getPokemonInfo(ID):
         print(f"FAILED TO RETRIEVE {ID}: {rawPokeInfo.status_code}")
 
 def getTypes(rawData):
+    ic(rawData["past_types"])
     tempTypes = {}
     # set types to current types
     tempTypes[1] = rawData["types"][0]["type"]["name"]
@@ -84,10 +85,16 @@ def parsePokeInfo(rawData):
     try:
         # if first pokemon name == name of pokemon | evolve = second pokemon
         if evolutionChain["species"]["name"] == pokeData["name"]:
-            pokeData["evolve"] = evolutionChain["evolves_to"][0]["species"]["name"]
+            if len(evolutionChain["evolves_to"]) <= 1:
+                pokeData["evolve"] = evolutionChain["evolves_to"][0]["species"]["name"]
+            else:
+                pokeData["evolve"] = "special"
         # if second pokemon name == name of pokemon | evolve = third pokemon
         elif evolutionChain["evolves_to"][0]["species"]["name"] == pokeData["name"]:
-            pokeData["evolve"] = evolutionChain["evolves_to"][0]["evolves_to"][0]["species"]["name"]
+            if len(evolutionChain["evolves_to"][0]["evolves_to"]) <= 1:
+                pokeData["evolve"] = evolutionChain["evolves_to"][0]["evolves_to"][0]["species"]["name"]
+            else:
+                pokeData["evolve"] = "special"
         # otherwise | evolve = name of pokemon
         else:
             pokeData["evolve"] = pokeData["name"]
@@ -96,6 +103,7 @@ def parsePokeInfo(rawData):
         pokeData["evolve"] = pokeData["name"]
     
     print(f"evolutionChain[\"species\"][\"name\"] = {evolutionChain["species"]["name"]}\npokeData[\"name\"] = {pokeData["name"]}")
+    # ic(evolutionChain["evolves_to"][0]["evolves_to"][1]["species"]["name"])
 
     return pokeData
 
