@@ -16,7 +16,7 @@ def main():
         rawData = getPokemonInfo(i)
         pokeData = parsePokeInfo(rawData)
         addToFinal(pokeData)
-    # Write(outputDictionary, "Pokemon_Species.json")
+    Write(outputDictionary, "Pokemon_Species.json")
 
 
 def getPokemonInfo(ID):
@@ -50,10 +50,7 @@ def getTypes(rawData):
 
     # check each time a typing has changed
     for i in rawData["past_types"]:
-        # if the typing changed in generation 6 (from the typing in generation 5) | use the generation 5 types.
-        # it should be noted that no typing has changed since generation 6
-        if romanDict[i["generation"]["name"][-4:]] == 5:
-            generationChanges.append(romanDict[i["generation"]["name"][-4:]])
+        generationChanges.append(romanDict[i["generation"]["name"][-4:]])
     
     # identify the correct generation
     correctGeneration = 100
