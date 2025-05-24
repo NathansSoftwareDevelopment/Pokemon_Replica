@@ -79,14 +79,12 @@ def getTypes(rawData):
     return tempTypes
 
 def getAbilities(rawPokemonData):
-    # populate tempAbilities with abilities slots and types
-    tempAbilities = {}
-    for i in rawPokemonData["abilities"]:
-        tempAbilities[i["slot"]] = i["ability"]["name"]
-    # if ability slots 1 or 2 are missing replace with "None"
+    # populate tempAbilities with modern slots and abilities
+    tempAbilities = {item["slot"]: item["ability"]["name"] for item in rawPokemonData.get("abilities", [])}
+    # if ability slots 2 or 3 are missing replace with "None"
     tempAbilities[2] = tempAbilities.get(2, "none")
     tempAbilities[3] = tempAbilities.get(3, "none")
-    
+    ic(tempAbilities)
     return tempAbilities
 
 def getEvolve(rawSpeciesData, pokemonName):
