@@ -11,11 +11,11 @@ def main():
     firstPokemonID = 1
     lastPokemonID = 649 
 
-    # printFinalData(parsePokeInfo(getPokemonInfo("lillipup")))
-    for i in range(firstPokemonID, lastPokemonID+1):
-        rawData = getPokemonInfo(i)
-        pokeData = parsePokeInfo(rawData)
-        addToFinal(pokeData)
+    printFinalData(parsePokeInfo(getPokemonInfo("Magneton")))
+    # for i in range(firstPokemonID, lastPokemonID+1):
+    #     rawData = getPokemonInfo(i)
+    #     pokeData = parsePokeInfo(rawData)
+    #     addToFinal(pokeData)
     Write(outputDictionary, "Pokemon_Species.json")
 
 
@@ -51,27 +51,24 @@ def getTypes(rawData):
     # check each time a typing has changed
     for i in rawData["past_types"]:
         generationChanges.append(romanDict[i["generation"]["name"][-4:]])
-    
+    ic(generationChanges)
     # identify the correct generation
     correctGeneration = 100
     # if there were relevent changes | change to the correct typing
     if generationChanges:
-        # if the last change was before gen 5 | use the most recent information
-        if max(generationChanges) < 5:
-            correctGeneration = max(generationChanges)
-        # if 5 is a valid generation | correctGeneration = 5
-        elif 5 in generationChanges:
+        # if the last change was before or at gen 5 | use either the most information for gen 5 or none at all (causing the types to not change)
+        if max(generationChanges) <= 5:
             correctGeneration = 5
         # if there was a change past gen 5 | use the lowest generation past gen 5
         elif max(generationChanges) > 5:
             for i in generationChanges:
                 if i < correctGeneration & i > 5:
                     correctGeneration = i
-        # use the correct generation data
-        for i in rawData["past_types"]:
-            if romanDict[i["generation"]["name"][-4:]] == correctGeneration:
-                tempTypes[1] = i["types"][0]["type"]["name"]
-                tempTypes[2] = i["types"][1]["type"]["name"] if len(i["types"]) > 1 else "none"
+    # use the correct generation data
+    for i in rawData["past_types"]:
+        if romanDict[i["generation"]["name"][-4:]] == correctGeneration:
+            tempTypes[1] = i["types"][0]["type"]["name"]
+            tempTypes[2] = i["types"][1]["type"]["name"] if len(i["types"]) > 1 else "none"
 
     return tempTypes
 
