@@ -13627,5 +13627,488 @@
             "3": "none"
         },
         "evolve": "genesect"
+    },
+    "deoxys-attack": {
+        "name": "deoxys-attack",
+        "stats": {
+            "hp": 50,
+            "attack": 180,
+            "defense": 20,
+            "special-attack": 180,
+            "special-defense": 20,
+            "speed": 150
+        },
+        "types": {
+            "1": "psychic",
+            "2": "none"
+        },
+        "abilities": {
+            "1": "pressure",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "deoxys-attack"
+    },
+    "deoxys-defense": {
+        "name": "deoxys-defense",
+        "stats": {
+            "hp": 50,
+            "attack": 70,
+            "defense": 160,
+            "special-attack": 70,
+            "special-defense": 160,
+            "speed": 90
+        },
+        "types": {
+            "1": "psychic",
+            "2": "none"
+        },
+        "abilities": {
+            "1": "pressure",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "deoxys-defense"
+    },
+    "deoxys-speed": {
+        "name": "deoxys-speed",
+        "stats": {
+            "hp": 50,
+            "attack": 95,
+            "defense": 90,
+            "special-attack": 95,
+            "special-defense": 90,
+            "speed": 180
+        },
+        "types": {
+            "1": "psychic",
+            "2": "none"
+        },
+        "abilities": {
+            "1": "pressure",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "deoxys-speed"
+    },
+    "wormadam-sandy": {
+        "name": "wormadam-sandy",
+        "stats": {
+            "hp": 60,
+            "attack": 79,
+            "defense": 105,
+            "special-attack": 59,
+            "special-defense": 85,
+            "speed": 36
+        },
+        "types": {
+            "1": "bug",
+            "2": "ground"
+        },
+        "abilities": {
+            "1": "anticipation",
+            "3": "overcoat",
+            "2": "none"
+        },
+        "evolve": "wormadam-sandy"
+    },
+    "wormadam-trash": {
+        "name": "wormadam-trash",
+        "stats": {
+            "hp": 60,
+            "attack": 69,
+            "defense": 95,
+            "special-attack": 69,
+            "special-defense": 95,
+            "speed": 36
+        },
+        "types": {
+            "1": "bug",
+            "2": "steel"
+        },
+        "abilities": {
+            "1": "anticipation",
+            "3": "overcoat",
+            "2": "none"
+        },
+        "evolve": "wormadam-trash"
+    },
+    "shaymin-sky": {
+        "name": "shaymin-sky",
+        "stats": {
+            "hp": 100,
+            "attack": 103,
+            "defense": 75,
+            "special-attack": 120,
+            "special-defense": 75,
+            "speed": 127
+        },
+        "types": {
+            "1": "grass",
+            "2": "flying"
+        },
+        "abilities": {
+            "1": "serene-grace",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "shaymin-sky"
+    },
+    "giratina-origin": {
+        "name": "giratina-origin",
+        "stats": {
+            "hp": 150,
+            "attack": 120,
+            "defense": 100,
+            "special-attack": 120,
+            "special-defense": 100,
+            "speed": 90
+        },
+        "types": {
+            "1": "ghost",
+            "2": "dragon"
+        },
+        "abilities": {
+            "1": "levitate",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "giratina-origin"
+    },
+    "rotom-heat": {
+        "name": "rotom-heat",
+        "stats": {
+            "hp": 50,
+            "attack": 65,
+            "defense": 107,
+            "special-attack": 105,
+            "special-defense": 107,
+            "speed": 86
+        },
+        "types": {
+            "1": "electric",
+            "2": "fire"
+        },
+        "abilities": {
+            "1": "levitate",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "rotom-heat"
+    },
+    "rotom-wash": {
+        "name": "rotom-wash",
+        "stats": {
+            "hp": 50,
+            "attack": 65,
+            "defense": 107,
+            "special-attack": 105,
+            "special-defense": 107,
+            "speed": 86
+        },
+        "types": {
+            "1": "electric",
+            "2": "water"
+        },
+        "abilities": {
+            "1": "levitate",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "rotom-wash"
+    },
+    "rotom-frost": {
+        "name": "rotom-frost",
+        "stats": {
+            "hp": 50,
+            "attack": 65,
+            "defense": 107,
+            "special-attack": 105,
+            "special-defense": 107,
+            "speed": 86
+        },
+        "types": {
+            "1": "electric",
+            "2": "ice"
+        },
+        "abilities": {
+            "1": "levitate",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "rotom-frost"
+    },
+    "rotom-fan": {
+        "name": "rotom-fan",
+        "stats": {
+            "hp": 50,
+            "attack": 65,
+            "defense": 107,
+            "special-attack": 105,
+            "special-defense": 107,
+            "speed": 86
+        },
+        "types": {
+            "1": "electric",
+            "2": "flying"
+        },
+        "abilities": {
+            "1": "levitate",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "rotom-fan"
+    },
+    "rotom-mow": {
+        "name": "rotom-mow",
+        "stats": {
+            "hp": 50,
+            "attack": 65,
+            "defense": 107,
+            "special-attack": 105,
+            "special-defense": 107,
+            "speed": 86
+        },
+        "types": {
+            "1": "electric",
+            "2": "grass"
+        },
+        "abilities": {
+            "1": "levitate",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "rotom-mow"
+    },
+    "castform-sunny": {
+        "name": "castform-sunny",
+        "stats": {
+            "hp": 70,
+            "attack": 70,
+            "defense": 70,
+            "special-attack": 70,
+            "special-defense": 70,
+            "speed": 70
+        },
+        "types": {
+            "1": "fire",
+            "2": "none"
+        },
+        "abilities": {
+            "1": "forecast",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "castform-sunny"
+    },
+    "castform-rainy": {
+        "name": "castform-rainy",
+        "stats": {
+            "hp": 70,
+            "attack": 70,
+            "defense": 70,
+            "special-attack": 70,
+            "special-defense": 70,
+            "speed": 70
+        },
+        "types": {
+            "1": "water",
+            "2": "none"
+        },
+        "abilities": {
+            "1": "forecast",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "castform-rainy"
+    },
+    "castform-snowy": {
+        "name": "castform-snowy",
+        "stats": {
+            "hp": 70,
+            "attack": 70,
+            "defense": 70,
+            "special-attack": 70,
+            "special-defense": 70,
+            "speed": 70
+        },
+        "types": {
+            "1": "ice",
+            "2": "none"
+        },
+        "abilities": {
+            "1": "forecast",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "castform-snowy"
+    },
+    "basculin-blue-striped": {
+        "name": "basculin-blue-striped",
+        "stats": {
+            "hp": 70,
+            "attack": 92,
+            "defense": 65,
+            "special-attack": 80,
+            "special-defense": 55,
+            "speed": 98
+        },
+        "types": {
+            "1": "water",
+            "2": "none"
+        },
+        "abilities": {
+            "1": "rock-head",
+            "2": "adaptability",
+            "3": "mold-breaker"
+        },
+        "evolve": "basculin-blue-striped"
+    },
+    "darmanitan-zen": {
+        "name": "darmanitan-zen",
+        "stats": {
+            "hp": 105,
+            "attack": 30,
+            "defense": 105,
+            "special-attack": 140,
+            "special-defense": 105,
+            "speed": 55
+        },
+        "types": {
+            "1": "fire",
+            "2": "psychic"
+        },
+        "abilities": {
+            "1": "sheer-force",
+            "3": "zen-mode",
+            "2": "none"
+        },
+        "evolve": "darmanitan-zen"
+    },
+    "meloetta-pirouette": {
+        "name": "meloetta-pirouette",
+        "stats": {
+            "hp": 100,
+            "attack": 128,
+            "defense": 90,
+            "special-attack": 77,
+            "special-defense": 77,
+            "speed": 128
+        },
+        "types": {
+            "1": "normal",
+            "2": "fighting"
+        },
+        "abilities": {
+            "1": "serene-grace",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "meloetta-pirouette"
+    },
+    "tornadus-therian": {
+        "name": "tornadus-therian",
+        "stats": {
+            "hp": 79,
+            "attack": 100,
+            "defense": 80,
+            "special-attack": 110,
+            "special-defense": 90,
+            "speed": 121
+        },
+        "types": {
+            "1": "flying",
+            "2": "none"
+        },
+        "abilities": {
+            "1": "regenerator",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "tornadus-therian"
+    },
+    "thundurus-therian": {
+        "name": "thundurus-therian",
+        "stats": {
+            "hp": 79,
+            "attack": 105,
+            "defense": 70,
+            "special-attack": 145,
+            "special-defense": 80,
+            "speed": 101
+        },
+        "types": {
+            "1": "electric",
+            "2": "flying"
+        },
+        "abilities": {
+            "1": "volt-absorb",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "thundurus-therian"
+    },
+    "landorus-therian": {
+        "name": "landorus-therian",
+        "stats": {
+            "hp": 89,
+            "attack": 145,
+            "defense": 90,
+            "special-attack": 105,
+            "special-defense": 80,
+            "speed": 91
+        },
+        "types": {
+            "1": "ground",
+            "2": "flying"
+        },
+        "abilities": {
+            "1": "intimidate",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "landorus-therian"
+    },
+    "kyurem-black": {
+        "name": "kyurem-black",
+        "stats": {
+            "hp": 125,
+            "attack": 170,
+            "defense": 100,
+            "special-attack": 120,
+            "special-defense": 90,
+            "speed": 95
+        },
+        "types": {
+            "1": "dragon",
+            "2": "ice"
+        },
+        "abilities": {
+            "1": "teravolt",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "kyurem-black"
+    },
+    "kyurem-white": {
+        "name": "kyurem-white",
+        "stats": {
+            "hp": 125,
+            "attack": 120,
+            "defense": 90,
+            "special-attack": 170,
+            "special-defense": 100,
+            "speed": 95
+        },
+        "types": {
+            "1": "dragon",
+            "2": "ice"
+        },
+        "abilities": {
+            "1": "turboblaze",
+            "2": "none",
+            "3": "none"
+        },
+        "evolve": "kyurem-white"
     }
 }

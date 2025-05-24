@@ -3,34 +3,26 @@ import json
 import requests
 from icecream import ic
 
-baseURL = "https://pokeapi.co/api/v2"
-
 outputDictionary = {}
 
 def main():
-    firstPokemonID = 1
-    lastPokemonID = 649 
+    rawPokemonData = r"./Raw_Data/Raw_Pokemon_Data.json"
+    rawSpeciesData = r"./Raw_Data/Raw_Pokemon-species_Data.json"
 
-    # printFinalData(parsePokeInfo(getPokemonInfo("jigglypuff")))
-    for i in range(firstPokemonID, lastPokemonID+1):
-        rawData = getPokemonInfo(i)
-        pokeData = parsePokeInfo(rawData)
-        addToFinal(pokeData)
+    allRawData = getPokemonInfo(rawPokemonData, rawSpeciesData)
+    for pokemon in allRawData[0]:
+        pokemonName = allRawData[0][pokemon][0]
+        addToFinal(parsePokeInfo([allRawData[0][pokemonName["name"]][0], allRawData[-1][pokemonName["species"]["name"]][0]]))
+        ic(pokemonName["name"])
     Write(outputDictionary, "Pokemon_Species.json")
 
 
-def getPokemonInfo(ID):
-    pokemonURL = f"{baseURL}/pokemon/{ID}"
-    speciesURL = f"{baseURL}/pokemon-species/{ID}"
-    rawPokemonInfo = requests.get(pokemonURL)
-    rawSpeciesInfo = requests.get(speciesURL)
-    if rawPokemonInfo.status_code == 200 & rawSpeciesInfo.status_code == 200:
-        rawPokemonInfo = rawPokemonInfo.json()
-        rawSpeciesInfo = rawSpeciesInfo.json()
-        print(f"Found {ID}: {rawSpeciesInfo["name"]}")
-        return [rawPokemonInfo, rawSpeciesInfo]
-    else:
-        print(f"FAILED TO RETRIEVE {ID}: {rawPokemonInfo.status_code} | {rawSpeciesInfo.status_code}")
+def getPokemonInfo(*args):
+    with open(args[0], 'r') as file1:
+        dict1 = json.load(file1)
+    with open(args[-1], 'r') as file2:
+        dict2 = json.load(file2)
+    return [dict1, dict2]
 
 def getTypes(rawData):
     tempTypes = {}
