@@ -813,7 +813,7 @@
         },
         "abilities": {
             "1": "cute-charm",
-            "2": "competitive",
+            "2": "none",
             "3": "friend-guard"
         },
         "evolve": "wigglytuff"
@@ -834,7 +834,7 @@
         },
         "abilities": {
             "1": "cute-charm",
-            "2": "competitive",
+            "2": "none",
             "3": "frisk"
         },
         "evolve": "wigglytuff"
@@ -3039,7 +3039,7 @@
         },
         "abilities": {
             "1": "pressure",
-            "3": "static",
+            "3": "lightning-rod",
             "2": "none"
         },
         "evolve": "zapdos"
@@ -3648,7 +3648,7 @@
         },
         "abilities": {
             "1": "cute-charm",
-            "2": "competitive",
+            "2": "none",
             "3": "friend-guard"
         },
         "evolve": "jigglypuff"
@@ -6525,7 +6525,7 @@
         },
         "abilities": {
             "1": "plus",
-            "3": "lightning-rod",
+            "3": "none",
             "2": "none"
         },
         "evolve": "plusle"
@@ -6546,7 +6546,7 @@
         },
         "abilities": {
             "1": "minus",
-            "3": "volt-absorb",
+            "3": "none",
             "2": "none"
         },
         "evolve": "minun"
@@ -7323,7 +7323,7 @@
         },
         "abilities": {
             "1": "swift-swim",
-            "2": "oblivious",
+            "2": "none",
             "3": "adaptability"
         },
         "evolve": "milotic"
@@ -7344,7 +7344,7 @@
         },
         "abilities": {
             "1": "marvel-scale",
-            "2": "competitive",
+            "2": "none",
             "3": "cute-charm"
         },
         "evolve": "milotic"
@@ -7386,7 +7386,7 @@
         },
         "abilities": {
             "1": "color-change",
-            "3": "protean",
+            "3": "none",
             "2": "none"
         },
         "evolve": "kecleon"
@@ -7449,7 +7449,7 @@
         },
         "abilities": {
             "1": "levitate",
-            "3": "frisk",
+            "3": "none",
             "2": "none"
         },
         "evolve": "dusclops"
@@ -7470,7 +7470,7 @@
         },
         "abilities": {
             "1": "pressure",
-            "3": "frisk",
+            "3": "none",
             "2": "none"
         },
         "evolve": "dusknoir"
@@ -8310,7 +8310,7 @@
         },
         "abilities": {
             "1": "keen-eye",
-            "3": "reckless",
+            "3": "none",
             "2": "none"
         },
         "evolve": "staravia"
@@ -10011,7 +10011,7 @@
         },
         "abilities": {
             "1": "pressure",
-            "3": "frisk",
+            "3": "none",
             "2": "none"
         },
         "evolve": "dusknoir"
@@ -11398,7 +11398,7 @@
         "abilities": {
             "1": "poison-point",
             "2": "swarm",
-            "3": "speed-boost"
+            "3": "quick-feet"
         },
         "evolve": "whirlipede"
     },
@@ -11419,7 +11419,7 @@
         "abilities": {
             "1": "poison-point",
             "2": "swarm",
-            "3": "speed-boost"
+            "3": "quick-feet"
         },
         "evolve": "scolipede"
     },
@@ -11440,7 +11440,7 @@
         "abilities": {
             "1": "poison-point",
             "2": "swarm",
-            "3": "speed-boost"
+            "3": "quick-feet"
         },
         "evolve": "scolipede"
     },
@@ -12048,7 +12048,7 @@
         },
         "abilities": {
             "1": "frisk",
-            "2": "competitive",
+            "2": "none",
             "3": "shadow-tag"
         },
         "evolve": "gothorita"
@@ -12069,7 +12069,7 @@
         },
         "abilities": {
             "1": "frisk",
-            "2": "competitive",
+            "2": "none",
             "3": "shadow-tag"
         },
         "evolve": "gothitelle"
@@ -12090,7 +12090,7 @@
         },
         "abilities": {
             "1": "frisk",
-            "2": "competitive",
+            "2": "none",
             "3": "shadow-tag"
         },
         "evolve": "gothitelle"
@@ -12552,7 +12552,7 @@
         },
         "abilities": {
             "1": "iron-barbs",
-            "3": "anticipation",
+            "3": "none",
             "2": "none"
         },
         "evolve": "ferrothorn"
@@ -12742,7 +12742,7 @@
         "abilities": {
             "1": "flash-fire",
             "2": "flame-body",
-            "3": "infiltrator"
+            "3": "shadow-tag"
         },
         "evolve": "lampent"
     },
@@ -12763,7 +12763,7 @@
         "abilities": {
             "1": "flash-fire",
             "2": "flame-body",
-            "3": "infiltrator"
+            "3": "shadow-tag"
         },
         "evolve": "chandelure"
     },
@@ -12784,7 +12784,7 @@
         "abilities": {
             "1": "flash-fire",
             "2": "flame-body",
-            "3": "infiltrator"
+            "3": "shadow-tag"
         },
         "evolve": "chandelure"
     },

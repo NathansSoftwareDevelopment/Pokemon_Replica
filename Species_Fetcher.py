@@ -11,11 +11,11 @@ def main():
     firstPokemonID = 1
     lastPokemonID = 649 
 
-    printFinalData(parsePokeInfo(getPokemonInfo("Magneton")))
-    # for i in range(firstPokemonID, lastPokemonID+1):
-    #     rawData = getPokemonInfo(i)
-    #     pokeData = parsePokeInfo(rawData)
-    #     addToFinal(pokeData)
+    # printFinalData(parsePokeInfo(getPokemonInfo("jigglypuff")))
+    for i in range(firstPokemonID, lastPokemonID+1):
+        rawData = getPokemonInfo(i)
+        pokeData = parsePokeInfo(rawData)
+        addToFinal(pokeData)
     Write(outputDictionary, "Pokemon_Species.json")
 
 
@@ -51,7 +51,6 @@ def getTypes(rawData):
     # check each time a typing has changed
     for i in rawData["past_types"]:
         generationChanges.append(romanDict[i["generation"]["name"][-4:]])
-    ic(generationChanges)
     # identify the correct generation
     correctGeneration = 100
     # if there were relevent changes | change to the correct typing
@@ -78,7 +77,38 @@ def getAbilities(rawPokemonData):
     # if ability slots 2 or 3 are missing replace with "None"
     tempAbilities[2] = tempAbilities.get(2, "none")
     tempAbilities[3] = tempAbilities.get(3, "none")
-    ic(tempAbilities)
+
+    # generations use roman numerals. This map will allow for the an easy conversion and comparison
+    # additional characters are added the front of numerals so that all numerals are four characters (to match with generation-#)
+    romanDict = {
+        'on-i': 1, 'n-ii': 2, '-iii': 3, 'n-iv': 4, 'on-v': 5,
+        'n-vi': 6, '-vii': 7, 'viii': 8, 'n-ix': 9
+    }
+
+    generationChanges = []
+    # check each time abilities have changed
+    for i in rawPokemonData["past_abilities"]:
+        generationChanges.append(romanDict[i["generation"]["name"][-4:]])
+    
+    # identify the correct generation
+    correctGeneration = 100
+    # if there were relevent changes | change to the correct abilities
+    if generationChanges:
+        # if the last change was before or at gen 5 | use either the most information for gen 5 or none at all (causing the abilities to not change)
+        if max(generationChanges) <= 5:
+            correctGeneration = 5
+        # if there was a change past gen 5 | use the lowest generation past gen 5
+        elif max(generationChanges) > 5:
+            for i in generationChanges:
+                if i < correctGeneration & i > 5:
+                    correctGeneration = i
+    
+    # use the correct generation data
+    for i in rawPokemonData["past_abilities"]:
+        if romanDict[i["generation"]["name"][-4:]] == correctGeneration:
+            # replace each ability slot that has changed with its respective ability
+            tempAbilities.update({ability["slot"]: ability["ability"]["name"] if ability["ability"] is not None else "none" for ability in i["abilities"]})
+
     return tempAbilities
 
 def getEvolve(rawSpeciesData, pokemonName):
@@ -104,7 +134,6 @@ def getEvolve(rawSpeciesData, pokemonName):
         # For single stage pokemon evolutionChain["evolves_to"] will be an empty array causing an error
         evolution = pokemonName
     return evolution
-
 
 def printFinalData(finalData):
     for i in finalData:
