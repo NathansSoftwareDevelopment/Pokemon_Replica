@@ -19,7 +19,7 @@ def main():
             addToFinal(getPokemonInfo(baseURL + dataType+"/", i))
     except TypeError:
         pass
-    Write(outputDictionary, f"Raw_Data/Raw_{dataType.capitalize()}_Data")
+    Write(outputDictionary, f"Raw_Data/Raw_{dataType.capitalize()}_Data.json")
     pass
 
 
