@@ -14,11 +14,9 @@ def main():
     lastVarietyID = 10023 
     baseURL = "https://pokeapi.co/api/v2/"
     dataType = input("What type of data to get? ")
-    try:
+    if dataType in ["pokemon", "pokemon-species"]:
         for i in it.chain(range(firstPokemonID, lastPokemonID+1), range(firstVarietyID, lastVarietyID+1)):
             addToFinal(getPokemonInfo(baseURL + dataType+"/", i))
-    except TypeError:
-        pass
     Write(outputDictionary, f"Raw_Data/Raw_{dataType.capitalize()}_Data.json")
     pass
 
