@@ -16,7 +16,7 @@ def main():
     dataType = input("What type of data to get? ")
     if dataType in ["pokemon", "pokemon-species"]:
         for i in it.chain(range(firstPokemonID, lastPokemonID+1), range(firstVarietyID, lastVarietyID+1)):
-            addToFinal(getPokemonInfo(baseURL + dataType+"/", i))
+            addToFinal(dataType, getPokemonInfo(baseURL + dataType+"/", i))
     Write(outputDictionary, f"Raw_Data/Raw_{dataType.capitalize()}_Data.json")
     pass
 
@@ -31,8 +31,9 @@ def getPokemonInfo(dataType, ID):
     else:
         print(f"FAILED TO RETRIEVE {dataType[:-1]} ID: {ID} | {rawData.status_code}")
 
-def addToFinal(inputDictionary: dict):
-    outputDictionary[inputDictionary[0]["name"]] = inputDictionary
+def addToFinal(dataType, inputDictionary):
+    if dataType in ["pokemon", "pokemon-species"]:
+        outputDictionary[inputDictionary[0]["name"]] = inputDictionary
 
 def Write(Object, FileName):
     json_string = json.dumps(Object, indent=4)
