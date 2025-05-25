@@ -13,18 +13,29 @@ def main():
     firstVarietyID = 10001 
     lastVarietyID = 10023 
     baseURL = "https://pokeapi.co/api/v2/"
+
     dataType = input("What type of data to get? ")
+
     if dataType in ["pokemon", "pokemon-species"]:
         for i in it.chain(range(firstPokemonID, lastPokemonID+1), range(firstVarietyID, lastVarietyID+1)):
             addToFinal(dataType, getPokemonInfo(baseURL + dataType+"/", i))
+
     if dataType == "evolution-chain":
+        with open("Raw_Data/Raw_Pokemon_Data.json", "r") as f:
+            rawPokemonData = json.load(f)
         with open("Raw_Data/Raw_Pokemon-species_Data.json", "r") as f:
-            pokemonSpecies = json.load(f)
-        for i in pokemonSpecies:
-            ic(pokemonSpecies[i])
-            addToFinal(dataType, getEvolutionInfo(pokemonSpecies[i][0]))
+            rawSpeciesData = json.load(f)
+        for specieName, speciesData in rawSpeciesData.items():
+            ic(specieName)
+            if speciesData:
+                speciesInfo = speciesData[0]
+                evolutionChainURL = speciesInfo["evolution_chain"]["url"]
+                for variety in speciesInfo["varieties"]:
+                    pokemonName = variety["pokemon"]["name"]
+                    # if pokemon is in rawPokemonData and has valid data | add to output dictionary
+                    if pokemonName in rawPokemonData and rawPokemonData[pokemonName]:
+                        addToFinal(dataType, getEvolutionInfo(evolutionChainURL, pokemonName))
     Write(outputDictionary, f"Raw_Data/Raw_{dataType.capitalize()}_Data.json")
-    pass
 
 
 def getPokemonInfo(dataType, ID):
@@ -37,11 +48,10 @@ def getPokemonInfo(dataType, ID):
     else:
         print(f"FAILED TO RETRIEVE {dataType[:-1]} ID: {ID} | {rawData.status_code}")
 
-def getEvolutionInfo(rawSpeciesData):
-    URL = rawSpeciesData["evolution_chain"]
+def getEvolutionInfo(evolutionChainURL, pokemonName):
+    ic(evolutionChainURL)
     # get the species of pokemon, get the evolution chain of that species, then access "chain" key
-    evolutionChain = requests.get(rawSpeciesData["evolution_chain"]["url"]).json()["chain"]
-    pokemonName = rawSpeciesData["name"]
+    evolutionChain = requests.get(evolutionChainURL).json()["chain"]
     try:
         # if first pokemon name == name of pokemon | evolve = second pokemon
         if evolutionChain["species"]["name"] == pokemonName:
@@ -61,7 +71,7 @@ def getEvolutionInfo(rawSpeciesData):
     except IndexError:
         # For single stage pokemon evolutionChain["evolves_to"] will be an empty array causing an error
         evolution = pokemonName
-    return {rawSpeciesData["name"]: evolution}
+    return {pokemonName: evolution}
 
 def addToFinal(dataType, inputDictionary):
     if dataType in ["pokemon", "pokemon-species"]:
