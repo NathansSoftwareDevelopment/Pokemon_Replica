@@ -103,29 +103,10 @@ def getAbilities(rawPokemonData):
 
     return tempAbilities
 
-def getEvolve(rawSpeciesData, pokemonName):
-    # get the species of pokemon, get the evolution chain of that species, then access "chain" key
-    evolutionChain = requests.get(rawSpeciesData["evolution_chain"]["url"]).json()["chain"]
-    try:
-        # if first pokemon name == name of pokemon | evolve = second pokemon
-        if evolutionChain["species"]["name"] == pokemonName:
-            if len(evolutionChain["evolves_to"]) <= 1:
-                evolution = evolutionChain["evolves_to"][0]["species"]["name"]
-            else:
-                evolution = "special"
-        # if second pokemon name == name of pokemon | evolve = third pokemon
-        elif evolutionChain["evolves_to"][0]["species"]["name"] == pokemonName:
-            if len(evolutionChain["evolves_to"][0]["evolves_to"]) <= 1:
-                evolution = evolutionChain["evolves_to"][0]["evolves_to"][0]["species"]["name"]
-            else:
-                evolution = "special"
-        # otherwise | evolve = name of pokemon
-        else:
-            evolution = pokemonName
-    except IndexError:
-        # For single stage pokemon evolutionChain["evolves_to"] will be an empty array causing an error
-        evolution = pokemonName
-    return evolution
+def getEvolve(pokemonName):
+    with open("Raw_Data/Raw_Evolution-chain_Data.json", "r") as f:
+        evolutionTable = json.load(f)
+        return evolutionTable[pokemonName]
 
 def printFinalData(finalData):
     for i in finalData:
@@ -155,7 +136,7 @@ def parsePokeInfo(rawData):
 
     pokeData["abilities"] = getAbilities(rawPokemonData)
 
-    pokeData["evolve"] = getEvolve(rawSpeciesData, pokeData["name"])
+    pokeData["evolve"] = getEvolve(pokeData["name"])
     
     return pokeData
 
