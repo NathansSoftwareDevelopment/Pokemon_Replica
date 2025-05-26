@@ -39,34 +39,34 @@ class Pokemon {
 
         std::map<std::string, int> speciesStats;
         
-        int HitPointsIndividualValue;
-        int AttackIndividualValue;
-        int DefenseIndividualValue;
-        int SpecialAttackIndividualValue;
-        int SpecialDefenseIndividualValue;
-        int SpeedIndividualValue;
-        int* IndividualValues[6] = {
-            &HitPointsIndividualValue,
-            &AttackIndividualValue,
-            &DefenseIndividualValue,
-            &SpecialAttackIndividualValue,
-            &SpecialDefenseIndividualValue,
-            &SpeedIndividualValue
+        int hitPointsIndividualValue;
+        int attackIndividualValue;
+        int defenseIndividualValue;
+        int specialAttackIndividualValue;
+        int specialDefenseIndividualValue;
+        int speedIndividualValue;
+        int* individualValues[6] = {
+            &hitPointsIndividualValue,
+            &attackIndividualValue,
+            &defenseIndividualValue,
+            &specialAttackIndividualValue,
+            &specialDefenseIndividualValue,
+            &speedIndividualValue
         };
 
-        int HitPointsEffortValue;
-        int AttackEffortValue;
-        int DefenseEffortValue;
-        int SpecialAttackEffortValue;
-        int SpecialDefenseEffortValue;
-        int SpeedEffortValue;
-        int* EffortValues[6] = {
-            &HitPointsEffortValue,
-            &AttackEffortValue,
-            &DefenseEffortValue,
-            &SpecialAttackEffortValue,
-            &SpecialDefenseEffortValue,
-            &SpeedEffortValue
+        int hitPointsEffortValue;
+        int attackEffortValue;
+        int defenseEffortValue;
+        int specialAttackEffortValue;
+        int specialDefenseEffortValue;
+        int speedEffortValue;
+        int* effortValues[6] = {
+            &hitPointsEffortValue,
+            &attackEffortValue,
+            &defenseEffortValue,
+            &specialAttackEffortValue,
+            &specialDefenseEffortValue,
+            &speedEffortValue
         };
 
         int maxHitPoints;
