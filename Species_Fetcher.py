@@ -14,7 +14,7 @@ def main():
         pokemonName = allRawData[0][pokemon][0]
         addToFinal(parsePokeInfo([allRawData[0][pokemonName["name"]][0], allRawData[-1][pokemonName["species"]["name"]][0]]))
         ic(pokemonName["name"])
-    Write(outputDictionary, "Pokemon_Species.json")
+    Write(outputDictionary, "Species.json")
 
 
 def getPokemonInfo(*args):
