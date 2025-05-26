@@ -7,12 +7,12 @@
 using json = nlohmann::json;
 
 struct Species {
-    std::string speciesName;
-    std::map<std::string, int> speciesStats;
-    std::string speciesType1;
-    std::string speciesType2;
-    std::string speciesAbilities[3];
-    std::string speciesEvolution;
+    std::string name;
+    std::map<std::string, int> stats;
+    std::string type1;
+    std::string type2;
+    std::string abilities[3];
+    std::string evolution;
 };
 
 inline void from_json(const json& j, Species& s);

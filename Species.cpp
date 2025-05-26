@@ -7,48 +7,48 @@
 using json = nlohmann::json;
 
 void from_json(const json& inputJson, Species& inputSpecies) {
-    inputSpecies.speciesName = inputJson.at("name").get<std::string>();
+    inputSpecies.name = inputJson.at("name").get<std::string>();
 
-    inputSpecies.speciesStats["HitPoints"] = inputJson.at("stats").at("hp").get<int>();
-    inputSpecies.speciesStats["Attack"] = inputJson.at("stats").at("attack").get<int>();
-    inputSpecies.speciesStats["Defense"] = inputJson.at("stats").at("defense").get<int>();
-    inputSpecies.speciesStats["SpecialAttack"] = inputJson.at("stats").at("special-attack").get<int>();
-    inputSpecies.speciesStats["SpecialDefense"] = inputJson.at("stats").at("special-defense").get<int>();
-    inputSpecies.speciesStats["Speed"] = inputJson.at("stats").at("speed").get<int>();
+    inputSpecies.stats["HitPoints"] = inputJson.at("stats").at("hp").get<int>();
+    inputSpecies.stats["Attack"] = inputJson.at("stats").at("attack").get<int>();
+    inputSpecies.stats["Defense"] = inputJson.at("stats").at("defense").get<int>();
+    inputSpecies.stats["SpecialAttack"] = inputJson.at("stats").at("special-attack").get<int>();
+    inputSpecies.stats["SpecialDefense"] = inputJson.at("stats").at("special-defense").get<int>();
+    inputSpecies.stats["Speed"] = inputJson.at("stats").at("speed").get<int>();
 
     if (inputJson.at("types").contains("1")) {
-        inputSpecies.speciesType1 = inputJson.at("types").at("1").get<std::string>();
+        inputSpecies.type1 = inputJson.at("types").at("1").get<std::string>();
     } else {
-        inputSpecies.speciesType1 = "none";
+        inputSpecies.type1 = "none";
     }
-    inputSpecies.speciesType1[0] = static_cast<char>(std::toupper(inputSpecies.speciesType1[0]));
+    inputSpecies.type1[0] = static_cast<char>(std::toupper(inputSpecies.type1[0]));
     if (inputJson.at("types").contains("2")) {
-        inputSpecies.speciesType2 = inputJson.at("types").at("2").get<std::string>();
+        inputSpecies.type2 = inputJson.at("types").at("2").get<std::string>();
     } else {
-        inputSpecies.speciesType2 = "none";
+        inputSpecies.type2 = "none";
     }
-    inputSpecies.speciesType2[0] = static_cast<char>(std::toupper(inputSpecies.speciesType2[0]));
+    inputSpecies.type2[0] = static_cast<char>(std::toupper(inputSpecies.type2[0]));
 
     if (inputJson.at("abilities").contains("1")) {
-        inputSpecies.speciesAbilities[0] = inputJson.at("abilities").at("1").get<std::string>();
+        inputSpecies.abilities[0] = inputJson.at("abilities").at("1").get<std::string>();
     } else {
-        inputSpecies.speciesAbilities[0] = "none";
+        inputSpecies.abilities[0] = "none";
     }
     if (inputJson.at("abilities").contains("2")) {
-        inputSpecies.speciesAbilities[1] = inputJson.at("abilities").at("2").get<std::string>();
+        inputSpecies.abilities[1] = inputJson.at("abilities").at("2").get<std::string>();
     } else {
-        inputSpecies.speciesAbilities[1] = "none";
+        inputSpecies.abilities[1] = "none";
     }
     if (inputJson.at("abilities").contains("3")) {
-        inputSpecies.speciesAbilities[2] = inputJson.at("abilities").at("3").get<std::string>();
+        inputSpecies.abilities[2] = inputJson.at("abilities").at("3").get<std::string>();
     } else {
-        inputSpecies.speciesAbilities[2] = "none";
+        inputSpecies.abilities[2] = "none";
     }
 
     if (inputJson.contains("evolve")) {
-        inputSpecies.speciesEvolution = inputJson.at("evolve").get<std::string>();
+        inputSpecies.evolution = inputJson.at("evolve").get<std::string>();
     } else {
-        inputSpecies.speciesEvolution = "none";
+        inputSpecies.evolution = "none";
     }
 }
 
@@ -69,7 +69,7 @@ void generateSpeciesMap() {
 
         Species currentSpecies;
         currentSpecies = speciesJson.get<Species>();
-        currentSpecies.speciesName = speciesKey;
+        currentSpecies.name = speciesKey;
 
         speciesMap[speciesKey] = currentSpecies;
     }

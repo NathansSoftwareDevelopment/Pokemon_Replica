@@ -9,79 +9,79 @@
 
 class Pokemon {
     public:
-        const Species* pokemonSpecies;
-        std::string pokemonName;
+        const Species* species;
+        std::string name;
 
-        int pokemonLevel;
-        int pokemonExperience;
+        int level;
+        int experience;
 
-        Nature* pokemonNature;
+        Nature* nature;
         
-        std::string pokemonAbility;
+        std::string ability;
         
-        std::string pokemonItem;
+        std::string item;
 
-        Type* pokemonType1;
-        Type* pokemonType2;
+        Type* type1;
+        Type* type2;
 
-        Move* pokemonMove1;
-        Move* pokemonMove2;
-        Move* pokemonMove3;
-        Move* pokemonMove4;
-        Move** pokemonMoves[4] = {
-            &pokemonMove1,
-            &pokemonMove2,
-            &pokemonMove3,
-            &pokemonMove4
+        Move* move1;
+        Move* move2;
+        Move* move3;
+        Move* move4;
+        Move** moves[4] = {
+            &move1,
+            &move2,
+            &move3,
+            &move4
         };
         
-        std::string pokemonCondition;
+        std::string condition;
 
         std::map<std::string, int> speciesStats;
         
-        int pokemonHitPointsIndividualValue;
-        int pokemonAttackIndividualValue;
-        int pokemonDefenseIndividualValue;
-        int pokemonSpecialAttackIndividualValue;
-        int pokemonSpecialDefenseIndividualValue;
-        int pokemonSpeedIndividualValue;
-        int* pokemonIndividualValues[6] = {
-            &pokemonHitPointsIndividualValue,
-            &pokemonAttackIndividualValue,
-            &pokemonDefenseIndividualValue,
-            &pokemonSpecialAttackIndividualValue,
-            &pokemonSpecialDefenseIndividualValue,
-            &pokemonSpeedIndividualValue
+        int HitPointsIndividualValue;
+        int AttackIndividualValue;
+        int DefenseIndividualValue;
+        int SpecialAttackIndividualValue;
+        int SpecialDefenseIndividualValue;
+        int SpeedIndividualValue;
+        int* IndividualValues[6] = {
+            &HitPointsIndividualValue,
+            &AttackIndividualValue,
+            &DefenseIndividualValue,
+            &SpecialAttackIndividualValue,
+            &SpecialDefenseIndividualValue,
+            &SpeedIndividualValue
         };
 
-        int pokemonHitPointsEffortValue;
-        int pokemonAttackEffortValue;
-        int pokemonDefenseEffortValue;
-        int pokemonSpecialAttackEffortValue;
-        int pokemonSpecialDefenseEffortValue;
-        int pokemonSpeedEffortValue;
-        int* pokemonEffortValues[6] = {
-            &pokemonHitPointsEffortValue,
-            &pokemonAttackEffortValue,
-            &pokemonDefenseEffortValue,
-            &pokemonSpecialAttackEffortValue,
-            &pokemonSpecialDefenseEffortValue,
-            &pokemonSpeedEffortValue
+        int HitPointsEffortValue;
+        int AttackEffortValue;
+        int DefenseEffortValue;
+        int SpecialAttackEffortValue;
+        int SpecialDefenseEffortValue;
+        int SpeedEffortValue;
+        int* EffortValues[6] = {
+            &HitPointsEffortValue,
+            &AttackEffortValue,
+            &DefenseEffortValue,
+            &SpecialAttackEffortValue,
+            &SpecialDefenseEffortValue,
+            &SpeedEffortValue
         };
 
-        int pokemonHitPoints;
-        int pokemonAttack;
-        int pokemonDefense;
-        int pokemonSpecialAttack;
-        int pokemonSpecialDefense;
-        int pokemonSpeed;
-        int* pokemonStats[6] = {
-            &pokemonHitPoints,
-            &pokemonAttack,
-            &pokemonDefense,
-            &pokemonSpecialAttack,
-            &pokemonSpecialDefense,
-            &pokemonSpeed
+        int maxHitPoints;
+        int maxAttack;
+        int maxDefense;
+        int maxSpecialAttack;
+        int maxSpecialDefense;
+        int maxSpeed;
+        int* maxStats[6] = {
+            &maxHitPoints,
+            &maxAttack,
+            &maxDefense,
+            &maxSpecialAttack,
+            &maxSpecialDefense,
+            &maxSpeed
         };
 
         int currentHitPoints;
@@ -122,18 +122,18 @@ class Pokemon {
         void setPokemonNature(std::string pokemonNatureName);
         void setPokemonTypes(const Species*);
         void calculatePokemonStats();
-        void setPokemonMoves(std::string pokemonInputMove1, std::string pokemonInputMove2, std::string pokemonInputMove3, std::string pokemonInputMove4);
-        void pokemonEvolve();
+        void setPokemonMoves(std::string inputMove1, std::string InputMove2, std::string inputMove3, std::string inputMove4);
+        void evolve();
         void setPokemonCurrentStats();
         void calculateStageChanges();
 
         
-        Pokemon(std::string pokemonInputName, const Species* pokemonInputSpecies, std::string pokemonInputNature, std::string pokemonInputAbility, int pokemonInputIndividualValues[6]);
+        Pokemon(std::string inputName, const Species* inputSpecies, std::string inputNature, std::string inputAbility, int inputIndividualValues[6]);
         Pokemon(
-            std::string pokemonInputName, const Species* pokemonInputSpecies, std::string pokemonInputNature, int pokemonInputLevel, int pokemonInputExperience, std::string pokemonInputAbility,
-            std::string pokemonInputMove1, std::string pokemonInputMove2, std::string pokemonInputMove3, std::string pokemonInputMove4, 
-            std::string pokemonInputCondition,
-            int pokemonInputIndividualValues[6], int pokemonInputEffortValues[6]
+            std::string inputName, const Species* inputSpecies, std::string inputNature, int inputLevel, int inputExperience, std::string inputAbility,
+            std::string inputMove1, std::string inputMove2, std::string inputMove3, std::string inputMove4, 
+            std::string inputCondition,
+            int inputIndividualValues[6], int inputEffortValues[6]
         );
         ~Pokemon();
 };

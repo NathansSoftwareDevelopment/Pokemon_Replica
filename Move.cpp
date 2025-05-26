@@ -4,18 +4,18 @@
 #include "Type.h"
 
 Move::Move(
-    std::string moveInputName, std::string moveInputType, std::string moveInputDamageCategory, int moveInputPower, int moveInputAccuracy, int moveInputPP, int moveInputFlinchChance,
-    std::map<std::string, int> moveInputConditionChances, std::map<std::string, std::array<int, 2>> moveInputUserStageChances, std::map<std::string, std::array<int, 2>> moveInputOpponentStageChances, bool moveInputUniqueness
+    std::string inputName, std::string inputType, std::string inputDamageCategory, int inputPower, int inputAccuracy, int inputPP, int inputFlinchChance,
+    std::map<std::string, int> inputConditionChances, std::map<std::string, std::array<int, 2>> inputUserStageChances, std::map<std::string, std::array<int, 2>> inputOpponentStageChances, bool inputUniqueness
 ) {
-    moveName = moveInputName;
-    moveType = &typeMap.find(moveInputType)->second;
-    moveDamageCategory = moveInputDamageCategory;
-    movePower = moveInputPower;
-    moveAccuracy = moveInputAccuracy;
-    movePP = moveInputPP;
-    moveFlinchChance = moveInputFlinchChance;
-    moveConditionChances.insert(moveInputConditionChances.begin(), moveInputConditionChances.end());
-    moveUserStageChances.insert(moveInputUserStageChances.begin(), moveInputUserStageChances.end());
-    moveOpponentStageChances.insert(moveInputOpponentStageChances.begin(), moveInputOpponentStageChances.end());
-    moveUniqueness = moveInputUniqueness;
+    name = inputName;
+    type = &typeMap.find(inputType)->second;
+    damageCategory = inputDamageCategory;
+    power = inputPower;
+    accuracy = inputAccuracy;
+    PP = inputPP;
+    flinchChance = inputFlinchChance;
+    conditionChances.insert(inputConditionChances.begin(), inputConditionChances.end());
+    userStageChances.insert(inputUserStageChances.begin(), inputUserStageChances.end());
+    opponentStageChances.insert(inputOpponentStageChances.begin(), inputOpponentStageChances.end());
+    uniqueness = inputUniqueness;
 }

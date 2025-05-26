@@ -6,18 +6,18 @@
 
 class Nature {
     public:
-        std::string natureName;
-        float natureAttack = 1;
-        float natureDefense = 1;
-        float natureSpeed = 1;
-        float natureSpecialAttack = 1;
-        float natureSpecialDefense = 1;
-        float* natureStats[5] = { 
-            &natureAttack,
-            &natureDefense,
-            &natureSpeed,
-            &natureSpecialAttack,
-            &natureSpecialDefense
+        std::string name;
+        float attack = 1;
+        float defense = 1;
+        float speed = 1;
+        float specialAttack = 1;
+        float specialDefense = 1;
+        float* stats[5] = { 
+            &attack,
+            &defense,
+            &speed,
+            &specialAttack,
+            &specialDefense
         };
         Nature(std::string natureInput, int multiplierInput, int divisorInput);
 };

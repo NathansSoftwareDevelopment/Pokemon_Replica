@@ -10,16 +10,16 @@ class display {
     public:
         static int displayID;
         void idCounter(bool stackCall);
-        void All(Pokemon inputPokemon, bool stackCall = false);
-        void PokemonName(Pokemon inputPokemon, bool stackCall = false);
-        void PokemonSpecies(Pokemon inputPokemon, bool stackCall = false);
-        void Nature(Pokemon inputPokemon, bool stackCall = false);
-        void PokemonStats(Pokemon inputPokemon, bool stackCall = false);
-        void SpeciesStats(Pokemon inputPokemon, bool stackCall = false);
-        void PokemonType(Pokemon inputPokemon, bool stackCall = false);
-        void PokemonMovesAll(Pokemon inputPokemon, bool stackCall = false);
-        void PokemonMoveNames(Pokemon inputPokemon, bool stackCall = false);
-        void PokemonMoveAll(Pokemon inputPokemon, int moveIndex, bool stackCall = false);
+        void all(Pokemon inputPokemon, bool stackCall = false);
+        void pokemonName(Pokemon inputPokemon, bool stackCall = false);
+        void pokemonSpecies(Pokemon inputPokemon, bool stackCall = false);
+        void nature(Pokemon inputPokemon, bool stackCall = false);
+        void pokemonStats(Pokemon inputPokemon, bool stackCall = false);
+        void speciesStats(Pokemon inputPokemon, bool stackCall = false);
+        void pokemonType(Pokemon inputPokemon, bool stackCall = false);
+        void pokemonMovesAll(Pokemon inputPokemon, bool stackCall = false);
+        void pokemonMoveNames(Pokemon inputPokemon, bool stackCall = false);
+        void pokemonMoveAll(Pokemon inputPokemon, int moveIndex, bool stackCall = false);
 };
 
 #endif

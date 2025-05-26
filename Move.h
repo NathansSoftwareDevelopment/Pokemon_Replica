@@ -7,20 +7,20 @@
 
 class Move {
     public:
-        std::string moveName;
-        Type* moveType;
-        std::string moveDamageCategory;
-        int movePower;
-        int moveAccuracy;
-        int movePP;
-        int moveFlinchChance;
-        std::map<std::string, int> moveConditionChances;
-        std::map<std::string, std::array<int, 2>> moveUserStageChances;
-        std::map<std::string, std::array<int, 2>> moveOpponentStageChances;
-        bool moveUniqueness;
+        std::string name;
+        Type* type;
+        std::string damageCategory;
+        int power;
+        int accuracy;
+        int PP;
+        int flinchChance;
+        std::map<std::string, int> conditionChances;
+        std::map<std::string, std::array<int, 2>> userStageChances;
+        std::map<std::string, std::array<int, 2>> opponentStageChances;
+        bool uniqueness;
         Move(
-            std::string moveInputName, std::string moveInputType, std::string moveInputDamageCategory, int moveInputPower, int moveInputAccuracy, int moveInputPP, int moveInputFlinchChance = 0,
-            std::map<std::string, int> moveInputConditionChances = {}, std::map<std::string, std::array<int, 2>> moveInputUserStageChances = {}, std::map<std::string, std::array<int, 2>> moveInputOpponentStageChances = {}, bool moveInputUniqueness = {}
+            std::string inputName, std::string inputType, std::string inputDamageCategory, int inputPower, int inputAccuracy, int inputPP, int inputFlinchChance = 0,
+            std::map<std::string, int> inputConditionChances = {}, std::map<std::string, std::array<int, 2>> inputUserStageChances = {}, std::map<std::string, std::array<int, 2>> inputOpponentStageChances = {}, bool inputUniqueness = {}
         );
 };
 

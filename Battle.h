@@ -5,19 +5,19 @@
 
 class Battle {
     public:
-        int battleTurn;
-        bool battlePlayersTurn;
-        Move* battlePlayer1Move;
-        Move* battlePlayer2Move;
-        Pokemon* battleFasterPokemon;
-        Pokemon* battleSlowerPokemon;
-        void battleDamageCalculation(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove, Pokemon* defendingInputPokemon);
-        Move* battleGetMove(Pokemon* attackingInputPokemon, int battleInputMove);
-        void battleGetFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemon2);
-        double battleStabMultiplier(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove);
-        double battleEffectivenessMultiplier(Move* battleInputPokemonMove, Pokemon* defendingInputPokemon);
-        void battleUseMove(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove, Pokemon* defendingInputPokemon);
-        bool battleHitCheck(Pokemon* attackingInputPokemon, Move* battleInputPokemonMove, Pokemon* defendingInputPokemon);
+        int turn;
+        bool playersTurn;
+        Move* player1Move;
+        Move* player2Move;
+        Pokemon* fasterPokemon;
+        Pokemon* slowerPokemon;
+        void damageCalculation(Pokemon* attackingInputPokemon, Move* inputPokemonMove, Pokemon* defendingInputPokemon);
+        Move* getMove(Pokemon* attackingInputPokemon, int inputMove);
+        void getFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemon2);
+        double stabMultiplier(Pokemon* attackingInputPokemon, Move* inputPokemonMove);
+        double effectivenessMultiplier(Move* inputPokemonMove, Pokemon* defendingInputPokemon);
+        void useMove(Pokemon* attackingInputPokemon, Move* inputPokemonMove, Pokemon* defendingInputPokemon);
+        bool hitCheck(Pokemon* attackingInputPokemon, Move* inputPokemonMove, Pokemon* defendingInputPokemon);
         Battle(Pokemon* inputPokemon1, Pokemon* inputPokemon2);
 };
 
