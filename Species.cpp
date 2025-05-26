@@ -22,14 +22,12 @@ void from_json(const json& inputJson, Species& inputSpecies) {
         inputSpecies.speciesType1 = "none";
     }
     inputSpecies.speciesType1[0] = static_cast<char>(std::toupper(inputSpecies.speciesType1[0]));
-    std::cout << "TESTING: " << inputSpecies.speciesType1 << std::endl;
     if (inputJson.at("types").contains("2")) {
         inputSpecies.speciesType2 = inputJson.at("types").at("2").get<std::string>();
     } else {
         inputSpecies.speciesType2 = "none";
     }
     inputSpecies.speciesType2[0] = static_cast<char>(std::toupper(inputSpecies.speciesType2[0]));
-    std::cout << "HERE: " << inputSpecies.speciesType2 << std::endl;
 
     if (inputJson.at("abilities").contains("1")) {
         inputSpecies.speciesAbilities[0] = inputJson.at("abilities").at("1").get<std::string>();
@@ -72,13 +70,7 @@ void generateSpeciesMap() {
         Species currentSpecies;
         currentSpecies = speciesJson.get<Species>();
         currentSpecies.speciesName = speciesKey;
-        currentSpecies = static_cast<Species>(currentSpecies);
 
         speciesMap[speciesKey] = currentSpecies;
-
-        std::cout << "Successfully loaded " << speciesMap.size() << " species." << std::endl;
-    }
-    for (auto i : speciesMap) {
-        std::cout << i.first << std::endl;
     }
 }
