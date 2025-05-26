@@ -8,12 +8,7 @@
 #include "Move.h"
 
 void Pokemon::setSpeciesStats(const Species* pokemonInputSpecies) {
-    speciesHitPoints = pokemonInputSpecies->speciesStats[0];
-    speciesAttack = pokemonInputSpecies->speciesStats[1];
-    speciesDefense = pokemonInputSpecies->speciesStats[2];
-    speciesSpecialAttack = pokemonInputSpecies->speciesStats[3];
-    speciesSpecialDefense = pokemonInputSpecies->speciesStats[4];
-    speciesSpeed = pokemonInputSpecies->speciesStats[5];
+    speciesStats = pokemonInputSpecies->speciesStats;
 }
 
 void Pokemon::setPokemonIndividualValues(int pokemonIndividualValues[6]) {
@@ -55,12 +50,12 @@ void Pokemon::setPokemonMoves(std::string pokemonInputMove1, std::string pokemon
 }
 
 void Pokemon::calculatePokemonStats() {
-    pokemonHitPoints = std::max(floor(((2*speciesHitPoints+pokemonHitPointsIndividualValue+floor(pokemonHitPointsEffortValue/4.0))*pokemonLevel)/100)+pokemonLevel+10, 1.0);
-    pokemonAttack = std::max(floor(((2*speciesAttack+pokemonAttackIndividualValue+floor(pokemonAttackEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureAttack, 1.0);
-    pokemonDefense = std::max(floor(((2*speciesDefense+pokemonDefenseIndividualValue+floor(pokemonDefenseEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureDefense, 1.0);
-    pokemonSpecialAttack = std::max(floor(((2*speciesSpecialAttack+pokemonSpecialAttackIndividualValue+floor(pokemonSpecialAttackEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureSpecialAttack, 1.0);
-    pokemonSpecialDefense = std::max(floor(((2*speciesSpecialDefense+pokemonSpecialDefenseIndividualValue+floor(pokemonSpecialDefenseEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureSpecialDefense, 1.0);
-    pokemonSpeed = std::max(floor(((2*speciesSpeed+pokemonSpeedIndividualValue+floor(pokemonSpeedEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureSpeed, 1.0);
+    pokemonHitPoints = std::max(floor(((2*speciesStats["HitPoints"]+pokemonHitPointsIndividualValue+floor(pokemonHitPointsEffortValue/4.0))*pokemonLevel)/100)+pokemonLevel+10, 1.0);
+    pokemonAttack = std::max(floor(((2*speciesStats["Attack"]+pokemonAttackIndividualValue+floor(pokemonAttackEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureAttack, 1.0);
+    pokemonDefense = std::max(floor(((2*speciesStats["Defense"]+pokemonDefenseIndividualValue+floor(pokemonDefenseEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureDefense, 1.0);
+    pokemonSpecialAttack = std::max(floor(((2*speciesStats["SpecialAttack"]+pokemonSpecialAttackIndividualValue+floor(pokemonSpecialAttackEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureSpecialAttack, 1.0);
+    pokemonSpecialDefense = std::max(floor(((2*speciesStats["SpecialDefense"]+pokemonSpecialDefenseIndividualValue+floor(pokemonSpecialDefenseEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureSpecialDefense, 1.0);
+    pokemonSpeed = std::max(floor(((2*speciesStats["Speed"]+pokemonSpeedIndividualValue+floor(pokemonSpeedEffortValue/4.0))*pokemonLevel)/100+5) * pokemonNature->natureSpeed, 1.0);
 }
 
 void Pokemon::pokemonEvolve() {

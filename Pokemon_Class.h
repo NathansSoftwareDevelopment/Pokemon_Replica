@@ -37,20 +37,7 @@ class Pokemon {
         
         std::string pokemonCondition;
 
-        int speciesHitPoints;
-        int speciesAttack;
-        int speciesDefense;
-        int speciesSpecialAttack;
-        int speciesSpecialDefense;
-        int speciesSpeed;
-        int* speciesStats[6] = {
-            &speciesHitPoints,
-            &speciesAttack,
-            &speciesDefense,
-            &speciesSpecialAttack,
-            &speciesSpecialDefense,
-            &speciesSpeed
-        };
+        std::map<std::string, int> speciesStats;
         
         int pokemonHitPointsIndividualValue;
         int pokemonAttackIndividualValue;

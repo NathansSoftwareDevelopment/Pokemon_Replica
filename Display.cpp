@@ -54,8 +54,8 @@ void display::PokemonStats(Pokemon inputPokemon, bool stackCall) {
 void display::SpeciesStats(Pokemon inputPokemon, bool stackCall) {
     idCounter(stackCall);
     cout << "\nSpecies Stats\n";
-    for (int* i: inputPokemon.speciesStats) {
-        cout << *i << endl;
+    for (std::pair i: inputPokemon.speciesStats) {
+        cout << i.first << ": " << i.second << endl;
     }
 }
 void display::PokemonType(Pokemon inputPokemon, bool stackCall) {

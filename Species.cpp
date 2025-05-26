@@ -9,12 +9,12 @@ using json = nlohmann::json;
 void from_json(const json& inputJson, Species& inputSpecies) {
     inputSpecies.speciesName = inputJson.at("name").get<std::string>();
 
-    inputSpecies.speciesStats[0] = inputJson.at("stats").at("hp").get<int>();
-    inputSpecies.speciesStats[1] = inputJson.at("stats").at("attack").get<int>();
-    inputSpecies.speciesStats[2] = inputJson.at("stats").at("defense").get<int>();
-    inputSpecies.speciesStats[3] = inputJson.at("stats").at("special-attack").get<int>();
-    inputSpecies.speciesStats[4] = inputJson.at("stats").at("special-defense").get<int>();
-    inputSpecies.speciesStats[5] = inputJson.at("stats").at("speed").get<int>();
+    inputSpecies.speciesStats["HitPoints"] = inputJson.at("stats").at("hp").get<int>();
+    inputSpecies.speciesStats["Attack"] = inputJson.at("stats").at("attack").get<int>();
+    inputSpecies.speciesStats["Defense"] = inputJson.at("stats").at("defense").get<int>();
+    inputSpecies.speciesStats["SpecialAttack"] = inputJson.at("stats").at("special-attack").get<int>();
+    inputSpecies.speciesStats["SpecialDefense"] = inputJson.at("stats").at("special-defense").get<int>();
+    inputSpecies.speciesStats["Speed"] = inputJson.at("stats").at("speed").get<int>();
 
     if (inputJson.at("types").contains("1")) {
         inputSpecies.speciesType1 = inputJson.at("types").at("1").get<std::string>();
