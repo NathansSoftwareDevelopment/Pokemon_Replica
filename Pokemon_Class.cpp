@@ -7,8 +7,8 @@
 #include "Type.h"
 #include "Move.h"
 
-void Pokemon::setSpeciesStats(const Species* inputSpecies) {
-    speciesStats = inputSpecies->stats;
+void Pokemon::setSpeciesStats() {
+    speciesStats = species->stats;
 }
 
 void Pokemon::setPokemonIndividualValues(int individualValues[6]) {
@@ -37,9 +37,9 @@ void Pokemon::setPokemonNature(std::string inputNature) {
     }
 }
 
-void Pokemon::setPokemonTypes(const Species* inputSpecies) {
-    type1 = &typeMap.find(inputSpecies->type1)->second;
-    type2 = &typeMap.find(inputSpecies->type2)->second;
+void Pokemon::setPokemonTypes() {
+    type1 = &typeMap.find(species->type1)->second;
+    type2 = &typeMap.find(species->type2)->second;
 }
 
 void Pokemon::setPokemonMoves(std::string inputMove1, std::string inputMove2, std::string inputMove3, std::string inputMove4) {
@@ -62,8 +62,8 @@ void Pokemon::evolve() {
     int abilityIndex = std::find(species->abilities, species->abilities + (sizeof(species->abilities) / sizeof(species->abilities[0])), ability) - species->abilities;
     species = &(speciesMap[species->evolution]);
     ability = species->abilities[abilityIndex];
-    setPokemonTypes(species);
-    setSpeciesStats(species);
+    setPokemonTypes();
+    setSpeciesStats();
     calculatePokemonStats();
 }
 
@@ -93,8 +93,8 @@ Pokemon::Pokemon(std::string inputName, const Species* inputSpecies, std::string
     experience = 0;
     ability = inputAbility;
     
-    setPokemonTypes(inputSpecies);
-    setSpeciesStats(inputSpecies);
+    setPokemonTypes();
+    setSpeciesStats();
     setPokemonIndividualValues(inputIndividualValues);
     int zeroEffortValues[6] = {};
     setPokemonEffortValues(zeroEffortValues);
@@ -115,13 +115,13 @@ Pokemon::Pokemon(
     experience = inputExperience;
     ability = inputAbility;
     
-    setPokemonTypes(inputSpecies);
+    setPokemonTypes();
     
     setPokemonMoves(inputMove1, inputMove2, inputMove3, inputMove4);
     
     condition = inputCondition;
     
-    setSpeciesStats(inputSpecies);
+    setSpeciesStats();
     setPokemonIndividualValues(inputIndividualValues);
     setPokemonEffortValues(inputEffortValues);
     calculatePokemonStats();
