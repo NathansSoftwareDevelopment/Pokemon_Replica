@@ -104,7 +104,7 @@ def getAbilities(rawPokemonData):
     return tempAbilities
 
 def getEvolve(pokemonName):
-    with open("Raw_Data/Raw_Evolution-chain_Data.json", "r") as f:
+    with open("Raw_Data/Evolution_Table.json", "r") as f:
         evolutionTable = json.load(f)
         return evolutionTable[pokemonName]
 
