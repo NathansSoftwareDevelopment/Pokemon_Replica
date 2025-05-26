@@ -3,6 +3,8 @@
 #include <string>
 #include <map>
 #include "Type.h"
+#include "json.hpp"
+using json = nlohmann::json;
 
 struct Species {
     std::string speciesName;
@@ -13,6 +15,9 @@ struct Species {
     std::string speciesEvolution;
 };
 
-extern std::map<std::string, const Species> speciesMap;
+inline void from_json(const json& j, Species& s);
+extern void generateSpeciesMap();
+
+extern std::map<std::string, Species> speciesMap;
 
 #endif

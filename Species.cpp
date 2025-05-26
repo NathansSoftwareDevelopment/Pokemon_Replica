@@ -1,36 +1,84 @@
 #include <string>
 #include "Species.h"
 #include "Type.h"
+#include "json.hpp"
+#include <fstream>
+#include <iostream>
+using json = nlohmann::json;
 
-const Species Charmander {
-    "Charmander",
-    {39, 52, 43, 60, 50, 65},
-    "Fire",
-    "None",
-    {"Blaze", "None", "Solar Power"},
-    "Charmeleon"
-};
+void from_json(const json& inputJson, Species& inputSpecies) {
+    inputSpecies.speciesName = inputJson.at("name").get<std::string>();
 
-const Species Charmeleon {
-    "Charmeleon",
-    {58, 64, 58, 80, 65, 80},
-    "Fire",
-    "None",
-    {"Blaze", "None", "Solar Power"},
-    "Charizard"
-};
+    inputSpecies.speciesStats[0] = inputJson.at("stats").at("hp").get<int>();
+    inputSpecies.speciesStats[1] = inputJson.at("stats").at("attack").get<int>();
+    inputSpecies.speciesStats[2] = inputJson.at("stats").at("defense").get<int>();
+    inputSpecies.speciesStats[3] = inputJson.at("stats").at("special-attack").get<int>();
+    inputSpecies.speciesStats[4] = inputJson.at("stats").at("special-defense").get<int>();
+    inputSpecies.speciesStats[5] = inputJson.at("stats").at("speed").get<int>();
 
-const Species Charizard {
-    "Charizard",
-    {78, 84, 78, 109, 85, 100},
-    "Fire",
-    "Flying",
-    {"Blaze", "None", "Solar Power"},
-    "Charizard"
-};
+    if (inputJson.at("types").contains("1")) {
+        inputSpecies.speciesType1 = inputJson.at("types").at("1").get<std::string>();
+    } else {
+        inputSpecies.speciesType1 = "none";
+    }
+    inputSpecies.speciesType1[0] = static_cast<char>(std::toupper(inputSpecies.speciesType1[0]));
+    std::cout << "TESTING: " << inputSpecies.speciesType1 << std::endl;
+    if (inputJson.at("types").contains("2")) {
+        inputSpecies.speciesType2 = inputJson.at("types").at("2").get<std::string>();
+    } else {
+        inputSpecies.speciesType2 = "none";
+    }
+    inputSpecies.speciesType2[0] = static_cast<char>(std::toupper(inputSpecies.speciesType2[0]));
+    std::cout << "HERE: " << inputSpecies.speciesType2 << std::endl;
 
-std::map<std::string, const Species> speciesMap = {
-    {"Charmander", Charmander},
-    {"Charmeleon", Charmeleon},
-    {"Charizard", Charizard},
-};
+    if (inputJson.at("abilities").contains("1")) {
+        inputSpecies.speciesAbilities[0] = inputJson.at("abilities").at("1").get<std::string>();
+    } else {
+        inputSpecies.speciesAbilities[0] = "none";
+    }
+    if (inputJson.at("abilities").contains("2")) {
+        inputSpecies.speciesAbilities[1] = inputJson.at("abilities").at("2").get<std::string>();
+    } else {
+        inputSpecies.speciesAbilities[1] = "none";
+    }
+    if (inputJson.at("abilities").contains("3")) {
+        inputSpecies.speciesAbilities[2] = inputJson.at("abilities").at("3").get<std::string>();
+    } else {
+        inputSpecies.speciesAbilities[2] = "none";
+    }
+
+    if (inputJson.contains("evolve")) {
+        inputSpecies.speciesEvolution = inputJson.at("evolve").get<std::string>();
+    } else {
+        inputSpecies.speciesEvolution = "none";
+    }
+}
+
+std::map<std::string, Species> speciesMap;
+
+void generateSpeciesMap() {
+    std::string filePath = "..\\Species.json";
+    std::ifstream ifs(filePath);
+    if (!ifs.is_open()) {
+        std::cerr << "Error opening file: " << filePath << std::endl;
+    }
+    json j_parsed_file;
+    ifs >> j_parsed_file;
+
+    for (json::iterator it = j_parsed_file.begin(); it != j_parsed_file.end(); ++it) {
+        std::string speciesKey = it.key();
+        json speciesJson = it.value();
+
+        Species currentSpecies;
+        currentSpecies = speciesJson.get<Species>();
+        currentSpecies.speciesName = speciesKey;
+        currentSpecies = static_cast<Species>(currentSpecies);
+
+        speciesMap[speciesKey] = currentSpecies;
+
+        std::cout << "Successfully loaded " << speciesMap.size() << " species." << std::endl;
+    }
+    for (auto i : speciesMap) {
+        std::cout << i.first << std::endl;
+    }
+}
