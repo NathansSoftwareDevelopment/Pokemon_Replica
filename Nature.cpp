@@ -9,7 +9,7 @@ Nature::Nature(std::string natureInput, int multiplierInput, int divisorInput) {
 };
 
 Nature natureArray[25] = {
-    Nature ("Hardy", 0, 0),
+    Nature("Hardy", 0, 0),
     Nature("Lonely", 0, 1),
     Nature("Brave", 0, 2),
     Nature("Adamant", 0, 3),
@@ -19,7 +19,7 @@ Nature natureArray[25] = {
     Nature("Relaxed", 1, 2),
     Nature("Impish", 1, 3),
     Nature("Lax", 1, 4),
-    Nature("Bold", 2, 0),
+    Nature("Timid", 2, 0),
     Nature("Hasty", 2, 1),
     Nature("Serious", 2, 2),
     Nature("Jolly", 2, 3),
