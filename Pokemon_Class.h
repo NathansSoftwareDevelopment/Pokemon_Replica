@@ -8,6 +8,12 @@
 #include "Species.h"
 
 class Pokemon {
+    private:
+        void setSpeciesStats();
+        void setPokemonIndividualValues(int IndividualValues[6]);
+        void setPokemonNature(std::string pokemonNatureName);
+        void calculatePokemonStats();
+        void setPokemonMoves(std::string inputMove1, std::string InputMove2, std::string inputMove3, std::string inputMove4);
     public:
         const Species* species;
         std::string name;
@@ -116,13 +122,8 @@ class Pokemon {
             &currentEvasionStage
         };
 
-        void setSpeciesStats();
-        void setPokemonIndividualValues(int IndividualValues[6]);
         void setPokemonEffortValues(int EffortValues[6]);
-        void setPokemonNature(std::string pokemonNatureName);
         void setPokemonTypes();
-        void calculatePokemonStats();
-        void setPokemonMoves(std::string inputMove1, std::string InputMove2, std::string inputMove3, std::string inputMove4);
         void evolve();
         void setPokemonCurrentStats();
         void calculateStageChanges();
