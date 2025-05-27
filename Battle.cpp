@@ -37,7 +37,7 @@ void Battle::damageCalculation(Pokemon* attackingInputPokemon, Move* InputPokemo
     if (InputPokemonMove->damageCategory == "Physical") {
         attackingCategory = attackingInputPokemon->currentAttack;
         defendingCategory = attackingInputPokemon->currentDefense;
-    } else if (InputPokemonMove->damageCategory == "special") {
+    } else if (InputPokemonMove->damageCategory == "Special") {
         attackingCategory = attackingInputPokemon->currentSpecialAttack;
         defendingCategory = attackingInputPokemon->currentSpecialDefense;
     } else {
@@ -46,6 +46,10 @@ void Battle::damageCalculation(Pokemon* attackingInputPokemon, Move* InputPokemo
     int rawDamage = ((2*attackingInputPokemon->level/5+2)*InputPokemonMove->power*attackingCategory/defendingCategory/50+2);
     int totalDamage = rawDamage * stab * effectiveness * randomDamageMultiplier;
     defendingInputPokemon->currentHitPoints = std::max(defendingInputPokemon->currentHitPoints - totalDamage, 0);
+    // std::cout << "Level: " << attackingInputPokemon->level << std::endl;
+    // std::cout << "Power: " << InputPokemonMove->power << std::endl;
+    // std::cout << "attackingCategory: " << attackingCategory << std::endl;
+    // std::cout << "defendingCategory: " << defendingCategory << std::endl;
     // std::cout << "Raw damage: " << rawDamage << std::endl;
     // std::cout << "stab: " << stab << std::endl;
     // std::cout << "effectiveness: " << effectiveness << std::endl;
@@ -78,7 +82,7 @@ void Battle::useMove(Pokemon* attackingInputPokemon, Move* InputPokemonMove, Pok
         std::cout << attackingInputPokemon->name << " Missed!" << std::endl;
         return;
     }
-    if (InputPokemonMove->damageCategory != "status") {
+    if (InputPokemonMove->damageCategory != "Status") {
         damageCalculation(attackingInputPokemon, InputPokemonMove, defendingInputPokemon);
     }
 }
