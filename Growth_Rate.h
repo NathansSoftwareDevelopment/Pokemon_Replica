@@ -6,8 +6,8 @@
 
 struct GrowthRate {
     std::string name;
-    std::map<int, int> toNextLevel;
-    std::map<int, int> toLevel;
+    std::map<int, int> toNextLevel = {{1, 0}};
+    std::map<int, int> toLevel = {{1, 0}};
 };
 
 extern std::map<std::string, GrowthRate> growthRateMap;
