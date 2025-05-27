@@ -16,9 +16,11 @@ void display::idCounter(bool stackCall) {
 }
 
 
-void display::all(Pokemon* inputPokemon, bool stackCall) {
+void display::all(Pokemon* inputPokemon, Species* inputSpecies, Move* inputMove, bool stackCall) {
     idCounter(stackCall);
     pokemonAll(inputPokemon, true);
+    speciesAll(inputSpecies, true);
+    moveAll(inputMove, true);
 }
 
 void display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
@@ -54,42 +56,6 @@ void display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
     cout << "\tSpeed: " << inputPokemon->maxSpeed << endl;
 }
 
-void display::pokemonMovesAll(Pokemon* inputPokemon, bool stackCall) {
-    idCounter(stackCall);
-    cout << "\nAll Information on All Moves";
-    for (int i = 1; i < 5; i++) {
-        pokemonMoveAll(inputPokemon, i, true);
-    }
-}
-void display::pokemonMoveAll(Pokemon* inputPokemon, int moveIndex, bool stackCall) {
-    idCounter(stackCall);
-    cout << "\nAll Information on Move " << moveIndex << endl;
-    cout << "Name: " << inputPokemon->moves[moveIndex]->name << endl;
-    cout << "Type: " << inputPokemon->moves[moveIndex]->type->name << endl;
-    cout << "Damage Category: " << inputPokemon->moves[moveIndex]->damageCategory << endl;
-    cout << "Power: " << inputPokemon->moves[moveIndex]->power << endl;
-    cout << "Accuracy: " << inputPokemon->moves[moveIndex]->accuracy << endl;
-    cout << "PP: " << inputPokemon->moves[moveIndex]->PP << endl;
-    cout << "Flinch Chance: " << inputPokemon->moves[moveIndex]->flinchChance << endl;
-    if (!inputPokemon->moves[moveIndex]->conditionChances.empty()) {
-        for (std::pair i : inputPokemon->moves[moveIndex]->conditionChances) {
-            cout << i.first << " Chance: " << i.second << endl;
-        }
-    }
-    if (!inputPokemon->moves[moveIndex]->userStageChances.empty()) {
-        cout << "\nStat Changes to Self" << endl;
-        for (std::pair i : inputPokemon->moves[moveIndex]->userStageChances) {
-            cout << i.first << ": " << i.second.back() << "% Chance of " << i.second.front() << endl;
-        }
-    }
-    if (!inputPokemon->moves[moveIndex]->opponentStageChances.empty()) {
-        cout << "\nStat Changes to Opponent" << endl;
-        for (std::pair i : inputPokemon->moves[moveIndex]->opponentStageChances) {
-            cout << i.first << ": " << i.second.back() << "% Chance of " << i.second.front() << endl;
-        }
-    }
-    cout << "\nUniqueness: " << inputPokemon->moves[moveIndex]->uniqueness << endl;
-}
 
 void display::speciesAll(Species* inputSpecies, bool stackCall) {
     idCounter(stackCall);
@@ -107,4 +73,34 @@ void display::speciesAll(Species* inputSpecies, bool stackCall) {
     for (int i = 0; i < 3; i++) {
         cout << "\t" << i+1 << ": " << inputSpecies->abilities[i] << endl;
     }
+}
+
+void display::moveAll(Move* inputMove, bool stackCall) {
+    idCounter(stackCall);
+    cout << "All Information on Move " << inputMove->name << endl;
+    cout << "Name: " << inputMove->name << endl;
+    cout << "Type: " << inputMove->type->name << endl;
+    cout << "Damage Category: " << inputMove->damageCategory << endl;
+    cout << "Power: " << inputMove->power << endl;
+    cout << "Accuracy: " << inputMove->accuracy << endl;
+    cout << "PP: " << inputMove->PP << endl;
+    cout << "Flinch Chance: " << inputMove->flinchChance << endl;
+    if (!inputMove->conditionChances.empty()) {
+        for (std::pair i : inputMove->conditionChances) {
+            cout << i.first << " Chance: " << i.second << endl;
+        }
+    }
+    if (!inputMove->userStageChances.empty()) {
+        cout << "\nStat Changes to Self" << endl;
+        for (std::pair i : inputMove->userStageChances) {
+            cout << i.first << ": " << i.second.back() << "% Chance of " << i.second.front() << endl;
+        }
+    }
+    if (!inputMove->opponentStageChances.empty()) {
+        cout << "\nStat Changes to Opponent" << endl;
+        for (std::pair i : inputMove->opponentStageChances) {
+            cout << i.first << ": " << i.second.back() << "% Chance of " << i.second.front() << endl;
+        }
+    }
+    cout << "\nUniqueness: " << inputMove->uniqueness << endl;
 }
