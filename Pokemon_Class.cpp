@@ -20,13 +20,13 @@ void Pokemon::setPokemonIndividualValues(int inputValues[6]) {
     individualValues["Speed"] = inputValues[5];
 }
 
-void Pokemon::setPokemonEffortValues(int EffortValues[6]) {
-    hitPointsEffortValue = EffortValues[0];
-    attackEffortValue = EffortValues[1];
-    defenseEffortValue = EffortValues[2];
-    specialAttackEffortValue = EffortValues[3];
-    specialDefenseEffortValue = EffortValues[4];
-    speedEffortValue = EffortValues[5];
+void Pokemon::setPokemonEffortValues(int inputValues[6]) {
+    effortValues["HitPoints"] = inputValues[0];
+    effortValues["Attack"] = inputValues[1];
+    effortValues["Defense"] = inputValues[2];
+    effortValues["SpecialAttack"] = inputValues[3];
+    effortValues["SpecialDefense"] = inputValues[4];
+    effortValues["Speed"] = inputValues[5];
 }
 
 void Pokemon::setPokemonNature(std::string inputNature) {
@@ -50,12 +50,12 @@ void Pokemon::setPokemonMoves(std::string inputMove1, std::string inputMove2, st
 }
 
 void Pokemon::calculatePokemonStats() {
-    maxHitPoints = std::max(floor(((2*speciesStats["HitPoints"]+individualValues["HitPoints"]+floor(hitPointsEffortValue/4.0))*level)/100)+level+10, 1.0);
-    maxAttack = std::max(floor(((2*speciesStats["Attack"]+individualValues["Attack"]+floor(attackEffortValue/4.0))*level)/100+5) * nature->attack, 1.0);
-    maxDefense = std::max(floor(((2*speciesStats["Defense"]+individualValues["Defense"]+floor(defenseEffortValue/4.0))*level)/100+5) * nature->defense, 1.0);
-    maxSpecialAttack = std::max(floor(((2*speciesStats["SpecialAttack"]+individualValues["SpecialAttack"]+floor(specialAttackEffortValue/4.0))*level)/100+5) * nature->specialAttack, 1.0);
-    maxSpecialDefense = std::max(floor(((2*speciesStats["SpecialDefense"]+individualValues["SpecialDefense"]+floor(specialDefenseEffortValue/4.0))*level)/100+5) * nature->specialDefense, 1.0);
-    maxSpeed = std::max(floor(((2*speciesStats["Speed"]+individualValues["Speed"]+floor(speedEffortValue/4.0))*level)/100+5) * nature->speed, 1.0);
+    maxHitPoints = std::max(floor(((2*speciesStats["HitPoints"]+individualValues["HitPoints"]+floor(effortValues["HitPoints"]/4.0))*level)/100)+level+10, 1.0);
+    maxAttack = std::max(floor(((2*speciesStats["Attack"]+individualValues["Attack"]+floor(effortValues["Attack"]/4.0))*level)/100+5) * nature->attack, 1.0);
+    maxDefense = std::max(floor(((2*speciesStats["Defense"]+individualValues["Defense"]+floor(effortValues["Defense"]/4.0))*level)/100+5) * nature->defense, 1.0);
+    maxSpecialAttack = std::max(floor(((2*speciesStats["SpecialAttack"]+individualValues["SpecialAttack"]+floor(effortValues["SpecialAttack"]/4.0))*level)/100+5) * nature->specialAttack, 1.0);
+    maxSpecialDefense = std::max(floor(((2*speciesStats["SpecialDefense"]+individualValues["SpecialDefense"]+floor(effortValues["SpecialDefense"]/4.0))*level)/100+5) * nature->specialDefense, 1.0);
+    maxSpeed = std::max(floor(((2*speciesStats["Speed"]+individualValues["Speed"]+floor(effortValues["Speed"]/4.0))*level)/100+5) * nature->speed, 1.0);
 }
 
 void Pokemon::evolve() {

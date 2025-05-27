@@ -38,20 +38,7 @@ class Pokemon {
         
         std::map<std::string, int> individualValues;
 
-        int hitPointsEffortValue;
-        int attackEffortValue;
-        int defenseEffortValue;
-        int specialAttackEffortValue;
-        int specialDefenseEffortValue;
-        int speedEffortValue;
-        int* effortValues[6] = {
-            &hitPointsEffortValue,
-            &attackEffortValue,
-            &defenseEffortValue,
-            &specialAttackEffortValue,
-            &specialDefenseEffortValue,
-            &speedEffortValue
-        };
+        std::map<std::string, int> effortValues;
 
         int maxHitPoints;
         int maxAttack;
