@@ -30,16 +30,7 @@ class Pokemon {
         Type* type1;
         Type* type2;
 
-        Move* move1;
-        Move* move2;
-        Move* move3;
-        Move* move4;
-        Move** moves[4] = {
-            &move1,
-            &move2,
-            &move3,
-            &move4
-        };
+        std::map<int, Move*> moves;
         
         std::string condition;
 

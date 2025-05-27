@@ -10,7 +10,7 @@ std::random_device rd;
 std::mt19937 gen(rd());
 
 Move* Battle::getMove(Pokemon* attackingInputPokemon, int InputMove) {
-    return *(attackingInputPokemon->moves[InputMove-1]);
+    return attackingInputPokemon->moves[InputMove];
 }
 
 double Battle::stabMultiplier(Pokemon* attackingInputPokemon, Move* InputPokemonMove) {

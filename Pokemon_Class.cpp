@@ -43,10 +43,10 @@ void Pokemon::setPokemonTypes() {
 }
 
 void Pokemon::setPokemonMoves(std::string inputMove1, std::string inputMove2, std::string inputMove3, std::string inputMove4) {
-    move1 = &moveMap.find(inputMove1)->second;
-    move2 = &moveMap.find(inputMove2)->second;
-    move3 = &moveMap.find(inputMove3)->second;
-    move4 = &moveMap.find(inputMove4)->second;
+    moves[1] = &moveMap.find(inputMove1)->second;
+    moves[2] = &moveMap.find(inputMove2)->second;
+    moves[3] = &moveMap.find(inputMove3)->second;
+    moves[4] = &moveMap.find(inputMove4)->second;
 }
 
 void Pokemon::calculatePokemonStats() {

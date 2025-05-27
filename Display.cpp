@@ -76,37 +76,36 @@ void display::pokemonMovesAll(Pokemon inputPokemon, bool stackCall) {
 void display::pokemonMoveNames(Pokemon inputPokemon, bool stackCall) {
     idCounter(stackCall);
     cout << "\nPokemon Moves";
-    for (Move** i : inputPokemon.moves) {
-        cout << (*i)->name << endl;
+    for (std::pair<int, Move*> i : inputPokemon.moves) {
+        cout << i.second->name << endl;
     }
 }
 void display::pokemonMoveAll(Pokemon inputPokemon, int moveIndex, bool stackCall) {
     idCounter(stackCall);
     cout << "\nAll Information on Move " << moveIndex << endl;
-    moveIndex--;
-    cout << "Name: " << (*inputPokemon.moves[moveIndex])->name << endl;
-    cout << "Type: " << (*inputPokemon.moves[moveIndex])->type->typeName << endl;
-    cout << "Damage Category: " << (*inputPokemon.moves[moveIndex])->damageCategory << endl;
-    cout << "Power: " << (*inputPokemon.moves[moveIndex])->power << endl;
-    cout << "Accuracy: " << (*inputPokemon.moves[moveIndex])->accuracy << endl;
-    cout << "PP: " << (*inputPokemon.moves[moveIndex])->PP << endl;
-    cout << "Flinch Chance: " << (*inputPokemon.moves[moveIndex])->flinchChance << endl;
-    if (!(*inputPokemon.moves[moveIndex])->conditionChances.empty()) {
-        for (std::pair i : (*inputPokemon.moves[moveIndex])->conditionChances) {
+    cout << "Name: " << inputPokemon.moves[moveIndex]->name << endl;
+    cout << "Type: " << inputPokemon.moves[moveIndex]->type->typeName << endl;
+    cout << "Damage Category: " << inputPokemon.moves[moveIndex]->damageCategory << endl;
+    cout << "Power: " << inputPokemon.moves[moveIndex]->power << endl;
+    cout << "Accuracy: " << inputPokemon.moves[moveIndex]->accuracy << endl;
+    cout << "PP: " << inputPokemon.moves[moveIndex]->PP << endl;
+    cout << "Flinch Chance: " << inputPokemon.moves[moveIndex]->flinchChance << endl;
+    if (!inputPokemon.moves[moveIndex]->conditionChances.empty()) {
+        for (std::pair i : inputPokemon.moves[moveIndex]->conditionChances) {
             cout << i.first << " Chance: " << i.second << endl;
         }
     }
-    if (!(*inputPokemon.moves[moveIndex])->userStageChances.empty()) {
+    if (!inputPokemon.moves[moveIndex]->userStageChances.empty()) {
         cout << "\nStat Changes to Self" << endl;
-        for (std::pair i : (*inputPokemon.moves[moveIndex])->userStageChances) {
+        for (std::pair i : inputPokemon.moves[moveIndex]->userStageChances) {
             cout << i.first << ": " << i.second.back() << "% Chance of " << i.second.front() << endl;
         }
     }
-    if (!(*inputPokemon.moves[moveIndex])->opponentStageChances.empty()) {
+    if (!inputPokemon.moves[moveIndex]->opponentStageChances.empty()) {
         cout << "\nStat Changes to Opponent" << endl;
-        for (std::pair i : (*inputPokemon.moves[moveIndex])->opponentStageChances) {
+        for (std::pair i : inputPokemon.moves[moveIndex]->opponentStageChances) {
             cout << i.first << ": " << i.second.back() << "% Chance of " << i.second.front() << endl;
         }
     }
-    cout << "\nUniqueness: " << (*inputPokemon.moves[moveIndex])->uniqueness << endl;
+    cout << "\nUniqueness: " << inputPokemon.moves[moveIndex]->uniqueness << endl;
 }
