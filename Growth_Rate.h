@@ -10,6 +10,7 @@ struct GrowthRate {
     std::map<int, int> toLevel = {{1, 0}};
 };
 
+extern void makeGrowthRates();
 extern std::map<std::string, GrowthRate> growthRateMap;
 
 #endif

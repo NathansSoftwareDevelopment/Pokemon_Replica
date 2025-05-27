@@ -4,12 +4,14 @@
 #include "Species.h"
 #include "Display.h"
 #include "Battle.h"
+#include "Growth_Rate.h"
 extern display Display;
 
 int main() {
     std::cout << std::boolalpha;
     int zeroValues[6] = {};
     generateSpeciesMap();
+    makeGrowthRates();
     Pokemon myPokemon = Pokemon("FireBoi", &(speciesMap["charmander"]), "Modest", "Blaze", zeroValues);
     Pokemon mySecondPokemon = Pokemon("FireBoi2", &(speciesMap["charmander"]), "Modest", 5, 0, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", zeroValues, zeroValues);
     Pokemon myThirdPokemon = Pokemon("FireBoi3", &(speciesMap["charmander"]), "Modest", 5, 0, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", zeroValues, zeroValues);
