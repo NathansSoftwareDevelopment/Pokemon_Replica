@@ -2,7 +2,7 @@
 #include <string>
 
 Type::Type(std::string typeInputName, double attackingInputStats[18]) {
-    typeName = typeInputName;
+    name = typeInputName;
     int iterator = 0;
     for (int i = 0; i < 18; ++i) {
         *attackingStats[i] = attackingInputStats[i];

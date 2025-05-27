@@ -31,8 +31,8 @@ void display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
     cout << "Nature: " << inputPokemon->nature->name << endl;
     cout << "Ability: " << inputPokemon->ability << endl;
     cout << "Types" << endl;
-    cout << "\t" << inputPokemon->type1->typeName << endl;
-    cout << "\t" << inputPokemon->type2->typeName << endl;
+    cout << "\t" << inputPokemon->type1->name << endl;
+    cout << "\t" << inputPokemon->type2->name << endl;
     cout << "Moves" << endl;
     for (std::pair<int, Move*> i : inputPokemon->moves) {
         cout << "\t" << i.first << ": " << i.second->name << endl;
@@ -65,7 +65,7 @@ void display::pokemonMoveAll(Pokemon* inputPokemon, int moveIndex, bool stackCal
     idCounter(stackCall);
     cout << "\nAll Information on Move " << moveIndex << endl;
     cout << "Name: " << inputPokemon->moves[moveIndex]->name << endl;
-    cout << "Type: " << inputPokemon->moves[moveIndex]->type->typeName << endl;
+    cout << "Type: " << inputPokemon->moves[moveIndex]->type->name << endl;
     cout << "Damage Category: " << inputPokemon->moves[moveIndex]->damageCategory << endl;
     cout << "Power: " << inputPokemon->moves[moveIndex]->power << endl;
     cout << "Accuracy: " << inputPokemon->moves[moveIndex]->accuracy << endl;

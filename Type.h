@@ -5,7 +5,7 @@
 
 class Type {
     public:
-        std::string typeName;
+        std::string name;
 
         double attackingNormal;
         double attackingFire;

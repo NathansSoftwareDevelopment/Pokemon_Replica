@@ -14,7 +14,7 @@ Move* Battle::getMove(Pokemon* attackingInputPokemon, int InputMove) {
 }
 
 double Battle::stabMultiplier(Pokemon* attackingInputPokemon, Move* InputPokemonMove) {
-    if ((InputPokemonMove->type == attackingInputPokemon->type1 || InputPokemonMove->type == attackingInputPokemon->type2) && InputPokemonMove->type->typeName != "None") {
+    if ((InputPokemonMove->type == attackingInputPokemon->type1 || InputPokemonMove->type == attackingInputPokemon->type2) && InputPokemonMove->type->name != "None") {
         return 1.5;
     } else {
         return 1;
@@ -22,8 +22,8 @@ double Battle::stabMultiplier(Pokemon* attackingInputPokemon, Move* InputPokemon
 }
 
 double Battle::effectivenessMultiplier(Move* InputPokemonMove, Pokemon* defendingInputPokemon) {
-    double type1Effectiveness = InputPokemonMove->type->attackingTypeMap.find(defendingInputPokemon->type1->typeName)->second;
-    double type2Effectiveness = InputPokemonMove->type->attackingTypeMap.find(defendingInputPokemon->type2->typeName)->second;
+    double type1Effectiveness = InputPokemonMove->type->attackingTypeMap.find(defendingInputPokemon->type1->name)->second;
+    double type2Effectiveness = InputPokemonMove->type->attackingTypeMap.find(defendingInputPokemon->type2->name)->second;
     double totalEffectiveness = type1Effectiveness * type2Effectiveness;
     return totalEffectiveness;
 }
