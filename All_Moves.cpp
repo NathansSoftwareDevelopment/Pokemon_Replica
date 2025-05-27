@@ -20,5 +20,6 @@ std::map<std::string, Move> moveMap = {
     {"Slash", Move("Slash", "Normal", "Physical", 70, 100, 20, 0, emptyConditionMap, emptyStageMap, emptyStageMap, true)},
     {"Flamethrower", Move("Flamethrower", "Fire", "Special", 95, 100, 15, 0, {{"Burn", 10}})},
     {"Fire Spin", Move("Fire Spin", "Fire", "Special", 35, 85, 15, 0, emptyConditionMap, emptyStageMap, emptyStageMap, true)},
-    {"Inferno", Move("Inferno", "Fire", "Special", 100, 50, 5, 0, {{"Burn", 10}}, emptyStageMap, emptyStageMap, true)}
+    {"Inferno", Move("Inferno", "Fire", "Special", 100, 50, 5, 0, {{"Burn", 10}}, emptyStageMap, emptyStageMap, true)},
+    {"Swords Dance", Move("Swords Dance", "Normal", "Status", 0, 100, 20, 0, emptyConditionMap, Stages{{"Attack", {+2, 100}}}, emptyStageMap)}
 };
