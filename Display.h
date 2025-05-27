@@ -16,6 +16,8 @@ class display {
         void pokemonMovesAll(Pokemon* inputPokemon, bool stackCall = false);
         void pokemonMoveAll(Pokemon* inputPokemon, int moveIndex, bool stackCall = false);
         
+        void speciesAll(Species* inputSpecies, bool stackCall = false);
+        
 
         void pokemonName(Pokemon* inputPokemon, bool stackCall = false);
         void pokemonSpeciesName(Pokemon* inputPokemon, bool stackCall = false);
@@ -24,6 +26,7 @@ class display {
         void pokemonSpeciesStats(Pokemon* inputPokemon, bool stackCall = false);
         void pokemonTypeNames(Pokemon* inputPokemon, bool stackCall = false);
         void pokemonMoveNames(Pokemon* inputPokemon, bool stackCall = false);
+
 };
 
 #endif

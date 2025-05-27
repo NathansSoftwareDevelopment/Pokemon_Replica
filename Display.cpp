@@ -64,6 +64,24 @@ void display::pokemonMoveAll(Pokemon* inputPokemon, int moveIndex, bool stackCal
     cout << "\nUniqueness: " << inputPokemon->moves[moveIndex]->uniqueness << endl;
 }
 
+void display::speciesAll(Species* inputSpecies, bool stackCall) {
+    idCounter(stackCall);
+    cout << "\nAll Information on Species " << inputSpecies->name << endl;
+    cout << "Name: " << inputSpecies->name << endl;
+    cout << "Evolution: " << inputSpecies->evolution << endl;
+    cout << "Stats " << endl;
+    for (std::pair<std::string, int> i : inputSpecies->stats) {
+        cout << "\t" << i.first << ": " << i.second << endl;
+    }
+    cout << "Types" << endl;
+    cout << "\t" << inputSpecies->type1 << endl;
+    cout << "\t" << inputSpecies->type2 << endl;
+    cout << "Abilities" << endl;
+    for (int i = 0; i < 3; i++) {
+        cout << "\t" << i+1 << ": " << inputSpecies->abilities[i] << endl;
+    }
+}
+
 
 void display::pokemonName(Pokemon* inputPokemon, bool stackCall) {
     idCounter(stackCall);
