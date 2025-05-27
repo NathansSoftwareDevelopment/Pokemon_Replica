@@ -7,9 +7,10 @@
 #include "Pokemon_Class.h"
 
 class display {
-    public:
+    private:
         static int displayID;
         void idCounter(bool stackCall);
+    public:
         void all(Pokemon* inputPokemon, bool stackCall = false);
         void pokemonName(Pokemon* inputPokemon, bool stackCall = false);
         void pokemonSpecies(Pokemon* inputPokemon, bool stackCall = false);
