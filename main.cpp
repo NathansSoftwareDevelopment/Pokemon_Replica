@@ -14,6 +14,7 @@ int main() {
     Pokemon mySecondPokemon = Pokemon("FireBoi2", &(speciesMap["charmander"]), "Modest", 5, 0, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", zeroValues, zeroValues);
     Pokemon myThirdPokemon = Pokemon("FireBoi3", &(speciesMap["charmander"]), "Modest", 5, 0, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", zeroValues, zeroValues);
     Display.all(&mySecondPokemon, "zekrom", "Ember");
+    Display.moveAll(&moveMap.find("Growl")->second);
     Battle(&mySecondPokemon, &myThirdPokemon);
     std::cout << "\n\nEnd Main";
     return 0;

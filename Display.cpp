@@ -91,16 +91,16 @@ void display::moveAll(Move* inputMove, bool stackCall) {
         }
     }
     if (!inputMove->userStageChances.empty()) {
-        cout << "\nStat Changes to Self" << endl;
+        cout << "Stat Changes to Self" << endl;
         for (std::pair i : inputMove->userStageChances) {
-            cout << i.first << ": " << i.second.back() << "% Chance of " << i.second.front() << endl;
+            cout << "\t" << i.second.front() << " " << i.first << ": " << i.second.back() << "% Chance " << endl;
         }
     }
     if (!inputMove->opponentStageChances.empty()) {
-        cout << "\nStat Changes to Opponent" << endl;
+        cout << "Stat Changes to Opponent" << endl;
         for (std::pair i : inputMove->opponentStageChances) {
-            cout << i.first << ": " << i.second.back() << "% Chance of " << i.second.front() << endl;
+            cout << "\t" << i.second.front() << " " << i.first << ": " << i.second.back() << "% Chance" << endl;
         }
     }
-    cout << "\nUniqueness: " << inputMove->uniqueness << endl;
+    cout << "Uniqueness: " << inputMove->uniqueness << endl;
 }
