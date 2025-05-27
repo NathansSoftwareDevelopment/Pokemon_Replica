@@ -15,14 +15,15 @@ void display::idCounter(bool stackCall) {
     }
 }
 
+
 void display::all(Pokemon* inputPokemon, bool stackCall) {
     idCounter(stackCall);
     pokemonName(inputPokemon, true);
-    pokemonSpecies(inputPokemon, true);
-    nature(inputPokemon, true);
+    pokemonSpeciesName(inputPokemon, true);
+    pokemonNatureName(inputPokemon, true);
     pokemonStats(inputPokemon, true);
-    speciesStats(inputPokemon, true);
-    pokemonType(inputPokemon, true);
+    pokemonSpeciesStats(inputPokemon, true);
+    pokemonTypeNames(inputPokemon, true);
     pokemonMovesAll(inputPokemon, true);
 }
 
@@ -69,12 +70,12 @@ void display::pokemonName(Pokemon* inputPokemon, bool stackCall) {
     cout << "\nPokemon Name\n";
     cout << inputPokemon->name << endl;
 }
-void display::pokemonSpecies(Pokemon* inputPokemon, bool stackCall) {
+void display::pokemonSpeciesName(Pokemon* inputPokemon, bool stackCall) {
     idCounter(stackCall);
     cout << "\nSpecies Name\n";
     cout << inputPokemon->species->name << endl;
 }
-void display::nature(Pokemon* inputPokemon, bool stackCall) {
+void display::pokemonNatureName(Pokemon* inputPokemon, bool stackCall) {
     idCounter(stackCall);
     cout << "\nPokemon Nature\n";
     cout << inputPokemon->nature->name << endl;
@@ -89,14 +90,14 @@ void display::pokemonStats(Pokemon* inputPokemon, bool stackCall) {
         cout << *i << endl;
     }
 }
-void display::speciesStats(Pokemon* inputPokemon, bool stackCall) {
+void display::pokemonSpeciesStats(Pokemon* inputPokemon, bool stackCall) {
     idCounter(stackCall);
     cout << "\nSpecies Stats\n";
     for (std::pair i: inputPokemon->speciesStats) {
         cout << i.first << ": " << i.second << endl;
     }
 }
-void display::pokemonType(Pokemon* inputPokemon, bool stackCall) {
+void display::pokemonTypeNames(Pokemon* inputPokemon, bool stackCall) {
     idCounter(stackCall);
     cout << "\nPokemon Types\n";
     cout << inputPokemon->type1->typeName << endl;
