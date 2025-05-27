@@ -16,11 +16,11 @@ void display::idCounter(bool stackCall) {
 }
 
 
-void display::all(Pokemon* inputPokemon, Species* inputSpecies, Move* inputMove, bool stackCall) {
+void display::all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, bool stackCall) {
     idCounter(stackCall);
     pokemonAll(inputPokemon, true);
-    speciesAll(inputSpecies, true);
-    moveAll(inputMove, true);
+    speciesAll(&speciesMap.find(inputSpecies)->second, true);
+    moveAll(&moveMap.find(inputMove)->second, true);
 }
 
 void display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
@@ -77,7 +77,7 @@ void display::speciesAll(Species* inputSpecies, bool stackCall) {
 
 void display::moveAll(Move* inputMove, bool stackCall) {
     idCounter(stackCall);
-    cout << "All Information on Move " << inputMove->name << endl;
+    cout << "\nAll Information on Move " << inputMove->name << endl;
     cout << "Name: " << inputMove->name << endl;
     cout << "Type: " << inputMove->type->name << endl;
     cout << "Damage Category: " << inputMove->damageCategory << endl;
