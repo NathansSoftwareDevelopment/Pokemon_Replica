@@ -35,6 +35,12 @@ def main():
                     # if pokemon is in rawPokemonData and has valid data | add to output dictionary
                     if pokemonName in rawPokemonData and rawPokemonData[pokemonName]:
                         addToFinal(dataType, getEvolutionInfo(evolutionChainURL, pokemonName))
+    
+    if dataType == "growth-rate":
+        for i in range(1, 6+1):
+            addToFinal(dataType, getGrowthRateInfo(i))
+
+
     Write(outputDictionary, f"Raw_Data/Raw_{dataType.capitalize()}_Data.json")
 
 
@@ -73,11 +79,23 @@ def getEvolutionInfo(evolutionChainURL, pokemonName):
         evolution = pokemonName
     return {pokemonName: evolution}
 
+def getGrowthRateInfo(ID):
+    URL = f"https://pokeapi.co/api/v2/growth-rate/{ID}"
+    rawData = requests.get(URL)
+    if rawData.status_code == 200:
+        rawData = rawData.json()
+        print(f"Found Growth-Rate {ID}: {rawData["name"]}")
+        return rawData
+    else:
+        print(f"FAILED TO RETRIEVE GROWTH-RATE: {ID}")
+
 def addToFinal(dataType, inputDictionary):
     if dataType in ["pokemon", "pokemon-species"]:
         outputDictionary[inputDictionary[0]["name"]] = inputDictionary
     if dataType == "evolution-chain":
         outputDictionary[list(inputDictionary.keys())[0]] = list(inputDictionary.values())[0]
+    if dataType == "growth-rate":
+        outputDictionary[inputDictionary["name"]] = inputDictionary
 
 def Write(Object, FileName):
     json_string = json.dumps(Object, indent=4)
