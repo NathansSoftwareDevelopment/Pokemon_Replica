@@ -32,7 +32,7 @@ void makeGrowthRates() {
     }
 
     for (std::pair<std::string, std::map<int, int>> growthRate : growthsRates) {
-        std::cout << growthRate.first << std::endl;
+        // std::cout << growthRate.first << std::endl;
         std::map<int, int> toNextLevel;
         for (int level = 1; level < 100; level++) {
             toNextLevel[level] = growthRate.second[level+1] - growthRate.second[level];
