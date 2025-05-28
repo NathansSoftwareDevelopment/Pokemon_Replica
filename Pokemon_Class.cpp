@@ -56,6 +56,7 @@ void Pokemon::calculatePokemonStats() {
     maxSpecialAttack = std::max(floor(((2*speciesStats["SpecialAttack"]+individualValues["SpecialAttack"]+floor(effortValues["SpecialAttack"]/4.0))*level)/100+5) * nature->specialAttack, 1.0);
     maxSpecialDefense = std::max(floor(((2*speciesStats["SpecialDefense"]+individualValues["SpecialDefense"]+floor(effortValues["SpecialDefense"]/4.0))*level)/100+5) * nature->specialDefense, 1.0);
     maxSpeed = std::max(floor(((2*speciesStats["Speed"]+individualValues["Speed"]+floor(effortValues["Speed"]/4.0))*level)/100+5) * nature->speed, 1.0);
+    setPokemonCurrentStats();
 }
 
 void Pokemon::evolve() {
@@ -99,7 +100,6 @@ Pokemon::Pokemon(std::string inputName, const Species* inputSpecies, std::string
     int zeroEffortValues[6] = {};
     setPokemonEffortValues(zeroEffortValues);
     calculatePokemonStats();
-    setPokemonCurrentStats();
 }
 
 Pokemon::Pokemon(
@@ -125,7 +125,6 @@ Pokemon::Pokemon(
     setPokemonIndividualValues(inputIndividualValues);
     setPokemonEffortValues(inputEffortValues);
     calculatePokemonStats();
-    setPokemonCurrentStats();
 }
 
 Pokemon::~Pokemon() {
