@@ -137,6 +137,8 @@ def parsePokeInfo(rawData):
     pokeData["abilities"] = getAbilities(rawPokemonData)
 
     pokeData["evolve"] = getEvolve(pokeData["name"])
+
+    pokeData["growth-rate"] = rawSpeciesData["growth_rate"]["name"]
     
     return pokeData
 
