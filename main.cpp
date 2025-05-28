@@ -18,6 +18,9 @@ int main() {
     Display.all(&mySecondPokemon, "zekrom", "Ember");
     Display.moveAll(&moveMap.find("Growl")->second);
     Display.moveAll(&moveMap.find("Swords Dance")->second);
+    mySecondPokemon.addExperience(1000);
+    std::cout << mySecondPokemon.level << " | " << mySecondPokemon.experience << std::endl;
+    std::cout << "Speed: " << mySecondPokemon.maxSpeed << std::endl;
     Battle(&mySecondPokemon, &myThirdPokemon);
     std::cout << "\n\nEnd Main";
     return 0;

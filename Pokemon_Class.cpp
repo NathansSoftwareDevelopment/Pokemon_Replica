@@ -6,6 +6,7 @@
 #include "Nature.h"
 #include "Type.h"
 #include "Move.h"
+#include "Growth_Rate.h"
 
 void Pokemon::setSpeciesStats() {
     speciesStats = species->stats;
@@ -84,6 +85,16 @@ void Pokemon::calculateStageChanges() {
         }
         *currentStats[i] = *maxStats[i] * stageMultiplier;
     }
+}
+
+void Pokemon::addExperience(int inputExperience) {
+    while (inputExperience >= growthRateMap.find(species->growthRate)->second.toNextLevel[level]) {
+        inputExperience -= growthRateMap.find(species->growthRate)->second.toNextLevel[level];
+        experience = 0;
+        level += 1;
+    }
+    experience = inputExperience;
+    calculatePokemonStats();
 }
 
 Pokemon::Pokemon(std::string inputName, const Species* inputSpecies, std::string inputNature, std::string inputAbility, int inputIndividualValues[6]) {

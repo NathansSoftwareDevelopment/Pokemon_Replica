@@ -92,6 +92,7 @@ class Pokemon {
         void evolve();
         void setPokemonCurrentStats();
         void calculateStageChanges();
+        void addExperience(int inputExperience);
 
         
         Pokemon(std::string inputName, const Species* inputSpecies, std::string inputNature, std::string inputAbility, int inputIndividualValues[6]);
