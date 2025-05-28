@@ -13,6 +13,7 @@ struct Species {
     std::string type2;
     std::string abilities[3];
     std::string evolution;
+    std::string growthRate;
 };
 
 inline void from_json(const json& j, Species& s);

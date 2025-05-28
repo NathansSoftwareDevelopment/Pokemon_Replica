@@ -50,6 +50,24 @@ void from_json(const json& inputJson, Species& inputSpecies) {
     } else {
         inputSpecies.evolution = "none";
     }
+
+    std::string tempGrowthRate;
+    if (inputJson.contains("growth-rate")) {
+        tempGrowthRate = inputJson.at("growth-rate").get<std::string>();
+    } else {
+        tempGrowthRate = "slow";
+    }
+    tempGrowthRate[0] = static_cast<char>(std::toupper(tempGrowthRate[0]));
+    if (tempGrowthRate == "Medium-slow") {
+        tempGrowthRate = "Medium Slow";
+    } else if (tempGrowthRate == "Medium") {
+        tempGrowthRate = "Medium Fast";
+    } else if (tempGrowthRate == "Fast-then-very-slow") {
+        tempGrowthRate = "Fluctuating";
+    } else if (tempGrowthRate == "Slow-then-very-fast") {
+        tempGrowthRate = "Erratic";
+    }
+    inputSpecies.growthRate = tempGrowthRate;
 }
 
 std::map<std::string, Species> speciesMap;
