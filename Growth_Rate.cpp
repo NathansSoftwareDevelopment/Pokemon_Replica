@@ -38,6 +38,6 @@ void makeGrowthRates() {
             toNextLevel[level] = growthRate.second[level+1] - growthRate.second[level];
             // printf("\t%d -> %d = %d\n", level, level+1, toNextLevel[level]);
         }
-        growthRateMap[growthRate.first] = GrowthRate{growthRate.first, growthRate.second, toNextLevel};
+        growthRateMap[growthRate.first] = GrowthRate{growthRate.first, toNextLevel, growthRate.second};
     }
 }
