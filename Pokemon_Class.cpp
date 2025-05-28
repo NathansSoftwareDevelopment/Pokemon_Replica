@@ -38,8 +38,8 @@ void Pokemon::setPokemonNature(std::string inputNature) {
 }
 
 void Pokemon::setPokemonTypes() {
-    type1 = &typeMap.find(species->type1)->second;
-    type2 = &typeMap.find(species->type2)->second;
+    type1 = species->type1;
+    type2 = species->type2;
 }
 
 void Pokemon::setPokemonMoves(std::string inputMove1, std::string inputMove2, std::string inputMove3, std::string inputMove4) {

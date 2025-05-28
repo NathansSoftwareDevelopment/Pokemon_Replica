@@ -17,17 +17,23 @@ void from_json(const json& inputJson, Species& inputSpecies) {
     inputSpecies.stats["Speed"] = inputJson.at("stats").at("speed").get<int>();
 
     if (inputJson.at("types").contains("1")) {
-        inputSpecies.type1 = inputJson.at("types").at("1").get<std::string>();
+        std::string typeString = inputJson.at("types").at("1").get<std::string>();
+        typeString[0] = static_cast<char>(std::toupper(typeString[0]));
+        inputSpecies.type1 = &typeMap.find(typeString)->second;
+        // std::cout << test->name << std::endl;
+        // std::cout << "Type Search: " << inputJson.at("types").at("1").get<std::string>() << std::endl;
+        // std::cout << "Type Name: " << typeMap.find(inputJson.at("types").at("1").get<std::string>())->first << std::endl;
+        // std::cout << "Actual Type Name: " << typeMap.find(inputJson.at("types").at("1").get<std::string>())->second.name << std::endl;
     } else {
-        inputSpecies.type1 = "none";
+        inputSpecies.type1 = &typeMap.find("None")->second;
     }
-    inputSpecies.type1[0] = static_cast<char>(std::toupper(inputSpecies.type1[0]));
     if (inputJson.at("types").contains("2")) {
-        inputSpecies.type2 = inputJson.at("types").at("2").get<std::string>();
+        std::string typeString = inputJson.at("types").at("2").get<std::string>();
+        typeString[0] = static_cast<char>(std::toupper(typeString[0]));
+        inputSpecies.type2 = &typeMap.find(typeString)->second;
     } else {
-        inputSpecies.type2 = "none";
+        inputSpecies.type2 = &typeMap.find("None")->second;
     }
-    inputSpecies.type2[0] = static_cast<char>(std::toupper(inputSpecies.type2[0]));
 
     if (inputJson.at("abilities").contains("1")) {
         inputSpecies.abilities[0] = inputJson.at("abilities").at("1").get<std::string>();

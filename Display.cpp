@@ -67,8 +67,8 @@ void display::speciesAll(Species* inputSpecies, bool stackCall) {
         cout << "\t" << i.first << ": " << i.second << endl;
     }
     cout << "Types" << endl;
-    cout << "\t" << inputSpecies->type1 << endl;
-    cout << "\t" << inputSpecies->type2 << endl;
+    cout << "\t" << inputSpecies->type1->name << endl;
+    cout << "\t" << inputSpecies->type2->name << endl;
     cout << "Abilities" << endl;
     for (int i = 0; i < 3; i++) {
         cout << "\t" << i+1 << ": " << inputSpecies->abilities[i] << endl;
