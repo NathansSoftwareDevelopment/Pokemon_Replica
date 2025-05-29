@@ -20,4 +20,4 @@ double roundHalfDown(double inputValue) {
     }
 }
 
-#endif UTILS_H
+#endif
