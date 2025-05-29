@@ -128,7 +128,7 @@ def parsePokeInfo(rawData):
     pokeData["name"] = rawPokemonData["name"]
 
     tempStats = {}
-    for i in range (6):
+    for i in range(6):
         tempStats[rawPokemonData["stats"][i]["stat"]["name"]] = rawPokemonData["stats"][i]["base_stat"]
     pokeData["stats"] = tempStats
 
@@ -139,7 +139,10 @@ def parsePokeInfo(rawData):
     pokeData["evolve"] = getEvolve(pokeData["name"])
 
     pokeData["growth-rate"] = rawSpeciesData["growth_rate"]["name"]
-    
+
+    pokeData["base-experience"] = rawPokemonData["base_experience"]
+
+
     return pokeData
 
 

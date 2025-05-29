@@ -19,7 +19,8 @@
             "2": "none"
         },
         "evolve": "ivysaur",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 64
     },
     "ivysaur": {
         "name": "ivysaur",
@@ -41,7 +42,8 @@
             "2": "none"
         },
         "evolve": "venusaur",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 142
     },
     "venusaur": {
         "name": "venusaur",
@@ -63,7 +65,8 @@
             "2": "none"
         },
         "evolve": "venusaur",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 263
     },
     "charmander": {
         "name": "charmander",
@@ -85,7 +88,8 @@
             "2": "none"
         },
         "evolve": "charmeleon",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 62
     },
     "charmeleon": {
         "name": "charmeleon",
@@ -107,7 +111,8 @@
             "2": "none"
         },
         "evolve": "charizard",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 142
     },
     "charizard": {
         "name": "charizard",
@@ -129,7 +134,8 @@
             "2": "none"
         },
         "evolve": "charizard",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 267
     },
     "squirtle": {
         "name": "squirtle",
@@ -151,7 +157,8 @@
             "2": "none"
         },
         "evolve": "wartortle",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 63
     },
     "wartortle": {
         "name": "wartortle",
@@ -173,7 +180,8 @@
             "2": "none"
         },
         "evolve": "blastoise",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 142
     },
     "blastoise": {
         "name": "blastoise",
@@ -195,7 +203,8 @@
             "2": "none"
         },
         "evolve": "blastoise",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 265
     },
     "caterpie": {
         "name": "caterpie",
@@ -217,7 +226,8 @@
             "2": "none"
         },
         "evolve": "metapod",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 39
     },
     "metapod": {
         "name": "metapod",
@@ -239,7 +249,8 @@
             "3": "none"
         },
         "evolve": "butterfree",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 72
     },
     "butterfree": {
         "name": "butterfree",
@@ -261,7 +272,8 @@
             "2": "none"
         },
         "evolve": "butterfree",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 198
     },
     "weedle": {
         "name": "weedle",
@@ -283,7 +295,8 @@
             "2": "none"
         },
         "evolve": "kakuna",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 39
     },
     "kakuna": {
         "name": "kakuna",
@@ -305,7 +318,8 @@
             "3": "none"
         },
         "evolve": "beedrill",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 72
     },
     "beedrill": {
         "name": "beedrill",
@@ -327,7 +341,8 @@
             "2": "none"
         },
         "evolve": "beedrill",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 178
     },
     "pidgey": {
         "name": "pidgey",
@@ -349,7 +364,8 @@
             "3": "big-pecks"
         },
         "evolve": "pidgeotto",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 50
     },
     "pidgeotto": {
         "name": "pidgeotto",
@@ -371,7 +387,8 @@
             "3": "big-pecks"
         },
         "evolve": "pidgeot",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 122
     },
     "pidgeot": {
         "name": "pidgeot",
@@ -393,7 +410,8 @@
             "3": "big-pecks"
         },
         "evolve": "pidgeot",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 216
     },
     "rattata": {
         "name": "rattata",
@@ -415,7 +433,8 @@
             "3": "hustle"
         },
         "evolve": "raticate",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 51
     },
     "raticate": {
         "name": "raticate",
@@ -437,7 +456,8 @@
             "3": "hustle"
         },
         "evolve": "raticate",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 145
     },
     "spearow": {
         "name": "spearow",
@@ -459,7 +479,8 @@
             "2": "none"
         },
         "evolve": "fearow",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 52
     },
     "fearow": {
         "name": "fearow",
@@ -481,7 +502,8 @@
             "2": "none"
         },
         "evolve": "fearow",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 155
     },
     "ekans": {
         "name": "ekans",
@@ -503,7 +525,8 @@
             "3": "unnerve"
         },
         "evolve": "arbok",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 58
     },
     "arbok": {
         "name": "arbok",
@@ -525,7 +548,8 @@
             "3": "unnerve"
         },
         "evolve": "arbok",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 157
     },
     "pikachu": {
         "name": "pikachu",
@@ -547,7 +571,8 @@
             "2": "none"
         },
         "evolve": "raichu",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 112
     },
     "raichu": {
         "name": "raichu",
@@ -569,7 +594,8 @@
             "2": "none"
         },
         "evolve": "raichu",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 243
     },
     "sandshrew": {
         "name": "sandshrew",
@@ -591,7 +617,8 @@
             "2": "none"
         },
         "evolve": "sandslash",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 60
     },
     "sandslash": {
         "name": "sandslash",
@@ -613,7 +640,8 @@
             "2": "none"
         },
         "evolve": "sandslash",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 158
     },
     "nidoran-f": {
         "name": "nidoran-f",
@@ -635,7 +663,8 @@
             "3": "hustle"
         },
         "evolve": "nidorina",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 55
     },
     "nidorina": {
         "name": "nidorina",
@@ -657,7 +686,8 @@
             "3": "hustle"
         },
         "evolve": "nidoqueen",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 128
     },
     "nidoqueen": {
         "name": "nidoqueen",
@@ -679,7 +709,8 @@
             "3": "sheer-force"
         },
         "evolve": "nidoqueen",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 253
     },
     "nidoran-m": {
         "name": "nidoran-m",
@@ -701,7 +732,8 @@
             "3": "hustle"
         },
         "evolve": "nidorino",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 55
     },
     "nidorino": {
         "name": "nidorino",
@@ -723,7 +755,8 @@
             "3": "hustle"
         },
         "evolve": "nidoking",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 128
     },
     "nidoking": {
         "name": "nidoking",
@@ -745,7 +778,8 @@
             "3": "sheer-force"
         },
         "evolve": "nidoking",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 253
     },
     "clefairy": {
         "name": "clefairy",
@@ -767,7 +801,8 @@
             "3": "friend-guard"
         },
         "evolve": "clefable",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 113
     },
     "clefable": {
         "name": "clefable",
@@ -789,7 +824,8 @@
             "3": "unaware"
         },
         "evolve": "clefable",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 242
     },
     "vulpix": {
         "name": "vulpix",
@@ -811,7 +847,8 @@
             "2": "none"
         },
         "evolve": "ninetales",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 60
     },
     "ninetales": {
         "name": "ninetales",
@@ -833,7 +870,8 @@
             "2": "none"
         },
         "evolve": "ninetales",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 177
     },
     "jigglypuff": {
         "name": "jigglypuff",
@@ -855,7 +893,8 @@
             "3": "friend-guard"
         },
         "evolve": "wigglytuff",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 95
     },
     "wigglytuff": {
         "name": "wigglytuff",
@@ -877,7 +916,8 @@
             "3": "frisk"
         },
         "evolve": "wigglytuff",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 218
     },
     "zubat": {
         "name": "zubat",
@@ -899,7 +939,8 @@
             "2": "none"
         },
         "evolve": "golbat",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 49
     },
     "golbat": {
         "name": "golbat",
@@ -921,7 +962,8 @@
             "2": "none"
         },
         "evolve": "crobat",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 159
     },
     "oddish": {
         "name": "oddish",
@@ -943,7 +985,8 @@
             "2": "none"
         },
         "evolve": "gloom",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 64
     },
     "gloom": {
         "name": "gloom",
@@ -965,7 +1008,8 @@
             "2": "none"
         },
         "evolve": "special",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 138
     },
     "vileplume": {
         "name": "vileplume",
@@ -987,7 +1031,8 @@
             "2": "none"
         },
         "evolve": "vileplume",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 245
     },
     "paras": {
         "name": "paras",
@@ -1009,7 +1054,8 @@
             "3": "damp"
         },
         "evolve": "parasect",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 57
     },
     "parasect": {
         "name": "parasect",
@@ -1031,7 +1077,8 @@
             "3": "damp"
         },
         "evolve": "parasect",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 142
     },
     "venonat": {
         "name": "venonat",
@@ -1053,7 +1100,8 @@
             "3": "run-away"
         },
         "evolve": "venomoth",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 61
     },
     "venomoth": {
         "name": "venomoth",
@@ -1075,7 +1123,8 @@
             "3": "wonder-skin"
         },
         "evolve": "venomoth",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 158
     },
     "diglett": {
         "name": "diglett",
@@ -1097,7 +1146,8 @@
             "3": "sand-force"
         },
         "evolve": "dugtrio",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 53
     },
     "dugtrio": {
         "name": "dugtrio",
@@ -1119,7 +1169,8 @@
             "3": "sand-force"
         },
         "evolve": "dugtrio",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 149
     },
     "meowth": {
         "name": "meowth",
@@ -1141,7 +1192,8 @@
             "3": "unnerve"
         },
         "evolve": "special",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 58
     },
     "persian": {
         "name": "persian",
@@ -1163,7 +1215,8 @@
             "3": "unnerve"
         },
         "evolve": "persian",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 154
     },
     "psyduck": {
         "name": "psyduck",
@@ -1185,7 +1238,8 @@
             "3": "swift-swim"
         },
         "evolve": "golduck",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 64
     },
     "golduck": {
         "name": "golduck",
@@ -1207,7 +1261,8 @@
             "3": "swift-swim"
         },
         "evolve": "golduck",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 175
     },
     "mankey": {
         "name": "mankey",
@@ -1229,7 +1284,8 @@
             "3": "defiant"
         },
         "evolve": "primeape",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 61
     },
     "primeape": {
         "name": "primeape",
@@ -1251,7 +1307,8 @@
             "3": "defiant"
         },
         "evolve": "annihilape",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 159
     },
     "growlithe": {
         "name": "growlithe",
@@ -1273,7 +1330,8 @@
             "3": "justified"
         },
         "evolve": "arcanine",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 70
     },
     "arcanine": {
         "name": "arcanine",
@@ -1295,7 +1353,8 @@
             "3": "justified"
         },
         "evolve": "arcanine",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 194
     },
     "poliwag": {
         "name": "poliwag",
@@ -1317,7 +1376,8 @@
             "3": "swift-swim"
         },
         "evolve": "poliwhirl",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 60
     },
     "poliwhirl": {
         "name": "poliwhirl",
@@ -1339,7 +1399,8 @@
             "3": "swift-swim"
         },
         "evolve": "special",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 135
     },
     "poliwrath": {
         "name": "poliwrath",
@@ -1361,7 +1422,8 @@
             "3": "swift-swim"
         },
         "evolve": "poliwrath",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 255
     },
     "abra": {
         "name": "abra",
@@ -1383,7 +1445,8 @@
             "3": "magic-guard"
         },
         "evolve": "kadabra",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 62
     },
     "kadabra": {
         "name": "kadabra",
@@ -1405,7 +1468,8 @@
             "3": "magic-guard"
         },
         "evolve": "alakazam",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 140
     },
     "alakazam": {
         "name": "alakazam",
@@ -1427,7 +1491,8 @@
             "3": "magic-guard"
         },
         "evolve": "alakazam",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 250
     },
     "machop": {
         "name": "machop",
@@ -1449,7 +1514,8 @@
             "3": "steadfast"
         },
         "evolve": "machoke",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 61
     },
     "machoke": {
         "name": "machoke",
@@ -1471,7 +1537,8 @@
             "3": "steadfast"
         },
         "evolve": "machamp",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 142
     },
     "machamp": {
         "name": "machamp",
@@ -1493,7 +1560,8 @@
             "3": "steadfast"
         },
         "evolve": "machamp",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 253
     },
     "bellsprout": {
         "name": "bellsprout",
@@ -1515,7 +1583,8 @@
             "2": "none"
         },
         "evolve": "weepinbell",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 60
     },
     "weepinbell": {
         "name": "weepinbell",
@@ -1537,7 +1606,8 @@
             "2": "none"
         },
         "evolve": "victreebel",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 137
     },
     "victreebel": {
         "name": "victreebel",
@@ -1559,7 +1629,8 @@
             "2": "none"
         },
         "evolve": "victreebel",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 221
     },
     "tentacool": {
         "name": "tentacool",
@@ -1581,7 +1652,8 @@
             "3": "rain-dish"
         },
         "evolve": "tentacruel",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 67
     },
     "tentacruel": {
         "name": "tentacruel",
@@ -1603,7 +1675,8 @@
             "3": "rain-dish"
         },
         "evolve": "tentacruel",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 180
     },
     "geodude": {
         "name": "geodude",
@@ -1625,7 +1698,8 @@
             "3": "sand-veil"
         },
         "evolve": "graveler",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 60
     },
     "graveler": {
         "name": "graveler",
@@ -1647,7 +1721,8 @@
             "3": "sand-veil"
         },
         "evolve": "golem",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 137
     },
     "golem": {
         "name": "golem",
@@ -1669,7 +1744,8 @@
             "3": "sand-veil"
         },
         "evolve": "golem",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 223
     },
     "ponyta": {
         "name": "ponyta",
@@ -1691,7 +1767,8 @@
             "3": "flame-body"
         },
         "evolve": "rapidash",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 82
     },
     "rapidash": {
         "name": "rapidash",
@@ -1713,7 +1790,8 @@
             "3": "flame-body"
         },
         "evolve": "rapidash",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 175
     },
     "slowpoke": {
         "name": "slowpoke",
@@ -1735,7 +1813,8 @@
             "3": "regenerator"
         },
         "evolve": "special",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 63
     },
     "slowbro": {
         "name": "slowbro",
@@ -1757,7 +1836,8 @@
             "3": "regenerator"
         },
         "evolve": "slowbro",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 172
     },
     "magnemite": {
         "name": "magnemite",
@@ -1779,7 +1859,8 @@
             "3": "analytic"
         },
         "evolve": "magneton",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 65
     },
     "magneton": {
         "name": "magneton",
@@ -1801,7 +1882,8 @@
             "3": "analytic"
         },
         "evolve": "magnezone",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 163
     },
     "farfetchd": {
         "name": "farfetchd",
@@ -1823,7 +1905,8 @@
             "3": "defiant"
         },
         "evolve": "sirfetchd",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 132
     },
     "doduo": {
         "name": "doduo",
@@ -1845,7 +1928,8 @@
             "3": "tangled-feet"
         },
         "evolve": "dodrio",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 62
     },
     "dodrio": {
         "name": "dodrio",
@@ -1867,7 +1951,8 @@
             "3": "tangled-feet"
         },
         "evolve": "dodrio",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 165
     },
     "seel": {
         "name": "seel",
@@ -1889,7 +1974,8 @@
             "3": "ice-body"
         },
         "evolve": "dewgong",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 65
     },
     "dewgong": {
         "name": "dewgong",
@@ -1911,7 +1997,8 @@
             "3": "ice-body"
         },
         "evolve": "dewgong",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 166
     },
     "grimer": {
         "name": "grimer",
@@ -1933,7 +2020,8 @@
             "3": "poison-touch"
         },
         "evolve": "muk",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 65
     },
     "muk": {
         "name": "muk",
@@ -1955,7 +2043,8 @@
             "3": "poison-touch"
         },
         "evolve": "muk",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 175
     },
     "shellder": {
         "name": "shellder",
@@ -1977,7 +2066,8 @@
             "3": "overcoat"
         },
         "evolve": "cloyster",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 61
     },
     "cloyster": {
         "name": "cloyster",
@@ -1999,7 +2089,8 @@
             "3": "overcoat"
         },
         "evolve": "cloyster",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 184
     },
     "gastly": {
         "name": "gastly",
@@ -2021,7 +2112,8 @@
             "3": "none"
         },
         "evolve": "haunter",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 62
     },
     "haunter": {
         "name": "haunter",
@@ -2043,7 +2135,8 @@
             "3": "none"
         },
         "evolve": "gengar",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 142
     },
     "gengar": {
         "name": "gengar",
@@ -2065,7 +2158,8 @@
             "3": "none"
         },
         "evolve": "gengar",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 250
     },
     "onix": {
         "name": "onix",
@@ -2087,7 +2181,8 @@
             "3": "weak-armor"
         },
         "evolve": "steelix",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 77
     },
     "drowzee": {
         "name": "drowzee",
@@ -2109,7 +2204,8 @@
             "3": "inner-focus"
         },
         "evolve": "hypno",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 66
     },
     "hypno": {
         "name": "hypno",
@@ -2131,7 +2227,8 @@
             "3": "inner-focus"
         },
         "evolve": "hypno",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 169
     },
     "krabby": {
         "name": "krabby",
@@ -2153,7 +2250,8 @@
             "3": "sheer-force"
         },
         "evolve": "kingler",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 65
     },
     "kingler": {
         "name": "kingler",
@@ -2175,7 +2273,8 @@
             "3": "sheer-force"
         },
         "evolve": "kingler",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 166
     },
     "voltorb": {
         "name": "voltorb",
@@ -2197,7 +2296,8 @@
             "3": "aftermath"
         },
         "evolve": "electrode",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 66
     },
     "electrode": {
         "name": "electrode",
@@ -2219,7 +2319,8 @@
             "3": "aftermath"
         },
         "evolve": "electrode",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 172
     },
     "exeggcute": {
         "name": "exeggcute",
@@ -2241,7 +2342,8 @@
             "2": "none"
         },
         "evolve": "exeggutor",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 65
     },
     "exeggutor": {
         "name": "exeggutor",
@@ -2263,7 +2365,8 @@
             "2": "none"
         },
         "evolve": "exeggutor",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 186
     },
     "cubone": {
         "name": "cubone",
@@ -2285,7 +2388,8 @@
             "3": "battle-armor"
         },
         "evolve": "marowak",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 64
     },
     "marowak": {
         "name": "marowak",
@@ -2307,7 +2411,8 @@
             "3": "battle-armor"
         },
         "evolve": "marowak",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 149
     },
     "hitmonlee": {
         "name": "hitmonlee",
@@ -2329,7 +2434,8 @@
             "3": "unburden"
         },
         "evolve": "hitmonlee",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 159
     },
     "hitmonchan": {
         "name": "hitmonchan",
@@ -2351,7 +2457,8 @@
             "3": "inner-focus"
         },
         "evolve": "hitmonchan",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 159
     },
     "lickitung": {
         "name": "lickitung",
@@ -2373,7 +2480,8 @@
             "3": "cloud-nine"
         },
         "evolve": "lickilicky",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 77
     },
     "koffing": {
         "name": "koffing",
@@ -2395,7 +2503,8 @@
             "3": "stench"
         },
         "evolve": "weezing",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 68
     },
     "weezing": {
         "name": "weezing",
@@ -2417,7 +2526,8 @@
             "3": "stench"
         },
         "evolve": "weezing",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 172
     },
     "rhyhorn": {
         "name": "rhyhorn",
@@ -2439,7 +2549,8 @@
             "3": "reckless"
         },
         "evolve": "rhydon",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 69
     },
     "rhydon": {
         "name": "rhydon",
@@ -2461,7 +2572,8 @@
             "3": "reckless"
         },
         "evolve": "rhyperior",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 170
     },
     "chansey": {
         "name": "chansey",
@@ -2483,7 +2595,8 @@
             "3": "healer"
         },
         "evolve": "blissey",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 395
     },
     "tangela": {
         "name": "tangela",
@@ -2505,7 +2618,8 @@
             "3": "regenerator"
         },
         "evolve": "tangrowth",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 87
     },
     "kangaskhan": {
         "name": "kangaskhan",
@@ -2527,7 +2641,8 @@
             "3": "inner-focus"
         },
         "evolve": "kangaskhan",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 172
     },
     "horsea": {
         "name": "horsea",
@@ -2549,7 +2664,8 @@
             "3": "damp"
         },
         "evolve": "seadra",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 59
     },
     "seadra": {
         "name": "seadra",
@@ -2571,7 +2687,8 @@
             "3": "damp"
         },
         "evolve": "kingdra",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 154
     },
     "goldeen": {
         "name": "goldeen",
@@ -2593,7 +2710,8 @@
             "3": "lightning-rod"
         },
         "evolve": "seaking",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 64
     },
     "seaking": {
         "name": "seaking",
@@ -2615,7 +2733,8 @@
             "3": "lightning-rod"
         },
         "evolve": "seaking",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 158
     },
     "staryu": {
         "name": "staryu",
@@ -2637,7 +2756,8 @@
             "3": "analytic"
         },
         "evolve": "starmie",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 68
     },
     "starmie": {
         "name": "starmie",
@@ -2659,7 +2779,8 @@
             "3": "analytic"
         },
         "evolve": "starmie",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 182
     },
     "mr-mime": {
         "name": "mr-mime",
@@ -2681,7 +2802,8 @@
             "3": "technician"
         },
         "evolve": "mr-rime",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 161
     },
     "scyther": {
         "name": "scyther",
@@ -2703,7 +2825,8 @@
             "3": "steadfast"
         },
         "evolve": "special",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 100
     },
     "jynx": {
         "name": "jynx",
@@ -2725,7 +2848,8 @@
             "3": "dry-skin"
         },
         "evolve": "jynx",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 159
     },
     "electabuzz": {
         "name": "electabuzz",
@@ -2747,7 +2871,8 @@
             "2": "none"
         },
         "evolve": "electivire",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 172
     },
     "magmar": {
         "name": "magmar",
@@ -2769,7 +2894,8 @@
             "2": "none"
         },
         "evolve": "magmortar",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 173
     },
     "pinsir": {
         "name": "pinsir",
@@ -2791,7 +2917,8 @@
             "3": "moxie"
         },
         "evolve": "pinsir",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 175
     },
     "tauros": {
         "name": "tauros",
@@ -2813,7 +2940,8 @@
             "3": "sheer-force"
         },
         "evolve": "tauros",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 172
     },
     "magikarp": {
         "name": "magikarp",
@@ -2835,7 +2963,8 @@
             "2": "none"
         },
         "evolve": "gyarados",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 40
     },
     "gyarados": {
         "name": "gyarados",
@@ -2857,7 +2986,8 @@
             "2": "none"
         },
         "evolve": "gyarados",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 189
     },
     "lapras": {
         "name": "lapras",
@@ -2879,7 +3009,8 @@
             "3": "hydration"
         },
         "evolve": "lapras",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 187
     },
     "ditto": {
         "name": "ditto",
@@ -2901,7 +3032,8 @@
             "2": "none"
         },
         "evolve": "ditto",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 101
     },
     "eevee": {
         "name": "eevee",
@@ -2923,7 +3055,8 @@
             "3": "anticipation"
         },
         "evolve": "special",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 65
     },
     "vaporeon": {
         "name": "vaporeon",
@@ -2945,7 +3078,8 @@
             "2": "none"
         },
         "evolve": "vaporeon",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 184
     },
     "jolteon": {
         "name": "jolteon",
@@ -2967,7 +3101,8 @@
             "2": "none"
         },
         "evolve": "jolteon",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 184
     },
     "flareon": {
         "name": "flareon",
@@ -2989,7 +3124,8 @@
             "2": "none"
         },
         "evolve": "flareon",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 184
     },
     "porygon": {
         "name": "porygon",
@@ -3011,7 +3147,8 @@
             "3": "analytic"
         },
         "evolve": "porygon2",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 79
     },
     "omanyte": {
         "name": "omanyte",
@@ -3033,7 +3170,8 @@
             "3": "weak-armor"
         },
         "evolve": "omastar",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 71
     },
     "omastar": {
         "name": "omastar",
@@ -3055,7 +3193,8 @@
             "3": "weak-armor"
         },
         "evolve": "omastar",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 173
     },
     "kabuto": {
         "name": "kabuto",
@@ -3077,7 +3216,8 @@
             "3": "weak-armor"
         },
         "evolve": "kabutops",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 71
     },
     "kabutops": {
         "name": "kabutops",
@@ -3099,7 +3239,8 @@
             "3": "weak-armor"
         },
         "evolve": "kabutops",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 173
     },
     "aerodactyl": {
         "name": "aerodactyl",
@@ -3121,7 +3262,8 @@
             "3": "unnerve"
         },
         "evolve": "aerodactyl",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 180
     },
     "snorlax": {
         "name": "snorlax",
@@ -3143,7 +3285,8 @@
             "3": "gluttony"
         },
         "evolve": "snorlax",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 189
     },
     "articuno": {
         "name": "articuno",
@@ -3165,7 +3308,8 @@
             "2": "none"
         },
         "evolve": "articuno",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "zapdos": {
         "name": "zapdos",
@@ -3187,7 +3331,8 @@
             "2": "none"
         },
         "evolve": "zapdos",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "moltres": {
         "name": "moltres",
@@ -3209,7 +3354,8 @@
             "2": "none"
         },
         "evolve": "moltres",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "dratini": {
         "name": "dratini",
@@ -3231,7 +3377,8 @@
             "2": "none"
         },
         "evolve": "dragonair",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 60
     },
     "dragonair": {
         "name": "dragonair",
@@ -3253,7 +3400,8 @@
             "2": "none"
         },
         "evolve": "dragonite",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 147
     },
     "dragonite": {
         "name": "dragonite",
@@ -3275,7 +3423,8 @@
             "2": "none"
         },
         "evolve": "dragonite",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 300
     },
     "mewtwo": {
         "name": "mewtwo",
@@ -3297,7 +3446,8 @@
             "2": "none"
         },
         "evolve": "mewtwo",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 340
     },
     "mew": {
         "name": "mew",
@@ -3319,7 +3469,8 @@
             "3": "none"
         },
         "evolve": "mew",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 300
     },
     "chikorita": {
         "name": "chikorita",
@@ -3341,7 +3492,8 @@
             "2": "none"
         },
         "evolve": "bayleef",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 64
     },
     "bayleef": {
         "name": "bayleef",
@@ -3363,7 +3515,8 @@
             "2": "none"
         },
         "evolve": "meganium",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 142
     },
     "meganium": {
         "name": "meganium",
@@ -3385,7 +3538,8 @@
             "2": "none"
         },
         "evolve": "meganium",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 236
     },
     "cyndaquil": {
         "name": "cyndaquil",
@@ -3407,7 +3561,8 @@
             "2": "none"
         },
         "evolve": "quilava",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 62
     },
     "quilava": {
         "name": "quilava",
@@ -3429,7 +3584,8 @@
             "2": "none"
         },
         "evolve": "typhlosion",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 142
     },
     "typhlosion": {
         "name": "typhlosion",
@@ -3451,7 +3607,8 @@
             "2": "none"
         },
         "evolve": "typhlosion",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 240
     },
     "totodile": {
         "name": "totodile",
@@ -3473,7 +3630,8 @@
             "2": "none"
         },
         "evolve": "croconaw",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 63
     },
     "croconaw": {
         "name": "croconaw",
@@ -3495,7 +3653,8 @@
             "2": "none"
         },
         "evolve": "feraligatr",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 142
     },
     "feraligatr": {
         "name": "feraligatr",
@@ -3517,7 +3676,8 @@
             "2": "none"
         },
         "evolve": "feraligatr",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 239
     },
     "sentret": {
         "name": "sentret",
@@ -3539,7 +3699,8 @@
             "3": "frisk"
         },
         "evolve": "furret",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 43
     },
     "furret": {
         "name": "furret",
@@ -3561,7 +3722,8 @@
             "3": "frisk"
         },
         "evolve": "furret",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 145
     },
     "hoothoot": {
         "name": "hoothoot",
@@ -3583,7 +3745,8 @@
             "3": "tinted-lens"
         },
         "evolve": "noctowl",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 52
     },
     "noctowl": {
         "name": "noctowl",
@@ -3605,7 +3768,8 @@
             "3": "tinted-lens"
         },
         "evolve": "noctowl",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 158
     },
     "ledyba": {
         "name": "ledyba",
@@ -3627,7 +3791,8 @@
             "3": "rattled"
         },
         "evolve": "ledian",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 53
     },
     "ledian": {
         "name": "ledian",
@@ -3649,7 +3814,8 @@
             "3": "iron-fist"
         },
         "evolve": "ledian",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 137
     },
     "spinarak": {
         "name": "spinarak",
@@ -3671,7 +3837,8 @@
             "3": "sniper"
         },
         "evolve": "ariados",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 50
     },
     "ariados": {
         "name": "ariados",
@@ -3693,7 +3860,8 @@
             "3": "sniper"
         },
         "evolve": "ariados",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 140
     },
     "crobat": {
         "name": "crobat",
@@ -3715,7 +3883,8 @@
             "2": "none"
         },
         "evolve": "crobat",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 268
     },
     "chinchou": {
         "name": "chinchou",
@@ -3737,7 +3906,8 @@
             "3": "water-absorb"
         },
         "evolve": "lanturn",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 66
     },
     "lanturn": {
         "name": "lanturn",
@@ -3759,7 +3929,8 @@
             "3": "water-absorb"
         },
         "evolve": "lanturn",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 161
     },
     "pichu": {
         "name": "pichu",
@@ -3781,7 +3952,8 @@
             "2": "none"
         },
         "evolve": "pikachu",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 41
     },
     "cleffa": {
         "name": "cleffa",
@@ -3803,7 +3975,8 @@
             "3": "friend-guard"
         },
         "evolve": "clefairy",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 44
     },
     "igglybuff": {
         "name": "igglybuff",
@@ -3825,7 +3998,8 @@
             "3": "friend-guard"
         },
         "evolve": "jigglypuff",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 42
     },
     "togepi": {
         "name": "togepi",
@@ -3847,7 +4021,8 @@
             "3": "super-luck"
         },
         "evolve": "togetic",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 49
     },
     "togetic": {
         "name": "togetic",
@@ -3869,7 +4044,8 @@
             "3": "super-luck"
         },
         "evolve": "togekiss",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 142
     },
     "natu": {
         "name": "natu",
@@ -3891,7 +4067,8 @@
             "3": "magic-bounce"
         },
         "evolve": "xatu",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 64
     },
     "xatu": {
         "name": "xatu",
@@ -3913,7 +4090,8 @@
             "3": "magic-bounce"
         },
         "evolve": "xatu",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 165
     },
     "mareep": {
         "name": "mareep",
@@ -3935,7 +4113,8 @@
             "2": "none"
         },
         "evolve": "flaaffy",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 56
     },
     "flaaffy": {
         "name": "flaaffy",
@@ -3957,7 +4136,8 @@
             "2": "none"
         },
         "evolve": "ampharos",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 128
     },
     "ampharos": {
         "name": "ampharos",
@@ -3979,7 +4159,8 @@
             "2": "none"
         },
         "evolve": "ampharos",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 230
     },
     "bellossom": {
         "name": "bellossom",
@@ -4001,7 +4182,8 @@
             "2": "none"
         },
         "evolve": "bellossom",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 245
     },
     "marill": {
         "name": "marill",
@@ -4023,7 +4205,8 @@
             "3": "sap-sipper"
         },
         "evolve": "azumarill",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 88
     },
     "azumarill": {
         "name": "azumarill",
@@ -4045,7 +4228,8 @@
             "3": "sap-sipper"
         },
         "evolve": "azumarill",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 210
     },
     "sudowoodo": {
         "name": "sudowoodo",
@@ -4067,7 +4251,8 @@
             "3": "rattled"
         },
         "evolve": "sudowoodo",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 144
     },
     "politoed": {
         "name": "politoed",
@@ -4089,7 +4274,8 @@
             "3": "drizzle"
         },
         "evolve": "politoed",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 250
     },
     "hoppip": {
         "name": "hoppip",
@@ -4111,7 +4297,8 @@
             "3": "infiltrator"
         },
         "evolve": "skiploom",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 50
     },
     "skiploom": {
         "name": "skiploom",
@@ -4133,7 +4320,8 @@
             "3": "infiltrator"
         },
         "evolve": "jumpluff",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 119
     },
     "jumpluff": {
         "name": "jumpluff",
@@ -4155,7 +4343,8 @@
             "3": "infiltrator"
         },
         "evolve": "jumpluff",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 207
     },
     "aipom": {
         "name": "aipom",
@@ -4177,7 +4366,8 @@
             "3": "skill-link"
         },
         "evolve": "ambipom",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 72
     },
     "sunkern": {
         "name": "sunkern",
@@ -4199,7 +4389,8 @@
             "3": "early-bird"
         },
         "evolve": "sunflora",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 36
     },
     "sunflora": {
         "name": "sunflora",
@@ -4221,7 +4412,8 @@
             "3": "early-bird"
         },
         "evolve": "sunflora",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 149
     },
     "yanma": {
         "name": "yanma",
@@ -4243,7 +4435,8 @@
             "3": "frisk"
         },
         "evolve": "yanmega",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 78
     },
     "wooper": {
         "name": "wooper",
@@ -4265,7 +4458,8 @@
             "3": "unaware"
         },
         "evolve": "special",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 42
     },
     "quagsire": {
         "name": "quagsire",
@@ -4287,7 +4481,8 @@
             "3": "unaware"
         },
         "evolve": "quagsire",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 151
     },
     "espeon": {
         "name": "espeon",
@@ -4309,7 +4504,8 @@
             "2": "none"
         },
         "evolve": "espeon",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 184
     },
     "umbreon": {
         "name": "umbreon",
@@ -4331,7 +4527,8 @@
             "2": "none"
         },
         "evolve": "umbreon",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 184
     },
     "murkrow": {
         "name": "murkrow",
@@ -4353,7 +4550,8 @@
             "3": "prankster"
         },
         "evolve": "honchkrow",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 81
     },
     "slowking": {
         "name": "slowking",
@@ -4375,7 +4573,8 @@
             "3": "regenerator"
         },
         "evolve": "slowking",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 172
     },
     "misdreavus": {
         "name": "misdreavus",
@@ -4397,7 +4596,8 @@
             "3": "none"
         },
         "evolve": "mismagius",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 87
     },
     "unown": {
         "name": "unown",
@@ -4419,7 +4619,8 @@
             "3": "none"
         },
         "evolve": "unown",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 118
     },
     "wobbuffet": {
         "name": "wobbuffet",
@@ -4441,7 +4642,8 @@
             "2": "none"
         },
         "evolve": "wobbuffet",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 142
     },
     "girafarig": {
         "name": "girafarig",
@@ -4463,7 +4665,8 @@
             "3": "sap-sipper"
         },
         "evolve": "farigiraf",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 159
     },
     "pineco": {
         "name": "pineco",
@@ -4485,7 +4688,8 @@
             "2": "none"
         },
         "evolve": "forretress",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 58
     },
     "forretress": {
         "name": "forretress",
@@ -4507,7 +4711,8 @@
             "2": "none"
         },
         "evolve": "forretress",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 163
     },
     "dunsparce": {
         "name": "dunsparce",
@@ -4529,7 +4734,8 @@
             "3": "rattled"
         },
         "evolve": "dudunsparce",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 145
     },
     "gligar": {
         "name": "gligar",
@@ -4551,7 +4757,8 @@
             "3": "immunity"
         },
         "evolve": "gliscor",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 86
     },
     "steelix": {
         "name": "steelix",
@@ -4573,7 +4780,8 @@
             "3": "sheer-force"
         },
         "evolve": "steelix",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 179
     },
     "snubbull": {
         "name": "snubbull",
@@ -4595,7 +4803,8 @@
             "3": "rattled"
         },
         "evolve": "granbull",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 60
     },
     "granbull": {
         "name": "granbull",
@@ -4617,7 +4826,8 @@
             "3": "rattled"
         },
         "evolve": "granbull",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 158
     },
     "qwilfish": {
         "name": "qwilfish",
@@ -4639,7 +4849,8 @@
             "3": "intimidate"
         },
         "evolve": "overqwil",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 88
     },
     "scizor": {
         "name": "scizor",
@@ -4661,7 +4872,8 @@
             "3": "light-metal"
         },
         "evolve": "scizor",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 175
     },
     "shuckle": {
         "name": "shuckle",
@@ -4683,7 +4895,8 @@
             "3": "contrary"
         },
         "evolve": "shuckle",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 177
     },
     "heracross": {
         "name": "heracross",
@@ -4705,7 +4918,8 @@
             "3": "moxie"
         },
         "evolve": "heracross",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 175
     },
     "sneasel": {
         "name": "sneasel",
@@ -4727,7 +4941,8 @@
             "3": "pickpocket"
         },
         "evolve": "special",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 86
     },
     "teddiursa": {
         "name": "teddiursa",
@@ -4749,7 +4964,8 @@
             "3": "honey-gather"
         },
         "evolve": "ursaring",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 66
     },
     "ursaring": {
         "name": "ursaring",
@@ -4771,7 +4987,8 @@
             "3": "unnerve"
         },
         "evolve": "ursaluna",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 175
     },
     "slugma": {
         "name": "slugma",
@@ -4793,7 +5010,8 @@
             "3": "weak-armor"
         },
         "evolve": "magcargo",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 50
     },
     "magcargo": {
         "name": "magcargo",
@@ -4815,7 +5033,8 @@
             "3": "weak-armor"
         },
         "evolve": "magcargo",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 151
     },
     "swinub": {
         "name": "swinub",
@@ -4837,7 +5056,8 @@
             "3": "thick-fat"
         },
         "evolve": "piloswine",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 50
     },
     "piloswine": {
         "name": "piloswine",
@@ -4859,7 +5079,8 @@
             "3": "thick-fat"
         },
         "evolve": "mamoswine",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 158
     },
     "corsola": {
         "name": "corsola",
@@ -4881,7 +5102,8 @@
             "3": "regenerator"
         },
         "evolve": "cursola",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 144
     },
     "remoraid": {
         "name": "remoraid",
@@ -4903,7 +5125,8 @@
             "3": "moody"
         },
         "evolve": "octillery",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 60
     },
     "octillery": {
         "name": "octillery",
@@ -4925,7 +5148,8 @@
             "3": "moody"
         },
         "evolve": "octillery",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 168
     },
     "delibird": {
         "name": "delibird",
@@ -4947,7 +5171,8 @@
             "3": "insomnia"
         },
         "evolve": "delibird",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 116
     },
     "mantine": {
         "name": "mantine",
@@ -4969,7 +5194,8 @@
             "3": "water-veil"
         },
         "evolve": "mantine",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 170
     },
     "skarmory": {
         "name": "skarmory",
@@ -4991,7 +5217,8 @@
             "3": "weak-armor"
         },
         "evolve": "skarmory",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 163
     },
     "houndour": {
         "name": "houndour",
@@ -5013,7 +5240,8 @@
             "3": "unnerve"
         },
         "evolve": "houndoom",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 66
     },
     "houndoom": {
         "name": "houndoom",
@@ -5035,7 +5263,8 @@
             "3": "unnerve"
         },
         "evolve": "houndoom",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 175
     },
     "kingdra": {
         "name": "kingdra",
@@ -5057,7 +5286,8 @@
             "3": "damp"
         },
         "evolve": "kingdra",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 270
     },
     "phanpy": {
         "name": "phanpy",
@@ -5079,7 +5309,8 @@
             "2": "none"
         },
         "evolve": "donphan",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 66
     },
     "donphan": {
         "name": "donphan",
@@ -5101,7 +5332,8 @@
             "2": "none"
         },
         "evolve": "donphan",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 175
     },
     "porygon2": {
         "name": "porygon2",
@@ -5123,7 +5355,8 @@
             "3": "analytic"
         },
         "evolve": "porygon-z",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 180
     },
     "stantler": {
         "name": "stantler",
@@ -5145,7 +5378,8 @@
             "3": "sap-sipper"
         },
         "evolve": "wyrdeer",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 163
     },
     "smeargle": {
         "name": "smeargle",
@@ -5167,7 +5401,8 @@
             "3": "moody"
         },
         "evolve": "smeargle",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 88
     },
     "tyrogue": {
         "name": "tyrogue",
@@ -5189,7 +5424,8 @@
             "3": "vital-spirit"
         },
         "evolve": "special",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 42
     },
     "hitmontop": {
         "name": "hitmontop",
@@ -5211,7 +5447,8 @@
             "3": "steadfast"
         },
         "evolve": "hitmontop",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 159
     },
     "smoochum": {
         "name": "smoochum",
@@ -5233,7 +5470,8 @@
             "3": "hydration"
         },
         "evolve": "jynx",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 61
     },
     "elekid": {
         "name": "elekid",
@@ -5255,7 +5493,8 @@
             "2": "none"
         },
         "evolve": "electabuzz",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 72
     },
     "magby": {
         "name": "magby",
@@ -5277,7 +5516,8 @@
             "2": "none"
         },
         "evolve": "magmar",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 73
     },
     "miltank": {
         "name": "miltank",
@@ -5299,7 +5539,8 @@
             "3": "sap-sipper"
         },
         "evolve": "miltank",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 172
     },
     "blissey": {
         "name": "blissey",
@@ -5321,7 +5562,8 @@
             "3": "healer"
         },
         "evolve": "blissey",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 635
     },
     "raikou": {
         "name": "raikou",
@@ -5343,7 +5585,8 @@
             "2": "none"
         },
         "evolve": "raikou",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "entei": {
         "name": "entei",
@@ -5365,7 +5608,8 @@
             "2": "none"
         },
         "evolve": "entei",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "suicune": {
         "name": "suicune",
@@ -5387,7 +5631,8 @@
             "2": "none"
         },
         "evolve": "suicune",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "larvitar": {
         "name": "larvitar",
@@ -5409,7 +5654,8 @@
             "2": "none"
         },
         "evolve": "pupitar",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 60
     },
     "pupitar": {
         "name": "pupitar",
@@ -5431,7 +5677,8 @@
             "3": "none"
         },
         "evolve": "tyranitar",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 144
     },
     "tyranitar": {
         "name": "tyranitar",
@@ -5453,7 +5700,8 @@
             "2": "none"
         },
         "evolve": "tyranitar",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 300
     },
     "lugia": {
         "name": "lugia",
@@ -5475,7 +5723,8 @@
             "2": "none"
         },
         "evolve": "lugia",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 340
     },
     "ho-oh": {
         "name": "ho-oh",
@@ -5497,7 +5746,8 @@
             "2": "none"
         },
         "evolve": "ho-oh",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 340
     },
     "celebi": {
         "name": "celebi",
@@ -5519,7 +5769,8 @@
             "3": "none"
         },
         "evolve": "celebi",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 300
     },
     "treecko": {
         "name": "treecko",
@@ -5541,7 +5792,8 @@
             "2": "none"
         },
         "evolve": "grovyle",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 62
     },
     "grovyle": {
         "name": "grovyle",
@@ -5563,7 +5815,8 @@
             "2": "none"
         },
         "evolve": "sceptile",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 142
     },
     "sceptile": {
         "name": "sceptile",
@@ -5585,7 +5838,8 @@
             "2": "none"
         },
         "evolve": "sceptile",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 265
     },
     "torchic": {
         "name": "torchic",
@@ -5607,7 +5861,8 @@
             "2": "none"
         },
         "evolve": "combusken",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 62
     },
     "combusken": {
         "name": "combusken",
@@ -5629,7 +5884,8 @@
             "2": "none"
         },
         "evolve": "blaziken",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 142
     },
     "blaziken": {
         "name": "blaziken",
@@ -5651,7 +5907,8 @@
             "2": "none"
         },
         "evolve": "blaziken",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 265
     },
     "mudkip": {
         "name": "mudkip",
@@ -5673,7 +5930,8 @@
             "2": "none"
         },
         "evolve": "marshtomp",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 62
     },
     "marshtomp": {
         "name": "marshtomp",
@@ -5695,7 +5953,8 @@
             "2": "none"
         },
         "evolve": "swampert",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 142
     },
     "swampert": {
         "name": "swampert",
@@ -5717,7 +5976,8 @@
             "2": "none"
         },
         "evolve": "swampert",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 268
     },
     "poochyena": {
         "name": "poochyena",
@@ -5739,7 +5999,8 @@
             "3": "rattled"
         },
         "evolve": "mightyena",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 56
     },
     "mightyena": {
         "name": "mightyena",
@@ -5761,7 +6022,8 @@
             "3": "moxie"
         },
         "evolve": "mightyena",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 147
     },
     "zigzagoon": {
         "name": "zigzagoon",
@@ -5783,7 +6045,8 @@
             "3": "quick-feet"
         },
         "evolve": "linoone",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 56
     },
     "linoone": {
         "name": "linoone",
@@ -5805,7 +6068,8 @@
             "3": "quick-feet"
         },
         "evolve": "obstagoon",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 147
     },
     "wurmple": {
         "name": "wurmple",
@@ -5827,7 +6091,8 @@
             "2": "none"
         },
         "evolve": "special",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 56
     },
     "silcoon": {
         "name": "silcoon",
@@ -5849,7 +6114,8 @@
             "3": "none"
         },
         "evolve": "beautifly",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 72
     },
     "beautifly": {
         "name": "beautifly",
@@ -5871,7 +6137,8 @@
             "2": "none"
         },
         "evolve": "beautifly",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 178
     },
     "cascoon": {
         "name": "cascoon",
@@ -5893,7 +6160,8 @@
             "3": "none"
         },
         "evolve": "cascoon",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 72
     },
     "dustox": {
         "name": "dustox",
@@ -5915,7 +6183,8 @@
             "2": "none"
         },
         "evolve": "dustox",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 173
     },
     "lotad": {
         "name": "lotad",
@@ -5937,7 +6206,8 @@
             "3": "own-tempo"
         },
         "evolve": "lombre",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 44
     },
     "lombre": {
         "name": "lombre",
@@ -5959,7 +6229,8 @@
             "3": "own-tempo"
         },
         "evolve": "ludicolo",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 119
     },
     "ludicolo": {
         "name": "ludicolo",
@@ -5981,7 +6252,8 @@
             "3": "own-tempo"
         },
         "evolve": "ludicolo",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 240
     },
     "seedot": {
         "name": "seedot",
@@ -6003,7 +6275,8 @@
             "3": "pickpocket"
         },
         "evolve": "nuzleaf",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 44
     },
     "nuzleaf": {
         "name": "nuzleaf",
@@ -6025,7 +6298,8 @@
             "3": "pickpocket"
         },
         "evolve": "shiftry",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 119
     },
     "shiftry": {
         "name": "shiftry",
@@ -6047,7 +6321,8 @@
             "3": "pickpocket"
         },
         "evolve": "shiftry",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 240
     },
     "taillow": {
         "name": "taillow",
@@ -6069,7 +6344,8 @@
             "2": "none"
         },
         "evolve": "swellow",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 54
     },
     "swellow": {
         "name": "swellow",
@@ -6091,7 +6367,8 @@
             "2": "none"
         },
         "evolve": "swellow",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 159
     },
     "wingull": {
         "name": "wingull",
@@ -6113,7 +6390,8 @@
             "3": "rain-dish"
         },
         "evolve": "pelipper",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 54
     },
     "pelipper": {
         "name": "pelipper",
@@ -6135,7 +6413,8 @@
             "3": "rain-dish"
         },
         "evolve": "pelipper",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 154
     },
     "ralts": {
         "name": "ralts",
@@ -6157,7 +6436,8 @@
             "3": "telepathy"
         },
         "evolve": "kirlia",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 40
     },
     "kirlia": {
         "name": "kirlia",
@@ -6179,7 +6459,8 @@
             "3": "telepathy"
         },
         "evolve": "special",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 97
     },
     "gardevoir": {
         "name": "gardevoir",
@@ -6201,7 +6482,8 @@
             "3": "telepathy"
         },
         "evolve": "gardevoir",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 259
     },
     "surskit": {
         "name": "surskit",
@@ -6223,7 +6505,8 @@
             "2": "none"
         },
         "evolve": "masquerain",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 54
     },
     "masquerain": {
         "name": "masquerain",
@@ -6245,7 +6528,8 @@
             "2": "none"
         },
         "evolve": "masquerain",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 159
     },
     "shroomish": {
         "name": "shroomish",
@@ -6267,7 +6551,8 @@
             "3": "quick-feet"
         },
         "evolve": "breloom",
-        "growth-rate": "fast-then-very-slow"
+        "growth-rate": "fast-then-very-slow",
+        "base-experience": 59
     },
     "breloom": {
         "name": "breloom",
@@ -6289,7 +6574,8 @@
             "3": "technician"
         },
         "evolve": "breloom",
-        "growth-rate": "fast-then-very-slow"
+        "growth-rate": "fast-then-very-slow",
+        "base-experience": 161
     },
     "slakoth": {
         "name": "slakoth",
@@ -6311,7 +6597,8 @@
             "3": "none"
         },
         "evolve": "vigoroth",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 56
     },
     "vigoroth": {
         "name": "vigoroth",
@@ -6333,7 +6620,8 @@
             "3": "none"
         },
         "evolve": "slaking",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 154
     },
     "slaking": {
         "name": "slaking",
@@ -6355,7 +6643,8 @@
             "3": "none"
         },
         "evolve": "slaking",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 252
     },
     "nincada": {
         "name": "nincada",
@@ -6377,7 +6666,8 @@
             "2": "none"
         },
         "evolve": "special",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 53
     },
     "ninjask": {
         "name": "ninjask",
@@ -6399,7 +6689,8 @@
             "2": "none"
         },
         "evolve": "ninjask",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 160
     },
     "shedinja": {
         "name": "shedinja",
@@ -6421,7 +6712,8 @@
             "3": "none"
         },
         "evolve": "shedinja",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 83
     },
     "whismur": {
         "name": "whismur",
@@ -6443,7 +6735,8 @@
             "2": "none"
         },
         "evolve": "loudred",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 48
     },
     "loudred": {
         "name": "loudred",
@@ -6465,7 +6758,8 @@
             "2": "none"
         },
         "evolve": "exploud",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 126
     },
     "exploud": {
         "name": "exploud",
@@ -6487,7 +6781,8 @@
             "2": "none"
         },
         "evolve": "exploud",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 245
     },
     "makuhita": {
         "name": "makuhita",
@@ -6509,7 +6804,8 @@
             "3": "sheer-force"
         },
         "evolve": "hariyama",
-        "growth-rate": "fast-then-very-slow"
+        "growth-rate": "fast-then-very-slow",
+        "base-experience": 47
     },
     "hariyama": {
         "name": "hariyama",
@@ -6531,7 +6827,8 @@
             "3": "sheer-force"
         },
         "evolve": "hariyama",
-        "growth-rate": "fast-then-very-slow"
+        "growth-rate": "fast-then-very-slow",
+        "base-experience": 166
     },
     "azurill": {
         "name": "azurill",
@@ -6553,7 +6850,8 @@
             "3": "sap-sipper"
         },
         "evolve": "marill",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 38
     },
     "nosepass": {
         "name": "nosepass",
@@ -6575,7 +6873,8 @@
             "3": "sand-force"
         },
         "evolve": "probopass",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 75
     },
     "skitty": {
         "name": "skitty",
@@ -6597,7 +6896,8 @@
             "3": "wonder-skin"
         },
         "evolve": "delcatty",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 52
     },
     "delcatty": {
         "name": "delcatty",
@@ -6619,7 +6919,8 @@
             "3": "wonder-skin"
         },
         "evolve": "delcatty",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 140
     },
     "sableye": {
         "name": "sableye",
@@ -6641,7 +6942,8 @@
             "3": "prankster"
         },
         "evolve": "sableye",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 133
     },
     "mawile": {
         "name": "mawile",
@@ -6663,7 +6965,8 @@
             "3": "sheer-force"
         },
         "evolve": "mawile",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 133
     },
     "aron": {
         "name": "aron",
@@ -6685,7 +6988,8 @@
             "3": "heavy-metal"
         },
         "evolve": "lairon",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 66
     },
     "lairon": {
         "name": "lairon",
@@ -6707,7 +7011,8 @@
             "3": "heavy-metal"
         },
         "evolve": "aggron",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 151
     },
     "aggron": {
         "name": "aggron",
@@ -6729,7 +7034,8 @@
             "3": "heavy-metal"
         },
         "evolve": "aggron",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 265
     },
     "meditite": {
         "name": "meditite",
@@ -6751,7 +7057,8 @@
             "2": "none"
         },
         "evolve": "medicham",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 56
     },
     "medicham": {
         "name": "medicham",
@@ -6773,7 +7080,8 @@
             "2": "none"
         },
         "evolve": "medicham",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 144
     },
     "electrike": {
         "name": "electrike",
@@ -6795,7 +7103,8 @@
             "3": "minus"
         },
         "evolve": "manectric",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 59
     },
     "manectric": {
         "name": "manectric",
@@ -6817,7 +7126,8 @@
             "3": "minus"
         },
         "evolve": "manectric",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 166
     },
     "plusle": {
         "name": "plusle",
@@ -6839,7 +7149,8 @@
             "2": "none"
         },
         "evolve": "plusle",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 142
     },
     "minun": {
         "name": "minun",
@@ -6861,7 +7172,8 @@
             "2": "none"
         },
         "evolve": "minun",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 142
     },
     "volbeat": {
         "name": "volbeat",
@@ -6883,7 +7195,8 @@
             "3": "prankster"
         },
         "evolve": "volbeat",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 151
     },
     "illumise": {
         "name": "illumise",
@@ -6905,7 +7218,8 @@
             "3": "prankster"
         },
         "evolve": "illumise",
-        "growth-rate": "fast-then-very-slow"
+        "growth-rate": "fast-then-very-slow",
+        "base-experience": 151
     },
     "roselia": {
         "name": "roselia",
@@ -6927,7 +7241,8 @@
             "3": "leaf-guard"
         },
         "evolve": "roserade",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 140
     },
     "gulpin": {
         "name": "gulpin",
@@ -6949,7 +7264,8 @@
             "3": "gluttony"
         },
         "evolve": "swalot",
-        "growth-rate": "fast-then-very-slow"
+        "growth-rate": "fast-then-very-slow",
+        "base-experience": 60
     },
     "swalot": {
         "name": "swalot",
@@ -6971,7 +7287,8 @@
             "3": "gluttony"
         },
         "evolve": "swalot",
-        "growth-rate": "fast-then-very-slow"
+        "growth-rate": "fast-then-very-slow",
+        "base-experience": 163
     },
     "carvanha": {
         "name": "carvanha",
@@ -6993,7 +7310,8 @@
             "2": "none"
         },
         "evolve": "sharpedo",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 61
     },
     "sharpedo": {
         "name": "sharpedo",
@@ -7015,7 +7333,8 @@
             "2": "none"
         },
         "evolve": "sharpedo",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 161
     },
     "wailmer": {
         "name": "wailmer",
@@ -7037,7 +7356,8 @@
             "3": "pressure"
         },
         "evolve": "wailord",
-        "growth-rate": "fast-then-very-slow"
+        "growth-rate": "fast-then-very-slow",
+        "base-experience": 80
     },
     "wailord": {
         "name": "wailord",
@@ -7059,7 +7379,8 @@
             "3": "pressure"
         },
         "evolve": "wailord",
-        "growth-rate": "fast-then-very-slow"
+        "growth-rate": "fast-then-very-slow",
+        "base-experience": 175
     },
     "numel": {
         "name": "numel",
@@ -7081,7 +7402,8 @@
             "3": "own-tempo"
         },
         "evolve": "camerupt",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 61
     },
     "camerupt": {
         "name": "camerupt",
@@ -7103,7 +7425,8 @@
             "3": "anger-point"
         },
         "evolve": "camerupt",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 161
     },
     "torkoal": {
         "name": "torkoal",
@@ -7125,7 +7448,8 @@
             "3": "shell-armor"
         },
         "evolve": "torkoal",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 165
     },
     "spoink": {
         "name": "spoink",
@@ -7147,7 +7471,8 @@
             "3": "gluttony"
         },
         "evolve": "grumpig",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 66
     },
     "grumpig": {
         "name": "grumpig",
@@ -7169,7 +7494,8 @@
             "3": "gluttony"
         },
         "evolve": "grumpig",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 165
     },
     "spinda": {
         "name": "spinda",
@@ -7191,7 +7517,8 @@
             "3": "contrary"
         },
         "evolve": "spinda",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 126
     },
     "trapinch": {
         "name": "trapinch",
@@ -7213,7 +7540,8 @@
             "3": "sheer-force"
         },
         "evolve": "vibrava",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 58
     },
     "vibrava": {
         "name": "vibrava",
@@ -7235,7 +7563,8 @@
             "3": "none"
         },
         "evolve": "flygon",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 119
     },
     "flygon": {
         "name": "flygon",
@@ -7257,7 +7586,8 @@
             "3": "none"
         },
         "evolve": "flygon",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 260
     },
     "cacnea": {
         "name": "cacnea",
@@ -7279,7 +7609,8 @@
             "2": "none"
         },
         "evolve": "cacturne",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 67
     },
     "cacturne": {
         "name": "cacturne",
@@ -7301,7 +7632,8 @@
             "2": "none"
         },
         "evolve": "cacturne",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 166
     },
     "swablu": {
         "name": "swablu",
@@ -7323,7 +7655,8 @@
             "2": "none"
         },
         "evolve": "altaria",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 62
     },
     "altaria": {
         "name": "altaria",
@@ -7345,7 +7678,8 @@
             "2": "none"
         },
         "evolve": "altaria",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 172
     },
     "zangoose": {
         "name": "zangoose",
@@ -7367,7 +7701,8 @@
             "2": "none"
         },
         "evolve": "zangoose",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 160
     },
     "seviper": {
         "name": "seviper",
@@ -7389,7 +7724,8 @@
             "2": "none"
         },
         "evolve": "seviper",
-        "growth-rate": "fast-then-very-slow"
+        "growth-rate": "fast-then-very-slow",
+        "base-experience": 160
     },
     "lunatone": {
         "name": "lunatone",
@@ -7411,7 +7747,8 @@
             "3": "none"
         },
         "evolve": "lunatone",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 161
     },
     "solrock": {
         "name": "solrock",
@@ -7433,7 +7770,8 @@
             "3": "none"
         },
         "evolve": "solrock",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 161
     },
     "barboach": {
         "name": "barboach",
@@ -7455,7 +7793,8 @@
             "3": "hydration"
         },
         "evolve": "whiscash",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 58
     },
     "whiscash": {
         "name": "whiscash",
@@ -7477,7 +7816,8 @@
             "3": "hydration"
         },
         "evolve": "whiscash",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 164
     },
     "corphish": {
         "name": "corphish",
@@ -7499,7 +7839,8 @@
             "3": "adaptability"
         },
         "evolve": "crawdaunt",
-        "growth-rate": "fast-then-very-slow"
+        "growth-rate": "fast-then-very-slow",
+        "base-experience": 62
     },
     "crawdaunt": {
         "name": "crawdaunt",
@@ -7521,7 +7862,8 @@
             "3": "adaptability"
         },
         "evolve": "crawdaunt",
-        "growth-rate": "fast-then-very-slow"
+        "growth-rate": "fast-then-very-slow",
+        "base-experience": 164
     },
     "baltoy": {
         "name": "baltoy",
@@ -7543,7 +7885,8 @@
             "3": "none"
         },
         "evolve": "claydol",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 60
     },
     "claydol": {
         "name": "claydol",
@@ -7565,7 +7908,8 @@
             "3": "none"
         },
         "evolve": "claydol",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 175
     },
     "lileep": {
         "name": "lileep",
@@ -7587,7 +7931,8 @@
             "2": "none"
         },
         "evolve": "cradily",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 71
     },
     "cradily": {
         "name": "cradily",
@@ -7609,7 +7954,8 @@
             "2": "none"
         },
         "evolve": "cradily",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 173
     },
     "anorith": {
         "name": "anorith",
@@ -7631,7 +7977,8 @@
             "2": "none"
         },
         "evolve": "armaldo",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 71
     },
     "armaldo": {
         "name": "armaldo",
@@ -7653,7 +8000,8 @@
             "2": "none"
         },
         "evolve": "armaldo",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 173
     },
     "feebas": {
         "name": "feebas",
@@ -7675,7 +8023,8 @@
             "3": "adaptability"
         },
         "evolve": "milotic",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 40
     },
     "milotic": {
         "name": "milotic",
@@ -7697,7 +8046,8 @@
             "3": "cute-charm"
         },
         "evolve": "milotic",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 189
     },
     "castform": {
         "name": "castform",
@@ -7719,7 +8069,8 @@
             "3": "none"
         },
         "evolve": "castform",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 147
     },
     "kecleon": {
         "name": "kecleon",
@@ -7741,7 +8092,8 @@
             "2": "none"
         },
         "evolve": "kecleon",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 154
     },
     "shuppet": {
         "name": "shuppet",
@@ -7763,7 +8115,8 @@
             "3": "cursed-body"
         },
         "evolve": "banette",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 59
     },
     "banette": {
         "name": "banette",
@@ -7785,7 +8138,8 @@
             "3": "cursed-body"
         },
         "evolve": "banette",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 159
     },
     "duskull": {
         "name": "duskull",
@@ -7807,7 +8161,8 @@
             "2": "none"
         },
         "evolve": "dusclops",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 59
     },
     "dusclops": {
         "name": "dusclops",
@@ -7829,7 +8184,8 @@
             "2": "none"
         },
         "evolve": "dusknoir",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 159
     },
     "tropius": {
         "name": "tropius",
@@ -7851,7 +8207,8 @@
             "3": "harvest"
         },
         "evolve": "tropius",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 161
     },
     "chimecho": {
         "name": "chimecho",
@@ -7873,7 +8230,8 @@
             "3": "none"
         },
         "evolve": "chimecho",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 159
     },
     "absol": {
         "name": "absol",
@@ -7895,7 +8253,8 @@
             "3": "justified"
         },
         "evolve": "absol",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 163
     },
     "wynaut": {
         "name": "wynaut",
@@ -7917,7 +8276,8 @@
             "2": "none"
         },
         "evolve": "wobbuffet",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 52
     },
     "snorunt": {
         "name": "snorunt",
@@ -7939,7 +8299,8 @@
             "3": "moody"
         },
         "evolve": "special",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 60
     },
     "glalie": {
         "name": "glalie",
@@ -7961,7 +8322,8 @@
             "3": "moody"
         },
         "evolve": "glalie",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 168
     },
     "spheal": {
         "name": "spheal",
@@ -7983,7 +8345,8 @@
             "3": "oblivious"
         },
         "evolve": "sealeo",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 58
     },
     "sealeo": {
         "name": "sealeo",
@@ -8005,7 +8368,8 @@
             "3": "oblivious"
         },
         "evolve": "walrein",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 144
     },
     "walrein": {
         "name": "walrein",
@@ -8027,7 +8391,8 @@
             "3": "oblivious"
         },
         "evolve": "walrein",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 265
     },
     "clamperl": {
         "name": "clamperl",
@@ -8049,7 +8414,8 @@
             "2": "none"
         },
         "evolve": "special",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 69
     },
     "huntail": {
         "name": "huntail",
@@ -8071,7 +8437,8 @@
             "2": "none"
         },
         "evolve": "huntail",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 170
     },
     "gorebyss": {
         "name": "gorebyss",
@@ -8093,7 +8460,8 @@
             "2": "none"
         },
         "evolve": "gorebyss",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 170
     },
     "relicanth": {
         "name": "relicanth",
@@ -8115,7 +8483,8 @@
             "3": "sturdy"
         },
         "evolve": "relicanth",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 170
     },
     "luvdisc": {
         "name": "luvdisc",
@@ -8137,7 +8506,8 @@
             "2": "none"
         },
         "evolve": "luvdisc",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 116
     },
     "bagon": {
         "name": "bagon",
@@ -8159,7 +8529,8 @@
             "2": "none"
         },
         "evolve": "shelgon",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 60
     },
     "shelgon": {
         "name": "shelgon",
@@ -8181,7 +8552,8 @@
             "2": "none"
         },
         "evolve": "salamence",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 147
     },
     "salamence": {
         "name": "salamence",
@@ -8203,7 +8575,8 @@
             "2": "none"
         },
         "evolve": "salamence",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 300
     },
     "beldum": {
         "name": "beldum",
@@ -8225,7 +8598,8 @@
             "2": "none"
         },
         "evolve": "metang",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 60
     },
     "metang": {
         "name": "metang",
@@ -8247,7 +8621,8 @@
             "2": "none"
         },
         "evolve": "metagross",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 147
     },
     "metagross": {
         "name": "metagross",
@@ -8269,7 +8644,8 @@
             "2": "none"
         },
         "evolve": "metagross",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 300
     },
     "regirock": {
         "name": "regirock",
@@ -8291,7 +8667,8 @@
             "2": "none"
         },
         "evolve": "regirock",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "regice": {
         "name": "regice",
@@ -8313,7 +8690,8 @@
             "2": "none"
         },
         "evolve": "regice",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "registeel": {
         "name": "registeel",
@@ -8335,7 +8713,8 @@
             "2": "none"
         },
         "evolve": "registeel",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "latias": {
         "name": "latias",
@@ -8357,7 +8736,8 @@
             "3": "none"
         },
         "evolve": "latias",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 300
     },
     "latios": {
         "name": "latios",
@@ -8379,7 +8759,8 @@
             "3": "none"
         },
         "evolve": "latios",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 300
     },
     "kyogre": {
         "name": "kyogre",
@@ -8401,7 +8782,8 @@
             "3": "none"
         },
         "evolve": "kyogre",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 335
     },
     "groudon": {
         "name": "groudon",
@@ -8423,7 +8805,8 @@
             "3": "none"
         },
         "evolve": "groudon",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 335
     },
     "rayquaza": {
         "name": "rayquaza",
@@ -8445,7 +8828,8 @@
             "3": "none"
         },
         "evolve": "rayquaza",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 340
     },
     "jirachi": {
         "name": "jirachi",
@@ -8467,7 +8851,8 @@
             "3": "none"
         },
         "evolve": "jirachi",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 300
     },
     "deoxys-normal": {
         "name": "deoxys-normal",
@@ -8489,7 +8874,8 @@
             "3": "none"
         },
         "evolve": "deoxys-normal",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 270
     },
     "turtwig": {
         "name": "turtwig",
@@ -8511,7 +8897,8 @@
             "2": "none"
         },
         "evolve": "grotle",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 64
     },
     "grotle": {
         "name": "grotle",
@@ -8533,7 +8920,8 @@
             "2": "none"
         },
         "evolve": "torterra",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 142
     },
     "torterra": {
         "name": "torterra",
@@ -8555,7 +8943,8 @@
             "2": "none"
         },
         "evolve": "torterra",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 236
     },
     "chimchar": {
         "name": "chimchar",
@@ -8577,7 +8966,8 @@
             "2": "none"
         },
         "evolve": "monferno",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 62
     },
     "monferno": {
         "name": "monferno",
@@ -8599,7 +8989,8 @@
             "2": "none"
         },
         "evolve": "infernape",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 142
     },
     "infernape": {
         "name": "infernape",
@@ -8621,7 +9012,8 @@
             "2": "none"
         },
         "evolve": "infernape",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 240
     },
     "piplup": {
         "name": "piplup",
@@ -8643,7 +9035,8 @@
             "2": "none"
         },
         "evolve": "prinplup",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 63
     },
     "prinplup": {
         "name": "prinplup",
@@ -8665,7 +9058,8 @@
             "2": "none"
         },
         "evolve": "empoleon",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 142
     },
     "empoleon": {
         "name": "empoleon",
@@ -8687,7 +9081,8 @@
             "2": "none"
         },
         "evolve": "empoleon",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 239
     },
     "starly": {
         "name": "starly",
@@ -8709,7 +9104,8 @@
             "2": "none"
         },
         "evolve": "staravia",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 49
     },
     "staravia": {
         "name": "staravia",
@@ -8731,7 +9127,8 @@
             "2": "none"
         },
         "evolve": "staraptor",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 119
     },
     "staraptor": {
         "name": "staraptor",
@@ -8753,7 +9150,8 @@
             "2": "none"
         },
         "evolve": "staraptor",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 218
     },
     "bidoof": {
         "name": "bidoof",
@@ -8775,7 +9173,8 @@
             "3": "moody"
         },
         "evolve": "bibarel",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 50
     },
     "bibarel": {
         "name": "bibarel",
@@ -8797,7 +9196,8 @@
             "3": "moody"
         },
         "evolve": "bibarel",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 144
     },
     "kricketot": {
         "name": "kricketot",
@@ -8819,7 +9219,8 @@
             "2": "none"
         },
         "evolve": "kricketune",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 39
     },
     "kricketune": {
         "name": "kricketune",
@@ -8841,7 +9242,8 @@
             "2": "none"
         },
         "evolve": "kricketune",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 134
     },
     "shinx": {
         "name": "shinx",
@@ -8863,7 +9265,8 @@
             "3": "guts"
         },
         "evolve": "luxio",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 53
     },
     "luxio": {
         "name": "luxio",
@@ -8885,7 +9288,8 @@
             "3": "guts"
         },
         "evolve": "luxray",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 127
     },
     "luxray": {
         "name": "luxray",
@@ -8907,7 +9311,8 @@
             "3": "guts"
         },
         "evolve": "luxray",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 262
     },
     "budew": {
         "name": "budew",
@@ -8929,7 +9334,8 @@
             "3": "leaf-guard"
         },
         "evolve": "roselia",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 56
     },
     "roserade": {
         "name": "roserade",
@@ -8951,7 +9357,8 @@
             "3": "technician"
         },
         "evolve": "roserade",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 258
     },
     "cranidos": {
         "name": "cranidos",
@@ -8973,7 +9380,8 @@
             "2": "none"
         },
         "evolve": "rampardos",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 70
     },
     "rampardos": {
         "name": "rampardos",
@@ -8995,7 +9403,8 @@
             "2": "none"
         },
         "evolve": "rampardos",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 173
     },
     "shieldon": {
         "name": "shieldon",
@@ -9017,7 +9426,8 @@
             "2": "none"
         },
         "evolve": "bastiodon",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 70
     },
     "bastiodon": {
         "name": "bastiodon",
@@ -9039,7 +9449,8 @@
             "2": "none"
         },
         "evolve": "bastiodon",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 173
     },
     "burmy": {
         "name": "burmy",
@@ -9061,7 +9472,8 @@
             "2": "none"
         },
         "evolve": "special",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 45
     },
     "wormadam-plant": {
         "name": "wormadam-plant",
@@ -9083,7 +9495,8 @@
             "2": "none"
         },
         "evolve": "wormadam-plant",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 148
     },
     "mothim": {
         "name": "mothim",
@@ -9105,7 +9518,8 @@
             "2": "none"
         },
         "evolve": "mothim",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 148
     },
     "combee": {
         "name": "combee",
@@ -9127,7 +9541,8 @@
             "2": "none"
         },
         "evolve": "vespiquen",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 49
     },
     "vespiquen": {
         "name": "vespiquen",
@@ -9149,7 +9564,8 @@
             "2": "none"
         },
         "evolve": "vespiquen",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 166
     },
     "pachirisu": {
         "name": "pachirisu",
@@ -9171,7 +9587,8 @@
             "3": "volt-absorb"
         },
         "evolve": "pachirisu",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 142
     },
     "buizel": {
         "name": "buizel",
@@ -9193,7 +9610,8 @@
             "2": "none"
         },
         "evolve": "floatzel",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 66
     },
     "floatzel": {
         "name": "floatzel",
@@ -9215,7 +9633,8 @@
             "2": "none"
         },
         "evolve": "floatzel",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 173
     },
     "cherubi": {
         "name": "cherubi",
@@ -9237,7 +9656,8 @@
             "3": "none"
         },
         "evolve": "cherrim",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 55
     },
     "cherrim": {
         "name": "cherrim",
@@ -9259,7 +9679,8 @@
             "3": "none"
         },
         "evolve": "cherrim",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 158
     },
     "shellos": {
         "name": "shellos",
@@ -9281,7 +9702,8 @@
             "3": "sand-force"
         },
         "evolve": "gastrodon",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 65
     },
     "gastrodon": {
         "name": "gastrodon",
@@ -9303,7 +9725,8 @@
             "3": "sand-force"
         },
         "evolve": "gastrodon",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 166
     },
     "ambipom": {
         "name": "ambipom",
@@ -9325,7 +9748,8 @@
             "3": "skill-link"
         },
         "evolve": "ambipom",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 169
     },
     "drifloon": {
         "name": "drifloon",
@@ -9347,7 +9771,8 @@
             "3": "flare-boost"
         },
         "evolve": "drifblim",
-        "growth-rate": "fast-then-very-slow"
+        "growth-rate": "fast-then-very-slow",
+        "base-experience": 70
     },
     "drifblim": {
         "name": "drifblim",
@@ -9369,7 +9794,8 @@
             "3": "flare-boost"
         },
         "evolve": "drifblim",
-        "growth-rate": "fast-then-very-slow"
+        "growth-rate": "fast-then-very-slow",
+        "base-experience": 174
     },
     "buneary": {
         "name": "buneary",
@@ -9391,7 +9817,8 @@
             "3": "limber"
         },
         "evolve": "lopunny",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 70
     },
     "lopunny": {
         "name": "lopunny",
@@ -9413,7 +9840,8 @@
             "3": "limber"
         },
         "evolve": "lopunny",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 168
     },
     "mismagius": {
         "name": "mismagius",
@@ -9435,7 +9863,8 @@
             "3": "none"
         },
         "evolve": "mismagius",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 173
     },
     "honchkrow": {
         "name": "honchkrow",
@@ -9457,7 +9886,8 @@
             "3": "moxie"
         },
         "evolve": "honchkrow",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 177
     },
     "glameow": {
         "name": "glameow",
@@ -9479,7 +9909,8 @@
             "3": "keen-eye"
         },
         "evolve": "purugly",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 62
     },
     "purugly": {
         "name": "purugly",
@@ -9501,7 +9932,8 @@
             "3": "defiant"
         },
         "evolve": "purugly",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 158
     },
     "chingling": {
         "name": "chingling",
@@ -9523,7 +9955,8 @@
             "3": "none"
         },
         "evolve": "chimecho",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 57
     },
     "stunky": {
         "name": "stunky",
@@ -9545,7 +9978,8 @@
             "3": "keen-eye"
         },
         "evolve": "skuntank",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 66
     },
     "skuntank": {
         "name": "skuntank",
@@ -9567,7 +10001,8 @@
             "3": "keen-eye"
         },
         "evolve": "skuntank",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 168
     },
     "bronzor": {
         "name": "bronzor",
@@ -9589,7 +10024,8 @@
             "3": "heavy-metal"
         },
         "evolve": "bronzong",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 60
     },
     "bronzong": {
         "name": "bronzong",
@@ -9611,7 +10047,8 @@
             "3": "heavy-metal"
         },
         "evolve": "bronzong",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 175
     },
     "bonsly": {
         "name": "bonsly",
@@ -9633,7 +10070,8 @@
             "3": "rattled"
         },
         "evolve": "sudowoodo",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 58
     },
     "mime-jr": {
         "name": "mime-jr",
@@ -9655,7 +10093,8 @@
             "3": "technician"
         },
         "evolve": "mr-mime",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 62
     },
     "happiny": {
         "name": "happiny",
@@ -9677,7 +10116,8 @@
             "3": "friend-guard"
         },
         "evolve": "chansey",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 110
     },
     "chatot": {
         "name": "chatot",
@@ -9699,7 +10139,8 @@
             "3": "big-pecks"
         },
         "evolve": "chatot",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 144
     },
     "spiritomb": {
         "name": "spiritomb",
@@ -9721,7 +10162,8 @@
             "2": "none"
         },
         "evolve": "spiritomb",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 170
     },
     "gible": {
         "name": "gible",
@@ -9743,7 +10185,8 @@
             "2": "none"
         },
         "evolve": "gabite",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 60
     },
     "gabite": {
         "name": "gabite",
@@ -9765,7 +10208,8 @@
             "2": "none"
         },
         "evolve": "garchomp",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 144
     },
     "garchomp": {
         "name": "garchomp",
@@ -9787,7 +10231,8 @@
             "2": "none"
         },
         "evolve": "garchomp",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 300
     },
     "munchlax": {
         "name": "munchlax",
@@ -9809,7 +10254,8 @@
             "3": "gluttony"
         },
         "evolve": "snorlax",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 78
     },
     "riolu": {
         "name": "riolu",
@@ -9831,7 +10277,8 @@
             "3": "prankster"
         },
         "evolve": "lucario",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 57
     },
     "lucario": {
         "name": "lucario",
@@ -9853,7 +10300,8 @@
             "3": "justified"
         },
         "evolve": "lucario",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 184
     },
     "hippopotas": {
         "name": "hippopotas",
@@ -9875,7 +10323,8 @@
             "2": "none"
         },
         "evolve": "hippowdon",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 66
     },
     "hippowdon": {
         "name": "hippowdon",
@@ -9897,7 +10346,8 @@
             "2": "none"
         },
         "evolve": "hippowdon",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 184
     },
     "skorupi": {
         "name": "skorupi",
@@ -9919,7 +10369,8 @@
             "3": "keen-eye"
         },
         "evolve": "drapion",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 66
     },
     "drapion": {
         "name": "drapion",
@@ -9941,7 +10392,8 @@
             "3": "keen-eye"
         },
         "evolve": "drapion",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 175
     },
     "croagunk": {
         "name": "croagunk",
@@ -9963,7 +10415,8 @@
             "3": "poison-touch"
         },
         "evolve": "toxicroak",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 60
     },
     "toxicroak": {
         "name": "toxicroak",
@@ -9985,7 +10438,8 @@
             "3": "poison-touch"
         },
         "evolve": "toxicroak",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 172
     },
     "carnivine": {
         "name": "carnivine",
@@ -10007,7 +10461,8 @@
             "3": "none"
         },
         "evolve": "carnivine",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 159
     },
     "finneon": {
         "name": "finneon",
@@ -10029,7 +10484,8 @@
             "3": "water-veil"
         },
         "evolve": "lumineon",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 66
     },
     "lumineon": {
         "name": "lumineon",
@@ -10051,7 +10507,8 @@
             "3": "water-veil"
         },
         "evolve": "lumineon",
-        "growth-rate": "slow-then-very-fast"
+        "growth-rate": "slow-then-very-fast",
+        "base-experience": 161
     },
     "mantyke": {
         "name": "mantyke",
@@ -10073,7 +10530,8 @@
             "3": "water-veil"
         },
         "evolve": "mantine",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 69
     },
     "snover": {
         "name": "snover",
@@ -10095,7 +10553,8 @@
             "2": "none"
         },
         "evolve": "abomasnow",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 67
     },
     "abomasnow": {
         "name": "abomasnow",
@@ -10117,7 +10576,8 @@
             "2": "none"
         },
         "evolve": "abomasnow",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 173
     },
     "weavile": {
         "name": "weavile",
@@ -10139,7 +10599,8 @@
             "2": "none"
         },
         "evolve": "weavile",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 179
     },
     "magnezone": {
         "name": "magnezone",
@@ -10161,7 +10622,8 @@
             "3": "analytic"
         },
         "evolve": "magnezone",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 268
     },
     "lickilicky": {
         "name": "lickilicky",
@@ -10183,7 +10645,8 @@
             "3": "cloud-nine"
         },
         "evolve": "lickilicky",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 180
     },
     "rhyperior": {
         "name": "rhyperior",
@@ -10205,7 +10668,8 @@
             "3": "reckless"
         },
         "evolve": "rhyperior",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 268
     },
     "tangrowth": {
         "name": "tangrowth",
@@ -10227,7 +10691,8 @@
             "3": "regenerator"
         },
         "evolve": "tangrowth",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 187
     },
     "electivire": {
         "name": "electivire",
@@ -10249,7 +10714,8 @@
             "2": "none"
         },
         "evolve": "electivire",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 270
     },
     "magmortar": {
         "name": "magmortar",
@@ -10271,7 +10737,8 @@
             "2": "none"
         },
         "evolve": "magmortar",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 270
     },
     "togekiss": {
         "name": "togekiss",
@@ -10293,7 +10760,8 @@
             "3": "super-luck"
         },
         "evolve": "togekiss",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 273
     },
     "yanmega": {
         "name": "yanmega",
@@ -10315,7 +10783,8 @@
             "3": "frisk"
         },
         "evolve": "yanmega",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 180
     },
     "leafeon": {
         "name": "leafeon",
@@ -10337,7 +10806,8 @@
             "2": "none"
         },
         "evolve": "leafeon",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 184
     },
     "glaceon": {
         "name": "glaceon",
@@ -10359,7 +10829,8 @@
             "2": "none"
         },
         "evolve": "glaceon",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 184
     },
     "gliscor": {
         "name": "gliscor",
@@ -10381,7 +10852,8 @@
             "3": "poison-heal"
         },
         "evolve": "gliscor",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 179
     },
     "mamoswine": {
         "name": "mamoswine",
@@ -10403,7 +10875,8 @@
             "3": "thick-fat"
         },
         "evolve": "mamoswine",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 265
     },
     "porygon-z": {
         "name": "porygon-z",
@@ -10425,7 +10898,8 @@
             "3": "analytic"
         },
         "evolve": "porygon-z",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 268
     },
     "gallade": {
         "name": "gallade",
@@ -10447,7 +10921,8 @@
             "3": "justified"
         },
         "evolve": "gallade",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 259
     },
     "probopass": {
         "name": "probopass",
@@ -10469,7 +10944,8 @@
             "3": "sand-force"
         },
         "evolve": "probopass",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 184
     },
     "dusknoir": {
         "name": "dusknoir",
@@ -10491,7 +10967,8 @@
             "2": "none"
         },
         "evolve": "dusknoir",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 263
     },
     "froslass": {
         "name": "froslass",
@@ -10513,7 +10990,8 @@
             "2": "none"
         },
         "evolve": "froslass",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 168
     },
     "rotom": {
         "name": "rotom",
@@ -10535,7 +11013,8 @@
             "3": "none"
         },
         "evolve": "rotom",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 154
     },
     "uxie": {
         "name": "uxie",
@@ -10557,7 +11036,8 @@
             "3": "none"
         },
         "evolve": "uxie",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "mesprit": {
         "name": "mesprit",
@@ -10579,7 +11059,8 @@
             "3": "none"
         },
         "evolve": "mesprit",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "azelf": {
         "name": "azelf",
@@ -10601,7 +11082,8 @@
             "3": "none"
         },
         "evolve": "azelf",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "dialga": {
         "name": "dialga",
@@ -10623,7 +11105,8 @@
             "2": "none"
         },
         "evolve": "dialga",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 340
     },
     "palkia": {
         "name": "palkia",
@@ -10645,7 +11128,8 @@
             "2": "none"
         },
         "evolve": "palkia",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 340
     },
     "heatran": {
         "name": "heatran",
@@ -10667,7 +11151,8 @@
             "2": "none"
         },
         "evolve": "heatran",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 300
     },
     "regigigas": {
         "name": "regigigas",
@@ -10689,7 +11174,8 @@
             "3": "none"
         },
         "evolve": "regigigas",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 335
     },
     "giratina-altered": {
         "name": "giratina-altered",
@@ -10711,7 +11197,8 @@
             "2": "none"
         },
         "evolve": "giratina-altered",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 340
     },
     "cresselia": {
         "name": "cresselia",
@@ -10733,7 +11220,8 @@
             "3": "none"
         },
         "evolve": "cresselia",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 300
     },
     "phione": {
         "name": "phione",
@@ -10755,7 +11243,8 @@
             "3": "none"
         },
         "evolve": "manaphy",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 216
     },
     "manaphy": {
         "name": "manaphy",
@@ -10777,7 +11266,8 @@
             "3": "none"
         },
         "evolve": "manaphy",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 270
     },
     "darkrai": {
         "name": "darkrai",
@@ -10799,7 +11289,8 @@
             "3": "none"
         },
         "evolve": "darkrai",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 270
     },
     "shaymin-land": {
         "name": "shaymin-land",
@@ -10821,7 +11312,8 @@
             "3": "none"
         },
         "evolve": "shaymin-land",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 270
     },
     "arceus": {
         "name": "arceus",
@@ -10843,7 +11335,8 @@
             "3": "none"
         },
         "evolve": "arceus",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 324
     },
     "victini": {
         "name": "victini",
@@ -10865,7 +11358,8 @@
             "3": "none"
         },
         "evolve": "victini",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 300
     },
     "snivy": {
         "name": "snivy",
@@ -10887,7 +11381,8 @@
             "2": "none"
         },
         "evolve": "servine",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 62
     },
     "servine": {
         "name": "servine",
@@ -10909,7 +11404,8 @@
             "2": "none"
         },
         "evolve": "serperior",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 145
     },
     "serperior": {
         "name": "serperior",
@@ -10931,7 +11427,8 @@
             "2": "none"
         },
         "evolve": "serperior",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 238
     },
     "tepig": {
         "name": "tepig",
@@ -10953,7 +11450,8 @@
             "2": "none"
         },
         "evolve": "pignite",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 62
     },
     "pignite": {
         "name": "pignite",
@@ -10975,7 +11473,8 @@
             "2": "none"
         },
         "evolve": "emboar",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 146
     },
     "emboar": {
         "name": "emboar",
@@ -10997,7 +11496,8 @@
             "2": "none"
         },
         "evolve": "emboar",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 238
     },
     "oshawott": {
         "name": "oshawott",
@@ -11019,7 +11519,8 @@
             "2": "none"
         },
         "evolve": "dewott",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 62
     },
     "dewott": {
         "name": "dewott",
@@ -11041,7 +11542,8 @@
             "2": "none"
         },
         "evolve": "samurott",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 145
     },
     "samurott": {
         "name": "samurott",
@@ -11063,7 +11565,8 @@
             "2": "none"
         },
         "evolve": "samurott",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 238
     },
     "patrat": {
         "name": "patrat",
@@ -11085,7 +11588,8 @@
             "3": "analytic"
         },
         "evolve": "watchog",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 51
     },
     "watchog": {
         "name": "watchog",
@@ -11107,7 +11611,8 @@
             "3": "analytic"
         },
         "evolve": "watchog",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 147
     },
     "lillipup": {
         "name": "lillipup",
@@ -11129,7 +11634,8 @@
             "3": "run-away"
         },
         "evolve": "herdier",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 55
     },
     "herdier": {
         "name": "herdier",
@@ -11151,7 +11657,8 @@
             "3": "scrappy"
         },
         "evolve": "stoutland",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 130
     },
     "stoutland": {
         "name": "stoutland",
@@ -11173,7 +11680,8 @@
             "3": "scrappy"
         },
         "evolve": "stoutland",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 250
     },
     "purrloin": {
         "name": "purrloin",
@@ -11195,7 +11703,8 @@
             "3": "prankster"
         },
         "evolve": "liepard",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 56
     },
     "liepard": {
         "name": "liepard",
@@ -11217,7 +11726,8 @@
             "3": "prankster"
         },
         "evolve": "liepard",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 156
     },
     "pansage": {
         "name": "pansage",
@@ -11239,7 +11749,8 @@
             "2": "none"
         },
         "evolve": "simisage",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 63
     },
     "simisage": {
         "name": "simisage",
@@ -11261,7 +11772,8 @@
             "2": "none"
         },
         "evolve": "simisage",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 174
     },
     "pansear": {
         "name": "pansear",
@@ -11283,7 +11795,8 @@
             "2": "none"
         },
         "evolve": "simisear",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 63
     },
     "simisear": {
         "name": "simisear",
@@ -11305,7 +11818,8 @@
             "2": "none"
         },
         "evolve": "simisear",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 174
     },
     "panpour": {
         "name": "panpour",
@@ -11327,7 +11841,8 @@
             "2": "none"
         },
         "evolve": "simipour",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 63
     },
     "simipour": {
         "name": "simipour",
@@ -11349,7 +11864,8 @@
             "2": "none"
         },
         "evolve": "simipour",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 174
     },
     "munna": {
         "name": "munna",
@@ -11371,7 +11887,8 @@
             "3": "telepathy"
         },
         "evolve": "musharna",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 58
     },
     "musharna": {
         "name": "musharna",
@@ -11393,7 +11910,8 @@
             "3": "telepathy"
         },
         "evolve": "musharna",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 170
     },
     "pidove": {
         "name": "pidove",
@@ -11415,7 +11933,8 @@
             "3": "rivalry"
         },
         "evolve": "tranquill",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 53
     },
     "tranquill": {
         "name": "tranquill",
@@ -11437,7 +11956,8 @@
             "3": "rivalry"
         },
         "evolve": "unfezant",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 125
     },
     "unfezant": {
         "name": "unfezant",
@@ -11459,7 +11979,8 @@
             "3": "rivalry"
         },
         "evolve": "unfezant",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 244
     },
     "blitzle": {
         "name": "blitzle",
@@ -11481,7 +12002,8 @@
             "3": "sap-sipper"
         },
         "evolve": "zebstrika",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 59
     },
     "zebstrika": {
         "name": "zebstrika",
@@ -11503,7 +12025,8 @@
             "3": "sap-sipper"
         },
         "evolve": "zebstrika",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 174
     },
     "roggenrola": {
         "name": "roggenrola",
@@ -11525,7 +12048,8 @@
             "3": "sand-force"
         },
         "evolve": "boldore",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 56
     },
     "boldore": {
         "name": "boldore",
@@ -11547,7 +12071,8 @@
             "3": "sand-force"
         },
         "evolve": "gigalith",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 137
     },
     "gigalith": {
         "name": "gigalith",
@@ -11569,7 +12094,8 @@
             "3": "sand-force"
         },
         "evolve": "gigalith",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 258
     },
     "woobat": {
         "name": "woobat",
@@ -11591,7 +12117,8 @@
             "3": "simple"
         },
         "evolve": "swoobat",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 65
     },
     "swoobat": {
         "name": "swoobat",
@@ -11613,7 +12140,8 @@
             "3": "simple"
         },
         "evolve": "swoobat",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 149
     },
     "drilbur": {
         "name": "drilbur",
@@ -11635,7 +12163,8 @@
             "3": "mold-breaker"
         },
         "evolve": "excadrill",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 66
     },
     "excadrill": {
         "name": "excadrill",
@@ -11657,7 +12186,8 @@
             "3": "mold-breaker"
         },
         "evolve": "excadrill",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 178
     },
     "audino": {
         "name": "audino",
@@ -11679,7 +12209,8 @@
             "3": "klutz"
         },
         "evolve": "audino",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 390
     },
     "timburr": {
         "name": "timburr",
@@ -11701,7 +12232,8 @@
             "3": "iron-fist"
         },
         "evolve": "gurdurr",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 61
     },
     "gurdurr": {
         "name": "gurdurr",
@@ -11723,7 +12255,8 @@
             "3": "iron-fist"
         },
         "evolve": "conkeldurr",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 142
     },
     "conkeldurr": {
         "name": "conkeldurr",
@@ -11745,7 +12278,8 @@
             "3": "iron-fist"
         },
         "evolve": "conkeldurr",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 253
     },
     "tympole": {
         "name": "tympole",
@@ -11767,7 +12301,8 @@
             "3": "water-absorb"
         },
         "evolve": "palpitoad",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 59
     },
     "palpitoad": {
         "name": "palpitoad",
@@ -11789,7 +12324,8 @@
             "3": "water-absorb"
         },
         "evolve": "seismitoad",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 134
     },
     "seismitoad": {
         "name": "seismitoad",
@@ -11811,7 +12347,8 @@
             "3": "water-absorb"
         },
         "evolve": "seismitoad",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 255
     },
     "throh": {
         "name": "throh",
@@ -11833,7 +12370,8 @@
             "3": "mold-breaker"
         },
         "evolve": "throh",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 163
     },
     "sawk": {
         "name": "sawk",
@@ -11855,7 +12393,8 @@
             "3": "mold-breaker"
         },
         "evolve": "sawk",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 163
     },
     "sewaddle": {
         "name": "sewaddle",
@@ -11877,7 +12416,8 @@
             "3": "overcoat"
         },
         "evolve": "swadloon",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 62
     },
     "swadloon": {
         "name": "swadloon",
@@ -11899,7 +12439,8 @@
             "3": "overcoat"
         },
         "evolve": "leavanny",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 133
     },
     "leavanny": {
         "name": "leavanny",
@@ -11921,7 +12462,8 @@
             "3": "overcoat"
         },
         "evolve": "leavanny",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 225
     },
     "venipede": {
         "name": "venipede",
@@ -11943,7 +12485,8 @@
             "3": "quick-feet"
         },
         "evolve": "whirlipede",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 52
     },
     "whirlipede": {
         "name": "whirlipede",
@@ -11965,7 +12508,8 @@
             "3": "quick-feet"
         },
         "evolve": "scolipede",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 126
     },
     "scolipede": {
         "name": "scolipede",
@@ -11987,7 +12531,8 @@
             "3": "quick-feet"
         },
         "evolve": "scolipede",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 243
     },
     "cottonee": {
         "name": "cottonee",
@@ -12009,7 +12554,8 @@
             "3": "chlorophyll"
         },
         "evolve": "whimsicott",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 56
     },
     "whimsicott": {
         "name": "whimsicott",
@@ -12031,7 +12577,8 @@
             "3": "chlorophyll"
         },
         "evolve": "whimsicott",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 168
     },
     "petilil": {
         "name": "petilil",
@@ -12053,7 +12600,8 @@
             "3": "leaf-guard"
         },
         "evolve": "lilligant",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 56
     },
     "lilligant": {
         "name": "lilligant",
@@ -12075,7 +12623,8 @@
             "3": "leaf-guard"
         },
         "evolve": "lilligant",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 168
     },
     "basculin-red-striped": {
         "name": "basculin-red-striped",
@@ -12097,7 +12646,8 @@
             "3": "mold-breaker"
         },
         "evolve": "basculin-red-striped",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 161
     },
     "sandile": {
         "name": "sandile",
@@ -12119,7 +12669,8 @@
             "3": "anger-point"
         },
         "evolve": "krokorok",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 58
     },
     "krokorok": {
         "name": "krokorok",
@@ -12141,7 +12692,8 @@
             "3": "anger-point"
         },
         "evolve": "krookodile",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 123
     },
     "krookodile": {
         "name": "krookodile",
@@ -12163,7 +12715,8 @@
             "3": "anger-point"
         },
         "evolve": "krookodile",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 260
     },
     "darumaka": {
         "name": "darumaka",
@@ -12185,7 +12738,8 @@
             "2": "none"
         },
         "evolve": "darmanitan",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 63
     },
     "darmanitan-standard": {
         "name": "darmanitan-standard",
@@ -12207,7 +12761,8 @@
             "2": "none"
         },
         "evolve": "darmanitan-standard",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 168
     },
     "maractus": {
         "name": "maractus",
@@ -12229,7 +12784,8 @@
             "3": "storm-drain"
         },
         "evolve": "maractus",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 161
     },
     "dwebble": {
         "name": "dwebble",
@@ -12251,7 +12807,8 @@
             "3": "weak-armor"
         },
         "evolve": "crustle",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 65
     },
     "crustle": {
         "name": "crustle",
@@ -12273,7 +12830,8 @@
             "3": "weak-armor"
         },
         "evolve": "crustle",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 170
     },
     "scraggy": {
         "name": "scraggy",
@@ -12295,7 +12853,8 @@
             "3": "intimidate"
         },
         "evolve": "scrafty",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 70
     },
     "scrafty": {
         "name": "scrafty",
@@ -12317,7 +12876,8 @@
             "3": "intimidate"
         },
         "evolve": "scrafty",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 171
     },
     "sigilyph": {
         "name": "sigilyph",
@@ -12339,7 +12899,8 @@
             "3": "tinted-lens"
         },
         "evolve": "sigilyph",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 172
     },
     "yamask": {
         "name": "yamask",
@@ -12361,7 +12922,8 @@
             "3": "none"
         },
         "evolve": "special",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 61
     },
     "cofagrigus": {
         "name": "cofagrigus",
@@ -12383,7 +12945,8 @@
             "3": "none"
         },
         "evolve": "cofagrigus",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 169
     },
     "tirtouga": {
         "name": "tirtouga",
@@ -12405,7 +12968,8 @@
             "3": "swift-swim"
         },
         "evolve": "carracosta",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 71
     },
     "carracosta": {
         "name": "carracosta",
@@ -12427,7 +12991,8 @@
             "3": "swift-swim"
         },
         "evolve": "carracosta",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 173
     },
     "archen": {
         "name": "archen",
@@ -12449,7 +13014,8 @@
             "3": "none"
         },
         "evolve": "archeops",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 71
     },
     "archeops": {
         "name": "archeops",
@@ -12471,7 +13037,8 @@
             "3": "none"
         },
         "evolve": "archeops",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 177
     },
     "trubbish": {
         "name": "trubbish",
@@ -12493,7 +13060,8 @@
             "3": "aftermath"
         },
         "evolve": "garbodor",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 66
     },
     "garbodor": {
         "name": "garbodor",
@@ -12515,7 +13083,8 @@
             "3": "aftermath"
         },
         "evolve": "garbodor",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 166
     },
     "zorua": {
         "name": "zorua",
@@ -12537,7 +13106,8 @@
             "3": "none"
         },
         "evolve": "zoroark",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 66
     },
     "zoroark": {
         "name": "zoroark",
@@ -12559,7 +13129,8 @@
             "3": "none"
         },
         "evolve": "zoroark",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 179
     },
     "minccino": {
         "name": "minccino",
@@ -12581,7 +13152,8 @@
             "3": "skill-link"
         },
         "evolve": "cinccino",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 60
     },
     "cinccino": {
         "name": "cinccino",
@@ -12603,7 +13175,8 @@
             "3": "skill-link"
         },
         "evolve": "cinccino",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 165
     },
     "gothita": {
         "name": "gothita",
@@ -12625,7 +13198,8 @@
             "3": "shadow-tag"
         },
         "evolve": "gothorita",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 58
     },
     "gothorita": {
         "name": "gothorita",
@@ -12647,7 +13221,8 @@
             "3": "shadow-tag"
         },
         "evolve": "gothitelle",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 137
     },
     "gothitelle": {
         "name": "gothitelle",
@@ -12669,7 +13244,8 @@
             "3": "shadow-tag"
         },
         "evolve": "gothitelle",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 245
     },
     "solosis": {
         "name": "solosis",
@@ -12691,7 +13267,8 @@
             "3": "regenerator"
         },
         "evolve": "duosion",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 58
     },
     "duosion": {
         "name": "duosion",
@@ -12713,7 +13290,8 @@
             "3": "regenerator"
         },
         "evolve": "reuniclus",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 130
     },
     "reuniclus": {
         "name": "reuniclus",
@@ -12735,7 +13313,8 @@
             "3": "regenerator"
         },
         "evolve": "reuniclus",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 245
     },
     "ducklett": {
         "name": "ducklett",
@@ -12757,7 +13336,8 @@
             "3": "hydration"
         },
         "evolve": "swanna",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 61
     },
     "swanna": {
         "name": "swanna",
@@ -12779,7 +13359,8 @@
             "3": "hydration"
         },
         "evolve": "swanna",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 166
     },
     "vanillite": {
         "name": "vanillite",
@@ -12801,7 +13382,8 @@
             "3": "weak-armor"
         },
         "evolve": "vanillish",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 61
     },
     "vanillish": {
         "name": "vanillish",
@@ -12823,7 +13405,8 @@
             "3": "weak-armor"
         },
         "evolve": "vanilluxe",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 138
     },
     "vanilluxe": {
         "name": "vanilluxe",
@@ -12845,7 +13428,8 @@
             "3": "weak-armor"
         },
         "evolve": "vanilluxe",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 268
     },
     "deerling": {
         "name": "deerling",
@@ -12867,7 +13451,8 @@
             "3": "serene-grace"
         },
         "evolve": "sawsbuck",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 67
     },
     "sawsbuck": {
         "name": "sawsbuck",
@@ -12889,7 +13474,8 @@
             "3": "serene-grace"
         },
         "evolve": "sawsbuck",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 166
     },
     "emolga": {
         "name": "emolga",
@@ -12911,7 +13497,8 @@
             "2": "none"
         },
         "evolve": "emolga",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 150
     },
     "karrablast": {
         "name": "karrablast",
@@ -12933,7 +13520,8 @@
             "3": "no-guard"
         },
         "evolve": "escavalier",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 63
     },
     "escavalier": {
         "name": "escavalier",
@@ -12955,7 +13543,8 @@
             "3": "overcoat"
         },
         "evolve": "escavalier",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 173
     },
     "foongus": {
         "name": "foongus",
@@ -12977,7 +13566,8 @@
             "2": "none"
         },
         "evolve": "amoonguss",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 59
     },
     "amoonguss": {
         "name": "amoonguss",
@@ -12999,7 +13589,8 @@
             "2": "none"
         },
         "evolve": "amoonguss",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 162
     },
     "frillish": {
         "name": "frillish",
@@ -13021,7 +13612,8 @@
             "3": "damp"
         },
         "evolve": "jellicent",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 67
     },
     "jellicent": {
         "name": "jellicent",
@@ -13043,7 +13635,8 @@
             "3": "damp"
         },
         "evolve": "jellicent",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 168
     },
     "alomomola": {
         "name": "alomomola",
@@ -13065,7 +13658,8 @@
             "3": "regenerator"
         },
         "evolve": "alomomola",
-        "growth-rate": "fast"
+        "growth-rate": "fast",
+        "base-experience": 165
     },
     "joltik": {
         "name": "joltik",
@@ -13087,7 +13681,8 @@
             "3": "swarm"
         },
         "evolve": "galvantula",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 64
     },
     "galvantula": {
         "name": "galvantula",
@@ -13109,7 +13704,8 @@
             "3": "swarm"
         },
         "evolve": "galvantula",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 165
     },
     "ferroseed": {
         "name": "ferroseed",
@@ -13131,7 +13727,8 @@
             "3": "none"
         },
         "evolve": "ferrothorn",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 61
     },
     "ferrothorn": {
         "name": "ferrothorn",
@@ -13153,7 +13750,8 @@
             "2": "none"
         },
         "evolve": "ferrothorn",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 171
     },
     "klink": {
         "name": "klink",
@@ -13175,7 +13773,8 @@
             "3": "clear-body"
         },
         "evolve": "klang",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 60
     },
     "klang": {
         "name": "klang",
@@ -13197,7 +13796,8 @@
             "3": "clear-body"
         },
         "evolve": "klinklang",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 154
     },
     "klinklang": {
         "name": "klinklang",
@@ -13219,7 +13819,8 @@
             "3": "clear-body"
         },
         "evolve": "klinklang",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 260
     },
     "tynamo": {
         "name": "tynamo",
@@ -13241,7 +13842,8 @@
             "3": "none"
         },
         "evolve": "eelektrik",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 55
     },
     "eelektrik": {
         "name": "eelektrik",
@@ -13263,7 +13865,8 @@
             "3": "none"
         },
         "evolve": "eelektross",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 142
     },
     "eelektross": {
         "name": "eelektross",
@@ -13285,7 +13888,8 @@
             "3": "none"
         },
         "evolve": "eelektross",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 232
     },
     "elgyem": {
         "name": "elgyem",
@@ -13307,7 +13911,8 @@
             "3": "analytic"
         },
         "evolve": "beheeyem",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 67
     },
     "beheeyem": {
         "name": "beheeyem",
@@ -13329,7 +13934,8 @@
             "3": "analytic"
         },
         "evolve": "beheeyem",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 170
     },
     "litwick": {
         "name": "litwick",
@@ -13351,7 +13957,8 @@
             "3": "shadow-tag"
         },
         "evolve": "lampent",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 55
     },
     "lampent": {
         "name": "lampent",
@@ -13373,7 +13980,8 @@
             "3": "shadow-tag"
         },
         "evolve": "chandelure",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 130
     },
     "chandelure": {
         "name": "chandelure",
@@ -13395,7 +14003,8 @@
             "3": "shadow-tag"
         },
         "evolve": "chandelure",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 260
     },
     "axew": {
         "name": "axew",
@@ -13417,7 +14026,8 @@
             "3": "unnerve"
         },
         "evolve": "fraxure",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 64
     },
     "fraxure": {
         "name": "fraxure",
@@ -13439,7 +14049,8 @@
             "3": "unnerve"
         },
         "evolve": "haxorus",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 144
     },
     "haxorus": {
         "name": "haxorus",
@@ -13461,7 +14072,8 @@
             "3": "unnerve"
         },
         "evolve": "haxorus",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 270
     },
     "cubchoo": {
         "name": "cubchoo",
@@ -13483,7 +14095,8 @@
             "3": "rattled"
         },
         "evolve": "beartic",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 61
     },
     "beartic": {
         "name": "beartic",
@@ -13505,7 +14118,8 @@
             "3": "swift-swim"
         },
         "evolve": "beartic",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 177
     },
     "cryogonal": {
         "name": "cryogonal",
@@ -13527,7 +14141,8 @@
             "3": "none"
         },
         "evolve": "cryogonal",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 180
     },
     "shelmet": {
         "name": "shelmet",
@@ -13549,7 +14164,8 @@
             "3": "overcoat"
         },
         "evolve": "accelgor",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 61
     },
     "accelgor": {
         "name": "accelgor",
@@ -13571,7 +14187,8 @@
             "3": "unburden"
         },
         "evolve": "accelgor",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 173
     },
     "stunfisk": {
         "name": "stunfisk",
@@ -13593,7 +14210,8 @@
             "3": "sand-veil"
         },
         "evolve": "stunfisk",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 165
     },
     "mienfoo": {
         "name": "mienfoo",
@@ -13615,7 +14233,8 @@
             "3": "reckless"
         },
         "evolve": "mienshao",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 70
     },
     "mienshao": {
         "name": "mienshao",
@@ -13637,7 +14256,8 @@
             "3": "reckless"
         },
         "evolve": "mienshao",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 179
     },
     "druddigon": {
         "name": "druddigon",
@@ -13659,7 +14279,8 @@
             "3": "mold-breaker"
         },
         "evolve": "druddigon",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 170
     },
     "golett": {
         "name": "golett",
@@ -13681,7 +14302,8 @@
             "3": "no-guard"
         },
         "evolve": "golurk",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 61
     },
     "golurk": {
         "name": "golurk",
@@ -13703,7 +14325,8 @@
             "3": "no-guard"
         },
         "evolve": "golurk",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 169
     },
     "pawniard": {
         "name": "pawniard",
@@ -13725,7 +14348,8 @@
             "3": "pressure"
         },
         "evolve": "bisharp",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 68
     },
     "bisharp": {
         "name": "bisharp",
@@ -13747,7 +14371,8 @@
             "3": "pressure"
         },
         "evolve": "kingambit",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 172
     },
     "bouffalant": {
         "name": "bouffalant",
@@ -13769,7 +14394,8 @@
             "3": "soundproof"
         },
         "evolve": "bouffalant",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 172
     },
     "rufflet": {
         "name": "rufflet",
@@ -13791,7 +14417,8 @@
             "3": "hustle"
         },
         "evolve": "braviary",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 70
     },
     "braviary": {
         "name": "braviary",
@@ -13813,7 +14440,8 @@
             "3": "defiant"
         },
         "evolve": "braviary",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 179
     },
     "vullaby": {
         "name": "vullaby",
@@ -13835,7 +14463,8 @@
             "3": "weak-armor"
         },
         "evolve": "mandibuzz",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 74
     },
     "mandibuzz": {
         "name": "mandibuzz",
@@ -13857,7 +14486,8 @@
             "3": "weak-armor"
         },
         "evolve": "mandibuzz",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 179
     },
     "heatmor": {
         "name": "heatmor",
@@ -13879,7 +14509,8 @@
             "3": "white-smoke"
         },
         "evolve": "heatmor",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 169
     },
     "durant": {
         "name": "durant",
@@ -13901,7 +14532,8 @@
             "3": "truant"
         },
         "evolve": "durant",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 169
     },
     "deino": {
         "name": "deino",
@@ -13923,7 +14555,8 @@
             "3": "none"
         },
         "evolve": "zweilous",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 60
     },
     "zweilous": {
         "name": "zweilous",
@@ -13945,7 +14578,8 @@
             "3": "none"
         },
         "evolve": "hydreigon",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 147
     },
     "hydreigon": {
         "name": "hydreigon",
@@ -13967,7 +14601,8 @@
             "3": "none"
         },
         "evolve": "hydreigon",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 300
     },
     "larvesta": {
         "name": "larvesta",
@@ -13989,7 +14624,8 @@
             "2": "none"
         },
         "evolve": "volcarona",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 72
     },
     "volcarona": {
         "name": "volcarona",
@@ -14011,7 +14647,8 @@
             "2": "none"
         },
         "evolve": "volcarona",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 275
     },
     "cobalion": {
         "name": "cobalion",
@@ -14033,7 +14670,8 @@
             "3": "none"
         },
         "evolve": "cobalion",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "terrakion": {
         "name": "terrakion",
@@ -14055,7 +14693,8 @@
             "3": "none"
         },
         "evolve": "terrakion",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "virizion": {
         "name": "virizion",
@@ -14077,7 +14716,8 @@
             "3": "none"
         },
         "evolve": "virizion",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "tornadus-incarnate": {
         "name": "tornadus-incarnate",
@@ -14099,7 +14739,8 @@
             "2": "none"
         },
         "evolve": "tornadus-incarnate",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "thundurus-incarnate": {
         "name": "thundurus-incarnate",
@@ -14121,7 +14762,8 @@
             "2": "none"
         },
         "evolve": "thundurus-incarnate",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "reshiram": {
         "name": "reshiram",
@@ -14143,7 +14785,8 @@
             "3": "none"
         },
         "evolve": "reshiram",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 340
     },
     "zekrom": {
         "name": "zekrom",
@@ -14165,7 +14808,8 @@
             "3": "none"
         },
         "evolve": "zekrom",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 340
     },
     "landorus-incarnate": {
         "name": "landorus-incarnate",
@@ -14187,7 +14831,8 @@
             "2": "none"
         },
         "evolve": "landorus-incarnate",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 300
     },
     "kyurem": {
         "name": "kyurem",
@@ -14209,7 +14854,8 @@
             "3": "none"
         },
         "evolve": "kyurem",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 330
     },
     "keldeo-ordinary": {
         "name": "keldeo-ordinary",
@@ -14231,7 +14877,8 @@
             "3": "none"
         },
         "evolve": "keldeo-ordinary",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "meloetta-aria": {
         "name": "meloetta-aria",
@@ -14253,7 +14900,8 @@
             "3": "none"
         },
         "evolve": "meloetta-aria",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 270
     },
     "genesect": {
         "name": "genesect",
@@ -14275,7 +14923,8 @@
             "3": "none"
         },
         "evolve": "genesect",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 300
     },
     "deoxys-attack": {
         "name": "deoxys-attack",
@@ -14297,7 +14946,8 @@
             "3": "none"
         },
         "evolve": "deoxys-attack",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 270
     },
     "deoxys-defense": {
         "name": "deoxys-defense",
@@ -14319,7 +14969,8 @@
             "3": "none"
         },
         "evolve": "deoxys-defense",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 270
     },
     "deoxys-speed": {
         "name": "deoxys-speed",
@@ -14341,7 +14992,8 @@
             "3": "none"
         },
         "evolve": "deoxys-speed",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 270
     },
     "wormadam-sandy": {
         "name": "wormadam-sandy",
@@ -14363,7 +15015,8 @@
             "2": "none"
         },
         "evolve": "wormadam-sandy",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 148
     },
     "wormadam-trash": {
         "name": "wormadam-trash",
@@ -14385,7 +15038,8 @@
             "2": "none"
         },
         "evolve": "wormadam-trash",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 148
     },
     "shaymin-sky": {
         "name": "shaymin-sky",
@@ -14407,7 +15061,8 @@
             "3": "none"
         },
         "evolve": "shaymin-sky",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 270
     },
     "giratina-origin": {
         "name": "giratina-origin",
@@ -14429,7 +15084,8 @@
             "3": "none"
         },
         "evolve": "giratina-origin",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 340
     },
     "rotom-heat": {
         "name": "rotom-heat",
@@ -14451,7 +15107,8 @@
             "3": "none"
         },
         "evolve": "rotom-heat",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 182
     },
     "rotom-wash": {
         "name": "rotom-wash",
@@ -14473,7 +15130,8 @@
             "3": "none"
         },
         "evolve": "rotom-wash",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 182
     },
     "rotom-frost": {
         "name": "rotom-frost",
@@ -14495,7 +15153,8 @@
             "3": "none"
         },
         "evolve": "rotom-frost",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 182
     },
     "rotom-fan": {
         "name": "rotom-fan",
@@ -14517,7 +15176,8 @@
             "3": "none"
         },
         "evolve": "rotom-fan",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 182
     },
     "rotom-mow": {
         "name": "rotom-mow",
@@ -14539,7 +15199,8 @@
             "3": "none"
         },
         "evolve": "rotom-mow",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 182
     },
     "castform-sunny": {
         "name": "castform-sunny",
@@ -14561,7 +15222,8 @@
             "3": "none"
         },
         "evolve": "castform-sunny",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 147
     },
     "castform-rainy": {
         "name": "castform-rainy",
@@ -14583,7 +15245,8 @@
             "3": "none"
         },
         "evolve": "castform-rainy",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 147
     },
     "castform-snowy": {
         "name": "castform-snowy",
@@ -14605,7 +15268,8 @@
             "3": "none"
         },
         "evolve": "castform-snowy",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 147
     },
     "basculin-blue-striped": {
         "name": "basculin-blue-striped",
@@ -14627,7 +15291,8 @@
             "3": "mold-breaker"
         },
         "evolve": "basculin-blue-striped",
-        "growth-rate": "medium"
+        "growth-rate": "medium",
+        "base-experience": 161
     },
     "darmanitan-zen": {
         "name": "darmanitan-zen",
@@ -14649,7 +15314,8 @@
             "2": "none"
         },
         "evolve": "darmanitan-zen",
-        "growth-rate": "medium-slow"
+        "growth-rate": "medium-slow",
+        "base-experience": 189
     },
     "meloetta-pirouette": {
         "name": "meloetta-pirouette",
@@ -14671,7 +15337,8 @@
             "3": "none"
         },
         "evolve": "meloetta-pirouette",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 270
     },
     "tornadus-therian": {
         "name": "tornadus-therian",
@@ -14693,7 +15360,8 @@
             "3": "none"
         },
         "evolve": "tornadus-therian",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "thundurus-therian": {
         "name": "thundurus-therian",
@@ -14715,7 +15383,8 @@
             "3": "none"
         },
         "evolve": "thundurus-therian",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 290
     },
     "landorus-therian": {
         "name": "landorus-therian",
@@ -14737,7 +15406,8 @@
             "3": "none"
         },
         "evolve": "landorus-therian",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 300
     },
     "kyurem-black": {
         "name": "kyurem-black",
@@ -14759,7 +15429,8 @@
             "3": "none"
         },
         "evolve": "kyurem-black",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 350
     },
     "kyurem-white": {
         "name": "kyurem-white",
@@ -14781,6 +15452,7 @@
             "3": "none"
         },
         "evolve": "kyurem-white",
-        "growth-rate": "slow"
+        "growth-rate": "slow",
+        "base-experience": 350
     }
 }
