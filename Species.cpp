@@ -9,6 +9,8 @@ using json = nlohmann::json;
 void from_json(const json& inputJson, Species& inputSpecies) {
     inputSpecies.name = inputJson.at("name").get<std::string>();
 
+    inputSpecies.experienceValue = inputJson.at("base-experience").get<int>();
+
     inputSpecies.stats["HitPoints"] = inputJson.at("stats").at("hp").get<int>();
     inputSpecies.stats["Attack"] = inputJson.at("stats").at("attack").get<int>();
     inputSpecies.stats["Defense"] = inputJson.at("stats").at("defense").get<int>();

@@ -14,6 +14,7 @@ struct Species {
     std::string abilities[3];
     std::string evolution;
     std::string growthRate;
+    int experienceValue;
 };
 
 inline void from_json(const json& j, Species& s);
