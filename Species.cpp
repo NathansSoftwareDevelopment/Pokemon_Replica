@@ -18,6 +18,13 @@ void from_json(const json& inputJson, Species& inputSpecies) {
     inputSpecies.stats["SpecialDefense"] = inputJson.at("stats").at("special-defense").get<int>();
     inputSpecies.stats["Speed"] = inputJson.at("stats").at("speed").get<int>();
 
+    inputSpecies.effortValues["HitPoints"] = inputJson.at("effort-values").at("hp").get<int>();
+    inputSpecies.effortValues["Attack"] = inputJson.at("effort-values").at("attack").get<int>();
+    inputSpecies.effortValues["Defense"] = inputJson.at("effort-values").at("defense").get<int>();
+    inputSpecies.effortValues["SpecialAttack"] = inputJson.at("effort-values").at("special-attack").get<int>();
+    inputSpecies.effortValues["SpecialDefense"] = inputJson.at("effort-values").at("special-defense").get<int>();
+    inputSpecies.effortValues["Speed"] = inputJson.at("effort-values").at("speed").get<int>();
+
     if (inputJson.at("types").contains("1")) {
         std::string typeString = inputJson.at("types").at("1").get<std::string>();
         typeString[0] = static_cast<char>(std::toupper(typeString[0]));

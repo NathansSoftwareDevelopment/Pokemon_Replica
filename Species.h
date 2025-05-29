@@ -9,6 +9,7 @@ using json = nlohmann::json;
 struct Species {
     std::string name;
     std::map<std::string, int> stats;
+    std::map<std::string, int> effortValues;
     Type* type1;
     Type* type2;
     std::string abilities[3];
