@@ -12,5 +12,12 @@ double roundToMultipleOf4096(double inputValue) {
     return result;
 }
 
+double roundHalfDown(double inputValue) {
+    if (inputValue > 0) {
+        return std::floor(inputValue + 0.5 - 1e-9);
+    } else {
+        return std::ceil(inputValue - 0.5);
+    }
+}
 
 #endif UTILS_H
