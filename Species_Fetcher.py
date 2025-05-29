@@ -142,6 +142,11 @@ def parsePokeInfo(rawData):
 
     pokeData["base-experience"] = rawPokemonData["base_experience"]
 
+    tempEVs = {}
+    for i in rawPokemonData["stats"]:
+        tempEVs[i["stat"]["name"]] = i["effort"]
+    pokeData["effort-values"] = tempEVs
+
 
     return pokeData
 
