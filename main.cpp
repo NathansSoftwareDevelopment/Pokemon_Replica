@@ -20,9 +20,14 @@ int main() {
     Display.moveAll(&moveMap.find("Swords Dance")->second);
     mySecondPokemon.addExperience(1000);
     myThirdPokemon.addExperience(1000);
-    std::cout << mySecondPokemon.level << " | " << mySecondPokemon.experience << std::endl;
-    std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
-    Battle(&mySecondPokemon, &myThirdPokemon);
+    Pokemon myVenusaur = Pokemon("Venu", &(speciesMap["venusaur"]), "Modest", 55, 0, "Blaze", "Flamethrower", "Scratch", "Ember", "Smokescreen", "None", zeroValues, zeroValues);
+    Pokemon myZekrom = Pokemon("zekky", &(speciesMap["zekrom"]), "Modest", 62, 0, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", zeroValues, zeroValues);
+    // std::cout << mySecondPokemon.level << " | " << mySecondPokemon.experience << std::endl;
+    // std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
+    // Battle(&mySecondPokemon, &myThirdPokemon);
+    std::cout << "Zekrom Experience: " << myZekrom.species->experienceValue << std::endl;
+    Battle(&myVenusaur, &myZekrom);
+    // std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
     std::cout << "\n\nEnd Main";
     return 0;
 }
