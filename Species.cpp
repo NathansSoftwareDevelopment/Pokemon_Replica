@@ -1,9 +1,10 @@
+#include <iostream>
+#include <fstream>
 #include <string>
+#include <set>
 #include "Species.h"
 #include "Type.h"
 #include "json.hpp"
-#include <fstream>
-#include <iostream>
 using json = nlohmann::json;
 
 void from_json(const json& inputJson, Species& inputSpecies) {
@@ -83,6 +84,12 @@ void from_json(const json& inputJson, Species& inputSpecies) {
         tempGrowthRate = "Erratic";
     }
     inputSpecies.growthRate = tempGrowthRate;
+
+    inputJson.at("moves").at("level-up").get_to(inputSpecies.moves.levelUp);
+    inputJson.at("moves").at("egg").get_to(inputSpecies.moves.egg);
+    inputJson.at("moves").at("machine").get_to(inputSpecies.moves.machine);
+    inputJson.at("moves").at("tutor").get_to(inputSpecies.moves.tutor);
+    inputJson.at("moves").at("other").get_to(inputSpecies.moves.other);
 }
 
 std::map<std::string, Species> speciesMap;
