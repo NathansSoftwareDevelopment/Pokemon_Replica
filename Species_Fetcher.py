@@ -10,6 +10,7 @@ def main():
     rawSpeciesData = r"./Raw_Data/Raw_Pokemon-species_Data.json"
 
     allRawData = getPokemonInfo(rawPokemonData, rawSpeciesData)
+    # addToFinal(parsePokeInfo([allRawData[0]["charmander"][0], allRawData[-1]["charmander"][0]]))
     for pokemon in allRawData[0]:
         pokemonName = allRawData[0][pokemon][0]
         addToFinal(parsePokeInfo([allRawData[0][pokemonName["name"]][0], allRawData[-1][pokemonName["species"]["name"]][0]]))
@@ -108,6 +109,22 @@ def getEvolve(pokemonName):
         evolutionTable = json.load(f)
         return evolutionTable[pokemonName]
 
+def getMoves(rawPokemonData):
+    tempMoves = {"level-up": {}, "egg": [], "machine": [], "tutor": [], "other": {}}
+    for move in rawPokemonData["moves"]:
+        for version in move["version_group_details"]:
+            if version["version_group"]["name"] != "black-2-white-2":
+                continue
+            moveGroup = version["move_learn_method"]["name"]
+            moveName = move["move"]["name"]
+            if version["move_learn_method"]["name"] == "level-up":
+                tempMoves[moveGroup][moveName] = version["level_learned_at"]
+            elif version["move_learn_method"]["name"] in tempMoves:
+                tempMoves[moveGroup].append(moveName)
+            else:
+                tempMoves["other"][version["move_learn_method"]["name"]] = moveName
+    return tempMoves
+
 def printFinalData(finalData):
     for i in finalData:
         print(i)
@@ -147,6 +164,7 @@ def parsePokeInfo(rawData):
         tempEVs[i["stat"]["name"]] = i["effort"]
     pokeData["effort-values"] = tempEVs
 
+    pokeData["moves"] = getMoves(rawPokemonData)
 
     return pokeData
 
