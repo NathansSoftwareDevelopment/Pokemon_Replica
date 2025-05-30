@@ -19,6 +19,7 @@ class Battle {
         void useMove(Pokemon* attackingInputPokemon, Move* inputPokemonMove, Pokemon* defendingInputPokemon);
         bool hitCheck(Pokemon* attackingInputPokemon, Move* inputPokemonMove, Pokemon* defendingInputPokemon);
         void distributeExperience(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon);
+        void addEVs(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon);
         Battle(Pokemon* inputPokemon1, Pokemon* inputPokemon2);
 };
 

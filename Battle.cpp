@@ -171,6 +171,20 @@ void Battle::distributeExperience(Pokemon* victoriousInputPokemon, Pokemon* defe
     victoriousInputPokemon->addExperience(earnedExperience);
 }
 
+void Battle::addEVs(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon) {
+    for (std::pair<std::string, int> i : defeatedInputPokemon->species->effortValues) {
+        int victorsTotalEVs = 0;
+        for (std::pair<std::string, int> j : victoriousInputPokemon->effortValues) {
+            victorsTotalEVs += j.second;
+        }
+        if (victorsTotalEVs + i.second < 510) {
+            victoriousInputPokemon->effortValues[i.first] += i.second;
+        } else if (victorsTotalEVs < 510) {
+            victoriousInputPokemon->effortValues[i.first] += 510-victorsTotalEVs;
+        }
+    }
+}
+
 Battle::Battle(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
     std::cout << "\n\n\n";
     turn = 0;
@@ -204,6 +218,7 @@ Battle::Battle(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
         victoriousPokemon = inputPokemon2;
         defeatedPokemon = inputPokemon1;
     }
+    addEVs(victoriousPokemon, defeatedPokemon);
     distributeExperience(victoriousPokemon, defeatedPokemon);
     std::cout << "Battle Over" << std::endl;
     std::cout << inputPokemon1->currentHitPoints << std::endl;
