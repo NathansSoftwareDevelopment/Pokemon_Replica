@@ -35,7 +35,11 @@ void from_json(const json& inputJson, Move& inputMove) {
     categoryString[0] = static_cast<char>(std::toupper(categoryString[0]));
     inputMove.damageCategory = categoryString;
 
-    inputMove.power = inputJson.at("power").get<int>();
+    if (inputJson.at("power").is_null()) {
+        inputMove.power = 0;
+    } else {
+        inputMove.power = inputJson.at("power").get<int>();
+    }
 
     inputMove.accuracy = inputJson.at("accuracy").get<int>();
 
