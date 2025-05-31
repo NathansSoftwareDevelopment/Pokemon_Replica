@@ -22,6 +22,7 @@ class Move {
             std::string inputName, std::string inputType, std::string inputDamageCategory, int inputPower, int inputAccuracy, int inputPP, int inputFlinchChance = 0,
             std::map<std::string, int> inputConditionChances = {}, std::map<std::string, std::array<int, 2>> inputUserStageChances = {}, std::map<std::string, std::array<int, 2>> inputOpponentStageChances = {}, bool inputUniqueness = {}
         );
+        Move(){};
 };
 
 extern std::map<std::string, Move> moveMap;
