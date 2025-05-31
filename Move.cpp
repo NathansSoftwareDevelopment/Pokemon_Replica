@@ -52,4 +52,23 @@ void from_json(const json& inputJson, Move& inputMove) {
     // inputMove.userStageChances;
     // inputMove.opponentStageChances;
 }
+
+std::map<std::string, Move> moveMap;
+
+void generateMoveMap() {
+    std::string filePath = "..\\Raw_Data\\temp_moves.json";
+    std::ifstream ifs(filePath);
+    if (!ifs.is_open()) {
+        std::cerr << "Error opening file: " << filePath << std::endl;
+    }
+    json movesFile;
+    ifs >> movesFile;
+
+    for (json::iterator move = movesFile.begin(); move != movesFile.end(); move++) {
+        std::string moveName = move.key();
+        moveName[0] = static_cast<char>(std::toupper(moveName[0]));
+        json movesJSON = move.value();
+
+        moveMap[moveName] = movesJSON.get<Move>();
+    }
 }

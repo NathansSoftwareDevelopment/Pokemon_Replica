@@ -26,5 +26,6 @@ class Move {
 };
 
 extern std::map<std::string, Move> moveMap;
+extern void generateMoveMap();
 
 #endif
