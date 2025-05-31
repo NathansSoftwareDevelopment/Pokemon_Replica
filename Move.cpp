@@ -51,7 +51,7 @@ void from_json(const json& inputJson, Move& inputMove) {
 std::map<std::string, Move> moveMap;
 
 void generateMoveMap() {
-    std::string filePath = "../Move.json";
+    std::string filePath = "Move.json";
     std::ifstream ifs(filePath);
     if (!ifs.is_open()) {
         std::cerr << "Error opening file: " << filePath << std::endl;

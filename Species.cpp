@@ -95,7 +95,7 @@ void from_json(const json& inputJson, Species& inputSpecies) {
 std::map<std::string, Species> speciesMap;
 
 void generateSpeciesMap() {
-    std::string filePath = "..\\Species.json";
+    std::string filePath = "Species.json";
     std::ifstream ifs(filePath);
     if (!ifs.is_open()) {
         std::cerr << "Error opening file: " << filePath << std::endl;
