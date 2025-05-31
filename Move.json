@@ -1,0 +1,65 @@
+{
+    "Growl": {
+        "name": "Growl",
+        "type": "Normal",
+        "damageCategory": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "PP": 40,
+        "flinchChance": 0
+    },
+    "Scratch": {
+        "name": "Scratch",
+        "type": "Normal",
+        "damageCategory": "Physical",
+        "power": 40,
+        "accuracy": 100,
+        "PP": 35,
+        "flinchChance": 0
+    },
+    "Ember": {
+        "name": "Ember",
+        "type": "Fire",
+        "damageCategory": "Special",
+        "power": 40,
+        "accuracy": 100,
+        "PP": 25,
+        "flinchChance": 0
+    },
+    "Smokescreen": {
+        "name": "Smokescreen",
+        "type": "Normal",
+        "damageCategory": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "PP": 20,
+        "flinchChance": 0
+    },
+    "Flamethrower": {
+        "name": "Flamethrower",
+        "type": "Fire",
+        "damageCategory": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "PP": 15,
+        "flinchChance": 0
+    },
+    "Fusion Flare": {
+        "name": "Fusion Flare",
+        "type": "Fire",
+        "damageCategory": "Special",
+        "power": 100,
+        "accuracy": 100,
+        "PP": 5,
+        "flinchChance": 0
+    },
+    "Fusion Bolt": {
+        "name": "Fusion Bolt",
+        "type": "Electric",
+        "damageCategory": "Physical",
+        "power": 100,
+        "accuracy": 100,
+        "PP": 5,
+        "flinchChance": 0
+    }
+}

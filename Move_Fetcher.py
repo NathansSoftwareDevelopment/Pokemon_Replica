@@ -5,8 +5,11 @@ from icecream import ic
 def main():
     rawMoveData = {}
     rawMoveData = getMoveInfo()
+    allMoveData = {}
     for moveName in rawMoveData:
-        parseMoveInfo(rawMoveData[moveName])
+        moveData = parseMoveInfo(rawMoveData[moveName])
+        allMoveData[moveData["name"]] = moveData
+    Write(allMoveData, r"Move.json")
 
 def getMoveInfo():
     URL = r"./Raw_Data/temp_moves.json"
@@ -43,6 +46,12 @@ def parseMoveInfo(inputMove):
 
     moveData["flinchChance"] = inputMove["meta"]["flinch_chance"]
     ic(moveData)
+    return moveData
+
+def Write(allMoveData, fileName):
+    json_string = json.dumps(allMoveData, indent=4)
+    with open(fileName, 'w') as f:
+        f.write(json_string)
 
 
 if __name__ == "__main__":
