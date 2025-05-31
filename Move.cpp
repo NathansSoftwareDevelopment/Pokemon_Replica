@@ -39,7 +39,7 @@ void from_json(const json& inputJson, Move& inputMove) {
 
     inputMove.accuracy = inputJson.at("accuracy").get<int>();
 
-    inputMove.PP = inputJson.at("PP").get<int>();
+    inputMove.PP = inputJson.at("pp").get<int>();
 
     inputMove.flinchChance = inputJson.at("meta").at("flinch_chance").get<int>();
 
