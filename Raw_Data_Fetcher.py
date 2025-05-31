@@ -39,6 +39,10 @@ def main():
     if dataType == "growth-rate":
         for i in range(1, 6+1):
             addToFinal(dataType, getGrowthRateInfo(i))
+    
+    if dataType == "move":
+        for i in range(1, 559+1):
+            addToFinal(dataType, getPokemonInfo(baseURL + dataType+"/", 1))
 
 
     Write(outputDictionary, f"Raw_Data/Raw_{dataType.capitalize()}_Data.json")
