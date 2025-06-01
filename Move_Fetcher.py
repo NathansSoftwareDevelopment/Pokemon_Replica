@@ -19,6 +19,35 @@ def getMoveInfo():
         Raw_Move_Data = json.load(f)
     return Raw_Move_Data
 
+def getVersionValues(inputMove):
+
+    # Find all potentially relevant times the move's data changed
+    versionsList = []
+    versionsDict = {}
+    for version in inputMove["past_values"]:
+        # Find the version number in the URL (if there's a single digit number then make it a double digit)
+        versionGroupNumber = int(version["version_group"]["url"][-3:-1].replace("/", "0"))
+        if versionGroupNumber >= 15:
+            versionsList.append(versionGroupNumber)
+        # Add the version number and data from the given version to a dict
+        versionsDict[versionGroupNumber] = version
+    
+    # Identify the correct change to use (None if the current data is correct)
+    # Find the minimum value in verionsList >= 15
+    correctVersion = min([versionNumber for versionNumber in versionsList if versionNumber >= 15], default=None)
+    versionValues = {}
+    if correctVersion is not None:
+        for key, value in versionsDict[correctVersion].items():
+            if key in ["effect_chance", "effect_entries", "version_group"]:
+                pass
+            elif value is None:
+                pass
+            elif key == "pp":
+                versionValues["PP"] = value
+            else:
+                versionValues[key] = value
+    return versionValues
+
 def parseMoveInfo(inputMove):
     moveData = {}
 
@@ -47,6 +76,8 @@ def parseMoveInfo(inputMove):
         moveData["accuracy"] = inputMove["accuracy"]
 
     moveData["PP"] = inputMove["pp"]
+
+    moveData.update(getVersionValues(inputMove))
 
     moveData["flinchChance"] = inputMove["meta"]["flinch_chance"]
     ic(moveData)
