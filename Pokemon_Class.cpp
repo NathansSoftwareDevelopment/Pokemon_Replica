@@ -61,9 +61,14 @@ void Pokemon::calculatePokemonStats() {
 }
 
 void Pokemon::evolve() {
-    int abilityIndex = std::find(species->abilities, species->abilities + (sizeof(species->abilities) / sizeof(species->abilities[0])), ability) - species->abilities;
+    int currentAbilityIndex;
+    for (std::pair<int, std::string> speciesAbility : species->abilities) {
+        if (speciesAbility.second == ability) {
+            currentAbilityIndex = speciesAbility.first;
+        }
+    }
     species = &(speciesMap[species->evolution]);
-    ability = species->abilities[abilityIndex];
+    ability = species->abilities.find(currentAbilityIndex)->second;
     setPokemonTypes();
     setSpeciesStats();
     calculatePokemonStats();

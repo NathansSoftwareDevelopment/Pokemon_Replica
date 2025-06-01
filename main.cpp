@@ -18,6 +18,8 @@ int main() {
     Pokemon myThirdPokemon = Pokemon("FireBoi3", &(speciesMap["charmander"]), "Modest", 5, 750000, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", zeroValues, zeroValues);
     Display.all(&mySecondPokemon, "zekrom", "Ember");
     Display.moveAll(&moveMap.find("Growl")->second);
+    Display.speciesAll(&(speciesMap["charmander"]));
+    Display.speciesAll(&(speciesMap["haxorus"]));
     mySecondPokemon.addExperience(1000);
     myThirdPokemon.addExperience(1000);
     Pokemon myVenusaur = Pokemon("Venu", &(speciesMap["venusaur"]), "Modest", 55, 0, "Blaze", "Frenzy Plant", "Scratch", "Ember", "Smokescreen", "None", zeroValues, zeroValues);

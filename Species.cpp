@@ -46,19 +46,19 @@ void from_json(const json& inputJson, Species& inputSpecies) {
     }
 
     if (inputJson.at("abilities").contains("1")) {
-        inputSpecies.abilities[0] = inputJson.at("abilities").at("1").get<std::string>();
-    } else {
-        inputSpecies.abilities[0] = "none";
-    }
-    if (inputJson.at("abilities").contains("2")) {
-        inputSpecies.abilities[1] = inputJson.at("abilities").at("2").get<std::string>();
+        inputSpecies.abilities[1] = inputJson.at("abilities").at("1").get<std::string>();
     } else {
         inputSpecies.abilities[1] = "none";
     }
-    if (inputJson.at("abilities").contains("3")) {
-        inputSpecies.abilities[2] = inputJson.at("abilities").at("3").get<std::string>();
+    if (inputJson.at("abilities").contains("2")) {
+        inputSpecies.abilities[2] = inputJson.at("abilities").at("2").get<std::string>();
     } else {
         inputSpecies.abilities[2] = "none";
+    }
+    if (inputJson.at("abilities").contains("3")) {
+        inputSpecies.abilities[3] = inputJson.at("abilities").at("3").get<std::string>();
+    } else {
+        inputSpecies.abilities[3] = "none";
     }
 
     if (inputJson.contains("evolve")) {

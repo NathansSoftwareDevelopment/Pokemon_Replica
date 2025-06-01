@@ -22,7 +22,7 @@ class Species {
         std::map<std::string, int> effortValues;
         Type* type1;
         Type* type2;
-        std::string abilities[3];
+        std::map<int, std::string> abilities;
         std::string evolution;
         std::string growthRate;
         int experienceValue;
