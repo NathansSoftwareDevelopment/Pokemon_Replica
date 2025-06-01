@@ -8,63 +8,69 @@
 using json = nlohmann::json;
 
 void from_json(const json& inputJson, Species& inputSpecies) {
-    inputSpecies.name = inputJson.at("name").get<std::string>();
+    inputSpecies.name(inputJson.at("name").get<std::string>());
 
-    inputSpecies.experienceValue = inputJson.at("base-experience").get<int>();
+    inputSpecies.experienceValue(inputJson.at("base-experience").get<int>());
 
-    inputSpecies.stats["HitPoints"] = inputJson.at("stats").at("hp").get<int>();
-    inputSpecies.stats["Attack"] = inputJson.at("stats").at("attack").get<int>();
-    inputSpecies.stats["Defense"] = inputJson.at("stats").at("defense").get<int>();
-    inputSpecies.stats["SpecialAttack"] = inputJson.at("stats").at("special-attack").get<int>();
-    inputSpecies.stats["SpecialDefense"] = inputJson.at("stats").at("special-defense").get<int>();
-    inputSpecies.stats["Speed"] = inputJson.at("stats").at("speed").get<int>();
+    std::map<std::string, int> tempStats;
+    tempStats["HitPoints"] = inputJson.at("stats").at("hp").get<int>();
+    tempStats["Attack"] = inputJson.at("stats").at("attack").get<int>();
+    tempStats["Defense"] = inputJson.at("stats").at("defense").get<int>();
+    tempStats["SpecialAttack"] = inputJson.at("stats").at("special-attack").get<int>();
+    tempStats["SpecialDefense"] = inputJson.at("stats").at("special-defense").get<int>();
+    tempStats["Speed"] = inputJson.at("stats").at("speed").get<int>();
+    inputSpecies.stats(tempStats);
 
-    inputSpecies.effortValues["HitPoints"] = inputJson.at("effort-values").at("hp").get<int>();
-    inputSpecies.effortValues["Attack"] = inputJson.at("effort-values").at("attack").get<int>();
-    inputSpecies.effortValues["Defense"] = inputJson.at("effort-values").at("defense").get<int>();
-    inputSpecies.effortValues["SpecialAttack"] = inputJson.at("effort-values").at("special-attack").get<int>();
-    inputSpecies.effortValues["SpecialDefense"] = inputJson.at("effort-values").at("special-defense").get<int>();
-    inputSpecies.effortValues["Speed"] = inputJson.at("effort-values").at("speed").get<int>();
+    std::map<std::string, int> tempEffortValues;
+    tempEffortValues["HitPoints"] = inputJson.at("effort-values").at("hp").get<int>();
+    tempEffortValues["Attack"] = inputJson.at("effort-values").at("attack").get<int>();
+    tempEffortValues["Defense"] = inputJson.at("effort-values").at("defense").get<int>();
+    tempEffortValues["SpecialAttack"] = inputJson.at("effort-values").at("special-attack").get<int>();
+    tempEffortValues["SpecialDefense"] = inputJson.at("effort-values").at("special-defense").get<int>();
+    tempEffortValues["Speed"] = inputJson.at("effort-values").at("speed").get<int>();
+    inputSpecies.effortValues(tempEffortValues);
 
     if (inputJson.at("types").contains("1")) {
         std::string typeString = inputJson.at("types").at("1").get<std::string>();
         typeString[0] = static_cast<char>(std::toupper(typeString[0]));
-        inputSpecies.type1 = &typeMap.find(typeString)->second;
+        inputSpecies.type1(&typeMap.find(typeString)->second);
         // std::cout << test->name << std::endl;
         // std::cout << "Type Search: " << inputJson.at("types").at("1").get<std::string>() << std::endl;
         // std::cout << "Type Name: " << typeMap.find(inputJson.at("types").at("1").get<std::string>())->first << std::endl;
         // std::cout << "Actual Type Name: " << typeMap.find(inputJson.at("types").at("1").get<std::string>())->second.name << std::endl;
     } else {
-        inputSpecies.type1 = &typeMap.find("None")->second;
+        inputSpecies.type1(&typeMap.find("None")->second);
     }
     if (inputJson.at("types").contains("2")) {
         std::string typeString = inputJson.at("types").at("2").get<std::string>();
         typeString[0] = static_cast<char>(std::toupper(typeString[0]));
-        inputSpecies.type2 = &typeMap.find(typeString)->second;
+        inputSpecies.type2(&typeMap.find(typeString)->second);
     } else {
-        inputSpecies.type2 = &typeMap.find("None")->second;
+        inputSpecies.type2(&typeMap.find("None")->second);
     }
 
+    std::map<int, std::string> tempAbilities;
     if (inputJson.at("abilities").contains("1")) {
-        inputSpecies.abilities[1] = inputJson.at("abilities").at("1").get<std::string>();
+        tempAbilities[1] = inputJson.at("abilities").at("1").get<std::string>();
     } else {
-        inputSpecies.abilities[1] = "none";
+        tempAbilities[1] = "none";
     }
     if (inputJson.at("abilities").contains("2")) {
-        inputSpecies.abilities[2] = inputJson.at("abilities").at("2").get<std::string>();
+        tempAbilities[2] = inputJson.at("abilities").at("2").get<std::string>();
     } else {
-        inputSpecies.abilities[2] = "none";
+        tempAbilities[2] = "none";
     }
     if (inputJson.at("abilities").contains("3")) {
-        inputSpecies.abilities[3] = inputJson.at("abilities").at("3").get<std::string>();
+        tempAbilities[3] = inputJson.at("abilities").at("3").get<std::string>();
     } else {
-        inputSpecies.abilities[3] = "none";
+        tempAbilities[3] = "none";
     }
+    inputSpecies.abilities(tempAbilities);
 
     if (inputJson.contains("evolve")) {
-        inputSpecies.evolution = inputJson.at("evolve").get<std::string>();
+        inputSpecies.evolution(inputJson.at("evolve").get<std::string>());
     } else {
-        inputSpecies.evolution = "none";
+        inputSpecies.evolution("none");
     }
 
     std::string tempGrowthRate;
@@ -83,13 +89,14 @@ void from_json(const json& inputJson, Species& inputSpecies) {
     } else if (tempGrowthRate == "Slow-then-very-fast") {
         tempGrowthRate = "Erratic";
     }
-    inputSpecies.growthRate = tempGrowthRate;
-
-    inputJson.at("moves").at("level-up").get_to(inputSpecies.moves.levelUp);
-    inputJson.at("moves").at("egg").get_to(inputSpecies.moves.egg);
-    inputJson.at("moves").at("machine").get_to(inputSpecies.moves.machine);
-    inputJson.at("moves").at("tutor").get_to(inputSpecies.moves.tutor);
-    inputJson.at("moves").at("other").get_to(inputSpecies.moves.other);
+    inputSpecies.growthRate(tempGrowthRate);
+    
+    learnSet tempMoves;
+    tempMoves.levelUp = (inputJson.at("moves").at("level-up"));
+    tempMoves.egg = (inputJson.at("moves").at("egg"));
+    tempMoves.machine = (inputJson.at("moves").at("machine"));
+    tempMoves.tutor = (inputJson.at("moves").at("tutor"));
+    tempMoves.other = (inputJson.at("moves").at("other"));
 }
 
 std::map<std::string, Species> speciesMap;
@@ -109,7 +116,7 @@ void generateSpeciesMap() {
 
         Species currentSpecies;
         currentSpecies = speciesJson.get<Species>();
-        currentSpecies.name = speciesKey;
+        currentSpecies.name(speciesKey);
 
         speciesMap[speciesKey] = currentSpecies;
     }

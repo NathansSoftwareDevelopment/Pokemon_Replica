@@ -106,8 +106,8 @@ bool Battle::hitCheck(Pokemon* attackingInputPokemon, Move* InputPokemonMove, Po
 }
 
 void Battle::distributeExperience(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon) {
-    // std::cout << "Defeated Pokemon: " << defeatedInputPokemon->name << " | " << defeatedInputPokemon->species->experienceValue << std::endl;
-    int experienceValue = defeatedInputPokemon->species->experienceValue;
+    // std::cout << "Defeated Pokemon: " << defeatedInputPokemon->name << " | " << defeatedInputPokemon->species->experienceValue() << std::endl;
+    int experienceValue = defeatedInputPokemon->species->experienceValue();
     int defeatedLevel = defeatedInputPokemon->level;
     double trainerBattle = 1.0; /* Trainers have not yet been implemented so this value is unchanging */
     double expShare = 1; /* EXP Share has not yet been implemented so this value is unchanging */
@@ -172,7 +172,7 @@ void Battle::distributeExperience(Pokemon* victoriousInputPokemon, Pokemon* defe
 }
 
 void Battle::addEVs(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon) {
-    for (std::pair<std::string, int> i : defeatedInputPokemon->species->effortValues) {
+    for (std::pair<std::string, int> i : defeatedInputPokemon->species->effortValues()) {
         int victorsTotalEVs = 0;
         for (std::pair<std::string, int> j : victoriousInputPokemon->effortValues) {
             victorsTotalEVs += j.second;

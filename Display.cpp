@@ -27,7 +27,7 @@ void display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
     idCounter(stackCall);
     cout << "\nAll Information on " << inputPokemon->name << endl;
     cout << "Name: " << inputPokemon->name << endl;
-    cout << "Species Name: " << inputPokemon->species->name << endl;
+    cout << "Species Name: " << inputPokemon->species->name() << endl;
     cout << "Level: " << inputPokemon->level << endl;
     cout << "Experience: " << inputPokemon->experience << endl;
     cout << "Nature: " << inputPokemon->nature->name << endl;
@@ -59,19 +59,19 @@ void display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
 
 void display::speciesAll(Species* inputSpecies, bool stackCall) {
     idCounter(stackCall);
-    cout << "\nAll Information on Species " << inputSpecies->name << endl;
-    cout << "Name: " << inputSpecies->name << endl;
-    cout << "Evolution: " << inputSpecies->evolution << endl;
+    cout << "\nAll Information on Species " << inputSpecies->name() << endl;
+    cout << "Name: " << inputSpecies->name() << endl;
+    cout << "Evolution: " << inputSpecies->evolution() << endl;
     cout << "Stats " << endl;
-    for (std::pair<std::string, int> i : inputSpecies->stats) {
+    for (std::pair<std::string, int> i : inputSpecies->stats()) {
         cout << "\t" << i.first << ": " << i.second << endl;
     }
     cout << "Types" << endl;
-    cout << "\t" << inputSpecies->type1->name << endl;
-    cout << "\t" << inputSpecies->type2->name << endl;
+    cout << "\t" << inputSpecies->type1()->name << endl;
+    cout << "\t" << inputSpecies->type2()->name << endl;
     cout << "Abilities" << endl;
     for (int i = 1; i < 4; i++) {
-        cout << "\t" << i << ": " << inputSpecies->abilities[i] << endl;
+        cout << "\t" << i << ": " << inputSpecies->abilities()[i] << endl;
     }
 }
 

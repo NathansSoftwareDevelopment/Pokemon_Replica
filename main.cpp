@@ -27,7 +27,7 @@ int main() {
     // std::cout << mySecondPokemon.level << " | " << mySecondPokemon.experience << std::endl;
     // std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
     // Battle(&mySecondPokemon, &myThirdPokemon);
-    std::cout << "Zekrom Experience: " << myZekrom.species->experienceValue << std::endl;
+    std::cout << "Zekrom Experience: " << myZekrom.species->experienceValue() << std::endl;
     Battle(&myVenusaur, &myZekrom);
     // std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
     std::cout << "\n\nEnd Main";

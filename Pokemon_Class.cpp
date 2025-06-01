@@ -9,7 +9,7 @@
 #include "Growth_Rate.h"
 
 void Pokemon::setSpeciesStats() {
-    speciesStats = species->stats;
+    speciesStats = species->stats();
 }
 
 void Pokemon::setPokemonIndividualValues(int inputValues[6]) {
@@ -39,8 +39,8 @@ void Pokemon::setPokemonNature(std::string inputNature) {
 }
 
 void Pokemon::setPokemonTypes() {
-    type1 = species->type1;
-    type2 = species->type2;
+    type1 = species->type1();
+    type2 = species->type2();
 }
 
 void Pokemon::setPokemonMoves(std::string inputMove1, std::string inputMove2, std::string inputMove3, std::string inputMove4) {
@@ -62,13 +62,13 @@ void Pokemon::calculatePokemonStats() {
 
 void Pokemon::evolve() {
     int currentAbilityIndex;
-    for (std::pair<int, std::string> speciesAbility : species->abilities) {
+    for (std::pair<int, std::string> speciesAbility : species->abilities()) {
         if (speciesAbility.second == ability) {
             currentAbilityIndex = speciesAbility.first;
         }
     }
-    species = &(speciesMap[species->evolution]);
-    ability = species->abilities.find(currentAbilityIndex)->second;
+    species = &(speciesMap[species->evolution()]);
+    ability = species->abilities().find(currentAbilityIndex)->second;
     setPokemonTypes();
     setSpeciesStats();
     calculatePokemonStats();
@@ -93,8 +93,8 @@ void Pokemon::calculateStageChanges() {
 }
 
 void Pokemon::addExperience(int inputExperience) {
-    while (experience+inputExperience >= growthRateMap.find(species->growthRate)->second.toNextLevel[level]) {
-        inputExperience -= (growthRateMap.find(species->growthRate)->second.toNextLevel[level] - experience);
+    while (experience+inputExperience >= growthRateMap.find(species->growthRate())->second.toNextLevel[level]) {
+        inputExperience -= (growthRateMap.find(species->growthRate())->second.toNextLevel[level] - experience);
         experience = 0;
         level += 1;
     }
