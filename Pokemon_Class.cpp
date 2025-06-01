@@ -67,7 +67,7 @@ void Pokemon::evolve() {
             currentAbilityIndex = speciesAbility.first;
         }
     }
-    species = &(speciesMap[species->evolution()]);
+    species = &(speciesMap.find(species->evolution())->second);
     ability = species->abilities().find(currentAbilityIndex)->second;
     setPokemonTypes();
     setSpeciesStats();

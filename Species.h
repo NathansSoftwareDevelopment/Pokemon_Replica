@@ -50,10 +50,9 @@ class Species {
         Species& experienceValue(int inputExperienceValue) {_experienceValue = inputExperienceValue; return *this;}
         Species& moves(learnSet inputMoves) {_moves = inputMoves; return *this;}
 
-        Species(){};
+        Species(const json& inputJSON);
 };
 
-inline void from_json(const json& j, Species& s);
 extern void generateSpeciesMap();
 
 extern std::map<std::string, Species> speciesMap;
