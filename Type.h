@@ -7,47 +7,9 @@ class Type {
     public:
         std::string name;
 
-        double attackingNormal;
-        double attackingFire;
-        double attackingWater;
-        double attackingElectric;
-        double attackingGrass;
-        double attackingIce;
-        double attackingFighting;
-        double attackingPoison;
-        double attackingGround;
-        double attackingFlying;
-        double attackingPsychic;
-        double attackingBug;
-        double attackingRock;
-        double attackingGhost;
-        double attackingDragon;
-        double attackingDark;
-        double attackingSteel;
-        double attackingNone;
-        double* attackingStats[18] = {
-            &attackingNormal,
-            &attackingFire,
-            &attackingWater,
-            &attackingElectric,
-            &attackingGrass,
-            &attackingIce,
-            &attackingFighting,
-            &attackingPoison,
-            &attackingGround,
-            &attackingFlying,
-            &attackingPsychic,
-            &attackingBug,
-            &attackingRock,
-            &attackingGhost,
-            &attackingDragon,
-            &attackingDark,
-            &attackingSteel,
-            &attackingNone
-        };
         std::map<std::string, double> attackingTypeMap;
 
-        Type(std::string typeInputName, double attackingInputStats[18]);
+        Type(std::string typeInputName, std::map<std::string, double> inputAttackingTypeMap);
 };
 
 extern std::map<std::string, Type> typeMap;
