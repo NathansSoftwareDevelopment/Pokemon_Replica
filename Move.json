@@ -121,7 +121,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -157,7 +157,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -409,7 +409,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -481,7 +481,7 @@
         "type": "Ice",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 30,
         "flinchChance": 0
     },
@@ -661,7 +661,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -859,7 +859,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 40,
         "flinchChance": 0
     },
@@ -868,7 +868,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 30,
         "flinchChance": 0
     },
@@ -895,7 +895,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -913,7 +913,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -931,7 +931,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -940,7 +940,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -949,7 +949,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 30,
         "flinchChance": 0
     },
@@ -958,7 +958,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -985,7 +985,7 @@
         "type": "Water",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 40,
         "flinchChance": 0
     },
@@ -994,7 +994,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 40,
         "flinchChance": 0
     },
@@ -1003,7 +1003,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -1012,7 +1012,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 30,
         "flinchChance": 0
     },
@@ -1021,7 +1021,7 @@
         "type": "Ice",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 30,
         "flinchChance": 0
     },
@@ -1030,7 +1030,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -1039,7 +1039,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 30,
         "flinchChance": 0
     },
@@ -1048,7 +1048,7 @@
         "type": "Normal",
         "damageCategory": "Physical",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -1057,7 +1057,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -1066,7 +1066,7 @@
         "type": "Flying",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -1156,7 +1156,7 @@
         "type": "Normal",
         "damageCategory": "Special",
         "power": 60,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -1192,7 +1192,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -1210,7 +1210,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -1291,7 +1291,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -1345,7 +1345,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 40,
         "flinchChance": 0
     },
@@ -1354,7 +1354,7 @@
         "type": "Poison",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -1399,7 +1399,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -1426,7 +1426,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 30,
         "flinchChance": 0
     },
@@ -1435,7 +1435,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 30,
         "flinchChance": 0
     },
@@ -1471,7 +1471,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -1480,7 +1480,7 @@
         "type": "Normal",
         "damageCategory": "Physical",
         "power": 50,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 1,
         "flinchChance": 0
     },
@@ -1489,7 +1489,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 1,
         "flinchChance": 0
     },
@@ -1516,7 +1516,7 @@
         "type": "Bug",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -1525,7 +1525,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -1561,7 +1561,7 @@
         "type": "Ghost",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -1579,7 +1579,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 30,
         "flinchChance": 0
     },
@@ -1633,7 +1633,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -1660,7 +1660,7 @@
         "type": "Dark",
         "damageCategory": "Physical",
         "power": 60,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -1678,7 +1678,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -1714,7 +1714,7 @@
         "type": "Ground",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -1732,7 +1732,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 40,
         "flinchChance": 0
     },
@@ -1741,7 +1741,7 @@
         "type": "Ghost",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -1750,7 +1750,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -1768,7 +1768,7 @@
         "type": "Fighting",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -1786,7 +1786,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -1804,7 +1804,7 @@
         "type": "Rock",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -1822,7 +1822,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -1867,7 +1867,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -1903,7 +1903,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -1921,7 +1921,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -1930,7 +1930,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -1966,7 +1966,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 25,
         "flinchChance": 0
     },
@@ -1975,7 +1975,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -2029,7 +2029,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 40,
         "flinchChance": 0
     },
@@ -2092,7 +2092,7 @@
         "type": "Fighting",
         "damageCategory": "Physical",
         "power": 70,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -2101,7 +2101,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -2110,7 +2110,7 @@
         "type": "Grass",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -2119,7 +2119,7 @@
         "type": "Fairy",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -2155,7 +2155,7 @@
         "type": "Water",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -2164,7 +2164,7 @@
         "type": "Fire",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -2191,7 +2191,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -2281,7 +2281,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -2299,7 +2299,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -2317,7 +2317,7 @@
         "type": "Ice",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -2389,7 +2389,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -2398,7 +2398,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -2407,7 +2407,7 @@
         "type": "Electric",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -2425,7 +2425,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -2443,7 +2443,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -2452,7 +2452,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -2461,7 +2461,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -2470,7 +2470,7 @@
         "type": "Grass",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -2488,7 +2488,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -2497,7 +2497,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -2524,7 +2524,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -2560,7 +2560,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -2569,7 +2569,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -2578,7 +2578,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -2587,7 +2587,7 @@
         "type": "Ghost",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -2596,7 +2596,7 @@
         "type": "Dark",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -2632,7 +2632,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -2641,7 +2641,7 @@
         "type": "Bug",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -2695,7 +2695,7 @@
         "type": "Ground",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -2722,7 +2722,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -2803,7 +2803,7 @@
         "type": "Grass",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -2839,7 +2839,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 40,
         "flinchChance": 0
     },
@@ -2893,7 +2893,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -2920,7 +2920,7 @@
         "type": "Ghost",
         "damageCategory": "Physical",
         "power": 60,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -2983,7 +2983,7 @@
         "type": "Flying",
         "damageCategory": "Physical",
         "power": 60,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -3001,7 +3001,7 @@
         "type": "Steel",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -3010,7 +3010,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -3019,7 +3019,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 40,
         "flinchChance": 0
     },
@@ -3046,7 +3046,7 @@
         "type": "Fighting",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -3100,7 +3100,7 @@
         "type": "Grass",
         "damageCategory": "Special",
         "power": 60,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -3109,7 +3109,7 @@
         "type": "Water",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -3118,7 +3118,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -3136,7 +3136,7 @@
         "type": "Dragon",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -3154,7 +3154,7 @@
         "type": "Electric",
         "damageCategory": "Special",
         "power": 60,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -3190,7 +3190,7 @@
         "type": "Flying",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -3199,7 +3199,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -3208,7 +3208,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 40,
         "flinchChance": 0
     },
@@ -3244,7 +3244,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -3289,7 +3289,7 @@
         "type": "Flying",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -3298,7 +3298,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 30,
         "flinchChance": 0
     },
@@ -3379,7 +3379,7 @@
         "type": "Normal",
         "damageCategory": "Special",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -3406,7 +3406,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -3424,7 +3424,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 30,
         "flinchChance": 0
     },
@@ -3433,7 +3433,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -3442,7 +3442,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -3451,7 +3451,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -3460,7 +3460,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -3505,7 +3505,7 @@
         "type": "Poison",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -3514,7 +3514,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -3523,7 +3523,7 @@
         "type": "Water",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -3532,7 +3532,7 @@
         "type": "Electric",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -3559,7 +3559,7 @@
         "type": "Fighting",
         "damageCategory": "Special",
         "power": 80,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -3568,7 +3568,7 @@
         "type": "Rock",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -3748,7 +3748,7 @@
         "type": "Dark",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -3883,7 +3883,7 @@
         "type": "Flying",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -3892,7 +3892,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 5,
         "flinchChance": 0
     },
@@ -3982,7 +3982,7 @@
         "type": "Steel",
         "damageCategory": "Physical",
         "power": 60,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -4009,7 +4009,7 @@
         "type": "Rock",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -4090,7 +4090,7 @@
         "type": "Bug",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -4099,7 +4099,7 @@
         "type": "Bug",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -4144,7 +4144,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -4207,7 +4207,7 @@
         "type": "Dark",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -4216,7 +4216,7 @@
         "type": "Rock",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -4225,7 +4225,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -4234,7 +4234,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -4243,7 +4243,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -4270,7 +4270,7 @@
         "type": "Steel",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -4279,7 +4279,7 @@
         "type": "Bug",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -4288,7 +4288,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -4297,7 +4297,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -4342,7 +4342,7 @@
         "type": "Bug",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -4396,7 +4396,7 @@
         "type": "Poison",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 20,
         "flinchChance": 0
     },
@@ -4450,7 +4450,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -4486,7 +4486,7 @@
         "type": "Poison",
         "damageCategory": "Special",
         "power": 50,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -4504,7 +4504,7 @@
         "type": "Fighting",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -4513,7 +4513,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -4531,7 +4531,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -4540,7 +4540,7 @@
         "type": "Psychic",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -4567,7 +4567,7 @@
         "type": "Steel",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },
@@ -4612,7 +4612,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -4639,7 +4639,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 15,
         "flinchChance": 0
     },
@@ -4729,7 +4729,7 @@
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 30,
         "flinchChance": 0
     },
@@ -4837,7 +4837,7 @@
         "type": "Grass",
         "damageCategory": "Status",
         "power": 0,
-        "accuracy": null,
+        "accuracy": 0,
         "PP": 10,
         "flinchChance": 0
     },

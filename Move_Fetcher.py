@@ -41,7 +41,10 @@ def parseMoveInfo(inputMove):
     else:
         moveData["power"] = inputMove["power"]
     
-    moveData["accuracy"] = inputMove["accuracy"]
+    if inputMove["accuracy"] is None:
+        moveData["accuracy"] = 0
+    else:
+        moveData["accuracy"] = inputMove["accuracy"]
 
     moveData["PP"] = inputMove["pp"]
 
