@@ -107,17 +107,17 @@ void generateSpeciesMap() {
     if (!ifs.is_open()) {
         std::cerr << "Error opening file: " << filePath << std::endl;
     }
-    json j_parsed_file;
-    ifs >> j_parsed_file;
+    json speciesFile;
+    ifs >> speciesFile;
 
-    for (json::iterator it = j_parsed_file.begin(); it != j_parsed_file.end(); ++it) {
-        std::string speciesKey = it.key();
-        json speciesJson = it.value();
+    for (json::iterator specie = speciesFile.begin(); specie != speciesFile.end(); ++specie) {
+        std::string speciesName = specie.key();
+        json speciesJSON = specie.value();
 
         Species currentSpecies;
-        currentSpecies = speciesJson.get<Species>();
-        currentSpecies.name(speciesKey);
+        currentSpecies = speciesJSON.get<Species>();
+        currentSpecies.name(speciesName);
 
-        speciesMap[speciesKey] = currentSpecies;
+        speciesMap[speciesName] = currentSpecies;
     }
 }
