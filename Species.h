@@ -15,17 +15,19 @@ struct learnSet {
     std::map<std::string, std::string> other;
 };
 
-struct Species {
-    std::string name;
-    std::map<std::string, int> stats;
-    std::map<std::string, int> effortValues;
-    Type* type1;
-    Type* type2;
-    std::string abilities[3];
-    std::string evolution;
-    std::string growthRate;
-    int experienceValue;
-    learnSet moves;
+class Species {
+    public:
+        std::string name;
+        std::map<std::string, int> stats;
+        std::map<std::string, int> effortValues;
+        Type* type1;
+        Type* type2;
+        std::string abilities[3];
+        std::string evolution;
+        std::string growthRate;
+        int experienceValue;
+        learnSet moves;
+        Species(){};
 };
 
 inline void from_json(const json& j, Species& s);
