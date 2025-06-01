@@ -94,12 +94,13 @@ def getGrowthRateInfo(ID):
         print(f"FAILED TO RETRIEVE GROWTH-RATE: {ID}")
 
 def addToFinal(dataType, inputDictionary):
-    if dataType in ["pokemon", "pokemon-species"]:
+    if dataType in ["pokemon", "pokemon-species", "move"]:
         outputDictionary[inputDictionary[0]["name"]] = inputDictionary
     if dataType == "evolution-chain":
         outputDictionary[list(inputDictionary.keys())[0]] = list(inputDictionary.values())[0]
     if dataType == "growth-rate":
         outputDictionary[inputDictionary["name"]] = inputDictionary
+
 
 def Write(Object, FileName):
     json_string = json.dumps(Object, indent=4)

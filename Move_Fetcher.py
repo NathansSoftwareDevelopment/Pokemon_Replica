@@ -1,4 +1,5 @@
 import json
+
 from icecream import ic
 
 
@@ -7,12 +8,12 @@ def main():
     rawMoveData = getMoveInfo()
     allMoveData = {}
     for moveName in rawMoveData:
-        moveData = parseMoveInfo(rawMoveData[moveName])
+        moveData = parseMoveInfo(rawMoveData[moveName][0])
         allMoveData[moveData["name"]] = moveData
     Write(allMoveData, r"Move.json")
 
 def getMoveInfo():
-    URL = r"./Raw_Data/temp_moves.json"
+    URL = r"./Raw_Data/Raw_Move_Data.json"
     Raw_Move_Data = {}
     with open(URL, 'r', encoding='utf-8') as f:
         Raw_Move_Data = json.load(f)
