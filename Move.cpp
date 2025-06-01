@@ -25,27 +25,26 @@ Move::Move(
     uniqueness = inputUniqueness;
 }
 
+Move::Move(const json& inputJSON) {
+    name = inputJSON.at("name");
 
-void from_json(const json& inputJson, Move& inputMove) {
-    inputMove.name = inputJson.at("name");
+    std::string typeString = inputJSON.at("type").get<std::string>();
+    type = &typeMap.find(typeString)->second;
 
-    std::string typeString = inputJson.at("type").get<std::string>();
-    inputMove.type = &typeMap.find(typeString)->second;
+    damageCategory = inputJSON.at("damageCategory").get<std::string>();
 
-    inputMove.damageCategory = inputJson.at("damageCategory").get<std::string>();
+    power = inputJSON.at("power").get<int>();
 
-    inputMove.power = inputJson.at("power").get<int>();
+    accuracy = inputJSON.at("accuracy").get<int>();
 
-    inputMove.accuracy = inputJson.at("accuracy").get<int>();
+    PP = inputJSON.at("PP").get<int>();
 
-    inputMove.PP = inputJson.at("PP").get<int>();
+    flinchChance = inputJSON.at("flinchChance").get<int>();
 
-    inputMove.flinchChance = inputJson.at("flinchChance").get<int>();
+    conditionChances;
 
-    inputMove.conditionChances;
-
-    inputMove.userStageChances;
-    inputMove.opponentStageChances;
+    userStageChances;
+    opponentStageChances;
 }
 
 std::map<std::string, Move> moveMap;
@@ -63,6 +62,6 @@ void generateMoveMap() {
         std::string moveName = move.key();
         json movesJSON = move.value();
 
-        moveMap[moveName] = movesJSON.get<Move>();
+        moveMap.emplace(moveName, Move(movesJSON));
     }
 }
