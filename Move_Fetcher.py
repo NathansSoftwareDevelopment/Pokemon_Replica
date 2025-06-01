@@ -44,6 +44,8 @@ def getVersionValues(inputMove):
                 pass
             elif key == "pp":
                 versionValues["PP"] = value
+            elif key == "type":
+                versionValues["type"] = value["name"].capitalize()
             else:
                 versionValues[key] = value
     return versionValues
