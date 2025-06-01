@@ -332,8 +332,8 @@
         "PP": 10,
         "flinchChance": 0
     },
-    "Double Edge": {
-        "name": "Double Edge",
+    "Double-Edge": {
+        "name": "Double-Edge",
         "type": "Normal",
         "damageCategory": "Physical",
         "power": 120,
@@ -1070,8 +1070,8 @@
         "PP": 20,
         "flinchChance": 0
     },
-    "Self Destruct": {
-        "name": "Self Destruct",
+    "Self-Destruct": {
+        "name": "Self-Destruct",
         "type": "Normal",
         "damageCategory": "Physical",
         "power": 200,
@@ -1205,8 +1205,8 @@
         "PP": 15,
         "flinchChance": 0
     },
-    "Soft Boiled": {
-        "name": "Soft Boiled",
+    "Soft-Boiled": {
+        "name": "Soft-Boiled",
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
@@ -1691,8 +1691,8 @@
         "PP": 10,
         "flinchChance": 0
     },
-    "Mud Slap": {
-        "name": "Mud Slap",
+    "Mud-Slap": {
+        "name": "Mud-Slap",
         "type": "Ground",
         "damageCategory": "Special",
         "power": 20,
@@ -1781,8 +1781,8 @@
         "PP": 10,
         "flinchChance": 0
     },
-    "Lock On": {
-        "name": "Lock On",
+    "Lock-On": {
+        "name": "Lock-On",
         "type": "Normal",
         "damageCategory": "Status",
         "power": 0,
@@ -2339,8 +2339,8 @@
         "PP": 15,
         "flinchChance": 0
     },
-    "Will O Wisp": {
-        "name": "Will O Wisp",
+    "Will-O-Wisp": {
+        "name": "Will-O-Wisp",
         "type": "Fire",
         "damageCategory": "Status",
         "power": 0,
@@ -3212,8 +3212,8 @@
         "PP": 40,
         "flinchChance": 0
     },
-    "Wake Up Slap": {
-        "name": "Wake Up Slap",
+    "Wake-Up Slap": {
+        "name": "Wake-Up Slap",
         "type": "Fighting",
         "damageCategory": "Physical",
         "power": 70,
@@ -3311,8 +3311,8 @@
         "PP": 10,
         "flinchChance": 0
     },
-    "U Turn": {
-        "name": "U Turn",
+    "U-turn": {
+        "name": "U-turn",
         "type": "Bug",
         "damageCategory": "Physical",
         "power": 70,
@@ -3626,8 +3626,8 @@
         "PP": 15,
         "flinchChance": 30
     },
-    "X Scissor": {
-        "name": "X Scissor",
+    "X-Scissor": {
+        "name": "X-Scissor",
         "type": "Bug",
         "damageCategory": "Physical",
         "power": 80,
@@ -5003,8 +5003,8 @@
         "PP": 10,
         "flinchChance": 30
     },
-    "V Create": {
-        "name": "V Create",
+    "V-create": {
+        "name": "V-create",
         "type": "Fire",
         "damageCategory": "Physical",
         "power": 180,

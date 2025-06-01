@@ -26,7 +26,7 @@ def parseMoveInfo(inputMove):
     hyphenatedDict = {"double-edge": "Double-Edge", "freeze-dry": "Freeze-Dry", "lock-on": "Lock-On", "mud-slap": "Mud-Slap", "power-up-punch": "Power-Up Punch",
                       "self-destruct": "Self-Destruct", "soft-boiled": "Soft-Boiled", "u-turn": "U-turn", "v-create": "V-create", "wake-up-slap": "Wake-Up Slap",
                       "will-o-wisp": "Will-O-Wisp", "x-scissor": "X-Scissor"}
-    if inputMove["name"] in hyphenatedDict.values():
+    if inputMove["name"] in hyphenatedDict.keys():
         moveData["name"] = hyphenatedDict[inputMove["name"]]
     else:
         # If the move name did not have to be manually respecified | Capitalize all words in move name and replace the hyphens with spaces
