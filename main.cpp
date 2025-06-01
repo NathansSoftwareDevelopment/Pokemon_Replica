@@ -20,7 +20,7 @@ int main() {
     Display.moveAll(&moveMap.find("Growl")->second);
     mySecondPokemon.addExperience(1000);
     myThirdPokemon.addExperience(1000);
-    Pokemon myVenusaur = Pokemon("Venu", &(speciesMap["venusaur"]), "Modest", 55, 0, "Blaze", "Flamethrower", "Scratch", "Ember", "Smokescreen", "None", zeroValues, zeroValues);
+    Pokemon myVenusaur = Pokemon("Venu", &(speciesMap["venusaur"]), "Modest", 55, 0, "Blaze", "Frenzy Plant", "Scratch", "Ember", "Smokescreen", "None", zeroValues, zeroValues);
     Pokemon myZekrom = Pokemon("zekky", &(speciesMap["zekrom"]), "Modest", 62, 0, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", zeroValues, zeroValues);
     // std::cout << mySecondPokemon.level << " | " << mySecondPokemon.experience << std::endl;
     // std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
