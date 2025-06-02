@@ -40,51 +40,32 @@ class Pokemon {
 
         std::map<std::string, int> effortValues;
 
-        int maxHitPoints;
-        int maxAttack;
-        int maxDefense;
-        int maxSpecialAttack;
-        int maxSpecialDefense;
-        int maxSpeed;
-        int* maxStats[6] = {
-            &maxHitPoints,
-            &maxAttack,
-            &maxDefense,
-            &maxSpecialAttack,
-            &maxSpecialDefense,
-            &maxSpeed
+        std::map<std::string, int> maxStats = {
+            {"HitPoints", 1},
+            {"Attack", 1},
+            {"Defense", 1},
+            {"SpecialAttack", 1},
+            {"SpecialDefense", 1},
+            {"Speed", 1}
         };
 
-        int currentHitPoints;
-        int currentAttack;
-        int currentDefense;
-        int currentSpecialAttack;
-        int currentSpecialDefense;
-        int currentSpeed;
-        int* currentStats[6] = {
-            &currentHitPoints,
-            &currentAttack,
-            &currentDefense,
-            &currentSpecialAttack,
-            &currentSpecialDefense,
-            &currentSpeed,
+        std::map<std::string, int> currentStats = {
+            {"HitPoints", 1},
+            {"Attack", 1},
+            {"Defense", 1},
+            {"SpecialAttack", 1},
+            {"SpecialDefense", 1},
+            {"Speed", 1}
         };
 
-        int currentAttackStage = 0;
-        int currentDefenseStage = 0;
-        int currentSpecialAttackStage = 0;
-        int currentSpecialDefenseStage = 0;
-        int currentSpeedStage = 0;
-        int currentAccuracyStage = 0;
-        int currentEvasionStage = 0;
-        int *currentStages[7] = {
-            &currentAttackStage,
-            &currentDefenseStage,
-            &currentSpecialAttackStage ,
-            &currentSpecialDefenseStage,
-            &currentSpeedStage,
-            &currentAccuracyStage,
-            &currentEvasionStage
+        std::map<std::string, int> currentStages = {
+            {"Attack", 0},
+            {"Defense", 0},
+            {"SpecialAttack", 0},
+            {"SpecialDefense", 0},
+            {"Speed", 0},
+            {"Accuracy", 0},
+            {"Evasion", 0}
         };
 
         void setPokemonEffortValues(int EffortValues[6]);

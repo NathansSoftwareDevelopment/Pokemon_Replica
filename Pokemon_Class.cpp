@@ -49,12 +49,15 @@ void Pokemon::setPokemonMoves(std::string inputMove1, std::string inputMove2, st
 }
 
 void Pokemon::calculatePokemonStats() {
-    maxHitPoints = std::max(floor(((2*speciesStats["HitPoints"]+individualValues["HitPoints"]+floor(effortValues["HitPoints"]/4.0))*level)/100)+level+10, 1.0);
-    maxAttack = std::max(floor(((2*speciesStats["Attack"]+individualValues["Attack"]+floor(effortValues["Attack"]/4.0))*level)/100+5) * nature->stats().at("Attack"), 1.0);
-    maxDefense = std::max(floor(((2*speciesStats["Defense"]+individualValues["Defense"]+floor(effortValues["Defense"]/4.0))*level)/100+5) * nature->stats().at("Defense"), 1.0);
-    maxSpecialAttack = std::max(floor(((2*speciesStats["SpecialAttack"]+individualValues["SpecialAttack"]+floor(effortValues["SpecialAttack"]/4.0))*level)/100+5) * nature->stats().at("SpecialAttack"), 1.0);
-    maxSpecialDefense = std::max(floor(((2*speciesStats["SpecialDefense"]+individualValues["SpecialDefense"]+floor(effortValues["SpecialDefense"]/4.0))*level)/100+5) * nature->stats().at("SpecialDefense"), 1.0);
-    maxSpeed = std::max(floor(((2*speciesStats["Speed"]+individualValues["Speed"]+floor(effortValues["Speed"]/4.0))*level)/100+5) * nature->stats().at("Speed"), 1.0);
+    maxStats["HitPoints"] = std::max(floor(((2*speciesStats["HitPoints"]+individualValues["HitPoints"]+floor(effortValues["HitPoints"]/4.0))*level)/100)+level+10, 1.0);
+    // Use the same formula to calculate all non-HitPoints stats;
+    for (std::map<std::string, int>::iterator i = maxStats.begin(); i != maxStats.end(); i++) {
+        std::string statName = i->first;
+        if (statName == "HitPoints") {
+            continue;
+        }
+        maxStats[statName] = std::max(floor(((2*speciesStats[statName]+individualValues[statName]+floor(effortValues[statName]/4.0))*level)/100+5) * nature->stats().at(statName), 1.0);
+    }
     setPokemonCurrentStats();
 }
 
@@ -73,20 +76,21 @@ void Pokemon::evolve() {
 }
 
 void Pokemon::setPokemonCurrentStats() {
-    for (int i = 0; i < 6; i++) {
-        *currentStats[i] = *maxStats[i];
+    for (std::map<std::string, int>::iterator i = maxStats.begin(); i != maxStats.end(); i++) {
+        currentStats[i->first] = i->second;
     }
 }
 
 void Pokemon::calculateStageChanges() {
     double stageMultiplier;
-    for (int i = 1; i < 6; i++) {
-        if (*currentStages[i] >= 0) {
-            stageMultiplier = (*currentStages[i]+2)/2.0;
-        } else if (*currentStages[i] < 0) {
-            stageMultiplier = 2.0/(std::abs(*currentStages[i])+2);
+    std::string stageName;
+    for (std::map<std::string, int>::iterator i = currentStages.begin(); i != std::prev(currentStages.end(), 2); i++) {
+        stageName = i->first;
+        if (currentStages[stageName] >= 0) {
+            stageMultiplier = (currentStages[stageName]+2)/2.0;
+        } else if (currentStages[stageName] < 0) {
+            stageMultiplier = 2.0/(std::abs(currentStages[stageName]) + 2);
         }
-        *currentStats[i] = *maxStats[i] * stageMultiplier;
     }
 }
 

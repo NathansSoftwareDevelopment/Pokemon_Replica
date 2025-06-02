@@ -48,12 +48,12 @@ void display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
         cout << "\t" << i.first << ": " << i.second << endl;
     }
     cout << "Natural Stats" << endl;
-    cout << "\tHitPoints: " << inputPokemon->maxHitPoints << endl;
-    cout << "\tAttack: " << inputPokemon->maxAttack << endl;
-    cout << "\tDefense: " << inputPokemon->maxDefense << endl;
-    cout << "\tSpecial Attack: " << inputPokemon->maxSpecialAttack << endl;
-    cout << "\tSpecial Defense: " << inputPokemon->maxSpecialDefense << endl;
-    cout << "\tSpeed: " << inputPokemon->maxSpeed << endl;
+    cout << "\tHitPoints: " << inputPokemon->maxStats["HitPoints"] << endl;
+    cout << "\tAttack: " << inputPokemon->maxStats["Attack"] << endl;
+    cout << "\tDefense: " << inputPokemon->maxStats["Defense"] << endl;
+    cout << "\tSpecial Attack: " << inputPokemon->maxStats["SpecialAttack"] << endl;
+    cout << "\tSpecial Defense: " << inputPokemon->maxStats["SpecialDefense"] << endl;
+    cout << "\tSpeed: " << inputPokemon->maxStats["Speed"] << endl;
 }
 
 
