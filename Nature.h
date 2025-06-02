@@ -8,11 +8,11 @@ class Nature {
     private:
         std::string _name;
         std::map<std::string, double> _stats = {
-            {"attack", 1},
-            {"defense", 1},
-            {"speed", 1},
-            {"specialAttack", 1},
-            {"specialDefense", 1}
+            {"attack", 1.0},
+            {"defense", 1.0},
+            {"speed", 1.0},
+            {"specialAttack", 1.0},
+            {"specialDefense", 1.0}
         };
     public:
         const std::string name() const {return _name;}
