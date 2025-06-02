@@ -50,11 +50,11 @@ void Pokemon::setPokemonMoves(std::string inputMove1, std::string inputMove2, st
 
 void Pokemon::calculatePokemonStats() {
     maxHitPoints = std::max(floor(((2*speciesStats["HitPoints"]+individualValues["HitPoints"]+floor(effortValues["HitPoints"]/4.0))*level)/100)+level+10, 1.0);
-    maxAttack = std::max(floor(((2*speciesStats["Attack"]+individualValues["Attack"]+floor(effortValues["Attack"]/4.0))*level)/100+5) * nature->stats().at("attack"), 1.0);
-    maxDefense = std::max(floor(((2*speciesStats["Defense"]+individualValues["Defense"]+floor(effortValues["Defense"]/4.0))*level)/100+5) * nature->stats().at("defense"), 1.0);
-    maxSpecialAttack = std::max(floor(((2*speciesStats["SpecialAttack"]+individualValues["SpecialAttack"]+floor(effortValues["SpecialAttack"]/4.0))*level)/100+5) * nature->stats().at("specialAttack"), 1.0);
-    maxSpecialDefense = std::max(floor(((2*speciesStats["SpecialDefense"]+individualValues["SpecialDefense"]+floor(effortValues["SpecialDefense"]/4.0))*level)/100+5) * nature->stats().at("specialDefense"), 1.0);
-    maxSpeed = std::max(floor(((2*speciesStats["Speed"]+individualValues["Speed"]+floor(effortValues["Speed"]/4.0))*level)/100+5) * nature->stats().at("speed"), 1.0);
+    maxAttack = std::max(floor(((2*speciesStats["Attack"]+individualValues["Attack"]+floor(effortValues["Attack"]/4.0))*level)/100+5) * nature->stats().at("Attack"), 1.0);
+    maxDefense = std::max(floor(((2*speciesStats["Defense"]+individualValues["Defense"]+floor(effortValues["Defense"]/4.0))*level)/100+5) * nature->stats().at("Defense"), 1.0);
+    maxSpecialAttack = std::max(floor(((2*speciesStats["SpecialAttack"]+individualValues["SpecialAttack"]+floor(effortValues["SpecialAttack"]/4.0))*level)/100+5) * nature->stats().at("SpecialAttack"), 1.0);
+    maxSpecialDefense = std::max(floor(((2*speciesStats["SpecialDefense"]+individualValues["SpecialDefense"]+floor(effortValues["SpecialDefense"]/4.0))*level)/100+5) * nature->stats().at("SpecialDefense"), 1.0);
+    maxSpeed = std::max(floor(((2*speciesStats["Speed"]+individualValues["Speed"]+floor(effortValues["Speed"]/4.0))*level)/100+5) * nature->stats().at("Speed"), 1.0);
     setPokemonCurrentStats();
 }
 
