@@ -15,12 +15,12 @@ class Nature {
             {"specialDefense", 1}
         };
     public:
-        std::string name() const {return _name;}
-        std::map<std::string, double> stats() const {return _stats;}
+        const std::string name() const {return _name;}
+        const std::map<std::string, double> stats() const {return _stats;}
 
         Nature(std::string natureInput, std::string multiplierInput, std::string divisorInput);
 };
 
-extern Nature natureArray[25];
+extern std::map<std::string, Nature> natureMap;
 
 #endif

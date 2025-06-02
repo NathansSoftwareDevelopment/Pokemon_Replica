@@ -1,4 +1,5 @@
 #include <string>
+#include <map>
 #include "Nature.h"
 
 Nature::Nature(std::string natureInput, std::string multiplierInput, std::string divisorInput) {
@@ -9,30 +10,30 @@ Nature::Nature(std::string natureInput, std::string multiplierInput, std::string
     }
 };
 
-Nature natureArray[25] = {
-    Nature("Hardy", "attack", "attack"),
-    Nature("Lonely", "attack", "defense"),
-    Nature("Brave", "attack", "speed"),
-    Nature("Adamant", "attack", "specialAttack"),
-    Nature("Naughty", "attack", "specialDefense"),
-    Nature("Bold", "defense", "attack"),
-    Nature("Docile", "defense", "defense"),
-    Nature("Relaxed", "defense", "speed"),
-    Nature("Impish", "defense", "specialAttack"),
-    Nature("Lax", "defense", "specialDefense"),
-    Nature("Timid", "speed", "attack"),
-    Nature("Hasty", "speed", "defense"),
-    Nature("Serious", "speed", "speed"),
-    Nature("Jolly", "speed", "specialAttack"),
-    Nature("Naive", "speed", "specialDefense"),
-    Nature("Modest", "specialAttack", "attack"),
-    Nature("Mild", "specialAttack", "defense"),
-    Nature("Quiet", "specialAttack", "speed"),
-    Nature("Bashful", "specialAttack", "specialAttack"),
-    Nature("Rash", "specialAttack", "specialDefense"),
-    Nature("Calm", "specialDefense", "attack"),
-    Nature("Gentle", "specialDefense", "defense"),
-    Nature("Sassy", "specialDefense", "speed"),
-    Nature("Careful", "specialDefense", "specialAttack"),
-    Nature("Quirky", "specialDefense", "specialDefense")
+std::map<std::string, Nature> natureMap = {
+    {"Hardy", Nature("Hardy", "attack", "attack")},
+    {"Lonely", Nature("Lonely", "attack", "defense")},
+    {"Brave", Nature("Brave", "attack", "speed")},
+    {"Adamant", Nature("Adamant", "attack", "specialAttack")},
+    {"Naughty", Nature("Naughty", "attack", "specialDefense")},
+    {"Bold", Nature("Bold", "defense", "attack")},
+    {"Docile", Nature("Docile", "defense", "defense")},
+    {"Relaxed", Nature("Relaxed", "defense", "speed")},
+    {"Impish", Nature("Impish", "defense", "specialAttack")},
+    {"Lax", Nature("Lax", "defense", "specialDefense")},
+    {"Timid", Nature("Timid", "speed", "attack")},
+    {"Hasty", Nature("Hasty", "speed", "defense")},
+    {"Serious", Nature("Serious", "speed", "speed")},
+    {"Jolly", Nature("Jolly", "speed", "specialAttack")},
+    {"Naive", Nature("Naive", "speed", "specialDefense")},
+    {"Modest", Nature("Modest", "specialAttack", "attack")},
+    {"Mild", Nature("Mild", "specialAttack", "defense")},
+    {"Quiet", Nature("Quiet", "specialAttack", "speed")},
+    {"Bashful", Nature("Bashful", "specialAttack", "specialAttack")},
+    {"Rash", Nature("Rash", "specialAttack", "specialDefense")},
+    {"Calm", Nature("Calm", "specialDefense", "attack")},
+    {"Gentle", Nature("Gentle", "specialDefense", "defense")},
+    {"Sassy", Nature("Sassy", "specialDefense", "speed")},
+    {"Careful", Nature("Careful", "specialDefense", "specialAttack")},
+    {"Quirky", Nature("Quirky", "specialDefense", "specialDefense")}
 };
