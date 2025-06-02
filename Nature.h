@@ -7,19 +7,14 @@
 class Nature {
     public:
         std::string name;
-        float attack = 1;
-        float defense = 1;
-        float speed = 1;
-        float specialAttack = 1;
-        float specialDefense = 1;
-        float* stats[5] = { 
-            &attack,
-            &defense,
-            &speed,
-            &specialAttack,
-            &specialDefense
+        std::map<std::string, double> stats = {
+            {"attack", 1},
+            {"defense", 1},
+            {"speed", 1},
+            {"specialAttack", 1},
+            {"specialDefense", 1}
         };
-        Nature(std::string natureInput, int multiplierInput, int divisorInput);
+        Nature(std::string natureInput, std::string multiplierInput, std::string divisorInput);
 };
 
 extern Nature natureArray[25];
