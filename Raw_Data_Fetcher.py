@@ -16,10 +16,14 @@ def main():
 
     dataType = input("What type of data to get? ")
 
-    if dataType in ["pokemon", "pokemon-species"]:
+    if dataType == "pokemon":
         for i in it.chain(range(firstPokemonID, lastPokemonID+1), range(firstVarietyID, lastVarietyID+1)):
             addToFinal(dataType, getPokemonInfo(baseURL + dataType+"/", i))
-
+    
+    elif dataType == "pokemon-species":
+        for i in range(firstPokemonID, lastPokemonID+1):
+            addToFinal(dataType, getPokemonInfo(baseURL + dataType+"/", i))
+    
     if dataType == "evolution-chain":
         with open("Raw_Data/Raw_Pokemon_Data.json", "r") as f:
             rawPokemonData = json.load(f)
