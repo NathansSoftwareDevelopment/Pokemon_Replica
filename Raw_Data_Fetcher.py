@@ -101,7 +101,7 @@ def addToFinal(dataType, inputDictionary):
     if dataType in ["pokemon", "pokemon-species", "move"]:
         outputDictionary[inputDictionary[0]["name"]] = inputDictionary
     if dataType == "evolution-chain":
-        outputDictionary[list(inputDictionary.keys())[0]] = list(inputDictionary.values())[0]
+        outputDictionary[list(inputDictionary.keys())[0].capitalize()] = list(inputDictionary.values())[0].capitalize()
     if dataType == "growth-rate":
         outputDictionary[inputDictionary["name"]] = inputDictionary
 

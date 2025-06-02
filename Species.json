@@ -18,7 +18,7 @@
             "3": "Chlorophyll",
             "2": "None"
         },
-        "evolve": "ivysaur",
+        "evolve": "Ivysaur",
         "growth-rate": "Medium Slow",
         "base-experience": 64,
         "effort-values": {
@@ -123,7 +123,7 @@
             "3": "Chlorophyll",
             "2": "None"
         },
-        "evolve": "venusaur",
+        "evolve": "Venusaur",
         "growth-rate": "Medium Slow",
         "base-experience": 142,
         "effort-values": {
@@ -213,7 +213,7 @@
             "3": "Chlorophyll",
             "2": "None"
         },
-        "evolve": "venusaur",
+        "evolve": "Venusaur",
         "growth-rate": "Medium Slow",
         "base-experience": 263,
         "effort-values": {
@@ -312,7 +312,7 @@
             "3": "Solar-power",
             "2": "None"
         },
-        "evolve": "charmeleon",
+        "evolve": "Charmeleon",
         "growth-rate": "Medium Slow",
         "base-experience": 62,
         "effort-values": {
@@ -420,7 +420,7 @@
             "3": "Solar-power",
             "2": "None"
         },
-        "evolve": "charizard",
+        "evolve": "Charizard",
         "growth-rate": "Medium Slow",
         "base-experience": 142,
         "effort-values": {
@@ -514,7 +514,7 @@
             "3": "Solar-power",
             "2": "None"
         },
-        "evolve": "charizard",
+        "evolve": "Charizard",
         "growth-rate": "Medium Slow",
         "base-experience": 267,
         "effort-values": {
@@ -628,7 +628,7 @@
             "3": "Rain-dish",
             "2": "None"
         },
-        "evolve": "wartortle",
+        "evolve": "Wartortle",
         "growth-rate": "Medium Slow",
         "base-experience": 63,
         "effort-values": {
@@ -734,7 +734,7 @@
             "3": "Rain-dish",
             "2": "None"
         },
-        "evolve": "blastoise",
+        "evolve": "Blastoise",
         "growth-rate": "Medium Slow",
         "base-experience": 142,
         "effort-values": {
@@ -825,7 +825,7 @@
             "3": "Rain-dish",
             "2": "None"
         },
-        "evolve": "blastoise",
+        "evolve": "Blastoise",
         "growth-rate": "Medium Slow",
         "base-experience": 265,
         "effort-values": {
@@ -930,7 +930,7 @@
             "3": "Run-away",
             "2": "None"
         },
-        "evolve": "metapod",
+        "evolve": "Metapod",
         "growth-rate": "Medium Fast",
         "base-experience": 39,
         "effort-values": {
@@ -976,7 +976,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "butterfree",
+        "evolve": "Butterfree",
         "growth-rate": "Medium Fast",
         "base-experience": 72,
         "effort-values": {
@@ -1020,7 +1020,7 @@
             "3": "Tinted-lens",
             "2": "None"
         },
-        "evolve": "butterfree",
+        "evolve": "Butterfree",
         "growth-rate": "Medium Fast",
         "base-experience": 198,
         "effort-values": {
@@ -1115,7 +1115,7 @@
             "3": "Run-away",
             "2": "None"
         },
-        "evolve": "kakuna",
+        "evolve": "Kakuna",
         "growth-rate": "Medium Fast",
         "base-experience": 39,
         "effort-values": {
@@ -1160,7 +1160,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "beedrill",
+        "evolve": "Beedrill",
         "growth-rate": "Medium Fast",
         "base-experience": 72,
         "effort-values": {
@@ -1204,7 +1204,7 @@
             "3": "Sniper",
             "2": "None"
         },
-        "evolve": "beedrill",
+        "evolve": "Beedrill",
         "growth-rate": "Medium Fast",
         "base-experience": 178,
         "effort-values": {
@@ -1298,7 +1298,7 @@
             "2": "Tangled-feet",
             "3": "Big-pecks"
         },
-        "evolve": "pidgeotto",
+        "evolve": "Pidgeotto",
         "growth-rate": "Medium Slow",
         "base-experience": 50,
         "effort-values": {
@@ -1389,7 +1389,7 @@
             "2": "Tangled-feet",
             "3": "Big-pecks"
         },
-        "evolve": "pidgeot",
+        "evolve": "Pidgeot",
         "growth-rate": "Medium Slow",
         "base-experience": 122,
         "effort-values": {
@@ -1470,7 +1470,7 @@
             "2": "Tangled-feet",
             "3": "Big-pecks"
         },
-        "evolve": "pidgeot",
+        "evolve": "Pidgeot",
         "growth-rate": "Medium Slow",
         "base-experience": 216,
         "effort-values": {
@@ -1554,7 +1554,7 @@
             "2": "Guts",
             "3": "Hustle"
         },
-        "evolve": "raticate",
+        "evolve": "Raticate",
         "growth-rate": "Medium Fast",
         "base-experience": 51,
         "effort-values": {
@@ -1662,7 +1662,7 @@
             "2": "Guts",
             "3": "Hustle"
         },
-        "evolve": "raticate",
+        "evolve": "Raticate",
         "growth-rate": "Medium Fast",
         "base-experience": 145,
         "effort-values": {
@@ -1765,7 +1765,7 @@
             "3": "Sniper",
             "2": "None"
         },
-        "evolve": "fearow",
+        "evolve": "Fearow",
         "growth-rate": "Medium Fast",
         "base-experience": 52,
         "effort-values": {
@@ -1859,7 +1859,7 @@
             "3": "Sniper",
             "2": "None"
         },
-        "evolve": "fearow",
+        "evolve": "Fearow",
         "growth-rate": "Medium Fast",
         "base-experience": 155,
         "effort-values": {
@@ -1945,7 +1945,7 @@
             "2": "Shed-skin",
             "3": "Unnerve"
         },
-        "evolve": "arbok",
+        "evolve": "Arbok",
         "growth-rate": "Medium Fast",
         "base-experience": 58,
         "effort-values": {
@@ -2054,7 +2054,7 @@
             "2": "Shed-skin",
             "3": "Unnerve"
         },
-        "evolve": "arbok",
+        "evolve": "Arbok",
         "growth-rate": "Medium Fast",
         "base-experience": 157,
         "effort-values": {
@@ -2157,7 +2157,7 @@
             "3": "Lightning-rod",
             "2": "None"
         },
-        "evolve": "raichu",
+        "evolve": "Raichu",
         "growth-rate": "Medium Fast",
         "base-experience": 112,
         "effort-values": {
@@ -2249,7 +2249,7 @@
             "3": "Lightning-rod",
             "2": "None"
         },
-        "evolve": "raichu",
+        "evolve": "Raichu",
         "growth-rate": "Medium Fast",
         "base-experience": 243,
         "effort-values": {
@@ -2335,7 +2335,7 @@
             "3": "Sand-rush",
             "2": "None"
         },
-        "evolve": "sandslash",
+        "evolve": "Sandslash",
         "growth-rate": "Medium Fast",
         "base-experience": 60,
         "effort-values": {
@@ -2445,7 +2445,7 @@
             "3": "Sand-rush",
             "2": "None"
         },
-        "evolve": "sandslash",
+        "evolve": "Sandslash",
         "growth-rate": "Medium Fast",
         "base-experience": 158,
         "effort-values": {
@@ -2549,7 +2549,7 @@
             "2": "Rivalry",
             "3": "Hustle"
         },
-        "evolve": "nidorina",
+        "evolve": "Nidorina",
         "growth-rate": "Medium Slow",
         "base-experience": 55,
         "effort-values": {
@@ -2651,7 +2651,7 @@
             "2": "Rivalry",
             "3": "Hustle"
         },
-        "evolve": "nidoqueen",
+        "evolve": "Nidoqueen",
         "growth-rate": "Medium Slow",
         "base-experience": 128,
         "effort-values": {
@@ -2740,7 +2740,7 @@
             "2": "Rivalry",
             "3": "Sheer-force"
         },
-        "evolve": "nidoqueen",
+        "evolve": "Nidoqueen",
         "growth-rate": "Medium Slow",
         "base-experience": 253,
         "effort-values": {
@@ -2858,7 +2858,7 @@
             "2": "Rivalry",
             "3": "Hustle"
         },
-        "evolve": "nidorino",
+        "evolve": "Nidorino",
         "growth-rate": "Medium Slow",
         "base-experience": 55,
         "effort-values": {
@@ -2961,7 +2961,7 @@
             "2": "Rivalry",
             "3": "Hustle"
         },
-        "evolve": "nidoking",
+        "evolve": "Nidoking",
         "growth-rate": "Medium Slow",
         "base-experience": 128,
         "effort-values": {
@@ -3050,7 +3050,7 @@
             "2": "Rivalry",
             "3": "Sheer-force"
         },
-        "evolve": "nidoking",
+        "evolve": "Nidoking",
         "growth-rate": "Medium Slow",
         "base-experience": 253,
         "effort-values": {
@@ -3168,7 +3168,7 @@
             "2": "Magic-guard",
             "3": "Friend-guard"
         },
-        "evolve": "clefable",
+        "evolve": "Clefable",
         "growth-rate": "Fast",
         "base-experience": 113,
         "effort-values": {
@@ -3301,7 +3301,7 @@
             "2": "Magic-guard",
             "3": "Unaware"
         },
-        "evolve": "clefable",
+        "evolve": "Clefable",
         "growth-rate": "Fast",
         "base-experience": 242,
         "effort-values": {
@@ -3420,7 +3420,7 @@
             "3": "Drought",
             "2": "None"
         },
-        "evolve": "ninetales",
+        "evolve": "Ninetales",
         "growth-rate": "Medium Fast",
         "base-experience": 60,
         "effort-values": {
@@ -3530,7 +3530,7 @@
             "3": "Drought",
             "2": "None"
         },
-        "evolve": "ninetales",
+        "evolve": "Ninetales",
         "growth-rate": "Medium Fast",
         "base-experience": 177,
         "effort-values": {
@@ -3618,7 +3618,7 @@
             "2": "None",
             "3": "Friend-guard"
         },
-        "evolve": "wigglytuff",
+        "evolve": "Wigglytuff",
         "growth-rate": "Fast",
         "base-experience": 95,
         "effort-values": {
@@ -3737,7 +3737,7 @@
             "2": "None",
             "3": "Frisk"
         },
-        "evolve": "wigglytuff",
+        "evolve": "Wigglytuff",
         "growth-rate": "Fast",
         "base-experience": 218,
         "effort-values": {
@@ -3850,7 +3850,7 @@
             "3": "Infiltrator",
             "2": "None"
         },
-        "evolve": "golbat",
+        "evolve": "Golbat",
         "growth-rate": "Medium Fast",
         "base-experience": 49,
         "effort-values": {
@@ -3954,7 +3954,7 @@
             "3": "Infiltrator",
             "2": "None"
         },
-        "evolve": "crobat",
+        "evolve": "Crobat",
         "growth-rate": "Medium Fast",
         "base-experience": 159,
         "effort-values": {
@@ -4047,7 +4047,7 @@
             "3": "Run-away",
             "2": "None"
         },
-        "evolve": "gloom",
+        "evolve": "Gloom",
         "growth-rate": "Medium Slow",
         "base-experience": 64,
         "effort-values": {
@@ -4140,7 +4140,7 @@
             "3": "Stench",
             "2": "None"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Medium Slow",
         "base-experience": 138,
         "effort-values": {
@@ -4224,7 +4224,7 @@
             "3": "Effect-spore",
             "2": "None"
         },
-        "evolve": "vileplume",
+        "evolve": "Vileplume",
         "growth-rate": "Medium Slow",
         "base-experience": 245,
         "effort-values": {
@@ -4304,7 +4304,7 @@
             "2": "Dry-skin",
             "3": "Damp"
         },
-        "evolve": "parasect",
+        "evolve": "Parasect",
         "growth-rate": "Medium Fast",
         "base-experience": 57,
         "effort-values": {
@@ -4411,7 +4411,7 @@
             "2": "Dry-skin",
             "3": "Damp"
         },
-        "evolve": "parasect",
+        "evolve": "Parasect",
         "growth-rate": "Medium Fast",
         "base-experience": 142,
         "effort-values": {
@@ -4507,7 +4507,7 @@
             "2": "Tinted-lens",
             "3": "Run-away"
         },
-        "evolve": "venomoth",
+        "evolve": "Venomoth",
         "growth-rate": "Medium Fast",
         "base-experience": 61,
         "effort-values": {
@@ -4601,7 +4601,7 @@
             "2": "Tinted-lens",
             "3": "Wonder-skin"
         },
-        "evolve": "venomoth",
+        "evolve": "Venomoth",
         "growth-rate": "Medium Fast",
         "base-experience": 158,
         "effort-values": {
@@ -4695,7 +4695,7 @@
             "2": "Arena-trap",
             "3": "Sand-force"
         },
-        "evolve": "dugtrio",
+        "evolve": "Dugtrio",
         "growth-rate": "Medium Fast",
         "base-experience": 53,
         "effort-values": {
@@ -4796,7 +4796,7 @@
             "2": "Arena-trap",
             "3": "Sand-force"
         },
-        "evolve": "dugtrio",
+        "evolve": "Dugtrio",
         "growth-rate": "Medium Fast",
         "base-experience": 149,
         "effort-values": {
@@ -4890,7 +4890,7 @@
             "2": "Technician",
             "3": "Unnerve"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Medium Fast",
         "base-experience": 58,
         "effort-values": {
@@ -5008,7 +5008,7 @@
             "2": "Technician",
             "3": "Unnerve"
         },
-        "evolve": "persian",
+        "evolve": "Persian",
         "growth-rate": "Medium Fast",
         "base-experience": 154,
         "effort-values": {
@@ -5118,7 +5118,7 @@
             "2": "Cloud-nine",
             "3": "Swift-swim"
         },
-        "evolve": "golduck",
+        "evolve": "Golduck",
         "growth-rate": "Medium Fast",
         "base-experience": 64,
         "effort-values": {
@@ -5235,7 +5235,7 @@
             "2": "Cloud-nine",
             "3": "Swift-swim"
         },
-        "evolve": "golduck",
+        "evolve": "Golduck",
         "growth-rate": "Medium Fast",
         "base-experience": 175,
         "effort-values": {
@@ -5344,7 +5344,7 @@
             "2": "Anger-point",
             "3": "Defiant"
         },
-        "evolve": "primeape",
+        "evolve": "Primeape",
         "growth-rate": "Medium Fast",
         "base-experience": 61,
         "effort-values": {
@@ -5469,7 +5469,7 @@
             "2": "Anger-point",
             "3": "Defiant"
         },
-        "evolve": "annihilape",
+        "evolve": "Annihilape",
         "growth-rate": "Medium Fast",
         "base-experience": 159,
         "effort-values": {
@@ -5586,7 +5586,7 @@
             "2": "Flash-fire",
             "3": "Justified"
         },
-        "evolve": "arcanine",
+        "evolve": "Arcanine",
         "growth-rate": "Slow",
         "base-experience": 70,
         "effort-values": {
@@ -5695,7 +5695,7 @@
             "2": "Flash-fire",
             "3": "Justified"
         },
-        "evolve": "arcanine",
+        "evolve": "Arcanine",
         "growth-rate": "Slow",
         "base-experience": 194,
         "effort-values": {
@@ -5784,7 +5784,7 @@
             "2": "Damp",
             "3": "Swift-swim"
         },
-        "evolve": "poliwhirl",
+        "evolve": "Poliwhirl",
         "growth-rate": "Medium Slow",
         "base-experience": 60,
         "effort-values": {
@@ -5880,7 +5880,7 @@
             "2": "Damp",
             "3": "Swift-swim"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Medium Slow",
         "base-experience": 135,
         "effort-values": {
@@ -5969,7 +5969,7 @@
             "2": "Damp",
             "3": "Swift-swim"
         },
-        "evolve": "poliwrath",
+        "evolve": "Poliwrath",
         "growth-rate": "Medium Slow",
         "base-experience": 255,
         "effort-values": {
@@ -6062,7 +6062,7 @@
             "2": "Inner-focus",
             "3": "Magic-guard"
         },
-        "evolve": "kadabra",
+        "evolve": "Kadabra",
         "growth-rate": "Medium Slow",
         "base-experience": 62,
         "effort-values": {
@@ -6171,7 +6171,7 @@
             "2": "Inner-focus",
             "3": "Magic-guard"
         },
-        "evolve": "alakazam",
+        "evolve": "Alakazam",
         "growth-rate": "Medium Slow",
         "base-experience": 140,
         "effort-values": {
@@ -6283,7 +6283,7 @@
             "2": "Inner-focus",
             "3": "Magic-guard"
         },
-        "evolve": "alakazam",
+        "evolve": "Alakazam",
         "growth-rate": "Medium Slow",
         "base-experience": 250,
         "effort-values": {
@@ -6398,7 +6398,7 @@
             "2": "No-guard",
             "3": "Steadfast"
         },
-        "evolve": "machoke",
+        "evolve": "Machoke",
         "growth-rate": "Medium Slow",
         "base-experience": 61,
         "effort-values": {
@@ -6515,7 +6515,7 @@
             "2": "No-guard",
             "3": "Steadfast"
         },
-        "evolve": "machamp",
+        "evolve": "Machamp",
         "growth-rate": "Medium Slow",
         "base-experience": 142,
         "effort-values": {
@@ -6617,7 +6617,7 @@
             "2": "No-guard",
             "3": "Steadfast"
         },
-        "evolve": "machamp",
+        "evolve": "Machamp",
         "growth-rate": "Medium Slow",
         "base-experience": 253,
         "effort-values": {
@@ -6723,7 +6723,7 @@
             "3": "Gluttony",
             "2": "None"
         },
-        "evolve": "weepinbell",
+        "evolve": "Weepinbell",
         "growth-rate": "Medium Slow",
         "base-experience": 60,
         "effort-values": {
@@ -6823,7 +6823,7 @@
             "3": "Gluttony",
             "2": "None"
         },
-        "evolve": "victreebel",
+        "evolve": "Victreebel",
         "growth-rate": "Medium Slow",
         "base-experience": 137,
         "effort-values": {
@@ -6910,7 +6910,7 @@
             "3": "Gluttony",
             "2": "None"
         },
-        "evolve": "victreebel",
+        "evolve": "Victreebel",
         "growth-rate": "Medium Slow",
         "base-experience": 221,
         "effort-values": {
@@ -6996,7 +6996,7 @@
             "2": "Liquid-ooze",
             "3": "Rain-dish"
         },
-        "evolve": "tentacruel",
+        "evolve": "Tentacruel",
         "growth-rate": "Slow",
         "base-experience": 67,
         "effort-values": {
@@ -7101,7 +7101,7 @@
             "2": "Liquid-ooze",
             "3": "Rain-dish"
         },
-        "evolve": "tentacruel",
+        "evolve": "Tentacruel",
         "growth-rate": "Slow",
         "base-experience": 180,
         "effort-values": {
@@ -7196,7 +7196,7 @@
             "2": "Sturdy",
             "3": "Sand-veil"
         },
-        "evolve": "graveler",
+        "evolve": "Graveler",
         "growth-rate": "Medium Slow",
         "base-experience": 60,
         "effort-values": {
@@ -7303,7 +7303,7 @@
             "2": "Sturdy",
             "3": "Sand-veil"
         },
-        "evolve": "golem",
+        "evolve": "Golem",
         "growth-rate": "Medium Slow",
         "base-experience": 137,
         "effort-values": {
@@ -7400,7 +7400,7 @@
             "2": "Sturdy",
             "3": "Sand-veil"
         },
-        "evolve": "golem",
+        "evolve": "Golem",
         "growth-rate": "Medium Slow",
         "base-experience": 223,
         "effort-values": {
@@ -7503,7 +7503,7 @@
             "2": "Flash-fire",
             "3": "Flame-body"
         },
-        "evolve": "rapidash",
+        "evolve": "Rapidash",
         "growth-rate": "Medium Fast",
         "base-experience": 82,
         "effort-values": {
@@ -7598,7 +7598,7 @@
             "2": "Flash-fire",
             "3": "Flame-body"
         },
-        "evolve": "rapidash",
+        "evolve": "Rapidash",
         "growth-rate": "Medium Fast",
         "base-experience": 175,
         "effort-values": {
@@ -7689,7 +7689,7 @@
             "2": "Own-tempo",
             "3": "Regenerator"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Medium Fast",
         "base-experience": 63,
         "effort-values": {
@@ -7812,7 +7812,7 @@
             "2": "Own-tempo",
             "3": "Regenerator"
         },
-        "evolve": "slowbro",
+        "evolve": "Slowbro",
         "growth-rate": "Medium Fast",
         "base-experience": 172,
         "effort-values": {
@@ -7936,7 +7936,7 @@
             "2": "Sturdy",
             "3": "Analytic"
         },
-        "evolve": "magneton",
+        "evolve": "Magneton",
         "growth-rate": "Medium Fast",
         "base-experience": 65,
         "effort-values": {
@@ -8029,7 +8029,7 @@
             "2": "Sturdy",
             "3": "Analytic"
         },
-        "evolve": "magnezone",
+        "evolve": "Magnezone",
         "growth-rate": "Medium Fast",
         "base-experience": 163,
         "effort-values": {
@@ -8125,7 +8125,7 @@
             "2": "Inner-focus",
             "3": "Defiant"
         },
-        "evolve": "sirfetchd",
+        "evolve": "Sirfetchd",
         "growth-rate": "Medium Fast",
         "base-experience": 132,
         "effort-values": {
@@ -8238,7 +8238,7 @@
             "2": "Early-bird",
             "3": "Tangled-feet"
         },
-        "evolve": "dodrio",
+        "evolve": "Dodrio",
         "growth-rate": "Medium Fast",
         "base-experience": 62,
         "effort-values": {
@@ -8328,7 +8328,7 @@
             "2": "Early-bird",
             "3": "Tangled-feet"
         },
-        "evolve": "dodrio",
+        "evolve": "Dodrio",
         "growth-rate": "Medium Fast",
         "base-experience": 165,
         "effort-values": {
@@ -8414,7 +8414,7 @@
             "2": "Hydration",
             "3": "Ice-body"
         },
-        "evolve": "dewgong",
+        "evolve": "Dewgong",
         "growth-rate": "Medium Fast",
         "base-experience": 65,
         "effort-values": {
@@ -8518,7 +8518,7 @@
             "2": "Hydration",
             "3": "Ice-body"
         },
-        "evolve": "dewgong",
+        "evolve": "Dewgong",
         "growth-rate": "Medium Fast",
         "base-experience": 166,
         "effort-values": {
@@ -8610,7 +8610,7 @@
             "2": "Sticky-hold",
             "3": "Poison-touch"
         },
-        "evolve": "muk",
+        "evolve": "Muk",
         "growth-rate": "Medium Fast",
         "base-experience": 65,
         "effort-values": {
@@ -8721,7 +8721,7 @@
             "2": "Sticky-hold",
             "3": "Poison-touch"
         },
-        "evolve": "muk",
+        "evolve": "Muk",
         "growth-rate": "Medium Fast",
         "base-experience": 175,
         "effort-values": {
@@ -8826,7 +8826,7 @@
             "2": "Skill-link",
             "3": "Overcoat"
         },
-        "evolve": "cloyster",
+        "evolve": "Cloyster",
         "growth-rate": "Slow",
         "base-experience": 61,
         "effort-values": {
@@ -8920,7 +8920,7 @@
             "2": "Skill-link",
             "3": "Overcoat"
         },
-        "evolve": "cloyster",
+        "evolve": "Cloyster",
         "growth-rate": "Slow",
         "base-experience": 184,
         "effort-values": {
@@ -8999,7 +8999,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "haunter",
+        "evolve": "Haunter",
         "growth-rate": "Medium Slow",
         "base-experience": 62,
         "effort-values": {
@@ -9116,7 +9116,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "gengar",
+        "evolve": "Gengar",
         "growth-rate": "Medium Slow",
         "base-experience": 142,
         "effort-values": {
@@ -9224,7 +9224,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "gengar",
+        "evolve": "Gengar",
         "growth-rate": "Medium Slow",
         "base-experience": 250,
         "effort-values": {
@@ -9341,7 +9341,7 @@
             "2": "Sturdy",
             "3": "Weak-armor"
         },
-        "evolve": "steelix",
+        "evolve": "Steelix",
         "growth-rate": "Medium Fast",
         "base-experience": 77,
         "effort-values": {
@@ -9454,7 +9454,7 @@
             "2": "Forewarn",
             "3": "Inner-focus"
         },
-        "evolve": "hypno",
+        "evolve": "Hypno",
         "growth-rate": "Medium Fast",
         "base-experience": 66,
         "effort-values": {
@@ -9574,7 +9574,7 @@
             "2": "Forewarn",
             "3": "Inner-focus"
         },
-        "evolve": "hypno",
+        "evolve": "Hypno",
         "growth-rate": "Medium Fast",
         "base-experience": 169,
         "effort-values": {
@@ -9686,7 +9686,7 @@
             "2": "Shell-armor",
             "3": "Sheer-force"
         },
-        "evolve": "kingler",
+        "evolve": "Kingler",
         "growth-rate": "Medium Fast",
         "base-experience": 65,
         "effort-values": {
@@ -9792,7 +9792,7 @@
             "2": "Shell-armor",
             "3": "Sheer-force"
         },
-        "evolve": "kingler",
+        "evolve": "Kingler",
         "growth-rate": "Medium Fast",
         "base-experience": 166,
         "effort-values": {
@@ -9890,7 +9890,7 @@
             "2": "Static",
             "3": "Aftermath"
         },
-        "evolve": "electrode",
+        "evolve": "Electrode",
         "growth-rate": "Medium Fast",
         "base-experience": 66,
         "effort-values": {
@@ -9977,7 +9977,7 @@
             "2": "Static",
             "3": "Aftermath"
         },
-        "evolve": "electrode",
+        "evolve": "Electrode",
         "growth-rate": "Medium Fast",
         "base-experience": 172,
         "effort-values": {
@@ -10066,7 +10066,7 @@
             "3": "Harvest",
             "2": "None"
         },
-        "evolve": "exeggutor",
+        "evolve": "Exeggutor",
         "growth-rate": "Slow",
         "base-experience": 65,
         "effort-values": {
@@ -10175,7 +10175,7 @@
             "3": "Harvest",
             "2": "None"
         },
-        "evolve": "exeggutor",
+        "evolve": "Exeggutor",
         "growth-rate": "Slow",
         "base-experience": 186,
         "effort-values": {
@@ -10268,7 +10268,7 @@
             "2": "Lightning-rod",
             "3": "Battle-armor"
         },
-        "evolve": "marowak",
+        "evolve": "Marowak",
         "growth-rate": "Medium Fast",
         "base-experience": 64,
         "effort-values": {
@@ -10384,7 +10384,7 @@
             "2": "Lightning-rod",
             "3": "Battle-armor"
         },
-        "evolve": "marowak",
+        "evolve": "Marowak",
         "growth-rate": "Medium Fast",
         "base-experience": 149,
         "effort-values": {
@@ -10494,7 +10494,7 @@
             "2": "Reckless",
             "3": "Unburden"
         },
-        "evolve": "hitmonlee",
+        "evolve": "Hitmonlee",
         "growth-rate": "Medium Fast",
         "base-experience": 159,
         "effort-values": {
@@ -10591,7 +10591,7 @@
             "2": "Iron-fist",
             "3": "Inner-focus"
         },
-        "evolve": "hitmonchan",
+        "evolve": "Hitmonchan",
         "growth-rate": "Medium Fast",
         "base-experience": 159,
         "effort-values": {
@@ -10689,7 +10689,7 @@
             "2": "Oblivious",
             "3": "Cloud-nine"
         },
-        "evolve": "lickilicky",
+        "evolve": "Lickilicky",
         "growth-rate": "Medium Fast",
         "base-experience": 77,
         "effort-values": {
@@ -10812,7 +10812,7 @@
             "2": "Neutralizing-gas",
             "3": "Stench"
         },
-        "evolve": "weezing",
+        "evolve": "Weezing",
         "growth-rate": "Medium Fast",
         "base-experience": 68,
         "effort-values": {
@@ -10915,7 +10915,7 @@
             "2": "Neutralizing-gas",
             "3": "Stench"
         },
-        "evolve": "weezing",
+        "evolve": "Weezing",
         "growth-rate": "Medium Fast",
         "base-experience": 172,
         "effort-values": {
@@ -11008,7 +11008,7 @@
             "2": "Rock-head",
             "3": "Reckless"
         },
-        "evolve": "rhydon",
+        "evolve": "Rhydon",
         "growth-rate": "Slow",
         "base-experience": 69,
         "effort-values": {
@@ -11126,7 +11126,7 @@
             "2": "Rock-head",
             "3": "Reckless"
         },
-        "evolve": "rhyperior",
+        "evolve": "Rhyperior",
         "growth-rate": "Slow",
         "base-experience": 170,
         "effort-values": {
@@ -11246,7 +11246,7 @@
             "2": "Serene-grace",
             "3": "Healer"
         },
-        "evolve": "blissey",
+        "evolve": "Blissey",
         "growth-rate": "Fast",
         "base-experience": 395,
         "effort-values": {
@@ -11384,7 +11384,7 @@
             "2": "Leaf-guard",
             "3": "Regenerator"
         },
-        "evolve": "tangrowth",
+        "evolve": "Tangrowth",
         "growth-rate": "Medium Fast",
         "base-experience": 87,
         "effort-values": {
@@ -11492,7 +11492,7 @@
             "2": "Scrappy",
             "3": "Inner-focus"
         },
-        "evolve": "kangaskhan",
+        "evolve": "Kangaskhan",
         "growth-rate": "Medium Fast",
         "base-experience": 172,
         "effort-values": {
@@ -11624,7 +11624,7 @@
             "2": "Sniper",
             "3": "Damp"
         },
-        "evolve": "seadra",
+        "evolve": "Seadra",
         "growth-rate": "Medium Fast",
         "base-experience": 59,
         "effort-values": {
@@ -11719,7 +11719,7 @@
             "2": "Sniper",
             "3": "Damp"
         },
-        "evolve": "kingdra",
+        "evolve": "Kingdra",
         "growth-rate": "Medium Fast",
         "base-experience": 154,
         "effort-values": {
@@ -11802,7 +11802,7 @@
             "2": "Water-veil",
             "3": "Lightning-rod"
         },
-        "evolve": "seaking",
+        "evolve": "Seaking",
         "growth-rate": "Medium Fast",
         "base-experience": 64,
         "effort-values": {
@@ -11898,7 +11898,7 @@
             "2": "Water-veil",
             "3": "Lightning-rod"
         },
-        "evolve": "seaking",
+        "evolve": "Seaking",
         "growth-rate": "Medium Fast",
         "base-experience": 158,
         "effort-values": {
@@ -11985,7 +11985,7 @@
             "2": "Natural-cure",
             "3": "Analytic"
         },
-        "evolve": "starmie",
+        "evolve": "Starmie",
         "growth-rate": "Slow",
         "base-experience": 68,
         "effort-values": {
@@ -12079,7 +12079,7 @@
             "2": "Natural-cure",
             "3": "Analytic"
         },
-        "evolve": "starmie",
+        "evolve": "Starmie",
         "growth-rate": "Slow",
         "base-experience": 182,
         "effort-values": {
@@ -12172,7 +12172,7 @@
             "2": "Filter",
             "3": "Technician"
         },
-        "evolve": "mr-rime",
+        "evolve": "Mr-rime",
         "growth-rate": "Medium Fast",
         "base-experience": 161,
         "effort-values": {
@@ -12313,7 +12313,7 @@
             "2": "Technician",
             "3": "Steadfast"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Medium Fast",
         "base-experience": 100,
         "effort-values": {
@@ -12417,7 +12417,7 @@
             "2": "Forewarn",
             "3": "Dry-skin"
         },
-        "evolve": "jynx",
+        "evolve": "Jynx",
         "growth-rate": "Medium Fast",
         "base-experience": 159,
         "effort-values": {
@@ -12530,7 +12530,7 @@
             "3": "Vital-spirit",
             "2": "None"
         },
-        "evolve": "electivire",
+        "evolve": "Electivire",
         "growth-rate": "Medium Fast",
         "base-experience": 172,
         "effort-values": {
@@ -12629,7 +12629,7 @@
             "3": "Vital-spirit",
             "2": "None"
         },
-        "evolve": "magmortar",
+        "evolve": "Magmortar",
         "growth-rate": "Medium Fast",
         "base-experience": 173,
         "effort-values": {
@@ -12723,7 +12723,7 @@
             "2": "Mold-breaker",
             "3": "Moxie"
         },
-        "evolve": "pinsir",
+        "evolve": "Pinsir",
         "growth-rate": "Slow",
         "base-experience": 175,
         "effort-values": {
@@ -12832,7 +12832,7 @@
             "2": "Anger-point",
             "3": "Sheer-force"
         },
-        "evolve": "tauros",
+        "evolve": "Tauros",
         "growth-rate": "Slow",
         "base-experience": 172,
         "effort-values": {
@@ -12936,7 +12936,7 @@
             "3": "Rattled",
             "2": "None"
         },
-        "evolve": "gyarados",
+        "evolve": "Gyarados",
         "growth-rate": "Slow",
         "base-experience": 40,
         "effort-values": {
@@ -12980,7 +12980,7 @@
             "3": "Moxie",
             "2": "None"
         },
-        "evolve": "gyarados",
+        "evolve": "Gyarados",
         "growth-rate": "Slow",
         "base-experience": 189,
         "effort-values": {
@@ -13083,7 +13083,7 @@
             "2": "Shell-armor",
             "3": "Hydration"
         },
-        "evolve": "lapras",
+        "evolve": "Lapras",
         "growth-rate": "Slow",
         "base-experience": 187,
         "effort-values": {
@@ -13199,7 +13199,7 @@
             "3": "Imposter",
             "2": "None"
         },
-        "evolve": "ditto",
+        "evolve": "Ditto",
         "growth-rate": "Medium Fast",
         "base-experience": 101,
         "effort-values": {
@@ -13239,7 +13239,7 @@
             "2": "Adaptability",
             "3": "Anticipation"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Medium Fast",
         "base-experience": 65,
         "effort-values": {
@@ -13335,7 +13335,7 @@
             "3": "Hydration",
             "2": "None"
         },
-        "evolve": "vaporeon",
+        "evolve": "Vaporeon",
         "growth-rate": "Medium Fast",
         "base-experience": 184,
         "effort-values": {
@@ -13432,7 +13432,7 @@
             "3": "Quick-feet",
             "2": "None"
         },
-        "evolve": "jolteon",
+        "evolve": "Jolteon",
         "growth-rate": "Medium Fast",
         "base-experience": 184,
         "effort-values": {
@@ -13529,7 +13529,7 @@
             "3": "Guts",
             "2": "None"
         },
-        "evolve": "flareon",
+        "evolve": "Flareon",
         "growth-rate": "Medium Fast",
         "base-experience": 184,
         "effort-values": {
@@ -13624,7 +13624,7 @@
             "2": "Download",
             "3": "Analytic"
         },
-        "evolve": "porygon2",
+        "evolve": "Porygon2",
         "growth-rate": "Medium Fast",
         "base-experience": 79,
         "effort-values": {
@@ -13727,7 +13727,7 @@
             "2": "Shell-armor",
             "3": "Weak-armor"
         },
-        "evolve": "omastar",
+        "evolve": "Omastar",
         "growth-rate": "Medium Fast",
         "base-experience": 71,
         "effort-values": {
@@ -13832,7 +13832,7 @@
             "2": "Shell-armor",
             "3": "Weak-armor"
         },
-        "evolve": "omastar",
+        "evolve": "Omastar",
         "growth-rate": "Medium Fast",
         "base-experience": 173,
         "effort-values": {
@@ -13927,7 +13927,7 @@
             "2": "Battle-armor",
             "3": "Weak-armor"
         },
-        "evolve": "kabutops",
+        "evolve": "Kabutops",
         "growth-rate": "Medium Fast",
         "base-experience": 71,
         "effort-values": {
@@ -14028,7 +14028,7 @@
             "2": "Battle-armor",
             "3": "Weak-armor"
         },
-        "evolve": "kabutops",
+        "evolve": "Kabutops",
         "growth-rate": "Medium Fast",
         "base-experience": 173,
         "effort-values": {
@@ -14132,7 +14132,7 @@
             "2": "Pressure",
             "3": "Unnerve"
         },
-        "evolve": "aerodactyl",
+        "evolve": "Aerodactyl",
         "growth-rate": "Slow",
         "base-experience": 180,
         "effort-values": {
@@ -14251,7 +14251,7 @@
             "2": "Thick-fat",
             "3": "Gluttony"
         },
-        "evolve": "snorlax",
+        "evolve": "Snorlax",
         "growth-rate": "Slow",
         "base-experience": 189,
         "effort-values": {
@@ -14378,7 +14378,7 @@
             "3": "Snow-cloak",
             "2": "None"
         },
-        "evolve": "articuno",
+        "evolve": "Articuno",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -14469,7 +14469,7 @@
             "3": "Lightning-rod",
             "2": "None"
         },
-        "evolve": "zapdos",
+        "evolve": "Zapdos",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -14563,7 +14563,7 @@
             "3": "Flame-body",
             "2": "None"
         },
-        "evolve": "moltres",
+        "evolve": "Moltres",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -14656,7 +14656,7 @@
             "3": "Marvel-scale",
             "2": "None"
         },
-        "evolve": "dragonair",
+        "evolve": "Dragonair",
         "growth-rate": "Slow",
         "base-experience": 60,
         "effort-values": {
@@ -14761,7 +14761,7 @@
             "3": "Marvel-scale",
             "2": "None"
         },
-        "evolve": "dragonite",
+        "evolve": "Dragonite",
         "growth-rate": "Slow",
         "base-experience": 147,
         "effort-values": {
@@ -14854,7 +14854,7 @@
             "3": "Multiscale",
             "2": "None"
         },
-        "evolve": "dragonite",
+        "evolve": "Dragonite",
         "growth-rate": "Slow",
         "base-experience": 300,
         "effort-values": {
@@ -14980,7 +14980,7 @@
             "3": "Unnerve",
             "2": "None"
         },
-        "evolve": "mewtwo",
+        "evolve": "Mewtwo",
         "growth-rate": "Slow",
         "base-experience": 340,
         "effort-values": {
@@ -15120,7 +15120,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "mew",
+        "evolve": "Mew",
         "growth-rate": "Medium Slow",
         "base-experience": 300,
         "effort-values": {
@@ -15335,7 +15335,7 @@
             "3": "Leaf-guard",
             "2": "None"
         },
-        "evolve": "bayleef",
+        "evolve": "Bayleef",
         "growth-rate": "Medium Slow",
         "base-experience": 64,
         "effort-values": {
@@ -15437,7 +15437,7 @@
             "3": "Leaf-guard",
             "2": "None"
         },
-        "evolve": "meganium",
+        "evolve": "Meganium",
         "growth-rate": "Medium Slow",
         "base-experience": 142,
         "effort-values": {
@@ -15526,7 +15526,7 @@
             "3": "Leaf-guard",
             "2": "None"
         },
-        "evolve": "meganium",
+        "evolve": "Meganium",
         "growth-rate": "Medium Slow",
         "base-experience": 236,
         "effort-values": {
@@ -15623,7 +15623,7 @@
             "3": "Flash-fire",
             "2": "None"
         },
-        "evolve": "quilava",
+        "evolve": "Quilava",
         "growth-rate": "Medium Slow",
         "base-experience": 62,
         "effort-values": {
@@ -15722,7 +15722,7 @@
             "3": "Flash-fire",
             "2": "None"
         },
-        "evolve": "typhlosion",
+        "evolve": "Typhlosion",
         "growth-rate": "Medium Slow",
         "base-experience": 142,
         "effort-values": {
@@ -15810,7 +15810,7 @@
             "3": "Flash-fire",
             "2": "None"
         },
-        "evolve": "typhlosion",
+        "evolve": "Typhlosion",
         "growth-rate": "Medium Slow",
         "base-experience": 240,
         "effort-values": {
@@ -15914,7 +15914,7 @@
             "3": "Sheer-force",
             "2": "None"
         },
-        "evolve": "croconaw",
+        "evolve": "Croconaw",
         "growth-rate": "Medium Slow",
         "base-experience": 63,
         "effort-values": {
@@ -16028,7 +16028,7 @@
             "3": "Sheer-force",
             "2": "None"
         },
-        "evolve": "feraligatr",
+        "evolve": "Feraligatr",
         "growth-rate": "Medium Slow",
         "base-experience": 142,
         "effort-values": {
@@ -16131,7 +16131,7 @@
             "3": "Sheer-force",
             "2": "None"
         },
-        "evolve": "feraligatr",
+        "evolve": "Feraligatr",
         "growth-rate": "Medium Slow",
         "base-experience": 239,
         "effort-values": {
@@ -16244,7 +16244,7 @@
             "2": "Keen-eye",
             "3": "Frisk"
         },
-        "evolve": "furret",
+        "evolve": "Furret",
         "growth-rate": "Medium Fast",
         "base-experience": 43,
         "effort-values": {
@@ -16360,7 +16360,7 @@
             "2": "Keen-eye",
             "3": "Frisk"
         },
-        "evolve": "furret",
+        "evolve": "Furret",
         "growth-rate": "Medium Fast",
         "base-experience": 145,
         "effort-values": {
@@ -16470,7 +16470,7 @@
             "2": "Keen-eye",
             "3": "Tinted-lens"
         },
-        "evolve": "noctowl",
+        "evolve": "Noctowl",
         "growth-rate": "Medium Fast",
         "base-experience": 52,
         "effort-values": {
@@ -16574,7 +16574,7 @@
             "2": "Keen-eye",
             "3": "Tinted-lens"
         },
-        "evolve": "noctowl",
+        "evolve": "Noctowl",
         "growth-rate": "Medium Fast",
         "base-experience": 158,
         "effort-values": {
@@ -16670,7 +16670,7 @@
             "2": "Early-bird",
             "3": "Rattled"
         },
-        "evolve": "ledian",
+        "evolve": "Ledian",
         "growth-rate": "Fast",
         "base-experience": 53,
         "effort-values": {
@@ -16774,7 +16774,7 @@
             "2": "Early-bird",
             "3": "Iron-fist"
         },
-        "evolve": "ledian",
+        "evolve": "Ledian",
         "growth-rate": "Fast",
         "base-experience": 137,
         "effort-values": {
@@ -16871,7 +16871,7 @@
             "2": "Insomnia",
             "3": "Sniper"
         },
-        "evolve": "ariados",
+        "evolve": "Ariados",
         "growth-rate": "Fast",
         "base-experience": 50,
         "effort-values": {
@@ -16970,7 +16970,7 @@
             "2": "Insomnia",
             "3": "Sniper"
         },
-        "evolve": "ariados",
+        "evolve": "Ariados",
         "growth-rate": "Fast",
         "base-experience": 140,
         "effort-values": {
@@ -17060,7 +17060,7 @@
             "3": "Infiltrator",
             "2": "None"
         },
-        "evolve": "crobat",
+        "evolve": "Crobat",
         "growth-rate": "Medium Fast",
         "base-experience": 268,
         "effort-values": {
@@ -17157,7 +17157,7 @@
             "2": "Illuminate",
             "3": "Water-absorb"
         },
-        "evolve": "lanturn",
+        "evolve": "Lanturn",
         "growth-rate": "Slow",
         "base-experience": 66,
         "effort-values": {
@@ -17257,7 +17257,7 @@
             "2": "Illuminate",
             "3": "Water-absorb"
         },
-        "evolve": "lanturn",
+        "evolve": "Lanturn",
         "growth-rate": "Slow",
         "base-experience": 161,
         "effort-values": {
@@ -17352,7 +17352,7 @@
             "3": "Lightning-rod",
             "2": "None"
         },
-        "evolve": "pikachu",
+        "evolve": "Pikachu",
         "growth-rate": "Medium Fast",
         "base-experience": 41,
         "effort-values": {
@@ -17448,7 +17448,7 @@
             "2": "Magic-guard",
             "3": "Friend-guard"
         },
-        "evolve": "clefairy",
+        "evolve": "Clefairy",
         "growth-rate": "Fast",
         "base-experience": 44,
         "effort-values": {
@@ -17562,7 +17562,7 @@
             "2": "None",
             "3": "Friend-guard"
         },
-        "evolve": "jigglypuff",
+        "evolve": "Jigglypuff",
         "growth-rate": "Fast",
         "base-experience": 42,
         "effort-values": {
@@ -17670,7 +17670,7 @@
             "2": "Serene-grace",
             "3": "Super-luck"
         },
-        "evolve": "togetic",
+        "evolve": "Togetic",
         "growth-rate": "Fast",
         "base-experience": 49,
         "effort-values": {
@@ -17786,7 +17786,7 @@
             "2": "Serene-grace",
             "3": "Super-luck"
         },
-        "evolve": "togekiss",
+        "evolve": "Togekiss",
         "growth-rate": "Fast",
         "base-experience": 142,
         "effort-values": {
@@ -17899,7 +17899,7 @@
             "2": "Early-bird",
             "3": "Magic-bounce"
         },
-        "evolve": "xatu",
+        "evolve": "Xatu",
         "growth-rate": "Medium Fast",
         "base-experience": 64,
         "effort-values": {
@@ -18015,7 +18015,7 @@
             "2": "Early-bird",
             "3": "Magic-bounce"
         },
-        "evolve": "xatu",
+        "evolve": "Xatu",
         "growth-rate": "Medium Fast",
         "base-experience": 165,
         "effort-values": {
@@ -18124,7 +18124,7 @@
             "3": "Plus",
             "2": "None"
         },
-        "evolve": "flaaffy",
+        "evolve": "Flaaffy",
         "growth-rate": "Medium Slow",
         "base-experience": 56,
         "effort-values": {
@@ -18220,7 +18220,7 @@
             "3": "Plus",
             "2": "None"
         },
-        "evolve": "ampharos",
+        "evolve": "Ampharos",
         "growth-rate": "Medium Slow",
         "base-experience": 128,
         "effort-values": {
@@ -18312,7 +18312,7 @@
             "3": "Plus",
             "2": "None"
         },
-        "evolve": "ampharos",
+        "evolve": "Ampharos",
         "growth-rate": "Medium Slow",
         "base-experience": 230,
         "effort-values": {
@@ -18411,7 +18411,7 @@
             "3": "Healer",
             "2": "None"
         },
-        "evolve": "bellossom",
+        "evolve": "Bellossom",
         "growth-rate": "Medium Slow",
         "base-experience": 245,
         "effort-values": {
@@ -18494,7 +18494,7 @@
             "2": "Huge-power",
             "3": "Sap-sipper"
         },
-        "evolve": "azumarill",
+        "evolve": "Azumarill",
         "growth-rate": "Fast",
         "base-experience": 88,
         "effort-values": {
@@ -18603,7 +18603,7 @@
             "2": "Huge-power",
             "3": "Sap-sipper"
         },
-        "evolve": "azumarill",
+        "evolve": "Azumarill",
         "growth-rate": "Fast",
         "base-experience": 210,
         "effort-values": {
@@ -18703,7 +18703,7 @@
             "2": "Rock-head",
             "3": "Rattled"
         },
-        "evolve": "sudowoodo",
+        "evolve": "Sudowoodo",
         "growth-rate": "Medium Fast",
         "base-experience": 144,
         "effort-values": {
@@ -18816,7 +18816,7 @@
             "2": "Damp",
             "3": "Drizzle"
         },
-        "evolve": "politoed",
+        "evolve": "Politoed",
         "growth-rate": "Medium Slow",
         "base-experience": 250,
         "effort-values": {
@@ -18906,7 +18906,7 @@
             "2": "Leaf-guard",
             "3": "Infiltrator"
         },
-        "evolve": "skiploom",
+        "evolve": "Skiploom",
         "growth-rate": "Medium Slow",
         "base-experience": 50,
         "effort-values": {
@@ -19007,7 +19007,7 @@
             "2": "Leaf-guard",
             "3": "Infiltrator"
         },
-        "evolve": "jumpluff",
+        "evolve": "Jumpluff",
         "growth-rate": "Medium Slow",
         "base-experience": 119,
         "effort-values": {
@@ -19097,7 +19097,7 @@
             "2": "Leaf-guard",
             "3": "Infiltrator"
         },
-        "evolve": "jumpluff",
+        "evolve": "Jumpluff",
         "growth-rate": "Medium Slow",
         "base-experience": 207,
         "effort-values": {
@@ -19189,7 +19189,7 @@
             "2": "Pickup",
             "3": "Skill-link"
         },
-        "evolve": "ambipom",
+        "evolve": "Ambipom",
         "growth-rate": "Fast",
         "base-experience": 72,
         "effort-values": {
@@ -19314,7 +19314,7 @@
             "2": "Solar-power",
             "3": "Early-bird"
         },
-        "evolve": "sunflora",
+        "evolve": "Sunflora",
         "growth-rate": "Medium Slow",
         "base-experience": 36,
         "effort-values": {
@@ -19417,7 +19417,7 @@
             "2": "Solar-power",
             "3": "Early-bird"
         },
-        "evolve": "sunflora",
+        "evolve": "Sunflora",
         "growth-rate": "Medium Slow",
         "base-experience": 149,
         "effort-values": {
@@ -19510,7 +19510,7 @@
             "2": "Compound-eyes",
             "3": "Frisk"
         },
-        "evolve": "yanmega",
+        "evolve": "Yanmega",
         "growth-rate": "Medium Fast",
         "base-experience": 78,
         "effort-values": {
@@ -19607,7 +19607,7 @@
             "2": "Water-absorb",
             "3": "Unaware"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Medium Fast",
         "base-experience": 42,
         "effort-values": {
@@ -19713,7 +19713,7 @@
             "2": "Water-absorb",
             "3": "Unaware"
         },
-        "evolve": "quagsire",
+        "evolve": "Quagsire",
         "growth-rate": "Medium Fast",
         "base-experience": 151,
         "effort-values": {
@@ -19814,7 +19814,7 @@
             "3": "Magic-bounce",
             "2": "None"
         },
-        "evolve": "espeon",
+        "evolve": "Espeon",
         "growth-rate": "Medium Fast",
         "base-experience": 184,
         "effort-values": {
@@ -19916,7 +19916,7 @@
             "3": "Inner-focus",
             "2": "None"
         },
-        "evolve": "umbreon",
+        "evolve": "Umbreon",
         "growth-rate": "Medium Fast",
         "base-experience": 184,
         "effort-values": {
@@ -20014,7 +20014,7 @@
             "2": "Super-luck",
             "3": "Prankster"
         },
-        "evolve": "honchkrow",
+        "evolve": "Honchkrow",
         "growth-rate": "Medium Slow",
         "base-experience": 81,
         "effort-values": {
@@ -20127,7 +20127,7 @@
             "2": "Own-tempo",
             "3": "Regenerator"
         },
-        "evolve": "slowking",
+        "evolve": "Slowking",
         "growth-rate": "Medium Fast",
         "base-experience": 172,
         "effort-values": {
@@ -20253,7 +20253,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "mismagius",
+        "evolve": "Mismagius",
         "growth-rate": "Fast",
         "base-experience": 87,
         "effort-values": {
@@ -20371,7 +20371,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "unown",
+        "evolve": "Unown",
         "growth-rate": "Medium Fast",
         "base-experience": 118,
         "effort-values": {
@@ -20411,7 +20411,7 @@
             "3": "Telepathy",
             "2": "None"
         },
-        "evolve": "wobbuffet",
+        "evolve": "Wobbuffet",
         "growth-rate": "Medium Fast",
         "base-experience": 142,
         "effort-values": {
@@ -20454,7 +20454,7 @@
             "2": "Early-bird",
             "3": "Sap-sipper"
         },
-        "evolve": "farigiraf",
+        "evolve": "Farigiraf",
         "growth-rate": "Medium Fast",
         "base-experience": 159,
         "effort-values": {
@@ -20577,7 +20577,7 @@
             "3": "Overcoat",
             "2": "None"
         },
-        "evolve": "forretress",
+        "evolve": "Forretress",
         "growth-rate": "Medium Fast",
         "base-experience": 58,
         "effort-values": {
@@ -20682,7 +20682,7 @@
             "3": "Overcoat",
             "2": "None"
         },
-        "evolve": "forretress",
+        "evolve": "Forretress",
         "growth-rate": "Medium Fast",
         "base-experience": 163,
         "effort-values": {
@@ -20789,7 +20789,7 @@
             "2": "Run-away",
             "3": "Rattled"
         },
-        "evolve": "dudunsparce",
+        "evolve": "Dudunsparce",
         "growth-rate": "Medium Fast",
         "base-experience": 145,
         "effort-values": {
@@ -20916,7 +20916,7 @@
             "2": "Sand-veil",
             "3": "Immunity"
         },
-        "evolve": "gliscor",
+        "evolve": "Gliscor",
         "growth-rate": "Medium Slow",
         "base-experience": 86,
         "effort-values": {
@@ -21040,7 +21040,7 @@
             "2": "Sturdy",
             "3": "Sheer-force"
         },
-        "evolve": "steelix",
+        "evolve": "Steelix",
         "growth-rate": "Medium Fast",
         "base-experience": 179,
         "effort-values": {
@@ -21153,7 +21153,7 @@
             "2": "Run-away",
             "3": "Rattled"
         },
-        "evolve": "granbull",
+        "evolve": "Granbull",
         "growth-rate": "Fast",
         "base-experience": 60,
         "effort-values": {
@@ -21278,7 +21278,7 @@
             "2": "Quick-feet",
             "3": "Rattled"
         },
-        "evolve": "granbull",
+        "evolve": "Granbull",
         "growth-rate": "Fast",
         "base-experience": 158,
         "effort-values": {
@@ -21397,7 +21397,7 @@
             "2": "Swift-swim",
             "3": "Intimidate"
         },
-        "evolve": "overqwil",
+        "evolve": "Overqwil",
         "growth-rate": "Medium Fast",
         "base-experience": 88,
         "effort-values": {
@@ -21504,7 +21504,7 @@
             "2": "Technician",
             "3": "Light-metal"
         },
-        "evolve": "scizor",
+        "evolve": "Scizor",
         "growth-rate": "Medium Fast",
         "base-experience": 175,
         "effort-values": {
@@ -21606,7 +21606,7 @@
             "2": "Gluttony",
             "3": "Contrary"
         },
-        "evolve": "shuckle",
+        "evolve": "Shuckle",
         "growth-rate": "Medium Slow",
         "base-experience": 177,
         "effort-values": {
@@ -21716,7 +21716,7 @@
             "2": "Guts",
             "3": "Moxie"
         },
-        "evolve": "heracross",
+        "evolve": "Heracross",
         "growth-rate": "Slow",
         "base-experience": 175,
         "effort-values": {
@@ -21828,7 +21828,7 @@
             "2": "Keen-eye",
             "3": "Pickpocket"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Medium Slow",
         "base-experience": 86,
         "effort-values": {
@@ -21955,7 +21955,7 @@
             "2": "Quick-feet",
             "3": "Honey-gather"
         },
-        "evolve": "ursaring",
+        "evolve": "Ursaring",
         "growth-rate": "Medium Fast",
         "base-experience": 66,
         "effort-values": {
@@ -22072,7 +22072,7 @@
             "2": "Quick-feet",
             "3": "Unnerve"
         },
-        "evolve": "ursaluna",
+        "evolve": "Ursaluna",
         "growth-rate": "Medium Fast",
         "base-experience": 175,
         "effort-values": {
@@ -22181,7 +22181,7 @@
             "2": "Flame-body",
             "3": "Weak-armor"
         },
-        "evolve": "magcargo",
+        "evolve": "Magcargo",
         "growth-rate": "Medium Fast",
         "base-experience": 50,
         "effort-values": {
@@ -22279,7 +22279,7 @@
             "2": "Flame-body",
             "3": "Weak-armor"
         },
-        "evolve": "magcargo",
+        "evolve": "Magcargo",
         "growth-rate": "Medium Fast",
         "base-experience": 151,
         "effort-values": {
@@ -22379,7 +22379,7 @@
             "2": "Snow-cloak",
             "3": "Thick-fat"
         },
-        "evolve": "piloswine",
+        "evolve": "Piloswine",
         "growth-rate": "Slow",
         "base-experience": 50,
         "effort-values": {
@@ -22482,7 +22482,7 @@
             "2": "Snow-cloak",
             "3": "Thick-fat"
         },
-        "evolve": "mamoswine",
+        "evolve": "Mamoswine",
         "growth-rate": "Slow",
         "base-experience": 158,
         "effort-values": {
@@ -22577,7 +22577,7 @@
             "2": "Natural-cure",
             "3": "Regenerator"
         },
-        "evolve": "cursola",
+        "evolve": "Cursola",
         "growth-rate": "Fast",
         "base-experience": 144,
         "effort-values": {
@@ -22693,7 +22693,7 @@
             "2": "Sniper",
             "3": "Moody"
         },
-        "evolve": "octillery",
+        "evolve": "Octillery",
         "growth-rate": "Medium Fast",
         "base-experience": 60,
         "effort-values": {
@@ -22797,7 +22797,7 @@
             "2": "Sniper",
             "3": "Moody"
         },
-        "evolve": "octillery",
+        "evolve": "Octillery",
         "growth-rate": "Medium Fast",
         "base-experience": 168,
         "effort-values": {
@@ -22897,7 +22897,7 @@
             "2": "Hustle",
             "3": "Insomnia"
         },
-        "evolve": "delibird",
+        "evolve": "Delibird",
         "growth-rate": "Fast",
         "base-experience": 116,
         "effort-values": {
@@ -22983,7 +22983,7 @@
             "2": "Water-absorb",
             "3": "Water-veil"
         },
-        "evolve": "mantine",
+        "evolve": "Mantine",
         "growth-rate": "Slow",
         "base-experience": 170,
         "effort-values": {
@@ -23092,7 +23092,7 @@
             "2": "Sturdy",
             "3": "Weak-armor"
         },
-        "evolve": "skarmory",
+        "evolve": "Skarmory",
         "growth-rate": "Slow",
         "base-experience": 163,
         "effort-values": {
@@ -23200,7 +23200,7 @@
             "2": "Flash-fire",
             "3": "Unnerve"
         },
-        "evolve": "houndoom",
+        "evolve": "Houndoom",
         "growth-rate": "Slow",
         "base-experience": 66,
         "effort-values": {
@@ -23315,7 +23315,7 @@
             "2": "Flash-fire",
             "3": "Unnerve"
         },
-        "evolve": "houndoom",
+        "evolve": "Houndoom",
         "growth-rate": "Slow",
         "base-experience": 175,
         "effort-values": {
@@ -23420,7 +23420,7 @@
             "2": "Sniper",
             "3": "Damp"
         },
-        "evolve": "kingdra",
+        "evolve": "Kingdra",
         "growth-rate": "Medium Fast",
         "base-experience": 270,
         "effort-values": {
@@ -23507,7 +23507,7 @@
             "3": "Sand-veil",
             "2": "None"
         },
-        "evolve": "donphan",
+        "evolve": "Donphan",
         "growth-rate": "Medium Fast",
         "base-experience": 66,
         "effort-values": {
@@ -23607,7 +23607,7 @@
             "3": "Sand-veil",
             "2": "None"
         },
-        "evolve": "donphan",
+        "evolve": "Donphan",
         "growth-rate": "Medium Fast",
         "base-experience": 175,
         "effort-values": {
@@ -23707,7 +23707,7 @@
             "2": "Download",
             "3": "Analytic"
         },
-        "evolve": "porygon-z",
+        "evolve": "Porygon-z",
         "growth-rate": "Medium Fast",
         "base-experience": 180,
         "effort-values": {
@@ -23811,7 +23811,7 @@
             "2": "Frisk",
             "3": "Sap-sipper"
         },
-        "evolve": "wyrdeer",
+        "evolve": "Wyrdeer",
         "growth-rate": "Slow",
         "base-experience": 163,
         "effort-values": {
@@ -23930,7 +23930,7 @@
             "2": "Technician",
             "3": "Moody"
         },
-        "evolve": "smeargle",
+        "evolve": "Smeargle",
         "growth-rate": "Fast",
         "base-experience": 88,
         "effort-values": {
@@ -23970,7 +23970,7 @@
             "2": "Steadfast",
             "3": "Vital-spirit"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Medium Fast",
         "base-experience": 42,
         "effort-values": {
@@ -24059,7 +24059,7 @@
             "2": "Technician",
             "3": "Steadfast"
         },
-        "evolve": "hitmontop",
+        "evolve": "Hitmontop",
         "growth-rate": "Medium Fast",
         "base-experience": 159,
         "effort-values": {
@@ -24154,7 +24154,7 @@
             "2": "Forewarn",
             "3": "Hydration"
         },
-        "evolve": "jynx",
+        "evolve": "Jynx",
         "growth-rate": "Medium Fast",
         "base-experience": 61,
         "effort-values": {
@@ -24267,7 +24267,7 @@
             "3": "Vital-spirit",
             "2": "None"
         },
-        "evolve": "electabuzz",
+        "evolve": "Electabuzz",
         "growth-rate": "Medium Fast",
         "base-experience": 72,
         "effort-values": {
@@ -24373,7 +24373,7 @@
             "3": "Vital-spirit",
             "2": "None"
         },
-        "evolve": "magmar",
+        "evolve": "Magmar",
         "growth-rate": "Medium Fast",
         "base-experience": 73,
         "effort-values": {
@@ -24475,7 +24475,7 @@
             "2": "Scrappy",
             "3": "Sap-sipper"
         },
-        "evolve": "miltank",
+        "evolve": "Miltank",
         "growth-rate": "Slow",
         "base-experience": 172,
         "effort-values": {
@@ -24596,7 +24596,7 @@
             "2": "Serene-grace",
             "3": "Healer"
         },
-        "evolve": "blissey",
+        "evolve": "Blissey",
         "growth-rate": "Fast",
         "base-experience": 635,
         "effort-values": {
@@ -24725,7 +24725,7 @@
             "3": "Inner-focus",
             "2": "None"
         },
-        "evolve": "raikou",
+        "evolve": "Raikou",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -24822,7 +24822,7 @@
             "3": "Inner-focus",
             "2": "None"
         },
-        "evolve": "entei",
+        "evolve": "Entei",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -24919,7 +24919,7 @@
             "3": "Inner-focus",
             "2": "None"
         },
-        "evolve": "suicune",
+        "evolve": "Suicune",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -25015,7 +25015,7 @@
             "3": "Sand-veil",
             "2": "None"
         },
-        "evolve": "pupitar",
+        "evolve": "Pupitar",
         "growth-rate": "Slow",
         "base-experience": 60,
         "effort-values": {
@@ -25126,7 +25126,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "tyranitar",
+        "evolve": "Tyranitar",
         "growth-rate": "Slow",
         "base-experience": 144,
         "effort-values": {
@@ -25224,7 +25224,7 @@
             "3": "Unnerve",
             "2": "None"
         },
-        "evolve": "tyranitar",
+        "evolve": "Tyranitar",
         "growth-rate": "Slow",
         "base-experience": 300,
         "effort-values": {
@@ -25354,7 +25354,7 @@
             "3": "Multiscale",
             "2": "None"
         },
-        "evolve": "lugia",
+        "evolve": "Lugia",
         "growth-rate": "Slow",
         "base-experience": 340,
         "effort-values": {
@@ -25476,7 +25476,7 @@
             "3": "Regenerator",
             "2": "None"
         },
-        "evolve": "ho-oh",
+        "evolve": "Ho-oh",
         "growth-rate": "Slow",
         "base-experience": 340,
         "effort-values": {
@@ -25591,7 +25591,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "celebi",
+        "evolve": "Celebi",
         "growth-rate": "Medium Slow",
         "base-experience": 300,
         "effort-values": {
@@ -25702,7 +25702,7 @@
             "3": "Unburden",
             "2": "None"
         },
-        "evolve": "grovyle",
+        "evolve": "Grovyle",
         "growth-rate": "Medium Slow",
         "base-experience": 62,
         "effort-values": {
@@ -25812,7 +25812,7 @@
             "3": "Unburden",
             "2": "None"
         },
-        "evolve": "sceptile",
+        "evolve": "Sceptile",
         "growth-rate": "Medium Slow",
         "base-experience": 142,
         "effort-values": {
@@ -25910,7 +25910,7 @@
             "3": "Unburden",
             "2": "None"
         },
-        "evolve": "sceptile",
+        "evolve": "Sceptile",
         "growth-rate": "Medium Slow",
         "base-experience": 265,
         "effort-values": {
@@ -26020,7 +26020,7 @@
             "3": "Speed-boost",
             "2": "None"
         },
-        "evolve": "combusken",
+        "evolve": "Combusken",
         "growth-rate": "Medium Slow",
         "base-experience": 62,
         "effort-values": {
@@ -26125,7 +26125,7 @@
             "3": "Speed-boost",
             "2": "None"
         },
-        "evolve": "blaziken",
+        "evolve": "Blaziken",
         "growth-rate": "Medium Slow",
         "base-experience": 142,
         "effort-values": {
@@ -26227,7 +26227,7 @@
             "3": "Speed-boost",
             "2": "None"
         },
-        "evolve": "blaziken",
+        "evolve": "Blaziken",
         "growth-rate": "Medium Slow",
         "base-experience": 265,
         "effort-values": {
@@ -26344,7 +26344,7 @@
             "3": "Damp",
             "2": "None"
         },
-        "evolve": "marshtomp",
+        "evolve": "Marshtomp",
         "growth-rate": "Medium Slow",
         "base-experience": 62,
         "effort-values": {
@@ -26451,7 +26451,7 @@
             "3": "Damp",
             "2": "None"
         },
-        "evolve": "swampert",
+        "evolve": "Swampert",
         "growth-rate": "Medium Slow",
         "base-experience": 142,
         "effort-values": {
@@ -26548,7 +26548,7 @@
             "3": "Damp",
             "2": "None"
         },
-        "evolve": "swampert",
+        "evolve": "Swampert",
         "growth-rate": "Medium Slow",
         "base-experience": 268,
         "effort-values": {
@@ -26653,7 +26653,7 @@
             "2": "Quick-feet",
             "3": "Rattled"
         },
-        "evolve": "mightyena",
+        "evolve": "Mightyena",
         "growth-rate": "Medium Fast",
         "base-experience": 56,
         "effort-values": {
@@ -26758,7 +26758,7 @@
             "2": "Quick-feet",
             "3": "Moxie"
         },
-        "evolve": "mightyena",
+        "evolve": "Mightyena",
         "growth-rate": "Medium Fast",
         "base-experience": 147,
         "effort-values": {
@@ -26853,7 +26853,7 @@
             "2": "Gluttony",
             "3": "Quick-feet"
         },
-        "evolve": "linoone",
+        "evolve": "Linoone",
         "growth-rate": "Medium Fast",
         "base-experience": 56,
         "effort-values": {
@@ -26962,7 +26962,7 @@
             "2": "Gluttony",
             "3": "Quick-feet"
         },
-        "evolve": "obstagoon",
+        "evolve": "Obstagoon",
         "growth-rate": "Medium Fast",
         "base-experience": 147,
         "effort-values": {
@@ -27067,7 +27067,7 @@
             "3": "Run-away",
             "2": "None"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Medium Fast",
         "base-experience": 56,
         "effort-values": {
@@ -27114,7 +27114,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "beautifly",
+        "evolve": "Beautifly",
         "growth-rate": "Medium Fast",
         "base-experience": 72,
         "effort-values": {
@@ -27158,7 +27158,7 @@
             "3": "Rivalry",
             "2": "None"
         },
-        "evolve": "beautifly",
+        "evolve": "Beautifly",
         "growth-rate": "Medium Fast",
         "base-experience": 178,
         "effort-values": {
@@ -27245,7 +27245,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "cascoon",
+        "evolve": "Cascoon",
         "growth-rate": "Medium Fast",
         "base-experience": 72,
         "effort-values": {
@@ -27289,7 +27289,7 @@
             "3": "Compound-eyes",
             "2": "None"
         },
-        "evolve": "dustox",
+        "evolve": "Dustox",
         "growth-rate": "Medium Fast",
         "base-experience": 173,
         "effort-values": {
@@ -27377,7 +27377,7 @@
             "2": "Rain-dish",
             "3": "Own-tempo"
         },
-        "evolve": "lombre",
+        "evolve": "Lombre",
         "growth-rate": "Medium Slow",
         "base-experience": 44,
         "effort-values": {
@@ -27474,7 +27474,7 @@
             "2": "Rain-dish",
             "3": "Own-tempo"
         },
-        "evolve": "ludicolo",
+        "evolve": "Ludicolo",
         "growth-rate": "Medium Slow",
         "base-experience": 119,
         "effort-values": {
@@ -27572,7 +27572,7 @@
             "2": "Rain-dish",
             "3": "Own-tempo"
         },
-        "evolve": "ludicolo",
+        "evolve": "Ludicolo",
         "growth-rate": "Medium Slow",
         "base-experience": 240,
         "effort-values": {
@@ -27666,7 +27666,7 @@
             "2": "Early-bird",
             "3": "Pickpocket"
         },
-        "evolve": "nuzleaf",
+        "evolve": "Nuzleaf",
         "growth-rate": "Medium Slow",
         "base-experience": 44,
         "effort-values": {
@@ -27759,7 +27759,7 @@
             "2": "Early-bird",
             "3": "Pickpocket"
         },
-        "evolve": "shiftry",
+        "evolve": "Shiftry",
         "growth-rate": "Medium Slow",
         "base-experience": 119,
         "effort-values": {
@@ -27859,7 +27859,7 @@
             "2": "Wind-rider",
             "3": "Pickpocket"
         },
-        "evolve": "shiftry",
+        "evolve": "Shiftry",
         "growth-rate": "Medium Slow",
         "base-experience": 240,
         "effort-values": {
@@ -27962,7 +27962,7 @@
             "3": "Scrappy",
             "2": "None"
         },
-        "evolve": "swellow",
+        "evolve": "Swellow",
         "growth-rate": "Medium Slow",
         "base-experience": 54,
         "effort-values": {
@@ -28052,7 +28052,7 @@
             "3": "Scrappy",
             "2": "None"
         },
-        "evolve": "swellow",
+        "evolve": "Swellow",
         "growth-rate": "Medium Slow",
         "base-experience": 159,
         "effort-values": {
@@ -28134,7 +28134,7 @@
             "2": "Hydration",
             "3": "Rain-dish"
         },
-        "evolve": "pelipper",
+        "evolve": "Pelipper",
         "growth-rate": "Medium Fast",
         "base-experience": 54,
         "effort-values": {
@@ -28229,7 +28229,7 @@
             "2": "Drizzle",
             "3": "Rain-dish"
         },
-        "evolve": "pelipper",
+        "evolve": "Pelipper",
         "growth-rate": "Medium Fast",
         "base-experience": 154,
         "effort-values": {
@@ -28328,7 +28328,7 @@
             "2": "Trace",
             "3": "Telepathy"
         },
-        "evolve": "kirlia",
+        "evolve": "Kirlia",
         "growth-rate": "Slow",
         "base-experience": 40,
         "effort-values": {
@@ -28450,7 +28450,7 @@
             "2": "Trace",
             "3": "Telepathy"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Slow",
         "base-experience": 97,
         "effort-values": {
@@ -28561,7 +28561,7 @@
             "2": "Trace",
             "3": "Telepathy"
         },
-        "evolve": "gardevoir",
+        "evolve": "Gardevoir",
         "growth-rate": "Slow",
         "base-experience": 259,
         "effort-values": {
@@ -28678,7 +28678,7 @@
             "3": "Rain-dish",
             "2": "None"
         },
-        "evolve": "masquerain",
+        "evolve": "Masquerain",
         "growth-rate": "Medium Fast",
         "base-experience": 54,
         "effort-values": {
@@ -28767,7 +28767,7 @@
             "3": "Unnerve",
             "2": "None"
         },
-        "evolve": "masquerain",
+        "evolve": "Masquerain",
         "growth-rate": "Medium Fast",
         "base-experience": 159,
         "effort-values": {
@@ -28857,7 +28857,7 @@
             "2": "Poison-heal",
             "3": "Quick-feet"
         },
-        "evolve": "breloom",
+        "evolve": "Breloom",
         "growth-rate": "Fluctuating",
         "base-experience": 59,
         "effort-values": {
@@ -28952,7 +28952,7 @@
             "2": "Poison-heal",
             "3": "Technician"
         },
-        "evolve": "breloom",
+        "evolve": "Breloom",
         "growth-rate": "Fluctuating",
         "base-experience": 161,
         "effort-values": {
@@ -29055,7 +29055,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "vigoroth",
+        "evolve": "Vigoroth",
         "growth-rate": "Slow",
         "base-experience": 56,
         "effort-values": {
@@ -29163,7 +29163,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "slaking",
+        "evolve": "Slaking",
         "growth-rate": "Slow",
         "base-experience": 154,
         "effort-values": {
@@ -29267,7 +29267,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "slaking",
+        "evolve": "Slaking",
         "growth-rate": "Slow",
         "base-experience": 252,
         "effort-values": {
@@ -29379,7 +29379,7 @@
             "3": "Run-away",
             "2": "None"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Erratic",
         "base-experience": 53,
         "effort-values": {
@@ -29467,7 +29467,7 @@
             "3": "Infiltrator",
             "2": "None"
         },
-        "evolve": "ninjask",
+        "evolve": "Ninjask",
         "growth-rate": "Erratic",
         "base-experience": 160,
         "effort-values": {
@@ -29559,7 +29559,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "shedinja",
+        "evolve": "Shedinja",
         "growth-rate": "Erratic",
         "base-experience": 83,
         "effort-values": {
@@ -29648,7 +29648,7 @@
             "3": "Rattled",
             "2": "None"
         },
-        "evolve": "loudred",
+        "evolve": "Loudred",
         "growth-rate": "Medium Slow",
         "base-experience": 48,
         "effort-values": {
@@ -29747,7 +29747,7 @@
             "3": "Scrappy",
             "2": "None"
         },
-        "evolve": "exploud",
+        "evolve": "Exploud",
         "growth-rate": "Medium Slow",
         "base-experience": 126,
         "effort-values": {
@@ -29849,7 +29849,7 @@
             "3": "Scrappy",
             "2": "None"
         },
-        "evolve": "exploud",
+        "evolve": "Exploud",
         "growth-rate": "Medium Slow",
         "base-experience": 245,
         "effort-values": {
@@ -29961,7 +29961,7 @@
             "2": "Guts",
             "3": "Sheer-force"
         },
-        "evolve": "hariyama",
+        "evolve": "Hariyama",
         "growth-rate": "Fluctuating",
         "base-experience": 47,
         "effort-values": {
@@ -30075,7 +30075,7 @@
             "2": "Guts",
             "3": "Sheer-force"
         },
-        "evolve": "hariyama",
+        "evolve": "Hariyama",
         "growth-rate": "Fluctuating",
         "base-experience": 166,
         "effort-values": {
@@ -30180,7 +30180,7 @@
             "2": "Huge-power",
             "3": "Sap-sipper"
         },
-        "evolve": "marill",
+        "evolve": "Marill",
         "growth-rate": "Fast",
         "base-experience": 38,
         "effort-values": {
@@ -30273,7 +30273,7 @@
             "2": "Magnet-pull",
             "3": "Sand-force"
         },
-        "evolve": "probopass",
+        "evolve": "Probopass",
         "growth-rate": "Medium Fast",
         "base-experience": 75,
         "effort-values": {
@@ -30380,7 +30380,7 @@
             "2": "Normalize",
             "3": "Wonder-skin"
         },
-        "evolve": "delcatty",
+        "evolve": "Delcatty",
         "growth-rate": "Fast",
         "base-experience": 52,
         "effort-values": {
@@ -30497,7 +30497,7 @@
             "2": "Normalize",
             "3": "Wonder-skin"
         },
-        "evolve": "delcatty",
+        "evolve": "Delcatty",
         "growth-rate": "Fast",
         "base-experience": 140,
         "effort-values": {
@@ -30591,7 +30591,7 @@
             "2": "Stall",
             "3": "Prankster"
         },
-        "evolve": "sableye",
+        "evolve": "Sableye",
         "growth-rate": "Medium Slow",
         "base-experience": 133,
         "effort-values": {
@@ -30722,7 +30722,7 @@
             "2": "Intimidate",
             "3": "Sheer-force"
         },
-        "evolve": "mawile",
+        "evolve": "Mawile",
         "growth-rate": "Fast",
         "base-experience": 133,
         "effort-values": {
@@ -30848,7 +30848,7 @@
             "2": "Rock-head",
             "3": "Heavy-metal"
         },
-        "evolve": "lairon",
+        "evolve": "Lairon",
         "growth-rate": "Slow",
         "base-experience": 66,
         "effort-values": {
@@ -30957,7 +30957,7 @@
             "2": "Rock-head",
             "3": "Heavy-metal"
         },
-        "evolve": "aggron",
+        "evolve": "Aggron",
         "growth-rate": "Slow",
         "base-experience": 151,
         "effort-values": {
@@ -31055,7 +31055,7 @@
             "2": "Rock-head",
             "3": "Heavy-metal"
         },
-        "evolve": "aggron",
+        "evolve": "Aggron",
         "growth-rate": "Slow",
         "base-experience": 265,
         "effort-values": {
@@ -31184,7 +31184,7 @@
             "3": "Telepathy",
             "2": "None"
         },
-        "evolve": "medicham",
+        "evolve": "Medicham",
         "growth-rate": "Medium Fast",
         "base-experience": 56,
         "effort-values": {
@@ -31307,7 +31307,7 @@
             "3": "Telepathy",
             "2": "None"
         },
-        "evolve": "medicham",
+        "evolve": "Medicham",
         "growth-rate": "Medium Fast",
         "base-experience": 144,
         "effort-values": {
@@ -31422,7 +31422,7 @@
             "2": "Lightning-rod",
             "3": "Minus"
         },
-        "evolve": "manectric",
+        "evolve": "Manectric",
         "growth-rate": "Slow",
         "base-experience": 59,
         "effort-values": {
@@ -31523,7 +31523,7 @@
             "2": "Lightning-rod",
             "3": "Minus"
         },
-        "evolve": "manectric",
+        "evolve": "Manectric",
         "growth-rate": "Slow",
         "base-experience": 166,
         "effort-values": {
@@ -31614,7 +31614,7 @@
             "3": "None",
             "2": "None"
         },
-        "evolve": "plusle",
+        "evolve": "Plusle",
         "growth-rate": "Medium Fast",
         "base-experience": 142,
         "effort-values": {
@@ -31711,7 +31711,7 @@
             "3": "None",
             "2": "None"
         },
-        "evolve": "minun",
+        "evolve": "Minun",
         "growth-rate": "Medium Fast",
         "base-experience": 142,
         "effort-values": {
@@ -31809,7 +31809,7 @@
             "2": "Swarm",
             "3": "Prankster"
         },
-        "evolve": "volbeat",
+        "evolve": "Volbeat",
         "growth-rate": "Erratic",
         "base-experience": 151,
         "effort-values": {
@@ -31913,7 +31913,7 @@
             "2": "Tinted-lens",
             "3": "Prankster"
         },
-        "evolve": "illumise",
+        "evolve": "Illumise",
         "growth-rate": "Fluctuating",
         "base-experience": 151,
         "effort-values": {
@@ -32016,7 +32016,7 @@
             "2": "Poison-point",
             "3": "Leaf-guard"
         },
-        "evolve": "roserade",
+        "evolve": "Roserade",
         "growth-rate": "Medium Slow",
         "base-experience": 140,
         "effort-values": {
@@ -32118,7 +32118,7 @@
             "2": "Sticky-hold",
             "3": "Gluttony"
         },
-        "evolve": "swalot",
+        "evolve": "Swalot",
         "growth-rate": "Fluctuating",
         "base-experience": 60,
         "effort-values": {
@@ -32217,7 +32217,7 @@
             "2": "Sticky-hold",
             "3": "Gluttony"
         },
-        "evolve": "swalot",
+        "evolve": "Swalot",
         "growth-rate": "Fluctuating",
         "base-experience": 163,
         "effort-values": {
@@ -32314,7 +32314,7 @@
             "3": "Speed-boost",
             "2": "None"
         },
-        "evolve": "sharpedo",
+        "evolve": "Sharpedo",
         "growth-rate": "Slow",
         "base-experience": 61,
         "effort-values": {
@@ -32410,7 +32410,7 @@
             "3": "Speed-boost",
             "2": "None"
         },
-        "evolve": "sharpedo",
+        "evolve": "Sharpedo",
         "growth-rate": "Slow",
         "base-experience": 161,
         "effort-values": {
@@ -32512,7 +32512,7 @@
             "2": "Oblivious",
             "3": "Pressure"
         },
-        "evolve": "wailord",
+        "evolve": "Wailord",
         "growth-rate": "Fluctuating",
         "base-experience": 80,
         "effort-values": {
@@ -32615,7 +32615,7 @@
             "2": "Oblivious",
             "3": "Pressure"
         },
-        "evolve": "wailord",
+        "evolve": "Wailord",
         "growth-rate": "Fluctuating",
         "base-experience": 175,
         "effort-values": {
@@ -32709,7 +32709,7 @@
             "2": "Simple",
             "3": "Own-tempo"
         },
-        "evolve": "camerupt",
+        "evolve": "Camerupt",
         "growth-rate": "Medium Fast",
         "base-experience": 61,
         "effort-values": {
@@ -32816,7 +32816,7 @@
             "2": "Solid-rock",
             "3": "Anger-point"
         },
-        "evolve": "camerupt",
+        "evolve": "Camerupt",
         "growth-rate": "Medium Fast",
         "base-experience": 161,
         "effort-values": {
@@ -32916,7 +32916,7 @@
             "2": "Drought",
             "3": "Shell-armor"
         },
-        "evolve": "torkoal",
+        "evolve": "Torkoal",
         "growth-rate": "Medium Fast",
         "base-experience": 165,
         "effort-values": {
@@ -33023,7 +33023,7 @@
             "2": "Own-tempo",
             "3": "Gluttony"
         },
-        "evolve": "grumpig",
+        "evolve": "Grumpig",
         "growth-rate": "Fast",
         "base-experience": 66,
         "effort-values": {
@@ -33137,7 +33137,7 @@
             "2": "Own-tempo",
             "3": "Gluttony"
         },
-        "evolve": "grumpig",
+        "evolve": "Grumpig",
         "growth-rate": "Fast",
         "base-experience": 165,
         "effort-values": {
@@ -33251,7 +33251,7 @@
             "2": "Tangled-feet",
             "3": "Contrary"
         },
-        "evolve": "spinda",
+        "evolve": "Spinda",
         "growth-rate": "Fast",
         "base-experience": 126,
         "effort-values": {
@@ -33372,7 +33372,7 @@
             "2": "Arena-trap",
             "3": "Sheer-force"
         },
-        "evolve": "vibrava",
+        "evolve": "Vibrava",
         "growth-rate": "Medium Slow",
         "base-experience": 58,
         "effort-values": {
@@ -33472,7 +33472,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "flygon",
+        "evolve": "Flygon",
         "growth-rate": "Medium Slow",
         "base-experience": 119,
         "effort-values": {
@@ -33566,7 +33566,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "flygon",
+        "evolve": "Flygon",
         "growth-rate": "Medium Slow",
         "base-experience": 260,
         "effort-values": {
@@ -33674,7 +33674,7 @@
             "3": "Water-absorb",
             "2": "None"
         },
-        "evolve": "cacturne",
+        "evolve": "Cacturne",
         "growth-rate": "Medium Slow",
         "base-experience": 67,
         "effort-values": {
@@ -33784,7 +33784,7 @@
             "3": "Water-absorb",
             "2": "None"
         },
-        "evolve": "cacturne",
+        "evolve": "Cacturne",
         "growth-rate": "Medium Slow",
         "base-experience": 166,
         "effort-values": {
@@ -33888,7 +33888,7 @@
             "3": "Cloud-nine",
             "2": "None"
         },
-        "evolve": "altaria",
+        "evolve": "Altaria",
         "growth-rate": "Erratic",
         "base-experience": 62,
         "effort-values": {
@@ -33989,7 +33989,7 @@
             "3": "Cloud-nine",
             "2": "None"
         },
-        "evolve": "altaria",
+        "evolve": "Altaria",
         "growth-rate": "Erratic",
         "base-experience": 172,
         "effort-values": {
@@ -34097,7 +34097,7 @@
             "3": "Toxic-boost",
             "2": "None"
         },
-        "evolve": "zangoose",
+        "evolve": "Zangoose",
         "growth-rate": "Erratic",
         "base-experience": 160,
         "effort-values": {
@@ -34224,7 +34224,7 @@
             "3": "Infiltrator",
             "2": "None"
         },
-        "evolve": "seviper",
+        "evolve": "Seviper",
         "growth-rate": "Fluctuating",
         "base-experience": 160,
         "effort-values": {
@@ -34334,7 +34334,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "lunatone",
+        "evolve": "Lunatone",
         "growth-rate": "Fast",
         "base-experience": 161,
         "effort-values": {
@@ -34448,7 +34448,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "solrock",
+        "evolve": "Solrock",
         "growth-rate": "Fast",
         "base-experience": 161,
         "effort-values": {
@@ -34567,7 +34567,7 @@
             "2": "Anticipation",
             "3": "Hydration"
         },
-        "evolve": "whiscash",
+        "evolve": "Whiscash",
         "growth-rate": "Medium Fast",
         "base-experience": 58,
         "effort-values": {
@@ -34663,7 +34663,7 @@
             "2": "Anticipation",
             "3": "Hydration"
         },
-        "evolve": "whiscash",
+        "evolve": "Whiscash",
         "growth-rate": "Medium Fast",
         "base-experience": 164,
         "effort-values": {
@@ -34757,7 +34757,7 @@
             "2": "Shell-armor",
             "3": "Adaptability"
         },
-        "evolve": "crawdaunt",
+        "evolve": "Crawdaunt",
         "growth-rate": "Fluctuating",
         "base-experience": 62,
         "effort-values": {
@@ -34866,7 +34866,7 @@
             "2": "Shell-armor",
             "3": "Adaptability"
         },
-        "evolve": "crawdaunt",
+        "evolve": "Crawdaunt",
         "growth-rate": "Fluctuating",
         "base-experience": 164,
         "effort-values": {
@@ -34971,7 +34971,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "claydol",
+        "evolve": "Claydol",
         "growth-rate": "Medium Fast",
         "base-experience": 60,
         "effort-values": {
@@ -35082,7 +35082,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "claydol",
+        "evolve": "Claydol",
         "growth-rate": "Medium Fast",
         "base-experience": 175,
         "effort-values": {
@@ -35200,7 +35200,7 @@
             "3": "Storm-drain",
             "2": "None"
         },
-        "evolve": "cradily",
+        "evolve": "Cradily",
         "growth-rate": "Erratic",
         "base-experience": 71,
         "effort-values": {
@@ -35299,7 +35299,7 @@
             "3": "Storm-drain",
             "2": "None"
         },
-        "evolve": "cradily",
+        "evolve": "Cradily",
         "growth-rate": "Erratic",
         "base-experience": 173,
         "effort-values": {
@@ -35397,7 +35397,7 @@
             "3": "Swift-swim",
             "2": "None"
         },
-        "evolve": "armaldo",
+        "evolve": "Armaldo",
         "growth-rate": "Erratic",
         "base-experience": 71,
         "effort-values": {
@@ -35494,7 +35494,7 @@
             "3": "Swift-swim",
             "2": "None"
         },
-        "evolve": "armaldo",
+        "evolve": "Armaldo",
         "growth-rate": "Erratic",
         "base-experience": 173,
         "effort-values": {
@@ -35594,7 +35594,7 @@
             "2": "None",
             "3": "Adaptability"
         },
-        "evolve": "milotic",
+        "evolve": "Milotic",
         "growth-rate": "Erratic",
         "base-experience": 40,
         "effort-values": {
@@ -35677,7 +35677,7 @@
             "2": "None",
             "3": "Cute-charm"
         },
-        "evolve": "milotic",
+        "evolve": "Milotic",
         "growth-rate": "Erratic",
         "base-experience": 189,
         "effort-values": {
@@ -35768,7 +35768,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "castform",
+        "evolve": "Castform",
         "growth-rate": "Medium Fast",
         "base-experience": 147,
         "effort-values": {
@@ -35867,7 +35867,7 @@
             "3": "None",
             "2": "None"
         },
-        "evolve": "kecleon",
+        "evolve": "Kecleon",
         "growth-rate": "Medium Slow",
         "base-experience": 154,
         "effort-values": {
@@ -36003,7 +36003,7 @@
             "2": "Frisk",
             "3": "Cursed-body"
         },
-        "evolve": "banette",
+        "evolve": "Banette",
         "growth-rate": "Fast",
         "base-experience": 59,
         "effort-values": {
@@ -36115,7 +36115,7 @@
             "2": "Frisk",
             "3": "Cursed-body"
         },
-        "evolve": "banette",
+        "evolve": "Banette",
         "growth-rate": "Fast",
         "base-experience": 159,
         "effort-values": {
@@ -36220,7 +36220,7 @@
             "3": "None",
             "2": "None"
         },
-        "evolve": "dusclops",
+        "evolve": "Dusclops",
         "growth-rate": "Fast",
         "base-experience": 59,
         "effort-values": {
@@ -36328,7 +36328,7 @@
             "3": "None",
             "2": "None"
         },
-        "evolve": "dusknoir",
+        "evolve": "Dusknoir",
         "growth-rate": "Fast",
         "base-experience": 159,
         "effort-values": {
@@ -36445,7 +36445,7 @@
             "2": "Solar-power",
             "3": "Harvest"
         },
-        "evolve": "tropius",
+        "evolve": "Tropius",
         "growth-rate": "Slow",
         "base-experience": 161,
         "effort-values": {
@@ -36554,7 +36554,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "chimecho",
+        "evolve": "Chimecho",
         "growth-rate": "Fast",
         "base-experience": 159,
         "effort-values": {
@@ -36669,7 +36669,7 @@
             "2": "Super-luck",
             "3": "Justified"
         },
-        "evolve": "absol",
+        "evolve": "Absol",
         "growth-rate": "Medium Slow",
         "base-experience": 163,
         "effort-values": {
@@ -36809,7 +36809,7 @@
             "3": "Telepathy",
             "2": "None"
         },
-        "evolve": "wobbuffet",
+        "evolve": "Wobbuffet",
         "growth-rate": "Medium Fast",
         "base-experience": 52,
         "effort-values": {
@@ -36855,7 +36855,7 @@
             "2": "Ice-body",
             "3": "Moody"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Medium Fast",
         "base-experience": 60,
         "effort-values": {
@@ -36944,7 +36944,7 @@
             "2": "Ice-body",
             "3": "Moody"
         },
-        "evolve": "glalie",
+        "evolve": "Glalie",
         "growth-rate": "Medium Fast",
         "base-experience": 168,
         "effort-values": {
@@ -37037,7 +37037,7 @@
             "2": "Ice-body",
             "3": "Oblivious"
         },
-        "evolve": "sealeo",
+        "evolve": "Sealeo",
         "growth-rate": "Medium Slow",
         "base-experience": 58,
         "effort-values": {
@@ -37138,7 +37138,7 @@
             "2": "Ice-body",
             "3": "Oblivious"
         },
-        "evolve": "walrein",
+        "evolve": "Walrein",
         "growth-rate": "Medium Slow",
         "base-experience": 144,
         "effort-values": {
@@ -37227,7 +37227,7 @@
             "2": "Ice-body",
             "3": "Oblivious"
         },
-        "evolve": "walrein",
+        "evolve": "Walrein",
         "growth-rate": "Medium Slow",
         "base-experience": 265,
         "effort-values": {
@@ -37322,7 +37322,7 @@
             "3": "Rattled",
             "2": "None"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Erratic",
         "base-experience": 69,
         "effort-values": {
@@ -37404,7 +37404,7 @@
             "3": "Water-veil",
             "2": "None"
         },
-        "evolve": "huntail",
+        "evolve": "Huntail",
         "growth-rate": "Erratic",
         "base-experience": 170,
         "effort-values": {
@@ -37488,7 +37488,7 @@
             "3": "Hydration",
             "2": "None"
         },
-        "evolve": "gorebyss",
+        "evolve": "Gorebyss",
         "growth-rate": "Erratic",
         "base-experience": 170,
         "effort-values": {
@@ -37574,7 +37574,7 @@
             "2": "Rock-head",
             "3": "Sturdy"
         },
-        "evolve": "relicanth",
+        "evolve": "Relicanth",
         "growth-rate": "Slow",
         "base-experience": 170,
         "effort-values": {
@@ -37683,7 +37683,7 @@
             "3": "Hydration",
             "2": "None"
         },
-        "evolve": "luvdisc",
+        "evolve": "Luvdisc",
         "growth-rate": "Fast",
         "base-experience": 116,
         "effort-values": {
@@ -37774,7 +37774,7 @@
             "3": "Sheer-force",
             "2": "None"
         },
-        "evolve": "shelgon",
+        "evolve": "Shelgon",
         "growth-rate": "Slow",
         "base-experience": 60,
         "effort-values": {
@@ -37873,7 +37873,7 @@
             "3": "Overcoat",
             "2": "None"
         },
-        "evolve": "salamence",
+        "evolve": "Salamence",
         "growth-rate": "Slow",
         "base-experience": 147,
         "effort-values": {
@@ -37963,7 +37963,7 @@
             "3": "Moxie",
             "2": "None"
         },
-        "evolve": "salamence",
+        "evolve": "Salamence",
         "growth-rate": "Slow",
         "base-experience": 300,
         "effort-values": {
@@ -38068,7 +38068,7 @@
             "3": "Light-metal",
             "2": "None"
         },
-        "evolve": "metang",
+        "evolve": "Metang",
         "growth-rate": "Slow",
         "base-experience": 60,
         "effort-values": {
@@ -38112,7 +38112,7 @@
             "3": "Light-metal",
             "2": "None"
         },
-        "evolve": "metagross",
+        "evolve": "Metagross",
         "growth-rate": "Slow",
         "base-experience": 147,
         "effort-values": {
@@ -38219,7 +38219,7 @@
             "3": "Light-metal",
             "2": "None"
         },
-        "evolve": "metagross",
+        "evolve": "Metagross",
         "growth-rate": "Slow",
         "base-experience": 300,
         "effort-values": {
@@ -38329,7 +38329,7 @@
             "3": "Sturdy",
             "2": "None"
         },
-        "evolve": "regirock",
+        "evolve": "Regirock",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -38431,7 +38431,7 @@
             "3": "Ice-body",
             "2": "None"
         },
-        "evolve": "regice",
+        "evolve": "Regice",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -38531,7 +38531,7 @@
             "3": "Light-metal",
             "2": "None"
         },
-        "evolve": "registeel",
+        "evolve": "Registeel",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -38635,7 +38635,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "latias",
+        "evolve": "Latias",
         "growth-rate": "Slow",
         "base-experience": 300,
         "effort-values": {
@@ -38759,7 +38759,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "latios",
+        "evolve": "Latios",
         "growth-rate": "Slow",
         "base-experience": 300,
         "effort-values": {
@@ -38881,7 +38881,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "kyogre",
+        "evolve": "Kyogre",
         "growth-rate": "Slow",
         "base-experience": 335,
         "effort-values": {
@@ -38978,7 +38978,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "groudon",
+        "evolve": "Groudon",
         "growth-rate": "Slow",
         "base-experience": 335,
         "effort-values": {
@@ -39090,7 +39090,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "rayquaza",
+        "evolve": "Rayquaza",
         "growth-rate": "Slow",
         "base-experience": 340,
         "effort-values": {
@@ -39211,7 +39211,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "jirachi",
+        "evolve": "Jirachi",
         "growth-rate": "Slow",
         "base-experience": 300,
         "effort-values": {
@@ -39326,7 +39326,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "deoxys-normal",
+        "evolve": "Deoxys-normal",
         "growth-rate": "Slow",
         "base-experience": 270,
         "effort-values": {
@@ -39452,7 +39452,7 @@
             "3": "Shell-armor",
             "2": "None"
         },
-        "evolve": "grotle",
+        "evolve": "Grotle",
         "growth-rate": "Medium Slow",
         "base-experience": 64,
         "effort-values": {
@@ -39556,7 +39556,7 @@
             "3": "Shell-armor",
             "2": "None"
         },
-        "evolve": "torterra",
+        "evolve": "Torterra",
         "growth-rate": "Medium Slow",
         "base-experience": 142,
         "effort-values": {
@@ -39644,7 +39644,7 @@
             "3": "Shell-armor",
             "2": "None"
         },
-        "evolve": "torterra",
+        "evolve": "Torterra",
         "growth-rate": "Medium Slow",
         "base-experience": 236,
         "effort-values": {
@@ -39748,7 +39748,7 @@
             "3": "Iron-fist",
             "2": "None"
         },
-        "evolve": "monferno",
+        "evolve": "Monferno",
         "growth-rate": "Medium Slow",
         "base-experience": 62,
         "effort-values": {
@@ -39868,7 +39868,7 @@
             "3": "Iron-fist",
             "2": "None"
         },
-        "evolve": "infernape",
+        "evolve": "Infernape",
         "growth-rate": "Medium Slow",
         "base-experience": 142,
         "effort-values": {
@@ -39980,7 +39980,7 @@
             "3": "Iron-fist",
             "2": "None"
         },
-        "evolve": "infernape",
+        "evolve": "Infernape",
         "growth-rate": "Medium Slow",
         "base-experience": 240,
         "effort-values": {
@@ -40101,7 +40101,7 @@
             "3": "Competitive",
             "2": "None"
         },
-        "evolve": "prinplup",
+        "evolve": "Prinplup",
         "growth-rate": "Medium Slow",
         "base-experience": 63,
         "effort-values": {
@@ -40206,7 +40206,7 @@
             "3": "Competitive",
             "2": "None"
         },
-        "evolve": "empoleon",
+        "evolve": "Empoleon",
         "growth-rate": "Medium Slow",
         "base-experience": 142,
         "effort-values": {
@@ -40302,7 +40302,7 @@
             "3": "Competitive",
             "2": "None"
         },
-        "evolve": "empoleon",
+        "evolve": "Empoleon",
         "growth-rate": "Medium Slow",
         "base-experience": 239,
         "effort-values": {
@@ -40410,7 +40410,7 @@
             "3": "None",
             "2": "None"
         },
-        "evolve": "staravia",
+        "evolve": "Staravia",
         "growth-rate": "Medium Slow",
         "base-experience": 49,
         "effort-values": {
@@ -40503,7 +40503,7 @@
             "3": "Reckless",
             "2": "None"
         },
-        "evolve": "staraptor",
+        "evolve": "Staraptor",
         "growth-rate": "Medium Slow",
         "base-experience": 119,
         "effort-values": {
@@ -40584,7 +40584,7 @@
             "3": "Reckless",
             "2": "None"
         },
-        "evolve": "staraptor",
+        "evolve": "Staraptor",
         "growth-rate": "Medium Slow",
         "base-experience": 218,
         "effort-values": {
@@ -40669,7 +40669,7 @@
             "2": "Unaware",
             "3": "Moody"
         },
-        "evolve": "bibarel",
+        "evolve": "Bibarel",
         "growth-rate": "Medium Fast",
         "base-experience": 50,
         "effort-values": {
@@ -40776,7 +40776,7 @@
             "2": "Unaware",
             "3": "Moody"
         },
-        "evolve": "bibarel",
+        "evolve": "Bibarel",
         "growth-rate": "Medium Fast",
         "base-experience": 144,
         "effort-values": {
@@ -40880,7 +40880,7 @@
             "3": "Run-away",
             "2": "None"
         },
-        "evolve": "kricketune",
+        "evolve": "Kricketune",
         "growth-rate": "Medium Slow",
         "base-experience": 39,
         "effort-values": {
@@ -40928,7 +40928,7 @@
             "3": "Technician",
             "2": "None"
         },
-        "evolve": "kricketune",
+        "evolve": "Kricketune",
         "growth-rate": "Medium Slow",
         "base-experience": 134,
         "effort-values": {
@@ -41019,7 +41019,7 @@
             "2": "Intimidate",
             "3": "Guts"
         },
-        "evolve": "luxio",
+        "evolve": "Luxio",
         "growth-rate": "Medium Slow",
         "base-experience": 53,
         "effort-values": {
@@ -41115,7 +41115,7 @@
             "2": "Intimidate",
             "3": "Guts"
         },
-        "evolve": "luxray",
+        "evolve": "Luxray",
         "growth-rate": "Medium Slow",
         "base-experience": 127,
         "effort-values": {
@@ -41198,7 +41198,7 @@
             "2": "Intimidate",
             "3": "Guts"
         },
-        "evolve": "luxray",
+        "evolve": "Luxray",
         "growth-rate": "Medium Slow",
         "base-experience": 262,
         "effort-values": {
@@ -41284,7 +41284,7 @@
             "2": "Poison-point",
             "3": "Leaf-guard"
         },
-        "evolve": "roselia",
+        "evolve": "Roselia",
         "growth-rate": "Medium Slow",
         "base-experience": 56,
         "effort-values": {
@@ -41377,7 +41377,7 @@
             "2": "Poison-point",
             "3": "Technician"
         },
-        "evolve": "roserade",
+        "evolve": "Roserade",
         "growth-rate": "Medium Slow",
         "base-experience": 258,
         "effort-values": {
@@ -41457,7 +41457,7 @@
             "3": "Sheer-force",
             "2": "None"
         },
-        "evolve": "rampardos",
+        "evolve": "Rampardos",
         "growth-rate": "Erratic",
         "base-experience": 70,
         "effort-values": {
@@ -41573,7 +41573,7 @@
             "3": "Sheer-force",
             "2": "None"
         },
-        "evolve": "rampardos",
+        "evolve": "Rampardos",
         "growth-rate": "Erratic",
         "base-experience": 173,
         "effort-values": {
@@ -41687,7 +41687,7 @@
             "3": "Soundproof",
             "2": "None"
         },
-        "evolve": "bastiodon",
+        "evolve": "Bastiodon",
         "growth-rate": "Erratic",
         "base-experience": 70,
         "effort-values": {
@@ -41797,7 +41797,7 @@
             "3": "Soundproof",
             "2": "None"
         },
-        "evolve": "bastiodon",
+        "evolve": "Bastiodon",
         "growth-rate": "Erratic",
         "base-experience": 173,
         "effort-values": {
@@ -41900,7 +41900,7 @@
             "3": "Overcoat",
             "2": "None"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Medium Fast",
         "base-experience": 45,
         "effort-values": {
@@ -41947,7 +41947,7 @@
             "3": "Overcoat",
             "2": "None"
         },
-        "evolve": "wormadam-plant",
+        "evolve": "Wormadam-plant",
         "growth-rate": "Medium Fast",
         "base-experience": 148,
         "effort-values": {
@@ -42041,7 +42041,7 @@
             "3": "Tinted-lens",
             "2": "None"
         },
-        "evolve": "mothim",
+        "evolve": "Mothim",
         "growth-rate": "Medium Fast",
         "base-experience": 148,
         "effort-values": {
@@ -42135,7 +42135,7 @@
             "3": "Hustle",
             "2": "None"
         },
-        "evolve": "vespiquen",
+        "evolve": "Vespiquen",
         "growth-rate": "Medium Slow",
         "base-experience": 49,
         "effort-values": {
@@ -42183,7 +42183,7 @@
             "3": "Unnerve",
             "2": "None"
         },
-        "evolve": "vespiquen",
+        "evolve": "Vespiquen",
         "growth-rate": "Medium Slow",
         "base-experience": 166,
         "effort-values": {
@@ -42277,7 +42277,7 @@
             "2": "Pickup",
             "3": "Volt-absorb"
         },
-        "evolve": "pachirisu",
+        "evolve": "Pachirisu",
         "growth-rate": "Medium Fast",
         "base-experience": 142,
         "effort-values": {
@@ -42383,7 +42383,7 @@
             "3": "Water-veil",
             "2": "None"
         },
-        "evolve": "floatzel",
+        "evolve": "Floatzel",
         "growth-rate": "Medium Fast",
         "base-experience": 66,
         "effort-values": {
@@ -42485,7 +42485,7 @@
             "3": "Water-veil",
             "2": "None"
         },
-        "evolve": "floatzel",
+        "evolve": "Floatzel",
         "growth-rate": "Medium Fast",
         "base-experience": 173,
         "effort-values": {
@@ -42583,7 +42583,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "cherrim",
+        "evolve": "Cherrim",
         "growth-rate": "Medium Fast",
         "base-experience": 55,
         "effort-values": {
@@ -42675,7 +42675,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "cherrim",
+        "evolve": "Cherrim",
         "growth-rate": "Medium Fast",
         "base-experience": 158,
         "effort-values": {
@@ -42756,7 +42756,7 @@
             "2": "Storm-drain",
             "3": "Sand-force"
         },
-        "evolve": "gastrodon",
+        "evolve": "Gastrodon",
         "growth-rate": "Medium Fast",
         "base-experience": 65,
         "effort-values": {
@@ -42847,7 +42847,7 @@
             "2": "Storm-drain",
             "3": "Sand-force"
         },
-        "evolve": "gastrodon",
+        "evolve": "Gastrodon",
         "growth-rate": "Medium Fast",
         "base-experience": 166,
         "effort-values": {
@@ -42938,7 +42938,7 @@
             "2": "Pickup",
             "3": "Skill-link"
         },
-        "evolve": "ambipom",
+        "evolve": "Ambipom",
         "growth-rate": "Fast",
         "base-experience": 169,
         "effort-values": {
@@ -43051,7 +43051,7 @@
             "2": "Unburden",
             "3": "Flare-boost"
         },
-        "evolve": "drifblim",
+        "evolve": "Drifblim",
         "growth-rate": "Fluctuating",
         "base-experience": 70,
         "effort-values": {
@@ -43162,7 +43162,7 @@
             "2": "Unburden",
             "3": "Flare-boost"
         },
-        "evolve": "drifblim",
+        "evolve": "Drifblim",
         "growth-rate": "Fluctuating",
         "base-experience": 174,
         "effort-values": {
@@ -43266,7 +43266,7 @@
             "2": "Klutz",
             "3": "Limber"
         },
-        "evolve": "lopunny",
+        "evolve": "Lopunny",
         "growth-rate": "Medium Fast",
         "base-experience": 70,
         "effort-values": {
@@ -43384,7 +43384,7 @@
             "2": "Klutz",
             "3": "Limber"
         },
-        "evolve": "lopunny",
+        "evolve": "Lopunny",
         "growth-rate": "Medium Fast",
         "base-experience": 168,
         "effort-values": {
@@ -43495,7 +43495,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "mismagius",
+        "evolve": "Mismagius",
         "growth-rate": "Fast",
         "base-experience": 173,
         "effort-values": {
@@ -43595,7 +43595,7 @@
             "2": "Super-luck",
             "3": "Moxie"
         },
-        "evolve": "honchkrow",
+        "evolve": "Honchkrow",
         "growth-rate": "Medium Slow",
         "base-experience": 177,
         "effort-values": {
@@ -43692,7 +43692,7 @@
             "2": "Own-tempo",
             "3": "Keen-eye"
         },
-        "evolve": "purugly",
+        "evolve": "Purugly",
         "growth-rate": "Fast",
         "base-experience": 62,
         "effort-values": {
@@ -43800,7 +43800,7 @@
             "2": "Own-tempo",
             "3": "Defiant"
         },
-        "evolve": "purugly",
+        "evolve": "Purugly",
         "growth-rate": "Fast",
         "base-experience": 158,
         "effort-values": {
@@ -43902,7 +43902,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "chimecho",
+        "evolve": "Chimecho",
         "growth-rate": "Fast",
         "base-experience": 57,
         "effort-values": {
@@ -44009,7 +44009,7 @@
             "2": "Aftermath",
             "3": "Keen-eye"
         },
-        "evolve": "skuntank",
+        "evolve": "Skuntank",
         "growth-rate": "Medium Fast",
         "base-experience": 66,
         "effort-values": {
@@ -44114,7 +44114,7 @@
             "2": "Aftermath",
             "3": "Keen-eye"
         },
-        "evolve": "skuntank",
+        "evolve": "Skuntank",
         "growth-rate": "Medium Fast",
         "base-experience": 168,
         "effort-values": {
@@ -44211,7 +44211,7 @@
             "2": "Heatproof",
             "3": "Heavy-metal"
         },
-        "evolve": "bronzong",
+        "evolve": "Bronzong",
         "growth-rate": "Medium Fast",
         "base-experience": 60,
         "effort-values": {
@@ -44315,7 +44315,7 @@
             "2": "Heatproof",
             "3": "Heavy-metal"
         },
-        "evolve": "bronzong",
+        "evolve": "Bronzong",
         "growth-rate": "Medium Fast",
         "base-experience": 175,
         "effort-values": {
@@ -44430,7 +44430,7 @@
             "2": "Rock-head",
             "3": "Rattled"
         },
-        "evolve": "sudowoodo",
+        "evolve": "Sudowoodo",
         "growth-rate": "Medium Fast",
         "base-experience": 58,
         "effort-values": {
@@ -44530,7 +44530,7 @@
             "2": "Filter",
             "3": "Technician"
         },
-        "evolve": "mr-mime",
+        "evolve": "Mr-mime",
         "growth-rate": "Medium Fast",
         "base-experience": 62,
         "effort-values": {
@@ -44657,7 +44657,7 @@
             "2": "Serene-grace",
             "3": "Friend-guard"
         },
-        "evolve": "chansey",
+        "evolve": "Chansey",
         "growth-rate": "Fast",
         "base-experience": 110,
         "effort-values": {
@@ -44760,7 +44760,7 @@
             "2": "Tangled-feet",
             "3": "Big-pecks"
         },
-        "evolve": "chatot",
+        "evolve": "Chatot",
         "growth-rate": "Medium Slow",
         "base-experience": 144,
         "effort-values": {
@@ -44858,7 +44858,7 @@
             "3": "Infiltrator",
             "2": "None"
         },
-        "evolve": "spiritomb",
+        "evolve": "Spiritomb",
         "growth-rate": "Medium Fast",
         "base-experience": 170,
         "effort-values": {
@@ -44964,7 +44964,7 @@
             "3": "Rough-skin",
             "2": "None"
         },
-        "evolve": "gabite",
+        "evolve": "Gabite",
         "growth-rate": "Slow",
         "base-experience": 60,
         "effort-values": {
@@ -45070,7 +45070,7 @@
             "3": "Rough-skin",
             "2": "None"
         },
-        "evolve": "garchomp",
+        "evolve": "Garchomp",
         "growth-rate": "Slow",
         "base-experience": 144,
         "effort-values": {
@@ -45164,7 +45164,7 @@
             "3": "Rough-skin",
             "2": "None"
         },
-        "evolve": "garchomp",
+        "evolve": "Garchomp",
         "growth-rate": "Slow",
         "base-experience": 300,
         "effort-values": {
@@ -45270,7 +45270,7 @@
             "2": "Thick-fat",
             "3": "Gluttony"
         },
-        "evolve": "snorlax",
+        "evolve": "Snorlax",
         "growth-rate": "Slow",
         "base-experience": 78,
         "effort-values": {
@@ -45393,7 +45393,7 @@
             "2": "Inner-focus",
             "3": "Prankster"
         },
-        "evolve": "lucario",
+        "evolve": "Lucario",
         "growth-rate": "Medium Slow",
         "base-experience": 57,
         "effort-values": {
@@ -45507,7 +45507,7 @@
             "2": "Inner-focus",
             "3": "Justified"
         },
-        "evolve": "lucario",
+        "evolve": "Lucario",
         "growth-rate": "Medium Slow",
         "base-experience": 184,
         "effort-values": {
@@ -45623,7 +45623,7 @@
             "3": "Sand-force",
             "2": "None"
         },
-        "evolve": "hippowdon",
+        "evolve": "Hippowdon",
         "growth-rate": "Slow",
         "base-experience": 66,
         "effort-values": {
@@ -45714,7 +45714,7 @@
             "3": "Sand-force",
             "2": "None"
         },
-        "evolve": "hippowdon",
+        "evolve": "Hippowdon",
         "growth-rate": "Slow",
         "base-experience": 184,
         "effort-values": {
@@ -45801,7 +45801,7 @@
             "2": "Sniper",
             "3": "Keen-eye"
         },
-        "evolve": "drapion",
+        "evolve": "Drapion",
         "growth-rate": "Slow",
         "base-experience": 66,
         "effort-values": {
@@ -45914,7 +45914,7 @@
             "2": "Sniper",
             "3": "Keen-eye"
         },
-        "evolve": "drapion",
+        "evolve": "Drapion",
         "growth-rate": "Slow",
         "base-experience": 175,
         "effort-values": {
@@ -46025,7 +46025,7 @@
             "2": "Dry-skin",
             "3": "Poison-touch"
         },
-        "evolve": "toxicroak",
+        "evolve": "Toxicroak",
         "growth-rate": "Medium Fast",
         "base-experience": 60,
         "effort-values": {
@@ -46153,7 +46153,7 @@
             "2": "Dry-skin",
             "3": "Poison-touch"
         },
-        "evolve": "toxicroak",
+        "evolve": "Toxicroak",
         "growth-rate": "Medium Fast",
         "base-experience": 172,
         "effort-values": {
@@ -46271,7 +46271,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "carnivine",
+        "evolve": "Carnivine",
         "growth-rate": "Slow",
         "base-experience": 159,
         "effort-values": {
@@ -46373,7 +46373,7 @@
             "2": "Storm-drain",
             "3": "Water-veil"
         },
-        "evolve": "lumineon",
+        "evolve": "Lumineon",
         "growth-rate": "Erratic",
         "base-experience": 66,
         "effort-values": {
@@ -46472,7 +46472,7 @@
             "2": "Storm-drain",
             "3": "Water-veil"
         },
-        "evolve": "lumineon",
+        "evolve": "Lumineon",
         "growth-rate": "Erratic",
         "base-experience": 161,
         "effort-values": {
@@ -46561,7 +46561,7 @@
             "2": "Water-absorb",
             "3": "Water-veil"
         },
-        "evolve": "mantine",
+        "evolve": "Mantine",
         "growth-rate": "Slow",
         "base-experience": 69,
         "effort-values": {
@@ -46660,7 +46660,7 @@
             "3": "Soundproof",
             "2": "None"
         },
-        "evolve": "abomasnow",
+        "evolve": "Abomasnow",
         "growth-rate": "Slow",
         "base-experience": 67,
         "effort-values": {
@@ -46760,7 +46760,7 @@
             "3": "Soundproof",
             "2": "None"
         },
-        "evolve": "abomasnow",
+        "evolve": "Abomasnow",
         "growth-rate": "Slow",
         "base-experience": 173,
         "effort-values": {
@@ -46862,7 +46862,7 @@
             "3": "Pickpocket",
             "2": "None"
         },
-        "evolve": "weavile",
+        "evolve": "Weavile",
         "growth-rate": "Medium Slow",
         "base-experience": 179,
         "effort-values": {
@@ -46980,7 +46980,7 @@
             "2": "Sturdy",
             "3": "Analytic"
         },
-        "evolve": "magnezone",
+        "evolve": "Magnezone",
         "growth-rate": "Medium Fast",
         "base-experience": 268,
         "effort-values": {
@@ -47078,7 +47078,7 @@
             "2": "Oblivious",
             "3": "Cloud-nine"
         },
-        "evolve": "lickilicky",
+        "evolve": "Lickilicky",
         "growth-rate": "Medium Fast",
         "base-experience": 180,
         "effort-values": {
@@ -47194,7 +47194,7 @@
             "2": "Solid-rock",
             "3": "Reckless"
         },
-        "evolve": "rhyperior",
+        "evolve": "Rhyperior",
         "growth-rate": "Slow",
         "base-experience": 268,
         "effort-values": {
@@ -47317,7 +47317,7 @@
             "2": "Leaf-guard",
             "3": "Regenerator"
         },
-        "evolve": "tangrowth",
+        "evolve": "Tangrowth",
         "growth-rate": "Medium Fast",
         "base-experience": 187,
         "effort-values": {
@@ -47425,7 +47425,7 @@
             "3": "Vital-spirit",
             "2": "None"
         },
-        "evolve": "electivire",
+        "evolve": "Electivire",
         "growth-rate": "Medium Fast",
         "base-experience": 270,
         "effort-values": {
@@ -47534,7 +47534,7 @@
             "3": "Vital-spirit",
             "2": "None"
         },
-        "evolve": "magmortar",
+        "evolve": "Magmortar",
         "growth-rate": "Medium Fast",
         "base-experience": 270,
         "effort-values": {
@@ -47638,7 +47638,7 @@
             "2": "Serene-grace",
             "3": "Super-luck"
         },
-        "evolve": "togekiss",
+        "evolve": "Togekiss",
         "growth-rate": "Fast",
         "base-experience": 273,
         "effort-values": {
@@ -47740,7 +47740,7 @@
             "2": "Tinted-lens",
             "3": "Frisk"
         },
-        "evolve": "yanmega",
+        "evolve": "Yanmega",
         "growth-rate": "Medium Fast",
         "base-experience": 180,
         "effort-values": {
@@ -47832,7 +47832,7 @@
             "3": "Chlorophyll",
             "2": "None"
         },
-        "evolve": "leafeon",
+        "evolve": "Leafeon",
         "growth-rate": "Medium Fast",
         "base-experience": 184,
         "effort-values": {
@@ -47931,7 +47931,7 @@
             "3": "Ice-body",
             "2": "None"
         },
-        "evolve": "glaceon",
+        "evolve": "Glaceon",
         "growth-rate": "Medium Fast",
         "base-experience": 184,
         "effort-values": {
@@ -48025,7 +48025,7 @@
             "2": "Sand-veil",
             "3": "Poison-heal"
         },
-        "evolve": "gliscor",
+        "evolve": "Gliscor",
         "growth-rate": "Medium Slow",
         "base-experience": 179,
         "effort-values": {
@@ -48140,7 +48140,7 @@
             "2": "Snow-cloak",
             "3": "Thick-fat"
         },
-        "evolve": "mamoswine",
+        "evolve": "Mamoswine",
         "growth-rate": "Slow",
         "base-experience": 265,
         "effort-values": {
@@ -48238,7 +48238,7 @@
             "2": "Download",
             "3": "Analytic"
         },
-        "evolve": "porygon-z",
+        "evolve": "Porygon-z",
         "growth-rate": "Medium Fast",
         "base-experience": 268,
         "effort-values": {
@@ -48346,7 +48346,7 @@
             "2": "Sharpness",
             "3": "Justified"
         },
-        "evolve": "gallade",
+        "evolve": "Gallade",
         "growth-rate": "Slow",
         "base-experience": 259,
         "effort-values": {
@@ -48483,7 +48483,7 @@
             "2": "Magnet-pull",
             "3": "Sand-force"
         },
-        "evolve": "probopass",
+        "evolve": "Probopass",
         "growth-rate": "Medium Fast",
         "base-experience": 184,
         "effort-values": {
@@ -48589,7 +48589,7 @@
             "3": "None",
             "2": "None"
         },
-        "evolve": "dusknoir",
+        "evolve": "Dusknoir",
         "growth-rate": "Fast",
         "base-experience": 263,
         "effort-values": {
@@ -48706,7 +48706,7 @@
             "3": "Cursed-body",
             "2": "None"
         },
-        "evolve": "froslass",
+        "evolve": "Froslass",
         "growth-rate": "Medium Fast",
         "base-experience": 168,
         "effort-values": {
@@ -48805,7 +48805,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "rotom",
+        "evolve": "Rotom",
         "growth-rate": "Medium Fast",
         "base-experience": 154,
         "effort-values": {
@@ -48899,7 +48899,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "uxie",
+        "evolve": "Uxie",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -49011,7 +49011,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "mesprit",
+        "evolve": "Mesprit",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -49121,7 +49121,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "azelf",
+        "evolve": "Azelf",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -49238,7 +49238,7 @@
             "3": "Telepathy",
             "2": "None"
         },
-        "evolve": "dialga",
+        "evolve": "Dialga",
         "growth-rate": "Slow",
         "base-experience": 340,
         "effort-values": {
@@ -49352,7 +49352,7 @@
             "3": "Telepathy",
             "2": "None"
         },
-        "evolve": "palkia",
+        "evolve": "Palkia",
         "growth-rate": "Slow",
         "base-experience": 340,
         "effort-values": {
@@ -49463,7 +49463,7 @@
             "3": "Flame-body",
             "2": "None"
         },
-        "evolve": "heatran",
+        "evolve": "Heatran",
         "growth-rate": "Slow",
         "base-experience": 300,
         "effort-values": {
@@ -49564,7 +49564,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "regigigas",
+        "evolve": "Regigigas",
         "growth-rate": "Slow",
         "base-experience": 335,
         "effort-values": {
@@ -49666,7 +49666,7 @@
             "3": "Telepathy",
             "2": "None"
         },
-        "evolve": "giratina-altered",
+        "evolve": "Giratina-altered",
         "growth-rate": "Slow",
         "base-experience": 340,
         "effort-values": {
@@ -49778,7 +49778,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "cresselia",
+        "evolve": "Cresselia",
         "growth-rate": "Slow",
         "base-experience": 300,
         "effort-values": {
@@ -49877,7 +49877,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "manaphy",
+        "evolve": "Manaphy",
         "growth-rate": "Slow",
         "base-experience": 216,
         "effort-values": {
@@ -49964,7 +49964,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "manaphy",
+        "evolve": "Manaphy",
         "growth-rate": "Slow",
         "base-experience": 270,
         "effort-values": {
@@ -50063,7 +50063,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "darkrai",
+        "evolve": "Darkrai",
         "growth-rate": "Slow",
         "base-experience": 270,
         "effort-values": {
@@ -50178,7 +50178,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "shaymin-land",
+        "evolve": "Shaymin-land",
         "growth-rate": "Medium Slow",
         "base-experience": 270,
         "effort-values": {
@@ -50264,7 +50264,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "arceus",
+        "evolve": "Arceus",
         "growth-rate": "Slow",
         "base-experience": 324,
         "effort-values": {
@@ -50415,7 +50415,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "victini",
+        "evolve": "Victini",
         "growth-rate": "Slow",
         "base-experience": 300,
         "effort-values": {
@@ -50533,7 +50533,7 @@
             "3": "Contrary",
             "2": "None"
         },
-        "evolve": "servine",
+        "evolve": "Servine",
         "growth-rate": "Medium Slow",
         "base-experience": 62,
         "effort-values": {
@@ -50639,7 +50639,7 @@
             "3": "Contrary",
             "2": "None"
         },
-        "evolve": "serperior",
+        "evolve": "Serperior",
         "growth-rate": "Medium Slow",
         "base-experience": 145,
         "effort-values": {
@@ -50734,7 +50734,7 @@
             "3": "Contrary",
             "2": "None"
         },
-        "evolve": "serperior",
+        "evolve": "Serperior",
         "growth-rate": "Medium Slow",
         "base-experience": 238,
         "effort-values": {
@@ -50837,7 +50837,7 @@
             "3": "Thick-fat",
             "2": "None"
         },
-        "evolve": "pignite",
+        "evolve": "Pignite",
         "growth-rate": "Medium Slow",
         "base-experience": 62,
         "effort-values": {
@@ -50942,7 +50942,7 @@
             "3": "Thick-fat",
             "2": "None"
         },
-        "evolve": "emboar",
+        "evolve": "Emboar",
         "growth-rate": "Medium Slow",
         "base-experience": 146,
         "effort-values": {
@@ -51049,7 +51049,7 @@
             "3": "Reckless",
             "2": "None"
         },
-        "evolve": "emboar",
+        "evolve": "Emboar",
         "growth-rate": "Medium Slow",
         "base-experience": 238,
         "effort-values": {
@@ -51166,7 +51166,7 @@
             "3": "Shell-armor",
             "2": "None"
         },
-        "evolve": "dewott",
+        "evolve": "Dewott",
         "growth-rate": "Medium Slow",
         "base-experience": 62,
         "effort-values": {
@@ -51270,7 +51270,7 @@
             "3": "Shell-armor",
             "2": "None"
         },
-        "evolve": "samurott",
+        "evolve": "Samurott",
         "growth-rate": "Medium Slow",
         "base-experience": 145,
         "effort-values": {
@@ -51365,7 +51365,7 @@
             "3": "Shell-armor",
             "2": "None"
         },
-        "evolve": "samurott",
+        "evolve": "Samurott",
         "growth-rate": "Medium Slow",
         "base-experience": 238,
         "effort-values": {
@@ -51470,7 +51470,7 @@
             "2": "Keen-eye",
             "3": "Analytic"
         },
-        "evolve": "watchog",
+        "evolve": "Watchog",
         "growth-rate": "Medium Fast",
         "base-experience": 51,
         "effort-values": {
@@ -51571,7 +51571,7 @@
             "2": "Keen-eye",
             "3": "Analytic"
         },
-        "evolve": "watchog",
+        "evolve": "Watchog",
         "growth-rate": "Medium Fast",
         "base-experience": 147,
         "effort-values": {
@@ -51683,7 +51683,7 @@
             "2": "Pickup",
             "3": "Run-away"
         },
-        "evolve": "herdier",
+        "evolve": "Herdier",
         "growth-rate": "Medium Slow",
         "base-experience": 55,
         "effort-values": {
@@ -51783,7 +51783,7 @@
             "2": "Sand-rush",
             "3": "Scrappy"
         },
-        "evolve": "stoutland",
+        "evolve": "Stoutland",
         "growth-rate": "Medium Slow",
         "base-experience": 130,
         "effort-values": {
@@ -51874,7 +51874,7 @@
             "2": "Sand-rush",
             "3": "Scrappy"
         },
-        "evolve": "stoutland",
+        "evolve": "Stoutland",
         "growth-rate": "Medium Slow",
         "base-experience": 250,
         "effort-values": {
@@ -51972,7 +51972,7 @@
             "2": "Unburden",
             "3": "Prankster"
         },
-        "evolve": "liepard",
+        "evolve": "Liepard",
         "growth-rate": "Medium Fast",
         "base-experience": 56,
         "effort-values": {
@@ -52083,7 +52083,7 @@
             "2": "Unburden",
             "3": "Prankster"
         },
-        "evolve": "liepard",
+        "evolve": "Liepard",
         "growth-rate": "Medium Fast",
         "base-experience": 156,
         "effort-values": {
@@ -52188,7 +52188,7 @@
             "3": "Overgrow",
             "2": "None"
         },
-        "evolve": "simisage",
+        "evolve": "Simisage",
         "growth-rate": "Medium Fast",
         "base-experience": 63,
         "effort-values": {
@@ -52302,7 +52302,7 @@
             "3": "Overgrow",
             "2": "None"
         },
-        "evolve": "simisage",
+        "evolve": "Simisage",
         "growth-rate": "Medium Fast",
         "base-experience": 174,
         "effort-values": {
@@ -52400,7 +52400,7 @@
             "3": "Blaze",
             "2": "None"
         },
-        "evolve": "simisear",
+        "evolve": "Simisear",
         "growth-rate": "Medium Fast",
         "base-experience": 63,
         "effort-values": {
@@ -52516,7 +52516,7 @@
             "3": "Blaze",
             "2": "None"
         },
-        "evolve": "simisear",
+        "evolve": "Simisear",
         "growth-rate": "Medium Fast",
         "base-experience": 174,
         "effort-values": {
@@ -52616,7 +52616,7 @@
             "3": "Torrent",
             "2": "None"
         },
-        "evolve": "simipour",
+        "evolve": "Simipour",
         "growth-rate": "Medium Fast",
         "base-experience": 63,
         "effort-values": {
@@ -52733,7 +52733,7 @@
             "3": "Torrent",
             "2": "None"
         },
-        "evolve": "simipour",
+        "evolve": "Simipour",
         "growth-rate": "Medium Fast",
         "base-experience": 174,
         "effort-values": {
@@ -52834,7 +52834,7 @@
             "2": "Synchronize",
             "3": "Telepathy"
         },
-        "evolve": "musharna",
+        "evolve": "Musharna",
         "growth-rate": "Fast",
         "base-experience": 58,
         "effort-values": {
@@ -52948,7 +52948,7 @@
             "2": "Synchronize",
             "3": "Telepathy"
         },
-        "evolve": "musharna",
+        "evolve": "Musharna",
         "growth-rate": "Fast",
         "base-experience": 170,
         "effort-values": {
@@ -53041,7 +53041,7 @@
             "2": "Super-luck",
             "3": "Rivalry"
         },
-        "evolve": "tranquill",
+        "evolve": "Tranquill",
         "growth-rate": "Medium Slow",
         "base-experience": 53,
         "effort-values": {
@@ -53133,7 +53133,7 @@
             "2": "Super-luck",
             "3": "Rivalry"
         },
-        "evolve": "unfezant",
+        "evolve": "Unfezant",
         "growth-rate": "Medium Slow",
         "base-experience": 125,
         "effort-values": {
@@ -53217,7 +53217,7 @@
             "2": "Super-luck",
             "3": "Rivalry"
         },
-        "evolve": "unfezant",
+        "evolve": "Unfezant",
         "growth-rate": "Medium Slow",
         "base-experience": 244,
         "effort-values": {
@@ -53304,7 +53304,7 @@
             "2": "Motor-drive",
             "3": "Sap-sipper"
         },
-        "evolve": "zebstrika",
+        "evolve": "Zebstrika",
         "growth-rate": "Medium Fast",
         "base-experience": 59,
         "effort-values": {
@@ -53395,7 +53395,7 @@
             "2": "Motor-drive",
             "3": "Sap-sipper"
         },
-        "evolve": "zebstrika",
+        "evolve": "Zebstrika",
         "growth-rate": "Medium Fast",
         "base-experience": 174,
         "effort-values": {
@@ -53480,7 +53480,7 @@
             "2": "Weak-armor",
             "3": "Sand-force"
         },
-        "evolve": "boldore",
+        "evolve": "Boldore",
         "growth-rate": "Medium Slow",
         "base-experience": 56,
         "effort-values": {
@@ -53574,7 +53574,7 @@
             "2": "Weak-armor",
             "3": "Sand-force"
         },
-        "evolve": "gigalith",
+        "evolve": "Gigalith",
         "growth-rate": "Medium Slow",
         "base-experience": 137,
         "effort-values": {
@@ -53660,7 +53660,7 @@
             "2": "Sand-stream",
             "3": "Sand-force"
         },
-        "evolve": "gigalith",
+        "evolve": "Gigalith",
         "growth-rate": "Medium Slow",
         "base-experience": 258,
         "effort-values": {
@@ -53751,7 +53751,7 @@
             "2": "Klutz",
             "3": "Simple"
         },
-        "evolve": "swoobat",
+        "evolve": "Swoobat",
         "growth-rate": "Medium Fast",
         "base-experience": 65,
         "effort-values": {
@@ -53871,7 +53871,7 @@
             "2": "Klutz",
             "3": "Simple"
         },
-        "evolve": "swoobat",
+        "evolve": "Swoobat",
         "growth-rate": "Medium Fast",
         "base-experience": 149,
         "effort-values": {
@@ -53984,7 +53984,7 @@
             "2": "Sand-force",
             "3": "Mold-breaker"
         },
-        "evolve": "excadrill",
+        "evolve": "Excadrill",
         "growth-rate": "Medium Fast",
         "base-experience": 66,
         "effort-values": {
@@ -54085,7 +54085,7 @@
             "2": "Sand-force",
             "3": "Mold-breaker"
         },
-        "evolve": "excadrill",
+        "evolve": "Excadrill",
         "growth-rate": "Medium Fast",
         "base-experience": 178,
         "effort-values": {
@@ -54183,7 +54183,7 @@
             "2": "Regenerator",
             "3": "Klutz"
         },
-        "evolve": "audino",
+        "evolve": "Audino",
         "growth-rate": "Fast",
         "base-experience": 390,
         "effort-values": {
@@ -54319,7 +54319,7 @@
             "2": "Sheer-force",
             "3": "Iron-fist"
         },
-        "evolve": "gurdurr",
+        "evolve": "Gurdurr",
         "growth-rate": "Medium Slow",
         "base-experience": 61,
         "effort-values": {
@@ -54431,7 +54431,7 @@
             "2": "Sheer-force",
             "3": "Iron-fist"
         },
-        "evolve": "conkeldurr",
+        "evolve": "Conkeldurr",
         "growth-rate": "Medium Slow",
         "base-experience": 142,
         "effort-values": {
@@ -54531,7 +54531,7 @@
             "2": "Sheer-force",
             "3": "Iron-fist"
         },
-        "evolve": "conkeldurr",
+        "evolve": "Conkeldurr",
         "growth-rate": "Medium Slow",
         "base-experience": 253,
         "effort-values": {
@@ -54635,7 +54635,7 @@
             "2": "Hydration",
             "3": "Water-absorb"
         },
-        "evolve": "palpitoad",
+        "evolve": "Palpitoad",
         "growth-rate": "Medium Slow",
         "base-experience": 59,
         "effort-values": {
@@ -54726,7 +54726,7 @@
             "2": "Hydration",
             "3": "Water-absorb"
         },
-        "evolve": "seismitoad",
+        "evolve": "Seismitoad",
         "growth-rate": "Medium Slow",
         "base-experience": 134,
         "effort-values": {
@@ -54812,7 +54812,7 @@
             "2": "Poison-touch",
             "3": "Water-absorb"
         },
-        "evolve": "seismitoad",
+        "evolve": "Seismitoad",
         "growth-rate": "Medium Slow",
         "base-experience": 255,
         "effort-values": {
@@ -54918,7 +54918,7 @@
             "2": "Inner-focus",
             "3": "Mold-breaker"
         },
-        "evolve": "throh",
+        "evolve": "Throh",
         "growth-rate": "Medium Fast",
         "base-experience": 163,
         "effort-values": {
@@ -55020,7 +55020,7 @@
             "2": "Inner-focus",
             "3": "Mold-breaker"
         },
-        "evolve": "sawk",
+        "evolve": "Sawk",
         "growth-rate": "Medium Fast",
         "base-experience": 163,
         "effort-values": {
@@ -55122,7 +55122,7 @@
             "2": "Chlorophyll",
             "3": "Overcoat"
         },
-        "evolve": "swadloon",
+        "evolve": "Swadloon",
         "growth-rate": "Medium Slow",
         "base-experience": 62,
         "effort-values": {
@@ -55216,7 +55216,7 @@
             "2": "Chlorophyll",
             "3": "Overcoat"
         },
-        "evolve": "leavanny",
+        "evolve": "Leavanny",
         "growth-rate": "Medium Slow",
         "base-experience": 133,
         "effort-values": {
@@ -55298,7 +55298,7 @@
             "2": "Chlorophyll",
             "3": "Overcoat"
         },
-        "evolve": "leavanny",
+        "evolve": "Leavanny",
         "growth-rate": "Medium Slow",
         "base-experience": 225,
         "effort-values": {
@@ -55401,7 +55401,7 @@
             "2": "Swarm",
             "3": "Quick-feet"
         },
-        "evolve": "whirlipede",
+        "evolve": "Whirlipede",
         "growth-rate": "Medium Slow",
         "base-experience": 52,
         "effort-values": {
@@ -55489,7 +55489,7 @@
             "2": "Swarm",
             "3": "Quick-feet"
         },
-        "evolve": "scolipede",
+        "evolve": "Scolipede",
         "growth-rate": "Medium Slow",
         "base-experience": 126,
         "effort-values": {
@@ -55571,7 +55571,7 @@
             "2": "Swarm",
             "3": "Quick-feet"
         },
-        "evolve": "scolipede",
+        "evolve": "Scolipede",
         "growth-rate": "Medium Slow",
         "base-experience": 243,
         "effort-values": {
@@ -55669,7 +55669,7 @@
             "2": "Infiltrator",
             "3": "Chlorophyll"
         },
-        "evolve": "whimsicott",
+        "evolve": "Whimsicott",
         "growth-rate": "Medium Fast",
         "base-experience": 56,
         "effort-values": {
@@ -55766,7 +55766,7 @@
             "2": "Infiltrator",
             "3": "Chlorophyll"
         },
-        "evolve": "whimsicott",
+        "evolve": "Whimsicott",
         "growth-rate": "Medium Fast",
         "base-experience": 168,
         "effort-values": {
@@ -55853,7 +55853,7 @@
             "2": "Own-tempo",
             "3": "Leaf-guard"
         },
-        "evolve": "lilligant",
+        "evolve": "Lilligant",
         "growth-rate": "Medium Fast",
         "base-experience": 56,
         "effort-values": {
@@ -55950,7 +55950,7 @@
             "2": "Own-tempo",
             "3": "Leaf-guard"
         },
-        "evolve": "lilligant",
+        "evolve": "Lilligant",
         "growth-rate": "Medium Fast",
         "base-experience": 168,
         "effort-values": {
@@ -56033,7 +56033,7 @@
             "2": "Adaptability",
             "3": "Mold-breaker"
         },
-        "evolve": "basculin-red-striped",
+        "evolve": "Basculin-red-striped",
         "growth-rate": "Medium Fast",
         "base-experience": 161,
         "effort-values": {
@@ -56130,7 +56130,7 @@
             "2": "Moxie",
             "3": "Anger-point"
         },
-        "evolve": "krokorok",
+        "evolve": "Krokorok",
         "growth-rate": "Medium Slow",
         "base-experience": 58,
         "effort-values": {
@@ -56241,7 +56241,7 @@
             "2": "Moxie",
             "3": "Anger-point"
         },
-        "evolve": "krookodile",
+        "evolve": "Krookodile",
         "growth-rate": "Medium Slow",
         "base-experience": 123,
         "effort-values": {
@@ -56350,7 +56350,7 @@
             "2": "Moxie",
             "3": "Anger-point"
         },
-        "evolve": "krookodile",
+        "evolve": "Krookodile",
         "growth-rate": "Medium Slow",
         "base-experience": 260,
         "effort-values": {
@@ -56471,7 +56471,7 @@
             "3": "Inner-focus",
             "2": "None"
         },
-        "evolve": "darmanitan",
+        "evolve": "Darmanitan",
         "growth-rate": "Medium Slow",
         "base-experience": 63,
         "effort-values": {
@@ -56580,7 +56580,7 @@
             "3": "Zen-mode",
             "2": "None"
         },
-        "evolve": "darmanitan-standard",
+        "evolve": "Darmanitan-standard",
         "growth-rate": "Medium Slow",
         "base-experience": 168,
         "effort-values": {
@@ -56691,7 +56691,7 @@
             "2": "Chlorophyll",
             "3": "Storm-drain"
         },
-        "evolve": "maractus",
+        "evolve": "Maractus",
         "growth-rate": "Medium Fast",
         "base-experience": 161,
         "effort-values": {
@@ -56792,7 +56792,7 @@
             "2": "Shell-armor",
             "3": "Weak-armor"
         },
-        "evolve": "crustle",
+        "evolve": "Crustle",
         "growth-rate": "Medium Fast",
         "base-experience": 65,
         "effort-values": {
@@ -56896,7 +56896,7 @@
             "2": "Shell-armor",
             "3": "Weak-armor"
         },
-        "evolve": "crustle",
+        "evolve": "Crustle",
         "growth-rate": "Medium Fast",
         "base-experience": 170,
         "effort-values": {
@@ -56992,7 +56992,7 @@
             "2": "Moxie",
             "3": "Intimidate"
         },
-        "evolve": "scrafty",
+        "evolve": "Scrafty",
         "growth-rate": "Medium Fast",
         "base-experience": 70,
         "effort-values": {
@@ -57119,7 +57119,7 @@
             "2": "Moxie",
             "3": "Intimidate"
         },
-        "evolve": "scrafty",
+        "evolve": "Scrafty",
         "growth-rate": "Medium Fast",
         "base-experience": 171,
         "effort-values": {
@@ -57238,7 +57238,7 @@
             "2": "Magic-guard",
             "3": "Tinted-lens"
         },
-        "evolve": "sigilyph",
+        "evolve": "Sigilyph",
         "growth-rate": "Medium Fast",
         "base-experience": 172,
         "effort-values": {
@@ -57355,7 +57355,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "special",
+        "evolve": "Special",
         "growth-rate": "Medium Fast",
         "base-experience": 61,
         "effort-values": {
@@ -57462,7 +57462,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "cofagrigus",
+        "evolve": "Cofagrigus",
         "growth-rate": "Medium Fast",
         "base-experience": 169,
         "effort-values": {
@@ -57564,7 +57564,7 @@
             "2": "Sturdy",
             "3": "Swift-swim"
         },
-        "evolve": "carracosta",
+        "evolve": "Carracosta",
         "growth-rate": "Medium Fast",
         "base-experience": 71,
         "effort-values": {
@@ -57672,7 +57672,7 @@
             "2": "Sturdy",
             "3": "Swift-swim"
         },
-        "evolve": "carracosta",
+        "evolve": "Carracosta",
         "growth-rate": "Medium Fast",
         "base-experience": 173,
         "effort-values": {
@@ -57776,7 +57776,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "archeops",
+        "evolve": "Archeops",
         "growth-rate": "Medium Fast",
         "base-experience": 71,
         "effort-values": {
@@ -57890,7 +57890,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "archeops",
+        "evolve": "Archeops",
         "growth-rate": "Medium Fast",
         "base-experience": 177,
         "effort-values": {
@@ -58003,7 +58003,7 @@
             "2": "Sticky-hold",
             "3": "Aftermath"
         },
-        "evolve": "garbodor",
+        "evolve": "Garbodor",
         "growth-rate": "Medium Fast",
         "base-experience": 66,
         "effort-values": {
@@ -58099,7 +58099,7 @@
             "2": "Weak-armor",
             "3": "Aftermath"
         },
-        "evolve": "garbodor",
+        "evolve": "Garbodor",
         "growth-rate": "Medium Fast",
         "base-experience": 166,
         "effort-values": {
@@ -58195,7 +58195,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "zoroark",
+        "evolve": "Zoroark",
         "growth-rate": "Medium Slow",
         "base-experience": 66,
         "effort-values": {
@@ -58307,7 +58307,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "zoroark",
+        "evolve": "Zoroark",
         "growth-rate": "Medium Slow",
         "base-experience": 179,
         "effort-values": {
@@ -58420,7 +58420,7 @@
             "2": "Technician",
             "3": "Skill-link"
         },
-        "evolve": "cinccino",
+        "evolve": "Cinccino",
         "growth-rate": "Fast",
         "base-experience": 60,
         "effort-values": {
@@ -58527,7 +58527,7 @@
             "2": "Technician",
             "3": "Skill-link"
         },
-        "evolve": "cinccino",
+        "evolve": "Cinccino",
         "growth-rate": "Fast",
         "base-experience": 165,
         "effort-values": {
@@ -58618,7 +58618,7 @@
             "2": "None",
             "3": "Shadow-tag"
         },
-        "evolve": "gothorita",
+        "evolve": "Gothorita",
         "growth-rate": "Medium Slow",
         "base-experience": 58,
         "effort-values": {
@@ -58737,7 +58737,7 @@
             "2": "None",
             "3": "Shadow-tag"
         },
-        "evolve": "gothitelle",
+        "evolve": "Gothitelle",
         "growth-rate": "Medium Slow",
         "base-experience": 137,
         "effort-values": {
@@ -58849,7 +58849,7 @@
             "2": "None",
             "3": "Shadow-tag"
         },
-        "evolve": "gothitelle",
+        "evolve": "Gothitelle",
         "growth-rate": "Medium Slow",
         "base-experience": 245,
         "effort-values": {
@@ -58965,7 +58965,7 @@
             "2": "Magic-guard",
             "3": "Regenerator"
         },
-        "evolve": "duosion",
+        "evolve": "Duosion",
         "growth-rate": "Medium Slow",
         "base-experience": 58,
         "effort-values": {
@@ -59078,7 +59078,7 @@
             "2": "Magic-guard",
             "3": "Regenerator"
         },
-        "evolve": "reuniclus",
+        "evolve": "Reuniclus",
         "growth-rate": "Medium Slow",
         "base-experience": 130,
         "effort-values": {
@@ -59183,7 +59183,7 @@
             "2": "Magic-guard",
             "3": "Regenerator"
         },
-        "evolve": "reuniclus",
+        "evolve": "Reuniclus",
         "growth-rate": "Medium Slow",
         "base-experience": 245,
         "effort-values": {
@@ -59303,7 +59303,7 @@
             "2": "Big-pecks",
             "3": "Hydration"
         },
-        "evolve": "swanna",
+        "evolve": "Swanna",
         "growth-rate": "Medium Fast",
         "base-experience": 61,
         "effort-values": {
@@ -59395,7 +59395,7 @@
             "2": "Big-pecks",
             "3": "Hydration"
         },
-        "evolve": "swanna",
+        "evolve": "Swanna",
         "growth-rate": "Medium Fast",
         "base-experience": 166,
         "effort-values": {
@@ -59482,7 +59482,7 @@
             "2": "Snow-cloak",
             "3": "Weak-armor"
         },
-        "evolve": "vanillish",
+        "evolve": "Vanillish",
         "growth-rate": "Slow",
         "base-experience": 61,
         "effort-values": {
@@ -59576,7 +59576,7 @@
             "2": "Snow-cloak",
             "3": "Weak-armor"
         },
-        "evolve": "vanilluxe",
+        "evolve": "Vanilluxe",
         "growth-rate": "Slow",
         "base-experience": 138,
         "effort-values": {
@@ -59661,7 +59661,7 @@
             "2": "Snow-warning",
             "3": "Weak-armor"
         },
-        "evolve": "vanilluxe",
+        "evolve": "Vanilluxe",
         "growth-rate": "Slow",
         "base-experience": 268,
         "effort-values": {
@@ -59749,7 +59749,7 @@
             "2": "Sap-sipper",
             "3": "Serene-grace"
         },
-        "evolve": "sawsbuck",
+        "evolve": "Sawsbuck",
         "growth-rate": "Medium Fast",
         "base-experience": 67,
         "effort-values": {
@@ -59849,7 +59849,7 @@
             "2": "Sap-sipper",
             "3": "Serene-grace"
         },
-        "evolve": "sawsbuck",
+        "evolve": "Sawsbuck",
         "growth-rate": "Medium Fast",
         "base-experience": 166,
         "effort-values": {
@@ -59946,7 +59946,7 @@
             "3": "Motor-drive",
             "2": "None"
         },
-        "evolve": "emolga",
+        "evolve": "Emolga",
         "growth-rate": "Medium Fast",
         "base-experience": 150,
         "effort-values": {
@@ -60049,7 +60049,7 @@
             "2": "Shed-skin",
             "3": "No-guard"
         },
-        "evolve": "escavalier",
+        "evolve": "Escavalier",
         "growth-rate": "Medium Fast",
         "base-experience": 63,
         "effort-values": {
@@ -60141,7 +60141,7 @@
             "2": "Shell-armor",
             "3": "Overcoat"
         },
-        "evolve": "escavalier",
+        "evolve": "Escavalier",
         "growth-rate": "Medium Fast",
         "base-experience": 173,
         "effort-values": {
@@ -60229,7 +60229,7 @@
             "3": "Regenerator",
             "2": "None"
         },
-        "evolve": "amoonguss",
+        "evolve": "Amoonguss",
         "growth-rate": "Medium Fast",
         "base-experience": 59,
         "effort-values": {
@@ -60324,7 +60324,7 @@
             "3": "Regenerator",
             "2": "None"
         },
-        "evolve": "amoonguss",
+        "evolve": "Amoonguss",
         "growth-rate": "Medium Fast",
         "base-experience": 162,
         "effort-values": {
@@ -60412,7 +60412,7 @@
             "2": "Cursed-body",
             "3": "Damp"
         },
-        "evolve": "jellicent",
+        "evolve": "Jellicent",
         "growth-rate": "Medium Fast",
         "base-experience": 67,
         "effort-values": {
@@ -60516,7 +60516,7 @@
             "2": "Cursed-body",
             "3": "Damp"
         },
-        "evolve": "jellicent",
+        "evolve": "Jellicent",
         "growth-rate": "Medium Fast",
         "base-experience": 168,
         "effort-values": {
@@ -60615,7 +60615,7 @@
             "2": "Hydration",
             "3": "Regenerator"
         },
-        "evolve": "alomomola",
+        "evolve": "Alomomola",
         "growth-rate": "Fast",
         "base-experience": 165,
         "effort-values": {
@@ -60714,7 +60714,7 @@
             "2": "Unnerve",
             "3": "Swarm"
         },
-        "evolve": "galvantula",
+        "evolve": "Galvantula",
         "growth-rate": "Medium Fast",
         "base-experience": 64,
         "effort-values": {
@@ -60814,7 +60814,7 @@
             "2": "Unnerve",
             "3": "Swarm"
         },
-        "evolve": "galvantula",
+        "evolve": "Galvantula",
         "growth-rate": "Medium Fast",
         "base-experience": 165,
         "effort-values": {
@@ -60909,7 +60909,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "ferrothorn",
+        "evolve": "Ferrothorn",
         "growth-rate": "Medium Fast",
         "base-experience": 61,
         "effort-values": {
@@ -61010,7 +61010,7 @@
             "3": "None",
             "2": "None"
         },
-        "evolve": "ferrothorn",
+        "evolve": "Ferrothorn",
         "growth-rate": "Medium Fast",
         "base-experience": 171,
         "effort-values": {
@@ -61116,7 +61116,7 @@
             "2": "Minus",
             "3": "Clear-body"
         },
-        "evolve": "klang",
+        "evolve": "Klang",
         "growth-rate": "Medium Slow",
         "base-experience": 60,
         "effort-values": {
@@ -61203,7 +61203,7 @@
             "2": "Minus",
             "3": "Clear-body"
         },
-        "evolve": "klinklang",
+        "evolve": "Klinklang",
         "growth-rate": "Medium Slow",
         "base-experience": 154,
         "effort-values": {
@@ -61290,7 +61290,7 @@
             "2": "Minus",
             "3": "Clear-body"
         },
-        "evolve": "klinklang",
+        "evolve": "Klinklang",
         "growth-rate": "Medium Slow",
         "base-experience": 260,
         "effort-values": {
@@ -61380,7 +61380,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "eelektrik",
+        "evolve": "Eelektrik",
         "growth-rate": "Slow",
         "base-experience": 55,
         "effort-values": {
@@ -61425,7 +61425,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "eelektross",
+        "evolve": "Eelektross",
         "growth-rate": "Slow",
         "base-experience": 142,
         "effort-values": {
@@ -61517,7 +61517,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "eelektross",
+        "evolve": "Eelektross",
         "growth-rate": "Slow",
         "base-experience": 232,
         "effort-values": {
@@ -61617,7 +61617,7 @@
             "2": "Synchronize",
             "3": "Analytic"
         },
-        "evolve": "beheeyem",
+        "evolve": "Beheeyem",
         "growth-rate": "Medium Fast",
         "base-experience": 67,
         "effort-values": {
@@ -61736,7 +61736,7 @@
             "2": "Synchronize",
             "3": "Analytic"
         },
-        "evolve": "beheeyem",
+        "evolve": "Beheeyem",
         "growth-rate": "Medium Fast",
         "base-experience": 170,
         "effort-values": {
@@ -61848,7 +61848,7 @@
             "2": "Flame-body",
             "3": "Shadow-tag"
         },
-        "evolve": "lampent",
+        "evolve": "Lampent",
         "growth-rate": "Medium Slow",
         "base-experience": 55,
         "effort-values": {
@@ -61955,7 +61955,7 @@
             "2": "Flame-body",
             "3": "Shadow-tag"
         },
-        "evolve": "chandelure",
+        "evolve": "Chandelure",
         "growth-rate": "Medium Slow",
         "base-experience": 130,
         "effort-values": {
@@ -62054,7 +62054,7 @@
             "2": "Flame-body",
             "3": "Shadow-tag"
         },
-        "evolve": "chandelure",
+        "evolve": "Chandelure",
         "growth-rate": "Medium Slow",
         "base-experience": 260,
         "effort-values": {
@@ -62142,7 +62142,7 @@
             "2": "Mold-breaker",
             "3": "Unnerve"
         },
-        "evolve": "fraxure",
+        "evolve": "Fraxure",
         "growth-rate": "Slow",
         "base-experience": 64,
         "effort-values": {
@@ -62252,7 +62252,7 @@
             "2": "Mold-breaker",
             "3": "Unnerve"
         },
-        "evolve": "haxorus",
+        "evolve": "Haxorus",
         "growth-rate": "Slow",
         "base-experience": 144,
         "effort-values": {
@@ -62354,7 +62354,7 @@
             "2": "Mold-breaker",
             "3": "Unnerve"
         },
-        "evolve": "haxorus",
+        "evolve": "Haxorus",
         "growth-rate": "Slow",
         "base-experience": 270,
         "effort-values": {
@@ -62464,7 +62464,7 @@
             "2": "Slush-rush",
             "3": "Rattled"
         },
-        "evolve": "beartic",
+        "evolve": "Beartic",
         "growth-rate": "Medium Fast",
         "base-experience": 61,
         "effort-values": {
@@ -62565,7 +62565,7 @@
             "2": "Slush-rush",
             "3": "Swift-swim"
         },
-        "evolve": "beartic",
+        "evolve": "Beartic",
         "growth-rate": "Medium Fast",
         "base-experience": 177,
         "effort-values": {
@@ -62672,7 +62672,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "cryogonal",
+        "evolve": "Cryogonal",
         "growth-rate": "Medium Fast",
         "base-experience": 180,
         "effort-values": {
@@ -62764,7 +62764,7 @@
             "2": "Shell-armor",
             "3": "Overcoat"
         },
-        "evolve": "accelgor",
+        "evolve": "Accelgor",
         "growth-rate": "Medium Fast",
         "base-experience": 61,
         "effort-values": {
@@ -62854,7 +62854,7 @@
             "2": "Sticky-hold",
             "3": "Unburden"
         },
-        "evolve": "accelgor",
+        "evolve": "Accelgor",
         "growth-rate": "Medium Fast",
         "base-experience": 173,
         "effort-values": {
@@ -62939,7 +62939,7 @@
             "2": "Limber",
             "3": "Sand-veil"
         },
-        "evolve": "stunfisk",
+        "evolve": "Stunfisk",
         "growth-rate": "Medium Fast",
         "base-experience": 165,
         "effort-values": {
@@ -63047,7 +63047,7 @@
             "2": "Regenerator",
             "3": "Reckless"
         },
-        "evolve": "mienshao",
+        "evolve": "Mienshao",
         "growth-rate": "Medium Slow",
         "base-experience": 70,
         "effort-values": {
@@ -63160,7 +63160,7 @@
             "2": "Regenerator",
             "3": "Reckless"
         },
-        "evolve": "mienshao",
+        "evolve": "Mienshao",
         "growth-rate": "Medium Slow",
         "base-experience": 179,
         "effort-values": {
@@ -63266,7 +63266,7 @@
             "2": "Sheer-force",
             "3": "Mold-breaker"
         },
-        "evolve": "druddigon",
+        "evolve": "Druddigon",
         "growth-rate": "Medium Fast",
         "base-experience": 170,
         "effort-values": {
@@ -63395,7 +63395,7 @@
             "2": "Klutz",
             "3": "No-guard"
         },
-        "evolve": "golurk",
+        "evolve": "Golurk",
         "growth-rate": "Medium Fast",
         "base-experience": 61,
         "effort-values": {
@@ -63499,7 +63499,7 @@
             "2": "Klutz",
             "3": "No-guard"
         },
-        "evolve": "golurk",
+        "evolve": "Golurk",
         "growth-rate": "Medium Fast",
         "base-experience": 169,
         "effort-values": {
@@ -63613,7 +63613,7 @@
             "2": "Inner-focus",
             "3": "Pressure"
         },
-        "evolve": "bisharp",
+        "evolve": "Bisharp",
         "growth-rate": "Medium Fast",
         "base-experience": 68,
         "effort-values": {
@@ -63730,7 +63730,7 @@
             "2": "Inner-focus",
             "3": "Pressure"
         },
-        "evolve": "kingambit",
+        "evolve": "Kingambit",
         "growth-rate": "Medium Fast",
         "base-experience": 172,
         "effort-values": {
@@ -63844,7 +63844,7 @@
             "2": "Sap-sipper",
             "3": "Soundproof"
         },
-        "evolve": "bouffalant",
+        "evolve": "Bouffalant",
         "growth-rate": "Medium Fast",
         "base-experience": 172,
         "effort-values": {
@@ -63948,7 +63948,7 @@
             "2": "Sheer-force",
             "3": "Hustle"
         },
-        "evolve": "braviary",
+        "evolve": "Braviary",
         "growth-rate": "Slow",
         "base-experience": 70,
         "effort-values": {
@@ -64040,7 +64040,7 @@
             "2": "Sheer-force",
             "3": "Defiant"
         },
-        "evolve": "braviary",
+        "evolve": "Braviary",
         "growth-rate": "Slow",
         "base-experience": 179,
         "effort-values": {
@@ -64136,7 +64136,7 @@
             "2": "Overcoat",
             "3": "Weak-armor"
         },
-        "evolve": "mandibuzz",
+        "evolve": "Mandibuzz",
         "growth-rate": "Slow",
         "base-experience": 74,
         "effort-values": {
@@ -64242,7 +64242,7 @@
             "2": "Overcoat",
             "3": "Weak-armor"
         },
-        "evolve": "mandibuzz",
+        "evolve": "Mandibuzz",
         "growth-rate": "Slow",
         "base-experience": 179,
         "effort-values": {
@@ -64345,7 +64345,7 @@
             "2": "Flash-fire",
             "3": "White-smoke"
         },
-        "evolve": "heatmor",
+        "evolve": "Heatmor",
         "growth-rate": "Medium Fast",
         "base-experience": 169,
         "effort-values": {
@@ -64458,7 +64458,7 @@
             "2": "Hustle",
             "3": "Truant"
         },
-        "evolve": "durant",
+        "evolve": "Durant",
         "growth-rate": "Medium Fast",
         "base-experience": 169,
         "effort-values": {
@@ -64559,7 +64559,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "zweilous",
+        "evolve": "Zweilous",
         "growth-rate": "Slow",
         "base-experience": 60,
         "effort-values": {
@@ -64665,7 +64665,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "hydreigon",
+        "evolve": "Hydreigon",
         "growth-rate": "Slow",
         "base-experience": 147,
         "effort-values": {
@@ -64760,7 +64760,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "hydreigon",
+        "evolve": "Hydreigon",
         "growth-rate": "Slow",
         "base-experience": 300,
         "effort-values": {
@@ -64879,7 +64879,7 @@
             "3": "Swarm",
             "2": "None"
         },
-        "evolve": "volcarona",
+        "evolve": "Volcarona",
         "growth-rate": "Slow",
         "base-experience": 72,
         "effort-values": {
@@ -64975,7 +64975,7 @@
             "3": "Swarm",
             "2": "None"
         },
-        "evolve": "volcarona",
+        "evolve": "Volcarona",
         "growth-rate": "Slow",
         "base-experience": 275,
         "effort-values": {
@@ -65071,7 +65071,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "cobalion",
+        "evolve": "Cobalion",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -65174,7 +65174,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "terrakion",
+        "evolve": "Terrakion",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -65276,7 +65276,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "virizion",
+        "evolve": "Virizion",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -65378,7 +65378,7 @@
             "3": "Defiant",
             "2": "None"
         },
-        "evolve": "tornadus-incarnate",
+        "evolve": "Tornadus-incarnate",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -65485,7 +65485,7 @@
             "3": "Defiant",
             "2": "None"
         },
-        "evolve": "thundurus-incarnate",
+        "evolve": "Thundurus-incarnate",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -65595,7 +65595,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "reshiram",
+        "evolve": "Reshiram",
         "growth-rate": "Slow",
         "base-experience": 340,
         "effort-values": {
@@ -65703,7 +65703,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "zekrom",
+        "evolve": "Zekrom",
         "growth-rate": "Slow",
         "base-experience": 340,
         "effort-values": {
@@ -65814,7 +65814,7 @@
             "3": "Sheer-force",
             "2": "None"
         },
-        "evolve": "landorus-incarnate",
+        "evolve": "Landorus-incarnate",
         "growth-rate": "Slow",
         "base-experience": 300,
         "effort-values": {
@@ -65922,7 +65922,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "kyurem",
+        "evolve": "Kyurem",
         "growth-rate": "Slow",
         "base-experience": 330,
         "effort-values": {
@@ -66029,7 +66029,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "keldeo-ordinary",
+        "evolve": "Keldeo-ordinary",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -66130,7 +66130,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "meloetta-aria",
+        "evolve": "Meloetta-aria",
         "growth-rate": "Slow",
         "base-experience": 270,
         "effort-values": {
@@ -66261,7 +66261,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "genesect",
+        "evolve": "Genesect",
         "growth-rate": "Slow",
         "base-experience": 300,
         "effort-values": {
@@ -66374,7 +66374,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "deoxys-attack",
+        "evolve": "Deoxys-attack",
         "growth-rate": "Slow",
         "base-experience": 270,
         "effort-values": {
@@ -66496,7 +66496,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "deoxys-defense",
+        "evolve": "Deoxys-defense",
         "growth-rate": "Slow",
         "base-experience": 270,
         "effort-values": {
@@ -66621,7 +66621,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "deoxys-speed",
+        "evolve": "Deoxys-speed",
         "growth-rate": "Slow",
         "base-experience": 270,
         "effort-values": {
@@ -66746,7 +66746,7 @@
             "3": "Overcoat",
             "2": "None"
         },
-        "evolve": "wormadam-sandy",
+        "evolve": "Wormadam-sandy",
         "growth-rate": "Medium Fast",
         "base-experience": 148,
         "effort-values": {
@@ -66840,7 +66840,7 @@
             "3": "Overcoat",
             "2": "None"
         },
-        "evolve": "wormadam-trash",
+        "evolve": "Wormadam-trash",
         "growth-rate": "Medium Fast",
         "base-experience": 148,
         "effort-values": {
@@ -66934,7 +66934,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "shaymin-sky",
+        "evolve": "Shaymin-sky",
         "growth-rate": "Medium Slow",
         "base-experience": 270,
         "effort-values": {
@@ -67019,7 +67019,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "giratina-origin",
+        "evolve": "Giratina-origin",
         "growth-rate": "Slow",
         "base-experience": 340,
         "effort-values": {
@@ -67132,7 +67132,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "rotom-heat",
+        "evolve": "Rotom-heat",
         "growth-rate": "Medium Fast",
         "base-experience": 182,
         "effort-values": {
@@ -67226,7 +67226,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "rotom-wash",
+        "evolve": "Rotom-wash",
         "growth-rate": "Medium Fast",
         "base-experience": 182,
         "effort-values": {
@@ -67320,7 +67320,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "rotom-frost",
+        "evolve": "Rotom-frost",
         "growth-rate": "Medium Fast",
         "base-experience": 182,
         "effort-values": {
@@ -67414,7 +67414,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "rotom-fan",
+        "evolve": "Rotom-fan",
         "growth-rate": "Medium Fast",
         "base-experience": 182,
         "effort-values": {
@@ -67508,7 +67508,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "rotom-mow",
+        "evolve": "Rotom-mow",
         "growth-rate": "Medium Fast",
         "base-experience": 182,
         "effort-values": {
@@ -67602,7 +67602,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "castform-sunny",
+        "evolve": "Castform-sunny",
         "growth-rate": "Medium Fast",
         "base-experience": 147,
         "effort-values": {
@@ -67701,7 +67701,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "castform-rainy",
+        "evolve": "Castform-rainy",
         "growth-rate": "Medium Fast",
         "base-experience": 147,
         "effort-values": {
@@ -67800,7 +67800,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "castform-snowy",
+        "evolve": "Castform-snowy",
         "growth-rate": "Medium Fast",
         "base-experience": 147,
         "effort-values": {
@@ -67899,7 +67899,7 @@
             "2": "Adaptability",
             "3": "Mold-breaker"
         },
-        "evolve": "basculin-blue-striped",
+        "evolve": "Basculin-blue-striped",
         "growth-rate": "Medium Fast",
         "base-experience": 161,
         "effort-values": {
@@ -67996,7 +67996,7 @@
             "3": "Zen-mode",
             "2": "None"
         },
-        "evolve": "darmanitan-zen",
+        "evolve": "Darmanitan-zen",
         "growth-rate": "Medium Slow",
         "base-experience": 189,
         "effort-values": {
@@ -68107,7 +68107,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "meloetta-pirouette",
+        "evolve": "Meloetta-pirouette",
         "growth-rate": "Slow",
         "base-experience": 270,
         "effort-values": {
@@ -68238,7 +68238,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "tornadus-therian",
+        "evolve": "Tornadus-therian",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -68345,7 +68345,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "thundurus-therian",
+        "evolve": "Thundurus-therian",
         "growth-rate": "Slow",
         "base-experience": 290,
         "effort-values": {
@@ -68455,7 +68455,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "landorus-therian",
+        "evolve": "Landorus-therian",
         "growth-rate": "Slow",
         "base-experience": 300,
         "effort-values": {
@@ -68563,7 +68563,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "kyurem-black",
+        "evolve": "Kyurem-black",
         "growth-rate": "Slow",
         "base-experience": 350,
         "effort-values": {
@@ -68670,7 +68670,7 @@
             "2": "None",
             "3": "None"
         },
-        "evolve": "kyurem-white",
+        "evolve": "Kyurem-white",
         "growth-rate": "Slow",
         "base-experience": 350,
         "effort-values": {

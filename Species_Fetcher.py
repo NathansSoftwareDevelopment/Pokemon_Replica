@@ -168,7 +168,7 @@ def parsePokeInfo(rawData):
     # printRawData(rawSpeciesData)
     pokeData = {}
 
-    pokeData["name"] = rawPokemonData["name"]
+    pokeData["name"] = rawPokemonData["name"].capitalize()
 
     tempStats = {}
     for i in range(6):
@@ -215,8 +215,6 @@ def parsePokeInfo(rawData):
     pokeData["effort-values"]["Speed"] = rawPokemonData["stats"][5]["effort"]
 
     pokeData["moves"] = getMoves(rawPokemonData)
-
-    pokeData["name"] = pokeData["name"].capitalize()
 
     return pokeData
 
