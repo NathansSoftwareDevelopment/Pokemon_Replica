@@ -9,27 +9,24 @@ using json = nlohmann::json;
 
 Species::Species(const json& inputJSON) {
     _name = inputJSON.at("name").get<std::string>();
+    std::cout << _name << std::endl;
 
-    _stats["HitPoints"] = inputJSON.at("stats").at("hp").get<int>();
-    _stats["Attack"] = inputJSON.at("stats").at("attack").get<int>();
-    _stats["Defense"] = inputJSON.at("stats").at("defense").get<int>();
-    _stats["SpecialAttack"] = inputJSON.at("stats").at("special-attack").get<int>();
-    _stats["SpecialDefense"] = inputJSON.at("stats").at("special-defense").get<int>();
-    _stats["Speed"] = inputJSON.at("stats").at("speed").get<int>();
+    _stats["HitPoints"] = inputJSON.at("stats").at("HitPoints").get<int>();
+    _stats["Attack"] = inputJSON.at("stats").at("Attack").get<int>();
+    _stats["Defense"] = inputJSON.at("stats").at("Defense").get<int>();
+    _stats["SpecialAttack"] = inputJSON.at("stats").at("SpecialAttack").get<int>();
+    _stats["SpecialDefense"] = inputJSON.at("stats").at("SpecialDefense").get<int>();
+    _stats["Speed"] = inputJSON.at("stats").at("Speed").get<int>();
 
-    _effortValues["HitPoints"] = inputJSON.at("effort-values").at("hp").get<int>();
-    _effortValues["Attack"] = inputJSON.at("effort-values").at("attack").get<int>();
-    _effortValues["Defense"] = inputJSON.at("effort-values").at("defense").get<int>();
-    _effortValues["SpecialAttack"] = inputJSON.at("effort-values").at("special-attack").get<int>();
-    _effortValues["SpecialDefense"] = inputJSON.at("effort-values").at("special-defense").get<int>();
-    _effortValues["Speed"] = inputJSON.at("effort-values").at("speed").get<int>();
+    _effortValues["HitPoints"] = inputJSON.at("effort-values").at("HitPoints").get<int>();
+    _effortValues["Attack"] = inputJSON.at("effort-values").at("Attack").get<int>();
+    _effortValues["Defense"] = inputJSON.at("effort-values").at("Defense").get<int>();
+    _effortValues["SpecialAttack"] = inputJSON.at("effort-values").at("SpecialAttack").get<int>();
+    _effortValues["SpecialDefense"] = inputJSON.at("effort-values").at("SpecialDefense").get<int>();
+    _effortValues["Speed"] = inputJSON.at("effort-values").at("Speed").get<int>();
 
-    std::string typeString1 = inputJSON.at("types").at("1").get<std::string>();
-    typeString1[0] = static_cast<char>(std::toupper(typeString1[0]));
-    _type1 = &typeMap.find(typeString1)->second;
-    std::string typeString2 = inputJSON.at("types").at("2").get<std::string>();
-    typeString2[0] = static_cast<char>(std::toupper(typeString2[0]));
-    _type2 = &typeMap.find(typeString2)->second;
+    _type1 = &typeMap.find(inputJSON.at("types").at("1").get<std::string>())->second;
+    _type2 = &typeMap.find(inputJSON.at("types").at("2").get<std::string>())->second;
 
     _abilities[1] = inputJSON.at("abilities").at("1").get<std::string>();
     _abilities[2] = inputJSON.at("abilities").at("2").get<std::string>();
@@ -37,23 +34,7 @@ Species::Species(const json& inputJSON) {
 
     _evolution = inputJSON.at("evolve").get<std::string>();
 
-    std::string tempGrowthRate;
-    if (inputJSON.contains("growth-rate")) {
-        tempGrowthRate = inputJSON.at("growth-rate").get<std::string>();
-    } else {
-        tempGrowthRate = "slow";
-    }
-    tempGrowthRate[0] = static_cast<char>(std::toupper(tempGrowthRate[0]));
-    if (tempGrowthRate == "Medium-slow") {
-        tempGrowthRate = "Medium Slow";
-    } else if (tempGrowthRate == "Medium") {
-        tempGrowthRate = "Medium Fast";
-    } else if (tempGrowthRate == "Fast-then-very-slow") {
-        tempGrowthRate = "Fluctuating";
-    } else if (tempGrowthRate == "Slow-then-very-fast") {
-        tempGrowthRate = "Erratic";
-    }
-    _growthRate = tempGrowthRate;
+    _growthRate = inputJSON.at("growth-rate").get<std::string>();
 
     _experienceValue = inputJSON.at("base-experience").get<int>();
 

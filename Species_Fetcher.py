@@ -1,6 +1,6 @@
-import pokebase as pb
+import copy
 import json
-import requests
+
 from icecream import ic
 
 outputDictionary = {}
@@ -29,8 +29,8 @@ def getTypes(rawData):
     tempTypes = {}
     
     # set types to current types
-    tempTypes[1] = rawData["types"][0]["type"]["name"]
-    tempTypes[2] = rawData["types"][1]["type"]["name"] if len(rawData["types"]) > 1 else "none"
+    tempTypes[1] = rawData["types"][0]["type"]["name"].capitalize()
+    tempTypes[2] = rawData["types"][1]["type"]["name"].capitalize() if len(rawData["types"]) > 1 else "None"
 
     # generations use roman numerals. This map will allow for the an easy conversion and comparison
     # additional characters are added the front of numerals so that all numerals are four characters (to match with generation-#)
@@ -59,17 +59,17 @@ def getTypes(rawData):
     # use the correct generation data
     for i in rawData["past_types"]:
         if romanDict[i["generation"]["name"][-4:]] == correctGeneration:
-            tempTypes[1] = i["types"][0]["type"]["name"]
-            tempTypes[2] = i["types"][1]["type"]["name"] if len(i["types"]) > 1 else "none"
+            tempTypes[1] = i["types"][0]["type"]["name"].capitalize()
+            tempTypes[2] = i["types"][1]["type"]["name"].capitalize() if len(i["types"]) > 1 else "none"
 
     return tempTypes
 
 def getAbilities(rawPokemonData):
     # populate tempAbilities with modern slots and abilities
-    tempAbilities = {item["slot"]: item["ability"]["name"] for item in rawPokemonData.get("abilities", [])}
+    tempAbilities = {item["slot"]: item["ability"]["name"].capitalize() for item in rawPokemonData.get("abilities", [])}
     # if ability slots 2 or 3 are missing replace with "None"
-    tempAbilities[2] = tempAbilities.get(2, "none")
-    tempAbilities[3] = tempAbilities.get(3, "none")
+    tempAbilities[2] = tempAbilities.get(2, "None")
+    tempAbilities[3] = tempAbilities.get(3, "None")
 
     # generations use roman numerals. This map will allow for the an easy conversion and comparison
     # additional characters are added the front of numerals so that all numerals are four characters (to match with generation-#)
@@ -100,7 +100,7 @@ def getAbilities(rawPokemonData):
     for i in rawPokemonData["past_abilities"]:
         if romanDict[i["generation"]["name"][-4:]] == correctGeneration:
             # replace each ability slot that has changed with its respective ability
-            tempAbilities.update({ability["slot"]: ability["ability"]["name"] if ability["ability"] is not None else "none" for ability in i["abilities"]})
+            tempAbilities.update({ability["slot"]: ability["ability"]["name"].capitalize() if ability["ability"] is not None else "None" for ability in i["abilities"]})
 
     return tempAbilities
 
@@ -123,7 +123,33 @@ def getMoves(rawPokemonData):
                 tempMoves[moveGroup].append(moveName)
             else:
                 tempMoves["other"][version["move_learn_method"]["name"]] = moveName
-    return tempMoves
+
+    tempMoves2 = copy.deepcopy(tempMoves)
+    # The naming scheme of PokeAPI is destructive in nature so several move names had to be manually respecified
+    hyphenatedDict = {"double-edge": "Double-Edge", "freeze-dry": "Freeze-Dry", "lock-on": "Lock-On", "mud-slap": "Mud-Slap", "power-up-punch": "Power-Up Punch",
+                      "self-destruct": "Self-Destruct", "soft-boiled": "Soft-Boiled", "u-turn": "U-turn", "v-create": "V-create", "wake-up-slap": "Wake-Up Slap",
+                      "will-o-wisp": "Will-O-Wisp", "x-scissor": "X-Scissor"}
+    for learnType, learnData in tempMoves.items():
+        if isinstance(learnData, dict):
+            for move in learnData:
+                if move in hyphenatedDict.keys():
+                    tempMoves2[learnType][hyphenatedDict[move]] = learnData[move]
+                    tempMoves2[learnType].pop(move)
+                else:
+                    # If the move name did not have to be manually respecified | Capitalize all words in move name and replace the hyphens with spaces
+                    tempMoves2[learnType][" ".join([word.capitalize() for word in move.split("-")])] = learnData[move]
+                    tempMoves2[learnType].pop(move)
+        elif isinstance(learnData, list):
+            for move in learnData:
+                if move in hyphenatedDict.keys():
+                    tempMoves2[learnType].append(hyphenatedDict[move])
+                    tempMoves2[learnType].remove(move)
+                else:
+                    # If the move name did not have to be manually respecified | Capitalize all words in move name and replace the hyphens with spaces
+                    tempMoves2[learnType].append(" ".join([word.capitalize() for word in move.split("-")]))
+                    tempMoves2[learnType].remove(move)
+    
+    return tempMoves2
 
 def printFinalData(finalData):
     for i in finalData:
@@ -148,6 +174,13 @@ def parsePokeInfo(rawData):
     for i in range(6):
         tempStats[rawPokemonData["stats"][i]["stat"]["name"]] = rawPokemonData["stats"][i]["base_stat"]
     pokeData["stats"] = tempStats
+    pokeData["stats"] = {}
+    pokeData["stats"]["HitPoints"] = rawPokemonData["stats"][0]["base_stat"]
+    pokeData["stats"]["Attack"] = rawPokemonData["stats"][1]["base_stat"]
+    pokeData["stats"]["Defense"] = rawPokemonData["stats"][2]["base_stat"]
+    pokeData["stats"]["SpecialAttack"] = rawPokemonData["stats"][3]["base_stat"]
+    pokeData["stats"]["SpecialDefense"] = rawPokemonData["stats"][4]["base_stat"]
+    pokeData["stats"]["Speed"] = rawPokemonData["stats"][5]["base_stat"]
 
     pokeData["types"] = getTypes(rawPokemonData)
 
@@ -155,16 +188,35 @@ def parsePokeInfo(rawData):
 
     pokeData["evolve"] = getEvolve(pokeData["name"])
 
-    pokeData["growth-rate"] = rawSpeciesData["growth_rate"]["name"]
+    tempGrowthRate = str
+    growthRate = rawSpeciesData["growth_rate"]["name"]
+    if growthRate == "slow":
+        tempGrowthRate = "Slow"
+    elif growthRate == "medium-slow":
+        tempGrowthRate = "Medium Slow"
+    elif growthRate == "medium":
+        tempGrowthRate = "Medium Fast"
+    elif growthRate == "fast":
+        tempGrowthRate = "Fast"
+    elif growthRate == "fast-then-very-slow":
+        tempGrowthRate = "Fluctuating"
+    elif growthRate == "slow-then-very-fast":
+        tempGrowthRate = "Erratic"
+    pokeData["growth-rate"] = tempGrowthRate
 
     pokeData["base-experience"] = rawPokemonData["base_experience"]
 
-    tempEVs = {}
-    for i in rawPokemonData["stats"]:
-        tempEVs[i["stat"]["name"]] = i["effort"]
-    pokeData["effort-values"] = tempEVs
+    pokeData["effort-values"] = {}
+    pokeData["effort-values"]["HitPoints"] = rawPokemonData["stats"][0]["effort"]
+    pokeData["effort-values"]["Attack"] = rawPokemonData["stats"][1]["effort"]
+    pokeData["effort-values"]["Defense"] = rawPokemonData["stats"][2]["effort"]
+    pokeData["effort-values"]["SpecialAttack"] = rawPokemonData["stats"][3]["effort"]
+    pokeData["effort-values"]["SpecialDefense"] = rawPokemonData["stats"][4]["effort"]
+    pokeData["effort-values"]["Speed"] = rawPokemonData["stats"][5]["effort"]
 
     pokeData["moves"] = getMoves(rawPokemonData)
+
+    pokeData["name"] = pokeData["name"].capitalize()
 
     return pokeData
 
