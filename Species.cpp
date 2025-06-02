@@ -55,6 +55,8 @@ Species::Species(const json& inputJSON) {
     }
     _growthRate = tempGrowthRate;
 
+    _experienceValue = inputJSON.at("base-experience").get<int>();
+
     _moves.levelUp = inputJSON.at("moves").at("level-up");
     _moves.egg = inputJSON.at("moves").at("egg");
     _moves.machine = inputJSON.at("moves").at("machine");
