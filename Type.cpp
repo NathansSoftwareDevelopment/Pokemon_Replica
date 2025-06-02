@@ -3,8 +3,8 @@
 #include <map>
 
 Type::Type(std::string typeInputName, std::map<std::string, double> inputAttackingTypeMap) {
-    name = typeInputName;
-    attackingTypeMap = inputAttackingTypeMap;
+    _name = typeInputName;
+    _attackingTypeMap = inputAttackingTypeMap;
 }
 
 std::map<std::string, Type> typeMap = {
