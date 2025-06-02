@@ -98,7 +98,7 @@ void Pokemon::addExperience(int inputExperience) {
     calculatePokemonStats();
 }
 
-Pokemon::Pokemon(std::string inputName, const Species* inputSpecies, std::string inputNature, std::string inputAbility, int inputIndividualValues[6]) {
+Pokemon::Pokemon(std::string inputName, Species* inputSpecies, std::string inputNature, std::string inputAbility, int inputIndividualValues[6]) {
     name = inputName;
     species = inputSpecies;
     setPokemonNature(inputNature);
@@ -115,7 +115,7 @@ Pokemon::Pokemon(std::string inputName, const Species* inputSpecies, std::string
 }
 
 Pokemon::Pokemon(
-    std::string inputName, const Species* inputSpecies, std::string inputNature, int inputLevel, int inputExperience, std::string inputAbility,
+    std::string inputName, Species* inputSpecies, std::string inputNature, int inputLevel, int inputExperience, std::string inputAbility,
     std::string inputMove1, std::string inputMove2, std::string inputMove3, std::string inputMove4, 
     std::string inputCondition,
     int inputIndividualValues[6], int inputEffortValues[6]

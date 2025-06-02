@@ -15,7 +15,7 @@ class Pokemon {
         void calculatePokemonStats();
         void setPokemonMoves(std::string inputMove1, std::string InputMove2, std::string inputMove3, std::string inputMove4);
     public:
-        const Species* species;
+        Species* species;
         std::string name;
 
         int level;
@@ -95,9 +95,9 @@ class Pokemon {
         void addExperience(int inputExperience);
 
         
-        Pokemon(std::string inputName, const Species* inputSpecies, std::string inputNature, std::string inputAbility, int inputIndividualValues[6]);
+        Pokemon(std::string inputName, Species* inputSpecies, std::string inputNature, std::string inputAbility, int inputIndividualValues[6]);
         Pokemon(
-            std::string inputName, const Species* inputSpecies, std::string inputNature, int inputLevel, int inputExperience, std::string inputAbility,
+            std::string inputName, Species* inputSpecies, std::string inputNature, int inputLevel, int inputExperience, std::string inputAbility,
             std::string inputMove1, std::string inputMove2, std::string inputMove3, std::string inputMove4, 
             std::string inputCondition,
             int inputIndividualValues[6], int inputEffortValues[6]
