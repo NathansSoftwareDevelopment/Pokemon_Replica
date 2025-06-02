@@ -30,7 +30,7 @@ void display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
     cout << "Species Name: " << inputPokemon->species->name() << endl;
     cout << "Level: " << inputPokemon->level << endl;
     cout << "Experience: " << inputPokemon->experience << endl;
-    cout << "Nature: " << inputPokemon->nature->name << endl;
+    cout << "Nature: " << inputPokemon->nature->name() << endl;
     cout << "Ability: " << inputPokemon->ability << endl;
     cout << "Types" << endl;
     cout << "\t" << inputPokemon->type1->name << endl;

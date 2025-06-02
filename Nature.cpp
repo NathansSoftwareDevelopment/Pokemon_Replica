@@ -2,10 +2,10 @@
 #include "Nature.h"
 
 Nature::Nature(std::string natureInput, std::string multiplierInput, std::string divisorInput) {
-    name = natureInput;
+    _name = natureInput;
     if (multiplierInput != divisorInput) {
-        stats[multiplierInput] = 1.1;
-        stats[divisorInput] = 0.9;
+        _stats[multiplierInput] = 1.1;
+        _stats[divisorInput] = 0.9;
     }
 };
 

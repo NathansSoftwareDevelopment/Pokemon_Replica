@@ -29,9 +29,10 @@ int main() {
     // Battle(&mySecondPokemon, &myThirdPokemon);
     std::cout << "Zekrom Experience: " << myZekrom.species->experienceValue() << std::endl;
     std::cout << "zekky Nature" << std::endl;
-    for (std::pair<std::string, double> i : myZekrom.nature->stats) {
+    for (std::pair<std::string, double> i : myZekrom.nature->stats()) {
         std::cout << "\t" << i.first << ": " << i.second << std::endl;
     }
+    Display.pokemonAll(&myZekrom);
     Battle(&myVenusaur, &myZekrom);
     // std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
     std::cout << "\n\nEnd Main";
