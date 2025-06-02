@@ -35,8 +35,10 @@ void Pokemon::setPokemonNature(std::string inputNature) {
 }
 
 void Pokemon::setPokemonTypes() {
-    type1 = species->type1();
-    type2 = species->type2();
+    /* Types and the Types of a given Species need to be const as they are meant to be immutable
+       However a given Pokemon's Types need to be mutable as they *can* be changed */
+    type1 = const_cast<Type*>(species->type1());
+    type2 = const_cast<Type*>(species->type2());
 }
 
 void Pokemon::setPokemonMoves(std::string inputMove1, std::string inputMove2, std::string inputMove3, std::string inputMove4) {

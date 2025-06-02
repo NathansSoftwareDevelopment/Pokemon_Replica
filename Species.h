@@ -28,16 +28,16 @@ class Species {
         int _experienceValue;
         learnSet _moves;
     public:
-        std::string name() const {return _name;}
-        std::map<std::string, int> stats() const {return _stats;}
-        std::map<std::string, int> effortValues() const {return _effortValues;}
-        Type* type1() const {return _type1;}
-        Type* type2() const {return _type2;}
-        std::map<int, std::string> abilities() const {return _abilities;}
-        std::string evolution() const {return _evolution;}
-        std::string growthRate() const {return _growthRate;}
-        int experienceValue() const {return _experienceValue;}
-        learnSet moves() const {return _moves;}
+        const std::string name() const {return _name;}
+        const std::map<std::string, int> stats() const {return _stats;}
+        const std::map<std::string, int> effortValues() const {return _effortValues;}
+        const Type* type1() const {return _type1;}
+        const Type* type2() const {return _type2;}
+        const std::map<int, std::string> abilities() const {return _abilities;}
+        const std::string evolution() const {return _evolution;}
+        const std::string growthRate() const {return _growthRate;}
+        const int experienceValue() const {return _experienceValue;}
+        const learnSet moves() const {return _moves;}
 
         Species(const json& inputJSON);
 };
