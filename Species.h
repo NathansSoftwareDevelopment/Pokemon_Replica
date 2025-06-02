@@ -39,17 +39,6 @@ class Species {
         int experienceValue() const {return _experienceValue;}
         learnSet moves() const {return _moves;}
 
-        Species& name(std::string inputName) {_name = inputName; return *this;}
-        Species& stats(std::map<std::string, int> inputStats) {_stats = inputStats; return *this;}
-        Species& effortValues(std::map<std::string, int> inputEffortValues) {_effortValues = inputEffortValues; return *this;}
-        Species& type1(Type* inputType1) {_type1 = inputType1; return *this;}
-        Species& type2(Type* inputType2) {_type2 = inputType2; return *this;}
-        Species& abilities(std::map<int, std::string> inputAbilities) {_abilities = inputAbilities; return *this;}
-        Species& evolution(std::string inputEvolution) {_evolution = inputEvolution; return *this;}
-        Species& growthRate(std::string inputGrowthRate) {_growthRate = inputGrowthRate; return *this;}
-        Species& experienceValue(int inputExperienceValue) {_experienceValue = inputExperienceValue; return *this;}
-        Species& moves(learnSet inputMoves) {_moves = inputMoves; return *this;}
-
         Species(const json& inputJSON);
 };
 
