@@ -9,7 +9,6 @@ using json = nlohmann::json;
 
 Species::Species(const json& inputJSON) {
     _name = inputJSON.at("name").get<std::string>();
-    std::cout << _name << std::endl;
 
     _stats["HitPoints"] = inputJSON.at("stats").at("HitPoints").get<int>();
     _stats["Attack"] = inputJSON.at("stats").at("Attack").get<int>();

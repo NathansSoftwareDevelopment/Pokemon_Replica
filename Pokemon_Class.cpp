@@ -91,8 +91,8 @@ void Pokemon::calculateStageChanges() {
 }
 
 void Pokemon::addExperience(int inputExperience) {
-    while (experience+inputExperience >= growthRateMap.find(species->growthRate())->second.toNextLevel[level]) {
-        inputExperience -= (growthRateMap.find(species->growthRate())->second.toNextLevel[level] - experience);
+    while (experience+inputExperience >= growthRateMap.find(species->growthRate())->second.toNextLevel().at(level)) {
+        inputExperience -= (growthRateMap.find(species->growthRate())->second.toNextLevel().at(level) - experience);
         experience = 0;
         level += 1;
     }

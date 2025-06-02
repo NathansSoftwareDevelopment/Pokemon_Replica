@@ -3,6 +3,12 @@
 #include <map>
 #include <cmath>
 
+GrowthRate::GrowthRate(std::string inputName, std::map<int, int> inputToNextLevel, std::map<int, int> inputToLevel) {
+    _name = inputName;
+    _toNextLevel = inputToNextLevel;
+    _toLevel = inputToLevel;
+}
+
 std::map<std::string, GrowthRate> growthRateMap;
 
 void makeGrowthRates() {
@@ -38,6 +44,6 @@ void makeGrowthRates() {
             toNextLevel[level] = growthRate.second[level+1] - growthRate.second[level];
             // printf("\t%d -> %d = %d\n", level, level+1, toNextLevel[level]);
         }
-        growthRateMap[growthRate.first] = GrowthRate{growthRate.first, toNextLevel, growthRate.second};
+        growthRateMap.emplace(growthRate.first, GrowthRate(growthRate.first, toNextLevel, growthRate.second));
     }
 }

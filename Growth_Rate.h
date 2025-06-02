@@ -4,10 +4,17 @@
 #include <iostream>
 #include <map>
 
-struct GrowthRate {
-    std::string name;
-    std::map<int, int> toNextLevel = {{1, 0}};
-    std::map<int, int> toLevel = {{1, 0}};
+class GrowthRate {
+    private:
+        std::string _name;
+        std::map<int, int> _toNextLevel = {{1, 0}};
+        std::map<int, int> _toLevel = {{1, 0}};
+    public:
+        const std::string name() const {return _name;}
+        const std::map<int, int> toNextLevel() const {return _toNextLevel;}
+        const std::map<int, int> toLevel() const {return _toLevel;}
+
+        GrowthRate(std::string inputName, std::map<int, int> inputToNextLevel, std::map<int, int> inputToLevel);
 };
 
 extern void makeGrowthRates();
