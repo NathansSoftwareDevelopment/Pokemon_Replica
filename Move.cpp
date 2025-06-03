@@ -12,39 +12,30 @@ Move::Move(
     std::string inputName, std::string inputType, std::string inputDamageCategory, int inputPower, int inputAccuracy, int inputPP, int inputFlinchChance,
     std::map<std::string, int> inputConditionChances, std::map<std::string, std::array<int, 2>> inputUserStageChances, std::map<std::string, std::array<int, 2>> inputOpponentStageChances, bool inputUniqueness
 ) {
-    name = inputName;
-    type = &typeMap.find(inputType)->second;
-    damageCategory = inputDamageCategory;
-    power = inputPower;
-    accuracy = inputAccuracy;
-    PP = inputPP;
-    flinchChance = inputFlinchChance;
-    conditionChances.insert(inputConditionChances.begin(), inputConditionChances.end());
-    userStageChances.insert(inputUserStageChances.begin(), inputUserStageChances.end());
-    opponentStageChances.insert(inputOpponentStageChances.begin(), inputOpponentStageChances.end());
-    uniqueness = inputUniqueness;
+    _name = inputName;
+    _type = &typeMap.find(inputType)->second;
+    _damageCategory = inputDamageCategory;
+    _power = inputPower;
+    _accuracy = inputAccuracy;
+    _PP = inputPP;
+    _flinchChance = inputFlinchChance;
+    _conditionChances.insert(inputConditionChances.begin(), inputConditionChances.end());
+    _userStageChances.insert(inputUserStageChances.begin(), inputUserStageChances.end());
+    _opponentStageChances.insert(inputOpponentStageChances.begin(), inputOpponentStageChances.end());
+    _uniqueness = inputUniqueness;
 }
 
 Move::Move(const json& inputJSON) {
-    name = inputJSON.at("name");
-
-    std::string typeString = inputJSON.at("type").get<std::string>();
-    type = &typeMap.find(typeString)->second;
-
-    damageCategory = inputJSON.at("damageCategory").get<std::string>();
-
-    power = inputJSON.at("power").get<int>();
-
-    accuracy = inputJSON.at("accuracy").get<int>();
-
-    PP = inputJSON.at("PP").get<int>();
-
-    flinchChance = inputJSON.at("flinchChance").get<int>();
-
-    conditionChances;
-
-    userStageChances;
-    opponentStageChances;
+    _name = inputJSON.at("name");
+    _type = &typeMap.find(inputJSON.at("type").get<std::string>())->second;
+    _damageCategory = inputJSON.at("damageCategory").get<std::string>();
+    _power = inputJSON.at("power").get<int>();
+    _accuracy = inputJSON.at("accuracy").get<int>();
+    _PP = inputJSON.at("PP").get<int>();
+    _flinchChance = inputJSON.at("flinchChance").get<int>();
+    _conditionChances;
+    _userStageChances;
+    _opponentStageChances;
 }
 
 std::map<std::string, Move> moveMap;

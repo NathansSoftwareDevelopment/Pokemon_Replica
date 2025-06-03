@@ -15,7 +15,7 @@ Move* Battle::getMove(Pokemon* attackingInputPokemon, int InputMove) {
 }
 
 double Battle::stabMultiplier(Pokemon* attackingInputPokemon, Move* InputPokemonMove) {
-    if ((InputPokemonMove->type == attackingInputPokemon->type1() || InputPokemonMove->type == attackingInputPokemon->type2()) && InputPokemonMove->type->name() != "None") {
+    if ((InputPokemonMove->type() == attackingInputPokemon->type1() || InputPokemonMove->type() == attackingInputPokemon->type2()) && InputPokemonMove->type()->name() != "None") {
         return 1.5;
     } else {
         return 1;
@@ -23,8 +23,8 @@ double Battle::stabMultiplier(Pokemon* attackingInputPokemon, Move* InputPokemon
 }
 
 double Battle::effectivenessMultiplier(Move* InputPokemonMove, Pokemon* defendingInputPokemon) {
-    double type1Effectiveness = InputPokemonMove->type->attackingTypeMap().find(defendingInputPokemon->type1()->name())->second;
-    double type2Effectiveness = InputPokemonMove->type->attackingTypeMap().find(defendingInputPokemon->type2()->name())->second;
+    double type1Effectiveness = InputPokemonMove->type()->attackingTypeMap().find(defendingInputPokemon->type1()->name())->second;
+    double type2Effectiveness = InputPokemonMove->type()->attackingTypeMap().find(defendingInputPokemon->type2()->name())->second;
     double totalEffectiveness = type1Effectiveness * type2Effectiveness;
     return totalEffectiveness;
 }
@@ -35,16 +35,16 @@ void Battle::damageCalculation(Pokemon* attackingInputPokemon, Move* InputPokemo
     double randomDamageMultiplier = std::uniform_int_distribution<int> (85, 100)(gen)/100.0;
     double attackingCategory;
     double defendingCategory;
-    if (InputPokemonMove->damageCategory == "Physical") {
+    if (InputPokemonMove->damageCategory() == "Physical") {
         attackingCategory = attackingInputPokemon->currentStats().at("Attack");
         defendingCategory = attackingInputPokemon->currentStats().at("Defense");
-    } else if (InputPokemonMove->damageCategory == "Special") {
+    } else if (InputPokemonMove->damageCategory() == "Special") {
         attackingCategory = attackingInputPokemon->currentStats().at("SpecialAttack");
         defendingCategory = attackingInputPokemon->currentStats().at("SpecialDefense");
     } else {
-        std::cout << "Check damage Category of Move: " << InputPokemonMove->name << std::endl;
+        std::cout << "Check damage Category of Move: " << InputPokemonMove->name() << std::endl;
     }
-    int rawDamage = ((2*attackingInputPokemon->level()/5+2)*InputPokemonMove->power*attackingCategory/defendingCategory/50+2);
+    int rawDamage = ((2*attackingInputPokemon->level()/5+2)*InputPokemonMove->power()*attackingCategory/defendingCategory/50+2);
     int totalDamage = rawDamage * stab * effectiveness * randomDamageMultiplier;
     defendingInputPokemon->currentStat("HitPoints", std::max(defendingInputPokemon->currentStats().at("HitPoints") - totalDamage, 0));
     // std::cout << "Level: " << attackingInputPokemon->level() << std::endl;
@@ -78,12 +78,12 @@ void Battle::getFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
 }
 
 void Battle::useMove(Pokemon* attackingInputPokemon, Move* InputPokemonMove, Pokemon* defendingInputPokemon) {
-    std::cout << attackingInputPokemon->name() << " used " << InputPokemonMove->name << std::endl;
+    std::cout << attackingInputPokemon->name() << " used " << InputPokemonMove->name() << std::endl;
     if (!hitCheck(attackingInputPokemon, InputPokemonMove, defendingInputPokemon)) {
         std::cout << attackingInputPokemon->name() << " Missed!" << std::endl;
         return;
     }
-    if (InputPokemonMove->damageCategory != "Status") {
+    if (InputPokemonMove->damageCategory() != "Status") {
         damageCalculation(attackingInputPokemon, InputPokemonMove, defendingInputPokemon);
     }
 }
@@ -96,7 +96,7 @@ bool Battle::hitCheck(Pokemon* attackingInputPokemon, Move* InputPokemonMove, Po
     } else if (hitStage < 0) {
         stageMultiplier = 3.0/(std::abs(hitStage)+3);
     }
-    int finalAccuracy = InputPokemonMove->accuracy * stageMultiplier;
+    int finalAccuracy = InputPokemonMove->accuracy() * stageMultiplier;
     int randomAccuracy = std::uniform_int_distribution<int> (1, 100)(gen);
     if (randomAccuracy > finalAccuracy) {
         return false;
