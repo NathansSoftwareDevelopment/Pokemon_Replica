@@ -52,7 +52,6 @@ void generateMoveMap() {
     for (json::iterator move = movesFile.begin(); move != movesFile.end(); move++) {
         std::string moveName = move.key();
         json movesJSON = move.value();
-
         moveMap.emplace(moveName, Move(movesJSON));
     }
 }
