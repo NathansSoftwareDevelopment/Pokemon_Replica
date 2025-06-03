@@ -41,6 +41,7 @@ Move::Move(const json& inputJSON) {
 std::map<std::string, Move> moveMap;
 
 void generateMoveMap() {
+    moveMap.emplace("Cheat", Move("Cheat", "None", "Special", 100000, 1000, 1000));
     std::string filePath = "Move.json";
     std::ifstream ifs(filePath);
     if (!ifs.is_open()) {

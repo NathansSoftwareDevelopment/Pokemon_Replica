@@ -22,8 +22,8 @@ int main() {
     Display.speciesAll(&(speciesMap.find("Haxorus")->second));
     mySecondPokemon.addExperience(1000);
     myThirdPokemon.addExperience(1000);
-    Pokemon myVenusaur = Pokemon("Venu", &(speciesMap.find("Venusaur")->second), "Modest", 55, 0, "Blaze", "Frenzy Plant", "Scratch", "Dark Pulse", "Smokescreen", "None", randValues, randValues);
-    Pokemon myZekrom = Pokemon("zekky", &(speciesMap.find("Zekrom")->second), "Modest", 62, 0, "Blaze", "Growl", "Scratch", "Thunder Fang", "Smokescreen", "None", randValues, randValues);
+    Pokemon myVenusaur = Pokemon("Venu", &(speciesMap.find("Venusaur")->second), "Modest", 55, 0, "Blaze", "Cheat", "Scratch", "Dark Pulse", "Smokescreen", "None", randValues, randValues);
+    Pokemon myZekrom = Pokemon("zekky", &(speciesMap.find("Zekrom")->second), "Modest", 62, 0, "Blaze", "Growl", "Scratch", "Thunder Fang", "Cheat", "None", randValues, randValues);
     // std::cout << mySecondPokemon.level << " | " << mySecondPokemon.experience << std::endl;
     // std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
     // Battle(&mySecondPokemon, &myThirdPokemon);
