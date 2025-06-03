@@ -91,6 +91,7 @@ class Pokemon {
         Pokemon& effortValue(std::string inputValueName, int inputValue) {_effortValues[inputValueName] = inputValue; return *this;}
         Pokemon& effortValues(int EffortValues[6]);
         Pokemon& pokemonTypes();
+        Pokemon& move(int inputSlot, Move* inputMove) {_moves[inputSlot] = inputMove; return *this;}
         Pokemon& pokemonCurrentStats();
 
         void evolve();

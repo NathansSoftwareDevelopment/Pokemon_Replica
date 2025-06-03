@@ -29,6 +29,7 @@ int main() {
     // Battle(&mySecondPokemon, &myThirdPokemon);
     std::cout << "Zekrom Experience: " << myZekrom.species()->experienceValue() << std::endl;
     myPokemon.evolve();
+    myZekrom.move(1, &moveMap.find("Fusion Bolt")->second);
     Display.pokemonAll(&myZekrom);
     Battle(&myVenusaur, &myZekrom);
     // std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
