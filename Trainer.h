@@ -6,10 +6,12 @@
 
 class Trainer {
     private:
+        static int _totalTrainers;
         std::string _name;
         int _ID;
         std::map<int, Pokemon*> _pokemon;
     public:
+        const int totalTrainers() const {return _totalTrainers;}
         const std::string name() const {return _name;}
         const int ID() const {return _ID;}
         const std::map<int, Pokemon*> pokemon() const {return _pokemon;}
