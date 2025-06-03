@@ -11,10 +11,10 @@ class Trainer {
         int _ID;
         std::map<int, Pokemon*> _pokemon;
     public:
-        const int totalTrainers() const {return _totalTrainers;}
+        static int totalTrainers() {return _totalTrainers;}
         const std::string name() const {return _name;}
         const int ID() const {return _ID;}
-        const std::map<int, Pokemon*> pokemon() const {return _pokemon;}
+        const std::map<int, Pokemon*>& pokemon() const {return _pokemon;}
 
         Trainer& pokemon(int inputSlot, Pokemon* inputPokemon) {_pokemon[inputSlot]=inputPokemon; return *this;}
 

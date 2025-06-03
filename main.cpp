@@ -5,6 +5,7 @@
 #include "Display.h"
 #include "Battle.h"
 #include "Growth_Rate.h"
+#include "Trainer.h"
 extern display Display;
 
 int main() {
@@ -31,6 +32,16 @@ int main() {
     myPokemon.evolve();
     myZekrom.move(1, &moveMap.find("Fusion Bolt")->second);
     Display.pokemonAll(&myZekrom);
+    for (int i = 0; i < 5; i++) {
+        Trainer myTrainer = Trainer(std::to_string(i), &myThirdPokemon);
+        std::cout << "\nID: " << myTrainer.ID() << std::endl;
+        std::cout << "Name: " << myTrainer.name() << std::endl;
+        std::cout << "Pokemon" << std::endl;
+        for (std::map<int, Pokemon*>::const_iterator j = myTrainer.pokemon().begin(); j != myTrainer.pokemon().end(); j++) {
+            std::cout << "\t" << j->second->name() << std::endl;
+        }
+        std::cout << "Total Trainers: " << myTrainer.totalTrainers() << std::endl;
+    }
     Battle(&myVenusaur, &myZekrom);
     // std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
     std::cout << "\n\nEnd Main";
