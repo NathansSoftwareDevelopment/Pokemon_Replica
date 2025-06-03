@@ -87,8 +87,11 @@ Pokemon& Pokemon::pokemonCurrentStats() {
 void Pokemon::calculateStageChanges() {
     double stageMultiplier;
     std::string stageName;
-    for (std::map<std::string, int>::iterator i = currentStages.begin(); i != std::prev(currentStages.end(), 2); i++) {
+    for (std::map<std::string, int>::iterator i = _currentStages.begin(); i != _currentStages.end(); i++) {
         stageName = i->first;
+        if (stageName == "Accuracy" || stageName == "Evasion") {
+            continue;
+        }
         if (_currentStages[stageName] >= 0) {
             stageMultiplier = (_currentStages[stageName]+2)/2.0;
         } else if (_currentStages[stageName] < 0) {
