@@ -89,7 +89,7 @@ void Battle::useMove(Pokemon* attackingInputPokemon, Move* InputPokemonMove, Pok
 }
 
 bool Battle::hitCheck(Pokemon* attackingInputPokemon, Move* InputPokemonMove, Pokemon* defendingInputPokemon) {
-    int hitStage = std::clamp(attackingInputPokemon->currentStats().at("AccuracyStage") - defendingInputPokemon->currentStats().at("EvasionStage"), -6, 6);
+    int hitStage = std::clamp(attackingInputPokemon->currentStages().at("Accuracy") - defendingInputPokemon->currentStages().at("Evasion"), -6, 6);
     double stageMultiplier;
     if (hitStage >= 0) {
         stageMultiplier = (hitStage+3)/3.0;
