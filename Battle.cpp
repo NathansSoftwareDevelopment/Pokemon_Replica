@@ -97,11 +97,20 @@ bool Battle::hitCheck(Pokemon* attackingInputPokemon, Move* InputPokemonMove, Po
         stageMultiplier = 3.0/(std::abs(hitStage)+3);
     }
     int finalAccuracy = InputPokemonMove->accuracy() * stageMultiplier;
-    int randomAccuracy = std::uniform_int_distribution<int> (1, 100)(gen);
+    int randomAccuracy = std::uniform_int_distribution<int>(1, 100)(gen);
     if (randomAccuracy > finalAccuracy) {
         return false;
     } else {
         return true;
+    }
+}
+
+bool Battle::flinchCheck(Move* inputPokemonMove) {
+    int randomFlinch = std::uniform_int_distribution<int>(1, 100)(gen);
+    if (randomFlinch <= inputPokemonMove->flinchChance()) {
+        return true;
+    } else {
+        return false;
     }
 }
 
@@ -205,7 +214,9 @@ Battle::Battle(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
         Move* slowerPokemonMove = getMove(slowerPokemon, moveSlot);
         useMove(fasterPokemon, fasterPokemonMove, slowerPokemon);
         std::cout << slowerPokemon->currentStats().at("HitPoints") << std::endl;
-        if (slowerPokemon->currentStats().at("HitPoints") > 0) {
+        if (flinchCheck(fasterPokemonMove)) {
+            std::cout << slowerPokemon->name() << " Flinched!" << std::endl;
+        } else if (slowerPokemon->currentStats().at("HitPoints") > 0) {
             useMove(slowerPokemon, slowerPokemonMove, fasterPokemon);
         }
         std::cout << fasterPokemon->currentStats().at("HitPoints") << std::endl;
