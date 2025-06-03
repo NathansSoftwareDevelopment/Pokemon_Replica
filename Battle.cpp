@@ -213,13 +213,13 @@ Battle::Battle(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
         std::cout << std::endl;
         Move* slowerPokemonMove = getMove(slowerPokemon, moveSlot);
         useMove(fasterPokemon, fasterPokemonMove, slowerPokemon);
-        std::cout << slowerPokemon->currentStats().at("HitPoints") << std::endl;
+        std::cout << slowerPokemon->name() << " Is at " << slowerPokemon->currentStats().at("HitPoints") << " HP\n" << std::endl;
         if (flinchCheck(fasterPokemonMove)) {
             std::cout << slowerPokemon->name() << " Flinched!" << std::endl;
         } else if (slowerPokemon->currentStats().at("HitPoints") > 0) {
             useMove(slowerPokemon, slowerPokemonMove, fasterPokemon);
         }
-        std::cout << fasterPokemon->currentStats().at("HitPoints") << std::endl;
+        std::cout << fasterPokemon->name() << " Is at " << fasterPokemon->currentStats().at("HitPoints") << " HP\n" << std::endl;
     }
     Pokemon* victoriousPokemon;
     Pokemon* defeatedPokemon;
