@@ -25,35 +25,35 @@ void display::all(Pokemon* inputPokemon, std::string inputSpecies, std::string i
 
 void display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
     idCounter(stackCall);
-    cout << "\nAll Information on " << inputPokemon->name << endl;
-    cout << "Name: " << inputPokemon->name << endl;
-    cout << "Species Name: " << inputPokemon->species->name() << endl;
-    cout << "Level: " << inputPokemon->level << endl;
-    cout << "Experience: " << inputPokemon->experience << endl;
-    cout << "Nature: " << inputPokemon->nature->name() << endl;
-    cout << "Ability: " << inputPokemon->ability << endl;
+    cout << "\nAll Information on " << inputPokemon->name() << endl;
+    cout << "Name: " << inputPokemon->name() << endl;
+    cout << "Species Name: " << inputPokemon->species()->name() << endl;
+    cout << "Level: " << inputPokemon->level() << endl;
+    cout << "Experience: " << inputPokemon->experience() << endl;
+    cout << "Nature: " << inputPokemon->nature()->name() << endl;
+    cout << "Ability: " << inputPokemon->ability() << endl;
     cout << "Types" << endl;
-    cout << "\t" << inputPokemon->type1->name() << endl;
-    cout << "\t" << inputPokemon->type2->name() << endl;
+    cout << "\t" << inputPokemon->type1()->name() << endl;
+    cout << "\t" << inputPokemon->type2()->name() << endl;
     cout << "Moves" << endl;
-    for (std::pair<int, Move*> i : inputPokemon->moves) {
+    for (std::pair<int, Move*> i : inputPokemon->moves()) {
         cout << "\t" << i.first << ": " << i.second->name << endl;
     }
     cout << "IVs" << endl;
-    for (std::pair<std::string, int> i : inputPokemon->individualValues) {
+    for (std::pair<std::string, int> i : inputPokemon->individualValues()) {
         cout << "\t" << i.first << ": " << i.second << endl;
     }
     cout << "EVs" << endl;
-    for (std::pair<std::string, int> i : inputPokemon->effortValues) {
+    for (std::pair<std::string, int> i : inputPokemon->effortValues()) {
         cout << "\t" << i.first << ": " << i.second << endl;
     }
     cout << "Natural Stats" << endl;
-    cout << "\tHitPoints: " << inputPokemon->maxStats["HitPoints"] << endl;
-    cout << "\tAttack: " << inputPokemon->maxStats["Attack"] << endl;
-    cout << "\tDefense: " << inputPokemon->maxStats["Defense"] << endl;
-    cout << "\tSpecial Attack: " << inputPokemon->maxStats["SpecialAttack"] << endl;
-    cout << "\tSpecial Defense: " << inputPokemon->maxStats["SpecialDefense"] << endl;
-    cout << "\tSpeed: " << inputPokemon->maxStats["Speed"] << endl;
+    cout << "\tHitPoints: " << inputPokemon->maxStats().at("HitPoints") << endl;
+    cout << "\tAttack: " << inputPokemon->maxStats().at("Attack") << endl;
+    cout << "\tDefense: " << inputPokemon->maxStats().at("Defense") << endl;
+    cout << "\tSpecial Attack: " << inputPokemon->maxStats().at("SpecialAttack") << endl;
+    cout << "\tSpecial Defense: " << inputPokemon->maxStats().at("SpecialDefense") << endl;
+    cout << "\tSpeed: " << inputPokemon->maxStats().at("Speed") << endl;
 }
 
 

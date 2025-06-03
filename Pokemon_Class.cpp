@@ -9,76 +9,79 @@
 #include "Growth_Rate.h"
 
 void Pokemon::setSpeciesStats() {
-    speciesStats = species->stats();
+    _speciesStats = _species->stats();
 }
 
 void Pokemon::setPokemonIndividualValues(int inputValues[6]) {
-    individualValues["HitPoints"] = inputValues[0];
-    individualValues["Attack"] = inputValues[1];
-    individualValues["Defense"] = inputValues[2];
-    individualValues["SpecialAttack"] = inputValues[3];
-    individualValues["SpecialDefense"] = inputValues[4];
-    individualValues["Speed"] = inputValues[5];
+    _individualValues["HitPoints"] = inputValues[0];
+    _individualValues["Attack"] = inputValues[1];
+    _individualValues["Defense"] = inputValues[2];
+    _individualValues["SpecialAttack"] = inputValues[3];
+    _individualValues["SpecialDefense"] = inputValues[4];
+    _individualValues["Speed"] = inputValues[5];
 }
 
-void Pokemon::setPokemonEffortValues(int inputValues[6]) {
-    effortValues["HitPoints"] = inputValues[0];
-    effortValues["Attack"] = inputValues[1];
-    effortValues["Defense"] = inputValues[2];
-    effortValues["SpecialAttack"] = inputValues[3];
-    effortValues["SpecialDefense"] = inputValues[4];
-    effortValues["Speed"] = inputValues[5];
+Pokemon& Pokemon::effortValues(int inputValues[6]) {
+    _effortValues["HitPoints"] = inputValues[0];
+    _effortValues["Attack"] = inputValues[1];
+    _effortValues["Defense"] = inputValues[2];
+    _effortValues["SpecialAttack"] = inputValues[3];
+    _effortValues["SpecialDefense"] = inputValues[4];
+    _effortValues["Speed"] = inputValues[5];
+    return *this;
 }
 
 void Pokemon::setPokemonNature(std::string inputNature) {
-    nature = &natureMap.find(inputNature)->second;
+    _nature = &natureMap.find(inputNature)->second;
 }
 
-void Pokemon::setPokemonTypes() {
+Pokemon& Pokemon::pokemonTypes() {
     /* Types and the Types of a given Species need to be const as they are meant to be immutable
        However a given Pokemon's Types need to be mutable as they *can* be changed */
-    type1 = const_cast<Type*>(species->type1());
-    type2 = const_cast<Type*>(species->type2());
+    _type1 = const_cast<Type*>(_species->type1());
+    _type2 = const_cast<Type*>(_species->type2());
+    return *this;
 }
 
 void Pokemon::setPokemonMoves(std::string inputMove1, std::string inputMove2, std::string inputMove3, std::string inputMove4) {
-    moves[1] = &moveMap.find(inputMove1)->second;
-    moves[2] = &moveMap.find(inputMove2)->second;
-    moves[3] = &moveMap.find(inputMove3)->second;
-    moves[4] = &moveMap.find(inputMove4)->second;
+    _moves[1] = &moveMap.find(inputMove1)->second;
+    _moves[2] = &moveMap.find(inputMove2)->second;
+    _moves[3] = &moveMap.find(inputMove3)->second;
+    _moves[4] = &moveMap.find(inputMove4)->second;
 }
 
 void Pokemon::calculatePokemonStats() {
-    maxStats["HitPoints"] = std::max(floor(((2*speciesStats["HitPoints"]+individualValues["HitPoints"]+floor(effortValues["HitPoints"]/4.0))*level)/100)+level+10, 1.0);
+    _maxStats["HitPoints"] = std::max(floor(((2*_speciesStats["HitPoints"]+_individualValues["HitPoints"]+floor(_effortValues["HitPoints"]/4.0))*_level)/100)+_level+10, 1.0);
     // Use the same formula to calculate all non-HitPoints stats;
-    for (std::map<std::string, int>::iterator i = maxStats.begin(); i != maxStats.end(); i++) {
+    for (std::map<std::string, int>::iterator i = _maxStats.begin(); i != _maxStats.end(); i++) {
         std::string statName = i->first;
         if (statName == "HitPoints") {
             continue;
         }
-        maxStats[statName] = std::max(floor(((2*speciesStats[statName]+individualValues[statName]+floor(effortValues[statName]/4.0))*level)/100+5) * nature->stats().at(statName), 1.0);
+        _maxStats[statName] = std::max(floor(((2*_speciesStats[statName]+_individualValues[statName]+floor(_effortValues[statName]/4.0))*_level)/100+5) * _nature->stats().at(statName), 1.0);
     }
-    setPokemonCurrentStats();
+    pokemonCurrentStats();
 }
 
 void Pokemon::evolve() {
     int currentAbilityIndex;
-    for (std::pair<int, std::string> speciesAbility : species->abilities()) {
-        if (speciesAbility.second == ability) {
+    for (std::pair<int, std::string> speciesAbility : _species->abilities()) {
+        if (speciesAbility.second == _ability) {
             currentAbilityIndex = speciesAbility.first;
         }
     }
-    species = &(speciesMap.find(species->evolution())->second);
-    ability = species->abilities().find(currentAbilityIndex)->second;
-    setPokemonTypes();
+    _species = &(speciesMap.find(_species->evolution())->second);
+    _ability = _species->abilities().find(currentAbilityIndex)->second;
+    pokemonTypes();
     setSpeciesStats();
     calculatePokemonStats();
 }
 
-void Pokemon::setPokemonCurrentStats() {
-    for (std::map<std::string, int>::iterator i = maxStats.begin(); i != maxStats.end(); i++) {
-        currentStats[i->first] = i->second;
+Pokemon& Pokemon::pokemonCurrentStats() {
+    for (std::map<std::string, int>::iterator i = _maxStats.begin(); i != _maxStats.end(); i++) {
+        _currentStats[i->first] = i->second;
     }
+    return *this;
 }
 
 void Pokemon::calculateStageChanges() {
@@ -86,37 +89,37 @@ void Pokemon::calculateStageChanges() {
     std::string stageName;
     for (std::map<std::string, int>::iterator i = currentStages.begin(); i != std::prev(currentStages.end(), 2); i++) {
         stageName = i->first;
-        if (currentStages[stageName] >= 0) {
-            stageMultiplier = (currentStages[stageName]+2)/2.0;
-        } else if (currentStages[stageName] < 0) {
-            stageMultiplier = 2.0/(std::abs(currentStages[stageName]) + 2);
+        if (_currentStages[stageName] >= 0) {
+            stageMultiplier = (_currentStages[stageName]+2)/2.0;
+        } else if (_currentStages[stageName] < 0) {
+            stageMultiplier = 2.0/(std::abs(_currentStages[stageName]) + 2);
         }
     }
 }
 
 void Pokemon::addExperience(int inputExperience) {
-    while (experience+inputExperience >= growthRateMap.find(species->growthRate())->second.toNextLevel().at(level)) {
-        inputExperience -= (growthRateMap.find(species->growthRate())->second.toNextLevel().at(level) - experience);
-        experience = 0;
-        level += 1;
+    while (_experience+inputExperience >= growthRateMap.find(_species->growthRate())->second.toNextLevel().at(_level)) {
+        inputExperience -= (growthRateMap.find(_species->growthRate())->second.toNextLevel().at(_level) - _experience);
+        _experience = 0;
+        _level += 1;
     }
-    experience += inputExperience;
+    _experience += inputExperience;
     calculatePokemonStats();
 }
 
 Pokemon::Pokemon(std::string inputName, Species* inputSpecies, std::string inputNature, std::string inputAbility, int inputIndividualValues[6]) {
-    name = inputName;
-    species = inputSpecies;
+    _name = inputName;
+    _species = inputSpecies;
     setPokemonNature(inputNature);
-    level = 1;
-    experience = 0;
-    ability = inputAbility;
+    _level = 1;
+    _experience = 0;
+    _ability = inputAbility;
     
-    setPokemonTypes();
+    pokemonTypes();
     setSpeciesStats();
     setPokemonIndividualValues(inputIndividualValues);
     int zeroEffortValues[6] = {};
-    setPokemonEffortValues(zeroEffortValues);
+    effortValues(zeroEffortValues);
     calculatePokemonStats();
 }
 
@@ -126,22 +129,22 @@ Pokemon::Pokemon(
     std::string inputCondition,
     int inputIndividualValues[6], int inputEffortValues[6]
 ) {
-    name = inputName;
-    species = inputSpecies;
+    _name = inputName;
+    _species = inputSpecies;
     setPokemonNature(inputNature);
-    level = inputLevel;
-    experience = inputExperience;
-    ability = inputAbility;
+    _level = inputLevel;
+    _experience = inputExperience;
+    _ability = inputAbility;
     
-    setPokemonTypes();
+    pokemonTypes();
     
     setPokemonMoves(inputMove1, inputMove2, inputMove3, inputMove4);
     
-    condition = inputCondition;
+    _condition = inputCondition;
     
     setSpeciesStats();
     setPokemonIndividualValues(inputIndividualValues);
-    setPokemonEffortValues(inputEffortValues);
+    effortValues(inputEffortValues);
     calculatePokemonStats();
 }
 
