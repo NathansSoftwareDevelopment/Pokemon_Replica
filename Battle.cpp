@@ -7,9 +7,6 @@
 #include "Move.h"
 #include "Utils.hpp"
 
-std::random_device rd;
-std::mt19937 gen(rd());
-
 Move* Battle::getMove(Pokemon* attackingInputPokemon, int InputMove) {
     return attackingInputPokemon->moves().at(InputMove);
 }
@@ -32,7 +29,7 @@ double Battle::effectivenessMultiplier(Move* InputPokemonMove, Pokemon* defendin
 void Battle::damageCalculation(Pokemon* attackingInputPokemon, Move* InputPokemonMove, Pokemon* defendingInputPokemon) {
     double stab = stabMultiplier(attackingInputPokemon, InputPokemonMove);
     double effectiveness = effectivenessMultiplier(InputPokemonMove, defendingInputPokemon);
-    double randomDamageMultiplier = std::uniform_int_distribution<int> (85, 100)(gen)/100.0;
+    double randomDamageMultiplier = generateRandom(85, 100)/100.0;
     double attackingCategory;
     double defendingCategory;
     if (InputPokemonMove->damageCategory() == "Physical") {
@@ -66,7 +63,7 @@ void Battle::getFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
         fasterPokemon = inputPokemon2;
         slowerPokemon = inputPokemon1;
     } else {
-        int randomPokemon = std::uniform_int_distribution<int> (1, 2)(gen);
+        int randomPokemon = generateRandom(1, 2);
         if (randomPokemon == 1) {
             fasterPokemon = inputPokemon1;
             slowerPokemon = inputPokemon2;
@@ -97,7 +94,7 @@ bool Battle::hitCheck(Pokemon* attackingInputPokemon, Move* InputPokemonMove, Po
         stageMultiplier = 3.0/(std::abs(hitStage)+3);
     }
     int finalAccuracy = InputPokemonMove->accuracy() * stageMultiplier;
-    int randomAccuracy = std::uniform_int_distribution<int>(1, 100)(gen);
+    int randomAccuracy = generateRandom(1, 100);
     if (randomAccuracy > finalAccuracy) {
         return false;
     } else {
@@ -106,7 +103,7 @@ bool Battle::hitCheck(Pokemon* attackingInputPokemon, Move* InputPokemonMove, Po
 }
 
 bool Battle::flinchCheck(Move* inputPokemonMove) {
-    int randomFlinch = std::uniform_int_distribution<int>(1, 100)(gen);
+    int randomFlinch = generateRandom(1, 100);
     if (randomFlinch <= inputPokemonMove->flinchChance()) {
         return true;
     } else {
