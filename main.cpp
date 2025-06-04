@@ -6,6 +6,7 @@
 #include "Battle.h"
 #include "Growth_Rate.h"
 #include "Trainer.h"
+#include "Player.h"
 extern display Display;
 
 int main() {
@@ -42,6 +43,9 @@ int main() {
         }
         std::cout << "Total Trainers: " << myTrainer.totalTrainers() << std::endl;
     }
+    Player ME = Player("ME");
+    std::cout << ME.name() << std::endl;
+    std::cout << ME.ID() << std::endl;
     Battle(&myVenusaur, &myZekrom);
     // std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
     std::cout << "\n\nEnd Main";

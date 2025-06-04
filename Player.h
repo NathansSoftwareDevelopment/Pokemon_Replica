@@ -4,7 +4,7 @@
 #include <map>
 #include "Trainer.h"
 
-class Player : Trainer {
+class Player : public Trainer {
     private:
         int _pokeDollars;
     public:
