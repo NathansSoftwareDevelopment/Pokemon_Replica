@@ -3,27 +3,62 @@ project(PokemonReplica)
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(JSON_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
-
-file(GLOB_RECURSE SOURCES
-    "*.cpp"
-    "!build/**"
-)
-
-file(GLOB JSON_FILES "${JSON_SOURCE_DIR}/*.json")
-
-foreach(json_file ${JSON_FILES})
-    get_filename_component(filename "${json_file}" NAME)
-    configure_file(
-        "${json_file}"
-        "${CMAKE_CURRENT_BINARY_DIR}/${filename}"
-        COPYONLY
-    )
-endforeach()
-
 # Specifically exclude the CMake compiler identification file
 list(FILTER SOURCES EXCLUDE REGEX "CMakeFiles/[0-9]+\\.[0-9]+\\.[0-9]+/CompilerIdCXX/CMakeCXXCompilerId\\.cpp$")
 
-include_directories(.)
+set(MOVE_JSON "${CMAKE_CURRENT_SOURCE_DIR}/Move/Move.json")
+set(SPECIES_JSON "${CMAKE_CURRENT_SOURCE_DIR}/Species/Species.json")
+
+configure_file(
+    "${MOVE_JSON}"
+    "${CMAKE_CURRENT_BINARY_DIR}/Move.json"
+    COPYONLY
+)
+
+configure_file(
+    "${SPECIES_JSON}"
+    "${CMAKE_CURRENT_BINARY_DIR}/Species.json"
+    COPYONLY
+)
+
+include_directories(.
+    "./Pokemon_Class"
+    "./Nature"
+    "./Move"
+    "./Type"
+    "./Species"
+    "./Display"
+    "./Battle"
+    "./Utils"
+    "./Growth_Rate"
+    "./Trainer"
+    "./Trainer/Player"
+)
+
+set(SOURCES
+    "./main.cpp"
+    "./Pokemon_Class/Pokemon_Class.cpp"
+    "./Nature/Nature.cpp"
+    "./Move/Move.cpp"
+    "./Type/Type.cpp"
+    "./Species/Species.cpp"
+    "./Display/Display.cpp"
+    "./Battle/Battle.cpp"
+    "./Growth_Rate/Growth_Rate.cpp"
+    "./Trainer/Trainer.cpp"
+    "./Trainer/Player/Player.cpp"
+)
 
 add_executable(${PROJECT_NAME} ${SOURCES})
+
+add_custom_command(
+    TARGET ${PROJECT_NAME}
+    POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy
+        "${MOVE_JSON}"
+        "${DATA_DEST_DIR}/Move.json"
+    COMMAND ${CMAKE_COMMAND} -E copy
+        "${SPECIES_JSON}"
+        "${DATA_DEST_DIR}/Species.json"
+    COMMENT "Copying JSON data files to build directory"
+)
