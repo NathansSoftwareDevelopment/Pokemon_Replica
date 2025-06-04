@@ -5,6 +5,11 @@
 
 int Trainer::_totalTrainers = 0;
 
+Trainer::Trainer(std::string inputName, int inputTrainerID) {
+    _name = inputName;
+    _ID = inputTrainerID;
+}
+
 Trainer::Trainer(std::string inputName, Pokemon* inputPokemon) {
     _name = inputName;
     _pokemon[1] = inputPokemon;

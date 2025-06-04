@@ -5,10 +5,8 @@
 #include "Trainer.h"
 
 class Player : Trainer {
-    private:
-        int _trainerID;
     public:
-        const int trainerID() const {return _trainerID;}
+        int generateTrainerID();
 
         Player(std::string inputName);
 };
