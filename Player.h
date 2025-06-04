@@ -5,7 +5,13 @@
 #include "Trainer.h"
 
 class Player : Trainer {
+    private:
+        int _pokeDollars;
     public:
+        const int pokeDollars() const {return _pokeDollars;}
+
+        Player& pokeDollars(int inputMoney) {_pokeDollars += inputMoney; return *this;}
+
         int generateTrainerID();
 
         Player(std::string inputName);

@@ -9,5 +9,5 @@ int Player::generateTrainerID() {
 }
 
 Player::Player(std::string inputName) : Trainer(inputName, Player::generateTrainerID()) {
-
+    _pokeDollars = 0;
 }
