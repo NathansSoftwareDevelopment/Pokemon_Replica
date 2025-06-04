@@ -7,6 +7,7 @@
 class Trainer {
     private:
         static int _totalTrainers;
+    protected:
         std::string _name;
         int _ID;
         std::map<int, Pokemon*> _pokemon;
@@ -18,6 +19,7 @@ class Trainer {
 
         Trainer& pokemon(int inputSlot, Pokemon* inputPokemon) {_pokemon[inputSlot]=inputPokemon; return *this;}
 
+        Trainer(std::string inputName, int inputTrainerID);
         Trainer(std::string inputName, Pokemon* inputPokemon);
         Trainer(std::string inputName, std::map<int, Pokemon*> inputPokemon);
 };
