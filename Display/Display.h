@@ -1,10 +1,11 @@
 #ifndef DISPLAY_H
 #define DISPLAY_H
-#include "Move.h"
-#include "Nature.h"
-#include "Species.h"
-#include "Type.h"
 #include "Pokemon_Class.h"
+#include "Species.h"
+#include "Move.h"
+#include "Type.h"
+#include "Nature.h"
+#include "Growth_Rate.h"
 
 class display {
     private:

@@ -1,6 +1,11 @@
 #include <iostream>
 #include <string>
 #include "Display.h"
+#include "Species.h"
+#include "Move.h"
+#include "Type.h"
+#include "Nature.h"
+#include "Growth_Rate.h"
 using std::cout;
 using std::endl;
 
