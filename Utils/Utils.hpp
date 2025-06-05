@@ -8,7 +8,6 @@
 inline int generateRandom(int lowerBound, int upperBound) {
     static std::random_device rd;
     static std::mt19937 gen(rd());
-    std::cout << std::uniform_int_distribution<int>(lowerBound, upperBound)(gen) << std::endl;
     return std::uniform_int_distribution<int>(lowerBound, upperBound)(gen);
 }
 

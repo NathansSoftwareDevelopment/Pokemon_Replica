@@ -46,6 +46,9 @@ int main() {
     Player ME = Player("ME");
     std::cout << ME.name() << std::endl;
     std::cout << ME.ID() << std::endl;
+    for (std::pair<std::string, std::vector<std::pair<std::string, int>>> i : ME.Bag()) {
+        std::cout << i.first << std::endl;
+    }
     Battle(&myVenusaur, &myZekrom);
     // std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
     std::cout << "\n\nEnd Main";
