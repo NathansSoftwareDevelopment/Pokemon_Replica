@@ -4,6 +4,8 @@
 #include <cmath>
 #include <cctype>
 #include <string>
+#include <vector>
+#include <algorithm>
 
 inline int generateRandom(int lowerBound, int upperBound) {
     static std::random_device rd;
@@ -12,10 +14,26 @@ inline int generateRandom(int lowerBound, int upperBound) {
 }
 
 inline double roundToMultipleOf4096(double inputValue) {
-    double scaledValue = inputValue * 4096.0;
-    double roundedScaledValue = std::round(scaledValue);
-    double result = roundedScaledValue / 4096.0;
-    return result;
+    static std::vector<double> roundingValues = {0};
+    double maxElement = *std::max_element(roundingValues.begin(), roundingValues.end());
+    if (maxElement < inputValue) {
+        for (double i = maxElement; i < inputValue+1; i+=(1/4096.0)) {
+            roundingValues.emplace_back(i);
+        }
+    }
+    std::sort(roundingValues.begin(), roundingValues.end());
+
+    double closestElement = 0;
+    double currentRoundingValue;
+    for (int i = 0; i <= roundingValues.size()-1; i++) {
+        currentRoundingValue = roundingValues[i];
+        if (std::abs(inputValue-currentRoundingValue) <= std::abs(inputValue-roundingValues[closestElement])) {
+            closestElement = i;
+        } else {
+            break;
+        }
+    }
+    return roundingValues[closestElement];
 }
 
 inline double roundHalfDown(double inputValue) {
