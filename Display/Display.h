@@ -19,7 +19,7 @@ class display {
 
         void moveAll(Move* inputMove, bool stackCall = false);
 
-        void typeAll(Type* inputType, bool stackCall);
+        void typeAll(Type* inputType, bool stackCall = false);
 };
 
 #endif
