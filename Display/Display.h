@@ -11,7 +11,7 @@ class display {
         static int displayID;
         void idCounter(bool stackCall);
     public:
-        void all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, std::string inputType, bool stackCall = false);
+        void all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, std::string inputType, std::string inputNature, bool stackCall = false);
 
         void pokemonAll(Pokemon* inputPokemon, bool stackCall = false);
         
@@ -20,6 +20,8 @@ class display {
         void moveAll(Move* inputMove, bool stackCall = false);
 
         void typeAll(Type* inputType, bool stackCall = false);
+
+        void natureAll(Nature* inputNature, bool stackCall = false);
 };
 
 #endif
