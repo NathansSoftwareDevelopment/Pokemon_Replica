@@ -6,13 +6,14 @@
 #include "Type.h"
 #include "Nature.h"
 #include "Growth_Rate.h"
+#include "Trainer.h"
 
 class display {
     private:
         static int displayID;
         void idCounter(bool stackCall);
     public:
-        void all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, std::string inputType, std::string inputNature, std::string inputGrowthRate, bool stackCall = false);
+        void all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, std::string inputType, std::string inputNature, std::string inputGrowthRate, Trainer* inputTrainer, bool stackCall = false);
 
         void pokemonAll(Pokemon* inputPokemon, bool stackCall = false);
         
@@ -25,6 +26,8 @@ class display {
         void natureAll(Nature* inputNature, bool stackCall = false);
 
         void growthRateAll(GrowthRate* inputGrowthRate, bool stackCall = false);
+
+        void trainerAll(Trainer* inputTrainer, bool stackCall=false);
 };
 
 #endif

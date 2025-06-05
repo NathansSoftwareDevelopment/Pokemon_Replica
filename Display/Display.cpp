@@ -21,7 +21,7 @@ void display::idCounter(bool stackCall) {
 }
 
 
-void display::all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, std::string inputType, std::string inputNature, std::string inputGrowthRate, bool stackCall) {
+void display::all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, std::string inputType, std::string inputNature, std::string inputGrowthRate, Trainer* inputTrainer, bool stackCall) {
     idCounter(stackCall);
     pokemonAll(inputPokemon, true);
     speciesAll(&speciesMap.find(inputSpecies)->second, true);
@@ -29,6 +29,7 @@ void display::all(Pokemon* inputPokemon, std::string inputSpecies, std::string i
     typeAll(&typeMap.find(inputType)->second, true);
     natureAll(&natureMap.find(inputNature)->second, true);
     growthRateAll(&growthRateMap.find(inputGrowthRate)->second, true);
+    trainerAll(inputTrainer, true);
 }
 
 void display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
@@ -148,5 +149,26 @@ void display::growthRateAll(GrowthRate* inputGrowthRate, bool stackCall) {
     cout << "Total Experience to Next Level" << endl;
     for (std::pair<int, int> i : inputGrowthRate->toNextLevel()) {
         printf("\t%3d->%3d: %5d\n", i.first, i.first+1, i.second);
+    }
+}
+
+void display::trainerAll(Trainer* inputTrainer, bool stackCall) {
+    idCounter(stackCall);
+    cout << "\nAll Information on Trainer " << inputTrainer->name() << endl;
+    cout << "Name: " << inputTrainer->name() << endl;
+    cout << "ID: " << inputTrainer->ID() << endl;
+    cout << "Pokemon" << endl;
+    for (std::pair<int, Pokemon*> i : inputTrainer->pokemon()) {
+        cout << "\tSlot " << i.first << endl;
+        cout << "\t\tName: " << i.second->name() << endl;
+        cout << "\t\tSpecies: " << i.second->species()->name() << endl;
+        cout << "\t\tLevel: " << i.second->level() << endl;
+        cout << "\t\tNatural Stats" << endl;
+        cout << "\t\t\tHitPoints: " << i.second->maxStats().at("HitPoints") << endl;
+        cout << "\t\t\tAttack: " << i.second->maxStats().at("Attack") << endl;
+        cout << "\t\t\tDefense: " << i.second->maxStats().at("Defense") << endl;
+        cout << "\t\t\tSpecial Attack: " << i.second->maxStats().at("SpecialAttack") << endl;
+        cout << "\t\t\tSpecial Defense: " << i.second->maxStats().at("SpecialDefense") << endl;
+        cout << "\t\t\tSpeed: " << i.second->maxStats().at("Speed") << endl;
     }
 }

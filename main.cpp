@@ -18,7 +18,6 @@ int main() {
     Pokemon myPokemon = Pokemon("FireBoi", &(speciesMap.find("Charmander")->second), "Modest", "Blaze", randValues);
     Pokemon mySecondPokemon = Pokemon("FireBoi2", &(speciesMap.find("Charmander")->second), "Modest", 5, 0, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", randValues, randValues);
     Pokemon myThirdPokemon = Pokemon("FireBoi3", &(speciesMap.find("Charmander")->second), "Modest", 5, 750000, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", randValues, randValues);
-    Display.all(&mySecondPokemon, "Zekrom", "Ember", "Steel", "Careful", "Fluctuating");
     Display.moveAll(&moveMap.find("Growl")->second);
     Display.speciesAll(&(speciesMap.find("Charmander")->second));
     Display.speciesAll(&(speciesMap.find("Haxorus")->second));
@@ -33,16 +32,8 @@ int main() {
     myPokemon.evolve();
     myZekrom.move(1, &moveMap.find("Fusion Bolt")->second);
     Display.pokemonAll(&myZekrom);
-    for (int i = 0; i < 5; i++) {
-        Trainer myTrainer = Trainer(std::to_string(i), &myThirdPokemon);
-        std::cout << "\nID: " << myTrainer.ID() << std::endl;
-        std::cout << "Name: " << myTrainer.name() << std::endl;
-        std::cout << "Pokemon" << std::endl;
-        for (std::map<int, Pokemon*>::const_iterator j = myTrainer.pokemon().begin(); j != myTrainer.pokemon().end(); j++) {
-            std::cout << "\t" << j->second->name() << std::endl;
-        }
-        std::cout << "Total Trainers: " << myTrainer.totalTrainers() << std::endl;
-    }
+    Trainer myTrainer = Trainer("NotRed", {{1, &myPokemon}, {2, &mySecondPokemon}, {3, &myThirdPokemon}, {4, &myVenusaur}, {5, &myZekrom}});
+    Display.all(&mySecondPokemon, "Zekrom", "Ember", "Steel", "Careful", "Fluctuating", &myTrainer);
     Player ME = Player("ME");
     std::cout << ME.name() << std::endl;
     std::cout << ME.ID() << std::endl;
