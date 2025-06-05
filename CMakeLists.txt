@@ -56,9 +56,9 @@ add_custom_command(
     POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy
         "${MOVE_JSON}"
-        "${DATA_DEST_DIR}/Move.json"
+        "${CMAKE_CURRENT_BINARY_DIR}/Move.json"
     COMMAND ${CMAKE_COMMAND} -E copy
         "${SPECIES_JSON}"
-        "${DATA_DEST_DIR}/Species.json"
+        "${CMAKE_CURRENT_BINARY_DIR}/Species.json"
     COMMENT "Copying JSON data files to build directory"
 )
