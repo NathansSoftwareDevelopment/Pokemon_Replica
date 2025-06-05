@@ -18,7 +18,7 @@ int main() {
     Pokemon myPokemon = Pokemon("FireBoi", &(speciesMap.find("Charmander")->second), "Modest", "Blaze", randValues);
     Pokemon mySecondPokemon = Pokemon("FireBoi2", &(speciesMap.find("Charmander")->second), "Modest", 5, 0, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", randValues, randValues);
     Pokemon myThirdPokemon = Pokemon("FireBoi3", &(speciesMap.find("Charmander")->second), "Modest", 5, 750000, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", randValues, randValues);
-    Display.all(&mySecondPokemon, "Zekrom", "Ember");
+    Display.all(&mySecondPokemon, "Zekrom", "Ember", "Steel");
     Display.moveAll(&moveMap.find("Growl")->second);
     Display.speciesAll(&(speciesMap.find("Charmander")->second));
     Display.speciesAll(&(speciesMap.find("Haxorus")->second));

@@ -16,11 +16,12 @@ void display::idCounter(bool stackCall) {
 }
 
 
-void display::all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, bool stackCall) {
+void display::all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, std::string inputType, bool stackCall) {
     idCounter(stackCall);
     pokemonAll(inputPokemon, true);
     speciesAll(&speciesMap.find(inputSpecies)->second, true);
     moveAll(&moveMap.find(inputMove)->second, true);
+    typeAll(&typeMap.find(inputType)->second, true);
 }
 
 void display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
@@ -103,4 +104,18 @@ void display::moveAll(Move* inputMove, bool stackCall) {
         }
     }
     cout << "Uniqueness: " << inputMove->uniqueness() << endl;
+}
+
+void display::typeAll(Type* inputType, bool stackCall) {
+    idCounter(stackCall);
+    cout << "\nAll Information on Type " << inputType->name() << endl;
+    cout << "Name: " << inputType->name() << endl;
+    cout << "Attacking Type Effectiveness" << endl;
+    for (std::pair<std::string, double> i : inputType->attackingTypeMap()) {
+        cout << "\t" << i.first << ": " << i.second << endl;
+    }
+    cout << "Defending Type Effectiveness" << endl;
+    for (std::pair<std::string, Type> i : typeMap) {
+        cout << "\t" << i.first << ": " << i.second.attackingTypeMap().at(inputType->name()) << endl;
+    }
 }
