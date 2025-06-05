@@ -21,13 +21,14 @@ void display::idCounter(bool stackCall) {
 }
 
 
-void display::all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, std::string inputType, std::string inputNature, bool stackCall) {
+void display::all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, std::string inputType, std::string inputNature, std::string inputGrowthRate, bool stackCall) {
     idCounter(stackCall);
     pokemonAll(inputPokemon, true);
     speciesAll(&speciesMap.find(inputSpecies)->second, true);
     moveAll(&moveMap.find(inputMove)->second, true);
     typeAll(&typeMap.find(inputType)->second, true);
     natureAll(&natureMap.find(inputNature)->second, true);
+    growthRateAll(&growthRateMap.find(inputGrowthRate)->second, true);
 }
 
 void display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
@@ -133,5 +134,19 @@ void display::natureAll(Nature* inputNature, bool stackCall) {
     cout << "Stat Multipliers" << endl;
     for (std::pair<std::string, double> i : inputNature->stats()) {
         cout << "\t" << i.first << ": " << i.second << endl;
+    }
+}
+
+void display::growthRateAll(GrowthRate* inputGrowthRate, bool stackCall) {
+    idCounter(stackCall);
+    cout << "\nAll Information on Growth Rate " << inputGrowthRate->name() << endl;
+    cout << "Name: " << inputGrowthRate->name() << endl;
+    cout << "Total Experience to Level" << endl;
+    for (std::pair<int, int> i : inputGrowthRate->toLevel()) {
+        printf("\t%3d: %5d\n", i.first, i.second);
+    }
+    cout << "Total Experience to Next Level" << endl;
+    for (std::pair<int, int> i : inputGrowthRate->toNextLevel()) {
+        printf("\t%3d->%3d: %5d\n", i.first, i.first+1, i.second);
     }
 }
