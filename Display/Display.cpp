@@ -144,11 +144,11 @@ void display::growthRateAll(GrowthRate* inputGrowthRate, bool stackCall) {
     cout << "Name: " << inputGrowthRate->name() << endl;
     cout << "Total Experience to Level" << endl;
     for (std::pair<int, int> i : inputGrowthRate->toLevel()) {
-        printf("\t%3d: %5d\n", i.first, i.second);
+        printf("\t%3d: %d\n", i.first, i.second);
     }
     cout << "Total Experience to Next Level" << endl;
     for (std::pair<int, int> i : inputGrowthRate->toNextLevel()) {
-        printf("\t%3d->%3d: %5d\n", i.first, i.first+1, i.second);
+        printf("\t%2d -> %3d: %d\n", i.first, i.first+1, i.second);
     }
 }
 
