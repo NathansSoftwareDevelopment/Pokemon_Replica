@@ -2,6 +2,9 @@
 #define MACHINE_H
 #include "Item.h"
 #include "Move.h"
+#include "Pokemon_Class.h"
+#include "Player.h"
+
 
 class Machine : public Item {
     private:
@@ -12,6 +15,9 @@ class Machine : public Item {
         const Move* move() const {return _move;}
         const bool isHM() const {return _isHM;}
         const int ID() const {return _ID;}
+
+        void use(ItemUse inputParameters) override;
+
         Machine(Move* inputMove, bool inputIsHM, int inputID);
 };
 

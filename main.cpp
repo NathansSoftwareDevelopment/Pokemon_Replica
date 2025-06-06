@@ -34,6 +34,11 @@ int main() {
     mySecondPokemon.addExperience(1000);
     myThirdPokemon.addExperience(1000);
     myPokemon.evolve();
+
+    ME.pokemon(1, &myPokemon).pokemon(2, &mySecondPokemon).pokemon(3, &myThirdPokemon).pokemon(4, &myVenusaur).pokemon(5, &myZekrom);
+
+    myTM.use(ItemUse().MoveSlot(1).Player(&ME).PokemonSlot(4));
+    myTM.use(ItemUse().Player(&ME).PokemonSlot(5).MoveSlot(2));
     
     // Change Info / Use Setters
     myZekrom.move(1, &moveMap.find("Fusion Bolt")->second);
