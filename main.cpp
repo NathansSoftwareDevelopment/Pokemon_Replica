@@ -7,6 +7,8 @@
 #include "Growth_Rate.h"
 #include "Trainer.h"
 #include "Player.h"
+#include "Item.h"
+#include "Machine.h"
 extern display Display;
 
 int main() {
@@ -26,6 +28,7 @@ int main() {
     Pokemon myZekrom = Pokemon("zekky", &(speciesMap.find("Zekrom")->second), "Modest", 62, 0, "Blaze", "Growl", "Scratch", "Thunder Fang", "Cheat", "None", randValues, randValues);
     Trainer myTrainer = Trainer("NotRed", {{1, &myPokemon}, {2, &mySecondPokemon}, {3, &myThirdPokemon}, {4, &myVenusaur}, {5, &myZekrom}});
     Player ME = Player("ME");
+    Machine myTM = Machine(&moveMap.find("Dragon Claw")->second, false, 2);
     
     // Use non-Getter/Setter Methods
     mySecondPokemon.addExperience(1000);
@@ -43,6 +46,13 @@ int main() {
     for (std::pair<std::string, std::vector<std::pair<std::string, int>>> i : ME.Bag()) {
         std::cout << i.first << std::endl;
     }
+    std::cout << "Testing Machine/Item" << std::endl;
+    std::cout << "\tName: " << myTM.name() << std::endl; 
+    std::cout << "\tIs HM: " << myTM.isHM() << std::endl;
+    std::cout << "\tID: " << myTM.ID() << std::endl;
+    std::cout << "\tHoldable: " << myTM.holdable() << std::endl;
+    std::cout << "\tPocket: " << myTM.pocket().second << " -> " << myTM.pocket().first << std::endl;
+
 
     // Battle Information
     // std::cout << "Zekrom Experience: " << myZekrom.species()->experienceValue() << std::endl;
