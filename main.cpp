@@ -21,12 +21,16 @@ int main() {
     int randValues[6] = {1, 2, 3, 4, 5, 6};
     
     // Make instances of custom Classes
-    Pokemon myPokemon = Pokemon("FireBoi", &(speciesMap.find("Charmander")->second), "Modest", "Blaze", randValues);
+    Pokemon myPokemon = Pokemon("FireBoi", &(speciesMap.find("Charmander")->second), "Modest", 5, 0, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", randValues, randValues);
     Pokemon mySecondPokemon = Pokemon("FireBoi2", &(speciesMap.find("Charmander")->second), "Modest", 5, 0, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", randValues, randValues);
     Pokemon myThirdPokemon = Pokemon("FireBoi3", &(speciesMap.find("Charmander")->second), "Modest", 5, 750000, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", randValues, randValues);
-    Pokemon myVenusaur = Pokemon("Venu", &(speciesMap.find("Venusaur")->second), "Modest", 55, 0, "Blaze", "Cheat", "Scratch", "Dark Pulse", "Smokescreen", "None", randValues, randValues);
+    Pokemon myVenusaur = Pokemon("Venu", &(speciesMap.find("Venusaur")->second), "Modest", 55, 0, "Blaze", "Growl", "Scratch", "Dark Pulse", "Smokescreen", "None", randValues, randValues);
     Pokemon myZekrom = Pokemon("zekky", &(speciesMap.find("Zekrom")->second), "Modest", 62, 0, "Blaze", "Growl", "Scratch", "Thunder Fang", "Cheat", "None", randValues, randValues);
-    Trainer myTrainer = Trainer("NotRed", {{1, &myPokemon}, {2, &mySecondPokemon}, {3, &myThirdPokemon}, {4, &myVenusaur}, {5, &myZekrom}});
+    Pokemon NotRedsCroagunk = Pokemon("Crocy", &(speciesMap.find("Croagunk")->second), "Adamant", 5, 0, "Poison Touch", "Poison Sting", "Mud-Slap", "Astonish", "Low Kick", "None", randValues, randValues);
+    Pokemon NotRedsOtherCroagunk = Pokemon("Rocky", &(speciesMap.find("Croagunk")->second), "Timid", 89, 0, "Poison Touch", "Poison Sting", "Mud-Slap", "Astonish", "Low Kick", "None", randValues, randValues);
+    Pokemon NotRedsEmboar = Pokemon("Emboss", &(speciesMap.find("Emboar")->second), "Hasty", 55, 0, "Blaze", "Flame Charge", "Head Smash", "Take Down", "Hammer Arm", "None", randValues, randValues);
+    Pokemon NotRedsReshiram = Pokemon("reshy", &(speciesMap.find("Reshiram")->second), "Modest", 62, 0, "Turboblaze", "Blue Flare", "Outrage", "Fusion Flare", "Cheat", "None", randValues, randValues);
+    Trainer NotRed = Trainer("NotRed", {{1, &NotRedsCroagunk}, {2, &NotRedsOtherCroagunk}, {3, &NotRedsEmboar}, {4, &NotRedsReshiram}});
     Player ME = Player("ME");
     Machine myTM = Machine(&moveMap.find("Dragon Claw")->second, false, 2);
     
@@ -45,18 +49,8 @@ int main() {
     
     // Displays
     std::cout << std::boolalpha;
-    Display.all(&mySecondPokemon, "Zekrom", "Ember", "Steel", "Careful", "Fluctuating", &myTrainer, &myTM);
-    std::cout << ME.name() << std::endl;
-    std::cout << ME.ID() << std::endl;
-    for (std::pair<std::string, std::vector<std::pair<std::string, int>>> i : ME.Bag()) {
-        std::cout << i.first << std::endl;
-    }
-    std::cout << "Testing Machine/Item" << std::endl;
-    std::cout << "\tName: " << myTM.name() << std::endl; 
-    std::cout << "\tIs HM: " << myTM.isHM() << std::endl;
-    std::cout << "\tID: " << myTM.ID() << std::endl;
-    std::cout << "\tHoldable: " << myTM.holdable() << std::endl;
-    std::cout << "\tPocket: " << myTM.pocket().second << " -> " << myTM.pocket().first << std::endl;
+    Display.all(&mySecondPokemon, "Zekrom", "Ember", "Steel", "Careful", "Fluctuating", &NotRed, &myTM);
+    Display.trainerAll(&NotRed);
 
 
     // Battle Information
@@ -64,7 +58,7 @@ int main() {
     // std::cout << mySecondPokemon.level << " | " << mySecondPokemon.experience << std::endl;
     // std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
     // Battle(&mySecondPokemon, &myThirdPokemon);
-    Battle(&myVenusaur, &myZekrom);
+    Battle(&NotRed, &ME);
     // std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
     std::cout << "\n\nEnd Main";
     return 0;

@@ -1,7 +1,9 @@
 #ifndef BATTLE_H
 #define BATTLE_h
+#include <string>
 #include "Pokemon_Class.h"
 #include "Move.h"
+#include "Trainer.h"
 
 class Battle {
     public:
@@ -10,10 +12,12 @@ class Battle {
         Move* player1Move;
         Move* player2Move;
         Pokemon* fasterPokemon;
+        Trainer* fasterPokemonOwner;
         Pokemon* slowerPokemon;
+        Trainer* slowerPokemonOwner;
         void damageCalculation(Pokemon* attackingInputPokemon, Move* inputPokemonMove, Pokemon* defendingInputPokemon);
         Move* getMove(Pokemon* attackingInputPokemon, int inputMove);
-        void getFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemon2);
+        void getFasterPokemon(Pokemon* inputPokemon1, Trainer* inputTrainer1, Pokemon* inputPokemon2, Trainer* inputTrainer2);
         double stabMultiplier(Pokemon* attackingInputPokemon, Move* inputPokemonMove);
         double effectivenessMultiplier(Move* inputPokemonMove, Pokemon* defendingInputPokemon);
         void useMove(Pokemon* attackingInputPokemon, Move* inputPokemonMove, Pokemon* defendingInputPokemon);
@@ -21,7 +25,8 @@ class Battle {
         bool flinchCheck(Move* inputPokemonMove);
         void distributeExperience(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon);
         void addEVs(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon);
-        Battle(Pokemon* inputPokemon1, Pokemon* inputPokemon2);
+        Pokemon* faintPokemon(Trainer* inputTrainer, Pokemon* inputFaintPokemon, std::map<int, Pokemon*>& inputTrainerPokemon);
+        Battle(Trainer* inputTrainer1, Trainer* inputTrainer2);
 };
 
 #endif
