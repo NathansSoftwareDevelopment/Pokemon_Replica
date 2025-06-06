@@ -1,6 +1,7 @@
 #ifndef ITEMS_H
 #define ITEMS_H
 #include <string>
+#include <map>
 
 class Item {
     private:
@@ -14,5 +15,7 @@ class Item {
 
         Item(std::string inputName, bool inputHoldable, std::string inputPocket);
 };
+
+extern const std::map<std::string, int> bagLookupMap;
 
 #endif
