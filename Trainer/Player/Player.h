@@ -29,4 +29,6 @@ class Player : public Trainer {
         Player(std::string inputName);
 };
 
+extern const std::map<std::string, int> bagLookupMap;
+
 #endif
