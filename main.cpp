@@ -45,7 +45,7 @@ int main() {
     
     // Displays
     std::cout << std::boolalpha;
-    Display.all(&mySecondPokemon, "Zekrom", "Ember", "Steel", "Careful", "Fluctuating", &myTrainer);
+    Display.all(&mySecondPokemon, "Zekrom", "Ember", "Steel", "Careful", "Fluctuating", &myTrainer, &myTM);
     std::cout << ME.name() << std::endl;
     std::cout << ME.ID() << std::endl;
     for (std::pair<std::string, std::vector<std::pair<std::string, int>>> i : ME.Bag()) {

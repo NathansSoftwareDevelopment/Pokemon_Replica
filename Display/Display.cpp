@@ -6,6 +6,8 @@
 #include "Type.h"
 #include "Nature.h"
 #include "Growth_Rate.h"
+#include "Trainer.h"
+#include "Item.h"
 using std::cout;
 using std::endl;
 
@@ -21,7 +23,7 @@ void display::idCounter(bool stackCall) {
 }
 
 
-void display::all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, std::string inputType, std::string inputNature, std::string inputGrowthRate, Trainer* inputTrainer, bool stackCall) {
+void display::all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, std::string inputType, std::string inputNature, std::string inputGrowthRate, Trainer* inputTrainer, Item* inputItem, bool stackCall) {
     idCounter(stackCall);
     pokemonAll(inputPokemon, true);
     speciesAll(&speciesMap.find(inputSpecies)->second, true);
@@ -30,6 +32,7 @@ void display::all(Pokemon* inputPokemon, std::string inputSpecies, std::string i
     natureAll(&natureMap.find(inputNature)->second, true);
     growthRateAll(&growthRateMap.find(inputGrowthRate)->second, true);
     trainerAll(inputTrainer, true);
+    itemAll(inputItem, true);
 }
 
 void display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
@@ -171,4 +174,12 @@ void display::trainerAll(Trainer* inputTrainer, bool stackCall) {
         cout << "\t\t\tSpecial Defense: " << i.second->maxStats().at("SpecialDefense") << endl;
         cout << "\t\t\tSpeed: " << i.second->maxStats().at("Speed") << endl;
     }
+}
+
+void display::itemAll(Item* inputItem, bool stackCall) {
+    idCounter(stackCall);
+    cout << "\nAll Information on Item " << inputItem->name() << endl;
+    cout << "Name: " << inputItem->name() << endl;
+    cout << "Holdable: " << inputItem->holdable() << endl;
+    cout << "Pocket: " << inputItem->pocket().first << endl;
 }
