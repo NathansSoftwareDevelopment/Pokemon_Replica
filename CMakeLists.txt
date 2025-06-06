@@ -33,6 +33,7 @@ include_directories(.
     "./Growth_Rate"
     "./Trainer"
     "./Trainer/Player"
+    "./Item"
 )
 
 set(SOURCES
@@ -47,6 +48,7 @@ set(SOURCES
     "./Growth_Rate/Growth_Rate.cpp"
     "./Trainer/Trainer.cpp"
     "./Trainer/Player/Player.cpp"
+    "./Item/Item.cpp"
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
