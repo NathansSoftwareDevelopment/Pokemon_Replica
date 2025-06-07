@@ -50,7 +50,8 @@ int main() {
     // Displays
     std::cout << std::boolalpha;
     Display.all(&mySecondPokemon, "Zekrom", "Ember", "Steel", "Careful", "Fluctuating", &NotRed, &myTM);
-    Display.trainerAll(&NotRed);
+    Display.trainerAll(&ME);
+    std::cout << mySecondPokemon.trainer()->name() << std::endl;
 
 
     // Battle Information

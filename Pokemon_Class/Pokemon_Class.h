@@ -6,9 +6,14 @@
 #include "Type.h"
 #include "Move.h"
 #include "Species.h"
+#include "Trainer.h"
+
+class Trainer;
 
 class Pokemon {
     private:
+        Trainer* _trainer;
+
         Species* _species;
         std::string _name;
 
@@ -69,6 +74,7 @@ class Pokemon {
         void calculatePokemonStats();
         void setPokemonMoves(std::string inputMove1, std::string InputMove2, std::string inputMove3, std::string inputMove4);
     public:
+        const Trainer* trainer() const {return _trainer;}
         const Species* species() const {return _species;}
         const std::string name() const {return _name;}
         const int level() const {return _level;}
@@ -87,6 +93,7 @@ class Pokemon {
         const std::map<std::string, int> currentStats() const {return _currentStats;}
         const std::map<std::string, int> currentStages() const {return _currentStages;}
 
+        Pokemon& trainer(Trainer* inputTrainer);
         Pokemon& currentStat(std::string inputStatName, int inputStat) {_currentStats[inputStatName] = inputStat; return *this;}
         Pokemon& effortValue(std::string inputValueName, int inputValue) {_effortValues[inputValueName] = inputValue; return *this;}
         Pokemon& effortValues(int EffortValues[6]);

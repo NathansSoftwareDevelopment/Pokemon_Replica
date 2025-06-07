@@ -8,6 +8,11 @@
 #include "Move.h"
 #include "Growth_Rate.h"
 
+Pokemon& Pokemon::trainer(Trainer* inputTrainer) {
+    _trainer = inputTrainer;
+    return *this;
+}
+
 void Pokemon::setSpeciesStats() {
     _speciesStats = _species->stats();
 }
