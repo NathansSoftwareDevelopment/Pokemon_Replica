@@ -202,16 +202,28 @@ void Battle::addEVs(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokem
     }
 }
 
-void Battle::faintPokemon(Trainer* inputTrainer, Pokemon* inputFaintPokemon, Pokemon*& inputActivePokemon, std::map<int, Pokemon*>& inputTrainerParty) {
-    std::cout << inputFaintPokemon->name() << " Fainted!" << std::endl;
+void Battle::faintPokemon(Trainer* inputTrainer, Pokemon*& inputActivePokemon, std::map<int, Pokemon*>& inputTrainerParty) {
+    Pokemon* faintedPokemon;
+    if (slowerPokemon->currentStats().at("HitPoints") <= 0) {
+        faintedPokemon = slowerPokemon;
+    } else if (fasterPokemon->currentStats().at("HitPoints") <= 0) {
+        faintedPokemon = fasterPokemon;
+    } else {
+        return;
+    }
+    
+    std::cout << faintedPokemon->name() << " Fainted!" << std::endl;
+    
     for (std::pair<int, Pokemon*> i : inputTrainerParty) {
-        if (i.second == inputFaintPokemon) {
+        if (i.second == faintedPokemon) {
             inputTrainerParty.erase(i.first);
             break;
         }
     }
 
     sendOutPokemon(inputTrainer, inputActivePokemon, inputTrainerParty);
+}
+
 void Battle::sendOutPokemon(Trainer* inputTrainer, Pokemon*& inputActivePokemon, std::map<int, Pokemon*>& inputTrainerParty) {
     std::cout << "Please choose a new pokemon, " << inputTrainer->name() << std::endl;
     for (std::pair<int, Pokemon*> i : inputTrainerParty) {
@@ -265,9 +277,9 @@ Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2) {
 
         if (slowerPokemon->currentStats().at("HitPoints") <= 0) {
             if (slowerPokemonOwner->name() == inputTrainer1->name()) {
-                faintPokemon(inputTrainer1, slowerPokemon, trainer1ActivePokemon, trainer1Party);
+                faintPokemon(inputTrainer1, trainer1ActivePokemon, trainer1Party);
             } else if (slowerPokemonOwner->name() == inputTrainer2->name()) {
-                faintPokemon(inputTrainer2, slowerPokemon, trainer2ActivePokemon, trainer2Party);
+                faintPokemon(inputTrainer2, trainer2ActivePokemon, trainer2Party);
             }
             addEVs(fasterPokemon, slowerPokemon);
             distributeExperience(fasterPokemon, slowerPokemon);
@@ -280,9 +292,9 @@ Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2) {
             
             if (fasterPokemon->currentStats().at("HitPoints") <= 0) {
                 if (fasterPokemonOwner->name() == inputTrainer1->name()) {
-                    faintPokemon(inputTrainer1, fasterPokemon, trainer1ActivePokemon, trainer1Party);
+                    faintPokemon(inputTrainer1, trainer1ActivePokemon, trainer1Party);
                 } else if (fasterPokemonOwner->name() == inputTrainer2->name()) {
-                    faintPokemon(inputTrainer2, fasterPokemon, trainer2ActivePokemon, trainer2Party);
+                    faintPokemon(inputTrainer2, trainer2ActivePokemon, trainer2Party);
                 }
                 addEVs(slowerPokemon, fasterPokemon);
                 distributeExperience(slowerPokemon, fasterPokemon);

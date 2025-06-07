@@ -27,7 +27,7 @@ class Battle {
         bool flinchCheck(Move* inputPokemonMove);
         void distributeExperience(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon);
         void addEVs(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon);
-        void faintPokemon(Trainer* inputTrainer, Pokemon* inputFaintPokemon, Pokemon*& inputActivePokemon, std::map<int, Pokemon*>& inputTrainerParty);
+        void faintPokemon(Trainer* inputTrainer, Pokemon*& inputActivePokemon, std::map<int, Pokemon*>& inputTrainerParty);
         std::map<int, Pokemon*> makePartyMap(Trainer* inputTrainer);
         void sendOutPokemon(Trainer* inputTrainer, Pokemon*& inputActivePokemon, std::map<int, Pokemon*>& inputTrainerParty);
         Battle(Trainer* inputTrainer1, Trainer* inputTrainer2);
