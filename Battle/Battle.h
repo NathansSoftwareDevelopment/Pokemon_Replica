@@ -26,6 +26,7 @@ class Battle {
         void distributeExperience(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon);
         void addEVs(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon);
         Pokemon* faintPokemon(Trainer* inputTrainer, Pokemon* inputFaintPokemon, std::map<int, Pokemon*>& inputTrainerPokemon);
+        std::map<int, Pokemon*> makePartyMap(Trainer* inputTrainer);
         Battle(Trainer* inputTrainer1, Trainer* inputTrainer2);
 };
 

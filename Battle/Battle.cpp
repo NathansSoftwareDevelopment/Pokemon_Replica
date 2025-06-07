@@ -220,23 +220,23 @@ Pokemon* Battle::faintPokemon(Trainer* inputTrainer, Pokemon* inputFaintPokemon,
     return inputTrainerPokemon.at(inputPokemonSlot);
 }
 
+std::map<int, Pokemon*> Battle::makePartyMap(Trainer* inputTrainer) {
+    std::map<int, Pokemon*> partyMap;
+    for (std::pair<int, Pokemon*> i : inputTrainer->pokemon()) {
+        if (i.second->currentStats().at("HitPoints") > 0) {
+            partyMap.emplace(i.first, i.second);
+        }
+    }
+    return partyMap;
+}
+
 Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2) {
     std::cout << "\n\n\n";
     turn = 0;
 
-    std::map<int, Pokemon*> trainer1Pokemon;
-    for (std::pair<int, Pokemon*> i : inputTrainer1->pokemon()) {
-        if (i.second->currentStats().at("HitPoints") > 0) {
-            trainer1Pokemon.emplace(i.first, i.second);
-        }
-    }
+    std::map<int, Pokemon*> trainer1Pokemon = makePartyMap(inputTrainer1);
     Pokemon* trainer1ActivePokemon = trainer1Pokemon.begin()->second;
-    std::map<int, Pokemon*> trainer2Pokemon;
-    for (std::pair<int, Pokemon*> i : inputTrainer2->pokemon()) {
-        if (i.second->currentStats().at("HitPoints") > 0) {
-            trainer2Pokemon.emplace(i.first, i.second);
-        }
-    }
+    std::map<int, Pokemon*> trainer2Pokemon = makePartyMap(inputTrainer2);
     Pokemon* trainer2ActivePokemon = trainer2Pokemon.begin()->second;
 
     while (trainer1Pokemon.size() > 0 && trainer2Pokemon.size() > 0) {
