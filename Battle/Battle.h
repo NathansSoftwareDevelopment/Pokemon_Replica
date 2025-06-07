@@ -15,6 +15,8 @@ class Battle {
         Trainer* fasterPokemonOwner;
         Pokemon* slowerPokemon;
         Trainer* slowerPokemonOwner;
+        Pokemon* trainer1ActivePokemon;
+        Pokemon* trainer2ActivePokemon;
         void damageCalculation(Pokemon* attackingInputPokemon, Move* inputPokemonMove, Pokemon* defendingInputPokemon);
         Move* getMove(Pokemon* attackingInputPokemon, int inputMove);
         void getFasterPokemon(Pokemon* inputPokemon1, Trainer* inputTrainer1, Pokemon* inputPokemon2, Trainer* inputTrainer2);

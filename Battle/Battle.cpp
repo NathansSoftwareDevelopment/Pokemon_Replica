@@ -235,9 +235,9 @@ Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2) {
     turn = 0;
 
     std::map<int, Pokemon*> trainer1Party = makePartyMap(inputTrainer1);
-    Pokemon* trainer1ActivePokemon = trainer1Party.begin()->second;
+    trainer1ActivePokemon = trainer1Party.begin()->second;
     std::map<int, Pokemon*> trainer2Party = makePartyMap(inputTrainer2);
-    Pokemon* trainer2ActivePokemon = trainer2Party.begin()->second;
+    trainer2ActivePokemon = trainer2Party.begin()->second;
 
     while (trainer1Party.size() > 0 && trainer2Party.size() > 0) {
         turn++;
