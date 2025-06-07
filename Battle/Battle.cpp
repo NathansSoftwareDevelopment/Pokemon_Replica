@@ -204,15 +204,20 @@ void Battle::addEVs(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokem
 
 void Battle::faintPokemon(Trainer* inputTrainer, Pokemon*& inputActivePokemon, std::map<int, Pokemon*>& inputTrainerParty) {
     Pokemon* faintedPokemon;
+    Pokemon* victoriousPokemon;
     if (slowerPokemon->currentStats().at("HitPoints") <= 0) {
         faintedPokemon = slowerPokemon;
+        victoriousPokemon = fasterPokemon;
     } else if (fasterPokemon->currentStats().at("HitPoints") <= 0) {
         faintedPokemon = fasterPokemon;
+        victoriousPokemon = slowerPokemon;
     } else {
         return;
     }
     
     std::cout << faintedPokemon->name() << " Fainted!" << std::endl;
+    addEVs(victoriousPokemon, faintedPokemon);
+    distributeExperience(victoriousPokemon, faintedPokemon);
     
     for (std::pair<int, Pokemon*> i : inputTrainerParty) {
         if (i.second == faintedPokemon) {
