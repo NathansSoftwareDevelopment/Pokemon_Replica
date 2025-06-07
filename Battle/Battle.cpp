@@ -194,7 +194,7 @@ void Battle::addEVs(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokem
     }
 }
 
-void Battle::faintPokemon(Pokemon*& inputActivePokemon, std::map<int, Pokemon*>& inputTrainerParty) {
+void Battle::faintPokemon(std::pair<Pokemon*, std::map<int, Pokemon*>&> inputTrainerActiveAndParty) {
     Pokemon* faintedPokemon;
     Pokemon* victoriousPokemon;
     if (slowerPokemon->currentStats().at("HitPoints") <= 0) {
@@ -211,26 +211,26 @@ void Battle::faintPokemon(Pokemon*& inputActivePokemon, std::map<int, Pokemon*>&
     addEVs(victoriousPokemon, faintedPokemon);
     distributeExperience(victoriousPokemon, faintedPokemon);
     
-    for (std::pair<int, Pokemon*> i : inputTrainerParty) {
+    for (std::pair<int, Pokemon*> i : inputTrainerActiveAndParty.second) {
         if (i.second == faintedPokemon) {
-            inputTrainerParty.erase(i.first);
+            inputTrainerActiveAndParty.second.erase(i.first);
             break;
         }
     }
 
-    sendOutPokemon(inputActivePokemon, inputTrainerParty);
+    sendOutPokemon(inputTrainerActiveAndParty);
 }
 
-void Battle::sendOutPokemon(Pokemon*& inputActivePokemon, std::map<int, Pokemon*>& inputTrainerParty) {
-    const Trainer* trainer = inputActivePokemon->trainer();
+void Battle::sendOutPokemon(std::pair<Pokemon*, std::map<int, Pokemon*>&> inputTrainerActiveAndParty) {
+    const Trainer* trainer = inputTrainerActiveAndParty.first->trainer();
     std::cout << "Please choose a new pokemon, " << trainer->name() << std::endl;
-    for (std::pair<int, Pokemon*> i : inputTrainerParty) {
+    for (std::pair<int, Pokemon*> i : inputTrainerActiveAndParty.second) {
         std::cout << "\t" << i.first << ": " << i.second->name() << std::endl;
     }
     int inputPokemonSlot;
     std::cin >> inputPokemonSlot;
 
-    inputActivePokemon = inputTrainerParty.at(inputPokemonSlot);
+    inputTrainerActiveAndParty.first = inputTrainerActiveAndParty.second.at(inputPokemonSlot);
 }
 
 std::map<int, Pokemon*> Battle::makePartyMap(Trainer* inputTrainer) {
@@ -249,8 +249,10 @@ Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2) {
 
     std::map<int, Pokemon*> trainer1Party = makePartyMap(inputTrainer1);
     trainer1ActivePokemon = trainer1Party.begin()->second;
+    std::pair<Pokemon*, std::map<int, Pokemon*>&> trainer1ActiveAndParty = {trainer1ActivePokemon, trainer1Party};
     std::map<int, Pokemon*> trainer2Party = makePartyMap(inputTrainer2);
     trainer2ActivePokemon = trainer2Party.begin()->second;
+    std::pair<Pokemon*, std::map<int, Pokemon*>&> trainer2ActiveAndParty = {trainer2ActivePokemon, trainer2Party};
 
     while (trainer1Party.size() > 0 && trainer2Party.size() > 0) {
         turn++;
@@ -275,9 +277,9 @@ Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2) {
 
         if (slowerPokemon->currentStats().at("HitPoints") <= 0) {
             if (slowerPokemon->trainer() == inputTrainer1) {
-                faintPokemon(trainer1ActivePokemon, trainer1Party);
+                faintPokemon(trainer1ActiveAndParty);
             } else if (slowerPokemon->trainer() == inputTrainer2) {
-                faintPokemon(trainer2ActivePokemon, trainer2Party);
+                faintPokemon(trainer1ActiveAndParty);
             }
             addEVs(fasterPokemon, slowerPokemon);
             distributeExperience(fasterPokemon, slowerPokemon);
@@ -290,9 +292,9 @@ Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2) {
             
             if (fasterPokemon->currentStats().at("HitPoints") <= 0) {
                 if (fasterPokemon->trainer() == inputTrainer1) {
-                    faintPokemon(trainer1ActivePokemon, trainer1Party);
+                    faintPokemon(trainer1ActiveAndParty);
                 } else if (fasterPokemon->trainer() == inputTrainer2) {
-                    faintPokemon(trainer2ActivePokemon, trainer2Party);
+                    faintPokemon(trainer2ActiveAndParty);
                 }
                 addEVs(slowerPokemon, fasterPokemon);
                 distributeExperience(slowerPokemon, fasterPokemon);
