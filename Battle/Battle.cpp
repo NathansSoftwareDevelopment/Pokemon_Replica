@@ -202,22 +202,22 @@ void Battle::addEVs(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokem
     }
 }
 
-Pokemon* Battle::faintPokemon(Trainer* inputTrainer, Pokemon* inputFaintPokemon, std::map<int, Pokemon*>& inputTrainerPokemon) {
+Pokemon* Battle::faintPokemon(Trainer* inputTrainer, Pokemon* inputFaintPokemon, std::map<int, Pokemon*>& inputTrainerParty) {
     std::cout << inputFaintPokemon->name() << " Fainted!" << std::endl;
-    for (std::pair<int, Pokemon*> i : inputTrainerPokemon) {
+    for (std::pair<int, Pokemon*> i : inputTrainerParty) {
         if (i.second == inputFaintPokemon) {
-            inputTrainerPokemon.erase(i.first);
+            inputTrainerParty.erase(i.first);
             break;
         }
     }
 
     std::cout << "Please choose a new pokemon, " << inputTrainer->name() << std::endl;
-    for (std::pair<int, Pokemon*> i : inputTrainerPokemon) {
+    for (std::pair<int, Pokemon*> i : inputTrainerParty) {
         std::cout << "\t" << i.first << ": " << i.second->name() << std::endl;
     }
     int inputPokemonSlot;
     std::cin >> inputPokemonSlot;
-    return inputTrainerPokemon.at(inputPokemonSlot);
+    return inputTrainerParty.at(inputPokemonSlot);
 }
 
 std::map<int, Pokemon*> Battle::makePartyMap(Trainer* inputTrainer) {
@@ -234,12 +234,12 @@ Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2) {
     std::cout << "\n\n\n";
     turn = 0;
 
-    std::map<int, Pokemon*> trainer1Pokemon = makePartyMap(inputTrainer1);
-    Pokemon* trainer1ActivePokemon = trainer1Pokemon.begin()->second;
-    std::map<int, Pokemon*> trainer2Pokemon = makePartyMap(inputTrainer2);
-    Pokemon* trainer2ActivePokemon = trainer2Pokemon.begin()->second;
+    std::map<int, Pokemon*> trainer1Party = makePartyMap(inputTrainer1);
+    Pokemon* trainer1ActivePokemon = trainer1Party.begin()->second;
+    std::map<int, Pokemon*> trainer2Party = makePartyMap(inputTrainer2);
+    Pokemon* trainer2ActivePokemon = trainer2Party.begin()->second;
 
-    while (trainer1Pokemon.size() > 0 && trainer2Pokemon.size() > 0) {
+    while (trainer1Party.size() > 0 && trainer2Party.size() > 0) {
         turn++;
 
         getFasterPokemon(trainer1ActivePokemon, inputTrainer1, trainer2ActivePokemon, inputTrainer2);
@@ -262,9 +262,9 @@ Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2) {
 
         if (slowerPokemon->currentStats().at("HitPoints") <= 0) {
             if (slowerPokemonOwner->name() == inputTrainer1->name()) {
-                trainer1ActivePokemon = faintPokemon(inputTrainer1, slowerPokemon, trainer1Pokemon);
+                trainer1ActivePokemon = faintPokemon(inputTrainer1, slowerPokemon, trainer1Party);
             } else if (slowerPokemonOwner->name() == inputTrainer2->name()) {
-                trainer2ActivePokemon = faintPokemon(inputTrainer2, slowerPokemon, trainer2Pokemon);
+                trainer2ActivePokemon = faintPokemon(inputTrainer2, slowerPokemon, trainer2Party);
             }
             addEVs(fasterPokemon, slowerPokemon);
             distributeExperience(fasterPokemon, slowerPokemon);
@@ -277,9 +277,9 @@ Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2) {
             
             if (fasterPokemon->currentStats().at("HitPoints") <= 0) {
                 if (fasterPokemonOwner->name() == inputTrainer1->name()) {
-                    trainer1ActivePokemon = faintPokemon(inputTrainer1, fasterPokemon, trainer1Pokemon);
+                    trainer1ActivePokemon = faintPokemon(inputTrainer1, fasterPokemon, trainer1Party);
                 } else if (fasterPokemonOwner->name() == inputTrainer2->name()) {
-                    trainer2ActivePokemon = faintPokemon(inputTrainer2, fasterPokemon, trainer2Pokemon);
+                    trainer2ActivePokemon = faintPokemon(inputTrainer2, fasterPokemon, trainer2Party);
                 }
                 addEVs(slowerPokemon, fasterPokemon);
                 distributeExperience(slowerPokemon, fasterPokemon);
