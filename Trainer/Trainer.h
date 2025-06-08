@@ -27,9 +27,11 @@ class Trainer {
         Trainer& faint(int inputSlot) {_livingParty.erase(inputSlot); return *this;}
         Trainer& activePokemon(Pokemon* inputPokemon);
 
-        Trainer(std::string inputName, int inputTrainerID);
-        Trainer(std::string inputName, Pokemon* inputPokemon);
-        Trainer(std::string inputName, std::map<int, Pokemon*> inputPokemon);
+        Trainer(std::string inputName, int inputTrainerID, std::map<int, Pokemon*> inputPokemon);
+
+        Trainer(std::string inputName, int inputTrainerID) : Trainer(inputName, inputTrainerID, {}) {};
+        Trainer(std::string inputName, Pokemon* inputPokemon) : Trainer(inputName, _totalTrainers+1, {{1, inputPokemon}}) {};
+        Trainer(std::string inputName, std::map<int, Pokemon*> inputPokemon) : Trainer(inputName, _totalTrainers+1, inputPokemon) {};
 };
 
 #endif
