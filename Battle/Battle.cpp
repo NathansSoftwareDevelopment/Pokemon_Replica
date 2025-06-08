@@ -213,7 +213,9 @@ void Battle::faintPokemon(Pokemon* inputPokemon) {
         }
     }
 
-    sendOutPokemon(inputPokemon->trainer());
+    if (inputPokemon->trainer()->livingParty().size() > 0) {
+        sendOutPokemon(inputPokemon->trainer());
+    }
 }
 
 void Battle::sendOutPokemon(Trainer* inputTrainer) {

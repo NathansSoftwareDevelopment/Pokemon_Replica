@@ -21,14 +21,14 @@ int main() {
     int randValues[6] = {1, 2, 3, 4, 5, 6};
     
     // Make instances of custom Classes
-    Pokemon myPokemon = Pokemon("FireBoi", &(speciesMap.find("Charmander")->second), "Modest", 5, 0, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", randValues, randValues);
-    Pokemon mySecondPokemon = Pokemon("FireBoi2", &(speciesMap.find("Charmander")->second), "Modest", 5, 0, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", randValues, randValues);
-    Pokemon myThirdPokemon = Pokemon("FireBoi3", &(speciesMap.find("Charmander")->second), "Modest", 5, 750000, "Blaze", "Growl", "Scratch", "Ember", "Smokescreen", "None", randValues, randValues);
-    Pokemon myVenusaur = Pokemon("Venu", &(speciesMap.find("Venusaur")->second), "Modest", 55, 0, "Blaze", "Growl", "Scratch", "Dark Pulse", "Smokescreen", "None", randValues, randValues);
+    Pokemon myPokemon = Pokemon("FireBoi", &(speciesMap.find("Charmander")->second), "Modest", 5, 0, "Blaze", "Growl", "Scratch", "Ember", "Cheat", "None", randValues, randValues);
+    Pokemon mySecondPokemon = Pokemon("FireBoi2", &(speciesMap.find("Charmander")->second), "Modest", 5, 0, "Blaze", "Growl", "Scratch", "Ember", "Cheat", "None", randValues, randValues);
+    Pokemon myThirdPokemon = Pokemon("FireBoi3", &(speciesMap.find("Charmander")->second), "Modest", 5, 750000, "Blaze", "Growl", "Scratch", "Ember", "Cheat", "None", randValues, randValues);
+    Pokemon myVenusaur = Pokemon("Venu", &(speciesMap.find("Venusaur")->second), "Modest", 55, 0, "Blaze", "Growl", "Scratch", "Dark Pulse", "Cheat", "None", randValues, randValues);
     Pokemon myZekrom = Pokemon("zekky", &(speciesMap.find("Zekrom")->second), "Modest", 62, 0, "Blaze", "Growl", "Scratch", "Thunder Fang", "Cheat", "None", randValues, randValues);
-    Pokemon NotRedsCroagunk = Pokemon("Crocy", &(speciesMap.find("Croagunk")->second), "Adamant", 5, 0, "Poison Touch", "Poison Sting", "Mud-Slap", "Astonish", "Low Kick", "None", randValues, randValues);
-    Pokemon NotRedsOtherCroagunk = Pokemon("Rocky", &(speciesMap.find("Croagunk")->second), "Timid", 89, 0, "Poison Touch", "Poison Sting", "Mud-Slap", "Astonish", "Low Kick", "None", randValues, randValues);
-    Pokemon NotRedsEmboar = Pokemon("Emboss", &(speciesMap.find("Emboar")->second), "Hasty", 55, 0, "Blaze", "Flame Charge", "Head Smash", "Take Down", "Hammer Arm", "None", randValues, randValues);
+    Pokemon NotRedsCroagunk = Pokemon("Crocy", &(speciesMap.find("Croagunk")->second), "Adamant", 5, 0, "Poison Touch", "Poison Sting", "Mud-Slap", "Astonish", "Cheat", "None", randValues, randValues);
+    Pokemon NotRedsOtherCroagunk = Pokemon("Rocky", &(speciesMap.find("Croagunk")->second), "Timid", 89, 0, "Poison Touch", "Poison Sting", "Mud-Slap", "Astonish", "Cheat", "None", randValues, randValues);
+    Pokemon NotRedsEmboar = Pokemon("Emboss", &(speciesMap.find("Emboar")->second), "Hasty", 55, 0, "Blaze", "Flame Charge", "Head Smash", "Take Down", "Cheat", "None", randValues, randValues);
     Pokemon NotRedsReshiram = Pokemon("reshy", &(speciesMap.find("Reshiram")->second), "Modest", 62, 0, "Turboblaze", "Blue Flare", "Outrage", "Fusion Flare", "Cheat", "None", randValues, randValues);
     Trainer NotRed = Trainer("NotRed", {{1, &NotRedsCroagunk}, {2, &NotRedsOtherCroagunk}, {3, &NotRedsEmboar}, {4, &NotRedsReshiram}});
     Player ME = Player("ME");
