@@ -74,7 +74,7 @@ class Pokemon {
         void calculatePokemonStats();
         void setPokemonMoves(std::string inputMove1, std::string InputMove2, std::string inputMove3, std::string inputMove4);
     public:
-        const Trainer* trainer() const {return _trainer;}
+        Trainer* trainer() const {return _trainer;}
         const Species* species() const {return _species;}
         const std::string name() const {return _name;}
         const int level() const {return _level;}
