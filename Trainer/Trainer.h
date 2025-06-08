@@ -24,6 +24,7 @@ class Trainer {
         const Pokemon* activePokemon() const {return _activePokemon;}
 
         Trainer& pokemon(int inputSlot, Pokemon* inputPokemon);
+        Trainer& faint(int inputSlot) {_livingParty.erase(inputSlot); return *this;}
         Trainer& activePokemon(Pokemon* inputPokemon);
 
         Trainer(std::string inputName, int inputTrainerID);
