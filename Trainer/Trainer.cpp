@@ -8,6 +8,9 @@ int Trainer::_totalTrainers = 0;
 Trainer& Trainer::pokemon(int inputSlot, Pokemon* inputPokemon) {
     _pokemon[inputSlot]=inputPokemon;
     inputPokemon->trainer(this);
+    if (inputPokemon->currentStats().at("HitPoints") > 0) {
+        _livingParty.emplace(inputSlot, inputPokemon);
+    }
     return *this;
 }
 
@@ -22,6 +25,7 @@ Trainer::Trainer(std::string inputName, Pokemon* inputPokemon) {
     inputPokemon->trainer(this);
     _totalTrainers++;
     _ID = _totalTrainers;
+    _livingParty = _pokemon;
 }
 
 Trainer::Trainer(std::string inputName, std::map<int, Pokemon*> inputPokemon) {
@@ -32,4 +36,5 @@ Trainer::Trainer(std::string inputName, std::map<int, Pokemon*> inputPokemon) {
     }
     _totalTrainers++;
     _ID = _totalTrainers;
+    _livingParty = _pokemon;
 }
