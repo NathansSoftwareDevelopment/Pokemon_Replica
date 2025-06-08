@@ -11,7 +11,7 @@ Trainer& Trainer::pokemon(int inputSlot, Pokemon* inputPokemon) {
     if (inputPokemon->currentStats().at("HitPoints") > 0) {
         _livingParty.emplace(inputSlot, inputPokemon);
     }
-    if (_activePokemon == NULL) {
+    if (_activePokemon == nullptr) {
         _activePokemon = inputPokemon;
     }
     return *this;

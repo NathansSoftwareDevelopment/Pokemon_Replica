@@ -14,7 +14,7 @@ class Trainer {
         int _ID;
         std::map<int, Pokemon*> _pokemon;
         std::map<int, Pokemon*> _livingParty;
-        Pokemon* _activePokemon;
+        Pokemon* _activePokemon = nullptr;
     public:
         static int totalTrainers() {return _totalTrainers;}
         const std::string name() const {return _name;}
