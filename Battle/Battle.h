@@ -13,8 +13,6 @@ class Battle {
         Move* player2Move;
         Pokemon* fasterPokemon;
         Pokemon* slowerPokemon;
-        Pokemon* trainer1ActivePokemon;
-        Pokemon* trainer2ActivePokemon;
         void damageCalculation(Pokemon* attackingInputPokemon, Move* inputPokemonMove, Pokemon* defendingInputPokemon);
         Move* getMove(Pokemon* attackingInputPokemon, int inputMove);
         void getFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemon2);
@@ -25,9 +23,8 @@ class Battle {
         bool flinchCheck(Move* inputPokemonMove);
         void distributeExperience(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon);
         void addEVs(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon);
-        void faintPokemon(std::pair<Pokemon*, std::map<int, Pokemon*>&> inputTrainerActiveAndParty);
-        std::map<int, Pokemon*> makePartyMap(Trainer* inputTrainer);
-        void sendOutPokemon(std::pair<Pokemon*, std::map<int, Pokemon*>&> inputTrainerActiveAndParty);
+        void faintPokemon(Pokemon* inputPokemon);
+        void sendOutPokemon(Trainer* inputTrainer);
         Battle(Trainer* inputTrainer1, Trainer* inputTrainer2);
 };
 
