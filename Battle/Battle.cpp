@@ -238,10 +238,19 @@ void Battle::sendOutPokemon(Trainer* inputTrainer) {
     for (std::pair<int, Pokemon*> i : inputTrainer->livingParty()) {
         std::cout << "\t" << i.first << ": " << i.second->name() << std::endl;
     }
-    int inputPokemonSlot;
-    std::cin >> inputPokemonSlot;
 
-    inputTrainer->activePokemon(inputTrainer->livingParty().at(inputPokemonSlot));
+    std::string userInput;
+    std::cin >> userInput;
+    std::cout << "\n";
+    
+    // If input is invalid -> Print an error message and get a new input;
+    try {
+        int inputPokemonSlot = std::stoi(userInput);
+        inputTrainer->activePokemon(inputTrainer->livingParty().at(inputPokemonSlot));
+    } catch (std::exception) {
+        std::cout << "Error: \"" << userInput << "\" is an invalid pokemon slot." << std::endl;
+        sendOutPokemon(inputTrainer);
+    }
 }
 
 Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2) {
