@@ -10,11 +10,22 @@
 #include "Utils.hpp"
 
 Move* Battle::getMove(Pokemon* attackingInputPokemon) {
-    int moveSlot;
+    std::string userInput;
     std::cout << "What Move slot to use? ";
-    std::cin >> moveSlot;
-    std::cout << std::endl;
-    return attackingInputPokemon->moves().at(moveSlot);
+    std::cin >> userInput;
+    std::cout << "\n";
+    
+    Move* returnMove;
+    // If input is invalid -> Print an error message and get a new input;
+    try {
+        int moveSlot = std::stoi(userInput);
+        returnMove = attackingInputPokemon->moves().at(moveSlot);
+    } catch (std::exception) {
+        std::cout << "Error: \"" << userInput << "\" is an invalid move slot." << std::endl;
+        returnMove = getMove(attackingInputPokemon);
+    }
+
+    return returnMove;
 }
 
 double Battle::stabMultiplier(Pokemon* attackingInputPokemon, Move* InputPokemonMove) {
