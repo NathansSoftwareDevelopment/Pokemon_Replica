@@ -52,6 +52,7 @@ int main() {
     Display.all(&mySecondPokemon, "Zekrom", "Ember", "Steel", "Careful", "Fluctuating", &NotRed, &myTM);
     Display.trainerAll(&ME);
     std::cout << ME.livingParty().at(4)->name() << std::endl;
+    std::cout << ME.activePokemon()->name() << std::endl;
 
 
     // Battle Information

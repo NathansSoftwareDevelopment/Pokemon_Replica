@@ -11,6 +11,14 @@ Trainer& Trainer::pokemon(int inputSlot, Pokemon* inputPokemon) {
     if (inputPokemon->currentStats().at("HitPoints") > 0) {
         _livingParty.emplace(inputSlot, inputPokemon);
     }
+    if (_activePokemon == NULL) {
+        _activePokemon = inputPokemon;
+    }
+    return *this;
+}
+
+Trainer& Trainer::activePokemon(Pokemon* inputPokemon) {
+    _activePokemon = inputPokemon;
     return *this;
 }
 
@@ -22,6 +30,7 @@ Trainer::Trainer(std::string inputName, int inputTrainerID) {
 Trainer::Trainer(std::string inputName, Pokemon* inputPokemon) {
     _name = inputName;
     _pokemon[1] = inputPokemon;
+    _activePokemon = inputPokemon;
     inputPokemon->trainer(this);
     _totalTrainers++;
     _ID = _totalTrainers;
@@ -34,6 +43,7 @@ Trainer::Trainer(std::string inputName, std::map<int, Pokemon*> inputPokemon) {
     for (std::pair<int, Pokemon*> i : inputPokemon) {
         i.second->trainer(this);
     }
+    _activePokemon = inputPokemon.at(1);
     _totalTrainers++;
     _ID = _totalTrainers;
     _livingParty = _pokemon;
