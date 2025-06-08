@@ -9,8 +9,12 @@
 #include "Move.h"
 #include "Utils.hpp"
 
-Move* Battle::getMove(Pokemon* attackingInputPokemon, int InputMove) {
-    return attackingInputPokemon->moves().at(InputMove);
+Move* Battle::getMove(Pokemon* attackingInputPokemon) {
+    int moveSlot;
+    std::cout << "What Move slot to use? ";
+    std::cin >> moveSlot;
+    std::cout << std::endl;
+    return attackingInputPokemon->moves().at(moveSlot);
 }
 
 double Battle::stabMultiplier(Pokemon* attackingInputPokemon, Move* InputPokemonMove) {
@@ -249,15 +253,9 @@ Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2) {
 
         std::cout << "\n\nTurn " << turn << std::endl;
         std::cout << "first: " << fasterPokemon->name() << std::endl;
-        int moveSlot;
-        std::cout << "What Move slot to use? ";
-        std::cin >> moveSlot;
-        Move* fasterPokemonMove = getMove(fasterPokemon, moveSlot);
+        Move* fasterPokemonMove = getMove(fasterPokemon);
         std::cout << "second: " << slowerPokemon->name() << std::endl;
-        std::cout << "What Move slot to use? ";
-        std::cin >> moveSlot;
-        std::cout << std::endl;
-        Move* slowerPokemonMove = getMove(slowerPokemon, moveSlot);
+        Move* slowerPokemonMove = getMove(slowerPokemon);
         
         // std::cout << fasterPokemon->name() << " " << fasterPokemonMove->name() << " " << slowerPokemon->name() << std::endl;
         useMove(fasterPokemon, fasterPokemonMove, slowerPokemon);
