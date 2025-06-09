@@ -28,7 +28,8 @@ class display {
 
         void growthRateAll(GrowthRate* inputGrowthRate, bool stackCall = false);
 
-        void trainerAll(Trainer* inputTrainer, bool stackCall=false);
+        void trainerAll(Trainer* inputTrainer, bool stackCall = false);
+        void trainerLivingParty(Trainer* inputTrainer, bool stackCall = false);
 
         void itemAll(Item* inputItem, bool stackCall = false);
 };

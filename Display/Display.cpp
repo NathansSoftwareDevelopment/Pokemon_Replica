@@ -174,6 +174,15 @@ void display::trainerAll(Trainer* inputTrainer, bool stackCall) {
         cout << "\t\t\tSpecial Defense: " << i.second->maxStats().at("SpecialDefense") << endl;
         cout << "\t\t\tSpeed: " << i.second->maxStats().at("Speed") << endl;
     }
+    cout << "Living Pokemon" << endl;
+    trainerLivingParty(inputTrainer, true);
+}
+
+void display::trainerLivingParty(Trainer* inputTrainer, bool stackCall) {
+    idCounter(stackCall);
+    for (std::pair<int, Pokemon*> i : inputTrainer->livingParty()) {
+        printf("\t%i: %s %i/%i\n", i.first, i.second->name().c_str(), i.second->currentStats().at("HitPoints"), i.second->maxStats().at("HitPoints"));
+    }
 }
 
 void display::itemAll(Item* inputItem, bool stackCall) {
