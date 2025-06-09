@@ -11,11 +11,9 @@
 using std::cout;
 using std::endl;
 
-display Display;
+int Display::displayID = 1;
 
-int display::displayID = 1;
-
-void display::idCounter(bool stackCall) {
+void Display::idCounter(bool stackCall) {
     if (!stackCall) {
         cout << "\nDisplay ID: " << displayID;
         displayID++;
@@ -23,7 +21,7 @@ void display::idCounter(bool stackCall) {
 }
 
 
-void display::all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, std::string inputType, std::string inputNature, std::string inputGrowthRate, Trainer* inputTrainer, Item* inputItem, bool stackCall) {
+void Display::all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, std::string inputType, std::string inputNature, std::string inputGrowthRate, Trainer* inputTrainer, Item* inputItem, bool stackCall) {
     idCounter(stackCall);
     pokemonAll(inputPokemon, true);
     speciesAll(&speciesMap.find(inputSpecies)->second, true);
@@ -35,7 +33,7 @@ void display::all(Pokemon* inputPokemon, std::string inputSpecies, std::string i
     itemAll(inputItem, true);
 }
 
-void display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
+void Display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
     idCounter(stackCall);
     cout << "\nAll Information on " << inputPokemon->name() << endl;
     cout << "Name: " << inputPokemon->name() << endl;
@@ -69,7 +67,7 @@ void display::pokemonAll(Pokemon* inputPokemon, bool stackCall) {
 }
 
 
-void display::speciesAll(Species* inputSpecies, bool stackCall) {
+void Display::speciesAll(Species* inputSpecies, bool stackCall) {
     idCounter(stackCall);
     cout << "\nAll Information on Species " << inputSpecies->name() << endl;
     cout << "Name: " << inputSpecies->name() << endl;
@@ -87,7 +85,7 @@ void display::speciesAll(Species* inputSpecies, bool stackCall) {
     }
 }
 
-void display::moveAll(Move* inputMove, bool stackCall) {
+void Display::moveAll(Move* inputMove, bool stackCall) {
     idCounter(stackCall);
     cout << "\nAll Information on Move " << inputMove->name() << endl;
     cout << "Name: " << inputMove->name() << endl;
@@ -117,7 +115,7 @@ void display::moveAll(Move* inputMove, bool stackCall) {
     cout << "Uniqueness: " << inputMove->uniqueness() << endl;
 }
 
-void display::typeAll(Type* inputType, bool stackCall) {
+void Display::typeAll(Type* inputType, bool stackCall) {
     idCounter(stackCall);
     cout << "\nAll Information on Type " << inputType->name() << endl;
     cout << "Name: " << inputType->name() << endl;
@@ -131,7 +129,7 @@ void display::typeAll(Type* inputType, bool stackCall) {
     }
 }
 
-void display::natureAll(Nature* inputNature, bool stackCall) {
+void Display::natureAll(Nature* inputNature, bool stackCall) {
     idCounter(stackCall);
     cout << "\nAll Information on Nature " << inputNature->name() << endl;
     cout << "Name: " << inputNature->name() << endl;
@@ -141,7 +139,7 @@ void display::natureAll(Nature* inputNature, bool stackCall) {
     }
 }
 
-void display::growthRateAll(GrowthRate* inputGrowthRate, bool stackCall) {
+void Display::growthRateAll(GrowthRate* inputGrowthRate, bool stackCall) {
     idCounter(stackCall);
     cout << "\nAll Information on Growth Rate " << inputGrowthRate->name() << endl;
     cout << "Name: " << inputGrowthRate->name() << endl;
@@ -155,7 +153,7 @@ void display::growthRateAll(GrowthRate* inputGrowthRate, bool stackCall) {
     }
 }
 
-void display::trainerAll(Trainer* inputTrainer, bool stackCall) {
+void Display::trainerAll(Trainer* inputTrainer, bool stackCall) {
     idCounter(stackCall);
     cout << "\nAll Information on Trainer " << inputTrainer->name() << endl;
     cout << "Name: " << inputTrainer->name() << endl;
@@ -178,14 +176,14 @@ void display::trainerAll(Trainer* inputTrainer, bool stackCall) {
     trainerLivingParty(inputTrainer, true);
 }
 
-void display::trainerLivingParty(Trainer* inputTrainer, bool stackCall) {
+void Display::trainerLivingParty(Trainer* inputTrainer, bool stackCall) {
     idCounter(stackCall);
     for (std::pair<int, Pokemon*> i : inputTrainer->livingParty()) {
         printf("\t%i: %s %i/%i\n", i.first, i.second->name().c_str(), i.second->currentStats().at("HitPoints"), i.second->maxStats().at("HitPoints"));
     }
 }
 
-void display::itemAll(Item* inputItem, bool stackCall) {
+void Display::itemAll(Item* inputItem, bool stackCall) {
     idCounter(stackCall);
     cout << "\nAll Information on Item " << inputItem->name() << endl;
     cout << "Name: " << inputItem->name() << endl;

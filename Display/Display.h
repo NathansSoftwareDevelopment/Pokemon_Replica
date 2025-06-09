@@ -9,29 +9,29 @@
 #include "Trainer.h"
 #include "Item.h"
 
-class display {
+class Display {
     private:
         static int displayID;
-        void idCounter(bool stackCall);
+        static void idCounter(bool stackCall);
     public:
-        void all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, std::string inputType, std::string inputNature, std::string inputGrowthRate, Trainer* inputTrainer, Item* inputItem, bool stackCall = false);
+        static void all(Pokemon* inputPokemon, std::string inputSpecies, std::string inputMove, std::string inputType, std::string inputNature, std::string inputGrowthRate, Trainer* inputTrainer, Item* inputItem, bool stackCall = false);
 
-        void pokemonAll(Pokemon* inputPokemon, bool stackCall = false);
+        static void pokemonAll(Pokemon* inputPokemon, bool stackCall = false);
         
-        void speciesAll(Species* inputSpecies, bool stackCall = false);
+        static void speciesAll(Species* inputSpecies, bool stackCall = false);
 
-        void moveAll(Move* inputMove, bool stackCall = false);
+        static void moveAll(Move* inputMove, bool stackCall = false);
 
-        void typeAll(Type* inputType, bool stackCall = false);
+        static void typeAll(Type* inputType, bool stackCall = false);
 
-        void natureAll(Nature* inputNature, bool stackCall = false);
+        static void natureAll(Nature* inputNature, bool stackCall = false);
 
-        void growthRateAll(GrowthRate* inputGrowthRate, bool stackCall = false);
+        static void growthRateAll(GrowthRate* inputGrowthRate, bool stackCall = false);
 
-        void trainerAll(Trainer* inputTrainer, bool stackCall = false);
-        void trainerLivingParty(Trainer* inputTrainer, bool stackCall = false);
+        static void trainerAll(Trainer* inputTrainer, bool stackCall = false);
+        static void trainerLivingParty(Trainer* inputTrainer, bool stackCall = false);
 
-        void itemAll(Item* inputItem, bool stackCall = false);
+        static void itemAll(Item* inputItem, bool stackCall = false);
 };
 
 #endif
