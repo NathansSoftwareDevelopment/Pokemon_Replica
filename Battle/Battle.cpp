@@ -9,10 +9,10 @@
 #include "Move.h"
 #include "Utils.hpp"
 
-Move* Battle::getMove(Pokemon* attackingInputPokemon) {
+Move* Battle::getMove(Pokemon* inputAttackingPokemon) {
     std::string userInput;
     if (autoBattle) {
-        userInput = std::to_string(generateRandom(1, attackingInputPokemon->moves().size()));
+        userInput = std::to_string(generateRandom(1, inputAttackingPokemon->moves().size()));
     } else {
         std::cout << "What Move slot to use? ";
         std::cin >> userInput;
@@ -23,57 +23,57 @@ Move* Battle::getMove(Pokemon* attackingInputPokemon) {
     // If input is invalid -> Print an error message and get a new input;
     try {
         int moveSlot = std::stoi(userInput);
-        returnMove = attackingInputPokemon->moves().at(moveSlot);
+        returnMove = inputAttackingPokemon->moves().at(moveSlot);
     } catch (std::exception) {
         std::cout << "Error: \"" << userInput << "\" is an invalid move slot." << std::endl;
-        returnMove = getMove(attackingInputPokemon);
+        returnMove = getMove(inputAttackingPokemon);
     }
 
     return returnMove;
 }
 
-double Battle::stabMultiplier(Pokemon* attackingInputPokemon, Move* InputPokemonMove) {
-    if ((InputPokemonMove->type() == attackingInputPokemon->type1() || InputPokemonMove->type() == attackingInputPokemon->type2()) && InputPokemonMove->type()->name() != "None") {
+double Battle::stabMultiplier(Pokemon* inputAttackingPokemon, Move* inputPokemonMove) {
+    if ((inputPokemonMove->type() == inputAttackingPokemon->type1() || inputPokemonMove->type() == inputAttackingPokemon->type2()) && inputPokemonMove->type()->name() != "None") {
         return 1.5;
     } else {
         return 1;
     }
 }
 
-double Battle::effectivenessMultiplier(Move* InputPokemonMove, Pokemon* defendingInputPokemon) {
-    double type1Effectiveness = InputPokemonMove->type()->attackingTypeMap().find(defendingInputPokemon->type1()->name())->second;
-    double type2Effectiveness = InputPokemonMove->type()->attackingTypeMap().find(defendingInputPokemon->type2()->name())->second;
+double Battle::effectivenessMultiplier(Move* inputPokemonMove, Pokemon* inputDefendingPokemon) {
+    double type1Effectiveness = inputPokemonMove->type()->attackingTypeMap().find(inputDefendingPokemon->type1()->name())->second;
+    double type2Effectiveness = inputPokemonMove->type()->attackingTypeMap().find(inputDefendingPokemon->type2()->name())->second;
     double totalEffectiveness = type1Effectiveness * type2Effectiveness;
     return totalEffectiveness;
 }
 
-void Battle::damageCalculation(Pokemon* attackingInputPokemon, Move* InputPokemonMove, Pokemon* defendingInputPokemon) {
-    double stab = stabMultiplier(attackingInputPokemon, InputPokemonMove);
-    double effectiveness = effectivenessMultiplier(InputPokemonMove, defendingInputPokemon);
+void Battle::damageCalculation(Pokemon* inputAttackingPokemon, Move* inputPokemonMove, Pokemon* inputDefendingPokemon) {
+    double stab = stabMultiplier(inputAttackingPokemon, inputPokemonMove);
+    double effectiveness = effectivenessMultiplier(inputPokemonMove, inputDefendingPokemon);
     double randomDamageMultiplier = generateRandom(85, 100)/100.0;
     double attackingCategory;
     double defendingCategory;
-    if (InputPokemonMove->damageCategory() == "Physical") {
-        attackingCategory = attackingInputPokemon->currentStats().at("Attack");
-        defendingCategory = attackingInputPokemon->currentStats().at("Defense");
-    } else if (InputPokemonMove->damageCategory() == "Special") {
-        attackingCategory = attackingInputPokemon->currentStats().at("SpecialAttack");
-        defendingCategory = attackingInputPokemon->currentStats().at("SpecialDefense");
+    if (inputPokemonMove->damageCategory() == "Physical") {
+        attackingCategory = inputAttackingPokemon->currentStats().at("Attack");
+        defendingCategory = inputAttackingPokemon->currentStats().at("Defense");
+    } else if (inputPokemonMove->damageCategory() == "Special") {
+        attackingCategory = inputAttackingPokemon->currentStats().at("SpecialAttack");
+        defendingCategory = inputAttackingPokemon->currentStats().at("SpecialDefense");
     } else {
-        std::cout << "Check damage Category of Move: " << InputPokemonMove->name() << std::endl;
+        std::cout << "Check damage Category of Move: " << inputPokemonMove->name() << std::endl;
     }
-    int rawDamage = ((2*attackingInputPokemon->level()/5+2)*InputPokemonMove->power()*attackingCategory/defendingCategory/50+2);
+    int rawDamage = ((2*inputAttackingPokemon->level()/5+2)*inputPokemonMove->power()*attackingCategory/defendingCategory/50+2);
     int totalDamage = rawDamage * stab * effectiveness * randomDamageMultiplier;
-    defendingInputPokemon->currentStat("HitPoints", std::max(defendingInputPokemon->currentStats().at("HitPoints") - totalDamage, 0));
-    // std::cout << "Level: " << attackingInputPokemon->level() << std::endl;
-    // std::cout << "Power: " << InputPokemonMove->power << std::endl;
+    inputDefendingPokemon->currentStat("HitPoints", std::max(inputDefendingPokemon->currentStats().at("HitPoints") - totalDamage, 0));
+    // std::cout << "Level: " << inputAttackingPokemon->level() << std::endl;
+    // std::cout << "Power: " << inputPokemonMove->power << std::endl;
     // std::cout << "attackingCategory: " << attackingCategory << std::endl;
     // std::cout << "defendingCategory: " << defendingCategory << std::endl;
     // std::cout << "Raw damage: " << rawDamage << std::endl;
     // std::cout << "stab: " << stab << std::endl;
     // std::cout << "effectiveness: " << effectiveness << std::endl;
     // std::cout << "Random: " << randomDamageMultiplier << std::endl;
-    std::cout << attackingInputPokemon->name() << " dealt: " << totalDamage << " damage" << std::endl;
+    std::cout << inputAttackingPokemon->name() << " dealt: " << totalDamage << " damage" << std::endl;
 }
 
 void Battle::getFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
@@ -95,26 +95,26 @@ void Battle::getFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
     }
 }
 
-void Battle::useMove(Pokemon* attackingInputPokemon, Move* InputPokemonMove, Pokemon* defendingInputPokemon) {
-    std::cout << attackingInputPokemon->name() << " used " << InputPokemonMove->name() << std::endl;
-    if (!hitCheck(attackingInputPokemon, InputPokemonMove, defendingInputPokemon)) {
-        std::cout << attackingInputPokemon->name() << " Missed!" << std::endl;
+void Battle::useMove(Pokemon* inputAttackingPokemon, Move* inputPokemonMove, Pokemon* inputDefendingPokemon) {
+    std::cout << inputAttackingPokemon->name() << " used " << inputPokemonMove->name() << std::endl;
+    if (!hitCheck(inputAttackingPokemon, inputPokemonMove, inputDefendingPokemon)) {
+        std::cout << inputAttackingPokemon->name() << " Missed!" << std::endl;
         return;
     }
-    if (InputPokemonMove->damageCategory() != "Status") {
-        damageCalculation(attackingInputPokemon, InputPokemonMove, defendingInputPokemon);
+    if (inputPokemonMove->damageCategory() != "Status") {
+        damageCalculation(inputAttackingPokemon, inputPokemonMove, inputDefendingPokemon);
     }
 }
 
-bool Battle::hitCheck(Pokemon* attackingInputPokemon, Move* InputPokemonMove, Pokemon* defendingInputPokemon) {
-    int hitStage = std::clamp(attackingInputPokemon->currentStages().at("Accuracy") - defendingInputPokemon->currentStages().at("Evasion"), -6, 6);
+bool Battle::hitCheck(Pokemon* inputAttackingPokemon, Move* inputPokemonMove, Pokemon* inputDefendingPokemon) {
+    int hitStage = std::clamp(inputAttackingPokemon->currentStages().at("Accuracy") - inputDefendingPokemon->currentStages().at("Evasion"), -6, 6);
     double stageMultiplier;
     if (hitStage >= 0) {
         stageMultiplier = (hitStage+3)/3.0;
     } else if (hitStage < 0) {
         stageMultiplier = 3.0/(std::abs(hitStage)+3);
     }
-    int finalAccuracy = InputPokemonMove->accuracy() * stageMultiplier;
+    int finalAccuracy = inputPokemonMove->accuracy() * stageMultiplier;
     int randomAccuracy = generateRandom(1, 100);
     if (randomAccuracy > finalAccuracy) {
         return false;
@@ -132,13 +132,13 @@ bool Battle::flinchCheck(Move* inputPokemonMove) {
     }
 }
 
-void Battle::distributeExperience(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon) {
-    // std::cout << "Defeated Pokemon: " << defeatedInputPokemon->name() << " | " << defeatedInputPokemon->species()->experienceValue() << std::endl;
-    int experienceValue = defeatedInputPokemon->species()->experienceValue();
-    int defeatedLevel = defeatedInputPokemon->level();
+void Battle::distributeExperience(Pokemon* inputVictoriousPokemon, Pokemon* inputDefeatedPokemon) {
+    // std::cout << "Defeated Pokemon: " << inputDefeatedPokemon->name() << " | " << inputDefeatedPokemon->species()->experienceValue() << std::endl;
+    int experienceValue = inputDefeatedPokemon->species()->experienceValue();
+    int defeatedLevel = inputDefeatedPokemon->level();
     double trainerBattle = 1.0; /* Trainers have not yet been implemented so this value is unchanging */
     double expShare = 1; /* EXP Share has not yet been implemented so this value is unchanging */
-    double victoriousLevel = victoriousInputPokemon->level();
+    double victoriousLevel = inputVictoriousPokemon->level();
     double originalTrainer = 1; /* Trainers and trading have not yet been implemented so this value is unchanging */
     // std::cout << std::fixed << std::setprecision(15) << "Debug: originalTrainer (actual) = " << originalTrainer << std::endl;
     double luckyEgg = 1.0; /* Lucky Egg has not yet been implemented so this value is unchanging */
@@ -195,20 +195,20 @@ void Battle::distributeExperience(Pokemon* victoriousInputPokemon, Pokemon* defe
         earnedExperience = 100000;
     }
     // std::cout << "Earned Experience: " << earnedExperience << std::endl;
-    victoriousInputPokemon->addExperience(earnedExperience);
+    inputVictoriousPokemon->addExperience(earnedExperience);
 }
 
-void Battle::addEVs(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon) {
-    for (std::pair<std::string, int> i : defeatedInputPokemon->species()->effortValues()) {
+void Battle::addEVs(Pokemon* inputVictoriousPokemon, Pokemon* inputDefeatedPokemon) {
+    for (std::pair<std::string, int> i : inputDefeatedPokemon->species()->effortValues()) {
         int victorsTotalEVs = 0;
-        for (std::pair<std::string, int> j : victoriousInputPokemon->effortValues()) {
+        for (std::pair<std::string, int> j : inputVictoriousPokemon->effortValues()) {
             victorsTotalEVs += j.second;
         }
-        int currentEV = victoriousInputPokemon->effortValues().at(i.first);
+        int currentEV = inputVictoriousPokemon->effortValues().at(i.first);
         if (victorsTotalEVs + i.second < 510) {
-            victoriousInputPokemon->effortValue(i.first, currentEV+i.second);
+            inputVictoriousPokemon->effortValue(i.first, currentEV+i.second);
         } else if (victorsTotalEVs < 510) {
-            victoriousInputPokemon->effortValue(i.first, currentEV+510-victorsTotalEVs);
+            inputVictoriousPokemon->effortValue(i.first, currentEV+510-victorsTotalEVs);
         }
     }
 }
