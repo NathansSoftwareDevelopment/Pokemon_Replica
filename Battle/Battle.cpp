@@ -11,8 +11,12 @@
 
 Move* Battle::getMove(Pokemon* attackingInputPokemon) {
     std::string userInput;
-    std::cout << "What Move slot to use? ";
-    std::cin >> userInput;
+    if (autoBattle) {
+        userInput = std::to_string(generateRandom(1, attackingInputPokemon->moves().size()));
+    } else {
+        std::cout << "What Move slot to use? ";
+        std::cin >> userInput;
+    }
     std::cout << "\n";
     
     Move* returnMove;
@@ -240,7 +244,13 @@ void Battle::sendOutPokemon(Trainer* inputTrainer) {
     }
 
     std::string userInput;
-    std::cin >> userInput;
+    if (autoBattle) {
+        std::map<int, Pokemon*>::const_iterator partyIterator = inputTrainer->livingParty().begin();
+        std::advance(partyIterator, generateRandom(0, inputTrainer->livingParty().size()-1));
+        userInput = std::to_string(partyIterator->first);
+    } else {
+        std::cin >> userInput;
+    }
     std::cout << "\n";
     
     // If input is invalid -> Print an error message and get a new input;
@@ -253,8 +263,9 @@ void Battle::sendOutPokemon(Trainer* inputTrainer) {
     }
 }
 
-Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2) {
+Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2, bool inputAutoBattle) {
     std::cout << "\n\n\n";
+    autoBattle = inputAutoBattle;
     turn = 0;
 
     std::map<int, Pokemon*> trainer1Party;

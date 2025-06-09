@@ -7,6 +7,7 @@
 
 class Battle {
     public:
+        bool autoBattle;
         int turn;
         bool playersTurn;
         Move* player1Move;
@@ -25,7 +26,7 @@ class Battle {
         void addEVs(Pokemon* victoriousInputPokemon, Pokemon* defeatedInputPokemon);
         void faintPokemon(Pokemon* inputPokemon);
         void sendOutPokemon(Trainer* inputTrainer);
-        Battle(Trainer* inputTrainer1, Trainer* inputTrainer2);
+        Battle(Trainer* inputTrainer1, Trainer* inputTrainer2, bool inputAutoBattle = false);
 };
 
 #endif

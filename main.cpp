@@ -60,7 +60,7 @@ int main() {
     // std::cout << mySecondPokemon.level << " | " << mySecondPokemon.experience << std::endl;
     // std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
     // Battle(&mySecondPokemon, &myThirdPokemon);
-    Battle(&NotRed, &ME);
+    Battle(&NotRed, &ME, true);
     // std::cout << myThirdPokemon.level << " | " << myThirdPokemon.experience << std::endl;
     std::cout << "\n\nEnd Main";
     return 0;
