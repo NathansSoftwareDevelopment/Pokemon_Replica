@@ -11,7 +11,7 @@
 
 Move* Battle::getMove(Pokemon* inputAttackingPokemon) {
     std::string userInput;
-    if (autoBattle) {
+    if (_autoBattle) {
         userInput = std::to_string(generateRandom(1, inputAttackingPokemon->moves().size()));
     } else {
         std::cout << "What Move slot to use? ";
@@ -78,19 +78,19 @@ void Battle::damageCalculation(Pokemon* inputAttackingPokemon, Move* inputPokemo
 
 void Battle::getFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemon2) {
     if (inputPokemon1->currentStats().at("Speed") > inputPokemon2->currentStats().at("Speed")) {
-        fasterPokemon = inputPokemon1;
-        slowerPokemon = inputPokemon2;
+        _fasterPokemon = inputPokemon1;
+        _slowerPokemon = inputPokemon2;
     } else if (inputPokemon1->currentStats().at("Speed") < inputPokemon2->currentStats().at("Speed")) {
-        fasterPokemon = inputPokemon2;
-        slowerPokemon = inputPokemon1;
+        _fasterPokemon = inputPokemon2;
+        _slowerPokemon = inputPokemon1;
     } else {
         int randomPokemon = generateRandom(1, 2);
         if (randomPokemon == 1) {
-            fasterPokemon = inputPokemon1;
-            slowerPokemon = inputPokemon2;
+            _fasterPokemon = inputPokemon1;
+            _slowerPokemon = inputPokemon2;
         } else {
-            fasterPokemon = inputPokemon2;
-            slowerPokemon = inputPokemon1;
+            _fasterPokemon = inputPokemon2;
+            _slowerPokemon = inputPokemon1;
         }
     }
 }
@@ -215,10 +215,10 @@ void Battle::addEVs(Pokemon* inputVictoriousPokemon, Pokemon* inputDefeatedPokem
 
 void Battle::faintPokemon(Pokemon* inputPokemon) {
     Pokemon* victoriousPokemon;
-    if (inputPokemon == slowerPokemon) {
-        victoriousPokemon = fasterPokemon;
-    } else if (inputPokemon == fasterPokemon) {
-        victoriousPokemon = slowerPokemon;
+    if (inputPokemon == _slowerPokemon) {
+        victoriousPokemon = _fasterPokemon;
+    } else if (inputPokemon == _fasterPokemon) {
+        victoriousPokemon = _slowerPokemon;
     }
 
     std::cout << inputPokemon->name() << " Fainted!" << std::endl;
@@ -244,7 +244,7 @@ void Battle::sendOutPokemon(Trainer* inputTrainer) {
     }
 
     std::string userInput;
-    if (autoBattle) {
+    if (_autoBattle) {
         std::map<int, Pokemon*>::const_iterator partyIterator = inputTrainer->livingParty().begin();
         std::advance(partyIterator, generateRandom(0, inputTrainer->livingParty().size()-1));
         userInput = std::to_string(partyIterator->first);
@@ -265,8 +265,8 @@ void Battle::sendOutPokemon(Trainer* inputTrainer) {
 
 Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2, bool inputAutoBattle) {
     std::cout << "\n\n\n";
-    autoBattle = inputAutoBattle;
-    turn = 0;
+    _autoBattle = inputAutoBattle;
+    _turn = 0;
 
     std::map<int, Pokemon*> trainer1Party;
     Pokemon* trainer1ActivePokemon;
@@ -274,7 +274,7 @@ Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2, bool inputAutoBat
     Pokemon* trainer2ActivePokemon;
 
     while (inputTrainer1->livingParty().size() > 0 && inputTrainer2->livingParty().size() > 0) {
-        turn++;
+        _turn++;
         trainer1Party = inputTrainer1->livingParty();
         trainer1ActivePokemon = const_cast<Pokemon*>(inputTrainer1->activePokemon());
         trainer2Party = inputTrainer2->livingParty();
@@ -282,27 +282,27 @@ Battle::Battle(Trainer* inputTrainer1, Trainer* inputTrainer2, bool inputAutoBat
 
         getFasterPokemon(trainer1ActivePokemon, trainer2ActivePokemon);
 
-        std::cout << "\n\nTurn " << turn << std::endl;
-        std::cout << "first: " << fasterPokemon->name() << std::endl;
-        Move* fasterPokemonMove = getMove(fasterPokemon);
-        std::cout << "second: " << slowerPokemon->name() << std::endl;
-        Move* slowerPokemonMove = getMove(slowerPokemon);
+        std::cout << "\n\nTurn " << _turn << std::endl;
+        std::cout << "first: " << _fasterPokemon->name() << std::endl;
+        Move* fasterPokemonMove = getMove(_fasterPokemon);
+        std::cout << "second: " << _slowerPokemon->name() << std::endl;
+        Move* slowerPokemonMove = getMove(_slowerPokemon);
         
-        // std::cout << fasterPokemon->name() << " " << fasterPokemonMove->name() << " " << slowerPokemon->name() << std::endl;
-        useMove(fasterPokemon, fasterPokemonMove, slowerPokemon);
-        std::cout << slowerPokemon->name() << " Is at " << slowerPokemon->currentStats().at("HitPoints") << " HP\n" << std::endl;
+        // std::cout << _fasterPokemon->name() << " " << fasterPokemonMove->name() << " " << _slowerPokemon->name() << std::endl;
+        useMove(_fasterPokemon, fasterPokemonMove, _slowerPokemon);
+        std::cout << _slowerPokemon->name() << " Is at " << _slowerPokemon->currentStats().at("HitPoints") << " HP\n" << std::endl;
 
-        if (slowerPokemon->currentStats().at("HitPoints") <= 0) {
-            faintPokemon(slowerPokemon);
+        if (_slowerPokemon->currentStats().at("HitPoints") <= 0) {
+            faintPokemon(_slowerPokemon);
         } else if (flinchCheck(fasterPokemonMove)) {
-            std::cout << slowerPokemon->name() << " Flinched!" << std::endl;
+            std::cout << _slowerPokemon->name() << " Flinched!" << std::endl;
         } else {
-            // std::cout << slowerPokemon->name() << " " << slowerPokemonMove->name() << " " << fasterPokemon->name() << std::endl;
-            useMove(slowerPokemon, slowerPokemonMove, fasterPokemon);
-            std::cout << fasterPokemon->name() << " Is at " << fasterPokemon->currentStats().at("HitPoints") << " HP\n" << std::endl;
+            // std::cout << _slowerPokemon->name() << " " << slowerPokemonMove->name() << " " << _fasterPokemon->name() << std::endl;
+            useMove(_slowerPokemon, slowerPokemonMove, _fasterPokemon);
+            std::cout << _fasterPokemon->name() << " Is at " << _fasterPokemon->currentStats().at("HitPoints") << " HP\n" << std::endl;
             
-            if (fasterPokemon->currentStats().at("HitPoints") <= 0) {
-                faintPokemon(fasterPokemon);
+            if (_fasterPokemon->currentStats().at("HitPoints") <= 0) {
+                faintPokemon(_fasterPokemon);
             }
         }
     }

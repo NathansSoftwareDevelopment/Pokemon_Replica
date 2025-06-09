@@ -6,14 +6,15 @@
 #include "Trainer.h"
 
 class Battle {
-    public:
-        bool autoBattle;
-        int turn;
-        bool playersTurn;
-        Move* player1Move;
-        Move* player2Move;
-        Pokemon* fasterPokemon;
-        Pokemon* slowerPokemon;
+    private:
+        bool _autoBattle;
+        int _turn;
+        bool _playersTurn;
+        Move* _player1Move;
+        Move* _player2Move;
+        Pokemon* _fasterPokemon;
+        Pokemon* _slowerPokemon;
+
         void damageCalculation(Pokemon* inputAttackingPokemon, Move* inputPokemonMove, Pokemon* inputDefendingPokemon);
         Move* getMove(Pokemon* inputAttackingPokemon);
         void getFasterPokemon(Pokemon* inputPokemon1, Pokemon* inputPokemon2);
@@ -26,6 +27,7 @@ class Battle {
         void addEVs(Pokemon* inputVictoriousPokemon, Pokemon* defeatedInputPokemon);
         void faintPokemon(Pokemon* inputPokemon);
         void sendOutPokemon(Trainer* inputTrainer);
+    public:
         Battle(Trainer* inputTrainer1, Trainer* inputTrainer2, bool inputAutoBattle = false);
 };
 
