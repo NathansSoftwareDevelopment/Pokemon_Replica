@@ -22,7 +22,7 @@ class Battle {
         void useMove(Pokemon* inputAttackingPokemon, Move* inputPokemonMove, Pokemon* inputDefendingPokemon);
         bool hitCheck(Pokemon* inputAttackingPokemon, Move* inputPokemonMove, Pokemon* inputDefendingPokemon);
         bool flinchCheck(Move* inputPokemonMove);
-        void distributeExperience(Pokemon* inputVictoriousPokemon, Pokemon* defeatedInputPokemon);
+        void distributeExperience(Pokemon* inputVictoriousPokemon, Pokemon* inputDefeatedPokemon);
         void addEVs(Pokemon* inputVictoriousPokemon, Pokemon* defeatedInputPokemon);
         void faintPokemon(Pokemon* inputPokemon);
         void sendOutPokemon(Trainer* inputTrainer);
