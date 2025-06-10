@@ -7,6 +7,7 @@
 #include "Type.h"
 #include "Move.h"
 #include "Growth_Rate.h"
+#include "Utils.hpp"
 
 Pokemon& Pokemon::trainer(Trainer* inputTrainer) {
     _trainer = inputTrainer;
@@ -129,6 +130,7 @@ Pokemon::Pokemon(std::string inputName, Species* inputSpecies, std::string input
     int zeroEffortValues[6] = {};
     effortValues(zeroEffortValues);
     calculatePokemonStats();
+    _personalityValue = generateRandom(0, 4294967295);
 }
 
 Pokemon::Pokemon(
@@ -154,6 +156,7 @@ Pokemon::Pokemon(
     setPokemonIndividualValues(inputIndividualValues);
     effortValues(inputEffortValues);
     calculatePokemonStats();
+    _personalityValue = generateRandom(0, 4294967295);
 }
 
 Pokemon::~Pokemon() {

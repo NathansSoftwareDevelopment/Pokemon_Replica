@@ -67,6 +67,8 @@ class Pokemon {
             {"Evasion", 0}
         };
 
+        unsigned int _personalityValue;
+
 
         void setSpeciesStats();
         void setPokemonIndividualValues(int IndividualValues[6]);
@@ -92,6 +94,7 @@ class Pokemon {
         const std::map<std::string, int> maxStats() const {return _maxStats;}
         const std::map<std::string, int> currentStats() const {return _currentStats;}
         const std::map<std::string, int> currentStages() const {return _currentStages;}
+        const unsigned int personalityValue() const {return _personalityValue;}
 
         Pokemon& trainer(Trainer* inputTrainer);
         Pokemon& currentStat(std::string inputStatName, int inputStat) {_currentStats[inputStatName] = inputStat; return *this;}
