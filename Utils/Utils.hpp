@@ -8,10 +8,11 @@
 #include <algorithm>
 #include <random>
 
-inline int generateRandom(int lowerBound, int upperBound) {
+template <typename T1 = long long, typename T2 = long long>
+inline int generateRandom(T1 lowerBound, T2 upperBound) {
     static std::random_device rd;
     static std::mt19937 gen(rd());
-    return std::uniform_int_distribution<int>(lowerBound, upperBound)(gen);
+    return std::uniform_int_distribution<long long>(lowerBound, upperBound)(gen);
 }
 
 inline double roundToMultipleOf4096(double inputValue) {
