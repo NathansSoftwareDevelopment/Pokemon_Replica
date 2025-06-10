@@ -66,26 +66,7 @@ def getEvolutionInfo(evolutionChainURL, pokemonName):
     ic(evolutionChainURL)
     # get the species of pokemon, get the evolution chain of that species, then access "chain" key
     evolutionChain = requests.get(evolutionChainURL).json()["chain"]
-    try:
-        # if first pokemon name == name of pokemon | evolve = second pokemon
-        if evolutionChain["species"]["name"] == pokemonName:
-            if len(evolutionChain["evolves_to"]) <= 1:
-                evolution = evolutionChain["evolves_to"][0]["species"]["name"]
-            else:
-                evolution = "special"
-        # if second pokemon name == name of pokemon | evolve = third pokemon
-        elif evolutionChain["evolves_to"][0]["species"]["name"] == pokemonName:
-            if len(evolutionChain["evolves_to"][0]["evolves_to"]) <= 1:
-                evolution = evolutionChain["evolves_to"][0]["evolves_to"][0]["species"]["name"]
-            else:
-                evolution = "special"
-        # otherwise | evolve = name of pokemon
-        else:
-            evolution = pokemonName
-    except IndexError:
-        # For single stage pokemon evolutionChain["evolves_to"] will be an empty array causing an error
-        evolution = pokemonName
-    return {pokemonName: evolution}
+    return {pokemonName: evolutionChain}
 
 def getGrowthRateInfo(ID):
     URL = f"https://pokeapi.co/api/v2/growth-rate/{ID}"
@@ -101,7 +82,7 @@ def addToFinal(dataType, inputDictionary):
     if dataType in ["pokemon", "pokemon-species", "move"]:
         outputDictionary[inputDictionary[0]["name"]] = inputDictionary
     if dataType == "evolution-chain":
-        outputDictionary[list(inputDictionary.keys())[0].capitalize()] = list(inputDictionary.values())[0].capitalize()
+        outputDictionary[list(inputDictionary.keys())[0]] = inputDictionary
     if dataType == "growth-rate":
         outputDictionary[inputDictionary["name"]] = inputDictionary
 
