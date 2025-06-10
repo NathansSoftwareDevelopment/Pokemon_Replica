@@ -116,23 +116,6 @@ void Pokemon::addExperience(int inputExperience) {
     calculatePokemonStats();
 }
 
-Pokemon::Pokemon(std::string inputName, Species* inputSpecies, std::string inputNature, std::string inputAbility, int inputIndividualValues[6]) {
-    _name = inputName;
-    _species = inputSpecies;
-    setPokemonNature(inputNature);
-    _level = 1;
-    _experience = 0;
-    _ability = inputAbility;
-    
-    pokemonTypes();
-    setSpeciesStats();
-    setPokemonIndividualValues(inputIndividualValues);
-    int zeroEffortValues[6] = {};
-    effortValues(zeroEffortValues);
-    calculatePokemonStats();
-    _personalityValue = generateRandom(0, 4294967295);
-}
-
 Pokemon::Pokemon(
     std::string inputName, Species* inputSpecies, std::string inputNature, int inputLevel, int inputExperience, std::string inputAbility,
     std::string inputMove1, std::string inputMove2, std::string inputMove3, std::string inputMove4, 

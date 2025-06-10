@@ -108,13 +108,18 @@ class Pokemon {
         void calculateStageChanges();
         void addExperience(int inputExperience);
 
-        Pokemon(std::string inputName, Species* inputSpecies, std::string inputNature, std::string inputAbility, int inputIndividualValues[6]);
         Pokemon(
             std::string inputName, Species* inputSpecies, std::string inputNature, int inputLevel, int inputExperience, std::string inputAbility,
             std::string inputMove1, std::string inputMove2, std::string inputMove3, std::string inputMove4, 
             std::string inputCondition,
             int inputIndividualValues[6], int inputEffortValues[6]
         );
+        Pokemon(std::string inputName, Species* inputSpecies, std::string inputNature, std::string inputAbility, int inputIndividualValues[6]) : Pokemon(
+            inputName, inputSpecies, inputNature, 1, 0, inputAbility,
+            "Cheat", "Cheat", "Cheat", "Cheat",
+            "None",
+            inputIndividualValues, {}
+        ) {};
         ~Pokemon();
 };
 
