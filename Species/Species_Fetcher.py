@@ -107,17 +107,20 @@ def getAbilities(rawPokemonData):
 
 def getEvolve(pokemonName, rawEvolutionData):
     evolutionChain = rawEvolutionData[pokemonName]
+    evolveLevel = 0
     try:
         # if first pokemon name == name of pokemon | evolve = second pokemon
         if evolutionChain["species"]["name"] == pokemonName:
             if len(evolutionChain["evolves_to"]) <= 1:
                 evolution = evolutionChain["evolves_to"][0]["species"]["name"]
+                evolveLevel = evolutionChain["evolves_to"][0]["evolution_details"][0]["min_level"]
             else:
                 evolution = "special"
         # if second pokemon name == name of pokemon | evolve = third pokemon
         elif evolutionChain["evolves_to"][0]["species"]["name"] == pokemonName:
             if len(evolutionChain["evolves_to"][0]["evolves_to"]) <= 1:
                 evolution = evolutionChain["evolves_to"][0]["evolves_to"][0]["species"]["name"]
+                evolveLevel = evolutionChain["evolves_to"][0]["evolves_to"][0]["evolution_details"][0]["min_level"]
             else:
                 evolution = "special"
         # otherwise | evolve = name of pokemon
@@ -127,7 +130,8 @@ def getEvolve(pokemonName, rawEvolutionData):
         # For single stage pokemon evolutionChain["evolves_to"] will be an empty array causing an error
         evolution = pokemonName
     evolution = evolution.capitalize()
-    return evolution
+    evolveLevel = evolveLevel if evolveLevel is not None else 0
+    return {"evolves-to": evolution.capitalize(), "min-level": evolveLevel}
 
 def getMoves(rawPokemonData):
     tempMoves = {"level-up": {}, "egg": [], "machine": [], "tutor": [], "other": {}}

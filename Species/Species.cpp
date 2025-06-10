@@ -31,7 +31,7 @@ Species::Species(const json& inputJSON) {
     _abilities[2] = inputJSON.at("abilities").at("2").get<std::string>();
     _abilities[3] = inputJSON.at("abilities").at("3").get<std::string>();
 
-    _evolution = inputJSON.at("evolve").get<std::string>();
+    _evolution = inputJSON.at("evolve").at("evolves-to").get<std::string>();
 
     _growthRate = inputJSON.at("growth-rate").get<std::string>();
 
