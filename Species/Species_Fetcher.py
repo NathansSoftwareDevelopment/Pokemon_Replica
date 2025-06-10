@@ -19,11 +19,11 @@ def main():
 
 
 def getPokemonInfo(*args):
-    with open(args[0], 'r') as file1:
-        dict1 = json.load(file1)
-    with open(args[-1], 'r') as file2:
-        dict2 = json.load(file2)
-    return [dict1, dict2]
+    returnList = []
+    for i in args:
+        with open(i, 'r') as file:
+            returnList.append(json.load(file))
+    return returnList
 
 def getTypes(rawData):
     tempTypes = {}
