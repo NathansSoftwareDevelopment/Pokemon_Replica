@@ -24,6 +24,7 @@ class Species {
         Type* _type2;
         std::map<int, std::string> _abilities;
         std::string _evolution;
+        int _evolutionLevel;
         std::string _growthRate;
         int _experienceValue;
         learnSet _moves;
@@ -35,6 +36,7 @@ class Species {
         const Type* type2() const {return _type2;}
         const std::map<int, std::string> abilities() const {return _abilities;}
         const std::string evolution() const {return _evolution;}
+        const int evolutionLevel() const {return _evolutionLevel;}
         const std::string growthRate() const {return _growthRate;}
         const int experienceValue() const {return _experienceValue;}
         const learnSet moves() const {return _moves;}

@@ -72,6 +72,7 @@ void Display::speciesAll(Species* inputSpecies, bool stackCall) {
     cout << "\nAll Information on Species " << inputSpecies->name() << endl;
     cout << "Name: " << inputSpecies->name() << endl;
     cout << "Evolution: " << inputSpecies->evolution() << endl;
+    cout << "Evolution Level: " << inputSpecies->evolutionLevel() << endl;
     cout << "Stats " << endl;
     for (std::pair<std::string, int> i : inputSpecies->stats()) {
         cout << "\t" << i.first << ": " << i.second << endl;
