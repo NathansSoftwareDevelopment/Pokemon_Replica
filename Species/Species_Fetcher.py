@@ -8,12 +8,13 @@ outputDictionary = {}
 def main():
     rawPokemonData = r"./Raw_Data/Raw_Pokemon_Data.json"
     rawSpeciesData = r"./Raw_Data/Raw_Pokemon-species_Data.json"
+    rawEvolutionData = r"./Raw_Data/Raw_Evolution-chain_Data.json"
 
-    allRawData = getPokemonInfo(rawPokemonData, rawSpeciesData)
-    # addToFinal(parsePokeInfo([allRawData[0]["charmander"][0], allRawData[-1]["charmander"][0]]))
+    allRawData = getPokemonInfo(rawPokemonData, rawSpeciesData, rawEvolutionData)
+    # addToFinal(parsePokeInfo([allRawData[0]["charmander"][0], allRawData[1]["charmander"][0], allRawData[2]["charmander"]]))
     for pokemon in allRawData[0]:
         pokemonName = allRawData[0][pokemon][0]
-        addToFinal(parsePokeInfo([allRawData[0][pokemonName["name"]][0], allRawData[-1][pokemonName["species"]["name"]][0]]))
+        addToFinal(parsePokeInfo([allRawData[0][pokemonName["name"]][0], allRawData[1][pokemonName["species"]["name"]][0], allRawData[2][pokemonName["name"]]]))
         ic(pokemonName["name"])
     Write(outputDictionary, r"./Species/Species.json")
 
@@ -104,10 +105,29 @@ def getAbilities(rawPokemonData):
 
     return tempAbilities
 
-def getEvolve(pokemonName):
-    with open("Raw_Data/Evolution_Table.json", "r") as f:
-        evolutionTable = json.load(f)
-        return evolutionTable[pokemonName]
+def getEvolve(pokemonName, rawEvolutionData):
+    evolutionChain = rawEvolutionData[pokemonName]
+    try:
+        # if first pokemon name == name of pokemon | evolve = second pokemon
+        if evolutionChain["species"]["name"] == pokemonName:
+            if len(evolutionChain["evolves_to"]) <= 1:
+                evolution = evolutionChain["evolves_to"][0]["species"]["name"]
+            else:
+                evolution = "special"
+        # if second pokemon name == name of pokemon | evolve = third pokemon
+        elif evolutionChain["evolves_to"][0]["species"]["name"] == pokemonName:
+            if len(evolutionChain["evolves_to"][0]["evolves_to"]) <= 1:
+                evolution = evolutionChain["evolves_to"][0]["evolves_to"][0]["species"]["name"]
+            else:
+                evolution = "special"
+        # otherwise | evolve = name of pokemon
+        else:
+            evolution = pokemonName
+    except IndexError:
+        # For single stage pokemon evolutionChain["evolves_to"] will be an empty array causing an error
+        evolution = pokemonName
+    evolution = evolution.capitalize()
+    return evolution
 
 def getMoves(rawPokemonData):
     tempMoves = {"level-up": {}, "egg": [], "machine": [], "tutor": [], "other": {}}
@@ -164,6 +184,7 @@ def printRawData(rawData):
 def parsePokeInfo(rawData):
     rawPokemonData = rawData[0]
     rawSpeciesData = rawData[1]
+    rawEvolutionData = rawData[2]
     # printRawData(rawPokemonData)
     # printRawData(rawSpeciesData)
     pokeData = {}
@@ -186,7 +207,7 @@ def parsePokeInfo(rawData):
 
     pokeData["abilities"] = getAbilities(rawPokemonData)
 
-    pokeData["evolve"] = getEvolve(pokeData["name"])
+    pokeData["evolve"] = getEvolve(pokeData["name"].lower(), rawEvolutionData)
 
     tempGrowthRate = str
     growthRate = rawSpeciesData["growth_rate"]["name"]
