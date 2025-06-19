@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-                  
+
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private int movementSpeed = 4;
@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnMovement(InputValue keystroke)
     {
         movementDirection = keystroke.Get<Vector2>();
+        Debug.Log("Moved");
     }
 
     private void FixedUpdate()
