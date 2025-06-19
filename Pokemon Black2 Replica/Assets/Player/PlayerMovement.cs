@@ -1,3 +1,5 @@
+using System;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,15 +7,17 @@ public class PlayerMovement : MonoBehaviour
 {
     private @PlayerInputs playerInputs;
     Vector2 movementDirection;
+    private bool playerCanMove = true;
     [SerializeField] private int movementSpeed = 4;
     private double movementTime = 0;
-    private double movementCooldown = 0;
+    private DateTime movedTime = DateTime.Now;
+    private DateTime currentTime = DateTime.Now;
     private Rigidbody2D rb;
 
     private void Awake()
     {
         playerInputs = new @PlayerInputs();
-        movementTime = 1.0/movementSpeed;
+        movementTime = 1.0 / movementSpeed;
         rb = GetComponent<Rigidbody2D>();
 
         playerInputs.Player.Movement.started += OnMovementPerformed;
@@ -38,43 +42,38 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnMovementPerformed(InputAction.CallbackContext context)
     {
-        if (context.phase.ToString() == "Performed")
+        if (context.phase.ToString() != "Performed") { }
+        else if (playerCanMove)
         {
             movementDirection = context.ReadValue<Vector2>();
-            Debug.Log($"Movement {context.control.displayName} {movementDirection}");
-        } else
-        {
-            return;
-        }
-
-        if (MovementValid(context))
-        {
-            rb.MovePosition(rb.position + movementDirection);
-            Debug.Log("Valid Movement!");
+            Debug.Log($"Valid Movement! {context.control.displayName} {movementDirection}");
+            MovePlayer();
         }
         else
         {
             Debug.Log("Invalid Movement.");
+            return;
         }
     }
 
-    private bool MovementValid(InputAction.CallbackContext context)
+    private void MovePlayer()
     {
-        if (movementCooldown < movementTime)
-        {
-            return false;
-        } else
-        {
-            movementCooldown = 0;
-            return true;
-        }
+        rb.MovePosition(rb.position + movementDirection);
+        movedTime = currentTime;
+    }
+
+    private void CheckIfPlayerCanMove()
+    {
+        currentTime = DateTime.Now;
+        playerCanMove = (currentTime - movedTime).TotalSeconds >= movementTime;
     }
 
     private void Update()
     {
-        if (movementCooldown < movementTime)
-        {
-            movementCooldown += Time.deltaTime;
-        }
+        CheckIfPlayerCanMove();
+    }
+
+    private void FixedUpdate()
+    {
     }
 }
