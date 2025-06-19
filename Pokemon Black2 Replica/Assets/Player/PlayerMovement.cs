@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private @PlayerInputs playerInputs;
     Vector2 movementDirection;
     private bool playerCanMove = true;
+    private bool playerIsMoving = false;
     [SerializeField] private int movementSpeed = 4;
     private double movementTime = 0;
     private DateTime movedTime = DateTime.Now;
@@ -20,9 +21,9 @@ public class PlayerMovement : MonoBehaviour
         movementTime = 1.0 / movementSpeed;
         rb = GetComponent<Rigidbody2D>();
 
-        playerInputs.Player.Movement.started += OnMovementPerformed;
-        playerInputs.Player.Movement.performed += OnMovementPerformed;
-        playerInputs.Player.Movement.canceled += OnMovementPerformed;
+        playerInputs.Player.Movement.started += OnMovementInput;
+        playerInputs.Player.Movement.performed += OnMovementInput;
+        playerInputs.Player.Movement.canceled += OnMovementInput;
     }
 
     private void OnValidate()
@@ -40,19 +41,40 @@ public class PlayerMovement : MonoBehaviour
         playerInputs.Disable();
     }
 
-    public void OnMovementPerformed(InputAction.CallbackContext context)
+    public void OnMovementInput(InputAction.CallbackContext context)
     {
-        if (context.phase.ToString() != "Performed") { }
-        else if (playerCanMove)
+        if (playerCanMove && context.phase.ToString() == "Performed")
         {
             movementDirection = context.ReadValue<Vector2>();
             Debug.Log($"Valid Movement! {context.control.displayName} {movementDirection}");
-            MovePlayer();
+            playerIsMoving = true;
         }
-        else
+        else if (context.phase.ToString() == "Canceled")
         {
-            Debug.Log("Invalid Movement.");
-            return;
+            playerIsMoving = false;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        currentTime = DateTime.Now;
+        CheckIfPlayerCanMove();
+        if (playerIsMoving)
+        {
+            AttemptToMovePlayer();
+        }
+    }
+
+    private void CheckIfPlayerCanMove()
+    {
+        playerCanMove = (currentTime - movedTime).TotalSeconds >= movementTime;
+    }
+
+    private void AttemptToMovePlayer()
+    {
+        if (playerCanMove)
+        {
+            MovePlayer();
         }
     }
 
@@ -60,20 +82,5 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.MovePosition(rb.position + movementDirection);
         movedTime = currentTime;
-    }
-
-    private void CheckIfPlayerCanMove()
-    {
-        currentTime = DateTime.Now;
-        playerCanMove = (currentTime - movedTime).TotalSeconds >= movementTime;
-    }
-
-    private void Update()
-    {
-        CheckIfPlayerCanMove();
-    }
-
-    private void FixedUpdate()
-    {
     }
 }
