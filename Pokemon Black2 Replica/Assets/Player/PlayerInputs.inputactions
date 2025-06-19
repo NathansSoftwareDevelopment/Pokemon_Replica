@@ -20,7 +20,7 @@
                     "name": "WASD",
                     "id": "e5f0dc7c-22e7-4963-a41f-4961e6c60312",
                     "path": "2DVector(mode=1)",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
                     "action": "Movement",

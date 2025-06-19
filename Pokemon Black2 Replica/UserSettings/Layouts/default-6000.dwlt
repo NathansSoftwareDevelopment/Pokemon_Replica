@@ -1015,9 +1015,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0.28460163, y: 0.36001185, z: -0.017996173}
+    m_Target: {x: 0.7911315, y: 0.7116705, z: -0.063477956}
     speed: 2
-    m_Value: {x: 0.28460163, y: 0.36001185, z: -0.017996173}
+    m_Value: {x: 0.7911315, y: 0.7116705, z: -0.063477956}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1067,9 +1067,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1.8719084
+    m_Target: 6.4200835
     speed: 2
-    m_Value: 1.8719084
+    m_Value: 6.4200835
   m_Ortho:
     m_Target: 1
     speed: 2
