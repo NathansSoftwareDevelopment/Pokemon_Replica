@@ -11,8 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private bool playerIsMoving = false;
     [SerializeField] private int movementSpeed = 4;
     private double movementTime = 0;
-    private DateTime movedTime = DateTime.Now;
-    private DateTime currentTime = DateTime.Now;
+    private double movementCooldown = 0;
     private Rigidbody2D rb;
 
     private void Awake()
@@ -46,7 +45,6 @@ public class PlayerMovement : MonoBehaviour
         if (playerCanMove && context.phase.ToString() == "Performed")
         {
             movementDirection = context.ReadValue<Vector2>();
-            Debug.Log($"Valid Movement! {context.control.displayName} {movementDirection}");
             playerIsMoving = true;
         }
         else if (context.phase.ToString() == "Canceled")
@@ -57,7 +55,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        currentTime = DateTime.Now;
+        if (movementCooldown < movementTime)
+        {
+            movementCooldown += Time.fixedDeltaTime;
+        }
         CheckIfPlayerCanMove();
         if (playerIsMoving)
         {
@@ -67,20 +68,25 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckIfPlayerCanMove()
     {
-        playerCanMove = (currentTime - movedTime).TotalSeconds >= movementTime;
+        playerCanMove = movementCooldown >= movementTime;
     }
 
     private void AttemptToMovePlayer()
     {
         if (playerCanMove)
         {
+            Debug.Log($"Valid Movement!   {movementDirection}");
             MovePlayer();
+        }
+        else
+        {
+            Debug.Log($"Invalid Movement. {movementDirection}");
         }
     }
 
     private void MovePlayer()
     {
         rb.MovePosition(rb.position + movementDirection);
-        movedTime = currentTime;
+        movementCooldown = 0;
     }
 }
