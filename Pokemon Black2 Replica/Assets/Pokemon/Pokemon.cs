@@ -132,6 +132,28 @@ public class Pokemon : MonoBehaviour
 
     }
 
+    public void Initialize(
+        string inputName, string inputSpecies, string inputNature = "Hardy",
+        int inputLevel = 1, int inputExperience = 0, string inputAbility = null,
+        Dictionary<int, string> inputMoves = null, Dictionary<string, int> inputIndividualValues = null, Dictionary<string, int> inputEffortValues = null,
+        string inputCondition = null
+    )
+    {
+        Name = inputName;
+        Species = inputSpecies;
+        Nature = inputNature;
+        Level = inputLevel;
+        Experience = inputExperience;
+
+        if (inputAbility != null) { Ability = inputAbility; }
+        if (inputMoves != null) { Moves = inputMoves; }
+        if (inputIndividualValues != null) { IndividualValues = inputIndividualValues; }
+        if (inputEffortValues != null) { EffortValues = inputEffortValues; }
+        if (inputCondition != null) { Condition = inputCondition; }
+
+        PersonalityValue = (uint)UnityEngine.Random.Range(0, 4294967295);
+    }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
