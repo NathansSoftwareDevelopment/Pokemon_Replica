@@ -55,14 +55,24 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (movementCooldown < movementTime)
-        {
-            movementCooldown += Time.fixedDeltaTime;
-        }
+        AccrueTime(Time.fixedDeltaTime);
         CheckIfPlayerCanMove();
         if (playerIsMoving)
         {
             AttemptToMovePlayer();
+        }
+    }
+
+    private void AccrueTime(double timePassed)
+    {
+        AddToCooldown(timePassed, ref movementCooldown, movementTime);
+    }
+
+    private void AddToCooldown(double timeToAdd, ref double cooldown, double maximum = Double.MaxValue)
+    {
+        if (cooldown < maximum)
+        {
+            cooldown += timeToAdd;
         }
     }
 
