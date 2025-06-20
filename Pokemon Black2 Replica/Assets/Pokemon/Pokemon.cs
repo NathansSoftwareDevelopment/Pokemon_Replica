@@ -16,7 +16,7 @@ public class Pokemon : MonoBehaviour
     public int Level { get; private set; }
     public int Experience { get; private set; }
 
-    public string Nature { get; private set; }
+    public Nature Nature { get; private set; }
 
     public string Ability { get; private set; }
 
@@ -102,11 +102,6 @@ public class Pokemon : MonoBehaviour
         }
     }
 
-    private void SetNature(string inputNatureName)
-    {
-        // Nature not yet implemented
-    }
-
     private void CalculatePokemonStats()
     {
 
@@ -157,7 +152,7 @@ public class Pokemon : MonoBehaviour
     {
         Name = inputName;
         Species = inputSpecies;
-        Nature = inputNature;
+        Nature = Nature.NatureMap[inputNature];
         Level = inputLevel;
         Experience = inputExperience;
 
