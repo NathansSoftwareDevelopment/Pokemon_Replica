@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Pokemon : MonoBehaviour
@@ -76,6 +78,60 @@ public class Pokemon : MonoBehaviour
     };
 
     public uint PersonalityValue { get; private set; }
+
+    // Private Methods
+    private void SetIndividualValues(Dictionary<string, int> inputIndividualValues)
+    {
+        foreach (var (StatName, StatNumber) in inputIndividualValues)
+        {
+            var invalidKeys = inputIndividualValues.Keys.Where(key => !IndividualValues.ContainsKey(key)).ToList();
+            if (invalidKeys.Any())
+            {
+                string validStatsList = string.Join("\n", IndividualValues.Keys.Select(k => $"{k}"));
+                throw new ArgumentException(
+                    $"Pokemon -> SetIndividualValues: Invalid stat names provided: '{string.Join(", ", invalidKeys)}'. " +
+                    $"\nValid Stats\n{{\n{validStatsList}\n}}"
+                );
+            }
+        }
+        foreach (var (StatName, StatNumber) in inputIndividualValues)
+        {
+            {
+                IndividualValues[StatName] = StatNumber;
+            }
+        }
+    }
+
+    private void SetNature(string inputNatureName)
+    {
+        // Nature not yet implemented
+    }
+
+    private void CalculatePokemonStats()
+    {
+
+    }
+
+    private void SetPokemonMoves(Dictionary<int, string> inputMoveNames)
+    {
+        foreach (var (MoveNumber, MoveName) in inputMoveNames)
+        {
+            if (MoveNumber >= 1 && MoveNumber <= 4)
+            {
+                Moves[MoveNumber] = MoveName;
+            }
+            else
+            {
+                throw new ArgumentOutOfRangeException($"Pokemon -> SetPokemonMoves -> {MoveNumber} ({MoveName}) Out of Range (Valid: int 1-4");
+            }
+        }
+    }
+
+    public void calculateStageChanges()
+    {
+
+    }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
