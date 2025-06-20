@@ -4,8 +4,8 @@ using UnityEngine;
 [System.Serializable]
 public class Type
 {
-    private string Name { get; set; }
-    public Dictionary<string, double> AttackingTypeMap { get; private set; }
+    public string Name { get; }
+    public Dictionary<string, double> AttackingTypeMap { get; }
 
     public Type(string typeInputName, Dictionary<string, double> inputAttackingTypeMap)
     {
@@ -13,7 +13,7 @@ public class Type
         AttackingTypeMap = inputAttackingTypeMap;
     }
 
-    public static Dictionary<string, Type> TypeMap { get; private set; }
+    public static Dictionary<string, Type> TypeMap { get; }
 
     static Type()
     {
