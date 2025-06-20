@@ -132,6 +132,22 @@ public class Pokemon : MonoBehaviour
 
     }
 
+    // Public Methods
+    public void Evolve()
+    {
+
+    }
+
+    public void ChangeStages(string inputStat, int stageChange)
+    {
+
+    }
+
+    public void AddExperience(int inputExperience)
+    {
+
+    }
+
     public void Initialize(
         string inputName, string inputSpecies, string inputNature = "Hardy",
         int inputLevel = 1, int inputExperience = 0, string inputAbility = null,
