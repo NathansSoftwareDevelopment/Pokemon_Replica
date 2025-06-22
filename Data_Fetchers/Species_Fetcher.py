@@ -10,21 +10,23 @@ def main():
     rawSpeciesData = r"../Raw_Data/Raw_Pokemon-species_Data.json"
     rawEvolutionData = r"../Raw_Data/Raw_Evolution-chain_Data.json"
 
-    allRawData = getPokemonInfo(rawPokemonData, rawSpeciesData, rawEvolutionData)
+    global allRawData
+    allRawData = getPokemonInfo({"Pokemon": rawPokemonData, "Species": rawSpeciesData, "Evolution": rawEvolutionData})
     # addToFinal(parsePokeInfo([allRawData[0]["charmander"][0], allRawData[1]["charmander"][0], allRawData[2]["charmander"]]))
-    for pokemon in allRawData[0]:
-        pokemonName = allRawData[0][pokemon][0]
-        addToFinal(parsePokeInfo([allRawData[0][pokemonName["name"]][0], allRawData[1][pokemonName["species"]["name"]][0], allRawData[2][pokemonName["name"]]]))
-        ic(pokemonName["name"])
+    for pokemon in allRawData["Pokemon"]:
+        pokemonNameDict = allRawData["Pokemon"][pokemon][0]
+        pokemonName = pokemonNameDict["name"]
+        addToFinal(parsePokeInfo({"Pokemon": allRawData["Pokemon"][pokemonName][0], "Species": allRawData["Species"][pokemonNameDict["species"]["name"]][0]}))
+        ic(pokemonName)
     Write(outputDictionary, r"../Pokemon Black2 Replica/Assets/StreamingAssets/Data/Species.json")
 
 
-def getPokemonInfo(*args):
-    returnList = []
-    for i in args:
-        with open(i, 'r') as file:
-            returnList.append(json.load(file))
-    return returnList
+def getPokemonInfo(inputDictionary):
+    returnDict = {}
+    for name, URL in inputDictionary.items():
+        with open(URL, 'r') as file:
+            returnDict[name] = json.load(file)
+    return returnDict
 
 def getTypes(rawData):
     tempTypes = {}
@@ -105,8 +107,8 @@ def getAbilities(rawPokemonData):
 
     return tempAbilities
 
-def getEvolve(pokemonName, rawEvolutionData):
-    evolutionChain = rawEvolutionData[pokemonName]
+def getEvolve(pokemonName):
+    evolutionChain = allRawData["Evolution"][pokemonName][pokemonName]
     evolveLevel = 0
     try:
         # if first pokemon name == name of pokemon | evolve = second pokemon
@@ -186,9 +188,8 @@ def printRawData(rawData):
     print()
 
 def parsePokeInfo(rawData):
-    rawPokemonData = rawData[0]
-    rawSpeciesData = rawData[1]
-    rawEvolutionData = rawData[2]
+    rawPokemonData = rawData["Pokemon"]
+    rawSpeciesData = rawData["Species"]
     # printRawData(rawPokemonData)
     # printRawData(rawSpeciesData)
     pokeData = {}
@@ -211,7 +212,7 @@ def parsePokeInfo(rawData):
 
     pokeData["abilities"] = getAbilities(rawPokemonData)
 
-    pokeData["evolve"] = getEvolve(pokeData["name"].lower(), rawEvolutionData)
+    pokeData["evolve"] = getEvolve(pokeData["name"].lower())
 
     tempGrowthRate = str
     growthRate = rawSpeciesData["growth_rate"]["name"]
