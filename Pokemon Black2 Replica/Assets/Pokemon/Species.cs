@@ -19,8 +19,8 @@ public class Species
 
     [JsonProperty("types")]
     public TypeData Types { get; private set; }
-    public string Type1 => Types?.Type1;
-    public string Type2 => Types?.Type2;
+    public Type Type1 => Types?.Type1;
+    public Type Type2 => Types?.Type2;
 
     [JsonProperty("abilities")]
     public Dictionary<int, string> Abilities { get; } = new Dictionary<int, string>();
@@ -30,8 +30,9 @@ public class Species
     public string Evolution => EvolveData.EvolvesTo;
     public int EvolutionLevel => EvolveData.MinimumLevel;
 
+    public GrowthRate GrowthRate { get; private set; }
     [JsonProperty("growth-rate")]
-    public string GrowthRate { get; private set; } = string.Empty;
+    private string TempGrowthRate { set { GrowthRate = GrowthRate.GrowthRateMap[value]; } }
 
     [JsonProperty("base-experience")]
     public int ExperienceValue { get; private set; } = 0;
@@ -42,10 +43,14 @@ public class Species
     // Intermediate classes for denesting JSON data
     public class TypeData
     {
+        public Type Type1 { get; private set; }
         [JsonProperty("1")]
-        public string Type1 { get; private set; } = string.Empty;
+        private string Type1String { set { Type1 = Type.TypeMap[value]; } }
+
+        public Type Type2 { get; private set; }
         [JsonProperty("2")]
-        public string Type2 { get; private set; } = string.Empty;
+        private string Type2String { set { Type2 = Type.TypeMap[value]; } }
+
 
         private TypeData() { }
     }

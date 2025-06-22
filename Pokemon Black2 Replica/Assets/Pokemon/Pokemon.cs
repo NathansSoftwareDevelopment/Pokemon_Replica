@@ -141,8 +141,8 @@ public class Pokemon : MonoBehaviour
 
         Species = Species.SpeciesMap[Species.Evolution];
         if (currentAbilityIndex != 0) Ability = Species.Abilities[currentAbilityIndex];
-        Type1 = Type.TypeMap[Species.Type1];
-        Type2 = Type.TypeMap[Species.Type2];
+        Type1 = Species.Type1;
+        Type2 = Species.Type2;
 
         CalculatePokemonStats();
     }
@@ -176,8 +176,8 @@ public class Pokemon : MonoBehaviour
         if (inputEffortValues != null) { EffortValues = inputEffortValues; }
         if (inputCondition != null) { Condition = inputCondition; }
 
-        Type1 = Type.TypeMap[Species.Type1];
-        Type2 = Type.TypeMap[Species.Type2];
+        Type1 = Species.Type1;
+        Type2 = Species.Type2;
 
         PersonalityValue = (uint)UnityEngine.Random.Range(0, 4294967295);
     }
