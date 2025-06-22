@@ -5638,7 +5638,7 @@
             "3": "Defiant"
         },
         "evolve": {
-            "evolves-to": "Annihilape",
+            "evolves-to": "Primeape",
             "min-level": 0
         },
         "growth-rate": "Medium Fast",
@@ -8372,7 +8372,7 @@
             "3": "Defiant"
         },
         "evolve": {
-            "evolves-to": "Sirfetchd",
+            "evolves-to": "Farfetchd",
             "min-level": 0
         },
         "growth-rate": "Medium Fast",
@@ -12536,7 +12536,7 @@
             "3": "Technician"
         },
         "evolve": {
-            "evolves-to": "Mr-rime",
+            "evolves-to": "Mr-mime",
             "min-level": 42
         },
         "growth-rate": "Medium Fast",
@@ -21061,7 +21061,7 @@
             "3": "Sap-sipper"
         },
         "evolve": {
-            "evolves-to": "Farigiraf",
+            "evolves-to": "Girafarig",
             "min-level": 0
         },
         "growth-rate": "Medium Fast",
@@ -21405,7 +21405,7 @@
             "3": "Rattled"
         },
         "evolve": {
-            "evolves-to": "Dudunsparce",
+            "evolves-to": "Dunsparce",
             "min-level": 0
         },
         "growth-rate": "Medium Fast",
@@ -22028,7 +22028,7 @@
             "3": "Intimidate"
         },
         "evolve": {
-            "evolves-to": "Overqwil",
+            "evolves-to": "Qwilfish",
             "min-level": 0
         },
         "growth-rate": "Medium Fast",
@@ -22721,7 +22721,7 @@
             "3": "Unnerve"
         },
         "evolve": {
-            "evolves-to": "Ursaluna",
+            "evolves-to": "Ursaring",
             "min-level": 0
         },
         "growth-rate": "Medium Fast",
@@ -23241,7 +23241,7 @@
             "3": "Regenerator"
         },
         "evolve": {
-            "evolves-to": "Cursola",
+            "evolves-to": "Corsola",
             "min-level": 38
         },
         "growth-rate": "Fast",
@@ -24511,7 +24511,7 @@
             "3": "Sap-sipper"
         },
         "evolve": {
-            "evolves-to": "Wyrdeer",
+            "evolves-to": "Stantler",
             "min-level": 0
         },
         "growth-rate": "Slow",
@@ -27752,7 +27752,7 @@
             "3": "Quick-feet"
         },
         "evolve": {
-            "evolves-to": "Obstagoon",
+            "evolves-to": "Linoone",
             "min-level": 35
         },
         "growth-rate": "Medium Fast",
@@ -51342,7 +51342,7 @@
             "3": "None"
         },
         "evolve": {
-            "evolves-to": "Phione",
+            "evolves-to": "Manaphy",
             "min-level": 0
         },
         "growth-rate": "Slow",
@@ -65603,7 +65603,7 @@
             "3": "Pressure"
         },
         "evolve": {
-            "evolves-to": "Kingambit",
+            "evolves-to": "Bisharp",
             "min-level": 0
         },
         "growth-rate": "Medium Fast",

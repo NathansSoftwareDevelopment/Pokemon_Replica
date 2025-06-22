@@ -110,27 +110,46 @@ def getAbilities(rawPokemonData):
 def getEvolve(pokemonName):
     evolutionChain = allRawData["Evolution"][pokemonName][pokemonName]
     evolveLevel = 0
-    try:
-        # if first pokemon name == name of pokemon | evolve = second pokemon
-        if evolutionChain["species"]["name"] == pokemonName:
-            if len(evolutionChain["evolves_to"]) <= 1:
-                evolution = evolutionChain["evolves_to"][0]["species"]["name"]
-                evolveLevel = evolutionChain["evolves_to"][0]["evolution_details"][0]["min_level"]
-            else:
-                evolution = "special"
-        # if second pokemon name == name of pokemon | evolve = third pokemon
-        elif evolutionChain["evolves_to"][0]["species"]["name"] == pokemonName:
-            if len(evolutionChain["evolves_to"][0]["evolves_to"]) <= 1:
-                evolution = evolutionChain["evolves_to"][0]["evolves_to"][0]["species"]["name"]
-                evolveLevel = evolutionChain["evolves_to"][0]["evolves_to"][0]["evolution_details"][0]["min_level"]
-            else:
-                evolution = "special"
-        # otherwise | evolve = name of pokemon
-        else:
-            evolution = pokemonName
-    except IndexError:
-        # For single stage pokemon evolutionChain["evolves_to"] will be an empty array causing an error
+    evolution = str
+    print(pokemonName)
+    # if first pokemon is an only stage pokemon | default
+    if len(evolutionChain.get("evolves_to", [])) == 0:
+        ic(1)
+    # if first pokemon name == name of pokemon
+    elif evolutionChain["species"]["name"] == pokemonName:
+        ic(2)
+        # if first pokemon can evolve into 1 other pokemon | evolve = second pokemon
+        if len(evolutionChain["evolves_to"]) == 1:
+            ic(2.1)
+            evolution = evolutionChain["evolves_to"][0]["species"]["name"]
+            # if second pokemon does not have evolution details | evolveLevel = 0
+            evolveLevel = evolutionChain["evolves_to"][0]["evolution_details"][0]["min_level"] if evolutionChain["evolves_to"][0]["evolution_details"] else 0
+        # if first pokemon can evolve into more than 1 pokemon | evolve = Special, evolveLevel = 0
+        elif len(evolutionChain["evolves_to"]) > 1:
+            ic(2.2)
+            evolution = "Special"
+            evolveLevel = 0
+    # if second pokemon is a two stage pokemon | default
+    elif len(evolutionChain["evolves_to"][0].get("evolves_to", [])) == 0:
+        ic(3)
+    # if second pokemon name == name of pokemon
+    elif evolutionChain["evolves_to"][0]["species"]["name"] == pokemonName:
+        ic(4)
+        # if second pokemon can evolve into 1 other pokemon | evolve = third pokemon
+        if len(evolutionChain["evolves_to"][0]["evolves_to"]) == 1 and len(evolutionChain["evolves_to"][0].get("evolution_details", [])) != 0:
+            ic(4.1)
+            evolution = evolutionChain["evolves_to"][0]["evolves_to"][0]["species"]["name"]
+            # if third pokemon does not have evolution details | evolveLevel = 0
+            evolveLevel = evolutionChain["evolves_to"][0]["evolves_to"][0]["evolution_details"][0]["min_level"] if evolutionChain["evolves_to"][0]["evolves_to"][0]["evolution_details"] else 0
+        # if second pokemon can evolve into more than 1 pokemon | evolve = Special, evolveLevel = 0
+        elif len(evolutionChain["evolves_to"][0]["evolves_to"]) > 1:
+            ic(4.2)
+            evolution = "Special"
+            evolveLevel = 0
+
+    if (evolution not in allRawData["Species"].keys() and evolution != "Special"):
         evolution = pokemonName
+    
     evolution = evolution.capitalize()
     evolveLevel = evolveLevel if evolveLevel is not None else 0
     return {"evolves-to": evolution.capitalize(), "min-level": evolveLevel}
