@@ -16,7 +16,7 @@ def main():
         pokemonName = allRawData[0][pokemon][0]
         addToFinal(parsePokeInfo([allRawData[0][pokemonName["name"]][0], allRawData[1][pokemonName["species"]["name"]][0], allRawData[2][pokemonName["name"]]]))
         ic(pokemonName["name"])
-    Write(outputDictionary, r"../Pokemon Black2 Replica/Assets/Data/Species.json")
+    Write(outputDictionary, r"../Pokemon Black2 Replica/Assets/StreamingAssets/Data/Species.json")
 
 
 def getPokemonInfo(*args):

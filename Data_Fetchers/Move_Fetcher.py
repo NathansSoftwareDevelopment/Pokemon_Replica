@@ -10,7 +10,7 @@ def main():
     for moveName in rawMoveData:
         moveData = parseMoveInfo(rawMoveData[moveName][0])
         allMoveData[moveData["name"]] = moveData
-    Write(allMoveData, r"../Pokemon Black2 Replica/Assets/Data/Move.json")
+    Write(allMoveData, r"../Pokemon Black2 Replica/Assets/StreamingAssets/Data/Move.json")
 
 def getMoveInfo():
     URL = r"../Raw_Data/Raw_Move_Data.json"
