@@ -61,7 +61,7 @@ def getTypes(rawData):
     for i in rawData["past_types"]:
         if romanDict[i["generation"]["name"][-4:]] == correctGeneration:
             tempTypes[1] = i["types"][0]["type"]["name"].capitalize()
-            tempTypes[2] = i["types"][1]["type"]["name"].capitalize() if len(i["types"]) > 1 else "none"
+            tempTypes[2] = i["types"][1]["type"]["name"].capitalize() if len(i["types"]) > 1 else "None"
 
     return tempTypes
 
