@@ -130,7 +130,21 @@ public class Pokemon : MonoBehaviour
     // Public Methods
     public void Evolve()
     {
+        int currentAbilityIndex = 0;
+        foreach (var (abilityNumber, abilityName) in Species.Abilities)
+        {
+            if (abilityName == Ability)
+            {
+                currentAbilityIndex = abilityNumber;
+            }
+        }
 
+        Species = Species.SpeciesMap[Species.Evolution];
+        if (currentAbilityIndex != 0) Ability = Species.Abilities[currentAbilityIndex];
+        Type1 = Type.TypeMap[Species.Type1];
+        Type2 = Type.TypeMap[Species.Type2];
+
+        CalculatePokemonStats();
     }
 
     public void ChangeStages(string inputStat, int stageChange)
