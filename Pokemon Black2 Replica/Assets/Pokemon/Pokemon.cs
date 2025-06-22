@@ -11,7 +11,7 @@ public class Pokemon : MonoBehaviour
     public string Trainer { get; private set; }
 
     public string Name { get; private set; }
-    public string Species { get; private set; }
+    public Species Species { get; private set; }
 
     public int Level { get; private set; }
     public int Experience { get; private set; }
@@ -151,7 +151,7 @@ public class Pokemon : MonoBehaviour
     )
     {
         Name = inputName;
-        Species = inputSpecies;
+        Species = Species.SpeciesMap[inputSpecies];
         Nature = Nature.NatureMap[inputNature];
         Level = inputLevel;
         Experience = inputExperience;
@@ -161,6 +161,9 @@ public class Pokemon : MonoBehaviour
         if (inputIndividualValues != null) { IndividualValues = inputIndividualValues; }
         if (inputEffortValues != null) { EffortValues = inputEffortValues; }
         if (inputCondition != null) { Condition = inputCondition; }
+
+        Type1 = Type.TypeMap[Species.Type1];
+        Type2 = Type.TypeMap[Species.Type2];
 
         PersonalityValue = (uint)UnityEngine.Random.Range(0, 4294967295);
     }
