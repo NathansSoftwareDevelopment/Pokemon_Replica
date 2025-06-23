@@ -59,28 +59,33 @@ public class Species
     // Struct for storing the Moves data
     public class LearnSet
     {
+        public Dictionary<Move, int> LevelUp { get; private set; }
         [JsonProperty("level-up")]
-        public Dictionary<string, int> LevelUp { get; private set; }
+        private Dictionary<string, int> LevelUpSetter { set { foreach (var (moveName, moveLevel) in value) { LevelUp[Move.MoveMap[moveName]] = moveLevel; } } }
 
+        public HashSet<Move> Egg {  get; private set; }
         [JsonProperty("egg")]
-        public HashSet<string> Egg { get; private set; }
+        private HashSet<string> EggSetter { set { foreach (string moveName in value) Egg.Add(Move.MoveMap[moveName]); } }
 
+        public HashSet<Move> Machine { get; private set; }
         [JsonProperty("machine")]
-        public HashSet<string> Machine { get; private set; }
+        private HashSet<string> MachineSetter { set { foreach (string moveName in value) Machine.Add(Move.MoveMap[moveName]); } }
 
+        public HashSet<Move> Tutor { get; private set; }
         [JsonProperty("tutor")]
-        public HashSet<string> Tutor { get; private set; }
+        private HashSet<string> TutorSetter { set { foreach (string moveName in value) Tutor.Add(Move.MoveMap[moveName]);  } }
 
+        public Dictionary<Move, string> Other { get; private set; }
         [JsonProperty("other")]
-        public Dictionary<string, string> Other { get; private set; }
+        private Dictionary<string, string> OtherSetter { set { foreach (var (moveName, learnCondition) in value) { Other[Move.MoveMap[moveName]] = learnCondition; } } }
 
         private LearnSet()
         {
-            LevelUp = new Dictionary<string, int>();
-            Egg = new HashSet<string>();
-            Machine = new HashSet<string>();
-            Tutor = new HashSet<string>();
-            Other = new Dictionary<string, string>();
+            LevelUp = new Dictionary<Move, int>();
+            Egg = new HashSet<Move>();
+            Machine = new HashSet<Move>();
+            Tutor = new HashSet<Move>();
+            Other = new Dictionary<Move, string>();
         }
     }
 

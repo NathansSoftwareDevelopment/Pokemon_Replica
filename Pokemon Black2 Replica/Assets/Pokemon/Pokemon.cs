@@ -206,14 +206,14 @@ public class Pokemon : MonoBehaviour
         Debug.Log(Species.Name);
         Debug.Log(Species.Type1.Name);
         Debug.Log(Species.Stats["HitPoints"]);
-        Debug.Log(Species.Moves.Egg.Contains("Power Whip"));
+        Debug.Log(Species.Moves.LevelUp.Keys.Contains(Move.MoveMap["Vine Whip"]));
         Debug.Log(Species.Evolution.Name);
         Evolve();
         Debug.Log(Nature.NatureMap["Adamant"].StatMultipliers["Attack"]);
         Debug.Log(Species.Name);
         Debug.Log(Species.Type1.Name);
         Debug.Log(Species.Stats["HitPoints"]);
-        Debug.Log(Species.Moves.Egg.Contains("Power Whip"));
+        Debug.Log(Species.Moves.LevelUp.Keys.Contains(Move.MoveMap["Vine Whip"]));
         Debug.Log(Species.Evolution.Name);
         Debug.Log(Species.GrowthRate.ToNextLevel[Level]);
         AddExperience(100000);
