@@ -139,7 +139,7 @@ public class Pokemon : MonoBehaviour
             }
         }
 
-        Species = Species.SpeciesMap[Species.Evolution];
+        Species = Species.Evolution;
         if (currentAbilityIndex != 0) Ability = Species.Abilities[currentAbilityIndex];
         Type1 = Species.Type1;
         Type2 = Species.Type2;

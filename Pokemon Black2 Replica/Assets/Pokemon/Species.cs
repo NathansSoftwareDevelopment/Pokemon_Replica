@@ -34,7 +34,8 @@ public class Species
 
     [JsonProperty("evolve")]
     public EvolutionData EvolveData { get; private set; }
-    public string Evolution => EvolveData.EvolvesTo;
+    public Species Evolution;
+    private string EvolutionName => EvolveData.EvolvesTo;
     public int EvolutionLevel => EvolveData.MinimumLevel;
 
     public GrowthRate GrowthRate { get; private set; }
@@ -96,5 +97,10 @@ public class Species
         string jsonString = File.ReadAllText(filePath);
 
         SpeciesMap = JsonConvert.DeserializeObject<Dictionary<string, Species>>(jsonString);
+
+        foreach (Species species in SpeciesMap.Values)
+        {
+            species.Evolution = (species.EvolutionName == "Special") ? species : SpeciesMap[species.EvolutionName];
+        }
     }
 }
