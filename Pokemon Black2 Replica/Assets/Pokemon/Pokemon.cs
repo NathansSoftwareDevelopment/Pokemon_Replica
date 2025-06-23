@@ -155,7 +155,20 @@ public class Pokemon : MonoBehaviour
 
     public void AddExperience(int inputExperience)
     {
+        while (Experience + inputExperience >= Species.GrowthRate.ToNextLevel[Level])
+        {
+            inputExperience -= (Species.GrowthRate.ToNextLevel[Level] - Experience);
+            Experience = 0;
+            Level += 1;
+        }
+        Experience += inputExperience;
 
+        if (Level >= Species.EvolutionLevel && Species.EvolutionLevel != 0)
+        {
+            Evolve();
+        }
+
+        CalculatePokemonStats();
     }
 
     public void Initialize(
