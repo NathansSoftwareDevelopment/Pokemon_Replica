@@ -32,11 +32,18 @@ public class Species
     [JsonProperty("abilities")]
     public Dictionary<int, string> Abilities { get; } = new Dictionary<int, string>();
 
+    public Species Evolution { get; private set; }
+    private string EvolutionName { get; set; } = string.Empty;
+    public int EvolutionLevel { get; private set; } = 0;
     [JsonProperty("evolve")]
-    public EvolutionData EvolveData { get; private set; }
-    public Species Evolution;
-    private string EvolutionName => EvolveData.EvolvesTo;
-    public int EvolutionLevel => EvolveData.MinimumLevel;
+    private Dictionary<string, object> EvolveSetter
+    {
+        set
+        {
+            EvolutionName = value["evolves-to"].ToString();
+            EvolutionLevel = Convert.ToInt32(value["min-level"]);
+        }
+    }
 
     public GrowthRate GrowthRate { get; private set; }
     [JsonProperty("growth-rate")]
@@ -48,17 +55,6 @@ public class Species
     [JsonProperty("moves")]
     public LearnSet Moves { get; private set; }
 
-    // Intermediate classes for denesting JSON data
-    public class EvolutionData
-    {
-        [JsonProperty("evolves-to")]
-        public string EvolvesTo { get; private set; } = string.Empty;
-
-        [JsonProperty("min-level")]
-        public int MinimumLevel { get; private set; } = 0;
-
-        private EvolutionData() { }
-    }
 
     // Struct for storing the Moves data
     public class LearnSet
