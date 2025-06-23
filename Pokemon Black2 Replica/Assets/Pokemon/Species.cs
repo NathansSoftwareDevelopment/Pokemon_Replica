@@ -47,7 +47,7 @@ public class Species
 
     public GrowthRate GrowthRate { get; private set; }
     [JsonProperty("growth-rate")]
-    private string TempGrowthRate { set { GrowthRate = GrowthRate.GrowthRateMap[value]; } }
+    private string GrowthRateSetter { set { GrowthRate = GrowthRate.GrowthRateMap[value]; } }
 
     [JsonProperty("base-experience")]
     public int ExperienceValue { get; private set; } = 0;
