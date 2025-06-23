@@ -17941,7 +17941,7 @@
                 "Magnet Rise"
             ],
             "other": {
-                "Light Ball Egg": "volt-tackle"
+                "Volt Tackle": "light-ball-egg"
             }
         }
     },
@@ -50313,7 +50313,7 @@
                 "Electroweb"
             ],
             "other": {
-                "Form Change": "thunder-shock"
+                "Thunder Shock": "form-change"
             }
         }
     },
@@ -69174,7 +69174,7 @@
                 "Electroweb"
             ],
             "other": {
-                "Form Change": "overheat"
+                "Overheat": "form-change"
             }
         }
     },
@@ -69271,7 +69271,7 @@
                 "Electroweb"
             ],
             "other": {
-                "Form Change": "hydro-pump"
+                "Hydro Pump": "form-change"
             }
         }
     },
@@ -69368,7 +69368,7 @@
                 "Electroweb"
             ],
             "other": {
-                "Form Change": "blizzard"
+                "Blizzard": "form-change"
             }
         }
     },
@@ -69465,7 +69465,7 @@
                 "Electroweb"
             ],
             "other": {
-                "Form Change": "air-slash"
+                "Air Slash": "form-change"
             }
         }
     },
@@ -69562,7 +69562,7 @@
                 "Electroweb"
             ],
             "other": {
-                "Form Change": "leaf-storm"
+                "Leaf Storm": "form-change"
             }
         }
     },

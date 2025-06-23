@@ -170,7 +170,7 @@ def getMoves(rawPokemonData):
             elif version["move_learn_method"]["name"] in tempMoves:
                 tempMoves[moveGroup].append(moveName)
             else:
-                tempMoves["other"][version["move_learn_method"]["name"]] = moveName
+                tempMoves["other"][moveName] = version["move_learn_method"]["name"]
 
     tempMoves2 = copy.deepcopy(tempMoves)
     # The naming scheme of PokeAPI is destructive in nature so several move names had to be manually respecified
