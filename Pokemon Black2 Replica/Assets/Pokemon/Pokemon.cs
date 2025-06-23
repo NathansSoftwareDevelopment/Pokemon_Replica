@@ -185,7 +185,7 @@ public class Pokemon : MonoBehaviour
         Experience = inputExperience;
 
         if (inputAbility != null) { Ability = inputAbility; }
-        if (inputMoves != null) { Moves = inputMoves; }
+        if (inputMoves != null) { SetPokemonMoves(inputMoves); }
         if (inputIndividualValues != null) { IndividualValues = inputIndividualValues; }
         if (inputEffortValues != null) { EffortValues = inputEffortValues; }
         if (inputCondition != null) { Condition = inputCondition; }
