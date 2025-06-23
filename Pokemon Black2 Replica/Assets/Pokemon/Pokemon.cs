@@ -130,6 +130,7 @@ public class Pokemon : MonoBehaviour
     // Public Methods
     public void Evolve()
     {
+        Debug.Log($"{Name} is Evolving!\n {Name} Evolved from {Species.Name} to {Species.Evolution.Name}");
         int currentAbilityIndex = 0;
         foreach (var (abilityNumber, abilityName) in Species.Abilities)
         {
@@ -186,7 +187,26 @@ public class Pokemon : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Initialize("Bulbyboi", "Bulbasaur");
+        Debug.Log(Species.GrowthRate.ToNextLevel[Level]);
+        Debug.Log(Nature.NatureMap["Adamant"].StatMultipliers["Attack"]);
+        Debug.Log(Species.Name);
+        Debug.Log(Species.Type1.Name);
+        Debug.Log(Species.Stats["HitPoints"]);
+        Debug.Log(Species.Moves.Egg.Contains("Power Whip"));
+        Debug.Log(Species.Evolution.Name);
+        Evolve();
+        Debug.Log(Nature.NatureMap["Adamant"].StatMultipliers["Attack"]);
+        Debug.Log(Species.Name);
+        Debug.Log(Species.Type1.Name);
+        Debug.Log(Species.Stats["HitPoints"]);
+        Debug.Log(Species.Moves.Egg.Contains("Power Whip"));
+        Debug.Log(Species.Evolution.Name);
+        Debug.Log(Species.GrowthRate.ToNextLevel[Level]);
+        AddExperience(100000);
+        Debug.Log(Species.GrowthRate.ToNextLevel[Level]);
+        Debug.Log(Level);
+        Debug.Log(Experience);
     }
 
     // Update is called once per frame
