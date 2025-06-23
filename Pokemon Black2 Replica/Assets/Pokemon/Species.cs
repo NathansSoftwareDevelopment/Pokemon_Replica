@@ -56,7 +56,7 @@ public class Species
     public LearnSet Moves { get; private set; }
 
 
-    // Struct for storing the Moves data
+    // Class for storing the Moves data
     public class LearnSet
     {
         public Dictionary<Move, int> LevelUp { get; private set; }
