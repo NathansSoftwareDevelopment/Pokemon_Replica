@@ -25,7 +25,7 @@ public class Pokemon : MonoBehaviour
     public Type Type1 { get; set; }
     public Type Type2 { get; set; }
 
-    public Dictionary<int, string> Moves { get; private set; }
+    public Dictionary<int, Move> Moves { get; private set; }
 
     public string Condition { get; set; }
 
@@ -113,7 +113,7 @@ public class Pokemon : MonoBehaviour
         {
             if (MoveNumber >= 1 && MoveNumber <= 4)
             {
-                Moves[MoveNumber] = MoveName;
+                Moves[MoveNumber] = Move.MoveMap[MoveName];
             }
             else
             {
