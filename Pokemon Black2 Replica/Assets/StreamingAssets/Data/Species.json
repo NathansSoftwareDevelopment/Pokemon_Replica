@@ -58131,7 +58131,7 @@
             "2": "None"
         },
         "evolve": {
-            "evolves-to": "Darmanitan",
+            "evolves-to": "Darmanitan-standard",
             "min-level": 35
         },
         "growth-rate": "Medium Slow",
