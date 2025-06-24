@@ -84,13 +84,17 @@ public class Pokemon : MonoBehaviour
     {
         foreach (var (StatName, StatNumber) in inputIndividualValues)
         {
-            var invalidKeys = inputIndividualValues.Keys.Where(key => !IndividualValues.ContainsKey(key)).ToList();
-            if (invalidKeys.Any())
+            Dictionary<string, int> invalidIndividualValues = inputIndividualValues.Where(Element => !IndividualValues.ContainsKey(Element.Key) || Element.Value < 0 || Element.Value > 31).ToDictionary(Element => Element.Key, Element => Element.Value);
+            if (invalidIndividualValues.Any())
             {
-                string validStatsList = string.Join("\n", IndividualValues.Keys.Select(k => $"\t{k}"));
+                string allProvidedStatsList = string.Join("\n", inputIndividualValues.Select(Element => $"\t{{{Element.Key}, {Element.Value}}}"));
+                string validStatsList = string.Join("\n", IndividualValues.Keys.Select(k => $"\t{{{k}, (0-31)}}"));
+                string invalidStatsList = string.Join("\n", invalidIndividualValues.Select(Element => $"\t{{{Element.Key}, {Element.Value}}}"));
                 throw new ArgumentException(
-                    $"Pokemon -> SetIndividualValues: Invalid stat names provided: '{string.Join(", ", invalidKeys)}'. " +
-                    $"\nValid Stats\n{{\n{validStatsList}\n}}"
+                    $"Pokemon -> SetIndividualValues: Invalid stat names provided.\n" +
+                    $"Valid Stats\n{{\n{validStatsList}\n}}\n" +
+                    $"Provided Stats\n{{\n{allProvidedStatsList}\n}}\n" +
+                    $"Invalid Stats\n{{\n{invalidStatsList}\n}}"
                 );
             }
         }
@@ -200,7 +204,7 @@ public class Pokemon : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Initialize("Bulbyboi", "Bulbasaur", inputIndividualValues: new Dictionary<string, int> { { "No", 0 } });
+        Initialize("Bulbyboi", "Bulbasaur", inputIndividualValues: new Dictionary<string, int> { { "No", 0 }, { "bad", 2 }, { "HitPoints", -1 }, { "Speed", 1 } });
         Debug.Log(Species.GrowthRate.ToNextLevel[Level]);
         Debug.Log(Nature.NatureMap["Adamant"].StatMultipliers["Attack"]);
         Debug.Log(Species.Name);
