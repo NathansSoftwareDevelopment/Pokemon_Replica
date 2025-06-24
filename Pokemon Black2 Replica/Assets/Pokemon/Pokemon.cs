@@ -25,7 +25,7 @@ public class Pokemon : MonoBehaviour
     public Type Type1 { get; set; }
     public Type Type2 { get; set; }
 
-    public Dictionary<int, Move> Moves { get; private set; }
+    public Dictionary<int, Move> Moves { get; private set; } = new Dictionary<int, Move>();
 
     public string Condition { get; set; }
 
@@ -220,6 +220,12 @@ public class Pokemon : MonoBehaviour
         Debug.Log(Species.GrowthRate.ToNextLevel[Level]);
         Debug.Log(Level);
         Debug.Log(Experience);
+        SetPokemonMoves(new Dictionary<int, string> { { 1, "Vine Whip" }, { 2, "Leech Seed" }, { 3, "Absorb" }, { 4, "Petal Dance" }, { 5, "Ember" } });
+        Debug.Log(Moves[1].Name);
+        Debug.Log(Moves[2].Name);
+        Debug.Log(Moves[3].Name);
+        Debug.Log(Moves[4].Name);
+        Debug.Log(Moves[5].Name);
     }
 
     // Update is called once per frame
