@@ -186,7 +186,7 @@ public class Pokemon : MonoBehaviour
 
         if (inputAbility != null) { Ability = inputAbility; }
         if (inputMoves != null) { SetPokemonMoves(inputMoves); }
-        if (inputIndividualValues != null) { IndividualValues = inputIndividualValues; }
+        if (inputIndividualValues != null) { SetIndividualValues(inputIndividualValues); }
         if (inputEffortValues != null) { EffortValues = inputEffortValues; }
         if (inputCondition != null) { Condition = inputCondition; }
 
@@ -200,7 +200,7 @@ public class Pokemon : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Initialize("Bulbyboi", "Bulbasaur");
+        Initialize("Bulbyboi", "Bulbasaur", inputIndividualValues: new Dictionary<string, int> { { "No", 0 } });
         Debug.Log(Species.GrowthRate.ToNextLevel[Level]);
         Debug.Log(Nature.NatureMap["Adamant"].StatMultipliers["Attack"]);
         Debug.Log(Species.Name);
@@ -220,7 +220,7 @@ public class Pokemon : MonoBehaviour
         Debug.Log(Species.GrowthRate.ToNextLevel[Level]);
         Debug.Log(Level);
         Debug.Log(Experience);
-        SetPokemonMoves(new Dictionary<int, string> { { 1, "Vine Whip" }, { 2, "Leech Seed" }, { 3, "Absorb" }, { 4, "Petal Dance" }, { 5, "Ember" } });
+        SetPokemonMoves(new Dictionary<int, string> { { 1, "Vine Whip" }, { 2, "Leech Seed" }, { 3, "Absorb" }, { 4, "Petal Dance" } });
         Debug.Log(Moves[1].Name);
         Debug.Log(Moves[2].Name);
         Debug.Log(Moves[3].Name);
