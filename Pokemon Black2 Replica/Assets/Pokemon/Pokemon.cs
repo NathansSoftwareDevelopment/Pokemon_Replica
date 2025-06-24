@@ -87,7 +87,7 @@ public class Pokemon : MonoBehaviour
             var invalidKeys = inputIndividualValues.Keys.Where(key => !IndividualValues.ContainsKey(key)).ToList();
             if (invalidKeys.Any())
             {
-                string validStatsList = string.Join("\n", IndividualValues.Keys.Select(k => $"{k}"));
+                string validStatsList = string.Join("\n", IndividualValues.Keys.Select(k => $"\t{k}"));
                 throw new ArgumentException(
                     $"Pokemon -> SetIndividualValues: Invalid stat names provided: '{string.Join(", ", invalidKeys)}'. " +
                     $"\nValid Stats\n{{\n{validStatsList}\n}}"
@@ -117,7 +117,7 @@ public class Pokemon : MonoBehaviour
             }
             else
             {
-                throw new ArgumentOutOfRangeException($"Pokemon -> SetPokemonMoves -> {MoveNumber} ({MoveName}) Out of Range (Valid: int 1-4");
+                throw new ArgumentOutOfRangeException($"Pokemon -> SetPokemonMoves -> {MoveNumber} ({MoveName}) Out of Range (Valid: int 1-4)");
             }
         }
     }
