@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -108,7 +107,16 @@ public class Pokemon : MonoBehaviour
 
     private void CalculatePokemonStats()
     {
-
+        MaxStats["HitPoints"] = (int)Math.Max(Math.Floor(((2 * Species.Stats["HitPoints"] + IndividualValues["HitPoints"] + Math.Floor(EffortValues["HitPoints"] / 4.0)) * Level) / 100) + Level + 10, 1.0);
+        // Use the same formula to calculate all non-HitPoints stats;
+        foreach (string statName in MaxStats.Keys.ToList())
+        {
+            if (statName == "HitPoints")
+            {
+                continue;
+            }
+            MaxStats[statName] = (int)Math.Max(Math.Floor(((2 * Species.Stats[statName] + IndividualValues[statName] + Math.Floor(EffortValues[statName] / 4.0)) * Level) / 100 + 5) * Nature.StatMultipliers[statName], 1.0);
+        }
     }
 
     private void SetPokemonMoves(Dictionary<int, string> inputMoveNames)
@@ -204,32 +212,13 @@ public class Pokemon : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Initialize("Bulbyboi", "Bulbasaur", inputIndividualValues: new Dictionary<string, int> { { "No", 0 }, { "bad", 2 }, { "HitPoints", -1 }, { "Speed", 1 } });
-        Debug.Log(Species.GrowthRate.ToNextLevel[Level]);
-        Debug.Log(Nature.NatureMap["Adamant"].StatMultipliers["Attack"]);
-        Debug.Log(Species.Name);
-        Debug.Log(Species.Type1.Name);
-        Debug.Log(Species.Stats["HitPoints"]);
-        Debug.Log(Species.Moves.LevelUp.Keys.Contains(Move.MoveMap["Vine Whip"]));
-        Debug.Log(Species.Evolution.Name);
-        Evolve();
-        Debug.Log(Nature.NatureMap["Adamant"].StatMultipliers["Attack"]);
-        Debug.Log(Species.Name);
-        Debug.Log(Species.Type1.Name);
-        Debug.Log(Species.Stats["HitPoints"]);
-        Debug.Log(Species.Moves.LevelUp.Keys.Contains(Move.MoveMap["Vine Whip"]));
-        Debug.Log(Species.Evolution.Name);
-        Debug.Log(Species.GrowthRate.ToNextLevel[Level]);
+        Initialize("Bulbyboi", "Bulbasaur");
         AddExperience(100000);
-        Debug.Log(Species.GrowthRate.ToNextLevel[Level]);
-        Debug.Log(Level);
-        Debug.Log(Experience);
         SetPokemonMoves(new Dictionary<int, string> { { 1, "Vine Whip" }, { 2, "Leech Seed" }, { 3, "Absorb" }, { 4, "Petal Dance" } });
-        Debug.Log(Moves[1].Name);
-        Debug.Log(Moves[2].Name);
-        Debug.Log(Moves[3].Name);
-        Debug.Log(Moves[4].Name);
-        Debug.Log(Moves[5].Name);
+        Debug.Log(Species.Name);
+        Debug.Log(Level);
+        string maxStatsString = string.Join("\n", MaxStats.Select(Element => $"{{{Element.Key}, {Element.Value}}}"));
+        Debug.Log($"Stats\n{maxStatsString}");
     }
 
     // Update is called once per frame
