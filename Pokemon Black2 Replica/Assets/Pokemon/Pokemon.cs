@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Utils;
 
 public class Pokemon : MonoBehaviour
 {
@@ -217,8 +218,14 @@ public class Pokemon : MonoBehaviour
         SetPokemonMoves(new Dictionary<int, string> { { 1, "Vine Whip" }, { 2, "Leech Seed" }, { 3, "Absorb" }, { 4, "Petal Dance" } });
         Debug.Log(Species.Name);
         Debug.Log(Level);
-        string maxStatsString = string.Join("\n", MaxStats.Select(Element => $"{{{Element.Key}, {Element.Value}}}"));
-        Debug.Log($"Stats\n{maxStatsString}");
+        Level.Log("Level");
+        IndividualValues.Log("Stats");
+        Moves.Log("Moves");
+        Species.Moves.LevelUp.Log("LevelUp Moves");
+        Species.Moves.LevelUp.Log();
+        Species.Moves.Egg.Log();
+        Species.Log();
+        Type1.Log();
     }
 
     // Update is called once per frame
