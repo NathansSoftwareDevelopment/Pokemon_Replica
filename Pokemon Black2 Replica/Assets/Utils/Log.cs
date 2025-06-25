@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Reflection;
 using UnityEngine;
 
 namespace Utils
@@ -18,7 +19,7 @@ namespace Utils
             string returnMessage = string.Empty;
             if (!string.IsNullOrEmpty(inputMessage)) { returnMessage = inputMessage; }
             else if (inputObject is IEnumerable || inputObject is IDictionary) { returnMessage = inputObject.GetType().Name; }
-            //else { returnMessage = GetNameProperty(inputObject); }
+            else { returnMessage = GetNameProperty(inputObject); }
 
 
             if (string.IsNullOrEmpty(returnMessage)) { throw new System.Exception("ERROR: SHOULD NOT REACH THIS POINT"); }
@@ -44,6 +45,18 @@ namespace Utils
             else { throw new System.Exception("ERROR: SHOULD NOT REACH THIS POINT"); }
 
             return returnString;
+        }
+
+        private static string GetNameProperty(object inputObject)
+        {
+            System.Type inputObjectType = inputObject.GetType();
+            Debug.Log(inputObjectType.ToString());
+            PropertyInfo property = inputObjectType.GetProperty("Name", BindingFlags.Public | BindingFlags.Instance);
+            if (property == null) { throw new System.Exception($"NON-STANDARD TYPE \"{inputObjectType.Name}\" LACKS \"Name\" PROPERTY"); }
+            else
+            {
+                return property.GetValue(inputObject, null).ToString();
+            }
         }
     }
 }
