@@ -7,8 +7,9 @@ namespace Utils
     {
         public static void Log<T>(this T logObject, string logMessage = "")
         {
-            string logObjectInformation = "";
+            string logObjectInformation;
             logMessage = AutoLogMessage(logObject, logMessage);
+            logObjectInformation = FormatObjectInformation(logObject);
             Debug.Log($"{logMessage}\n{logObjectInformation}");
         }
 
@@ -17,6 +18,27 @@ namespace Utils
             if (!string.IsNullOrEmpty(inputMessage)) { return inputMessage; }
 
             throw new System.Exception("ERROR: SHOULD NOT REACH THIS POINT");
+        }
+
+        private static string FormatObjectInformation(object inputObject)
+        {
+            string returnString = "";
+            System.Type objectType = inputObject.GetType();
+
+            if (inputObject == null) { returnString = "OBJECT IS NULL"; }
+            else if (inputObject is IEnumerable)
+            {
+                
+            }
+            else if (inputObject is IDictionary)
+            {
+
+            }
+            else if (inputObject is string || (objectType.IsPrimitive)) { return inputObject.ToString(); }
+            else if (true) { returnString = string.Empty; } // Will work with custom classes
+            else { throw new System.Exception("ERROR: SHOULD NOT REACH THIS POINT"); }
+
+            return returnString;
         }
     }
 }
