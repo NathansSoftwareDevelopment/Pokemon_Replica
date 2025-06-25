@@ -15,9 +15,14 @@ namespace Utils
 
         private static string AutoLogMessage(object inputObject, string inputMessage)
         {
-            if (!string.IsNullOrEmpty(inputMessage)) { return inputMessage; }
+            string returnMessage = string.Empty;
+            if (!string.IsNullOrEmpty(inputMessage)) { returnMessage = inputMessage; }
+            else if (inputObject is IEnumerable || inputObject is IDictionary) { returnMessage = inputObject.GetType().Name; }
+            //else { returnMessage = GetNameProperty(inputObject); }
 
-            throw new System.Exception("ERROR: SHOULD NOT REACH THIS POINT");
+
+            if (string.IsNullOrEmpty(returnMessage)) { throw new System.Exception("ERROR: SHOULD NOT REACH THIS POINT"); }
+            else { return returnMessage; }
         }
 
         private static string FormatObjectInformation(object inputObject)
