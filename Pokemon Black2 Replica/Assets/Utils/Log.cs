@@ -32,7 +32,7 @@ namespace Utils
             }
             else if (inputObject is IEnumerable Enum)
             {
-                returnString = "{\n" + "\t" + string.Join(",\n\t", Enum.Cast<object>().Select(element => element.HasNameProperty() ? GetNameProperty(element) : FormatObjectInformation(element))) + "\n}";
+                returnString = "{\n" + "\t" + string.Join(",\n\t", Enum.Cast<object>().Select(element => element.GetNameOrFormat())) + "\n}";
             }
             else if (inputObject is string || inputObjectType.IsPrimitive) { return inputObject.ToString(); }
             else if (true) { returnString = string.Empty; } // Will work with custom classes
@@ -61,6 +61,11 @@ namespace Utils
             System.Type inputObjectType = inputObject.GetType();
             if (inputObject.HasNameProperty()) { return inputObjectType.GetProperty("Name", BindingFlags.Public | BindingFlags.Instance).GetValue(inputObject, null).ToString(); }
             else { throw new Exception($"NON-STANDARD TYPE \"{inputObjectType.Name}\" LACKS \"Name\" PROPERTY"); }
+        }
+
+        private static string GetNameOrFormat(this object inputObject)
+        {
+            return (inputObject.HasNameProperty()) ? GetNameProperty(inputObject) : FormatObjectInformation(inputObject);
         }
 
         private static string GetStack(Expression expression)
