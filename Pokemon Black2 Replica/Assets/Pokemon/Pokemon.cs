@@ -221,9 +221,13 @@ public class Pokemon : MonoBehaviour
         Log(() => Moves);
         Log(() => Species.Moves.LevelUp, "LevelUp Moves");
         Log(() => Species.Moves.LevelUp);
-        Log(() => Species.Moves.Egg);
+        Log(() => Species.Moves.Tutor);
         Log(() => Species);
         Log(() => Type1);
+        HashSet<Dictionary<string, int>> myHash = new HashSet<Dictionary<string, int>>();
+        myHash.Add(new Dictionary<string, int> { { "1", 2 }, { "2", 2 } });
+        myHash.Add(new Dictionary<string, int> { { "2", 2 }, { "3", 2 } });
+        Log(() => myHash);
     }
 
     // Update is called once per frame
