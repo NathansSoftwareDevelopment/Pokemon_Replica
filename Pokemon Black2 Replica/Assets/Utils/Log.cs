@@ -11,6 +11,7 @@ namespace Utils
     {
         public static void Log<T>(Expression<Func<T>> expression, string logMessage = "")
         {
+            string stackName = GetStack(expression.Body);
             object logObject = expression.Compile().Invoke();
 
             string logObjectInformation;
@@ -19,7 +20,7 @@ namespace Utils
             string logObjectType = logObject.GetType().Name;
             string logObjectParameters = string.Join(", ", logObject.GetType().GetGenericArguments().Select(arg => arg.Name));
             if (logObjectParameters != "") { logObjectParameters = "<" + logObjectParameters + ">"; }
-            Debug.Log($"{logMessage}\n{logObjectType}{logObjectParameters}\n{logObjectInformation}");
+            Debug.Log($"{logMessage}\n{stackName}: {logObjectType}{logObjectParameters}\n{logObjectInformation}");
         }
 
         private static string AutoLogMessage(object inputObject, string inputMessage)
@@ -64,6 +65,30 @@ namespace Utils
             {
                 return property.GetValue(inputObject, null).ToString();
             }
+        }
+
+        private static string GetStack(Expression expression)
+        {
+            if (expression is MemberExpression memberExpression)
+            {
+                string stackPath = "";
+                if (memberExpression.Expression != null) { stackPath = GetStack(memberExpression.Expression) + ((string.IsNullOrEmpty(GetStack(memberExpression.Expression))) ? "" : "."); }
+                return (string.IsNullOrEmpty(stackPath)) ? memberExpression.Member.Name : $"{stackPath}{memberExpression.Member.Name}";
+            }
+            else if (expression is ConstantExpression constantExpression)
+            {
+                return (constantExpression.Value == null) ? constantExpression.GetType().Name : "";
+            }
+            else if (expression is UnaryExpression unaryExpression && unaryExpression.NodeType == ExpressionType.Convert)
+            {
+                return GetStack(unaryExpression.Operand);
+            }
+            else if (expression is ParameterExpression parameterExpression)
+            {
+                return parameterExpression.Name;
+            }
+
+            throw new Exception("Could not analyze stack");
         }
     }
 }
