@@ -16,10 +16,8 @@ namespace Utils
 
             string logObjectInformation;
             logObjectInformation = FormatObjectInformation(logObject);
-            string logObjectType = logObject.GetType().Name;
-            string logObjectParameters = string.Join(", ", logObject.GetType().GetGenericArguments().Select(arg => arg.Name));
-            if (logObjectParameters != "") { logObjectParameters = "<" + logObjectParameters + ">"; }
-            Debug.Log($"{logMessage}\n{stackName}: {logObjectType}{logObjectParameters}\n{logObjectInformation}");
+            string objectTypeAndParameters = GetObjectTypeAndParameters(logObject);
+            Debug.Log($"{logMessage}\n{stackName}: {objectTypeAndParameters}\n{logObjectInformation}");
         }
 
         private static string FormatObjectInformation(object inputObject)
@@ -41,6 +39,14 @@ namespace Utils
             else { throw new System.Exception("ERROR: SHOULD NOT REACH THIS POINT"); }
 
             return returnString;
+        }
+
+        private static string GetObjectTypeAndParameters(object inputObject)
+        {
+            string logObjectType = inputObject.GetType().Name;
+            string logObjectParameters = string.Join(", ", inputObject.GetType().GetGenericArguments().Select(arg => arg.Name));
+            if (logObjectParameters != "") { logObjectParameters = "<" + logObjectParameters + ">"; }
+            return logObjectType + logObjectParameters;
         }
 
         private static string GetNameProperty(object inputObject)
