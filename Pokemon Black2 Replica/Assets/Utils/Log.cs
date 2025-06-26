@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Reflection;
 using UnityEngine;
 
@@ -7,8 +9,10 @@ namespace Utils
 {
     public static class Logger
     {
-        public static void Log<T>(this T logObject, string logMessage = "")
+        public static void Log<T>(Expression<Func<T>> expression, string logMessage = "")
         {
+            object logObject = expression.Compile().Invoke();
+
             string logObjectInformation;
             logMessage = AutoLogMessage(logObject, logMessage);
             logObjectInformation = FormatObjectInformation(logObject);
@@ -26,7 +30,7 @@ namespace Utils
             else { returnMessage = GetNameProperty(inputObject); }
 
 
-            if (string.IsNullOrEmpty(returnMessage)) { throw new System.Exception("ERROR: SHOULD NOT REACH THIS POINT"); }
+            if (string.IsNullOrEmpty(returnMessage)) { throw new Exception("ERROR: SHOULD NOT REACH THIS POINT"); }
             else { return returnMessage; }
         }
 
@@ -55,7 +59,7 @@ namespace Utils
         {
             System.Type inputObjectType = inputObject.GetType();
             PropertyInfo property = inputObjectType.GetProperty("Name", BindingFlags.Public | BindingFlags.Instance);
-            if (property == null) { throw new System.Exception($"NON-STANDARD TYPE \"{inputObjectType.Name}\" LACKS \"Name\" PROPERTY"); }
+            if (property == null) { throw new Exception($"NON-STANDARD TYPE \"{inputObjectType.Name}\" LACKS \"Name\" PROPERTY"); }
             else
             {
                 return property.GetValue(inputObject, null).ToString();
