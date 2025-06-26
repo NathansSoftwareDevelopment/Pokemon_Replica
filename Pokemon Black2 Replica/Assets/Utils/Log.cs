@@ -49,6 +49,7 @@ namespace Utils
             return logObjectType + logObjectParameters;
         }
 
+        private static bool HasNameProperty(this object inputObject) { return HasNameProperty(inputObject.GetType()); }
         private static bool HasNameProperty(this System.Type inputObjectType)
         {
             PropertyInfo property = inputObjectType.GetProperty("Name", BindingFlags.Public | BindingFlags.Instance);
