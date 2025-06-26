@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using System.Reflection;
 using UnityEngine;
 
@@ -11,7 +12,10 @@ namespace Utils
             string logObjectInformation;
             logMessage = AutoLogMessage(logObject, logMessage);
             logObjectInformation = FormatObjectInformation(logObject);
-            Debug.Log($"{logMessage}\n{logObjectInformation}");
+            string logObjectType = logObject.GetType().Name;
+            string logObjectParameters = string.Join(", ", logObject.GetType().GetGenericArguments().Select(arg => arg.Name));
+            if (logObjectParameters != "") { logObjectParameters = "<" + logObjectParameters + ">"; }
+            Debug.Log($"{logMessage}\n{logObjectType}{logObjectParameters}\n{logObjectInformation}");
         }
 
         private static string AutoLogMessage(object inputObject, string inputMessage)
@@ -50,7 +54,6 @@ namespace Utils
         private static string GetNameProperty(object inputObject)
         {
             System.Type inputObjectType = inputObject.GetType();
-            Debug.Log(inputObjectType.ToString());
             PropertyInfo property = inputObjectType.GetProperty("Name", BindingFlags.Public | BindingFlags.Instance);
             if (property == null) { throw new System.Exception($"NON-STANDARD TYPE \"{inputObjectType.Name}\" LACKS \"Name\" PROPERTY"); }
             else
