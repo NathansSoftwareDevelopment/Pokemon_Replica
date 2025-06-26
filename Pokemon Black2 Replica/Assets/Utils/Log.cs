@@ -23,7 +23,7 @@ namespace Utils
         private static string FormatObjectInformation(object inputObject)
         {
             string returnString = "";
-            System.Type objectType = inputObject.GetType();
+            System.Type inputObjectType = inputObject.GetType();
 
             if (inputObject == null) { returnString = "OBJECT IS NULL"; }
             else if (inputObject is IEnumerable)
@@ -34,9 +34,9 @@ namespace Utils
             {
 
             }
-            else if (inputObject is string || (objectType.IsPrimitive)) { return inputObject.ToString(); }
+            else if (inputObject is string || inputObjectType.IsPrimitive) { return inputObject.ToString(); }
             else if (true) { returnString = string.Empty; } // Will work with custom classes
-            else { throw new System.Exception("ERROR: SHOULD NOT REACH THIS POINT"); }
+            else { throw new Exception("ERROR: SHOULD NOT REACH THIS POINT"); }
 
             return returnString;
         }
