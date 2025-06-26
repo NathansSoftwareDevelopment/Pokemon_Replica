@@ -216,11 +216,9 @@ public class Pokemon : MonoBehaviour
         Initialize("Bulbyboi", "Bulbasaur");
         AddExperience(100000);
         SetPokemonMoves(new Dictionary<int, string> { { 1, "Vine Whip" }, { 2, "Leech Seed" }, { 3, "Absorb" }, { 4, "Petal Dance" } });
-        Debug.Log(Species.Name);
-        Debug.Log(Level);
-        Log(() => Level, "Level");
-        Log(() => IndividualValues, "Stats");
-        Log(() => Moves, "Moves");
+        Log(() => Level);
+        Log(() => IndividualValues);
+        Log(() => Moves);
         Log(() => Species.Moves.LevelUp, "LevelUp Moves");
         Log(() => Species.Moves.LevelUp);
         Log(() => Species.Moves.Egg);

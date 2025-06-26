@@ -15,24 +15,11 @@ namespace Utils
             object logObject = expression.Compile().Invoke();
 
             string logObjectInformation;
-            logMessage = AutoLogMessage(logObject, logMessage);
             logObjectInformation = FormatObjectInformation(logObject);
             string logObjectType = logObject.GetType().Name;
             string logObjectParameters = string.Join(", ", logObject.GetType().GetGenericArguments().Select(arg => arg.Name));
             if (logObjectParameters != "") { logObjectParameters = "<" + logObjectParameters + ">"; }
             Debug.Log($"{logMessage}\n{stackName}: {logObjectType}{logObjectParameters}\n{logObjectInformation}");
-        }
-
-        private static string AutoLogMessage(object inputObject, string inputMessage)
-        {
-            string returnMessage = string.Empty;
-            if (!string.IsNullOrEmpty(inputMessage)) { returnMessage = inputMessage; }
-            else if (inputObject is IEnumerable || inputObject is IDictionary) { returnMessage = inputObject.GetType().Name; }
-            else { returnMessage = GetNameProperty(inputObject); }
-
-
-            if (string.IsNullOrEmpty(returnMessage)) { throw new Exception("ERROR: SHOULD NOT REACH THIS POINT"); }
-            else { return returnMessage; }
         }
 
         private static string FormatObjectInformation(object inputObject)
