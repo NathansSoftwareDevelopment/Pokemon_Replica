@@ -28,11 +28,11 @@ namespace Utils
             if (inputObject == null) { returnString = "OBJECT IS NULL"; }
             else if (inputObject is IDictionary)
             {
-                
+                return GetObjectTypeAndParameters(inputObject);
             }
             else if (inputObject is IEnumerable Enum)
             {
-                returnString = "{\n" + "\t" + string.Join(",\n\t", Enum.Cast<object>().Select(element => (element.GetType().GetProperty("Name", BindingFlags.Public | BindingFlags.Instance) != null) ? GetNameProperty(element) : element.ToString())) + "\n}";
+                returnString = "{\n" + "\t" + string.Join(",\n\t", Enum.Cast<object>().Select(element => (element.GetType().GetProperty("Name", BindingFlags.Public | BindingFlags.Instance) != null) ? GetNameProperty(element) : FormatObjectInformation(element))) + "\n}";
             }
             else if (inputObject is string || inputObjectType.IsPrimitive) { return inputObject.ToString(); }
             else if (true) { returnString = string.Empty; } // Will work with custom classes

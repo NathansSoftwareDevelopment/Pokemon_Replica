@@ -227,7 +227,9 @@ public class Pokemon : MonoBehaviour
         HashSet<Dictionary<string, int>> myHash = new HashSet<Dictionary<string, int>>();
         myHash.Add(new Dictionary<string, int> { { "1", 2 }, { "2", 2 } });
         myHash.Add(new Dictionary<string, int> { { "2", 2 }, { "3", 2 } });
+        HashSet<int> myHash2 = new HashSet<int> { 1, 2, 3};
         Log(() => myHash);
+        Log(() => myHash2);
     }
 
     // Update is called once per frame
