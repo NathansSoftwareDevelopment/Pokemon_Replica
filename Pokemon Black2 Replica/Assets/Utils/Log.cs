@@ -26,11 +26,11 @@ namespace Utils
             System.Type inputObjectType = inputObject.GetType();
 
             if (inputObject == null) { returnString = "OBJECT IS NULL"; }
-            else if (inputObject is IEnumerable)
+            else if (inputObject is IDictionary)
             {
                 
             }
-            else if (inputObject is IDictionary)
+            else if (inputObject is IEnumerable Enum)
             {
 
             }
