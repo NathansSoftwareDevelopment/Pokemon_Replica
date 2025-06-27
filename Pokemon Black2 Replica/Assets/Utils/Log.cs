@@ -32,16 +32,7 @@ namespace Utils
             if (inputObject is string || inputObjectType.IsPrimitive) { return inputObject.ToString(); }
             else if (inputObject is IDictionary inputDict)
             {
-                string dictionaryContents = string.Join(
-                    $",\n{indent}", inputDict.Cast<object>().Select(element =>
-                        {
-                            dynamic kvp = element;
-                            string Key = ((object)kvp.Key).GetNameOrFormat(currentDepth, maximumDepth);
-                            string Value = ((object)kvp.Value).GetNameOrFormat(currentDepth, maximumDepth);
-                            return $"{Key}: {Value}";
-                        }
-                    )
-                );
+                string dictionaryContents = string.Join($",\n{indent}", inputDict.Cast<object>().Select(element => element.GetDictionaryObjectString(currentDepth, maximumDepth)));
                 returnString = $"{{\n{indent}{dictionaryContents}\n{Indent(currentDepth-1)}}}";
             }
             else if (inputObject is IEnumerable Enum)
@@ -57,6 +48,14 @@ namespace Utils
         private static string Indent(int depth)
         {
             return string.Concat(Enumerable.Repeat("\t", depth));
+        }
+
+        private static string GetDictionaryObjectString(this object inputDict, int currentDepth, int maximumDepth)
+        {
+            dynamic KeyValuePair = inputDict;
+            string Key = ((object)KeyValuePair.Key).GetNameOrFormat(currentDepth, maximumDepth);
+            string Value = ((object)KeyValuePair.Value).GetNameOrFormat(currentDepth, maximumDepth);
+            return $"{Key}: {Value}";
         }
 
         private static string GetObjectTypeAndParameters(object inputObject)
