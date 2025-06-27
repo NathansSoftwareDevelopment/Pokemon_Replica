@@ -17,17 +17,19 @@ namespace Utils
             string logObjectInformation;
             logObjectInformation = FormatObjectInformation(logObject, 1, depth);
             string objectTypeAndParameters = GetObjectTypeAndParameters(logObject);
+
             Debug.Log($"{logMessage}\n{stackName}: {objectTypeAndParameters}\n{logObjectInformation}");
         }
 
         private static string FormatObjectInformation(object inputObject, int currentDepth, int maximumDepth)
         {
+            if (inputObject == null) { return "OBJECT IS NULL"; }
+
             string returnString = "";
             System.Type inputObjectType = inputObject.GetType();
             string indent = Indent(currentDepth);
 
-            if (inputObject == null) { returnString = "OBJECT IS NULL"; }
-            else if (inputObject is IDictionary)
+            if (inputObject is IDictionary)
             {
                 return GetObjectTypeAndParameters(inputObject);
             }
@@ -49,6 +51,7 @@ namespace Utils
 
         private static string GetObjectTypeAndParameters(object inputObject)
         {
+            if (inputObject == null) { return "OBJECT IS NULL"; }
             string logObjectType = inputObject.GetType().Name;
             string logObjectParameters = string.Join(", ", inputObject.GetType().GetGenericArguments().Select(arg => arg.Name));
             if (logObjectParameters != "") { logObjectParameters = "<" + logObjectParameters + ">"; }

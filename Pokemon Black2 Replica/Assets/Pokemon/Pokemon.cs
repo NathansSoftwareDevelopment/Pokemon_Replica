@@ -234,6 +234,10 @@ public class Pokemon : MonoBehaviour
         Log(() => myHash);
         Log(() => myHash2);
         Log(() => HashyHashHashy, depth: 3);
+        HashSet<int>[] intArray = new HashSet<int>[] { new HashSet<int> { 1, 2, 3 }, new HashSet<int> { 4, 5, 6 } };
+        Log(() => intArray);
+        HashSet<string> myNull = null;
+        Log(() => myNull);
     }
 
     // Update is called once per frame
