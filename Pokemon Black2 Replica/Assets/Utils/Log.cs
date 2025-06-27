@@ -61,6 +61,7 @@ namespace Utils
 
             if (inputObjectType.IsGenericType)
             {
+                inputObjectTypeName = inputObjectTypeName.Split('`')[0];
                 System.Type[] inputObjectParameters = inputObjectType.GetGenericArguments();
                 inputObjectParametersString = "<" + string.Join(", ", inputObjectParameters.Select(arg => GetObjectTypeAndParameters(arg))) + ">";
             }

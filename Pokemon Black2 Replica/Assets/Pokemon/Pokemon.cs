@@ -240,6 +240,8 @@ public class Pokemon : MonoBehaviour
         Log(() => myNull);
         int[] intArray2 = new int[] { 1, 2, 3 };
         Log(() => intArray2);
+        (string tupleString, int tupleInt, bool tupleBool) myTuple = ("tuple", 5, true);
+        Log(() => myTuple);
     }
 
     // Update is called once per frame
