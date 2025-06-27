@@ -75,7 +75,7 @@ namespace Utils
             }
             else
             {
-                return inputObject.GetType().Name;
+                return GetObjectTypeAndParameters(inputObject);
             }
         }
 
