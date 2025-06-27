@@ -231,17 +231,18 @@ public class Pokemon : MonoBehaviour
         HashSet<HashSet<HashSet<int>>> HashyHashHashy = new HashSet<HashSet<HashSet<int>>>();
         HashyHashHashy.Add(new HashSet<HashSet<int>> { new HashSet<int> { 1, 2, 3 }, new HashSet<int> { 4, 5, 6 } });
         HashyHashHashy.Add(new HashSet<HashSet<int>> { new HashSet<int> { 7, 8, 9 }, new HashSet<int> { 10, 11, 12 } });
-        Log(() => myHash);
-        Log(() => myHash2);
-        Log(() => HashyHashHashy, depth: 3);
+        Log(() => myHash, "HashSet of Dict<str, int>", 3);
+        Log(() => myHash2, "HashSet of int");
+        Log(() => HashyHashHashy, "HashSet of HashSet<HashSet<Int>>", depth: 3);
         HashSet<int>[] intArray = new HashSet<int>[] { new HashSet<int> { 1, 2, 3 }, new HashSet<int> { 4, 5, 6 } };
-        Log(() => intArray);
+        Log(() => intArray, "Array of HashSet<int>");
         HashSet<string> myNull = null;
-        Log(() => myNull);
+        Log(() => myNull, "null HashSet<string>");
         int[] intArray2 = new int[] { 1, 2, 3 };
-        Log(() => intArray2);
+        Log(() => intArray2, "Array of int");
         (string tupleString, int tupleInt, bool tupleBool) myTuple = ("tuple", 5, true);
-        Log(() => myTuple);
+        Log(() => myTuple, "Tuple of string, int, bool");
+        Log(() => Name, "Pokemon Name");
     }
 
     // Update is called once per frame
