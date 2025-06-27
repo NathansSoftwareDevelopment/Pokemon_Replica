@@ -9,18 +9,18 @@ namespace Utils
 {
     public static class Logger
     {
-        public static void Log<T>(Expression<Func<T>> expression, string logMessage = "")
+        public static void Log<T>(Expression<Func<T>> expression, string logMessage = "", int depth = 2)
         {
             string stackName = GetStack(expression.Body);
             object logObject = expression.Compile().Invoke();
 
             string logObjectInformation;
-            logObjectInformation = FormatObjectInformation(logObject);
+            logObjectInformation = FormatObjectInformation(logObject, 1, depth);
             string objectTypeAndParameters = GetObjectTypeAndParameters(logObject);
             Debug.Log($"{logMessage}\n{stackName}: {objectTypeAndParameters}\n{logObjectInformation}");
         }
 
-        private static string FormatObjectInformation(object inputObject)
+        private static string FormatObjectInformation(object inputObject, int currentDepth, int maximumDepth)
         {
             string returnString = "";
             System.Type inputObjectType = inputObject.GetType();
@@ -32,7 +32,7 @@ namespace Utils
             }
             else if (inputObject is IEnumerable Enum)
             {
-                returnString = "{\n" + "\t" + string.Join(",\n\t", Enum.Cast<object>().Select(element => element.GetNameOrFormat())) + "\n}";
+                returnString = "{\n" + "\t" + string.Join(",\n\t", Enum.Cast<object>().Select(element => element.GetNameOrFormat(currentDepth, maximumDepth))) + "\n}";
             }
             else if (inputObject is string || inputObjectType.IsPrimitive) { return inputObject.ToString(); }
             else if (true) { returnString = string.Empty; } // Will work with custom classes
@@ -63,9 +63,20 @@ namespace Utils
             else { throw new Exception($"NON-STANDARD TYPE \"{inputObjectType.Name}\" LACKS \"Name\" PROPERTY"); }
         }
 
-        private static string GetNameOrFormat(this object inputObject)
+        private static string GetNameOrFormat(this object inputObject, int currentDepth, int maximumDepth)
         {
-            return (inputObject.HasNameProperty()) ? GetNameProperty(inputObject) : FormatObjectInformation(inputObject);
+            if (currentDepth < maximumDepth)
+            {
+                return (inputObject.HasNameProperty()) ? GetNameProperty(inputObject) : FormatObjectInformation(inputObject, currentDepth+1, maximumDepth);
+            }
+            else if (inputObject is string || inputObject.GetType().IsPrimitive)
+            {
+                return inputObject.ToString();
+            }
+            else
+            {
+                return inputObject.GetType().Name;
+            }
         }
 
         private static string GetStack(Expression expression)
