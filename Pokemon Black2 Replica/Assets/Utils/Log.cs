@@ -52,10 +52,15 @@ namespace Utils
         private static string GetObjectTypeAndParameters(object inputObject)
         {
             if (inputObject == null) { return "OBJECT IS NULL"; }
-            string logObjectType = inputObject.GetType().Name;
-            string logObjectParameters = string.Join(", ", inputObject.GetType().GetGenericArguments().Select(arg => arg.Name));
-            if (logObjectParameters != "") { logObjectParameters = "<" + logObjectParameters + ">"; }
-            return logObjectType + logObjectParameters;
+
+            System.Type inputObjectType = inputObject.GetType();
+            System.Type[] inputObjectParameters = inputObjectType.GetGenericArguments();
+            string inputObjectTypeName = inputObjectType.Name;
+            string inputObjectParametersString = string.Join(", ", inputObjectParameters.Select(arg => arg.Name));
+
+            if (inputObjectParametersString != "") { inputObjectParametersString = "<" + inputObjectParametersString + ">"; }
+
+            return inputObjectTypeName + inputObjectParametersString;
         }
 
         private static bool HasNameProperty(this object inputObject) { return HasNameProperty(inputObject.GetType()); }
