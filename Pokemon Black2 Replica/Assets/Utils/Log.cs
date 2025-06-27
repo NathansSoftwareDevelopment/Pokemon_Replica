@@ -24,6 +24,7 @@ namespace Utils
         {
             string returnString = "";
             System.Type inputObjectType = inputObject.GetType();
+            string indent = Indent(currentDepth);
 
             if (inputObject == null) { returnString = "OBJECT IS NULL"; }
             else if (inputObject is IDictionary)
@@ -32,13 +33,18 @@ namespace Utils
             }
             else if (inputObject is IEnumerable Enum)
             {
-                returnString = "{\n" + "\t" + string.Join(",\n\t", Enum.Cast<object>().Select(element => element.GetNameOrFormat(currentDepth, maximumDepth))) + "\n}";
+                returnString = "{\n" + indent + string.Join($",\n{indent}", Enum.Cast<object>().Select(element => element.GetNameOrFormat(currentDepth, maximumDepth))) + "\n" + Indent(currentDepth-1) + "}";
             }
             else if (inputObject is string || inputObjectType.IsPrimitive) { return inputObject.ToString(); }
             else if (true) { returnString = string.Empty; } // Will work with custom classes
             else { throw new Exception("ERROR: SHOULD NOT REACH THIS POINT"); }
 
             return returnString;
+        }
+
+        private static string Indent(int depth)
+        {
+            return string.Concat(Enumerable.Repeat("\t", depth));
         }
 
         private static string GetObjectTypeAndParameters(object inputObject)
