@@ -57,6 +57,8 @@ namespace Utils
             string inputObjectTypeName = inputObjectType.Name;
             string inputObjectParametersString = "";
 
+            if (inputObjectType.IsArray) { return GetObjectTypeAndParameters(inputObjectType.GetElementType()) + "[]"; }
+
             if (inputObjectType.IsGenericType)
             {
                 System.Type[] inputObjectParameters = inputObjectType.GetGenericArguments();
