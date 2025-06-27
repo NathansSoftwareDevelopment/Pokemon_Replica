@@ -53,12 +53,15 @@ namespace Utils
         {
             if (inputObject == null) { return "OBJECT IS NULL"; }
 
-            System.Type inputObjectType = inputObject.GetType();
-            System.Type[] inputObjectParameters = inputObjectType.GetGenericArguments();
+            System.Type inputObjectType = (inputObject is System.Type) ? (System.Type)inputObject : inputObject.GetType();
             string inputObjectTypeName = inputObjectType.Name;
-            string inputObjectParametersString = string.Join(", ", inputObjectParameters.Select(arg => arg.Name));
+            string inputObjectParametersString = "";
 
-            if (inputObjectParametersString != "") { inputObjectParametersString = "<" + inputObjectParametersString + ">"; }
+            if (inputObjectType.IsGenericType)
+            {
+                System.Type[] inputObjectParameters = inputObjectType.GetGenericArguments();
+                inputObjectParametersString = "<" + string.Join(", ", inputObjectParameters.Select(arg => GetObjectTypeAndParameters(arg))) + ">";
+            }
 
             return inputObjectTypeName + inputObjectParametersString;
         }

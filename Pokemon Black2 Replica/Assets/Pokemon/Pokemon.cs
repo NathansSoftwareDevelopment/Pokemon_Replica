@@ -238,6 +238,8 @@ public class Pokemon : MonoBehaviour
         Log(() => intArray);
         HashSet<string> myNull = null;
         Log(() => myNull);
+        int[] intArray2 = new int[] { 1, 2, 3 };
+        Log(() => intArray2);
     }
 
     // Update is called once per frame
