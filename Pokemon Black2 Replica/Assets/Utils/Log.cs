@@ -37,7 +37,8 @@ namespace Utils
             }
             else if (inputObject is IEnumerable Enum)
             {
-                returnString = "{\n" + indent + string.Join($",\n{indent}", Enum.Cast<object>().Select(element => element.GetNameOrFormat(currentDepth, maximumDepth))) + "\n" + Indent(currentDepth-1) + "}";
+                string enumContents = string.Join($",\n{indent}", Enum.Cast<object>().Select(element => element.GetNameOrFormat(currentDepth, maximumDepth)));
+                returnString = $"{{\n{indent}{enumContents}\n{Indent(currentDepth-1)}}}";
             }
             else if (true) { returnString = string.Empty; } // Will work with custom classes
             else { throw new Exception("ERROR: SHOULD NOT REACH THIS POINT"); }
