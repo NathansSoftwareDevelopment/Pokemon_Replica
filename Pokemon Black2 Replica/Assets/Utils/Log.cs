@@ -61,7 +61,7 @@ namespace Utils
 
         private static string GetObjectTypeAndParameters(object inputObject)
         {
-            if (inputObject == null) { return "OBJECT IS NULL"; }
+            if (inputObject == null) { return "null"; }
 
             System.Type inputObjectType = (inputObject is System.Type) ? (System.Type)inputObject : inputObject.GetType();
             string inputObjectTypeName = inputObjectType.Name;
@@ -95,6 +95,11 @@ namespace Utils
 
         private static string GetNameOrFormat(this object inputObject, int currentDepth, int maximumDepth)
         {
+            if (inputObject == null)
+            {
+                return "null";
+            }
+
             if (currentDepth < maximumDepth)
             {
                 return (inputObject.HasNameProperty()) ? GetNameProperty(inputObject) : FormatObjectInformation(inputObject, currentDepth+1, maximumDepth);
