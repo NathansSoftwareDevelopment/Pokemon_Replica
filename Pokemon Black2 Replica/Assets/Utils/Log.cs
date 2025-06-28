@@ -3,6 +3,7 @@ using System.Collections;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Utils
@@ -40,7 +41,15 @@ namespace Utils
                 string enumContents = string.Join($",\n{indent}", inputEnum.Cast<object>().Select(element => element.GetNameOrFormat(currentDepth, maximumDepth)));
                 returnString = $"{{\n{indent}{enumContents}\n{Indent(currentDepth-1)}}}";
             }
-            else if (true) { returnString = string.Empty; } // Will work with custom classes
+            else if (inputObjectType.IsClass && currentDepth < maximumDepth)
+            {
+                string classContents = inputObject.GetClassProperties(currentDepth, maximumDepth);
+                returnString = returnString = $"{{\n{Indent(currentDepth)}{classContents}\n{Indent(currentDepth - 1)}}}";
+            }
+            else if (inputObjectType.IsClass)
+            {
+                return inputObject.GetNameOrFormat(currentDepth, maximumDepth);
+            }
             else { throw new Exception("ERROR: SHOULD NOT REACH THIS POINT"); }
 
             return returnString;
@@ -91,6 +100,16 @@ namespace Utils
             System.Type inputObjectType = inputObject.GetType();
             if (inputObject.HasNameProperty()) { return inputObjectType.GetProperty("Name", BindingFlags.Public | BindingFlags.Instance).GetValue(inputObject, null).ToString(); }
             else { throw new Exception($"NON-STANDARD TYPE \"{inputObjectType.Name}\" LACKS \"Name\" PROPERTY"); }
+        }
+
+        private static string GetClassProperties(this object inputObject, int currentDepth, int maximumDepth)
+        {
+            string returnString = "";
+
+            PropertyInfo[] properties = inputObject.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance);
+            returnString = string.Join($",\n\n{Indent(currentDepth)}", properties.Select(property => $"{property.Name}: {GetObjectTypeAndParameters(property.GetValue(inputObject))}\n{Indent(currentDepth)}{property.GetValue(inputObject).GetNameOrFormat(currentDepth, maximumDepth)}"));
+
+            return returnString;
         }
 
         private static string GetNameOrFormat(this object inputObject, int currentDepth, int maximumDepth)

@@ -241,7 +241,7 @@ public class Pokemon : MonoBehaviour
         int[] intArray2 = new int[] { 1, 2, 3 };
         Log(() => intArray2, "Array of int");
         (string tupleString, int tupleInt, bool tupleBool) myTuple = ("tuple", 5, true);
-        Log(() => myTuple, "Tuple of string, int, bool");
+        //Log(() => myTuple, "Tuple of string, int, bool");
         Log(() => Name, "Pokemon Name");
     }
 
