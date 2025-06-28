@@ -102,11 +102,15 @@ namespace Utils
 
             if (currentDepth < maximumDepth)
             {
-                return (inputObject.HasNameProperty()) ? GetNameProperty(inputObject) : FormatObjectInformation(inputObject, currentDepth+1, maximumDepth);
+                return FormatObjectInformation(inputObject, currentDepth + 1, maximumDepth);
             }
             else if (inputObject is string || inputObject.GetType().IsPrimitive)
             {
                 return inputObject.ToString();
+            }
+            else if (inputObject.HasNameProperty())
+            {
+                return GetNameProperty(inputObject);
             }
             else
             {
