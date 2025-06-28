@@ -50,6 +50,11 @@ namespace Utils
             {
                 return inputObject.GetNameOrFormat(currentDepth, maximumDepth);
             }
+            else if (inputObjectType.IsValueType)
+            {
+                string structContents = inputObject.GetStructFields(currentDepth, maximumDepth);
+                returnString = returnString = $"{{\n{Indent(currentDepth)}{structContents}\n{Indent(currentDepth - 1)}}}";
+            }
             else { throw new Exception("ERROR: SHOULD NOT REACH THIS POINT"); }
 
             return returnString;
@@ -108,6 +113,16 @@ namespace Utils
 
             PropertyInfo[] properties = inputObject.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance);
             returnString = string.Join($",\n\n{Indent(currentDepth)}", properties.Select(property => $"{property.Name}: {GetObjectTypeAndParameters(property.GetValue(inputObject))}\n{Indent(currentDepth)}{property.GetValue(inputObject).GetNameOrFormat(currentDepth, maximumDepth)}"));
+
+            return returnString;
+        }
+
+        private static string GetStructFields(this object inputObject, int currentDepth, int maximumDepth)
+        {
+            string returnString = "";
+
+            FieldInfo[] fields = inputObject.GetType().GetFields(BindingFlags.Public | BindingFlags.Instance);
+            returnString = string.Join($",\n\n{Indent(currentDepth)}", fields.Select(field => $"{field.Name}: {GetObjectTypeAndParameters(field.GetValue(inputObject))}\n{Indent(currentDepth)}{field.GetValue(inputObject).GetNameOrFormat(currentDepth, maximumDepth)}"));
 
             return returnString;
         }

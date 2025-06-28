@@ -227,7 +227,7 @@ public class Pokemon : MonoBehaviour
         HashSet<Dictionary<string, int>> myHash = new HashSet<Dictionary<string, int>>();
         myHash.Add(new Dictionary<string, int> { { "1", 2 }, { "2", 2 } });
         myHash.Add(new Dictionary<string, int> { { "2", 2 }, { "3", 2 } });
-        HashSet<int> myHash2 = new HashSet<int> { 1, 2, 3};
+        HashSet<int> myHash2 = new HashSet<int> { 1, 2, 3 };
         HashSet<HashSet<HashSet<int>>> HashyHashHashy = new HashSet<HashSet<HashSet<int>>>();
         HashyHashHashy.Add(new HashSet<HashSet<int>> { new HashSet<int> { 1, 2, 3 }, new HashSet<int> { 4, 5, 6 } });
         HashyHashHashy.Add(new HashSet<HashSet<int>> { new HashSet<int> { 7, 8, 9 }, new HashSet<int> { 10, 11, 12 } });
