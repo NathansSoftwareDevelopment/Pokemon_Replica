@@ -10,7 +10,7 @@ namespace Utils
 {
     public static class Logger
     {
-        public static void Log<T>(Expression<Func<T>> expression, string logMessage = "", int depth = 2)
+        public static void Log<T>(Expression<Func<T>> expression, string logMessage = "", int depth = 1)
         {
             string stackName = GetStack(expression.Body);
             object logObject = expression.Compile().Invoke();
