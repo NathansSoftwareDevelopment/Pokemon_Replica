@@ -35,9 +35,9 @@ namespace Utils
                 string dictionaryContents = string.Join($",\n{indent}", inputDict.Cast<object>().Select(element => element.GetDictionaryObjectString(currentDepth, maximumDepth)));
                 returnString = $"{{\n{indent}{dictionaryContents}\n{Indent(currentDepth-1)}}}";
             }
-            else if (inputObject is IEnumerable Enum)
+            else if (inputObject is IEnumerable inputEnum)
             {
-                string enumContents = string.Join($",\n{indent}", Enum.Cast<object>().Select(element => element.GetNameOrFormat(currentDepth, maximumDepth)));
+                string enumContents = string.Join($",\n{indent}", inputEnum.Cast<object>().Select(element => element.GetNameOrFormat(currentDepth, maximumDepth)));
                 returnString = $"{{\n{indent}{enumContents}\n{Indent(currentDepth-1)}}}";
             }
             else if (true) { returnString = string.Empty; } // Will work with custom classes
