@@ -12,7 +12,9 @@ def main():
 
     global allRawData
     allRawData = getPokemonInfo({"Pokemon": rawPokemonData, "Species": rawSpeciesData, "Evolution": rawEvolutionData})
-    # addToFinal(parsePokeInfo([allRawData[0]["charmander"][0], allRawData[1]["charmander"][0], allRawData[2]["charmander"]]))
+    # pokemonNameDict = allRawData["Pokemon"]["meowth"][0]
+    # pokemonName = pokemonNameDict["name"]
+    # addToFinal(parsePokeInfo({"Pokemon": allRawData["Pokemon"][pokemonName][0], "Species": allRawData["Species"][pokemonNameDict["species"]["name"]][0]}))
     for pokemon in allRawData["Pokemon"]:
         pokemonNameDict = allRawData["Pokemon"][pokemon][0]
         pokemonName = pokemonNameDict["name"]
