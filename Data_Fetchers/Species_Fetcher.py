@@ -150,6 +150,7 @@ def getEvolve(pokemonName):
     # Darumaka is the only species that evolves into a species that has forms so it was easier to just manually fix this evolution.
     if evolution == "darumaka":
         evolution = "Darmanitan-standard"
+        evolveLevel = 35
     
     evolution = evolution.capitalize()
     evolveLevel = evolveLevel if evolveLevel is not None else 0
