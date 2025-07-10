@@ -119,13 +119,13 @@ def getEvolve(pokemonName):
     elif evolutionChain["species"]["name"] == pokemonName:
         ic(2)
         # if first pokemon can evolve into 1 other pokemon | evolve = second pokemon
-        if len(evolutionChain["evolves_to"]) == 1:
+        if len([item for item in evolutionChain["evolves_to"] if item["species"]["name"] in allRawData["Pokemon"].keys()]) == 1:
             ic(2.1)
             evolution = evolutionChain["evolves_to"][0]["species"]["name"]
             # if second pokemon does not have evolution details | evolveLevel = 0
             evolveLevel = evolutionChain["evolves_to"][0]["evolution_details"][0]["min_level"] if evolutionChain["evolves_to"][0]["evolution_details"] else 0
         # if first pokemon can evolve into more than 1 pokemon | evolve = Special, evolveLevel = 0
-        elif len(evolutionChain["evolves_to"]) > 1:
+        elif len([item for item in evolutionChain["evolves_to"] if item["species"]["name"] in allRawData["Pokemon"].keys()]) > 1:
             ic(2.2)
             evolution = "Special"
             evolveLevel = 0
@@ -136,13 +136,13 @@ def getEvolve(pokemonName):
     elif evolutionChain["evolves_to"][0]["species"]["name"] == pokemonName:
         ic(4)
         # if second pokemon can evolve into 1 other pokemon | evolve = third pokemon
-        if len(evolutionChain["evolves_to"][0]["evolves_to"]) == 1 and len(evolutionChain["evolves_to"][0].get("evolution_details", [])) != 0:
+        if len([item for item in evolutionChain["evolves_to"][0]["evolves_to"] if item["species"]["name"] in allRawData["Pokemon"].keys()]) == 1 and len(evolutionChain["evolves_to"][0].get("evolution_details", [])) != 0:
             ic(4.1)
             evolution = evolutionChain["evolves_to"][0]["evolves_to"][0]["species"]["name"]
             # if third pokemon does not have evolution details | evolveLevel = 0
             evolveLevel = evolutionChain["evolves_to"][0]["evolves_to"][0]["evolution_details"][0]["min_level"] if evolutionChain["evolves_to"][0]["evolves_to"][0]["evolution_details"] else 0
         # if second pokemon can evolve into more than 1 pokemon | evolve = Special, evolveLevel = 0
-        elif len(evolutionChain["evolves_to"][0]["evolves_to"]) > 1:
+        elif len([item for item in evolutionChain["evolves_to"][0]["evolves_to"] if item["species"]["name"] in allRawData["Pokemon"].keys()]) > 1:
             ic(4.2)
             evolution = "Special"
             evolveLevel = 0
