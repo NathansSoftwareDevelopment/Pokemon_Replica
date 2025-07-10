@@ -145,10 +145,8 @@ def getEvolve(pokemonName):
             ic(4.2)
             evolution = "Special"
 
-    if (evolution not in allRawData["Pokemon"].keys() and evolution != "Special"):
-        evolution = pokemonName
     # Darumaka is the only species that evolves into a species that has forms so it was easier to just manually fix this evolution.
-    if evolution == "darumaka":
+    if evolution == "darmanitan":
         evolution = "Darmanitan-standard"
         evolveLevel = 35
     
