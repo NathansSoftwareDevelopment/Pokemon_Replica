@@ -12,7 +12,9 @@ def main():
 
     global allRawData
     allRawData = getPokemonInfo({"Pokemon": rawPokemonData, "Species": rawSpeciesData, "Evolution": rawEvolutionData})
-    # addToFinal(parsePokeInfo([allRawData[0]["charmander"][0], allRawData[1]["charmander"][0], allRawData[2]["charmander"]]))
+    # pokemonNameDict = allRawData["Pokemon"]["meowth"][0]
+    # pokemonName = pokemonNameDict["name"]
+    # addToFinal(parsePokeInfo({"Pokemon": allRawData["Pokemon"][pokemonName][0], "Species": allRawData["Species"][pokemonNameDict["species"]["name"]][0]}))
     for pokemon in allRawData["Pokemon"]:
         pokemonNameDict = allRawData["Pokemon"][pokemon][0]
         pokemonName = pokemonNameDict["name"]
@@ -109,8 +111,8 @@ def getAbilities(rawPokemonData):
 
 def getEvolve(pokemonName):
     evolutionChain = allRawData["Evolution"][pokemonName][pokemonName]
+    evolution = pokemonName
     evolveLevel = 0
-    evolution = str
     print(pokemonName)
     # if first pokemon is an only stage pokemon | default
     if len(evolutionChain.get("evolves_to", [])) == 0:
@@ -119,16 +121,15 @@ def getEvolve(pokemonName):
     elif evolutionChain["species"]["name"] == pokemonName:
         ic(2)
         # if first pokemon can evolve into 1 other pokemon | evolve = second pokemon
-        if len(evolutionChain["evolves_to"]) == 1:
+        if len([item for item in evolutionChain["evolves_to"] if item["species"]["name"] in allRawData["Species"].keys()]) == 1:
             ic(2.1)
             evolution = evolutionChain["evolves_to"][0]["species"]["name"]
             # if second pokemon does not have evolution details | evolveLevel = 0
             evolveLevel = evolutionChain["evolves_to"][0]["evolution_details"][0]["min_level"] if evolutionChain["evolves_to"][0]["evolution_details"] else 0
         # if first pokemon can evolve into more than 1 pokemon | evolve = Special, evolveLevel = 0
-        elif len(evolutionChain["evolves_to"]) > 1:
+        elif len([item for item in evolutionChain["evolves_to"] if item["species"]["name"] in allRawData["Species"].keys()]) > 1:
             ic(2.2)
             evolution = "Special"
-            evolveLevel = 0
     # if second pokemon is a two stage pokemon | default
     elif len(evolutionChain["evolves_to"][0].get("evolves_to", [])) == 0:
         ic(3)
@@ -136,22 +137,20 @@ def getEvolve(pokemonName):
     elif evolutionChain["evolves_to"][0]["species"]["name"] == pokemonName:
         ic(4)
         # if second pokemon can evolve into 1 other pokemon | evolve = third pokemon
-        if len(evolutionChain["evolves_to"][0]["evolves_to"]) == 1 and len(evolutionChain["evolves_to"][0].get("evolution_details", [])) != 0:
+        if len([item for item in evolutionChain["evolves_to"][0]["evolves_to"] if item["species"]["name"] in allRawData["Species"].keys()]) == 1 and len(evolutionChain["evolves_to"][0].get("evolution_details", [])) != 0:
             ic(4.1)
             evolution = evolutionChain["evolves_to"][0]["evolves_to"][0]["species"]["name"]
             # if third pokemon does not have evolution details | evolveLevel = 0
             evolveLevel = evolutionChain["evolves_to"][0]["evolves_to"][0]["evolution_details"][0]["min_level"] if evolutionChain["evolves_to"][0]["evolves_to"][0]["evolution_details"] else 0
         # if second pokemon can evolve into more than 1 pokemon | evolve = Special, evolveLevel = 0
-        elif len(evolutionChain["evolves_to"][0]["evolves_to"]) > 1:
+        elif len([item for item in evolutionChain["evolves_to"][0]["evolves_to"] if item["species"]["name"] in allRawData["Species"].keys()]) > 1:
             ic(4.2)
             evolution = "Special"
-            evolveLevel = 0
 
-    if (evolution not in allRawData["Pokemon"].keys() and evolution != "Special"):
-        evolution = pokemonName
     # Darumaka is the only species that evolves into a species that has forms so it was easier to just manually fix this evolution.
-    if evolution == "darumaka":
+    if evolution == "darmanitan":
         evolution = "Darmanitan-standard"
+        evolveLevel = 35
     
     evolution = evolution.capitalize()
     evolveLevel = evolveLevel if evolveLevel is not None else 0

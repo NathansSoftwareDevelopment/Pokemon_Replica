@@ -5044,8 +5044,8 @@
             "3": "Unnerve"
         },
         "evolve": {
-            "evolves-to": "Special",
-            "min-level": 0
+            "evolves-to": "Persian",
+            "min-level": 28
         },
         "growth-rate": "Medium Fast",
         "base-experience": 58,
@@ -12537,7 +12537,7 @@
         },
         "evolve": {
             "evolves-to": "Mr-mime",
-            "min-level": 42
+            "min-level": 0
         },
         "growth-rate": "Medium Fast",
         "base-experience": 161,
@@ -12680,7 +12680,7 @@
             "3": "Steadfast"
         },
         "evolve": {
-            "evolves-to": "Special",
+            "evolves-to": "Scizor",
             "min-level": 0
         },
         "growth-rate": "Medium Fast",
@@ -20187,8 +20187,8 @@
             "3": "Unaware"
         },
         "evolve": {
-            "evolves-to": "Special",
-            "min-level": 0
+            "evolves-to": "Quagsire",
+            "min-level": 20
         },
         "growth-rate": "Medium Fast",
         "base-experience": 42,
@@ -22471,7 +22471,7 @@
             "3": "Pickpocket"
         },
         "evolve": {
-            "evolves-to": "Special",
+            "evolves-to": "Weavile",
             "min-level": 0
         },
         "growth-rate": "Medium Slow",
@@ -23242,7 +23242,7 @@
         },
         "evolve": {
             "evolves-to": "Corsola",
-            "min-level": 38
+            "min-level": 0
         },
         "growth-rate": "Fast",
         "base-experience": 144,
@@ -27753,7 +27753,7 @@
         },
         "evolve": {
             "evolves-to": "Linoone",
-            "min-level": 35
+            "min-level": 0
         },
         "growth-rate": "Medium Fast",
         "base-experience": 147,
@@ -59039,8 +59039,8 @@
             "3": "None"
         },
         "evolve": {
-            "evolves-to": "Special",
-            "min-level": 0
+            "evolves-to": "Cofagrigus",
+            "min-level": 34
         },
         "growth-rate": "Medium Fast",
         "base-experience": 61,
