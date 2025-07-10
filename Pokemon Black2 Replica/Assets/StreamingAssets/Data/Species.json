@@ -58132,7 +58132,7 @@
         },
         "evolve": {
             "evolves-to": "Darmanitan-standard",
-            "min-level": 0
+            "min-level": 35
         },
         "growth-rate": "Medium Slow",
         "base-experience": 63,
