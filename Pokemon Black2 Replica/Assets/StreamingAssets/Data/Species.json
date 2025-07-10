@@ -43134,8 +43134,8 @@
             "2": "None"
         },
         "evolve": {
-            "evolves-to": "Burmy",
-            "min-level": 20
+            "evolves-to": "Special",
+            "min-level": 0
         },
         "growth-rate": "Medium Fast",
         "base-experience": 45,
