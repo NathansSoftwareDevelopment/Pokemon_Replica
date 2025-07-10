@@ -109,8 +109,8 @@ def getAbilities(rawPokemonData):
 
 def getEvolve(pokemonName):
     evolutionChain = allRawData["Evolution"][pokemonName][pokemonName]
+    evolution = pokemonName
     evolveLevel = 0
-    evolution = str
     print(pokemonName)
     # if first pokemon is an only stage pokemon | default
     if len(evolutionChain.get("evolves_to", [])) == 0:
@@ -128,7 +128,6 @@ def getEvolve(pokemonName):
         elif len([item for item in evolutionChain["evolves_to"] if item["species"]["name"] in allRawData["Pokemon"].keys()]) > 1:
             ic(2.2)
             evolution = "Special"
-            evolveLevel = 0
     # if second pokemon is a two stage pokemon | default
     elif len(evolutionChain["evolves_to"][0].get("evolves_to", [])) == 0:
         ic(3)
@@ -145,7 +144,6 @@ def getEvolve(pokemonName):
         elif len([item for item in evolutionChain["evolves_to"][0]["evolves_to"] if item["species"]["name"] in allRawData["Pokemon"].keys()]) > 1:
             ic(4.2)
             evolution = "Special"
-            evolveLevel = 0
 
     if (evolution not in allRawData["Pokemon"].keys() and evolution != "Special"):
         evolution = pokemonName
