@@ -2829,7 +2829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 4
   Ground: {fileID: 911025562}
-  Grass: {fileID: 11400000, guid: 9a0fdf82d19bed04990f44ec9993ea68, type: 2}
+  grassTile: {fileID: 11400000, guid: 9a0fdf82d19bed04990f44ec9993ea68, type: 2}
 --- !u!61 &1801180278
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
@@ -18,7 +19,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
 
     public Tilemap Ground;
-    public TileBase Grass;
+    private HashSet<TileBase> spawnerTiles = new HashSet<TileBase>();
+    [SerializeField] private TileBase grassTile;
 
     private void Awake()
     {
@@ -26,9 +28,16 @@ public class PlayerMovement : MonoBehaviour
         movementTime = 1.0 / movementSpeed;
         rb = GetComponent<Rigidbody2D>();
 
+        CumulateSpawnerTiles();
+
         playerInputs.Player.Movement.started += OnMovementInput;
         playerInputs.Player.Movement.performed += OnMovementInput;
         playerInputs.Player.Movement.canceled += OnMovementInput;
+    }
+
+    private void CumulateSpawnerTiles()
+    {
+        spawnerTiles.Add(grassTile);
     }
 
     private void OnValidate()
@@ -116,10 +125,6 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3Int cellPosition = Ground.WorldToCell(rb.position);
         TileBase currentTile = Ground.GetTile(cellPosition);
-        if (currentTile != null)
-        {
-            if (currentTile == Grass) { return true; }
-        }
-        return false;
+        return currentTile != null && spawnerTiles.Contains(currentTile);
     }
 }
