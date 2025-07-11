@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Tilemaps;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,8 +13,12 @@ public class PlayerMovement : MonoBehaviour
     private double movementTime = 0;
     private double movementCooldown = 0;
     [SerializeField] private int movementSpeed = 4;
+    private bool playerMovedLastFrame = false;
+
     private Rigidbody2D rb;
 
+    public Tilemap Ground;
+    public TileBase Grass;
 
     private void Awake()
     {
@@ -57,6 +62,11 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         AccrueTime(Time.fixedDeltaTime);
+        if (playerMovedLastFrame)
+        {
+            Debug.Log(PositionIsSpawnerTile());
+            playerMovedLastFrame = false;
+        }
         CheckIfPlayerCanMove();
         if (playerIsMoving)
         {
@@ -99,5 +109,17 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.MovePosition(rb.position + movementDirection);
         movementCooldown = 0;
+        playerMovedLastFrame = true;
+    }
+
+    private bool PositionIsSpawnerTile()
+    {
+        Vector3Int cellPosition = Ground.WorldToCell(rb.position);
+        TileBase currentTile = Ground.GetTile(cellPosition);
+        if (currentTile != null)
+        {
+            if (currentTile == Grass) { return true; }
+        }
+        return false;
     }
 }
