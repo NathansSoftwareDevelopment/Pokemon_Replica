@@ -1,18 +1,19 @@
 using System;
-using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
     private @PlayerInputs playerInputs;
+
     Vector2 movementDirection;
     private bool playerCanMove = true;
     private bool playerIsMoving = false;
-    [SerializeField] private int movementSpeed = 4;
     private double movementTime = 0;
     private double movementCooldown = 0;
+    [SerializeField] private int movementSpeed = 4;
     private Rigidbody2D rb;
+
 
     private void Awake()
     {
